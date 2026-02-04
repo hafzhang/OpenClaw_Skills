@@ -113,3 +113,22 @@
 - 使用 Link 组件进行客户端导航（非 <a> 标签）
 - group 和 group-hover 类实现父元素悬停时子元素样式变化
 ---
+
+## 2026-02-04 - US-008
+- 创建 src/components/SkillCard.tsx 组件
+- 显示技能名称、描述、验证状态标签（已验证/待验证）
+- 显示作者信息
+- 添加"复制安装命令"按钮，使用 navigator.clipboard.writeText()
+- 复制按钮带反馈状态（2秒后恢复）
+- 技能名称链接到 GitHub 仓库
+- 卡片悬停效果（hover:shadow-md transition-shadow）
+- 不显示随机热度和评分
+- 类型检查和构建通过
+
+**Learnings for future iterations:**
+- SkillCard 是客户端组件（需要 'use client'，因为有复制交互）
+- 使用 React useState 管理复制状态（copied boolean）
+- 使用 navigator.clipboard.writeText() 复制到剪贴板
+- 使用 setTimeout 2秒后重置复制状态
+- 验证状态使用 Badge 组件显示（verified ? 'default' : 'secondary'）
+---
