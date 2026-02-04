@@ -355,3 +355,22 @@
 - 模板包含代码块格式说明，使用 ```language 指定语言
 - 模板包含常见问题部分，建议每个教程都有 FAQ
 ---
+
+## 2026-02-04 - US-021
+- 创建贡献指南 CONTRIBUTING.md
+- 说明如何提交教程：Fork -> Branch -> PR 完整流程
+- 说明如何提交技能：通过 GitHub Issues 提交
+- 包含教程创作模板链接（src/templates/tutorial.md）
+- 包含技能验证要求：仓库活跃、文档完整、可安装、无恶意代码、实用性
+- 包含代码规范：JSON 格式、TypeScript 规范、Git 提交信息格式
+- 包含审核流程说明：自动检查和人工审核
+- 包含行为准则和帮助资源
+- 构建验证通过
+
+**Learnings for future iterations:**
+- 贡献指南存放在项目根目录的 CONTRIBUTING.md
+- 教程提交通过 Pull Request，技能提交通过 Issues
+- 技能验证确保质量和安全性
+- Git 提交使用语义化格式（feat、fix、docs 等）
+- 代码规范包括 JSON 格式（2 空格缩进、双引号）和 TypeScript 规范
+---
