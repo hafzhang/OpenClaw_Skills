@@ -313,8 +313,8 @@
         "包含数据来源记录（sourceUrl 字段指向 GitHub）"
       ],
       "priority": 19,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "技能已在 US-004 中创建，使用 verified: true（布尔值）而非 'pending' 字符串，使用 source 字段而非 sourceUrl"
     },
     {
       "id": "US-020",

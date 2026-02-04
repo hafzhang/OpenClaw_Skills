@@ -323,3 +323,18 @@
 - 这种方式便于统一管理和类型检查，但牺牲了 Markdown 文件的直接编辑便利性
 - 如需改为文件系统方式，需要重构 getTutorialBySlug 等数据加载函数
 ---
+
+## 2026-02-04 - US-019
+- 确认 10 个验证过的技能数据已在 US-004 中创建完成
+- 技能包括：GitHub 集成、文件系统操作、Web 搜索、代码执行、代码审查、数据库操作、邮件发送、文档生成、图像处理、Slack 集成
+- 每个技能包含完整的元数据和安装命令
+- verified 使用布尔值 true 而非 'pending' 字符串（与类型定义一致）
+- source 字段指向 GitHub 仓库（而非 sourceUrl）
+
+**Learnings for future iterations:**
+- 技能数据在 US-004 中已创建，存储在 src/data/skills.json
+- verified 字段使用布尔值（true/false），与 TypeScript 类型定义一致
+- source 和 url 字段都指向 GitHub 仓库，可能存在冗余但提供了灵活性
+- 技能按 category 分类：development、productivity、system、creative
+- 技能索引页使用 getSkillsByCategory() 和 verified 过滤器
+---
