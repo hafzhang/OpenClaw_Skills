@@ -7,3 +7,17 @@
 - Types defined in src/types/index.ts
 
 ---
+
+## 2026-02-04 - US-001
+- 初始化 Next.js 14 项目，使用 TypeScript + Tailwind CSS
+- 配置静态导出 (output: 'export') 和 unoptimized images
+- 安装 react-markdown 和 rehype-highlight 用于 Markdown 渲染
+- 创建项目目录结构：src/data, src/lib, src/types, src/templates, src/content/tutorials
+- 构建验证通过
+
+**Learnings for future iterations:**
+- 项目使用 Next.js 16.x (最新版本)
+- 使用 Turbopack 进行构建
+- 静态导出配置在 next.config.ts 中设置 output: 'export'
+- Windows 环境下避免使用 "nul" 作为文件名
+---

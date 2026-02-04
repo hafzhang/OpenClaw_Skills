@@ -30,7 +30,7 @@
         "组件在测试页面中正确渲染"
       ],
       "priority": 2,
-      "passes": false,
+      "passes": true,
       "notes": ""
     },
     {
