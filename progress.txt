@@ -77,3 +77,20 @@
 - 搜索功能使用 query.toLowerCase() 实现不区分大小写搜索
 - searchAll() 返回 SearchResult[] 类型，包含 type 字段区分教程和技能
 ---
+
+## 2026-02-04 - US-006
+- 创建 src/components/Header.tsx 组件
+- 显示标题 'OpenClaw 实战指南' 和标语 '让 AI 助手真正帮你工作'
+- 包含统一搜索框，同时搜索教程和技能
+- 搜索结果显示类型标识（教程/技能），点击跳转到对应页面
+- 清除按钮重置搜索
+- 响应式设计（移动端 flex-col，桌面端 md:flex-row）
+- 类型检查和构建通过
+
+**Learnings for future iterations:**
+- 客户端组件使用 'use client' 指令（Header 需要交互式搜索）
+- 使用 React.useState 管理搜索状态（query, results, showResults）
+- 搜索结果使用绝对定位下拉菜单（z-50）
+- 使用 cn() 函数合并响应式类名
+- 搜索结果链接：教程使用 /tutorial/[slug]，技能使用 /skills#id
+---
