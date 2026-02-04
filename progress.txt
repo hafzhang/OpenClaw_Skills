@@ -2,9 +2,13 @@
 - This is a Next.js 14 project with TypeScript and Tailwind CSS
 - Uses static export (output: 'export') for deployment
 - shadcn/ui for UI components
-- Markdown content stored in src/content/tutorials/
+- Markdown content stored in src/data/tutorials.json (content field contains Markdown)
 - Data files in src/data/ (JSON format)
 - Types defined in src/types/index.ts
+- Dynamic routes use [param] directory naming (e.g., [slug])
+- For static generation with dynamic routes, use generateStaticParams() + dynamicParams = false
+- ReactMarkdown components prop requires `as Components` type assertion
+- highlight.js for code syntax highlighting (import styles separately)
 
 ---
 
@@ -168,4 +172,47 @@
 - 活动按钮使用 variant="default"，非活动使用 variant="outline"
 - ring-2 ring-ring ring-offset-2 增强活动状态的视觉反馈
 - 使用字面量类型定义分类 slug（'all' | 'quick-start' | 'productivity' | 'development' | 'content' | 'creative'）
+---
+
+## 2026-02-04 - US-011
+- 创建 src/app/page.tsx 主页，实现教程导向布局
+- Hero 区域：标题 'OpenClaw 实战指南' 和副标题 '30 个真实案例，让 AI 助手真正帮你工作'
+- 包含统一搜索框
+- '快速入门' 区域（显示 quick-start 分类的前 3 个教程）
+- '精选教程' 区域（集成 CategoryFilter 组件，支持按场景分类筛选）
+- '技能索引' 区域（显示前 6 个技能，提供"查看全部"链接）
+- 底部 Footer 组件
+- 使用 useEffect 和 useState 管理筛选状态
+- 类型检查和构建通过
+
+**Learnings for future iterations:**
+- 主页是客户端组件（'use client'），因为有交互式筛选
+- 使用 React.useEffect 加载数据并响应分类变化
+- 使用 React.useMemo 优化"快速入门"教程的计算（依赖数组为空）
+- 网格布局使用 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 实现响应式
+- sections 使用 py-8 md:py-12 实现响应式间距
+- 空状态处理：当筛选后无教程时显示"该分类下暂无教程"
+---
+
+## 2026-02-04 - US-012
+- 创建 src/app/tutorial/[slug]/page.tsx 教程详情页（动态路由）
+- 使用 ReactMarkdown 渲染 Markdown 内容
+- 配置 rehype-highlight 高亮代码块（使用 github-dark 主题样式）
+- 显示教程标题、描述、难度标签、阅读时间、作者、浏览次数、创建时间
+- 显示相关技能链接
+- 实现 generateStaticParams 函数生成静态路由参数（3个教程页面）
+- 配置 dynamicParams = false 确保所有路由在构建时生成
+- 实现 generateMetadata 函数生成页面元数据
+- 类型检查和构建通过
+
+**Learnings for future iterations:**
+- 动态路由使用 [slug] 目录名创建
+- generateStaticParams 必须返回与路由参数匹配的对象数组 { slug: string }
+- dynamicParams = false 确保所有路由在构建时生成（SSG），非运行时生成
+- ReactMarkdown 的 components prop 需要使用 as Components 类型断言
+- 代码高亮使用 rehype-highlight 插件 + highlight.js 样式文件
+- highlight.js 样式需要单独导入（使用 github-dark.css）
+- ReactMarkdown 组件自定义时，code 组件使用 props: any 解构避免类型错误
+- 外部链接添加 target="_blank" 和 rel="noopener noreferrer" 安全属性
+- 404 页面使用 Next.js 的 notFound() 函数
 ---
