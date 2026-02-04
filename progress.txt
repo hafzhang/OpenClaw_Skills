@@ -251,3 +251,19 @@
 - 主页使用 useEffect 监听 selectedCategory 变化并更新 filteredTutorials
 - 空状态处理：filteredTutorials.length === 0 时显示"该分类下暂无教程"
 ---
+## 2026-02-04 - US-015
+- 实现统一搜索功能，搜索可与场景筛选组合使用
+- 修改 SearchBar 组件，添加 onSearchChange 回调函数支持受控模式
+- 修改主页，添加 searchQuery 状态管理
+- 实现搜索与场景筛选的组合过滤（交集逻辑）：先按分类筛选，再按搜索词过滤
+- 搜索框输入时实时过滤"精选教程"区域的教程
+- 搜索框下拉菜单仍显示所有教程和技能的搜索结果（不受场景筛选影响）
+- 类型检查和构建通过
+
+**Learnings for future iterations:**
+- 搜索和筛选的组合使用交集逻辑：先按分类筛选，再与搜索结果取交集
+- 受控组件模式：通过回调函数（onSearchChange）让子组件向父组件传递状态变化
+- SearchBar 有两个搜索功能：1) 下拉菜单显示所有匹配结果，2) 通过回调通知父组件过滤页面内容
+- 使用 searchQuery.trim() 处理空字符串，避免误触发搜索
+- 使用 filter().some() 模式实现数组交集（categoryFiltered.filter(t => searched.some(s => s.id === t.id))）
+---

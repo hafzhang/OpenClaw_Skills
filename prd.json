@@ -244,8 +244,8 @@
         "验证搜索功能正常工作"
       ],
       "priority": 15,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "搜索与场景筛选组合功能已实现"
     },
     {
       "id": "US-016",
