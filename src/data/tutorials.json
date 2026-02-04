@@ -1,0 +1,56 @@
+[
+  {
+    "id": "tutorial-001",
+    "title": "5 分钟上手 OpenClaw",
+    "slug": "getting-started-with-openclaw",
+    "description": "快速了解 OpenClaw 的基本概念和安装方法，帮助你快速入门这个强大的 AI 助手框架。",
+    "content": "# 5 分钟上手 OpenClaw\n\nOpenClaw 是一个开源的 AI 助手框架，让你能够创建自定义的 AI 助手来完成各种任务。\n\n## 什么是 OpenClaw？\n\nOpenClaw 允许你：\n- 创建自定义 AI 助手\n- 使用各种技能（Skills）扩展功能\n- 与多种 LLM 提供商集成\n\n## 安装\n\n```bash\nnpm install -g openclaw\n```\n\n## 快速开始\n\n1. 初始化项目\n```bash\nopenclaw init my-assistant\ncd my-assistant\n```\n\n2. 配置 API 密钥\n```bash\nopenclaw config set openai.apiKey=your_key_here\n```\n\n3. 运行助手\n```bash\nopenclaw run\n```\n\n## 下一步\n\n阅读[配置你的第一个 Agent](/tutorial/configuring-your-first-agent)教程，学习如何自定义你的 AI 助手。",
+    "category": "quick-start",
+    "tags": ["入门", "安装", "基础"],
+    "difficulty": "beginner",
+    "readTime": 5,
+    "author": "OpenClaw Team",
+    "relatedSkills": ["skill-001", "skill-002"],
+    "stats": {
+      "viewCount": 1250
+    },
+    "createdAt": "2026-01-15T00:00:00Z",
+    "featured": true
+  },
+  {
+    "id": "tutorial-002",
+    "title": "配置你的第一个 Agent",
+    "slug": "configuring-your-first-agent",
+    "description": "学习如何配置和自定义你的第一个 OpenClaw Agent，包括系统提示词、技能绑定和参数设置。",
+    "content": "# 配置你的第一个 Agent\n\n本教程将带你了解如何配置一个功能完整的 OpenClaw Agent。\n\n## 配置文件结构\n\n每个 Agent 都有一个 `claude.json` 配置文件：\n\n```json\n{\n  \"name\": \"My Assistant\",\n  \"description\": \"A helpful coding assistant\",\n  \"system\": \"You are a helpful coding assistant...\",\n  \"skills\": [\"github\", \"code-review\"],\n  \"model\": {\n    \"provider\": \"openai\",\n    \"name\": \"gpt-4\"\n  }\n}\n```\n\n## 系统提示词\n\n系统提示词定义了 Agent 的行为：\n\n```json\n{\n  \"system\": \"You are an expert Python developer. You write clean, well-documented code and explain your reasoning.\"\n}\n```\n\n## 绑定技能\n\n技能扩展了 Agent 的能力：\n\n```json\n{\n  \"skills\": [\n    \"skill-001\",\n    \"skill-003\"\n  ]\n}\n```\n\n## 模型配置\n\n支持多种 LLM 提供商：\n\n```json\n{\n  \"model\": {\n    \"provider\": \"anthropic\",\n    \"name\": \"claude-3-opus-20240229\"\n  }\n}\n```\n\n## 测试你的 Agent\n\n```bash\nopenclaw run --config claude.json\n```",
+    "category": "quick-start",
+    "tags": ["配置", "Agent", "基础"],
+    "difficulty": "beginner",
+    "readTime": 10,
+    "author": "OpenClaw Team",
+    "relatedSkills": ["skill-001", "skill-003", "skill-004"],
+    "stats": {
+      "viewCount": 890
+    },
+    "createdAt": "2026-01-16T00:00:00Z",
+    "featured": true
+  },
+  {
+    "id": "tutorial-003",
+    "title": "代码审查实战",
+    "slug": "code-review-practice",
+    "description": "学习如何使用 OpenClaw 进行自动化的代码审查，提高代码质量和团队协作效率。",
+    "content": "# 代码审查实战\n\n本教程将展示如何使用 OpenClaw 进行高效的代码审查。\n\n## 准备工作\n\n首先，确保你已经安装了代码审查技能：\n\n```bash\nopenclaw skill install github-pr-reviewer\n```\n\n## 配置审查规则\n\n创建 `.openclaw/review-rules.json`：\n\n```json\n{\n  \"rules\": [\n    {\n      \"name\": \"security\",\n      \"severity\": \"error\",\n      \"patterns\": [\"eval(\", \"exec(\", \"os.system\"]\n    },\n    {\n      \"name\": \"performance\",\n      \"severity\": \"warning\",\n      \"maxComplexity\": 10\n    }\n  ]\n}\n```\n\n## 审查单个文件\n\n```bash\nopenclaw review src/main.py\n```\n\n## 审查 PR\n\n```bash\nopenclaw review --pr https://github.com/user/repo/pull/123\n```\n\n## 集成到 CI/CD\n\n在 GitHub Actions 中使用：\n\n```yaml\nname: Code Review\non: [pull_request]\njobs:\n  review:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - name: Run OpenClaw Review\n        run: openclaw review --pr ${{ github.event.pull_request.html_url }}\n```\n\n## 最佳实践\n\n1. 在提交前进行自我审查\n2. 配置适合团队的规则\n3. 定期更新审查规则\n4. 结合人工审查使用",
+    "category": "development",
+    "tags": ["代码审查", "GitHub", "CI/CD", "进阶"],
+    "difficulty": "intermediate",
+    "readTime": 15,
+    "author": "OpenClaw Team",
+    "relatedSkills": ["skill-005", "skill-006"],
+    "stats": {
+      "viewCount": 650
+    },
+    "createdAt": "2026-01-20T00:00:00Z",
+    "featured": true
+  }
+]

@@ -61,7 +61,7 @@
         "JSON 格式有效且能正确解析"
       ],
       "priority": 4,
-      "passes": false,
+      "passes": true,
       "notes": ""
     },
     {

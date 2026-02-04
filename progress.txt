@@ -34,3 +34,18 @@
 - 使用 cn() 工具函数合并类名（来自 src/lib/utils.ts）
 - 支持 Tailwind CSS v4
 ---
+
+## 2026-02-04 - US-003
+- 创建 src/types/index.ts 定义所有 TypeScript 类型
+- Tutorial 接口包含：id, title, slug, description, content, category, tags, difficulty, readTime, author, relatedSkills, stats, createdAt, featured
+- TutorialCategory 接口包含：id, name, icon, description
+- Skill 接口包含：id, name, description, category, tags, author, command, source, verified, url, createdAt
+- 不包含 hot（随机热度）和 rating（随机评分）字段
+- 类型检查通过
+
+**Learnings for future iterations:**
+- 类型定义集中在 src/types/index.ts
+- difficulty 使用字面量类型：'beginner' | 'intermediate' | 'advanced'
+- stats 使用嵌套对象结构 { viewCount: number }
+- 使用 SearchResult 联合类型统一搜索结果
+---
