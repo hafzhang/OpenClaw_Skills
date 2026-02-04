@@ -328,8 +328,8 @@
         "包含元数据格式：frontmatter 或 JSON"
       ],
       "priority": 20,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "创建完整模板，包含结构示例、FAQ 模板、元数据格式说明"
     },
     {
       "id": "US-021",

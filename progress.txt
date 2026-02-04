@@ -338,3 +338,20 @@
 - 技能按 category 分类：development、productivity、system、creative
 - 技能索引页使用 getSkillsByCategory() 和 verified 过滤器
 ---
+
+## 2026-02-04 - US-020
+- 创建教程创作模板 src/templates/tutorial.md
+- 模板包含必需字段说明：标题、描述、难度、阅读时间、前置条件
+- 包含推荐结构：学习目标、背景知识、实战步骤、配置示例、常见问题、进阶内容、相关资源、总结
+- 包含格式规范：Markdown 语法、代码块格式、链接、列表、表格、强调
+- 包含元数据格式说明（JSON 格式用于添加到 tutorials.json）
+- 提供完整的 FAQ 模板和配置示例
+- 构建验证通过
+
+**Learnings for future iterations:**
+- 模板文件存放在 src/templates/ 目录下
+- 模板提供完整的教程结构示例，方便贡献者参考
+- 元数据使用 JSON 格式（非 frontmatter），需要添加到 tutorials.json 中
+- 模板包含代码块格式说明，使用 ```language 指定语言
+- 模板包含常见问题部分，建议每个教程都有 FAQ
+---
