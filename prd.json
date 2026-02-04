@@ -295,8 +295,8 @@
         "包含内容准确性自检清单（代码语法检查、链接可访问性）"
       ],
       "priority": 18,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "教程已在 US-004 中创建，使用 JSON 格式存储（content 字段包含 Markdown），包含所有必需字段和代码示例"
     },
     {
       "id": "US-019",

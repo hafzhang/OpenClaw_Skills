@@ -309,3 +309,17 @@
 - formatDetection 可以禁用浏览器自动格式化（电话号码、地址等）
 - 字体系列已经在项目初始化时通过 Geist 字体配置
 ---
+
+## 2026-02-04 - US-018
+- 确认 3 篇核心教程内容已在 US-004 中创建完成
+- 教程包括：5 分钟上手 OpenClaw、配置你的第一个 Agent、代码审查实战
+- 教程使用 JSON 格式存储（src/data/tutorials.json），content 字段包含 Markdown 内容
+- 每篇教程包含完整的元数据和代码示例
+- 验证教程内容正确渲染在详情页
+
+**Learnings for future iterations:**
+- 教程内容在 US-004 中已创建，存储格式为 JSON（非单独 Markdown 文件）
+- 项目采用 JSON 数据驱动的方式，教程内容在 data/tutorials.json 的 content 字段中
+- 这种方式便于统一管理和类型检查，但牺牲了 Markdown 文件的直接编辑便利性
+- 如需改为文件系统方式，需要重构 getTutorialBySlug 等数据加载函数
+---
