@@ -209,7 +209,7 @@
         "类型检查通过"
       ],
       "priority": 13,
-      "passes": false,
+      "passes": true,
       "notes": ""
     },
     {
