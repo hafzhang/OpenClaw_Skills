@@ -1,0 +1,443 @@
+{
+  "project": "OpenClaw Hub - 实战指南",
+  "branchName": "feature/openclaw-hub-tutorial-first",
+  "description": "OpenClaw Hub 实战指南 MVP - 教程为主 + 技能索引为辅，帮助中文用户快速上手 OpenClaw。4周上线，真实数据，无假数据。",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "初始化 Next.js 项目（TypeScript + Tailwind + Markdown）",
+      "description": "作为开发者，需要设置 Next.js 14 项目，支持 Markdown 教程渲染。",
+      "acceptanceCriteria": [
+        "使用 npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm 创建项目",
+        "在 next.config.js 中配置静态导出 output: 'export'",
+        "安装 react-markdown 和 rehype-highlight",
+        "设置 images.unoptimized: true 以支持静态托管",
+        "添加项目结构：src/app、src/components、src/data、src/lib、src/types、src/templates",
+        "项目运行成功，npm run dev 无错误"
+      ],
+      "priority": 1,
+      "passes": true,
+      "notes": ""
+    },
+    {
+      "id": "US-002",
+      "title": "安装并配置 shadcn/ui 组件",
+      "description": "作为开发者，需要 shadcn/ui 来获取一致的 UI 组件。",
+      "acceptanceCriteria": [
+        "使用 npx shadcn-ui@latest init 安装 shadcn/ui",
+        "添加所需组件：card、button、input、badge",
+        "验证项目根目录存在 components.json",
+        "组件在测试页面中正确渲染"
+      ],
+      "priority": 2,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-003",
+      "title": "定义 Tutorial 和 Skill 的 TypeScript 类型",
+      "description": "作为开发者，需要 TypeScript 接口来确保类型安全。",
+      "acceptanceCriteria": [
+        "创建 src/types/index.ts，包含 Tutorial 接口（id: string、title: string、slug: string、description: string、content: string、category: string、tags: string[]、difficulty: 'beginner' | 'intermediate' | 'advanced'、readTime: number、author: string、relatedSkills: string[]、stats: { viewCount: number }、createdAt: string、featured: boolean）",
+        "创建 TutorialCategory 接口（id: string、name: string、icon: string、description: string）",
+        "创建 Skill 接口（id: string、name: string、description: string、category: string、tags: string[]、author: string、command: string、source: string、verified: boolean、url: string、createdAt: string）",
+        "❌ 不包含 hot（随机热度）字段",
+        "❌ 不包含 rating（随机评分）字段",
+        "类型检查通过，无错误"
+      ],
+      "priority": 3,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-004",
+      "title": "创建初始 tutorials.json 和 skills.json 数据文件",
+      "description": "作为开发者，需要初始数据来进行开发。",
+      "acceptanceCriteria": [
+        "创建 src/data/tutorials.json，包含 3 篇核心教程示例",
+        "创建 src/data/skills.json，包含 10 个技能示例",
+        "每个教程包含所有必需字段（无假数据）",
+        "每个技能包含 verified 字段（验证状态）",
+        "JSON 格式有效且能正确解析"
+      ],
+      "priority": 4,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-005",
+      "title": "创建教程和技能数据操作函数",
+      "description": "作为开发者，需要可复用的函数来访问教程和技能数据。",
+      "acceptanceCriteria": [
+        "创建 src/lib/tutorials.ts，包含 getAllTutorials()、getFeaturedTutorials()、getTutorialsByCategory()、getTutorialBySlug()、searchTutorials() 函数",
+        "创建 src/lib/skills.ts，包含 getAllSkills()、getSkillsByCategory()、searchSkills() 函数",
+        "创建 src/lib/search.ts，包含 searchAll() 统一搜索教程和技能",
+        "函数返回正确的 TypeScript 类型",
+        "类型检查通过"
+      ],
+      "priority": 5,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-006",
+      "title": "创建 Header 组件（教程导向）",
+      "description": "作为用户，需要包含网站标题和搜索框的头部组件。",
+      "acceptanceCriteria": [
+        "创建 src/components/Header.tsx 组件",
+        "显示标题 'OpenClaw 实战指南'",
+        "显示标语 '让 AI 助手真正帮你工作'",
+        "包含统一搜索框（搜索教程 + 技能）",
+        "响应式设计在移动端和桌面端都能正常工作",
+        "类型检查通过"
+      ],
+      "priority": 6,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-007",
+      "title": "创建 TutorialCard 组件",
+      "description": "作为用户，需要以卡片形式查看教程信息。",
+      "acceptanceCriteria": [
+        "创建 src/components/TutorialCard.tsx 组件",
+        "显示教程标题、描述、难度标签、阅读时间",
+        "显示相关技能标签",
+        "显示浏览次数 stats.viewCount（真实统计，非随机热度）",
+        "添加 '开始阅读' 和 '收藏' 按钮",
+        "卡片有悬停效果和适当间距",
+        "类型检查通过"
+      ],
+      "priority": 7,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-008",
+      "title": "创建简化的 SkillCard 组件",
+      "description": "作为用户，需要查看技能信息（辅助功能）。",
+      "acceptanceCriteria": [
+        "创建 src/components/SkillCard.tsx 组件",
+        "显示技能名称、描述、验证状态标签",
+        "显示作者信息",
+        "添加 '复制安装命令' 按钮",
+        "不显示随机热度和评分",
+        "类型检查通过"
+      ],
+      "priority": 8,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-009",
+      "title": "创建 SearchBar 组件（统一搜索）",
+      "description": "作为用户，需要统一搜索教程和技能。",
+      "acceptanceCriteria": [
+        "创建 src/components/SearchBar.tsx 组件",
+        "输入框带搜索图标",
+        "实时搜索，匹配教程标题、描述、标签",
+        "同时搜索技能名称、描述、标签",
+        "搜索结果显示类型标识（教程/技能）",
+        "清除按钮重置搜索",
+        "响应式设计",
+        "类型检查通过"
+      ],
+      "priority": 9,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-010",
+      "title": "创建 CategoryFilter 组件（场景分类）",
+      "description": "作为用户，需要按场景筛选教程。",
+      "acceptanceCriteria": [
+        "创建 src/components/CategoryFilter.tsx 组件",
+        "显示场景分类：快速入门、工作效率、开发辅助、内容创作、创意玩法",
+        "活动分类被高亮显示",
+        "'全部' 显示所有教程",
+        "类型检查通过"
+      ],
+      "priority": 10,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-011",
+      "title": "创建主页（教程导向）",
+      "description": "作为用户，需要一个以教程为主的首页。",
+      "acceptanceCriteria": [
+        "更新 src/app/page.tsx，实现教程导向布局",
+        "Hero 区域：显示标题 'OpenClaw 实战指南' 和副标题 '30 个真实案例，让 AI 助手真正帮你工作'",
+        "包含统一搜索框",
+        "包含 '快速入门' 区域（3 个核心教程）",
+        "包含 '精选教程' 区域（按场景分类）",
+        "包含 '技能索引' 区域（辅助功能，折叠或单独页面）",
+        "类型检查通过"
+      ],
+      "priority": 11,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-012",
+      "title": "创建教程详情页（Markdown 渲染）",
+      "description": "作为用户，需要阅读完整的教程内容。",
+      "acceptanceCriteria": [
+        "创建 src/app/tutorial/[slug]/page.tsx 动态路由",
+        "使用 ReactMarkdown 渲染 Markdown 内容",
+        "配置 rehype-highlight 高亮代码块",
+        "显示教程标题、描述、难度、阅读时间",
+        "显示相关技能链接",
+        "实现 generateStaticParams 函数生成静态路由参数",
+        "配置 dynamicParams = false 确保所有路由在构建时生成",
+        "类型检查通过"
+      ],
+      "priority": 12,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-013",
+      "title": "创建技能索引页（辅助功能）",
+      "description": "作为用户，需要快速浏览所有可用技能。",
+      "acceptanceCriteria": [
+        "创建 src/app/skills/page.tsx",
+        "显示所有验证过的技能",
+        "按字母顺序或分类排列",
+        "每个技能使用简化的 SkillCard",
+        "不显示随机热度和评分",
+        "类型检查通过"
+      ],
+      "priority": 13,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-014",
+      "title": "实现场景筛选功能",
+      "description": "作为用户，希望按场景（快速入门、工作效率等）筛选教程。",
+      "acceptanceCriteria": [
+        "点击场景分类筛选对应教程",
+        "活动分类被视觉高亮",
+        "筛选结果正确显示",
+        "筛选状态在会话期间保持",
+        "重置到 '全部' 显示所有教程",
+        "类型检查通过",
+        "验证筛选功能正常工作"
+      ],
+      "priority": 14,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-015",
+      "title": "实现统一搜索功能",
+      "description": "作为用户，希望同时搜索教程和技能。",
+      "acceptanceCriteria": [
+        "搜索框输入时实时过滤",
+        "搜索匹配教程和技能的名称、描述、标签",
+        "搜索不区分大小写",
+        "搜索结果区分教程和技能类型",
+        "清除按钮重置搜索",
+        "搜索可以与场景筛选组合使用",
+        "类型检查通过",
+        "验证搜索功能正常工作"
+      ],
+      "priority": 15,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-016",
+      "title": "添加移动端响应式设计",
+      "description": "作为用户，需要在手机上良好地使用网站。",
+      "acceptanceCriteria": [
+        "教程卡片网格在移动端变为单列（max-width: 768px）",
+        "头部搜索框在移动端正常显示",
+        "教程内容在移动端可读（字体大小、行高）",
+        "按钮适合触摸（最小高度 44px）",
+        "页面本身无水平滚动",
+        "在移动端视口测试（375px 宽度）",
+        "类型检查通过"
+      ],
+      "priority": 16,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-017",
+      "title": "配置全局布局和 SEO 元数据",
+      "description": "作为开发者，需要适当的布局和 SEO 元数据。",
+      "acceptanceCriteria": [
+        "更新 src/app/layout.tsx，添加适当的 HTML 结构",
+        "添加元数据：title、description、keywords（OpenClaw 教程、OpenClaw 实战、OpenClaw 中文指南）",
+        "设置响应式设计的 viewport meta 标签",
+        "包含品牌颜色在 CSS 变量中",
+        "应用字体系列（Inter 或系统字体）",
+        "类型检查通过"
+      ],
+      "priority": 17,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-018",
+      "title": "创建 3 篇核心教程内容",
+      "description": "作为内容创作者，需要写 3 篇核心教程来启动 MVP。",
+      "acceptanceCriteria": [
+        "写 '5 分钟上手 OpenClaw' 教程（difficulty: beginner, readTime: 5）",
+        "写 '配置你的第一个 Agent' 教程（difficulty: beginner, readTime: 10）",
+        "写 '代码审查实战' 教程（difficulty: intermediate, readTime: 15）",
+        "每篇教程使用 Markdown 格式，存储在 src/content/tutorials/",
+        "包含实际代码示例和配置（基于 OpenClaw 官方文档）",
+        "包含常见问题解答（FAQ）",
+        "每篇教程添加 frontmatter: title, description, difficulty, readTime, category, tags, author, createdAt",
+        "包含内容准确性自检清单（代码语法检查、链接可访问性）"
+      ],
+      "priority": 18,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-019",
+      "title": "准备 10 个验证过的技能数据",
+      "description": "作为开发者，需要准备初始技能数据（全部验证过）。",
+      "acceptanceCriteria": [
+        "准备 10 个技能数据",
+        "每个技能基于其 GitHub 仓库 README 整理",
+        "包含 verified: 'pending' 字段（表示待人工验证）",
+        "包含 GitHub 仓库链接",
+        "包含仓库中记录的安装命令",
+        "不包含随机热度和评分",
+        "保存到 src/data/skills.json",
+        "包含数据来源记录（sourceUrl 字段指向 GitHub）"
+      ],
+      "priority": 19,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-020",
+      "title": "创建教程创作模板",
+      "description": "作为贡献者，需要标准化的教程创作模板。",
+      "acceptanceCriteria": [
+        "创建 src/templates/tutorial.md 模板文件",
+        "包含必需字段：标题、描述、难度、阅读时间、前置条件",
+        "包含推荐结构：学习目标、实战步骤、配置示例、常见问题",
+        "包含格式规范：Markdown 语法、代码块格式",
+        "包含元数据格式：frontmatter 或 JSON"
+      ],
+      "priority": 20,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-021",
+      "title": "创建贡献指南页面",
+      "description": "作为贡献者，需要清晰的贡献指南。",
+      "acceptanceCriteria": [
+        "创建 CONTRIBUTING.md 文件",
+        "说明如何提交教程（Fork -> Branch -> PR）",
+        "说明如何提交技能（GitHub Issues）",
+        "包含教程创作模板链接",
+        "包含技能验证要求",
+        "包含代码规范和审核流程"
+      ],
+      "priority": 21,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-022",
+      "title": "配置静态构建和导出",
+      "description": "作为开发者，需要生成静态 HTML 文件用于部署。",
+      "acceptanceCriteria": [
+        "配置 next.config.js 用于静态导出（output: 'export'）",
+        "成功运行 npm run build",
+        "验证创建了包含静态文件的 'out' 目录",
+        "检查 index.html 包含所有渲染的内容",
+        "教程详情页正确生成静态 HTML",
+        "构建完成无错误"
+      ],
+      "priority": 22,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-023",
+      "title": "部署到 Vercel",
+      "description": "作为开发者，需要将网站部署到 Vercel。",
+      "acceptanceCriteria": [
+        "创建 vercel.json 配置文件（如果需要）",
+        "在 package.json 中添加 vercel-build 脚本",
+        "创建 DEPLOY.md 部署指南文档",
+        "指南包含 Vercel CLI 安装步骤",
+        "指南包含 Git 仓库推送步骤",
+        "指南包含 Vercel 项目导入步骤",
+        "验证 npm run build 能成功生成 out/ 目录",
+        "指南包含部署后的验证检查清单"
+      ],
+      "priority": 23,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-024",
+      "title": "添加 sitemap.xml 用于 SEO",
+      "description": "作为开发者，需要网站地图供搜索引擎使用。",
+      "acceptanceCriteria": [
+        "使用 Next.js 生成 sitemap.xml",
+        "包含主页 URL",
+        "包含所有教程详情页 URL",
+        "设置适当的 changefreq 和 priority",
+        "网站地图可在 /sitemap.xml 访问",
+        "验证 sitemap 格式"
+      ],
+      "priority": 24,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-025",
+      "title": "创建项目 README.md",
+      "description": "作为开发者，需要项目文档。",
+      "acceptanceCriteria": [
+        "创建 README.md 在项目根目录",
+        "包含项目描述：'OpenClaw 实战指南 - 教程为主，技能索引为辅'",
+        "包含快速开始命令",
+        "包含项目结构说明",
+        "包含数据来源说明（手动精选，全部验证）",
+        "包含贡献指南链接"
+      ],
+      "priority": 25,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-026",
+      "title": "使用浏览器 MCP 验证页面完整性",
+      "description": "作为开发者，需要使用浏览器 MCP 工具验证前端页面的完整性和功能。",
+      "acceptanceCriteria": [
+        "启动本地开发服务器 npm run dev",
+        "使用浏览器 MCP 访问 http://localhost:3000 验证首页加载",
+        "验证页面标题正确显示 'OpenClaw 实战指南'",
+        "验证 Header 组件渲染：标题、标语、搜索框",
+        "验证 Hero 区域渲染：标题、副标题、搜索框",
+        "验证教程卡片列表正确渲染（标题、描述、难度标签、阅读时间）",
+        "验证技能索引区域正确渲染",
+        "验证搜索功能：输入关键词能过滤教程和技能",
+        "验证分类筛选功能：点击分类能筛选对应教程",
+        "验证教程详情页：访问 /tutorial/[slug] 能正确渲染 Markdown 内容",
+        "验证技能页面：访问 /skills 能正确渲染所有技能",
+        "验证响应式设计：模拟 375px 宽度移动端布局正常",
+        "验证响应式设计：模拟 1440px 宽度桌面端布局正常",
+        "验证控制台无 JavaScript 错误",
+        "验证所有链接可点击且跳转正确",
+        "生成验证报告，记录通过的检查项和发现的问题"
+      ],
+      "priority": 26,
+      "passes": false,
+      "notes": "等待 US-001 至 US-025 全部完成后执行"
+    }
+  ]
+}
