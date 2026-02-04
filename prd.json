@@ -394,8 +394,8 @@
         "验证 sitemap 格式"
       ],
       "priority": 24,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "创建 sitemap.ts，支持静态导出，包含所有页面 URL"
     },
     {
       "id": "US-025",
