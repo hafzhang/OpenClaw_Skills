@@ -360,8 +360,8 @@
         "构建完成无错误"
       ],
       "priority": 22,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "静态导出已在 US-001 中配置（next.config.ts），构建正常生成 out/ 目录"
     },
     {
       "id": "US-023",

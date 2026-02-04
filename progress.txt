@@ -374,3 +374,24 @@
 - Git 提交使用语义化格式（feat、fix、docs 等）
 - 代码规范包括 JSON 格式（2 空格缩进、双引号）和 TypeScript 规范
 ---
+
+## 2026-02-04 - US-022
+- 验证静态构建和导出配置
+- next.config.ts 已在 US-001 中配置 output: 'export' 和 images.unoptimized: true
+- 运行 npm run build 成功生成 out/ 目录
+- 验证 out/index.html 存在（27KB+，包含完整渲染内容）
+- 验证教程详情页生成静态 HTML：
+  - /tutorial/getting-started-with-openclaw.html
+  - /tutorial/configuring-your-first-agent.html
+  - /tutorial/code-review-practice.html
+- 验证技能页面生成静态 HTML：/skills/index.html
+- 构建完成无错误
+
+**Learnings for future iterations:**
+- 静态导出配置在 next.config.ts 中：output: 'export'
+- images.unoptimized: true 是静态导出所必需的
+- 静态文件生成在 out/ 目录下
+- 每个路由都会生成对应的 HTML 文件（如 /tutorial/[slug] 生成 /tutorial/slug.html）
+- SSG 页面使用 generateStaticParams() 预渲染所有路由
+- 构建输出显示：○ (Static) 和 ● (SSG) 标识
+---
