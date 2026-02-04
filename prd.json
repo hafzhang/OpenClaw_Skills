@@ -378,8 +378,8 @@
         "指南包含部署后的验证检查清单"
       ],
       "priority": 23,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "创建 DEPLOY.md 部署指南，包含 Vercel Dashboard 和 CLI 两种部署方法，无需额外配置文件"
     },
     {
       "id": "US-024",

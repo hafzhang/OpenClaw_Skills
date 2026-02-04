@@ -395,3 +395,26 @@
 - SSG 页面使用 generateStaticParams() 预渲染所有路由
 - 构建输出显示：○ (Static) 和 ● (SSG) 标识
 ---
+
+## 2026-02-04 - US-023
+- 创建 DEPLOY.md 部署指南文档
+- 包含两种部署方法：
+  1. Vercel Dashboard（推荐）- 通过 GitHub 集成自动部署
+  2. Vercel CLI - 命令行手动部署
+- 包含 Vercel CLI 安装步骤：npm install -g vercel
+- 包含 Git 仓库推送步骤和 GitHub 集成说明
+- 包含 Vercel 项目导入和配置步骤
+- 验证 npm run build 能成功生成 out/ 目录
+- 包含部署后的验证检查清单：功能、性能、SEO、移动端
+- 包含常见问题解答（构建失败、404、更新部署、回滚）
+- 包含生产环境建议和成本说明
+- 构建验证通过
+
+**Learnings for future iterations:**
+- Vercel 自动检测 Next.js 项目，无需 vercel.json
+- 静态导出项目需要 Output Directory 设置为 out
+- Vercel 免费套餐支持无限带宽和 100GB 部署/月
+- 推送到 GitHub 会自动触发 Vercel 重新部署
+- 使用 vercel --prod 进行生产部署
+- Vercel 提供 Analytics、Logs、Speed Insights 等监控工具
+---
