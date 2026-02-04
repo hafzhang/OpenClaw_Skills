@@ -439,3 +439,23 @@
 - priority 范围 0-1，1 最高（通常是首页）
 - sitemap 自动构建时生成到 out/sitemap.xml
 ---
+
+## 2026-02-04 - US-025
+- 创建项目 README.md
+- 包含项目描述："OpenClaw 实战指南 - 教程为主，技能索引为辅"
+- 包含快速开始命令：npm install、npm run dev、npm run build、npx serve out
+- 包含项目结构说明（src/app、components、data、lib、types、templates）
+- 包含数据来源说明：手动精选，全部验证
+- 包含贡献指南链接（CONTRIBUTING.md）
+- 包含技术栈说明（Next.js 16、TypeScript、Tailwind CSS v4、shadcn/ui）
+- 包含部署指南链接（DEPLOY.md）
+- 包含许可证和联系方式
+- 构建验证通过
+
+**Learnings for future iterations:**
+- README.md 是项目的门面，应包含所有关键信息
+- 快速开始部分应该简洁明了，让用户快速上手
+- 项目结构用树形图展示更直观
+- 数据来源说明强调"手动精选，全部验证"能增加可信度
+- 链接到其他文档（CONTRIBUTING.md、DEPLOY.md）避免重复内容
+---
