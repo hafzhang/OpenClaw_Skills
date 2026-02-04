@@ -151,3 +151,21 @@
 - max-h-96 overflow-y-auto 实现可滚动的长结果列表
 - 提取独立组件使代码更可维护和可复用
 ---
+
+## 2026-02-04 - US-010
+- 创建 src/components/CategoryFilter.tsx 组件
+- 显示场景分类：全部、快速入门、工作效率、开发辅助、内容创作、创意玩法
+- 活动分类被高亮显示（variant="default" + ring-2 ring-ring ring-offset-2）
+- 导出 CategorySlug 类型和 categories 常量供其他组件使用
+- 通过 onCategoryChange 回调函数处理分类选择
+- 响应式设计（flex-wrap 支持移动端换行）
+- 类型检查和构建通过
+
+**Learnings for future iterations:**
+- CategoryFilter 是客户端组件（需要 'use client'，因为有交互）
+- 导出类型和常量供其他组件使用（CategorySlug, categories）
+- 使用回调函数模式（onCategoryChange）处理状态变化
+- 活动按钮使用 variant="default"，非活动使用 variant="outline"
+- ring-2 ring-ring ring-offset-2 增强活动状态的视觉反馈
+- 使用字面量类型定义分类 slug（'all' | 'quick-start' | 'productivity' | 'development' | 'content' | 'creative'）
+---
