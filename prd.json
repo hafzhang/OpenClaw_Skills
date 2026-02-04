@@ -193,7 +193,7 @@
         "类型检查通过"
       ],
       "priority": 12,
-      "passes": false,
+      "passes": true,
       "notes": ""
     },
     {
