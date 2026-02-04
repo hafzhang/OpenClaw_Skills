@@ -21,3 +21,16 @@
 - 静态导出配置在 next.config.ts 中设置 output: 'export'
 - Windows 环境下避免使用 "nul" 作为文件名
 ---
+
+## 2026-02-04 - US-002
+- 初始化 shadcn/ui，使用 Tailwind CSS v4
+- 安装 card、button、input、badge 四个组件
+- 创建测试页面 /test-components 验证组件渲染
+- 构建验证通过
+
+**Learnings for future iterations:**
+- shadcn/ui 使用 npx shadcn@latest 命令（不是 shadcn-ui@latest）
+- 组件安装在 src/components/ui/ 目录下
+- 使用 cn() 工具函数合并类名（来自 src/lib/utils.ts）
+- 支持 Tailwind CSS v4
+---
