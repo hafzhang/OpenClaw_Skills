@@ -57,14 +57,14 @@ export function SearchBar({ className, placeholder = '搜索教程和技能...',
           placeholder={placeholder}
           value={searchQuery}
           onChange={handleSearchChange}
-          className="pr-10"
+          className="pr-10 min-h-[44px]"
           aria-label="搜索教程和技能"
         />
         {searchQuery && (
           <Button
             variant="ghost"
-            size="icon-xs"
-            className="absolute right-1 top-1/2 -translate-y-1/2 h-7 w-7"
+            size="icon"
+            className="absolute right-1 top-1/2 -translate-y-1/2 h-8 w-8 min-h-[32px] min-w-[32px]"
             onClick={handleClearSearch}
             aria-label="清除搜索"
           >
@@ -85,21 +85,21 @@ export function SearchBar({ className, placeholder = '搜索教程和技能...',
                       ? `/tutorial/${(result.item as any).slug}`
                       : `/skills#${(result.item as any).id}`
                   }
-                  className="block px-4 py-2 hover:bg-accent transition-colors"
+                  className="block px-3 sm:px-4 py-3 hover:bg-accent transition-colors min-h-[44px] flex items-center"
                   onClick={() => {
                     setShowResults(false);
                     setSearchQuery('');
                   }}
                 >
-                  <div className="flex items-start justify-between gap-2">
+                  <div className="flex items-start justify-between gap-2 w-full">
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2">
-                        <span className="font-medium truncate">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="font-medium truncate text-sm sm:text-base">
                           {(result.item as any).title || (result.item as any).name}
                         </span>
                         <span
                           className={cn(
-                            'text-xs px-1.5 py-0.5 rounded',
+                            'text-xs px-1.5 py-0.5 rounded shrink-0',
                             result.type === 'tutorial'
                               ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'
                               : 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300'
@@ -108,7 +108,7 @@ export function SearchBar({ className, placeholder = '搜索教程和技能...',
                           {result.type === 'tutorial' ? '教程' : '技能'}
                         </span>
                       </div>
-                      <p className="text-sm text-muted-foreground truncate">
+                      <p className="text-xs sm:text-sm text-muted-foreground truncate mt-1">
                         {(result.item as any).description}
                       </p>
                     </div>

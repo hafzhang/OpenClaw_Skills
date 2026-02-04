@@ -83,9 +83,9 @@ export default function TutorialPage({ params }: TutorialPageProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-white border-b">
-        <div className="max-w-4xl mx-auto px-4 py-4">
-          <Link href="/" className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900">
+      <header className="bg-white border-b sticky top-0 z-10">
+        <div className="max-w-4xl mx-auto px-4 py-3">
+          <Link href="/" className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 min-h-[44px]">
             <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
@@ -94,25 +94,25 @@ export default function TutorialPage({ params }: TutorialPageProps) {
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-4 py-8">
+      <main className="max-w-4xl mx-auto px-4 py-6 sm:py-8">
         {/* Tutorial Header */}
-        <div className="mb-8">
-          <div className="flex flex-wrap gap-2 mb-4">
+        <div className="mb-6 sm:mb-8">
+          <div className="flex flex-wrap gap-2 mb-3 sm:mb-4">
             <Badge variant={getDifficultyVariant(tutorial.difficulty)}>
               {getDifficultyLabel(tutorial.difficulty)}
             </Badge>
             <Badge variant="outline">{tutorial.readTime} 分钟阅读</Badge>
           </div>
 
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
             {tutorial.title}
           </h1>
 
-          <p className="text-xl text-gray-600 mb-6">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-4 sm:mb-6">
             {tutorial.description}
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-500">
             <span>作者: {tutorial.author}</span>
             <span>•</span>
             <span>浏览 {tutorial.stats.viewCount} 次</span>
@@ -124,7 +124,7 @@ export default function TutorialPage({ params }: TutorialPageProps) {
 
           {/* Tags */}
           {tutorial.tags.length > 0 && (
-            <div className="flex flex-wrap gap-2 mt-4">
+            <div className="flex flex-wrap gap-2 mt-3 sm:mt-4">
               {tutorial.tags.map((tag) => (
                 <Badge key={tag} variant="outline" className="text-xs">
                   {tag}
@@ -136,36 +136,36 @@ export default function TutorialPage({ params }: TutorialPageProps) {
 
         {/* Tutorial Content */}
         <Card>
-          <CardContent className="pt-6">
-            <div className="prose prose-gray max-w-none">
+          <CardContent className="pt-4 sm:pt-6 px-2 sm:px-6">
+            <div className="prose prose-gray max-w-none prose-sm sm:prose-base">
               <ReactMarkdown
                 rehypePlugins={[rehypeHighlight]}
                 components={{
                   h1: ({ children }) => (
-                    <h1 className="text-3xl font-bold mt-8 mb-4 first:mt-0">{children}</h1>
+                    <h1 className="text-2xl sm:text-3xl font-bold mt-6 sm:mt-8 mb-3 sm:mb-4 first:mt-0">{children}</h1>
                   ),
                   h2: ({ children }) => (
-                    <h2 className="text-2xl font-semibold mt-8 mb-3">{children}</h2>
+                    <h2 className="text-xl sm:text-2xl font-semibold mt-6 sm:mt-8 mb-2 sm:mb-3">{children}</h2>
                   ),
                   h3: ({ children }) => (
-                    <h3 className="text-xl font-semibold mt-6 mb-3">{children}</h3>
+                    <h3 className="text-lg sm:text-xl font-semibold mt-4 sm:mt-6 mb-2 sm:mb-3">{children}</h3>
                   ),
                   p: ({ children }) => (
-                    <p className="mb-4 leading-7">{children}</p>
+                    <p className="mb-3 sm:mb-4 leading-6 sm:leading-7 text-sm sm:text-base">{children}</p>
                   ),
                   ul: ({ children }) => (
-                    <ul className="list-disc list-inside mb-4 space-y-2">{children}</ul>
+                    <ul className="list-disc list-inside mb-3 sm:mb-4 space-y-1 sm:space-y-2 text-sm sm:text-base">{children}</ul>
                   ),
                   ol: ({ children }) => (
-                    <ol className="list-decimal list-inside mb-4 space-y-2">{children}</ol>
+                    <ol className="list-decimal list-inside mb-3 sm:mb-4 space-y-1 sm:space-y-2 text-sm sm:text-base">{children}</ol>
                   ),
                   li: ({ children }) => (
-                    <li className="text-gray-700">{children}</li>
+                    <li className="text-gray-700 text-sm sm:text-base">{children}</li>
                   ),
                   a: ({ href, children }) => (
                     <a
                       href={href}
-                      className="text-blue-600 hover:text-blue-800 underline"
+                      className="text-blue-600 hover:text-blue-800 underline break-words"
                       target={href?.startsWith('http') ? '_blank' : undefined}
                       rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined}
                     >
@@ -177,7 +177,7 @@ export default function TutorialPage({ params }: TutorialPageProps) {
                     const isInline = !className;
                     return (
                       <code
-                        className={isInline ? 'bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-pink-600' : className}
+                        className={isInline ? 'bg-gray-100 px-1 py-0.5 rounded text-xs sm:text-sm font-mono text-pink-600 break-words' : className}
                         {...rest}
                       >
                         {children}
@@ -185,12 +185,12 @@ export default function TutorialPage({ params }: TutorialPageProps) {
                     );
                   },
                   pre: ({ children }) => (
-                    <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4">
+                    <pre className="bg-gray-900 text-gray-100 p-3 sm:p-4 rounded-lg overflow-x-auto mb-3 sm:mb-4 text-xs sm:text-sm">
                       {children}
                     </pre>
                   ),
                   blockquote: ({ children }) => (
-                    <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-600 my-4">
+                    <blockquote className="border-l-4 border-gray-300 pl-3 sm:pl-4 italic text-gray-600 my-3 sm:my-4 text-sm sm:text-base">
                       {children}
                     </blockquote>
                   ),
@@ -203,9 +203,9 @@ export default function TutorialPage({ params }: TutorialPageProps) {
 
           {/* Related Skills */}
           {tutorial.relatedSkills.length > 0 && (
-            <CardFooter className="border-t bg-gray-50">
+            <CardFooter className="border-t bg-gray-50 px-2 sm:px-6">
               <div className="w-full">
-                <h3 className="text-sm font-semibold text-gray-700 mb-3">
+                <h3 className="text-xs sm:text-sm font-semibold text-gray-700 mb-2 sm:mb-3">
                   相关技能
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -223,9 +223,9 @@ export default function TutorialPage({ params }: TutorialPageProps) {
         </Card>
 
         {/* Back to Home Button */}
-        <div className="mt-8">
+        <div className="mt-6 sm:mt-8">
           <Link href="/">
-            <Button variant="outline">
+            <Button variant="outline" className="min-h-[44px]">
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>

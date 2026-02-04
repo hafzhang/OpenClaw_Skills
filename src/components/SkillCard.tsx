@@ -42,12 +42,12 @@ export function SkillCard({ skill }: SkillCardProps) {
       </CardHeader>
 
       <CardFooter className="flex items-center justify-between gap-2 text-sm text-muted-foreground">
-        <span>作者: {author}</span>
+        <span className="text-xs md:text-sm">作者: {author}</span>
         <Button
           variant="outline"
           size="sm"
           onClick={handleCopyCommand}
-          className="gap-1.5"
+          className="gap-1.5 min-h-[44px]"
         >
           {copied ? (
             <>
@@ -64,7 +64,7 @@ export function SkillCard({ skill }: SkillCardProps) {
               >
                 <polyline points="20 6 9 17 4 12" />
               </svg>
-              已复制
+              <span className="hidden sm:inline">已复制</span>
             </>
           ) : (
             <>
@@ -82,7 +82,7 @@ export function SkillCard({ skill }: SkillCardProps) {
                 <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
                 <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
               </svg>
-              复制命令
+              <span className="hidden sm:inline">复制命令</span>
             </>
           )}
         </Button>

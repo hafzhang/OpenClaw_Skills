@@ -51,10 +51,10 @@ export function TutorialCard({ tutorial }: TutorialCardProps) {
       </CardContent>
 
       <CardFooter className="gap-2">
-        <Button asChild className="flex-1">
+        <Button asChild className="flex-1 min-h-[44px]">
           <Link href={`/tutorial/${slug}`}>开始阅读</Link>
         </Button>
-        <Button variant="outline" size="icon" aria-label="收藏教程">
+        <Button variant="outline" size="icon" aria-label="收藏教程" className="min-h-[44px] min-w-[44px]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"

@@ -40,7 +40,7 @@ export function CategoryFilter({
           size="sm"
           onClick={() => onCategoryChange(category.slug)}
           className={cn(
-            'transition-all',
+            'transition-all min-h-[44px]',
             selectedCategory === category.slug && 'ring-2 ring-ring ring-offset-2'
           )}
         >
