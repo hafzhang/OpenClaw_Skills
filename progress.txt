@@ -216,3 +216,22 @@
 - 外部链接添加 target="_blank" 和 rel="noopener noreferrer" 安全属性
 - 404 页面使用 Next.js 的 notFound() 函数
 ---
+
+## 2026-02-04 - US-013
+- 创建 src/app/skills/page.tsx 技能索引页
+- 按分类组织技能（开发辅助、工作效率、系统工具、创意工具）
+- 使用 SkillCard 组件显示每个技能
+- 只显示验证过的技能（verified: true）
+- 显示每个分类下的技能数量和描述
+- 添加"提交新技能"说明卡片
+- 不显示随机热度和评分
+- 类型检查和构建通过
+
+**Learnings for future iterations:**
+- 技能索引页是服务端组件（无需 'use client'）
+- 使用 getSkillsByCategory() 和 filter() 获取分类下的验证技能
+- 技能分类映射使用本地常量数组 skillCategories
+- 过滤空分类：categoriesWithSkills = skillsByCategory.filter(cat => cat.skills.length > 0)
+- 使用 muted/50 background 创建视觉分隔的说明卡片
+- 网格布局使用 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 实现响应式
+---
