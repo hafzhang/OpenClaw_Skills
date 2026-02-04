@@ -288,3 +288,24 @@
 - prose-sm sm:prose-base 用于响应式文章排版
 - 使用 break-words 防止长文本溢出容器
 ---
+
+## 2026-02-04 - US-017
+- 配置全局布局和 SEO 元数据
+- 添加完整的 SEO metadata：title（支持模板）、description、keywords
+- 添加 Open Graph 元数据：type、locale、url、title、description、siteName
+- 添加 Twitter Card 元数据：card、title、description
+- 添加 robots 配置：index、follow、googleBot 配置
+- 添加 viewport 配置作为独立导出（Next.js 15+ 新规范）
+- 添加 formatDetection 禁用自动格式检测（email、address、telephone）
+- 设置 metadataBase 为 https://openclaw-hub.vercel.app
+- 构建验证通过，无警告
+
+**Learnings for future iterations:**
+- Next.js 15+ 要求 viewport 配置作为独立导出，不能放在 metadata 中
+- Viewport 类型需要从 "next" 导入：import type { Viewport }
+- SEO metadata 结构：title 支持模板（template: "%s | 站点名称"）
+- metadataBase 设置会影响所有相对 URL 的生成
+- Open Graph 和 Twitter Card 元数据用于社交分享预览
+- formatDetection 可以禁用浏览器自动格式化（电话号码、地址等）
+- 字体系列已经在项目初始化时通过 Geist 字体配置
+---
