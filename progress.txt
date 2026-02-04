@@ -94,3 +94,22 @@
 - 使用 cn() 函数合并响应式类名
 - 搜索结果链接：教程使用 /tutorial/[slug]，技能使用 /skills#id
 ---
+
+## 2026-02-04 - US-007
+- 创建 src/components/TutorialCard.tsx 组件
+- 显示教程标题、描述、难度标签（入门/进阶/高级）
+- 显示阅读时间和浏览次数（stats.viewCount，真实统计）
+- 显示相关技能标签（relatedSkills）
+- 添加"开始阅读"和"收藏"按钮
+- 卡片悬停效果（hover:shadow-md transition-shadow）
+- 标题链接到教程详情页 /tutorial/[slug]
+- 类型检查和构建通过
+
+**Learnings for future iterations:**
+- TutorialCard 是服务端组件（无需 'use client'）
+- 使用 shadcn/ui 的 Card 组件作为基础结构
+- 难度标签使用 Badge 组件，不同难度对应不同 variant
+- 收藏按钮使用 SVG 图标
+- 使用 Link 组件进行客户端导航（非 <a> 标签）
+- group 和 group-hover 类实现父元素悬停时子元素样式变化
+---
