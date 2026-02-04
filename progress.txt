@@ -132,3 +132,22 @@
 - 使用 setTimeout 2秒后重置复制状态
 - 验证状态使用 Badge 组件显示（verified ? 'default' : 'secondary'）
 ---
+
+## 2026-02-04 - US-009
+- 创建 src/components/SearchBar.tsx 独立组件
+- 实时搜索，匹配教程标题、描述、标签和技能名称、描述、标签
+- 搜索结果显示类型标识（教程/技能），使用不同颜色区分
+- 清除按钮重置搜索
+- 响应式设计（通过 className prop 支持自定义宽度）
+- 重构 Header 组件使用 SearchBar 组件（简化代码）
+- 使用动态 import('@/lib/search') 处理 searchAll 函数
+- 类型检查和构建通过
+
+**Learnings for future iterations:**
+- SearchBar 是客户端组件（需要 'use client'，因为有搜索交互）
+- 使用动态 import() 避免服务端渲染时导入客户端专用模块
+- import() 返回 Promise，使用 .then() 处理异步结果
+- 搜索结果下拉菜单使用 absolute z-50 确保在其他内容之上
+- max-h-96 overflow-y-auto 实现可滚动的长结果列表
+- 提取独立组件使代码更可维护和可复用
+---
