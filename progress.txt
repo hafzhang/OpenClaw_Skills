@@ -49,3 +49,31 @@
 - stats 使用嵌套对象结构 { viewCount: number }
 - 使用 SearchResult 联合类型统一搜索结果
 ---
+
+## 2026-02-04 - US-004
+- 创建 src/data/tutorials.json，包含 3 篇核心教程（5分钟上手、配置Agent、代码审查）
+- 创建 src/data/skills.json，包含 10 个技能（GitHub、文件系统、搜索、代码执行等）
+- 教程包含 Markdown 格式的 content 字段
+- 技能包含 verified: true 字段
+- JSON 格式验证通过
+
+**Learnings for future iterations:**
+- 数据文件存放在 src/data/ 目录下
+- tutorials.json 中的 content 是 Markdown 格式，需要注意 JSON 转义
+- 技能使用 skill-001 到 skill-010 的 ID 格式
+- 教程使用 tutorial-001 到 tutorial-003 的 ID 格式
+- viewCount 使用真实统计数据，不是随机热度
+---
+
+## 2026-02-04 - US-005
+- 创建 src/lib/tutorials.ts 数据操作函数：getAllTutorials()、getFeaturedTutorials()、getTutorialsByCategory()、getTutorialBySlug()、searchTutorials()
+- 创建 src/lib/skills.ts 数据操作函数：getAllSkills()、getSkillsByCategory()、getVerifiedSkills()、searchSkills()
+- 创建 src/lib/search.ts 统一搜索函数：searchAll() 同时搜索教程和技能
+- 类型检查和构建通过
+
+**Learnings for future iterations:**
+- 数据操作函数统一存放在 src/lib/ 目录
+- 导入 JSON 数据时需要使用断言 as Tutorial[] / as Skill[]
+- 搜索功能使用 query.toLowerCase() 实现不区分大小写搜索
+- searchAll() 返回 SearchResult[] 类型，包含 type 字段区分教程和技能
+---
