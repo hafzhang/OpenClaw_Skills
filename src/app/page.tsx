@@ -6,31 +6,44 @@ import { SearchBar } from '@/components/SearchBar';
 import { TutorialCard } from '@/components/TutorialCard';
 import { SkillCard } from '@/components/SkillCard';
 import { CategoryFilter, CategorySlug } from '@/components/CategoryFilter';
-import { getAllTutorials, getFeaturedTutorials } from '@/lib/tutorials';
+import { getAllTutorials, getFeaturedTutorials, searchTutorials } from '@/lib/tutorials';
 import { getAllSkills } from '@/lib/skills';
 import { Tutorial, Skill } from '@/types';
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = React.useState<CategorySlug>('all');
+  const [searchQuery, setSearchQuery] = React.useState('');
   const [filteredTutorials, setFilteredTutorials] = React.useState<Tutorial[]>([]);
   const [displayedSkills, setDisplayedSkills] = React.useState<Skill[]>([]);
 
-  // Load initial data
+  // Load initial data and apply filters
   React.useEffect(() => {
     const allTutorials = getAllTutorials();
     const featured = getFeaturedTutorials();
     const allSkills = getAllSkills();
 
-    // Set filtered tutorials based on selected category
+    // First filter by category
+    let categoryFiltered: Tutorial[];
     if (selectedCategory === 'all') {
-      setFilteredTutorials(featured);
+      categoryFiltered = featured;
     } else {
-      setFilteredTutorials(allTutorials.filter(t => t.category === selectedCategory));
+      categoryFiltered = allTutorials.filter(t => t.category === selectedCategory);
+    }
+
+    // Then filter by search query if present
+    if (searchQuery.trim()) {
+      const searched = searchTutorials(searchQuery);
+      // Intersect: keep only tutorials that are in both category filter and search results
+      setFilteredTutorials(categoryFiltered.filter(t =>
+        searched.some(s => s.id === t.id)
+      ));
+    } else {
+      setFilteredTutorials(categoryFiltered);
     }
 
     // Display first 6 skills as auxiliary section
     setDisplayedSkills(allSkills.slice(0, 6));
-  }, [selectedCategory]);
+  }, [selectedCategory, searchQuery]);
 
   const quickStartTutorials = React.useMemo(() => {
     const allTutorials = getAllTutorials();
@@ -51,7 +64,7 @@ export default function Home() {
             30 个真实案例，让 AI 助手真正帮你工作
           </p>
           <div className="max-w-2xl mx-auto">
-            <SearchBar />
+            <SearchBar onSearchChange={setSearchQuery} />
           </div>
         </section>
 

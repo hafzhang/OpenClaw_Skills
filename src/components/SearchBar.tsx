@@ -9,9 +9,10 @@ import { SearchResult } from '@/types';
 interface SearchBarProps {
   className?: string;
   placeholder?: string;
+  onSearchChange?: (query: string) => void;
 }
 
-export function SearchBar({ className, placeholder = '搜索教程和技能...' }: SearchBarProps) {
+export function SearchBar({ className, placeholder = '搜索教程和技能...', onSearchChange }: SearchBarProps) {
   const [searchQuery, setSearchQuery] = React.useState('');
   const [searchResults, setSearchResults] = React.useState<SearchResult[]>([]);
   const [showResults, setShowResults] = React.useState(false);
@@ -19,6 +20,11 @@ export function SearchBar({ className, placeholder = '搜索教程和技能...' 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const query = e.target.value;
     setSearchQuery(query);
+
+    // Notify parent component of search query change
+    if (onSearchChange) {
+      onSearchChange(query);
+    }
 
     if (query.trim()) {
       // Import searchAll dynamically to avoid server-side issues
@@ -37,6 +43,10 @@ export function SearchBar({ className, placeholder = '搜索教程和技能...' 
     setSearchQuery('');
     setSearchResults([]);
     setShowResults(false);
+    // Notify parent component of search clear
+    if (onSearchChange) {
+      onSearchChange('');
+    }
   };
 
   return (
