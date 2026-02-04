@@ -235,3 +235,19 @@
 - 使用 muted/50 background 创建视觉分隔的说明卡片
 - 网格布局使用 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 实现响应式
 ---
+
+## 2026-02-04 - US-014
+- 验证场景筛选功能实现（已在 US-010 和 US-011 中完成）
+- 点击分类按钮筛选对应教程（src/app/page.tsx:28）
+- 活动分类使用 variant="default" + ring-2 ring-ring ring-offset-2 视觉高亮
+- 筛选结果使用 useState 管理状态，在会话期间保持
+- 重置到"全部"显示精选教程
+- 类型检查和构建通过
+
+**Learnings for future iterations:**
+- 场景筛选功能在之前的用户故事中已经实现完成
+- 验证现有实现时，需要检查所有验收标准是否满足
+- CategoryFilter 组件使用回调函数模式（onCategoryChange）处理状态变化
+- 主页使用 useEffect 监听 selectedCategory 变化并更新 filteredTutorials
+- 空状态处理：filteredTutorials.length === 0 时显示"该分类下暂无教程"
+---

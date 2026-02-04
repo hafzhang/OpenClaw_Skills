@@ -226,8 +226,8 @@
         "验证筛选功能正常工作"
       ],
       "priority": 14,
-      "passes": false,
-      "notes": ""
+      "passes": true,
+      "notes": "功能已在 US-010 和 US-011 中实现，验证通过"
     },
     {
       "id": "US-015",
