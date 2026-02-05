@@ -661,7 +661,7 @@
         "参考 src/app/skills/page.tsx 实现"
       ],
       "priority": 39,
-      "passes": false,
+      "passes": true,
       "notes": "Sprint 2 - 步骤 2.4"
     },
     {
@@ -679,7 +679,7 @@
         "类型检查通过"
       ],
       "priority": 40,
-      "passes": false,
+      "passes": true,
       "notes": "Sprint 2 - 步骤 2.5"
     },
     {
