@@ -992,8 +992,8 @@
         "添加使用场景说明（可选）"
       ],
       "priority": 56,
-      "passes": false,
-      "notes": "Sprint 6 - 步骤 6.4"
+      "passes": true,
+      "notes": "✅ 已完成 - 160 个新技能的中文描述已完善：中文名称、简短描述(50-100字)、技术术语保持准确性、标签包含中文翻译"
     },
     {
       "id": "US-057",
@@ -1008,8 +1008,8 @@
         "验证 slug 无重复"
       ],
       "priority": 57,
-      "passes": false,
-      "notes": "Sprint 6 - 步骤 6.5"
+      "passes": true,
+      "notes": "✅ 已完成 - 160 个验证通过的候选技能已有唯一 slug（kebab-case）和分类，docs/skill-candidates-phase3.json 中定义完整"
     },
     {
       "id": "US-058",
@@ -1026,8 +1026,8 @@
         "npm run build 构建成功"
       ],
       "priority": 58,
-      "passes": false,
-      "notes": "Sprint 6 - 步骤 6.6"
+      "passes": true,
+      "notes": "✅ 已完成 - src/data/skills.json 已更新，包含 200 个技能（40 保留 + 160 新增）。分类：development(47), productivity(45), devops(41), ai-llms(21), utilities(46)。所有 slug 唯一，verified: true，构建成功生成 244 个页面"
     },
     {
       "id": "US-059",
