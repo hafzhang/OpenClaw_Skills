@@ -746,3 +746,36 @@
 - JSON 配置使用 JSON.stringify(config, null, 2) 格式化（2 空格缩进）
 - 代码块使用 bg-muted 背景色和 rounded-lg 圆角，overflow-x-auto 支持横向滚动
 ---
+
+## 2026-02-05 - US-042
+- 更新 src/types/index.ts：SearchResult 类型添加 'config' 选项
+- 在 src/lib/configs.ts 中添加 searchConfigs(query: string) 函数
+- 更新 src/lib/search.ts 的 searchAll() 函数包含配置搜索
+- 更新 SearchBar 组件支持配置搜索结果
+  - 添加紫色徽章标识配置（教程=蓝色，技能=绿色，配置=紫色）
+  - 更新占位符为"搜索教程、技能和配置..."
+  - 配置结果链接到 /configs/[slug]
+  - 添加 getResultTypeLabel() 和 getResultTypeColor() 辅助函数
+  - 添加 getResultHref() 函数统一处理不同类型的链接
+- 在主页 (/) 添加"Agent 配置分享"区域
+  - 显示标题和描述
+  - 添加"浏览配置"按钮链接到 /configs
+- 更新 aria-label 提升无障碍访问性
+- 类型检查和构建验证通过
+
+**Files changed:**
+- src/types/index.ts (SearchResult 类型添加 'config')
+- src/lib/configs.ts (添加 searchConfigs 函数)
+- src/lib/search.ts (searchAll 包含配置)
+- src/components/SearchBar.tsx (支持配置搜索结果)
+- src/app/page.tsx (添加配置分享区域)
+- prd.json (标记 US-042 完成)
+
+**Learnings for future iterations:**
+- SearchResult 联合类型需要包含所有可搜索内容类型（tutorial | skill | config）
+- searchConfigs 遵循与 searchTutorials 和 searchSkills 相同的模式
+- SearchBar 使用辅助函数（getResultTypeLabel、getResultTypeColor、getResultHref）避免重复代码
+- 不同类型使用不同颜色徽章：教程(蓝色)、技能(绿色)、配置(紫色)
+- 配置详情页使用 /configs/[slug] 路由，与其他内容类型一致
+- 主页添加配置分享区域，采用简洁的标题+按钮设计
+---

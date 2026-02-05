@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { getAllTutorials } from '@/lib/tutorials';
 import { getAllSkills } from '@/lib/skills';
+import { getAllConfigs } from '@/lib/configs';
 
 export const dynamic = 'force-static';
 
@@ -17,6 +18,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/skills`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/configs`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
@@ -39,5 +46,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...tutorials, ...skills];
+  // Config detail pages - dynamically generate from configs.json
+  const configs: MetadataRoute.Sitemap = getAllConfigs().map((config) => ({
+    url: `${baseUrl}/configs/${config.slug}`,
+    lastModified: new Date(config.updatedAt),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...tutorials, ...skills, ...configs];
 }
