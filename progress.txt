@@ -586,3 +586,23 @@
 - 卡片使用 hover:shadow-md transition-shadow 实现悬停效果
 - 类型守卫 filter((s): s is Skill => s !== undefined) 确保类型安全
 ---
+
+## 2026-02-05 - US-035
+- 更新 src/app/sitemap.ts 动态生成 sitemap
+- 添加所有技能详情页 URL (/skills/[slug]) - 40 个技能
+- 动态生成所有教程详情页 URL (/tutorial/[slug]) - 10 个教程
+- 设置适当的 changefreq（monthly）和 priority（教程 0.9，技能 0.7）
+- sitemap 总计 52 个 URL（2 个静态页面 + 10 个教程 + 40 个技能）
+- 构建验证通过，sitemap.xml 正确生成
+
+**Files changed:**
+- src/app/sitemap.ts (动态生成教程和技能 URL)
+- prd.json (标记 US-035 完成)
+
+**Learnings for future iterations:**
+- sitemap.ts 可以动态读取 JSON 数据生成 URL 列表
+- 使用 getAllTutorials() 和 getAllSkills() 动态获取数据
+- changeFrequency 需要使用 `as const` 类型断言以满足 MetadataRoute.Sitemap 类型
+- 技能详情页 priority 低于教程详情页（0.7 vs 0.9）因为教程是主要内容
+- lastModified 使用 createdAt 日期，保持数据一致性
+---

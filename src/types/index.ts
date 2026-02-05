@@ -48,3 +48,22 @@ export interface SearchResult {
   type: 'tutorial' | 'skill';
   item: Tutorial | Skill;
 }
+
+export interface AgentConfig {
+  id: string;
+  name: string;
+  slug: string;
+  description: string;
+  author: string;
+  config: Record<string, unknown>;
+  category: string;
+  tags: string[];
+  longDescription?: string;
+  authorUrl?: string;
+  relatedConfigs?: string[];
+  likesCount?: number;
+  forksCount?: number;
+  isOfficial?: boolean;
+  createdAt: string;
+  updatedAt: string;
+}
