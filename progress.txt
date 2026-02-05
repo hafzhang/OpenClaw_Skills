@@ -956,3 +956,71 @@ Final Verification Results:
 - 教程字数要求：Beginner 2000+, Intermediate 2500+, Advanced 3000+
 - 代码示例数量要求：Beginner 5+, Intermediate 6+, Advanced 8+
 ---
+
+## 2026-02-05 - US-048
+- 编写 7 篇 Beginner 教程（tutorial-011 至 tutorial-017）
+
+**新增教程：**
+1. Tutorial-011: Python 自动化入门（2100+ 字）
+   - 5 个代码示例：文件操作、数据处理、目录操作、定时任务、批量处理
+   - 2 个实战案例：销售数据自动化报告、文件监控系统
+   - FAQ：大文件处理、编码问题、定期运行方法
+
+2. Tutorial-012: Node.js 开发实战（2200+ 字）
+   - 5 个代码示例：Express 初始化、RESTful API、MongoDB 集成、输入验证、文件上传
+   - 2 个实战案例：博客 API、文件上传系统
+   - FAQ：异步错误处理、应用组织、邮件示例
+
+3. Tutorial-013: Git 版本控制精通（2300+ 字）
+   - 5 个代码示例：仓库操作、分支管理、rebase 操作、冲突解决、变基工作流
+   - 2 个实战案例：自动化 PR Review、回滚和恢复
+   - FAQ：撤销暂存、查看历史、恢复分支
+
+4. Tutorial-014: 数据分析自动化（2400+ 字）
+   - 5 个代码示例：API 数据收集、Web 爬虫、数据清洗、统计分析、可视化
+   - 2 个实战案例：销售数据完整分析、HTML 报告生成
+   - FAQ：数据质量检查、自动化调度、最佳实践
+
+5. Tutorial-015: 邮件自动化处理（2200+ 字）
+   - 5 个代码示例：SMTP 发送、批量发送、IMAP 读取、自动分类、自动回复
+   - 2 个实战案例：定期报告邮件、邮件提醒系统
+   - FAQ：避免垃圾邮件、附件大小限制、应用专用密码
+
+6. Tutorial-016: 任务管理系统集成（2300+ 字）
+   - 5 个代码示例：Jira Issue 创建、Trello 卡片操作、Asana 任务、Todoist 快速添加、跨平台同步
+   - 2 个实战案例：自动化 Bug 报告流程、跨平台任务同步
+   - FAQ：错误处理、配置管理、日志记录
+
+7. Tutorial-017: 笔记和知识管理（2100+ 字）
+   - 5 个代码示例：快速笔记、会议笔记、自动分类、全文搜索、模板系统
+   - 2 个实战案例：自动化学习笔记系统、Zettelkasten 方法
+   - FAQ：知识分类体系、间隔重复、定期复习
+
+**质量标准验证：**
+- ✅ 每篇教程 2000+ 字
+- ✅ 每篇包含 5+ 代码示例
+- ✅ 每篇包含 2+ 实战案例
+- ✅ 每篇包含 FAQ 部分
+- ✅ 语言简洁易懂，适合初学者
+- ✅ 添加相关技能链接
+- ✅ 正确设置难度标签和阅读时间
+- ✅ npm run build 构建成功（71 个页面）
+
+**Files changed:**
+- src/data/tutorials.json (添加 7 个教程)
+- src/templates/CLAUDE.md (更新教程内容存储模式说明)
+
+**Learnings for future iterations:**
+- 教程内容存储在 tutorials.json 的 content 字段中（非单独 Markdown 文件）
+- 每个教程包含完整的 Markdown 内容，需要正确转义特殊字符
+- 使用 JSON.stringify() 可以正确转义 Markdown 内容为 JSON 字符串
+- 教程 ID 使用 tutorial-XXX 格式（XXX 从 011 开始递增）
+- 相关技能使用 skill ID 数组，与 skills.json 中的 id 字段对应
+- 难度必须设置为 'beginner'，阅读时间估算基于字数和代码复杂度
+- 教程 slug 使用 kebab-case 格式，确保唯一性
+- 代码示例必须实用且可运行，避免硬编码敏感信息
+- FAQ 应涵盖安装配置、使用问题、错误排查、最佳实践
+- 实战案例需要展示真实的应用场景和完整的工作流程
+- 构建时所有教程详情页会自动生成静态 HTML 文件
+- 总教程数：10 → 17，总页面数：64 → 71
+---
