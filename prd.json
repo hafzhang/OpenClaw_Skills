@@ -747,7 +747,7 @@
         "npm run build 构建成功"
       ],
       "priority": 44,
-      "passes": false,
+      "passes": true,
       "notes": "Sprint 2 - 步骤 2.9"
     },
     {

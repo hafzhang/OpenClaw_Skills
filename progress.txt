@@ -779,3 +779,25 @@
 - 配置详情页使用 /configs/[slug] 路由，与其他内容类型一致
 - 主页添加配置分享区域，采用简洁的标题+按钮设计
 ---
+
+## 2026-02-05 - US-043
+- 更新 src/app/sitemap.ts 包含配置页面
+- 添加 /configs 静态页面到 sitemap（priority 0.8, changefreq weekly）
+- 添加所有配置详情页 /configs/[slug] 到 sitemap
+- 配置详情页设置 changefreq: monthly, priority: 0.6
+- 使用 updatedAt 时间戳作为 lastModified（配置更新时间）
+- 导入 getAllConfigs 从 @/lib/configs
+- sitemap 总计 57 个 URL（3 个静态页面 + 10 个教程 + 40 个技能 + 5 个配置 - 1 个 /skills 因为现在是静态页）
+- 构建验证通过，sitemap.xml 正确生成
+
+**Files changed:**
+- src/app/sitemap.ts (添加配置页面)
+- prd.json (标记 US-043 完成)
+
+**Learnings for future iterations:**
+- 配置详情页 priority 设置为 0.6，低于教程(0.9)和技能(0.7)
+- 使用 updatedAt 而非 createdAt 作为 lastModified，因为配置可能被更新
+- /configs 是静态页面，priority 0.8 与 /skills 相同
+- sitemap 动态生成确保添加新配置时自动包含
+- total URL count: 1 (home) + 1 (skills) + 1 (configs) + 10 (tutorials) + 40 (skills) + 5 (configs) = 58
+---
