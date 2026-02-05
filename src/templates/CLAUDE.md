@@ -96,6 +96,7 @@ Before publishing a tutorial:
 - **Content escaping**: When adding tutorial content to tutorials.json, the Markdown content must be escaped for JSON (use `JSON.stringify()`)
 - **Slug uniqueness**: Tutorial slugs must be unique across all tutorials
 - **ID format**: Use tutorial-XXX format for IDs (increment from highest existing)
+- **Tutorial content in JSON**: Tutorial content is stored as a string within the JSON object, not as separate Markdown files. When adding tutorials, ensure the content field contains the full tutorial content in Markdown format, properly escaped for JSON
 
 ## File Modification Guidelines
 
