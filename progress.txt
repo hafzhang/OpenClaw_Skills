@@ -670,3 +670,48 @@
 - 所有函数都包含 JSDoc 注释说明参数和返回值类型
 - 函数命名遵循约定：getAll + getBy + get[Filter]
 ---
+
+## 2026-02-05 - US-040
+- 创建 src/components/ConfigCard.tsx 组件（客户端组件）
+- 显示配置名称、描述、作者
+- 显示点赞数和分支数（带 SVG 图标）
+- 显示分类标签和官方认证徽章
+- 显示标签（最多显示 3 个）
+- 添加"查看配置"按钮，链接到详情页
+- 卡片悬停效果（hover:shadow-md transition-shadow）
+- 响应式设计（text-xs md:text-sm, hidden sm:inline）
+
+**Files changed:**
+- src/components/ConfigCard.tsx (新建)
+
+**Learnings for future iterations:**
+- ConfigCard 是客户端组件（'use client'），使用 Link 导航
+- 使用 getCategoryLabel 函数映射英文分类 slug 到中文显示名称
+- 点赞和分支数使用内联 SVG 图标显示（14px）
+- 标签使用 slice(0, 3) 限制最多显示 3 个，避免卡片过长
+- 徽章组合：官方认证用 default variant，分类用 outline variant
+---
+
+## 2026-02-05 - US-039
+- 创建 src/app/configs/page.tsx 配置列表页（客户端组件）
+- 按分类组织配置：开发辅助、工作效率、学习教学
+- 使用 ConfigCard 组件展示每个配置
+- 支持按分类筛选（全部、开发辅助、工作效率、学习教学）
+- 添加搜索功能，匹配配置名称、描述、标签
+- 活动分类使用 variant="default" + ring 效果
+- 空状态处理：未找到配置时显示提示信息
+- 底部添加"分享你的配置"说明卡片
+- 响应式网格布局（grid-cols-1 md:grid-cols-2 lg:grid-cols-3）
+
+**Files changed:**
+- src/app/configs/page.tsx (新建)
+- prd.json (标记 US-039 和 US-040 完成)
+
+**Learnings for future iterations:**
+- 配置列表页是客户端组件（'use client'），因为有交互式筛选和搜索
+- 使用 React.useMemo 优化筛选性能（避免每次渲染重新计算）
+- 搜索和筛选组合使用：先按分类筛选，再按搜索词过滤
+- 当选择"全部"时，按分类分组显示；选择具体分类时，显示该分类所有配置
+- 空状态处理逻辑：filteredConfigs.length === 0 时显示提示
+- 按钮最小高度 min-h-[44px] 确保移动端触摸友好
+---
