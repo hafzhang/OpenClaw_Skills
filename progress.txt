@@ -1170,3 +1170,34 @@ Final Verification Results:
 - 难度级别匹配：Beginner 教程应该详细解释每个步骤，Intermediate 可以假设基础，Advanced 应该深入原理
 - 总教程数达到 30 个，总页面数 84 个（包含所有教程、技能、配置详情页）
 ---
+## 2026-02-05 - US-052 & US-053
+- US-052: 更新 tutorials.json 文件 - 验证 20 篇新教程已在数据文件中（tutorial-011 至 tutorial-030）
+- US-053: 测试所有新教程渲染 - 完整验证 20 篇新教程的渲染和功能
+
+**测试结果总结：**
+✅ 20 个新教程详情页正确生成（tutorial-011 至 tutorial-030）
+✅ Markdown 内容正确渲染（HTML 结构完整）
+✅ 代码语法高亮正常（hljs 类存在）
+✅ 相关技能链接有效（0 个无效引用，25 个唯一技能 ID）
+✅ 教程在分类筛选中正确显示（development: 9, devops: 5, productivity: 4, ai-llms: 2）
+✅ 搜索功能包含新教程（searchTutorials 使用 getAllTutorials）
+✅ 构建成功生成 84 个页面（30 个教程详情页 + 其他页面）
+
+**教程分类统计：**
+- Beginner (7): tutorial-011 至 tutorial-017
+- Intermediate (8): tutorial-018 至 tutorial-025  
+- Advanced (5): tutorial-026 至 tutorial-030
+
+**Files changed:**
+- prd.json (标记 US-052 和 US-053 完成)
+
+**Learnings for future iterations:**
+- 教程内容已在 US-048/049/050 中创建并添加到 tutorials.json
+- US-052 验证了数据完整性：30 个教程，所有必需字段完整，slug 值唯一
+- 代码高亮使用 rehype-highlight + highlight.js，生成 hljs 类
+- 相关技能引用验证使用脚本检查：确保所有 relatedSkills ID 在 skills.json 中存在
+- 新教程分类分布：development(9), devops(5), productivity(4), ai-llms(2)
+- 搜索功能自动包含新教程，因为 searchTutorials 使用 getAllTutorials()
+- 分类筛选通过 CategoryFilter 组件 + selectedCategory 状态实现
+- 构建输出 [+27 more paths] 表示 30 个教程详情页（3 显示 + 27 隐藏）
+---

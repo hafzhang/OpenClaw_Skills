@@ -888,8 +888,8 @@
         "npm run build 构建成功"
       ],
       "priority": 52,
-      "passes": false,
-      "notes": "Sprint 5 - 步骤 5.7"
+      "passes": true,
+      "notes": "✅ 已完成 - 教程已在 US-048/049/050 中添加到 tutorials.json，包含所有 30 个教程（tutorial-001 至 tutorial-030），构建成功生成 84 个页面"
     },
     {
       "id": "US-053",
@@ -906,8 +906,8 @@
         "修复发现的问题"
       ],
       "priority": 53,
-      "passes": false,
-      "notes": "Sprint 5 - 步骤 5.8"
+      "passes": true,
+      "notes": "✅ 已完成 - 所有 20 篇新教程测试通过：详情页渲染正确、Markdown 内容正确、代码高亮正常、相关技能链接有效、搜索功能包含新教程、分类筛选正常工作"
     },
     {
       "id": "US-054",
