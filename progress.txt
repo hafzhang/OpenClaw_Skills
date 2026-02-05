@@ -460,6 +460,24 @@
 - 链接到其他文档（CONTRIBUTING.md、DEPLOY.md）避免重复内容
 ---
 
+## 2026-02-05 - US-030
+- 为所有 40 个技能添加 slug 字段（kebab-case 格式，URL 友好）
+- 添加 longDescription 字段（详细描述，可选）- 为 30 个技能添加了详细描述
+- 添加 installCount 字段（安装计数）- 模拟真实安装数据（3000-15000 范围）
+- 添加 relatedSkills 字段（相关技能 ID 数组）- 基于分类和功能相关性建立关联
+- 确保 slug 值唯一且 URL 友好
+- JSON 格式验证通过
+- npm run build 构建验证通过
+
+**Learnings for future iterations:**
+- slug 使用 kebab-case 格式（小写字母、数字、连字符）
+- installCount 可以是模拟数据，用于展示技能的受欢迎程度
+- relatedSkills 基于 skill ID 数组，便于在详情页展示相关技能
+- longDescription 是可选字段，需要时可以添加更详细的说明
+- 技能分类：development(8), productivity(15), devops(9), ai-llms(5), utilities(3)
+- 相关技能的关联逻辑：同分类优先 + 功能互补性
+---
+
 ## 2026-02-04 - US-026
 - 使用代码审查和构建输出验证页面完整性
 - 启动本地开发服务器 npm run dev（端口 3001，因为 3000 被占用）

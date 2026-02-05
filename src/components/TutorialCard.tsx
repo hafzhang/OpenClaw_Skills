@@ -1,3 +1,6 @@
+'use client';
+
+import * as React from 'react';
 import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -15,8 +18,34 @@ const difficultyLabels: Record<Tutorial['difficulty'], { label: string; variant:
 };
 
 export function TutorialCard({ tutorial }: TutorialCardProps) {
-  const { title, description, difficulty, readTime, relatedSkills, stats, slug } = tutorial;
+  const { title, description, difficulty, readTime, relatedSkills, stats, slug, id } = tutorial;
   const difficultyConfig = difficultyLabels[difficulty];
+
+  // Favorite state with localStorage persistence
+  const [isFavorited, setIsFavorited] = React.useState(false);
+
+  // Load favorite state from localStorage on mount
+  React.useEffect(() => {
+    try {
+      const favorites = JSON.parse(localStorage.getItem('favoriteTutorials') || '[]');
+      setIsFavorited(favorites.includes(id));
+    } catch {
+      // Ignore localStorage errors
+    }
+  }, [id]);
+
+  const handleToggleFavorite = () => {
+    try {
+      const favorites = JSON.parse(localStorage.getItem('favoriteTutorials') || '[]');
+      const newFavorites = isFavorited
+        ? favorites.filter((favId: string) => favId !== id)
+        : [...favorites, id];
+      localStorage.setItem('favoriteTutorials', JSON.stringify(newFavorites));
+      setIsFavorited(!isFavorited);
+    } catch {
+      // Ignore localStorage errors
+    }
+  };
 
   return (
     <Card className="group hover:shadow-md transition-shadow duration-200">
@@ -54,20 +83,42 @@ export function TutorialCard({ tutorial }: TutorialCardProps) {
         <Button asChild className="flex-1 min-h-[44px]">
           <Link href={`/tutorial/${slug}`}>开始阅读</Link>
         </Button>
-        <Button variant="outline" size="icon" aria-label="收藏教程" className="min-h-[44px] min-w-[44px]">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-          </svg>
+        <Button
+          variant={isFavorited ? 'default' : 'outline'}
+          size="icon"
+          aria-label={isFavorited ? '取消收藏' : '收藏教程'}
+          className="min-h-[44px] min-w-[44px]"
+          onClick={handleToggleFavorite}
+        >
+          {isFavorited ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          )}
         </Button>
       </CardFooter>
     </Card>

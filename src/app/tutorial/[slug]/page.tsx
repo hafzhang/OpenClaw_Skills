@@ -1,8 +1,10 @@
 import { notFound } from 'next/navigation';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeHighlight from 'rehype-highlight';
 import type { Components } from 'react-markdown';
 import { getTutorialBySlug, getAllTutorials } from '@/lib/tutorials';
+import { getAllSkills } from '@/lib/skills';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -10,9 +12,9 @@ import Link from 'next/link';
 import 'highlight.js/styles/github-dark.css';
 
 interface TutorialPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 // Generate static params for all tutorials at build time
@@ -28,7 +30,8 @@ export const dynamicParams = false;
 
 // Generate metadata for the page
 export async function generateMetadata({ params }: TutorialPageProps) {
-  const tutorial = getTutorialBySlug(params.slug);
+  const { slug } = await params;
+  const tutorial = getTutorialBySlug(slug);
 
   if (!tutorial) {
     return {
@@ -69,16 +72,24 @@ function getDifficultyVariant(difficulty: string): 'default' | 'secondary' | 'de
 }
 
 export default function TutorialPage({ params }: TutorialPageProps) {
-  const tutorial = getTutorialBySlug(params.slug);
+  // Unwrap params Promise using React.use()
+  const { slug } = React.use(params);
+  const tutorial = getTutorialBySlug(slug);
 
   if (!tutorial) {
     notFound();
   }
 
-  const relatedSkillsData = tutorial.relatedSkills.map(skillId => ({
-    id: skillId,
-    name: skillId,
-  }));
+  // Get all skills and create ID to name mapping
+  const allSkills = getAllSkills();
+  const skillMap = new Map(allSkills.map(skill => [skill.id, skill.name]));
+
+  const relatedSkillsData = tutorial.relatedSkills
+    .map(skillId => ({
+      id: skillId,
+      name: skillMap.get(skillId) || skillId,
+    }))
+    .filter(skill => skill.name !== skill.id); // Filter out skills that don't exist
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -202,17 +213,17 @@ export default function TutorialPage({ params }: TutorialPageProps) {
           </CardContent>
 
           {/* Related Skills */}
-          {tutorial.relatedSkills.length > 0 && (
+          {relatedSkillsData.length > 0 && (
             <CardFooter className="border-t bg-gray-50 px-2 sm:px-6">
               <div className="w-full">
                 <h3 className="text-xs sm:text-sm font-semibold text-gray-700 mb-2 sm:mb-3">
                   相关技能
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {tutorial.relatedSkills.map((skillId) => (
-                    <Link key={skillId} href="/skills">
+                  {relatedSkillsData.map((skill) => (
+                    <Link key={skill.id} href="/skills">
                       <Badge variant="secondary" className="hover:bg-gray-200 cursor-pointer">
-                        {skillId}
+                        {skill.name}
                       </Badge>
                     </Link>
                   ))}

@@ -1,5 +1,5 @@
 import { Tutorial } from '@/types';
-import tutorialsData from '@/data/tutorials.json';
+import tutorialsData from '../data/tutorials.json';
 
 /**
  * Get all tutorials

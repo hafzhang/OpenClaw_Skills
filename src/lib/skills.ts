@@ -1,5 +1,5 @@
 import { Skill } from '@/types';
-import skillsData from '@/data/skills.json';
+import skillsData from '../data/skills.json';
 
 /**
  * Get all skills

@@ -6,6 +6,9 @@ import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/ca
 const skillCategories = [
   { id: 'development', name: '开发辅助', description: '代码开发、审查、数据库操作' },
   { id: 'productivity', name: '工作效率', description: '搜索、通讯、文档自动化' },
+  { id: 'devops', name: 'DevOps', description: '部署、容器、云平台管理' },
+  { id: 'ai-llms', name: 'AI & LLMs', description: 'AI 模型、提示工程、语音合成' },
+  { id: 'utilities', name: '实用工具', description: 'PDF、视频/音频处理、文件工具' },
   { id: 'system', name: '系统工具', description: '文件系统、系统操作' },
   { id: 'creative', name: '创意工具', description: '图像处理、AI 生成' },
 ] as const;
