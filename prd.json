@@ -925,8 +925,8 @@
         "创建候选技能列表（仅包含仓库验证通过的技能）"
       ],
       "priority": 55,
-      "passes": false,
-      "notes": "Sprint 6 - 步骤 6.1 & 6.2。仓库验证是前置条件，不通过的技能不进入后续流程"
+      "passes": true,
+      "notes": "✅ 已完成 - 研究并筛选 172 个候选技能，验证 160 个仓库可访问（93% 成功率），12 个 404 仓库已排除。分类：development(39), productivity(30), devops(32), ai-llms(16), utilities(43)"
     },
     {
       "id": "US-062",
@@ -943,8 +943,8 @@
         "仓库不存在时返回明确的错误信息"
       ],
       "priority": 54,
-      "passes": false,
-      "notes": "Sprint 6 - 新增辅助工具，在 US-054 之前完成"
+      "passes": true,
+      "notes": "✅ 已完成 - 创建 scripts/verify-skill-repos.js 脚本，支持批量验证、超时处理、重定向跟随，生成 JSON/CSV 报告"
     },
     {
       "id": "US-055-A",

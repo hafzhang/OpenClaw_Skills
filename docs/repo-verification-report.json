@@ -1,0 +1,1759 @@
+{
+  "summary": {
+    "timestamp": "2026-02-05T15:23:11.017Z",
+    "total": 172,
+    "success": 160,
+    "failed": 12,
+    "redirected": 7,
+    "successRate": "93.02%",
+    "byCategory": {
+      "development": {
+        "total": 39,
+        "success": 39,
+        "failed": 0
+      },
+      "productivity": {
+        "total": 40,
+        "success": 30,
+        "failed": 10
+      },
+      "devops": {
+        "total": 33,
+        "success": 32,
+        "failed": 1
+      },
+      "ai-llms": {
+        "total": 17,
+        "success": 16,
+        "failed": 1
+      },
+      "utilities": {
+        "total": 43,
+        "success": 43,
+        "failed": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "name": "typescript",
+      "slug": "typescript",
+      "category": "development",
+      "originalUrl": "https://github.com/microsoft/TypeScript",
+      "finalUrl": "https://github.com/microsoft/TypeScript",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "eslint",
+      "slug": "eslint",
+      "category": "development",
+      "originalUrl": "https://github.com/eslint/eslint",
+      "finalUrl": "https://github.com/eslint/eslint",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "prettier",
+      "slug": "prettier",
+      "category": "development",
+      "originalUrl": "https://github.com/prettier/prettier",
+      "finalUrl": "https://github.com/prettier/prettier",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "webpack",
+      "slug": "webpack",
+      "category": "development",
+      "originalUrl": "https://github.com/webpack/webpack",
+      "finalUrl": "https://github.com/webpack/webpack",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "vite",
+      "slug": "vite",
+      "category": "development",
+      "originalUrl": "https://github.com/vitejs/vite",
+      "finalUrl": "https://github.com/vitejs/vite",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "jest",
+      "slug": "jest",
+      "category": "development",
+      "originalUrl": "https://github.com/jestjs/jest",
+      "finalUrl": "https://github.com/jestjs/jest",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "vitest",
+      "slug": "vitest",
+      "category": "development",
+      "originalUrl": "https://github.com/vitest-dev/vitest",
+      "finalUrl": "https://github.com/vitest-dev/vitest",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "cypress",
+      "slug": "cypress",
+      "category": "development",
+      "originalUrl": "https://github.com/cypress-io/cypress",
+      "finalUrl": "https://github.com/cypress-io/cypress",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "react",
+      "slug": "react",
+      "category": "development",
+      "originalUrl": "https://github.com/facebook/react",
+      "finalUrl": "https://github.com/facebook/react",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "vue",
+      "slug": "vue",
+      "category": "development",
+      "originalUrl": "https://github.com/vuejs/core",
+      "finalUrl": "https://github.com/vuejs/core",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "angular",
+      "slug": "angular",
+      "category": "development",
+      "originalUrl": "https://github.com/angular/angular",
+      "finalUrl": "https://github.com/angular/angular",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "svelte",
+      "slug": "svelte",
+      "category": "development",
+      "originalUrl": "https://github.com/sveltejs/svelte",
+      "finalUrl": "https://github.com/sveltejs/svelte",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "nestjs",
+      "slug": "nestjs",
+      "category": "development",
+      "originalUrl": "https://github.com/nestjs/nest",
+      "finalUrl": "https://github.com/nestjs/nest",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "express",
+      "slug": "express",
+      "category": "development",
+      "originalUrl": "https://github.com/expressjs/express",
+      "finalUrl": "https://github.com/expressjs/express",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "django",
+      "slug": "django",
+      "category": "development",
+      "originalUrl": "https://github.com/django/django",
+      "finalUrl": "https://github.com/django/django",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "flask",
+      "slug": "flask",
+      "category": "development",
+      "originalUrl": "https://github.com/pallets/flask",
+      "finalUrl": "https://github.com/pallets/flask",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "fastapi",
+      "slug": "fastapi",
+      "category": "development",
+      "originalUrl": "https://github.com/tiangolo/fastapi",
+      "finalUrl": "https://github.com/fastapi/fastapi",
+      "status": 200,
+      "success": true,
+      "redirected": true
+    },
+    {
+      "name": "rails",
+      "slug": "rails",
+      "category": "development",
+      "originalUrl": "https://github.com/rails/rails",
+      "finalUrl": "https://github.com/rails/rails",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "laravel",
+      "slug": "laravel",
+      "category": "development",
+      "originalUrl": "https://github.com/laravel/laravel",
+      "finalUrl": "https://github.com/laravel/laravel",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "spring-boot",
+      "slug": "spring-boot",
+      "category": "development",
+      "originalUrl": "https://github.com/spring-projects/spring-boot",
+      "finalUrl": "https://github.com/spring-projects/spring-boot",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "dotnet",
+      "slug": "dotnet",
+      "category": "development",
+      "originalUrl": "https://github.com/dotnet/runtime",
+      "finalUrl": "https://github.com/dotnet/runtime",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "postgresql",
+      "slug": "postgresql",
+      "category": "development",
+      "originalUrl": "https://github.com/postgres/postgres",
+      "finalUrl": "https://github.com/postgres/postgres",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "mongodb",
+      "slug": "mongodb",
+      "category": "development",
+      "originalUrl": "https://github.com/mongodb/mongo",
+      "finalUrl": "https://github.com/mongodb/mongo",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "redis",
+      "slug": "redis",
+      "category": "development",
+      "originalUrl": "https://github.com/redis/redis",
+      "finalUrl": "https://github.com/redis/redis",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "graphql",
+      "slug": "graphql",
+      "category": "development",
+      "originalUrl": "https://github.com/graphql/graphql-spec",
+      "finalUrl": "https://github.com/graphql/graphql-spec",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "grpc",
+      "slug": "grpc",
+      "category": "development",
+      "originalUrl": "https://github.com/grpc/grpc",
+      "finalUrl": "https://github.com/grpc/grpc",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "yarn",
+      "slug": "yarn",
+      "category": "development",
+      "originalUrl": "https://github.com/yarnpkg/berry",
+      "finalUrl": "https://github.com/yarnpkg/berry",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "pnpm",
+      "slug": "pnpm",
+      "category": "development",
+      "originalUrl": "https://github.com/pnpm/pnpm",
+      "finalUrl": "https://github.com/pnpm/pnpm",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "babel",
+      "slug": "babel",
+      "category": "development",
+      "originalUrl": "https://github.com/babel/babel",
+      "finalUrl": "https://github.com/babel/babel",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "swc",
+      "slug": "swc",
+      "category": "development",
+      "originalUrl": "https://github.com/swc-project/swc",
+      "finalUrl": "https://github.com/swc-project/swc",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "tailwindcss",
+      "slug": "tailwindcss",
+      "category": "development",
+      "originalUrl": "https://github.com/tailwindlabs/tailwindcss",
+      "finalUrl": "https://github.com/tailwindlabs/tailwindcss",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "obsidian",
+      "slug": "obsidian",
+      "category": "productivity",
+      "originalUrl": "https://github.com/obsidianmd/obsidian-releases",
+      "finalUrl": "https://github.com/obsidianmd/obsidian-releases",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "logseq",
+      "slug": "logseq",
+      "category": "productivity",
+      "originalUrl": "https://github.com/logseq/logseq",
+      "finalUrl": "https://github.com/logseq/logseq",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "joplin",
+      "slug": "joplin",
+      "category": "productivity",
+      "originalUrl": "https://github.com/laurent22/joplin",
+      "finalUrl": "https://github.com/laurent22/joplin",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "discord",
+      "slug": "discord",
+      "category": "productivity",
+      "originalUrl": "https://github.com/discord/discord-api-docs",
+      "finalUrl": "https://github.com/discord/discord-api-docs",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "telegram",
+      "slug": "telegram",
+      "category": "productivity",
+      "originalUrl": "https://github.com/telegramdesktop/tdesktop",
+      "finalUrl": "https://github.com/telegramdesktop/tdesktop",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "matrix",
+      "slug": "matrix",
+      "category": "productivity",
+      "originalUrl": "https://github.com/matrix-org/synapse",
+      "finalUrl": "https://github.com/matrix-org/synapse",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "google-calendar",
+      "slug": "google-calendar",
+      "category": "productivity",
+      "originalUrl": "https://github.com/googleapis/python-api-core",
+      "finalUrl": "https://github.com/googleapis/python-api-core",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "calendly",
+      "slug": "calendly",
+      "category": "productivity",
+      "originalUrl": "https://github.com/calendly/calendly-api-docs",
+      "finalUrl": "https://github.com/calendly/calendly-api-docs",
+      "status": 404,
+      "success": false,
+      "redirected": false
+    },
+    {
+      "name": "gmail",
+      "slug": "gmail",
+      "category": "productivity",
+      "originalUrl": "https://github.com/googleapis/gmail-api-python-client",
+      "finalUrl": "https://github.com/googleapis/gmail-api-python-client",
+      "status": 404,
+      "success": false,
+      "redirected": false
+    },
+    {
+      "name": "outlook",
+      "slug": "outlook",
+      "category": "productivity",
+      "originalUrl": "https://github.com/microsoftgraph/msgraph-sdk-python",
+      "finalUrl": "https://github.com/microsoftgraph/msgraph-sdk-python",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "onedrive",
+      "slug": "onedrive",
+      "category": "productivity",
+      "originalUrl": "https://github.com/OneDrive/onedrive-api-docs",
+      "finalUrl": "https://github.com/OneDrive/onedrive-api-docs",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "confluence",
+      "slug": "confluence",
+      "category": "productivity",
+      "originalUrl": "https://github.com/atlassian-api/atlassian-python-api",
+      "finalUrl": "https://github.com/atlassian-api/atlassian-python-api",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "docusaurus",
+      "slug": "docusaurus",
+      "category": "productivity",
+      "originalUrl": "https://github.com/facebook/docusaurus",
+      "finalUrl": "https://github.com/facebook/docusaurus",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "toggl",
+      "slug": "toggl",
+      "category": "productivity",
+      "originalUrl": "https://github.com/toggl/toggl-api",
+      "finalUrl": "https://github.com/toggl/toggl-api",
+      "status": 404,
+      "success": false,
+      "redirected": false
+    },
+    {
+      "name": "harvest",
+      "slug": "harvest",
+      "category": "productivity",
+      "originalUrl": "https://github.com/harvesthq/harvest_api_signature_examples",
+      "finalUrl": "https://github.com/harvesthq/harvest_api_signature_examples",
+      "status": 404,
+      "success": false,
+      "redirected": false
+    },
+    {
+      "name": "bitwarden",
+      "slug": "bitwarden",
+      "category": "productivity",
+      "originalUrl": "https://github.com/bitwarden/clients",
+      "finalUrl": "https://github.com/bitwarden/clients",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "1password",
+      "slug": "1password",
+      "category": "productivity",
+      "originalUrl": "https://github.com/1Password/onepassword-sdk-python",
+      "finalUrl": "https://github.com/1Password/onepassword-sdk-python",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "linear",
+      "slug": "linear",
+      "category": "productivity",
+      "originalUrl": "https://github.com/linear/linear",
+      "finalUrl": "https://github.com/linear/linear",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "clickup",
+      "slug": "clickup",
+      "category": "productivity",
+      "originalUrl": "https://github.com/clickup/clickapi-nodejs",
+      "finalUrl": "https://github.com/clickup/clickapi-nodejs",
+      "status": 404,
+      "success": false,
+      "redirected": false
+    },
+    {
+      "name": "monday",
+      "slug": "monday",
+      "category": "productivity",
+      "originalUrl": "https://github.com/mondaycom/monday-sdk-js",
+      "finalUrl": "https://github.com/mondaycom/monday-sdk-js",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "zapier",
+      "slug": "zapier",
+      "category": "productivity",
+      "originalUrl": "https://github.com/zapier/zapier-platform",
+      "finalUrl": "https://github.com/zapier/zapier-platform",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "ifttt",
+      "slug": "ifttt",
+      "category": "productivity",
+      "originalUrl": "https://github.com/IFTTT/IFTTT-Platform",
+      "finalUrl": "https://github.com/IFTTT/IFTTT-Platform",
+      "status": 404,
+      "success": false,
+      "redirected": false
+    },
+    {
+      "name": "airtable",
+      "slug": "airtable",
+      "category": "productivity",
+      "originalUrl": "https://github.com/Airtable/airtable.js",
+      "finalUrl": "https://github.com/Airtable/airtable.js",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "basespace",
+      "slug": "basespace",
+      "category": "productivity",
+      "originalUrl": "https://github.com/Airtable/airtable.js",
+      "finalUrl": "https://github.com/Airtable/airtable.js",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "figma",
+      "slug": "figma",
+      "category": "productivity",
+      "originalUrl": "https://github.com/figma/plugin-samples",
+      "finalUrl": "https://github.com/figma/plugin-samples",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "trello-powerups",
+      "slug": "trello-powerups",
+      "category": "productivity",
+      "originalUrl": "https://github.com/trello/trello-power-up",
+      "finalUrl": "https://github.com/trello/trello-power-up",
+      "status": 404,
+      "success": false,
+      "redirected": false
+    },
+    {
+      "name": "notion-widgets",
+      "slug": "notion-widgets",
+      "category": "productivity",
+      "originalUrl": "https://github.com/makenotion/notion-sdk-js",
+      "finalUrl": "https://github.com/makenotion/notion-sdk-js",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "zoom",
+      "slug": "zoom",
+      "category": "productivity",
+      "originalUrl": "https://github.com/zoom/zoom-api-python",
+      "finalUrl": "https://github.com/zoom/zoom-api-python",
+      "status": 404,
+      "success": false,
+      "redirected": false
+    },
+    {
+      "name": "teams",
+      "slug": "teams",
+      "category": "productivity",
+      "originalUrl": "https://github.com/microsoftgraph/microsoft-graph-docs",
+      "finalUrl": "https://github.com/microsoftgraph/microsoft-graph-docs",
+      "status": 404,
+      "success": false,
+      "redirected": false
+    },
+    {
+      "name": "github-issues",
+      "slug": "github-issues",
+      "category": "productivity",
+      "originalUrl": "https://github.com/github/feedback",
+      "finalUrl": "https://github.com/community/community",
+      "status": 200,
+      "success": true,
+      "redirected": true
+    },
+    {
+      "name": "gitlab",
+      "slug": "gitlab",
+      "category": "productivity",
+      "originalUrl": "https://github.com/gitlabhq/gitlabhq",
+      "finalUrl": "https://github.com/gitlabhq/gitlabhq",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "bitbucket",
+      "slug": "bitbucket",
+      "category": "productivity",
+      "originalUrl": "https://github.com/atlassian/bitbucket-server",
+      "finalUrl": "https://github.com/atlassian/bitbucket-server",
+      "status": 404,
+      "success": false,
+      "redirected": false
+    },
+    {
+      "name": "docker-compose",
+      "slug": "docker-compose",
+      "category": "devops",
+      "originalUrl": "https://github.com/docker/compose",
+      "finalUrl": "https://github.com/docker/compose",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "podman",
+      "slug": "podman",
+      "category": "devops",
+      "originalUrl": "https://github.com/containers/podman",
+      "finalUrl": "https://github.com/containers/podman",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "helm",
+      "slug": "helm",
+      "category": "devops",
+      "originalUrl": "https://github.com/helm/helm",
+      "finalUrl": "https://github.com/helm/helm",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "argocd",
+      "slug": "argocd",
+      "category": "devops",
+      "originalUrl": "https://github.com/argoproj/argo-cd",
+      "finalUrl": "https://github.com/argoproj/argo-cd",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "argo-workflows",
+      "slug": "argo-workflows",
+      "category": "devops",
+      "originalUrl": "https://github.com/argoproj/argo-workflows",
+      "finalUrl": "https://github.com/argoproj/argo-workflows",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "circleci",
+      "slug": "circleci",
+      "category": "devops",
+      "originalUrl": "https://github.com/CircleCI-Public/circleci-cli",
+      "finalUrl": "https://github.com/CircleCI-Public/circleci-cli",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "buildkite",
+      "slug": "buildkite",
+      "category": "devops",
+      "originalUrl": "https://github.com/buildkite/cli",
+      "finalUrl": "https://github.com/buildkite/cli",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "travis-ci",
+      "slug": "travis-ci",
+      "category": "devops",
+      "originalUrl": "https://github.com/travis-ci/travis-ci",
+      "finalUrl": "https://github.com/travis-ci/travis-ci",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "datadog",
+      "slug": "datadog",
+      "category": "devops",
+      "originalUrl": "https://github.com/DataDog/datadog-api-client-python",
+      "finalUrl": "https://github.com/DataDog/datadog-api-client-python",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "newrelic",
+      "slug": "newrelic",
+      "category": "devops",
+      "originalUrl": "https://github.com/newrelic/newrelic-telemetry-sdk-python",
+      "finalUrl": "https://github.com/newrelic/newrelic-telemetry-sdk-python",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "splunk",
+      "slug": "splunk",
+      "category": "devops",
+      "originalUrl": "https://github.com/splunk/splunk-sdk-python",
+      "finalUrl": "https://github.com/splunk/splunk-sdk-python",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "grafana",
+      "slug": "grafana",
+      "category": "devops",
+      "originalUrl": "https://github.com/grafana/grafana",
+      "finalUrl": "https://github.com/grafana/grafana",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "prometheus",
+      "slug": "prometheus",
+      "category": "devops",
+      "originalUrl": "https://github.com/prometheus/prometheus",
+      "finalUrl": "https://github.com/prometheus/prometheus",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "elasticsearch",
+      "slug": "elasticsearch",
+      "category": "devops",
+      "originalUrl": "https://github.com/elastic/elasticsearch",
+      "finalUrl": "https://github.com/elastic/elasticsearch",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "fluentd",
+      "slug": "fluentd",
+      "category": "devops",
+      "originalUrl": "https://github.com/fluent/fluentd",
+      "finalUrl": "https://github.com/fluent/fluentd",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "loki",
+      "slug": "loki",
+      "category": "devops",
+      "originalUrl": "https://github.com/grafana/loki",
+      "finalUrl": "https://github.com/grafana/loki",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "pulumi",
+      "slug": "pulumi",
+      "category": "devops",
+      "originalUrl": "https://github.com/pulumi/pulumi",
+      "finalUrl": "https://github.com/pulumi/pulumi",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "cloudformation",
+      "slug": "cloudformation",
+      "category": "devops",
+      "originalUrl": "https://github.com/aws-cloudformation/cloudformation-cli",
+      "finalUrl": "https://github.com/aws-cloudformation/cloudformation-cli",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "azure-cli",
+      "slug": "azure-cli",
+      "category": "devops",
+      "originalUrl": "https://github.com/Azure/azure-cli",
+      "finalUrl": "https://github.com/Azure/azure-cli",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "gcloud",
+      "slug": "gcloud",
+      "category": "devops",
+      "originalUrl": "https://github.com/googleapis/google-cloud-cli",
+      "finalUrl": "https://github.com/googleapis/google-cloud-cli",
+      "status": 404,
+      "success": false,
+      "redirected": false
+    },
+    {
+      "name": "digitalocean",
+      "slug": "digitalocean",
+      "category": "devops",
+      "originalUrl": "https://github.com/digitalocean/doctl",
+      "finalUrl": "https://github.com/digitalocean/doctl",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "heroku",
+      "slug": "heroku",
+      "category": "devops",
+      "originalUrl": "https://github.com/heroku/cli",
+      "finalUrl": "https://github.com/heroku/cli",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "nginx",
+      "slug": "nginx",
+      "category": "devops",
+      "originalUrl": "https://github.com/nginx/nginx",
+      "finalUrl": "https://github.com/nginx/nginx",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "apache",
+      "slug": "apache",
+      "category": "devops",
+      "originalUrl": "https://github.com/apache/httpd",
+      "finalUrl": "https://github.com/apache/httpd",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "traefik",
+      "slug": "traefik",
+      "category": "devops",
+      "originalUrl": "https://github.com/traefik/traefik",
+      "finalUrl": "https://github.com/traefik/traefik",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "consul",
+      "slug": "consul",
+      "category": "devops",
+      "originalUrl": "https://github.com/hashicorp/consul",
+      "finalUrl": "https://github.com/hashicorp/consul",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "vault",
+      "slug": "vault",
+      "category": "devops",
+      "originalUrl": "https://github.com/hashicorp/vault",
+      "finalUrl": "https://github.com/hashicorp/vault",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "nomad",
+      "slug": "nomad",
+      "category": "devops",
+      "originalUrl": "https://github.com/hashicorp/nomad",
+      "finalUrl": "https://github.com/hashicorp/nomad",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "packer",
+      "slug": "packer",
+      "category": "devops",
+      "originalUrl": "https://github.com/hashicorp/packer",
+      "finalUrl": "https://github.com/hashicorp/packer",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "gpt4",
+      "slug": "gpt4",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/openai/openai-node",
+      "finalUrl": "https://github.com/openai/openai-node",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "mistral",
+      "slug": "mistral",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/mistralai/mistral-src",
+      "finalUrl": "https://github.com/mistralai/mistral-inference",
+      "status": 200,
+      "success": true,
+      "redirected": true
+    },
+    {
+      "name": "llama",
+      "slug": "llama",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/meta-llama/llama3",
+      "finalUrl": "https://github.com/meta-llama/llama3",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "cohere",
+      "slug": "cohere",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/cohere-dev/cohere-python",
+      "finalUrl": "https://github.com/cohere-dev/cohere-python",
+      "status": 404,
+      "success": false,
+      "redirected": false
+    },
+    {
+      "name": "langchain",
+      "slug": "langchain",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/langchain-ai/langchain",
+      "finalUrl": "https://github.com/langchain-ai/langchain",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "llamaindex",
+      "slug": "llamaindex",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/run-llama/llama_index",
+      "finalUrl": "https://github.com/run-llama/llama_index",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "pinecone",
+      "slug": "pinecone",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/pinecone-io/pinecone-ts-client",
+      "finalUrl": "https://github.com/pinecone-io/pinecone-ts-client",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "weaviate",
+      "slug": "weaviate",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/weaviate/weaviate",
+      "finalUrl": "https://github.com/weaviate/weaviate",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "qdrant",
+      "slug": "qdrant",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/qdrant/qdrant",
+      "finalUrl": "https://github.com/qdrant/qdrant",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "chroma",
+      "slug": "chroma",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/chroma-core/chroma",
+      "finalUrl": "https://github.com/chroma-core/chroma",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "pytorch",
+      "slug": "pytorch",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/pytorch/pytorch",
+      "finalUrl": "https://github.com/pytorch/pytorch",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "tensorflow",
+      "slug": "tensorflow",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/tensorflow/tensorflow",
+      "finalUrl": "https://github.com/tensorflow/tensorflow",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "scikit-learn",
+      "slug": "scikit-learn",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/scikit-learn/scikit-learn",
+      "finalUrl": "https://github.com/scikit-learn/scikit-learn",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "ollama",
+      "slug": "ollama",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/ollama/ollama",
+      "finalUrl": "https://github.com/ollama/ollama",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "vllm",
+      "slug": "vllm",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/vllm-project/vllm",
+      "finalUrl": "https://github.com/vllm-project/vllm",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "text-generation-webui",
+      "slug": "text-generation-webui",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/oobabooga/text-generation-webui",
+      "finalUrl": "https://github.com/oobabooga/text-generation-webui",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "openai-whisper",
+      "slug": "openai-whisper",
+      "category": "ai-llms",
+      "originalUrl": "https://github.com/openai/whisper",
+      "finalUrl": "https://github.com/openai/whisper",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "htop",
+      "slug": "htop",
+      "category": "utilities",
+      "originalUrl": "https://github.com/htop-dev/htop",
+      "finalUrl": "https://github.com/htop-dev/htop",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "btop",
+      "slug": "btop",
+      "category": "utilities",
+      "originalUrl": "https://github.com/aristocratos/btop",
+      "finalUrl": "https://github.com/aristocratos/btop",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "tmux",
+      "slug": "tmux",
+      "category": "utilities",
+      "originalUrl": "https://github.com/tmux/tmux",
+      "finalUrl": "https://github.com/tmux/tmux",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "zsh",
+      "slug": "zsh",
+      "category": "utilities",
+      "originalUrl": "https://github.com/zsh-users/zsh",
+      "finalUrl": "https://github.com/zsh-users/zsh",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "fish",
+      "slug": "fish",
+      "category": "utilities",
+      "originalUrl": "https://github.com/fish-shell/fish-shell",
+      "finalUrl": "https://github.com/fish-shell/fish-shell",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "ripgrep",
+      "slug": "ripgrep",
+      "category": "utilities",
+      "originalUrl": "https://github.com/BurntSushi/ripgrep",
+      "finalUrl": "https://github.com/BurntSushi/ripgrep",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "fd",
+      "slug": "fd",
+      "category": "utilities",
+      "originalUrl": "https://github.com/sharkdp/fd",
+      "finalUrl": "https://github.com/sharkdp/fd",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "bat",
+      "slug": "bat",
+      "category": "utilities",
+      "originalUrl": "https://github.com/sharkdp/bat",
+      "finalUrl": "https://github.com/sharkdp/bat",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "exa",
+      "slug": "exa",
+      "category": "utilities",
+      "originalUrl": "https://github.com/ogham/exa",
+      "finalUrl": "https://github.com/ogham/exa",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "dust",
+      "slug": "dust",
+      "category": "utilities",
+      "originalUrl": "https://github.com/bootandy/dust",
+      "finalUrl": "https://github.com/bootandy/dust",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "ncdu",
+      "slug": "ncdu",
+      "category": "utilities",
+      "originalUrl": "https://dev.yorhel.nl/ncdu",
+      "finalUrl": "https://dev.yorhel.nl/ncdu",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "jq",
+      "slug": "jq",
+      "category": "utilities",
+      "originalUrl": "https://github.com/stedolan/jq",
+      "finalUrl": "https://github.com/jqlang/jq",
+      "status": 200,
+      "success": true,
+      "redirected": true
+    },
+    {
+      "name": "httpie",
+      "slug": "httpie",
+      "category": "utilities",
+      "originalUrl": "https://github.com/httpie/httpie",
+      "finalUrl": "https://github.com/httpie/cli",
+      "status": 200,
+      "success": true,
+      "redirected": true
+    },
+    {
+      "name": "grip",
+      "slug": "grip",
+      "category": "utilities",
+      "originalUrl": "https://github.com/joeyespo/grip",
+      "finalUrl": "https://github.com/joeyespo/grip",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "fzf",
+      "slug": "fzf",
+      "category": "utilities",
+      "originalUrl": "https://github.com/junegunn/fzf",
+      "finalUrl": "https://github.com/junegunn/fzf",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "the-silver-searcher",
+      "slug": "the-silver-searcher",
+      "category": "utilities",
+      "originalUrl": "https://github.com/ggreer/the_silver_searcher",
+      "finalUrl": "https://github.com/ggreer/the_silver_searcher",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "delta",
+      "slug": "delta",
+      "category": "utilities",
+      "originalUrl": "https://github.com/dandavison/delta",
+      "finalUrl": "https://github.com/dandavison/delta",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "lazygit",
+      "slug": "lazygit",
+      "category": "utilities",
+      "originalUrl": "https://github.com/jesseduffield/lazygit",
+      "finalUrl": "https://github.com/jesseduffield/lazygit",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "gh-dash",
+      "slug": "gh-dash",
+      "category": "utilities",
+      "originalUrl": "https://github.com/dlvhdr/gh-dash",
+      "finalUrl": "https://github.com/dlvhdr/gh-dash",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "gum",
+      "slug": "gum",
+      "category": "utilities",
+      "originalUrl": "https://github.com/charmbracelet/gum",
+      "finalUrl": "https://github.com/charmbracelet/gum",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "choose",
+      "slug": "choose",
+      "category": "utilities",
+      "originalUrl": "https://github.com/theryangeary/choose",
+      "finalUrl": "https://github.com/theryangeary/choose",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "zoxide",
+      "slug": "zoxide",
+      "category": "utilities",
+      "originalUrl": "https://github.com/ajeetdsouza/zoxide",
+      "finalUrl": "https://github.com/ajeetdsouza/zoxide",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "starship",
+      "slug": "starship",
+      "category": "utilities",
+      "originalUrl": "https://github.com/starship/starship",
+      "finalUrl": "https://github.com/starship/starship",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "eza",
+      "slug": "eza",
+      "category": "utilities",
+      "originalUrl": "https://github.com/eza-community/eza",
+      "finalUrl": "https://github.com/eza-community/eza",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "zellij",
+      "slug": "zellij",
+      "category": "utilities",
+      "originalUrl": "https://github.com/zellij-org/zellij",
+      "finalUrl": "https://github.com/zellij-org/zellij",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "k9s",
+      "slug": "k9s",
+      "category": "utilities",
+      "originalUrl": "https://github.com/derailed/k9s",
+      "finalUrl": "https://github.com/derailed/k9s",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "stern",
+      "slug": "stern",
+      "category": "utilities",
+      "originalUrl": "https://github.com/stern/stern",
+      "finalUrl": "https://github.com/stern/stern",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "kubectx",
+      "slug": "kubectx",
+      "category": "utilities",
+      "originalUrl": "https://github.com/ahmetb/kubectx",
+      "finalUrl": "https://github.com/ahmetb/kubectx",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "kubectl-krew",
+      "slug": "kubectl-krew",
+      "category": "utilities",
+      "originalUrl": "https://github.com/kubernetes-sigs/krew",
+      "finalUrl": "https://github.com/kubernetes-sigs/krew",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "gitui",
+      "slug": "gitui",
+      "category": "utilities",
+      "originalUrl": "https://github.com/extrawurst/gitui",
+      "finalUrl": "https://github.com/gitui-org/gitui",
+      "status": 200,
+      "success": true,
+      "redirected": true
+    },
+    {
+      "name": "tldr",
+      "slug": "tldr",
+      "category": "utilities",
+      "originalUrl": "https://github.com/tldr-pages/tldr",
+      "finalUrl": "https://github.com/tldr-pages/tldr",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "tealdeer",
+      "slug": "tealdeer",
+      "category": "utilities",
+      "originalUrl": "https://github.com/dbrgn/tealdeer",
+      "finalUrl": "https://github.com/tealdeer-rs/tealdeer",
+      "status": 200,
+      "success": true,
+      "redirected": true
+    },
+    {
+      "name": "gping",
+      "slug": "gping",
+      "category": "utilities",
+      "originalUrl": "https://github.com/orf/gping",
+      "finalUrl": "https://github.com/orf/gping",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "procs",
+      "slug": "procs",
+      "category": "utilities",
+      "originalUrl": "https://github.com/dalance/procs",
+      "finalUrl": "https://github.com/dalance/procs",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "sd",
+      "slug": "sd",
+      "category": "utilities",
+      "originalUrl": "https://github.com/chmln/sd",
+      "finalUrl": "https://github.com/chmln/sd",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "bottom",
+      "slug": "bottom",
+      "category": "utilities",
+      "originalUrl": "https://github.com/ClementTsang/bottom",
+      "finalUrl": "https://github.com/ClementTsang/bottom",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "du-dust",
+      "slug": "du-dust",
+      "category": "utilities",
+      "originalUrl": "https://github.com/bootandy/dust",
+      "finalUrl": "https://github.com/bootandy/dust",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "gdu",
+      "slug": "gdu",
+      "category": "utilities",
+      "originalUrl": "https://github.com/dundee/gdu",
+      "finalUrl": "https://github.com/dundee/gdu",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "bandwhich",
+      "slug": "bandwhich",
+      "category": "utilities",
+      "originalUrl": "https://github.com/imsnif/bandwhich",
+      "finalUrl": "https://github.com/imsnif/bandwhich",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "goproxy",
+      "slug": "goproxy",
+      "category": "utilities",
+      "originalUrl": "https://github.com/goproxy/goproxy.cn",
+      "finalUrl": "https://github.com/goproxy/goproxy.cn",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "supabase",
+      "slug": "supabase",
+      "category": "productivity",
+      "originalUrl": "https://github.com/supabase/supabase",
+      "finalUrl": "https://github.com/supabase/supabase",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "firebase",
+      "slug": "firebase",
+      "category": "productivity",
+      "originalUrl": "https://github.com/firebase/firebase-tools",
+      "finalUrl": "https://github.com/firebase/firebase-tools",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "appwrite",
+      "slug": "appwrite",
+      "category": "productivity",
+      "originalUrl": "https://github.com/appwrite/appwrite",
+      "finalUrl": "https://github.com/appwrite/appwrite",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "pocketbase",
+      "slug": "pocketbase",
+      "category": "productivity",
+      "originalUrl": "https://github.com/pocketbase/pocketbase",
+      "finalUrl": "https://github.com/pocketbase/pocketbase",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "directus",
+      "slug": "directus",
+      "category": "productivity",
+      "originalUrl": "https://github.com/directus/directus",
+      "finalUrl": "https://github.com/directus/directus",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "strapi",
+      "slug": "strapi",
+      "category": "productivity",
+      "originalUrl": "https://github.com/strapi/strapi",
+      "finalUrl": "https://github.com/strapi/strapi",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "payload-cms",
+      "slug": "payload-cms",
+      "category": "productivity",
+      "originalUrl": "https://github.com/payloadcms/payload",
+      "finalUrl": "https://github.com/payloadcms/payload",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "kestra",
+      "slug": "kestra",
+      "category": "devops",
+      "originalUrl": "https://github.com/kestra-io/kestra",
+      "finalUrl": "https://github.com/kestra-io/kestra",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "temporal",
+      "slug": "temporal",
+      "category": "devops",
+      "originalUrl": "https://github.com/temporalio/sdk-python",
+      "finalUrl": "https://github.com/temporalio/sdk-python",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "n8n",
+      "slug": "n8n",
+      "category": "productivity",
+      "originalUrl": "https://github.com/n8n-io/n8n",
+      "finalUrl": "https://github.com/n8n-io/n8n",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "apache-airflow",
+      "slug": "apache-airflow",
+      "category": "devops",
+      "originalUrl": "https://github.com/apache/airflow",
+      "finalUrl": "https://github.com/apache/airflow",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "prefect",
+      "slug": "prefect",
+      "category": "devops",
+      "originalUrl": "https://github.com/PrefectHQ/prefect",
+      "finalUrl": "https://github.com/PrefectHQ/prefect",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "dask",
+      "slug": "dask",
+      "category": "development",
+      "originalUrl": "https://github.com/dask/dask",
+      "finalUrl": "https://github.com/dask/dask",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "ray",
+      "slug": "ray",
+      "category": "development",
+      "originalUrl": "https://github.com/ray-project/ray",
+      "finalUrl": "https://github.com/ray-project/ray",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "polars",
+      "slug": "polars",
+      "category": "development",
+      "originalUrl": "https://github.com/pola-rs/polars",
+      "finalUrl": "https://github.com/pola-rs/polars",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "apache-spark",
+      "slug": "apache-spark",
+      "category": "development",
+      "originalUrl": "https://github.com/apache/spark",
+      "finalUrl": "https://github.com/apache/spark",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "pandas",
+      "slug": "pandas",
+      "category": "development",
+      "originalUrl": "https://github.com/pandas-dev/pandas",
+      "finalUrl": "https://github.com/pandas-dev/pandas",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "numpy",
+      "slug": "numpy",
+      "category": "development",
+      "originalUrl": "https://github.com/numpy/numpy",
+      "finalUrl": "https://github.com/numpy/numpy",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "jupyter",
+      "slug": "jupyter",
+      "category": "development",
+      "originalUrl": "https://github.com/jupyter/notebook",
+      "finalUrl": "https://github.com/jupyter/notebook",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "ipython",
+      "slug": "ipython",
+      "category": "development",
+      "originalUrl": "https://github.com/ipython/ipython",
+      "finalUrl": "https://github.com/ipython/ipython",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "homebrew",
+      "slug": "homebrew",
+      "category": "utilities",
+      "originalUrl": "https://github.com/Homebrew/brew",
+      "finalUrl": "https://github.com/Homebrew/brew",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "scoop",
+      "slug": "scoop",
+      "category": "utilities",
+      "originalUrl": "https://github.com/ScoopInstaller/Scoop",
+      "finalUrl": "https://github.com/ScoopInstaller/Scoop",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    },
+    {
+      "name": "chocolatey",
+      "slug": "chocolatey",
+      "category": "utilities",
+      "originalUrl": "https://github.com/chocolatey/choco",
+      "finalUrl": "https://github.com/chocolatey/choco",
+      "status": 200,
+      "success": true,
+      "redirected": false
+    }
+  ]
+}

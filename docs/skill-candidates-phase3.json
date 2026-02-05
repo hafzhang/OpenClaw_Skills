@@ -1,0 +1,1550 @@
+[
+  {
+    "name": "typescript",
+    "description": "TypeScript development tools for type-safe JavaScript with compiler, tsc, and language server",
+    "category": "development",
+    "tags": ["TypeScript", "JavaScript", "类型", "编译器"],
+    "github": "https://github.com/microsoft/TypeScript",
+    "slug": "typescript",
+    "stars": 98000
+  },
+  {
+    "name": "eslint",
+    "description": "ESLint linting utility for JavaScript and TypeScript to find and fix code problems",
+    "category": "development",
+    "tags": ["ESLint", "代码质量", "JavaScript", "TypeScript"],
+    "github": "https://github.com/eslint/eslint",
+    "slug": "eslint",
+    "stars": 24000
+  },
+  {
+    "name": "prettier",
+    "description": "Prettier code formatter for consistent code style across JavaScript, TypeScript, and more",
+    "category": "development",
+    "tags": ["Prettier", "格式化", "代码风格", "JavaScript"],
+    "github": "https://github.com/prettier/prettier",
+    "slug": "prettier",
+    "stars": 47000
+  },
+  {
+    "name": "webpack",
+    "description": "Webpack module bundler for JavaScript applications with rich plugin ecosystem",
+    "category": "development",
+    "tags": ["Webpack", "打包", "模块", "构建"],
+    "github": "https://github.com/webpack/webpack",
+    "slug": "webpack",
+    "stars": 64000
+  },
+  {
+    "name": "vite",
+    "description": "Vite next-generation frontend tooling for fast development and optimized production builds",
+    "category": "development",
+    "tags": ["Vite", "构建", "开发服务器", "前端"],
+    "github": "https://github.com/vitejs/vite",
+    "slug": "vite",
+    "stars": 62000
+  },
+  {
+    "name": "jest",
+    "description": "Jest testing framework for JavaScript with zero configuration and built-in assertions",
+    "category": "development",
+    "tags": ["Jest", "测试", "JavaScript", "框架"],
+    "github": "https://github.com/jestjs/jest",
+    "slug": "jest",
+    "stars": 43000
+  },
+  {
+    "name": "vitest",
+    "description": "Vitest blazing fast unit test framework powered by Vite for modern JavaScript",
+    "category": "development",
+    "tags": ["Vitest", "测试", "Vite", "单元测试"],
+    "github": "https://github.com/vitest-dev/vitest",
+    "slug": "vitest",
+    "stars": 12000
+  },
+  {
+    "name": "cypress",
+    "description": "Cypress end-to-end testing framework for web applications with time travel debugging",
+    "category": "development",
+    "tags": ["Cypress", "E2E测试", "浏览器", "测试"],
+    "github": "https://github.com/cypress-io/cypress",
+    "slug": "cypress",
+    "stars": 46000
+  },
+  {
+    "name": "react",
+    "description": "React library for building user interfaces with components and hooks",
+    "category": "development",
+    "tags": ["React", "前端", "组件", "JavaScript"],
+    "github": "https://github.com/facebook/react",
+    "slug": "react",
+    "stars": 220000
+  },
+  {
+    "name": "vue",
+    "description": "Vue.js progressive framework for building user interfaces with reactive data binding",
+    "category": "development",
+    "tags": ["Vue", "前端", "响应式", "框架"],
+    "github": "https://github.com/vuejs/core",
+    "slug": "vue",
+    "stars": 45000
+  },
+  {
+    "name": "angular",
+    "description": "Angular platform for building mobile and desktop web applications",
+    "category": "development",
+    "tags": ["Angular", "前端", "TypeScript", "框架"],
+    "github": "https://github.com/angular/angular",
+    "slug": "angular",
+    "stars": 94000
+  },
+  {
+    "name": "svelte",
+    "description": "Svelte cybernetically enhanced web apps with truly reactive components",
+    "category": "development",
+    "tags": ["Svelte", "前端", "编译器", "组件"],
+    "github": "https://github.com/sveltejs/svelte",
+    "slug": "svelte",
+    "stars": 76000
+  },
+  {
+    "name": "nestjs",
+    "description": "NestJS progressive framework for building efficient Node.js server-side applications",
+    "category": "development",
+    "tags": ["NestJS", "Node.js", "后端", "TypeScript"],
+    "github": "https://github.com/nestjs/nest",
+    "slug": "nestjs",
+    "stars": 65000
+  },
+  {
+    "name": "express",
+    "description": "Express fast unopinionated minimalist web framework for Node.js",
+    "category": "development",
+    "tags": ["Express", "Node.js", "后端", "Web框架"],
+    "github": "https://github.com/expressjs/express",
+    "slug": "express",
+    "stars": 64000
+  },
+  {
+    "name": "django",
+    "description": "Django high-level Python web framework for rapid development and clean design",
+    "category": "development",
+    "tags": ["Django", "Python", "后端", "Web框架"],
+    "github": "https://github.com/django/django",
+    "slug": "django",
+    "stars": 78000
+  },
+  {
+    "name": "flask",
+    "description": "Flask microframework for Python based on Werkzeug and Jinja2",
+    "category": "development",
+    "tags": ["Flask", "Python", "后端", "微框架"],
+    "github": "https://github.com/pallets/flask",
+    "slug": "flask",
+    "stars": 67000
+  },
+  {
+    "name": "fastapi",
+    "description": "FastAPI modern fast web framework for building APIs with Python 3.7+",
+    "category": "development",
+    "tags": ["FastAPI", "Python", "API", "异步"],
+    "github": "https://github.com/tiangolo/fastapi",
+    "slug": "fastapi",
+    "stars": 76000
+  },
+  {
+    "name": "rails",
+    "description": "Ruby on Rails web framework for building database-backed web applications",
+    "category": "development",
+    "tags": ["Rails", "Ruby", "后端", "Web框架"],
+    "github": "https://github.com/rails/rails",
+    "slug": "rails",
+    "stars": 55000
+  },
+  {
+    "name": "laravel",
+    "description": "Laravel PHP web application framework with elegant syntax and expressive tools",
+    "category": "development",
+    "tags": ["Laravel", "PHP", "后端", "框架"],
+    "github": "https://github.com/laravel/laravel",
+    "slug": "laravel",
+    "stars": 80000
+  },
+  {
+    "name": "spring-boot",
+    "description": "Spring Boot framework for creating production-ready Spring applications with minimal setup",
+    "category": "development",
+    "tags": ["Spring Boot", "Java", "后端", "框架"],
+    "github": "https://github.com/spring-projects/spring-boot",
+    "slug": "spring-boot",
+    "stars": 72000
+  },
+  {
+    "name": "dotnet",
+    "description": ".NET developer platform for building apps across web, mobile, and desktop",
+    "category": "development",
+    "tags": [".NET", "C#", "微软", "平台"],
+    "github": "https://github.com/dotnet/runtime",
+    "slug": "dotnet",
+    "stars": 14000
+  },
+  {
+    "name": "postgresql",
+    "description": "PostgreSQL powerful open source object-relational database system",
+    "category": "development",
+    "tags": ["PostgreSQL", "数据库", "SQL", "开源"],
+    "github": "https://github.com/postgres/postgres",
+    "slug": "postgresql",
+    "stars": 16000
+  },
+  {
+    "name": "mongodb",
+    "description": "MongoDB document database with scalability and flexibility for modern applications",
+    "category": "development",
+    "tags": ["MongoDB", "NoSQL", "数据库", "文档"],
+    "github": "https://github.com/mongodb/mongo",
+    "slug": "mongodb",
+    "stars": 27000
+  },
+  {
+    "name": "redis",
+    "description": "Redis in-memory data structure store for caching, messaging, and real-time analytics",
+    "category": "development",
+    "tags": ["Redis", "缓存", "数据库", "内存"],
+    "github": "https://github.com/redis/redis",
+    "slug": "redis",
+    "stars": 64000
+  },
+  {
+    "name": "graphql",
+    "description": "GraphQL query language for APIs with type-safe schemas and flexible queries",
+    "category": "development",
+    "tags": ["GraphQL", "API", "查询", "类型安全"],
+    "github": "https://github.com/graphql/graphql-spec",
+    "slug": "graphql",
+    "stars": 15000
+  },
+  {
+    "name": "grpc",
+    "description": "gRPC high-performance RPC framework for connecting services",
+    "category": "development",
+    "tags": ["gRPC", "RPC", "微服务", "高性能"],
+    "github": "https://github.com/grpc/grpc",
+    "slug": "grpc",
+    "stars": 41000
+  },
+  {
+    "name": "yarn",
+    "description": "Yarn fast reliable secure dependency management for JavaScript projects",
+    "category": "development",
+    "tags": ["Yarn", "包管理", "JavaScript", "依赖"],
+    "github": "https://github.com/yarnpkg/berry",
+    "slug": "yarn",
+    "stars": 5000
+  },
+  {
+    "name": "pnpm",
+    "description": "pnpm fast disk space efficient package manager for JavaScript",
+    "category": "development",
+    "tags": ["pnpm", "包管理", "JavaScript", "高效"],
+    "github": "https://github.com/pnpm/pnpm",
+    "slug": "pnpm",
+    "stars": 30000
+  },
+  {
+    "name": "babel",
+    "description": "Babel JavaScript compiler for using next generation JavaScript today",
+    "category": "development",
+    "tags": ["Babel", "编译器", "JavaScript", "转译"],
+    "github": "https://github.com/babel/babel",
+    "slug": "babel",
+    "stars": 43000
+  },
+  {
+    "name": "swc",
+    "description": "SWC super-fast TypeScript/JavaScript compiler written in Rust",
+    "category": "development",
+    "tags": ["SWC", "编译器", "TypeScript", "Rust"],
+    "github": "https://github.com/swc-project/swc",
+    "slug": "swc",
+    "stars": 31000
+  },
+  {
+    "name": "tailwindcss",
+    "description": "Tailwind CSS utility-first CSS framework for rapid UI development",
+    "category": "development",
+    "tags": ["Tailwind", "CSS", "框架", "样式"],
+    "github": "https://github.com/tailwindlabs/tailwindcss",
+    "slug": "tailwindcss",
+    "stars": 81000
+  },
+  {
+    "name": "obsidian",
+    "description": "Obsidian note-taking app with markdown, graphs, and plugin ecosystem",
+    "category": "productivity",
+    "tags": ["Obsidian", "笔记", "Markdown", "知识管理"],
+    "github": "https://github.com/obsidianmd/obsidian-releases",
+    "slug": "obsidian",
+    "stars": 62000
+  },
+  {
+    "name": "logseq",
+    "description": "Logseq privacy-first knowledge base for networked thinking and markdown",
+    "category": "productivity",
+    "tags": ["Logseq", "笔记", "知识图谱", "隐私"],
+    "github": "https://github.com/logseq/logseq",
+    "slug": "logseq",
+    "stars": 31000
+  },
+  {
+    "name": "joplin",
+    "description": "Joplin open source note taking and to-do application with encryption",
+    "category": "productivity",
+    "tags": ["Joplin", "笔记", "加密", "开源"],
+    "github": "https://github.com/laurent22/joplin",
+    "slug": "joplin",
+    "stars": 44000
+  },
+  {
+    "name": "discord",
+    "description": "Discord communication platform for communities with bots and webhooks",
+    "category": "productivity",
+    "tags": ["Discord", "通讯", "社区", "API"],
+    "github": "https://github.com/discord/discord-api-docs",
+    "slug": "discord",
+    "stars": 6500
+  },
+  {
+    "name": "telegram",
+    "description": "Telegram messaging platform with bots and extensive API",
+    "category": "productivity",
+    "tags": ["Telegram", "消息", "聊天", "API"],
+    "github": "https://github.com/telegramdesktop/tdesktop",
+    "slug": "telegram",
+    "stars": 25000
+  },
+  {
+    "name": "matrix",
+    "description": "Matrix decentralized secure communication protocol with end-to-end encryption",
+    "category": "productivity",
+    "tags": ["Matrix", "去中心化", "加密", "通讯"],
+    "github": "https://github.com/matrix-org/synapse",
+    "slug": "matrix",
+    "stars": 12000
+  },
+  {
+    "name": "google-calendar",
+    "description": "Google Calendar API for scheduling, events, and calendar management",
+    "category": "productivity",
+    "tags": ["Google", "日历", "日程", "API"],
+    "github": "https://github.com/googleapis/python-api-core",
+    "slug": "google-calendar",
+    "stars": 1200
+  },
+  {
+    "name": "calendly",
+    "description": "Calendly scheduling automation for meetings and appointments",
+    "category": "productivity",
+    "tags": ["Calendly", "日程", "会议", "自动化"],
+    "github": "https://github.com/calendly/calendly-api-docs",
+    "slug": "calendly",
+    "stars": 330
+  },
+  {
+    "name": "gmail",
+    "description": "Gmail API for email management, sending, and organization",
+    "category": "productivity",
+    "tags": ["Gmail", "邮件", "Google", "API"],
+    "github": "https://github.com/googleapis/gmail-api-python-client",
+    "slug": "gmail",
+    "stars": 320
+  },
+  {
+    "name": "outlook",
+    "description": "Microsoft Outlook API for email, calendar, and contact management",
+    "category": "productivity",
+    "tags": ["Outlook", "微软", "邮件", "Office"],
+    "github": "https://github.com/microsoftgraph/msgraph-sdk-python",
+    "slug": "outlook",
+    "stars": 450
+  },
+  {
+    "name": "onedrive",
+    "description": "Microsoft OneDrive cloud storage and file synchronization platform",
+    "category": "productivity",
+    "tags": ["OneDrive", "微软", "云存储", "文件"],
+    "github": "https://github.com/OneDrive/onedrive-api-docs",
+    "slug": "onedrive",
+    "stars": 860
+  },
+  {
+    "name": "confluence",
+    "description": "Atlassian Confluence collaboration and documentation platform",
+    "category": "productivity",
+    "tags": ["Confluence", "文档", "协作", "Atlassian"],
+    "github": "https://github.com/atlassian-api/atlassian-python-api",
+    "slug": "confluence",
+    "stars": 710
+  },
+  {
+    "name": "docusaurus",
+    "description": "Docusaurus static site generator for documentation websites",
+    "category": "productivity",
+    "tags": ["Docusaurus", "文档", "静态网站", "React"],
+    "github": "https://github.com/facebook/docusaurus",
+    "slug": "docusaurus",
+    "stars": 54000
+  },
+  {
+    "name": "toggl",
+    "description": "Toggl time tracking and productivity reporting for teams and individuals",
+    "category": "productivity",
+    "tags": ["Toggl", "时间追踪", "生产力", "团队"],
+    "github": "https://github.com/toggl/toggl-api",
+    "slug": "toggl",
+    "stars": 270
+  },
+  {
+    "name": "harvest",
+    "description": "Harvest time tracking and invoicing for project-based work",
+    "category": "productivity",
+    "tags": ["Harvest", "时间追踪", "发票", "项目"],
+    "github": "https://github.com/harvesthq/harvest_api_signature_examples",
+    "slug": "harvest",
+    "stars": 150
+  },
+  {
+    "name": "bitwarden",
+    "description": "Bitwarden open source password management for individuals and teams",
+    "category": "productivity",
+    "tags": ["Bitwarden", "密码", "安全", "开源"],
+    "github": "https://github.com/bitwarden/clients",
+    "slug": "bitwarden",
+    "stars": 7600
+  },
+  {
+    "name": "1password",
+    "description": "1Password password manager and secure vault for sensitive data",
+    "category": "productivity",
+    "tags": ["1Password", "密码", "安全", "隐私"],
+    "github": "https://github.com/1Password/onepassword-sdk-python",
+    "slug": "1password",
+    "stars": 190
+  },
+  {
+    "name": "linear",
+    "description": "Linear issue tracking and project management for software teams",
+    "category": "productivity",
+    "tags": ["Linear", "问题跟踪", "敏捷", "团队"],
+    "github": "https://github.com/linear/linear",
+    "slug": "linear",
+    "stars": 11000
+  },
+  {
+    "name": "clickup",
+    "description": "ClickUp all-in-one productivity platform for tasks, docs, and goals",
+    "category": "productivity",
+    "tags": ["ClickUp", "任务", "文档", "目标"],
+    "github": "https://github.com/clickup/clickapi-nodejs",
+    "slug": "clickup",
+    "stars": 110
+  },
+  {
+    "name": "monday",
+    "description": "Monday work management platform for teams and projects",
+    "category": "productivity",
+    "tags": ["Monday", "项目管理", "协作", "团队"],
+    "github": "https://github.com/mondaycom/monday-sdk-js",
+    "slug": "monday",
+    "stars": 270
+  },
+  {
+    "name": "zapier",
+    "description": "Zapier automation platform for connecting apps and workflows",
+    "category": "productivity",
+    "tags": ["Zapier", "自动化", "集成", "工作流"],
+    "github": "https://github.com/zapier/zapier-platform",
+    "slug": "zapier",
+    "stars": 2100
+  },
+  {
+    "name": "ifttt",
+    "description": "IFTTT automation platform for app integrations and triggers",
+    "category": "productivity",
+    "tags": ["IFTTT", "自动化", "集成", "触发器"],
+    "github": "https://github.com/IFTTT/IFTTT-Platform",
+    "slug": "ifttt",
+    "stars": 1300
+  },
+  {
+    "name": "airtable",
+    "description": "Airtable collaborative database and spreadsheet hybrid platform",
+    "category": "productivity",
+    "tags": ["Airtable", "数据库", "表格", "协作"],
+    "github": "https://github.com/Airtable/airtable.js",
+    "slug": "airtable",
+    "stars": 3100
+  },
+  {
+    "name": "basespace",
+    "description": "BaseSpace database platform for no-code application building",
+    "category": "productivity",
+    "tags": ["BaseSpace", "无代码", "数据库", "应用"],
+    "github": "https://github.com/Airtable/airtable.js",
+    "slug": "basespace",
+    "stars": 3100
+  },
+  {
+    "name": "figma",
+    "description": "Figma collaborative design tool with plugins and API",
+    "category": "productivity",
+    "tags": ["Figma", "设计", "协作", "UI/UX"],
+    "github": "https://github.com/figma/plugin-samples",
+    "slug": "figma",
+    "stars": 5900
+  },
+  {
+    "name": "trello-powerups",
+    "description": "Trello Power-Ups for extending Trello with custom integrations",
+    "category": "productivity",
+    "tags": ["Trello", "扩展", "集成", "插件"],
+    "github": "https://github.com/trello/trello-power-up",
+    "slug": "trello-powerups",
+    "stars": 310
+  },
+  {
+    "name": "notion-widgets",
+    "description": "Notion widgets and integrations for enhanced workspace functionality",
+    "category": "productivity",
+    "tags": ["Notion", "小部件", "集成", "扩展"],
+    "github": "https://github.com/makenotion/notion-sdk-js",
+    "slug": "notion-widgets",
+    "stars": 5600
+  },
+  {
+    "name": "zoom",
+    "description": "Zoom video conferencing and meeting platform with APIs",
+    "category": "productivity",
+    "tags": ["Zoom", "视频会议", "协作", "API"],
+    "github": "https://github.com/zoom/zoom-api-python",
+    "slug": "zoom",
+    "stars": 190
+  },
+  {
+    "name": "teams",
+    "description": "Microsoft Teams collaboration platform for chat, meetings, and files",
+    "category": "productivity",
+    "tags": ["Teams", "微软", "协作", "视频会议"],
+    "github": "https://github.com/microsoftgraph/microsoft-graph-docs",
+    "slug": "teams",
+    "stars": 1400
+  },
+  {
+    "name": "github-issues",
+    "description": "GitHub Issues for project tracking and team collaboration",
+    "category": "productivity",
+    "tags": ["GitHub", "问题跟踪", "项目管理", "协作"],
+    "github": "https://github.com/github/feedback",
+    "slug": "github-issues",
+    "stars": 460
+  },
+  {
+    "name": "gitlab",
+    "description": "GitLab complete DevOps platform for code, CI/CD, and project management",
+    "category": "productivity",
+    "tags": ["GitLab", "DevOps", "Git", "协作"],
+    "github": "https://github.com/gitlabhq/gitlabhq",
+    "slug": "gitlab",
+    "stars": 36000
+  },
+  {
+    "name": "bitbucket",
+    "description": "Atlassian Bitbucket Git code management and CI/CD platform",
+    "category": "productivity",
+    "tags": ["Bitbucket", "Git", "Atlassian", "CI/CD"],
+    "github": "https://github.com/atlassian/bitbucket-server",
+    "slug": "bitbucket",
+    "stars": 3200
+  },
+  {
+    "name": "docker-compose",
+    "description": "Docker Compose tool for defining and running multi-container applications",
+    "category": "devops",
+    "tags": ["Docker", "容器", "编排", "多容器"],
+    "github": "https://github.com/docker/compose",
+    "slug": "docker-compose",
+    "stars": 32000
+  },
+  {
+    "name": "podman",
+    "description": "Podman daemonless container engine for developing and managing containers",
+    "category": "devops",
+    "tags": ["Podman", "容器", "无守护进程", "Linux"],
+    "github": "https://github.com/containers/podman",
+    "slug": "podman",
+    "stars": 21000
+  },
+  {
+    "name": "helm",
+    "description": "Helm Kubernetes package manager for managing application deployments",
+    "category": "devops",
+    "tags": ["Helm", "Kubernetes", "包管理", "部署"],
+    "github": "https://github.com/helm/helm",
+    "slug": "helm",
+    "stars": 26000
+  },
+  {
+    "name": "argocd",
+    "description": "ArgoCD GitOps continuous delivery tool for Kubernetes",
+    "category": "devops",
+    "tags": ["ArgoCD", "GitOps", "Kubernetes", "CI/CD"],
+    "github": "https://github.com/argoproj/argo-cd",
+    "slug": "argocd",
+    "stars": 16000
+  },
+  {
+    "name": "argo-workflows",
+    "description": "Argo Workflows workflow engine for Kubernetes jobs",
+    "category": "devops",
+    "tags": ["Argo", "Kubernetes", "工作流", "作业"],
+    "github": "https://github.com/argoproj/argo-workflows",
+    "slug": "argo-workflows",
+    "stars": 14000
+  },
+  {
+    "name": "circleci",
+    "description": "CircleCI continuous integration and delivery platform",
+    "category": "devops",
+    "tags": ["CircleCI", "CI/CD", "持续集成", "自动化"],
+    "github": "https://github.com/CircleCI-Public/circleci-cli",
+    "slug": "circleci",
+    "stars": 650
+  },
+  {
+    "name": "buildkite",
+    "description": "Buildkite continuous integration and delivery platform",
+    "category": "devops",
+    "tags": ["Buildkite", "CI/CD", "持续集成", "自托管"],
+    "github": "https://github.com/buildkite/cli",
+    "slug": "buildkite",
+    "stars": 200
+  },
+  {
+    "name": "travis-ci",
+    "description": "Travis CI continuous integration platform for open source projects",
+    "category": "devops",
+    "tags": ["Travis", "CI/CD", "持续集成", "开源"],
+    "github": "https://github.com/travis-ci/travis-ci",
+    "slug": "travis-ci",
+    "stars": 7600
+  },
+  {
+    "name": "datadog",
+    "description": "Datadog monitoring and analytics platform for cloud-scale applications",
+    "category": "devops",
+    "tags": ["Datadog", "监控", "分析", "云"],
+    "github": "https://github.com/DataDog/datadog-api-client-python",
+    "slug": "datadog",
+    "stars": 440
+  },
+  {
+    "name": "newrelic",
+    "description": "New Relic observability platform for full-stack monitoring",
+    "category": "devops",
+    "tags": ["New Relic", "监控", "可观测性", "性能"],
+    "github": "https://github.com/newrelic/newrelic-telemetry-sdk-python",
+    "slug": "newrelic",
+    "stars": 130
+  },
+  {
+    "name": "splunk",
+    "description": "Splunk platform for searching, monitoring, and analyzing machine data",
+    "category": "devops",
+    "tags": ["Splunk", "日志", "监控", "分析"],
+    "github": "https://github.com/splunk/splunk-sdk-python",
+    "slug": "splunk",
+    "stars": 270
+  },
+  {
+    "name": "grafana",
+    "description": "Grafana open source analytics and interactive visualization platform",
+    "category": "devops",
+    "tags": ["Grafana", "可视化", "监控", "仪表板"],
+    "github": "https://github.com/grafana/grafana",
+    "slug": "grafana",
+    "stars": 61000
+  },
+  {
+    "name": "prometheus",
+    "description": "Prometheus monitoring system and time series database",
+    "category": "devops",
+    "tags": ["Prometheus", "监控", "时序数据库", "指标"],
+    "github": "https://github.com/prometheus/prometheus",
+    "slug": "prometheus",
+    "stars": 53000
+  },
+  {
+    "name": "elasticsearch",
+    "description": "Elasticsearch search and analytics engine for all types of data",
+    "category": "devops",
+    "tags": ["Elasticsearch", "搜索", "分析", "ELK"],
+    "github": "https://github.com/elastic/elasticsearch",
+    "slug": "elasticsearch",
+    "stars": 69000
+  },
+  {
+    "name": "fluentd",
+    "description": "Fluentd log collector and unified logging layer",
+    "category": "devops",
+    "tags": ["Fluentd", "日志", "收集", "流处理"],
+    "github": "https://github.com/fluent/fluentd",
+    "slug": "fluentd",
+    "stars": 13000
+  },
+  {
+    "name": "loki",
+    "description": "Grafana Loki horizontally scalable, highly available log aggregation system",
+    "category": "devops",
+    "tags": ["Loki", "日志", "聚合", "Grafana"],
+    "github": "https://github.com/grafana/loki",
+    "slug": "loki",
+    "stars": 22000
+  },
+  {
+    "name": "pulumi",
+    "description": "Pulumi modern infrastructure as code in TypeScript, Python, Go, and C#",
+    "category": "devops",
+    "tags": ["Pulumi", "IaC", "基础设施", "多语言"],
+    "github": "https://github.com/pulumi/pulumi",
+    "slug": "pulumi",
+    "stars": 20000
+  },
+  {
+    "name": "cloudformation",
+    "description": "AWS CloudFormation infrastructure as code for provisioning AWS resources",
+    "category": "devops",
+    "tags": ["CloudFormation", "AWS", "IaC", "基础设施"],
+    "github": "https://github.com/aws-cloudformation/cloudformation-cli",
+    "slug": "cloudformation",
+    "stars": 920
+  },
+  {
+    "name": "azure-cli",
+    "description": "Azure CLI for managing Azure resources and services",
+    "category": "devops",
+    "tags": ["Azure", "微软", "CLI", "云"],
+    "github": "https://github.com/Azure/azure-cli",
+    "slug": "azure-cli",
+    "stars": 3900
+  },
+  {
+    "name": "gcloud",
+    "description": "Google Cloud CLI for managing GCP resources and services",
+    "category": "devops",
+    "tags": ["GCP", "Google", "CLI", "云"],
+    "github": "https://github.com/googleapis/google-cloud-cli",
+    "slug": "gcloud",
+    "stars": 2900
+  },
+  {
+    "name": "digitalocean",
+    "description": "DigitalOcean cloud platform for developers with simple pricing",
+    "category": "devops",
+    "tags": ["DigitalOcean", "云", "简单", "开发者"],
+    "github": "https://github.com/digitalocean/doctl",
+    "slug": "digitalocean",
+    "stars": 1900
+  },
+  {
+    "name": "heroku",
+    "description": "Heroku platform as a service for application deployment and management",
+    "category": "devops",
+    "tags": ["Heroku", "PaaS", "部署", "应用"],
+    "github": "https://github.com/heroku/cli",
+    "slug": "heroku",
+    "stars": 2000
+  },
+  {
+    "name": "nginx",
+    "description": "Nginx high-performance web server and reverse proxy",
+    "category": "devops",
+    "tags": ["Nginx", "Web服务器", "反向代理", "负载均衡"],
+    "github": "https://github.com/nginx/nginx",
+    "slug": "nginx",
+    "stars": 22000
+  },
+  {
+    "name": "apache",
+    "description": "Apache HTTP Server powerful and flexible HTTP server",
+    "category": "devops",
+    "tags": ["Apache", "Web服务器", "HTTP", "开源"],
+    "github": "https://github.com/apache/httpd",
+    "slug": "apache",
+    "stars": 3900
+  },
+  {
+    "name": "traefik",
+    "description": "Traefik modern HTTP reverse proxy and load balancer",
+    "category": "devops",
+    "tags": ["Traefik", "反向代理", "负载均衡", "云原生"],
+    "github": "https://github.com/traefik/traefik",
+    "slug": "traefik",
+    "stars": 49000
+  },
+  {
+    "name": "consul",
+    "description": "Consul service mesh and service discovery platform",
+    "category": "devops",
+    "tags": ["Consul", "服务网格", "发现", "HashiCorp"],
+    "github": "https://github.com/hashicorp/consul",
+    "slug": "consul",
+    "stars": 28000
+  },
+  {
+    "name": "vault",
+    "description": "Vault secrets management and data protection platform",
+    "category": "devops",
+    "tags": ["Vault", "密钥", "安全", "HashiCorp"],
+    "github": "https://github.com/hashicorp/vault",
+    "slug": "vault",
+    "stars": 30000
+  },
+  {
+    "name": "nomad",
+    "description": "Nomad flexible workload orchestrator for scheduling and managing applications",
+    "category": "devops",
+    "tags": ["Nomad", "编排", "调度", "HashiCorp"],
+    "github": "https://github.com/hashicorp/nomad",
+    "slug": "nomad",
+    "stars": 15000
+  },
+  {
+    "name": "packer",
+    "description": "Packer tool for creating machine and container images",
+    "category": "devops",
+    "tags": ["Packer", "镜像", "构建", "HashiCorp"],
+    "github": "https://github.com/hashicorp/packer",
+    "slug": "packer",
+    "stars": 15000
+  },
+  {
+    "name": "gpt4",
+    "description": "OpenAI GPT-4 advanced language model for complex reasoning and tasks",
+    "category": "ai-llms",
+    "tags": ["GPT-4", "OpenAI", "LLM", "AI"],
+    "github": "https://github.com/openai/openai-node",
+    "slug": "gpt4",
+    "stars": 14000
+  },
+  {
+    "name": "mistral",
+    "description": "Mistral AI open source large language models",
+    "category": "ai-llms",
+    "tags": ["Mistral", "LLM", "开源", "AI"],
+    "github": "https://github.com/mistralai/mistral-src",
+    "slug": "mistral",
+    "stars": 38000
+  },
+  {
+    "name": "llama",
+    "description": "Meta Llama open source large language model family",
+    "category": "ai-llms",
+    "tags": ["Llama", "Meta", "LLM", "开源"],
+    "github": "https://github.com/meta-llama/llama3",
+    "slug": "llama",
+    "stars": 6000
+  },
+  {
+    "name": "cohere",
+    "description": "Cohere AI platform for language understanding and generation",
+    "category": "ai-llms",
+    "tags": ["Cohere", "LLM", "NLP", "API"],
+    "github": "https://github.com/cohere-dev/cohere-python",
+    "slug": "cohere",
+    "stars": 780
+  },
+  {
+    "name": "langchain",
+    "description": "LangChain framework for building applications with LLMs",
+    "category": "ai-llms",
+    "tags": ["LangChain", "LLM", "框架", "应用"],
+    "github": "https://github.com/langchain-ai/langchain",
+    "slug": "langchain",
+    "stars": 94000
+  },
+  {
+    "name": "llamaindex",
+    "description": "LlamaIndex data framework for connecting LLMs with your data",
+    "category": "ai-llms",
+    "tags": ["LlamaIndex", "LLM", "数据", "RAG"],
+    "github": "https://github.com/run-llama/llama_index",
+    "slug": "llamaindex",
+    "stars": 39000
+  },
+  {
+    "name": "pinecone",
+    "description": "Pinecone vector database for AI applications and semantic search",
+    "category": "ai-llms",
+    "tags": ["Pinecone", "向量数据库", "AI", "搜索"],
+    "github": "https://github.com/pinecone-io/pinecone-ts-client",
+    "slug": "pinecone",
+    "stars": 1500
+  },
+  {
+    "name": "weaviate",
+    "description": "Weaviate open source vector database for AI applications",
+    "category": "ai-llms",
+    "tags": ["Weaviate", "向量数据库", "开源", "AI"],
+    "github": "https://github.com/weaviate/weaviate",
+    "slug": "weaviate",
+    "stars": 10000
+  },
+  {
+    "name": "qdrant",
+    "description": "Qdrant vector similarity search engine for AI applications",
+    "category": "ai-llms",
+    "tags": ["Qdrant", "向量搜索", "数据库", "AI"],
+    "github": "https://github.com/qdrant/qdrant",
+    "slug": "qdrant",
+    "stars": 19000
+  },
+  {
+    "name": "chroma",
+    "description": "Chroma open source embedding database for AI applications",
+    "category": "ai-llms",
+    "tags": ["Chroma", "向量数据库", "嵌入", "开源"],
+    "github": "https://github.com/chroma-core/chroma",
+    "slug": "chroma",
+    "stars": 13000
+  },
+  {
+    "name": "pytorch",
+    "description": "PyTorch open source machine learning framework",
+    "category": "ai-llms",
+    "tags": ["PyTorch", "ML", "深度学习", "框架"],
+    "github": "https://github.com/pytorch/pytorch",
+    "slug": "pytorch",
+    "stars": 81000
+  },
+  {
+    "name": "tensorflow",
+    "description": "TensorFlow end-to-end open source machine learning platform",
+    "category": "ai-llms",
+    "tags": ["TensorFlow", "ML", "深度学习", "Google"],
+    "github": "https://github.com/tensorflow/tensorflow",
+    "slug": "tensorflow",
+    "stars": 183000
+  },
+  {
+    "name": "scikit-learn",
+    "description": "Scikit-learn machine learning library for Python",
+    "category": "ai-llms",
+    "tags": ["scikit-learn", "ML", "Python", "机器学习"],
+    "github": "https://github.com/scikit-learn/scikit-learn",
+    "slug": "scikit-learn",
+    "stars": 59000
+  },
+  {
+    "name": "ollama",
+    "description": "Ollama run large language models locally",
+    "category": "ai-llms",
+    "tags": ["Ollama", "LLM", "本地", "推理"],
+    "github": "https://github.com/ollama/ollama",
+    "slug": "ollama",
+    "stars": 94000
+  },
+  {
+    "name": "vllm",
+    "description": "vLLM high-throughput and memory-efficient LLM serving engine",
+    "category": "ai-llms",
+    "tags": ["vLLM", "LLM", "推理", "高性能"],
+    "github": "https://github.com/vllm-project/vllm",
+    "slug": "vllm",
+    "stars": 33000
+  },
+  {
+    "name": "text-generation-webui",
+    "description": "Text generation web UI for running LLMs locally",
+    "category": "ai-llms",
+    "tags": ["WebUI", "LLM", "本地", "界面"],
+    "github": "https://github.com/oobabooga/text-generation-webui",
+    "slug": "text-generation-webui",
+    "stars": 140000
+  },
+  {
+    "name": "openai-whisper",
+    "description": "OpenAI Whisper automatic speech recognition system",
+    "category": "ai-llms",
+    "tags": ["Whisper", "OpenAI", "语音识别", "ASR"],
+    "github": "https://github.com/openai/whisper",
+    "slug": "openai-whisper",
+    "stars": 63000
+  },
+  {
+    "name": "htop",
+    "description": "Htop interactive process viewer and system monitor",
+    "category": "utilities",
+    "tags": ["htop", "系统", "监控", "进程"],
+    "github": "https://github.com/htop-dev/htop",
+    "slug": "htop",
+    "stars": 6200
+  },
+  {
+    "name": "btop",
+    "description": "Btop resource monitor with beautiful interface and low resource usage",
+    "category": "utilities",
+    "tags": ["btop", "系统", "监控", "资源"],
+    "github": "https://github.com/aristocratos/btop",
+    "slug": "btop",
+    "stars": 26000
+  },
+  {
+    "name": "tmux",
+    "description": "Tmux terminal multiplexer for managing multiple terminal sessions",
+    "category": "utilities",
+    "tags": ["tmux", "终端", "复用", "会话"],
+    "github": "https://github.com/tmux/tmux",
+    "slug": "tmux",
+    "stars": 34000
+  },
+  {
+    "name": "zsh",
+    "description": "Zsh powerful shell with extensive features and plugins",
+    "category": "utilities",
+    "tags": ["Zsh", "Shell", "终端", "命令行"],
+    "github": "https://github.com/zsh-users/zsh",
+    "slug": "zsh",
+    "stars": 13000
+  },
+  {
+    "name": "fish",
+    "description": "Fish smart and user-friendly command line shell",
+    "category": "utilities",
+    "tags": ["Fish", "Shell", "终端", "交互"],
+    "github": "https://github.com/fish-shell/fish-shell",
+    "slug": "fish",
+    "stars": 25000
+  },
+  {
+    "name": "ripgrep",
+    "description": "Ripgrep fast recursive search tool that respects .gitignore",
+    "category": "utilities",
+    "tags": ["ripgrep", "搜索", "快速", "Grep"],
+    "github": "https://github.com/BurntSushi/ripgrep",
+    "slug": "ripgrep",
+    "stars": 46000
+  },
+  {
+    "name": "fd",
+    "description": "fd fast and user-friendly alternative to find",
+    "category": "utilities",
+    "tags": ["fd", "文件", "搜索", "快速"],
+    "github": "https://github.com/sharkdp/fd",
+    "slug": "fd",
+    "stars": 33000
+  },
+  {
+    "name": "bat",
+    "description": "Bat cat clone with syntax highlighting and Git integration",
+    "category": "utilities",
+    "tags": ["bat", "cat", "语法高亮", "Git"],
+    "github": "https://github.com/sharkdp/bat",
+    "slug": "bat",
+    "stars": 49000
+  },
+  {
+    "name": "exa",
+    "description": "Exa modern replacement for ls with color and Git support",
+    "category": "utilities",
+    "tags": ["exa", "ls", "文件", "颜色"],
+    "github": "https://github.com/ogham/exa",
+    "slug": "exa",
+    "stars": 24000
+  },
+  {
+    "name": "dust",
+    "description": "Dust intuitive du replacement with color and parallelism",
+    "category": "utilities",
+    "tags": ["dust", "du", "磁盘", "空间"],
+    "github": "https://github.com/bootandy/dust",
+    "slug": "dust",
+    "stars": 7800
+  },
+  {
+    "name": "ncdu",
+    "description": "Ncdu disk usage analyzer with ncurses interface",
+    "category": "utilities",
+    "tags": ["ncdu", "磁盘", "分析", "终端"],
+    "github": "https://dev.yorhel.nl/ncdu",
+    "slug": "ncdu",
+    "stars": 5000
+  },
+  {
+    "name": "jq",
+    "description": "Jq lightweight and flexible command-line JSON processor",
+    "category": "utilities",
+    "tags": ["jq", "JSON", "处理", "命令行"],
+    "github": "https://github.com/stedolan/jq",
+    "slug": "jq",
+    "stars": 29000
+  },
+  {
+    "name": "httpie",
+    "description": "HTTPie user-friendly command-line HTTP client",
+    "category": "utilities",
+    "tags": ["HTTPie", "HTTP", "客户端", "API"],
+    "github": "https://github.com/httpie/httpie",
+    "slug": "httpie",
+    "stars": 33000
+  },
+  {
+    "name": "grip",
+    "description": "Grip preview GitHub Markdown files locally",
+    "category": "utilities",
+    "tags": ["Grip", "Markdown", "GitHub", "预览"],
+    "github": "https://github.com/joeyespo/grip",
+    "slug": "grip",
+    "stars": 5200
+  },
+  {
+    "name": "fzf",
+    "description": "Fzf fuzzy finder for command-line with interactive filtering",
+    "category": "utilities",
+    "tags": ["fzf", "模糊搜索", "命令行", "交互"],
+    "github": "https://github.com/junegunn/fzf",
+    "slug": "fzf",
+    "stars": 59000
+  },
+  {
+    "name": "the-silver-searcher",
+    "description": "The Silver Searcher code searching tool similar to ack but faster",
+    "category": "utilities",
+    "tags": ["ag", "搜索", "代码", "快速"],
+    "github": "https://github.com/ggreer/the_silver_searcher",
+    "slug": "the-silver-searcher",
+    "stars": 9200
+  },
+  {
+    "name": "delta",
+    "description": "Delta syntax-highlighting pager for git and diff output",
+    "category": "utilities",
+    "tags": ["Delta", "Git", "Diff", "语法高亮"],
+    "github": "https://github.com/dandavison/delta",
+    "slug": "delta",
+    "stars": 22000
+  },
+  {
+    "name": "lazygit",
+    "description": "Lazygit simple terminal UI for git commands",
+    "category": "utilities",
+    "tags": ["Lazygit", "Git", "终端", "TUI"],
+    "github": "https://github.com/jesseduffield/lazygit",
+    "slug": "lazygit",
+    "stars": 50000
+  },
+  {
+    "name": "gh-dash",
+    "description": "GH Dash beautiful terminal dashboard for GitHub",
+    "category": "utilities",
+    "tags": ["GH", "GitHub", "仪表板", "终端"],
+    "github": "https://github.com/dlvhdr/gh-dash",
+    "slug": "gh-dash",
+    "stars": 12000
+  },
+  {
+    "name": "gum",
+    "description": "Gum tool for glamorous shell scripts and interactive prompts",
+    "category": "utilities",
+    "tags": ["Gum", "Shell", "交互", "脚本"],
+    "github": "https://github.com/charmbracelet/gum",
+    "slug": "gum",
+    "stars": 19000
+  },
+  {
+    "name": "choose",
+    "description": "Choose human-friendly and fast alternative to cut and fzf",
+    "category": "utilities",
+    "tags": ["choose", "选择", "快速", "终端"],
+    "github": "https://github.com/theryangeary/choose",
+    "slug": "choose",
+    "stars": 900
+  },
+  {
+    "name": "zoxide",
+    "description": "Zoxide smarter cd command for directory navigation",
+    "category": "utilities",
+    "tags": ["zoxide", "cd", "目录", "导航"],
+    "github": "https://github.com/ajeetdsouza/zoxide",
+    "slug": "zoxide",
+    "stars": 22000
+  },
+  {
+    "name": "starship",
+    "description": "Starship minimal and fast cross-shell prompt",
+    "category": "utilities",
+    "tags": ["Starship", "提示符", "Shell", "终端"],
+    "github": "https://github.com/starship/starship",
+    "slug": "starship",
+    "stars": 41000
+  },
+  {
+    "name": "eza",
+    "description": "Eza modern replacement for ls with features and performance",
+    "category": "utilities",
+    "tags": ["eza", "ls", "文件", "终端"],
+    "github": "https://github.com/eza-community/eza",
+    "slug": "eza",
+    "stars": 12000
+  },
+  {
+    "name": "zellij",
+    "description": "Zellij terminal workspace with panes, tabs, and plugins",
+    "category": "utilities",
+    "tags": ["Zellij", "终端", "工作区", "复用"],
+    "github": "https://github.com/zellij-org/zellij",
+    "slug": "zellij",
+    "stars": 20000
+  },
+  {
+    "name": "k9s",
+    "description": "K9s terminal UI for managing Kubernetes clusters",
+    "category": "utilities",
+    "tags": ["K9s", "Kubernetes", "终端", "TUI"],
+    "github": "https://github.com/derailed/k9s",
+    "slug": "k9s",
+    "stars": 26000
+  },
+  {
+    "name": "stern",
+    "description": "Stern multi-pod and multi-container log tailing for Kubernetes",
+    "category": "utilities",
+    "tags": ["Stern", "Kubernetes", "日志", "多容器"],
+    "github": "https://github.com/stern/stern",
+    "slug": "stern",
+    "stars": 6200
+  },
+  {
+    "name": "kubectx",
+    "description": "Kubectx faster way to switch between clusters and namespaces",
+    "category": "utilities",
+    "tags": ["Kubectx", "Kubernetes", "上下文", "切换"],
+    "github": "https://github.com/ahmetb/kubectx",
+    "slug": "kubectx",
+    "stars": 17000
+  },
+  {
+    "name": "kubectl-krew",
+    "description": "Krew kubectl plugin manager for extending kubectl functionality",
+    "category": "utilities",
+    "tags": ["Krew", "kubectl", "插件", "Kubernetes"],
+    "github": "https://github.com/kubernetes-sigs/krew",
+    "slug": "kubectl-krew",
+    "stars": 5600
+  },
+  {
+    "name": "gitui",
+    "description": "GitUI blazing fast terminal UI for git",
+    "category": "utilities",
+    "tags": ["GitUI", "Git", "终端", "TUI"],
+    "github": "https://github.com/extrawurst/gitui",
+    "slug": "gitui",
+    "stars": 17000
+  },
+  {
+    "name": "tldr",
+    "description": "TLDR simplified and community-driven man pages",
+    "category": "utilities",
+    "tags": ["TLDR", "文档", "手册", "简化"],
+    "github": "https://github.com/tldr-pages/tldr",
+    "slug": "tldr",
+    "stars": 49000
+  },
+  {
+    "name": "tealdeer",
+    "description": "Tealdeer fast TLDR client written in Rust",
+    "category": "utilities",
+    "tags": ["Tealdeer", "TLDR", "Rust", "快速"],
+    "github": "https://github.com/dbrgn/tealdeer",
+    "slug": "tealdeer",
+    "stars": 6100
+  },
+  {
+    "name": "gping",
+    "description": "Gping ping with graph for monitoring latency over time",
+    "category": "utilities",
+    "tags": ["Gping", "ping", "网络", "图形"],
+    "github": "https://github.com/orf/gping",
+    "slug": "gping",
+    "stars": 9800
+  },
+  {
+    "name": "procs",
+    "description": "Procs modern replacement for ps with colored output",
+    "category": "utilities",
+    "tags": ["Procs", "ps", "进程", "终端"],
+    "github": "https://github.com/dalance/procs",
+    "slug": "procs",
+    "stars": 3100
+  },
+  {
+    "name": "sd",
+    "description": "Sd intuitive find and replace CLI with regex support",
+    "category": "utilities",
+    "tags": ["sd", "sed", "替换", "正则"],
+    "github": "https://github.com/chmln/sd",
+    "slug": "sd",
+    "stars": 6100
+  },
+  {
+    "name": "bottom",
+    "description": "Bottom cross-platform graphical process and system monitor",
+    "category": "utilities",
+    "tags": ["Bottom", "系统", "监控", "图形"],
+    "github": "https://github.com/ClementTsang/bottom",
+    "slug": "bottom",
+    "stars": 10000
+  },
+  {
+    "name": "du-dust",
+    "description": "Dust du replacement with colored output and parallelism",
+    "category": "utilities",
+    "tags": ["Dust", "du", "磁盘", "颜色"],
+    "github": "https://github.com/bootandy/dust",
+    "slug": "du-dust",
+    "stars": 7800
+  },
+  {
+    "name": "gdu",
+    "description": "Gdu disk usage analyzer with terminal UI",
+    "category": "utilities",
+    "tags": ["GDU", "磁盘", "分析", "终端"],
+    "github": "https://github.com/dundee/gdu",
+    "slug": "gdu",
+    "stars": 5400
+  },
+  {
+    "name": "bandwhich",
+    "description": "Bandwhich CLI utility for tracking current bandwidth utilization",
+    "category": "utilities",
+    "tags": ["Bandwhich", "带宽", "网络", "监控"],
+    "github": "https://github.com/imsnif/bandwhich",
+    "slug": "bandwhich",
+    "stars": 10000
+  },
+  {
+    "name": "goproxy",
+    "description": "GoProxy modern Go proxy for downloading Go modules",
+    "category": "utilities",
+    "tags": ["GoProxy", "Go", "代理", "模块"],
+    "github": "https://github.com/goproxy/goproxy.cn",
+    "slug": "goproxy",
+    "stars": 13000
+  },
+  {
+    "name": "supabase",
+    "description": "Supabase open source Firebase alternative with database and auth",
+    "category": "productivity",
+    "tags": ["Supabase", "数据库", "认证", "开源"],
+    "github": "https://github.com/supabase/supabase",
+    "slug": "supabase",
+    "stars": 69000
+  },
+  {
+    "name": "firebase",
+    "description": "Firebase platform for building web and mobile applications",
+    "category": "productivity",
+    "tags": ["Firebase", "Google", "后端", "移动"],
+    "github": "https://github.com/firebase/firebase-tools",
+    "slug": "firebase",
+    "stars": 5000
+  },
+  {
+    "name": "appwrite",
+    "description": "Appwrite secure backend server for web and mobile apps",
+    "category": "productivity",
+    "tags": ["Appwrite", "后端", "开源", "自托管"],
+    "github": "https://github.com/appwrite/appwrite",
+    "slug": "appwrite",
+    "stars": 43000
+  },
+  {
+    "name": "pocketbase",
+    "description": "PocketBase open source backend in 1 file",
+    "category": "productivity",
+    "tags": ["PocketBase", "后端", "Go", "嵌入式"],
+    "github": "https://github.com/pocketbase/pocketbase",
+    "slug": "pocketbase",
+    "stars": 38000
+  },
+  {
+    "name": "directus",
+    "description": "Directus open source data platform for managing any database",
+    "category": "productivity",
+    "tags": ["Directus", "数据库", "CMS", "开源"],
+    "github": "https://github.com/directus/directus",
+    "slug": "directus",
+    "stars": 26000
+  },
+  {
+    "name": "strapi",
+    "description": "Strapi open source headless CMS for building APIs",
+    "category": "productivity",
+    "tags": ["Strapi", "CMS", "无头", "API"],
+    "github": "https://github.com/strapi/strapi",
+    "slug": "strapi",
+    "stars": 61000
+  },
+  {
+    "name": "payload-cms",
+    "description": "Payload headless CMS built with TypeScript and Node.js",
+    "category": "productivity",
+    "tags": ["Payload", "CMS", "TypeScript", "无头"],
+    "github": "https://github.com/payloadcms/payload",
+    "slug": "payload-cms",
+    "stars": 21000
+  },
+  {
+    "name": "kestra",
+    "description": "Kestra infinitely scalable orchestration and scheduling platform",
+    "category": "devops",
+    "tags": ["Kestra", "工作流", "编排", "开源"],
+    "github": "https://github.com/kestra-io/kestra",
+    "slug": "kestra",
+    "stars": 11000
+  },
+  {
+    "name": "temporal",
+    "description": "Temporal durable execution platform for building reliable applications",
+    "category": "devops",
+    "tags": ["Temporal", "工作流", "执行", "分布式"],
+    "github": "https://github.com/temporalio/sdk-python",
+    "slug": "temporal",
+    "stars": 12000
+  },
+  {
+    "name": "n8n",
+    "description": "n8n workflow automation tool for connecting apps and services",
+    "category": "productivity",
+    "tags": ["n8n", "工作流", "自动化", "开源"],
+    "github": "https://github.com/n8n-io/n8n",
+    "slug": "n8n",
+    "stars": 46000
+  },
+  {
+    "name": "apache-airflow",
+    "description": "Apache Airflow platform for programmatically authoring and scheduling workflows",
+    "category": "devops",
+    "tags": ["Airflow", "工作流", "调度", "数据"],
+    "github": "https://github.com/apache/airflow",
+    "slug": "apache-airflow",
+    "stars": 37000
+  },
+  {
+    "name": "prefect",
+    "description": "Prefect workflow orchestration framework for data engineering",
+    "category": "devops",
+    "tags": ["Prefect", "工作流", "编排", "Python"],
+    "github": "https://github.com/PrefectHQ/prefect",
+    "slug": "prefect",
+    "stars": 16000
+  },
+  {
+    "name": "dask",
+    "description": "Dask flexible parallel computing library for Python",
+    "category": "development",
+    "tags": ["Dask", "并行", "计算", "Python"],
+    "github": "https://github.com/dask/dask",
+    "slug": "dask",
+    "stars": 12000
+  },
+  {
+    "name": "ray",
+    "description": "Ray unified framework for scaling AI and Python applications",
+    "category": "development",
+    "tags": ["Ray", "分布式", "AI", "Python"],
+    "github": "https://github.com/ray-project/ray",
+    "slug": "ray",
+    "stars": 33000
+  },
+  {
+    "name": "polars",
+    "description": "Polars blazingly fast DataFrames library for Rust and Python",
+    "category": "development",
+    "tags": ["Polars", "数据", "DataFrame", "快速"],
+    "github": "https://github.com/pola-rs/polars",
+    "slug": "polars",
+    "stars": 30000
+  },
+  {
+    "name": "apache-spark",
+    "description": "Apache Spark unified analytics engine for large-scale data processing",
+    "category": "development",
+    "tags": ["Spark", "大数据", "分析", "分布式"],
+    "github": "https://github.com/apache/spark",
+    "slug": "apache-spark",
+    "stars": 40000
+  },
+  {
+    "name": "pandas",
+    "description": "Pandas powerful Python data analysis and manipulation library",
+    "category": "development",
+    "tags": ["Pandas", "数据", "Python", "分析"],
+    "github": "https://github.com/pandas-dev/pandas",
+    "slug": "pandas",
+    "stars": 42000
+  },
+  {
+    "name": "numpy",
+    "description": "NumPy fundamental package for scientific computing with Python",
+    "category": "development",
+    "tags": ["NumPy", "科学计算", "Python", "数组"],
+    "github": "https://github.com/numpy/numpy",
+    "slug": "numpy",
+    "stars": 28000
+  },
+  {
+    "name": "jupyter",
+    "description": "Jupyter interactive development environment for notebooks, code, and data",
+    "category": "development",
+    "tags": ["Jupyter", "笔记本", "Python", "交互"],
+    "github": "https://github.com/jupyter/notebook",
+    "slug": "jupyter",
+    "stars": 13000
+  },
+  {
+    "name": "ipython",
+    "description": "IPython enhanced Python interactive shell",
+    "category": "development",
+    "tags": ["IPython", "Python", "交互", "Shell"],
+    "github": "https://github.com/ipython/ipython",
+    "slug": "ipython",
+    "stars": 14000
+  },
+  {
+    "name": "homebrew",
+    "description": "Homebrew package manager for macOS and Linux",
+    "category": "utilities",
+    "tags": ["Homebrew", "包管理", "macOS", "Linux"],
+    "github": "https://github.com/Homebrew/brew",
+    "slug": "homebrew",
+    "stars": 41000
+  },
+  {
+    "name": "scoop",
+    "description": "Scoop command-line installer for Windows",
+    "category": "utilities",
+    "tags": ["Scoop", "包管理", "Windows", "安装"],
+    "github": "https://github.com/ScoopInstaller/Scoop",
+    "slug": "scoop",
+    "stars": 20000
+  },
+  {
+    "name": "chocolatey",
+    "description": "Chocolatey package manager for Windows",
+    "category": "utilities",
+    "tags": ["Chocolatey", "包管理", "Windows", "软件"],
+    "github": "https://github.com/chocolatey/choco",
+    "slug": "chocolatey",
+    "stars": 10000
+  }
+]
