@@ -507,3 +507,18 @@
 - TypeScript 类型检查和构建成功可以排除大部分问题
 - 生产环境测试是最终验证的重要步骤
 ---
+
+## 2026-02-05 - US-031
+- 更新 src/types/index.ts 中的 Skill 接口
+- 添加 slug: string 字段（必需）用于详情页 URL
+- 添加 longDescription?: string 字段（可选）用于详细描述
+- 添加 installCount?: number 字段（可选）用于安装计数
+- 添加 relatedSkills?: string[] 字段（可选）用于相关技能
+- 类型检查和构建验证通过
+
+**Learnings for future iterations:**
+- Skill 接口新增字段需要与 skills.json 数据结构保持一致
+- 可选字段使用 `?:` 语法，避免破坏现有代码
+- 构建成功验证了类型定义与现有代码的兼容性
+- slug 字段将在后续步骤中用于技能详情页路由
+---

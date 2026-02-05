@@ -27,6 +27,15 @@ export function getVerifiedSkills(): Skill[] {
 }
 
 /**
+ * Get skill by slug
+ * @param slug - The skill slug
+ * @returns The skill or undefined if not found
+ */
+export function getSkillBySlug(slug: string): Skill | undefined {
+  return getAllSkills().find((skill) => skill.slug === slug);
+}
+
+/**
  * Search skills by query
  * @param query - Search query string
  * @returns Array of skills matching the query in name, description, or tags
