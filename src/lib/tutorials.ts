@@ -53,3 +53,14 @@ export function searchTutorials(query: string): Tutorial[] {
     );
   });
 }
+
+/**
+ * Get tutorials related to a specific skill
+ * @param skillId - The skill ID to find related tutorials for
+ * @returns Array of tutorials that reference this skill in relatedSkills
+ */
+export function getTutorialsBySkill(skillId: string): Tutorial[] {
+  return getAllTutorials().filter((tutorial) =>
+    tutorial.relatedSkills.includes(skillId)
+  );
+}

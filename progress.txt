@@ -558,3 +558,31 @@
 - 分类标签使用 getCategoryLabel 函数映射英文 slug 到中文显示
 - relatedSkills 字段存储 skill ID 数组，需要通过 find() 查找完整技能对象
 ---
+
+## 2026-02-05 - US-034
+- 创建 src/components/SkillDetail.tsx 组件（客户端组件）
+- 显示技能完整信息：名称、描述、longDescription、分类、标签、作者、安装次数、创建时间
+- 一键复制安装命令功能，使用 useState + navigator.clipboard.writeText()
+- 复制成功后显示"已复制到剪贴板"提示，2秒后恢复按钮状态
+- 显示相关教程：通过 getTutorialsBySkill(skill.id) 反向查找引用此技能的教程
+- 显示相关技能：基于 relatedSkills 字段显示相关技能卡片
+- 显示相关链接：GitHub 仓库、项目主页（带外部链接图标）
+- 响应式设计：text-2xl sm:text-3xl md:text-4xl、py-6 sm:py-8、min-h-[44px] 按钮
+- 重构 src/app/skills/[slug]/page.tsx 使用 SkillDetail 组件
+- 添加 getTutorialsBySkill(skillId: string) 函数到 src/lib/tutorials.ts
+- 类型检查和构建验证通过
+
+**Files changed:**
+- src/components/SkillDetail.tsx (新建)
+- src/lib/tutorials.ts (添加 getTutorialsBySkill 函数)
+- src/app/skills/[slug]/page.tsx (重构使用 SkillDetail 组件)
+
+**Learnings for future iterations:**
+- SkillDetail 组件是客户端组件（'use client'），因为有复制交互
+- 使用 getTutorialsBySkill 反向查找教程：通过 tutorial.relatedSkills.includes(skillId) 查找
+- 复制按钮使用 variant 切换：copied ? 'default' : 'outline' 提供视觉反馈
+- 按钮文字和图标根据 copied 状态变化，提供清晰的用户反馈
+- 相关教程和技能使用 Link 组件包装卡片，点击可跳转
+- 卡片使用 hover:shadow-md transition-shadow 实现悬停效果
+- 类型守卫 filter((s): s is Skill => s !== undefined) 确保类型安全
+---
