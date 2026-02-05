@@ -626,3 +626,26 @@
 - relatedConfigs 字段用于关联相关配置（类似于 relatedSkills）
 - likesCount 和 forksCount 用于展示配置的受欢迎程度
 ---
+
+## 2026-02-05 - US-037
+- 创建 src/data/configs.json 文件，包含 5 个初始 Agent 配置
+- 通用助手 (general-assistant) - productivity 分类，适用于日常任务
+- 代码审查专家 (code-review-expert) - development 分类，专注代码审查
+- 技术文档写作 (technical-writer) - productivity 分类，专注技术文档
+- 调试助手 (debugging-assistant) - development 分类，专注问题诊断
+- 编程导师 (coding-tutor) - learning 分类，专注编程教学
+- 每个配置包含完整的 config JSON（name, description, system, model, temperature, maxTokens 等）
+- 所有配置标记为 isOfficial: true
+- JSON 格式验证通过，构建成功
+
+**Files changed:**
+- src/data/configs.json (新建，5 个配置)
+- prd.json (标记 US-037 完成)
+
+**Learnings for future iterations:**
+- Agent 配置的 config 字段包含完整的 OpenClaw 配置 JSON
+- system 字段使用多行字符串定义详细的系统提示词
+- 不同使用场景使用不同 temperature：代码审查用 0.3（确定性），通用助手用 0.7（平衡），导师用 0.6（鼓励创造性）
+- 复杂任务使用 Opus 模型，日常任务使用 Sonnet 3.5 以平衡成本和性能
+- 分类映射：development（开发）、productivity（生产力）、learning（学习）
+---
