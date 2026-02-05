@@ -1,4 +1,6 @@
 import { MetadataRoute } from 'next';
+import { getAllTutorials } from '@/lib/tutorials';
+import { getAllSkills } from '@/lib/skills';
 
 export const dynamic = 'force-static';
 
@@ -21,27 +23,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Tutorial pages
-  const tutorials: MetadataRoute.Sitemap = [
-    {
-      url: `${baseUrl}/tutorial/getting-started-with-openclaw`,
-      lastModified: new Date('2026-01-15'),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/tutorial/configuring-your-first-agent`,
-      lastModified: new Date('2026-01-16'),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/tutorial/code-review-practice`,
-      lastModified: new Date('2026-01-20'),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-  ];
+  // Tutorial pages - dynamically generate from tutorials.json
+  const tutorials: MetadataRoute.Sitemap = getAllTutorials().map((tutorial) => ({
+    url: `${baseUrl}/tutorial/${tutorial.slug}`,
+    lastModified: new Date(tutorial.createdAt),
+    changeFrequency: 'monthly' as const,
+    priority: 0.9,
+  }));
 
-  return [...staticPages, ...tutorials];
+  // Skill detail pages - dynamically generate from skills.json
+  const skills: MetadataRoute.Sitemap = getAllSkills().map((skill) => ({
+    url: `${baseUrl}/skills/${skill.slug}`,
+    lastModified: new Date(skill.createdAt),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...tutorials, ...skills];
 }
