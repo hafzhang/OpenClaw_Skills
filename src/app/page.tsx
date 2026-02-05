@@ -135,6 +135,22 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        {/* Configs Section */}
+        <section className="py-8 md:py-12">
+          <div className="text-center mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold">Agent 配置分享</h2>
+            <p className="text-muted-foreground mt-2">快速定制你的 AI 助手</p>
+          </div>
+          <div className="text-center">
+            <a
+              href="/configs"
+              className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors min-h-[44px] flex items-center justify-center"
+            >
+              浏览配置 →
+            </a>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}

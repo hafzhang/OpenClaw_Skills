@@ -45,8 +45,8 @@ export interface Skill {
 export type DifficultyLevel = 'beginner' | 'intermediate' | 'advanced';
 
 export interface SearchResult {
-  type: 'tutorial' | 'skill';
-  item: Tutorial | Skill;
+  type: 'tutorial' | 'skill' | 'config';
+  item: Tutorial | Skill | AgentConfig;
 }
 
 export interface AgentConfig {

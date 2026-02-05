@@ -715,3 +715,34 @@
 - 空状态处理逻辑：filteredConfigs.length === 0 时显示提示
 - 按钮最小高度 min-h-[44px] 确保移动端触摸友好
 ---
+
+## 2026-02-05 - US-041
+- 创建 src/components/ConfigDetail.tsx 组件（客户端组件）
+- 显示配置完整信息：名称、描述、longDescription、作者、分类、标签、点赞数、分支数
+- 显示作者链接（authorUrl 存在时可点击跳转）
+- 显示官方认证徽章（isOfficial）
+- 以代码块格式展示 config JSON（使用 pre + code）
+- 一键复制配置 JSON 功能，使用 useState + navigator.clipboard.writeText()
+- 复制成功后显示"已复制"提示，2秒后恢复按钮状态
+- 显示相关配置列表（基于 relatedConfigs 字段）
+- 创建 src/app/configs/[slug]/page.tsx 动态路由
+- 实现 generateStaticParams 函数生成 5 个配置的静态路由
+- 配置 dynamicParams = false 确保构建时生成所有路由
+- 实现 generateMetadata 函数生成页面元数据
+- 处理配置不存在的情况（404 使用 notFound()）
+- 响应式设计（text-2xl sm:text-3xl md:text-4xl、py-6 sm:py-8、min-h-[44px] 按钮）
+
+**Files changed:**
+- src/components/ConfigDetail.tsx (新建)
+- src/app/configs/[slug]/page.tsx (新建)
+- prd.json (标记 US-041 完成)
+
+**Learnings for future iterations:**
+- ConfigDetail 组件是客户端组件（'use client'），因为有复制交互
+- 配置详情页遵循与技能详情页相同的模式：generateStaticParams + dynamicParams = false + generateMetadata
+- 使用 React.use(params) 解包 params Promise（Next.js 15+ 异步 params 模式）
+- 相关配置使用 filter 和类型守卫确保类型安全：filter((c): c is AgentConfig => c !== undefined)
+- 作者链接添加 target="_blank" 和 rel="noopener noreferrer" 安全属性
+- JSON 配置使用 JSON.stringify(config, null, 2) 格式化（2 空格缩进）
+- 代码块使用 bg-muted 背景色和 rounded-lg 圆角，overflow-x-auto 支持横向滚动
+---

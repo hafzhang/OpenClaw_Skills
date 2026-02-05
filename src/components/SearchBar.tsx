@@ -12,7 +12,7 @@ interface SearchBarProps {
   onSearchChange?: (query: string) => void;
 }
 
-export function SearchBar({ className, placeholder = '搜索教程和技能...', onSearchChange }: SearchBarProps) {
+export function SearchBar({ className, placeholder = '搜索教程、技能和配置...', onSearchChange }: SearchBarProps) {
   const [searchQuery, setSearchQuery] = React.useState('');
   const [searchResults, setSearchResults] = React.useState<SearchResult[]>([]);
   const [showResults, setShowResults] = React.useState(false);
@@ -49,6 +49,45 @@ export function SearchBar({ className, placeholder = '搜索教程和技能...',
     }
   };
 
+  const getResultTypeLabel = (type: string): string => {
+    switch (type) {
+      case 'tutorial':
+        return '教程';
+      case 'skill':
+        return '技能';
+      case 'config':
+        return '配置';
+      default:
+        return type;
+    }
+  };
+
+  const getResultTypeColor = (type: string): string => {
+    switch (type) {
+      case 'tutorial':
+        return 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300';
+      case 'skill':
+        return 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300';
+      case 'config':
+        return 'bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-300';
+      default:
+        return 'bg-gray-100 text-gray-700 dark:bg-gray-900 dark:text-gray-300';
+    }
+  };
+
+  const getResultHref = (result: SearchResult): string => {
+    switch (result.type) {
+      case 'tutorial':
+        return `/tutorial/${(result.item as any).slug}`;
+      case 'skill':
+        return `/skills#${(result.item as any).id}`;
+      case 'config':
+        return `/configs/${(result.item as any).slug}`;
+      default:
+        return '#';
+    }
+  };
+
   return (
     <div className={cn('relative w-full', className)}>
       <div className="relative">
@@ -58,7 +97,7 @@ export function SearchBar({ className, placeholder = '搜索教程和技能...',
           value={searchQuery}
           onChange={handleSearchChange}
           className="pr-10 min-h-[44px]"
-          aria-label="搜索教程和技能"
+          aria-label="搜索教程、技能和配置"
         />
         {searchQuery && (
           <Button
@@ -80,11 +119,7 @@ export function SearchBar({ className, placeholder = '搜索教程和技能...',
             {searchResults.map((result, index) => (
               <li key={`${result.type}-${index}`}>
                 <a
-                  href={
-                    result.type === 'tutorial'
-                      ? `/tutorial/${(result.item as any).slug}`
-                      : `/skills#${(result.item as any).id}`
-                  }
+                  href={getResultHref(result)}
                   className="block px-3 sm:px-4 py-3 hover:bg-accent transition-colors min-h-[44px] flex items-center"
                   onClick={() => {
                     setShowResults(false);
@@ -100,12 +135,10 @@ export function SearchBar({ className, placeholder = '搜索教程和技能...',
                         <span
                           className={cn(
                             'text-xs px-1.5 py-0.5 rounded shrink-0',
-                            result.type === 'tutorial'
-                              ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'
-                              : 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300'
+                            getResultTypeColor(result.type)
                           )}
                         >
-                          {result.type === 'tutorial' ? '教程' : '技能'}
+                          {getResultTypeLabel(result.type)}
                         </span>
                       </div>
                       <p className="text-xs sm:text-sm text-muted-foreground truncate mt-1">
