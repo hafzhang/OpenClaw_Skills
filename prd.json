@@ -539,7 +539,7 @@
         "参考 getTutorialBySlug 实现"
       ],
       "priority": 32,
-      "passes": false,
+      "passes": true,
       "notes": "Sprint 1 - 步骤 1.3"
     },
     {

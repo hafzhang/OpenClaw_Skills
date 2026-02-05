@@ -522,3 +522,16 @@
 - 构建成功验证了类型定义与现有代码的兼容性
 - slug 字段将在后续步骤中用于技能详情页路由
 ---
+
+## 2026-02-05 - US-032
+- 在 src/lib/skills.ts 中添加 getSkillBySlug(slug: string) 函数
+- 函数返回 Skill | undefined 类型
+- 参照 getTutorialBySlug 的实现模式
+- 类型检查和构建验证通过
+
+**Learnings for future iterations:**
+- getSkillBySlug 使用 find() 方法查找第一个匹配的技能
+- 返回 undefined 处理技能不存在的情况（符合 TypeScript 模式）
+- 函数遵循与 getTutorialBySlug 相同的模式便于维护
+- 函数包含 JSDoc 注释说明参数和返回值类型
+---
