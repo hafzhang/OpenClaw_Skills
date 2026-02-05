@@ -535,3 +535,26 @@
 - 函数遵循与 getTutorialBySlug 相同的模式便于维护
 - 函数包含 JSDoc 注释说明参数和返回值类型
 ---
+
+## 2026-02-05 - US-033
+- 创建 src/app/skills/[slug]/page.tsx 技能详情页（动态路由）
+- 使用 getSkillBySlug 获取技能数据
+- 实现 generateStaticParams 函数生成所有 40 个技能的静态路由
+- 配置 dynamicParams = false 确保构建时生成所有路由
+- 实现 generateMetadata 函数生成页面元数据
+- 显示技能完整信息：名称、描述、longDescription、分类、标签、作者、安装次数
+- 显示安装命令（代码块格式）
+- 显示相关链接（GitHub 仓库、项目主页）
+- 显示相关技能列表（基于 relatedSkills 字段）
+- 处理技能不存在的情况（404 使用 notFound()）
+- 响应式设计（text-2xl sm:text-3xl md:text-4xl、py-6 sm:py-8）
+- 类型检查和构建验证通过（生成 40 个技能详情页）
+
+**Learnings for future iterations:**
+- 技能详情页遵循与教程详情页相同的模式：generateStaticParams + dynamicParams = false + generateMetadata
+- 使用 React.use(params) 解包 params Promise（Next.js 15+ 异步 params 模式）
+- 相关技能使用 filter 和类型守卫确保类型安全：filter((s): s is Skill => s !== undefined)
+- 外部链接添加 target="_blank" 和 rel="noopener noreferrer" 安全属性
+- 分类标签使用 getCategoryLabel 函数映射英文 slug 到中文显示
+- relatedSkills 字段存储 skill ID 数组，需要通过 find() 查找完整技能对象
+---
