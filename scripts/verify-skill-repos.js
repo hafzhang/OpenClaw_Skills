@@ -171,39 +171,46 @@ async function verifyRepositories() {
 
   for (let i = 0; i < skills.length; i++) {
     const skill = skills[i];
-    const { name, github } = skill;
+    const { name } = skill;
+    // Support both 'github' and 'url' fields
+    const repoUrl = skill.github || skill.url;
+
+    if (!repoUrl) {
+      console.log(`\n⚠️  Skipping ${name} - no repository URL`);
+      continue;
+    }
 
     if (options.verbose) {
       console.log(`[${i + 1}/${skills.length}] Checking: ${name}`);
-      console.log(`  URL: ${github}`);
+      console.log(`  URL: ${repoUrl}`);
     } else {
       process.stdout.write(`\r[${i + 1}/${skills.length}] Checking ${name}...`);
     }
 
-    const result = await checkUrl(github);
+    const result = await checkUrl(repoUrl);
 
     const verificationResult = {
       name,
       slug: skill.slug,
       category: skill.category,
-      originalUrl: github,
-      finalUrl: result.finalUrl || github,
+      originalUrl: repoUrl,
+      finalUrl: result.finalUrl || repoUrl,
       status: result.status,
       success: result.success,
       error: result.error,
-      redirected: result.finalUrl !== github
+      redirected: result.finalUrl !== repoUrl
     };
 
     results.push(verificationResult);
 
     if (result.success) {
       successCount++;
-      if (result.finalUrl !== github) {
+      if (result.finalUrl !== repoUrl) {
         redirectCount++;
       }
       if (options.verbose) {
         console.log(`  ✅ Status: ${result.status}`);
-        if (result.finalUrl !== github) {
+        if (result.finalUrl !== repoUrl) {
           console.log(`  → Final URL: ${result.finalUrl}`);
         }
       }
