@@ -625,7 +625,7 @@
         "npm run build 构建验证"
       ],
       "priority": 37,
-      "passes": false,
+      "passes": true,
       "notes": "Sprint 2 - 步骤 2.2"
     },
     {

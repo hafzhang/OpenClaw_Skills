@@ -606,3 +606,23 @@
 - 技能详情页 priority 低于教程详情页（0.7 vs 0.9）因为教程是主要内容
 - lastModified 使用 createdAt 日期，保持数据一致性
 ---
+
+## 2026-02-05 - US-036
+- 在 src/types/index.ts 中创建 AgentConfig 接口
+- 必需字段：id, name, slug, description, author, config, category, tags
+- 可选字段：longDescription, authorUrl, relatedConfigs, likesCount, forksCount, isOfficial
+- 时间字段：createdAt, updatedAt
+- config 字段类型为 Record<string, unknown>（支持灵活的 Agent 配置）
+- 类型检查和构建验证通过
+
+**Files changed:**
+- src/types/index.ts (添加 AgentConfig 接口)
+- prd.json (标记 US-036 完成)
+
+**Learnings for future iterations:**
+- AgentConfig 接口用于 Agent 配置分享功能
+- config 字段使用 Record<string, unknown> 类型以支持任意有效的 JSON 配置
+- isOfficial 字段用于标识官方认证的配置
+- relatedConfigs 字段用于关联相关配置（类似于 relatedSkills）
+- likesCount 和 forksCount 用于展示配置的受欢迎程度
+---
