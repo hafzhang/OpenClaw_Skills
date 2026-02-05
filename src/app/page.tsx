@@ -70,7 +70,15 @@ export default function Home() {
 
         {/* Quick Start Section */}
         <section className="py-8 md:py-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">快速入门</h2>
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold">快速入门</h2>
+            <a
+              href="/tutorials"
+              className="text-sm text-primary hover:underline"
+            >
+              查看全部教程 →
+            </a>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {quickStartTutorials.map((tutorial) => (
               <TutorialCard key={tutorial.id} tutorial={tutorial} />
@@ -82,11 +90,19 @@ export default function Home() {
         <section className="py-8 md:py-12">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6 gap-4">
             <h2 className="text-2xl md:text-3xl font-bold">精选教程</h2>
-            <CategoryFilter
-              selectedCategory={selectedCategory}
-              onCategoryChange={setSelectedCategory}
-              className="flex-wrap"
-            />
+            <div className="flex items-center gap-4">
+              <a
+                href="/tutorials"
+                className="text-sm text-primary hover:underline"
+              >
+                查看全部教程 →
+              </a>
+              <CategoryFilter
+                selectedCategory={selectedCategory}
+                onCategoryChange={setSelectedCategory}
+                className="flex-wrap"
+              />
+            </div>
           </div>
 
           {filteredTutorials.length > 0 ? (

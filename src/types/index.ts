@@ -27,7 +27,9 @@ export interface TutorialCategory {
 export interface Skill {
   id: string;
   name: string;
+  slug: string;
   description: string;
+  longDescription?: string;
   category: string;
   tags: string[];
   author: string;
@@ -35,6 +37,8 @@ export interface Skill {
   source: string;
   verified: boolean;
   url: string;
+  installCount?: number;
+  relatedSkills?: string[];
   createdAt: string;
 }
 
