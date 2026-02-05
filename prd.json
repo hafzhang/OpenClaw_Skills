@@ -557,7 +557,7 @@
         "参考 src/app/tutorial/[slug]/page.tsx 实现"
       ],
       "priority": 33,
-      "passes": false,
+      "passes": true,
       "notes": "Sprint 1 - 步骤 1.4"
     },
     {
