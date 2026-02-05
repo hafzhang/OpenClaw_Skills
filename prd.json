@@ -765,7 +765,7 @@
         "更新文档"
       ],
       "priority": 45,
-      "passes": false,
+      "passes": true,
       "notes": "Phase 2 最终验收"
     },
     {
