@@ -1,1359 +1,732 @@
 {
   "project": "OpenClaw Hub - 实战指南",
   "branchName": "feature/openclaw-hub-phase-3",
-  "description": "OpenClaw Hub 实战指南 - Phase 3 内容扩展。MVP 完成 ✅ (US-001 ~ US-029)。Phase 2 完成 ✅ (US-030 ~ US-045)。Phase 3 进行中：教程 30→40 (+10)，技能 200→300 (+100)。",
+  "description": "OpenClaw Hub 实战指南 - Phase 4 完成 ✅ (US-001 ~ US-088)。Phase 5 进行中：教程 40→100 (+60，分17批)，技能 300→1000 (+700，分30批)。",
+  "currentStatus": {
+    "phase": 5,
+    "phaseName": "Phase 5 - 大规模内容扩展",
+    "status": "in_progress",
+    "tutorials": 40,
+    "skills": 300,
+    "configs": 5
+  },
   "userStories": [
     {
-      "id": "US-001",
-      "title": "初始化 Next.js 项目（TypeScript + Tailwind + Markdown）",
-      "description": "作为开发者，需要设置 Next.js 14 项目，支持 Markdown 教程渲染。",
+      "id": "US-078",
+      "title": "实现高级搜索和筛选功能",
+      "description": "作为用户，我希望有更强大的搜索功能来快速找到我需要的内容。",
       "acceptanceCriteria": [
-        "使用 npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm 创建项目",
-        "在 next.config.js 中配置静态导出 output: 'export'",
-        "安装 react-markdown 和 rehype-highlight",
-        "设置 images.unoptimized: true 以支持静态托管",
-        "添加项目结构：src/app、src/components、src/data、src/lib、src/types、src/templates",
-        "项目运行成功，npm run dev 无错误"
-      ],
-      "priority": 1,
-      "passes": true,
-      "notes": ""
-    },
-    {
-      "id": "US-002",
-      "title": "安装并配置 shadcn/ui 组件",
-      "description": "作为开发者，需要 shadcn/ui 来获取一致的 UI 组件。",
-      "acceptanceCriteria": [
-        "使用 npx shadcn-ui@latest init 安装 shadcn/ui",
-        "添加所需组件：card、button、input、badge",
-        "验证项目根目录存在 components.json",
-        "组件在测试页面中正确渲染"
-      ],
-      "priority": 2,
-      "passes": true,
-      "notes": ""
-    },
-    {
-      "id": "US-003",
-      "title": "定义 Tutorial 和 Skill 的 TypeScript 类型",
-      "description": "作为开发者，需要 TypeScript 接口来确保类型安全。",
-      "acceptanceCriteria": [
-        "创建 src/types/index.ts，包含 Tutorial 接口（id: string、title: string、slug: string、description: string、content: string、category: string、tags: string[]、difficulty: 'beginner' | 'intermediate' | 'advanced'、readTime: number、author: string、relatedSkills: string[]、stats: { viewCount: number }、createdAt: string、featured: boolean）",
-        "创建 TutorialCategory 接口（id: string、name: string、icon: string、description: string）",
-        "创建 Skill 接口（id: string、name: string、description: string、category: string、tags: string[]、author: string、command: string、source: string、verified: boolean、url: string、createdAt: string）",
-        "❌ 不包含 hot（随机热度）字段",
-        "❌ 不包含 rating（随机评分）字段",
-        "类型检查通过，无错误"
-      ],
-      "priority": 3,
-      "passes": true,
-      "notes": ""
-    },
-    {
-      "id": "US-004",
-      "title": "创建初始 tutorials.json 和 skills.json 数据文件",
-      "description": "作为开发者，需要初始数据来进行开发。",
-      "acceptanceCriteria": [
-        "创建 src/data/tutorials.json，包含 3 篇核心教程示例",
-        "创建 src/data/skills.json，包含 10 个技能示例",
-        "每个教程包含所有必需字段（无假数据）",
-        "每个技能包含 verified 字段（验证状态）",
-        "JSON 格式有效且能正确解析"
-      ],
-      "priority": 4,
-      "passes": true,
-      "notes": ""
-    },
-    {
-      "id": "US-005",
-      "title": "创建教程和技能数据操作函数",
-      "description": "作为开发者，需要可复用的函数来访问教程和技能数据。",
-      "acceptanceCriteria": [
-        "创建 src/lib/tutorials.ts，包含 getAllTutorials()、getFeaturedTutorials()、getTutorialsByCategory()、getTutorialBySlug()、searchTutorials() 函数",
-        "创建 src/lib/skills.ts，包含 getAllSkills()、getSkillsByCategory()、searchSkills() 函数",
-        "创建 src/lib/search.ts，包含 searchAll() 统一搜索教程和技能",
-        "函数返回正确的 TypeScript 类型",
+        "实现多字段搜索（标题、描述、标签、分类）",
+        "实现筛选功能（类型、分类、难度、评分）",
+        "实现排序选项（相关性、标题、日期、评分、热门）",
+        "创建 AdvancedSearch 组件",
+        "创建 SearchFilters 组件",
+        "创建 SearchResults 组件",
+        "搜索结果显示相关度分数",
         "类型检查通过"
-      ],
-      "priority": 5,
-      "passes": true,
-      "notes": ""
-    },
-    {
-      "id": "US-006",
-      "title": "创建 Header 组件（教程导向）",
-      "description": "作为用户，需要包含网站标题和搜索框的头部组件。",
-      "acceptanceCriteria": [
-        "创建 src/components/Header.tsx 组件",
-        "显示标题 'OpenClaw 实战指南'",
-        "显示标语 '让 AI 助手真正帮你工作'",
-        "包含统一搜索框（搜索教程 + 技能）",
-        "响应式设计在移动端和桌面端都能正常工作",
-        "类型检查通过"
-      ],
-      "priority": 6,
-      "passes": true,
-      "notes": ""
-    },
-    {
-      "id": "US-007",
-      "title": "创建 TutorialCard 组件",
-      "description": "作为用户，需要以卡片形式查看教程信息。",
-      "acceptanceCriteria": [
-        "创建 src/components/TutorialCard.tsx 组件",
-        "显示教程标题、描述、难度标签、阅读时间",
-        "显示相关技能标签",
-        "显示浏览次数 stats.viewCount（真实统计，非随机热度）",
-        "添加 '开始阅读' 和 '收藏' 按钮",
-        "卡片有悬停效果和适当间距",
-        "类型检查通过"
-      ],
-      "priority": 7,
-      "passes": true,
-      "notes": ""
-    },
-    {
-      "id": "US-008",
-      "title": "创建简化的 SkillCard 组件",
-      "description": "作为用户，需要查看技能信息（辅助功能）。",
-      "acceptanceCriteria": [
-        "创建 src/components/SkillCard.tsx 组件",
-        "显示技能名称、描述、验证状态标签",
-        "显示作者信息",
-        "添加 '复制安装命令' 按钮",
-        "不显示随机热度和评分",
-        "类型检查通过"
-      ],
-      "priority": 8,
-      "passes": true,
-      "notes": ""
-    },
-    {
-      "id": "US-009",
-      "title": "创建 SearchBar 组件（统一搜索）",
-      "description": "作为用户，需要统一搜索教程和技能。",
-      "acceptanceCriteria": [
-        "创建 src/components/SearchBar.tsx 组件",
-        "输入框带搜索图标",
-        "实时搜索，匹配教程标题、描述、标签",
-        "同时搜索技能名称、描述、标签",
-        "搜索结果显示类型标识（教程/技能）",
-        "清除按钮重置搜索",
-        "响应式设计",
-        "类型检查通过"
-      ],
-      "priority": 9,
-      "passes": true,
-      "notes": ""
-    },
-    {
-      "id": "US-010",
-      "title": "创建 CategoryFilter 组件（场景分类）",
-      "description": "作为用户，需要按场景筛选教程。",
-      "acceptanceCriteria": [
-        "创建 src/components/CategoryFilter.tsx 组件",
-        "显示场景分类：快速入门、工作效率、开发辅助、内容创作、创意玩法",
-        "活动分类被高亮显示",
-        "'全部' 显示所有教程",
-        "类型检查通过"
-      ],
-      "priority": 10,
-      "passes": true,
-      "notes": ""
-    },
-    {
-      "id": "US-011",
-      "title": "创建主页（教程导向）",
-      "description": "作为用户，需要一个以教程为主的首页。",
-      "acceptanceCriteria": [
-        "更新 src/app/page.tsx，实现教程导向布局",
-        "Hero 区域：显示标题 'OpenClaw 实战指南' 和副标题 '30 个真实案例，让 AI 助手真正帮你工作'",
-        "包含统一搜索框",
-        "包含 '快速入门' 区域（3 个核心教程）",
-        "包含 '精选教程' 区域（按场景分类）",
-        "包含 '技能索引' 区域（辅助功能，折叠或单独页面）",
-        "类型检查通过"
-      ],
-      "priority": 11,
-      "passes": true,
-      "notes": ""
-    },
-    {
-      "id": "US-012",
-      "title": "创建教程详情页（Markdown 渲染）",
-      "description": "作为用户，需要阅读完整的教程内容。",
-      "acceptanceCriteria": [
-        "创建 src/app/tutorial/[slug]/page.tsx 动态路由",
-        "使用 ReactMarkdown 渲染 Markdown 内容",
-        "配置 rehype-highlight 高亮代码块",
-        "显示教程标题、描述、难度、阅读时间",
-        "显示相关技能链接",
-        "实现 generateStaticParams 函数生成静态路由参数",
-        "配置 dynamicParams = false 确保所有路由在构建时生成",
-        "类型检查通过"
-      ],
-      "priority": 12,
-      "passes": true,
-      "notes": ""
-    },
-    {
-      "id": "US-013",
-      "title": "创建技能索引页（辅助功能）",
-      "description": "作为用户，需要快速浏览所有可用技能。",
-      "acceptanceCriteria": [
-        "创建 src/app/skills/page.tsx",
-        "显示所有验证过的技能",
-        "按字母顺序或分类排列",
-        "每个技能使用简化的 SkillCard",
-        "不显示随机热度和评分",
-        "类型检查通过"
-      ],
-      "priority": 13,
-      "passes": true,
-      "notes": ""
-    },
-    {
-      "id": "US-014",
-      "title": "实现场景筛选功能",
-      "description": "作为用户，希望按场景（快速入门、工作效率等）筛选教程。",
-      "acceptanceCriteria": [
-        "点击场景分类筛选对应教程",
-        "活动分类被视觉高亮",
-        "筛选结果正确显示",
-        "筛选状态在会话期间保持",
-        "重置到 '全部' 显示所有教程",
-        "类型检查通过",
-        "验证筛选功能正常工作"
-      ],
-      "priority": 14,
-      "passes": true,
-      "notes": "功能已在 US-010 和 US-011 中实现，验证通过"
-    },
-    {
-      "id": "US-015",
-      "title": "实现统一搜索功能",
-      "description": "作为用户，希望同时搜索教程和技能。",
-      "acceptanceCriteria": [
-        "搜索框输入时实时过滤",
-        "搜索匹配教程和技能的名称、描述、标签",
-        "搜索不区分大小写",
-        "搜索结果区分教程和技能类型",
-        "清除按钮重置搜索",
-        "搜索可以与场景筛选组合使用",
-        "类型检查通过",
-        "验证搜索功能正常工作"
-      ],
-      "priority": 15,
-      "passes": true,
-      "notes": "搜索与场景筛选组合功能已实现"
-    },
-    {
-      "id": "US-016",
-      "title": "添加移动端响应式设计",
-      "description": "作为用户，需要在手机上良好地使用网站。",
-      "acceptanceCriteria": [
-        "教程卡片网格在移动端变为单列（max-width: 768px）",
-        "头部搜索框在移动端正常显示",
-        "教程内容在移动端可读（字体大小、行高）",
-        "按钮适合触摸（最小高度 44px）",
-        "页面本身无水平滚动",
-        "在移动端视口测试（375px 宽度）",
-        "类型检查通过"
-      ],
-      "priority": 16,
-      "passes": true,
-      "notes": "实现响应式设计：触摸友好按钮、响应式字体和间距、防横向滚动"
-    },
-    {
-      "id": "US-017",
-      "title": "配置全局布局和 SEO 元数据",
-      "description": "作为开发者，需要适当的布局和 SEO 元数据。",
-      "acceptanceCriteria": [
-        "更新 src/app/layout.tsx，添加适当的 HTML 结构",
-        "添加元数据：title、description、keywords（OpenClaw 教程、OpenClaw 实战、OpenClaw 中文指南）",
-        "设置响应式设计的 viewport meta 标签",
-        "包含品牌颜色在 CSS 变量中",
-        "应用字体系列（Inter 或系统字体）",
-        "类型检查通过"
-      ],
-      "priority": 17,
-      "passes": true,
-      "notes": "添加完整 SEO metadata、Open Graph、Twitter Card、viewport 配置"
-    },
-    {
-      "id": "US-018",
-      "title": "创建 3 篇核心教程内容",
-      "description": "作为内容创作者，需要写 3 篇核心教程来启动 MVP。",
-      "acceptanceCriteria": [
-        "写 '5 分钟上手 OpenClaw' 教程（difficulty: beginner, readTime: 5）",
-        "写 '配置你的第一个 Agent' 教程（difficulty: beginner, readTime: 10）",
-        "写 'GitHub 集成实战' 教程（difficulty: intermediate, readTime: 15）",
-        "每篇教程使用 Markdown 格式，存储在 src/data/tutorials.json 的 content 字段",
-        "包含实际代码示例和配置（基于 OpenClaw 官方文档）",
-        "包含常见问题解答（FAQ）",
-        "每篇教程包含所有必需字段：title, description, content, category, tags, difficulty, readTime, author, relatedSkills, stats, createdAt, featured",
-        "包含内容准确性自检清单（代码语法检查、链接可访问性）"
-      ],
-      "priority": 18,
-      "passes": true,
-      "notes": "教程已在 US-004 中创建，使用 JSON 格式存储（content 字段包含 Markdown），包含所有必需字段和代码示例"
-    },
-    {
-      "id": "US-019",
-      "title": "准备 20 个验证过的技能数据",
-      "description": "作为开发者，需要准备初始技能数据（全部验证过）。",
-      "acceptanceCriteria": [
-        "准备 20 个技能数据",
-        "每个技能基于其 GitHub 仓库 README 整理",
-        "包含 verified: true 字段（已验证）",
-        "包含 GitHub 仓库链接",
-        "包含仓库中记录的安装命令",
-        "不包含随机热度和评分",
-        "保存到 src/data/skills.json",
-        "包含数据来源记录（source 字段指向 GitHub）"
-      ],
-      "priority": 19,
-      "passes": true,
-      "notes": "技能已在 US-004 中创建，使用 verified: true（布尔值），使用 source 字段"
-    },
-    {
-      "id": "US-020",
-      "title": "创建教程创作模板",
-      "description": "作为贡献者，需要标准化的教程创作模板。",
-      "acceptanceCriteria": [
-        "创建 src/templates/tutorial.md 模板文件",
-        "包含必需字段：标题、描述、难度、阅读时间、前置条件",
-        "包含推荐结构：学习目标、实战步骤、配置示例、常见问题",
-        "包含格式规范：Markdown 语法、代码块格式",
-        "包含元数据格式：frontmatter 或 JSON"
-      ],
-      "priority": 20,
-      "passes": true,
-      "notes": "创建完整模板，包含结构示例、FAQ 模板、元数据格式说明"
-    },
-    {
-      "id": "US-021",
-      "title": "创建贡献指南页面",
-      "description": "作为贡献者，需要清晰的贡献指南。",
-      "acceptanceCriteria": [
-        "创建 CONTRIBUTING.md 文件",
-        "说明如何提交教程（Fork -> Branch -> PR）",
-        "说明如何提交技能（GitHub Issues）",
-        "包含教程创作模板链接",
-        "包含技能验证要求",
-        "包含代码规范和审核流程"
-      ],
-      "priority": 21,
-      "passes": true,
-      "notes": "创建完整贡献指南，包含教程和技能提交流程、代码规范、审核流程"
-    },
-    {
-      "id": "US-022",
-      "title": "配置静态构建和导出",
-      "description": "作为开发者，需要生成静态 HTML 文件用于部署。",
-      "acceptanceCriteria": [
-        "配置 next.config.js 用于静态导出（output: 'export'）",
-        "成功运行 npm run build",
-        "验证创建了包含静态文件的 'out' 目录",
-        "检查 index.html 包含所有渲染的内容",
-        "教程详情页正确生成静态 HTML",
-        "构建完成无错误"
-      ],
-      "priority": 22,
-      "passes": true,
-      "notes": "静态导出已在 US-001 中配置（next.config.ts），构建正常生成 out/ 目录"
-    },
-    {
-      "id": "US-023",
-      "title": "部署到 Vercel",
-      "description": "作为开发者，需要将网站部署到 Vercel。",
-      "acceptanceCriteria": [
-        "创建 vercel.json 配置文件（如果需要）",
-        "在 package.json 中添加 vercel-build 脚本",
-        "创建 DEPLOY.md 部署指南文档",
-        "指南包含 Vercel CLI 安装步骤",
-        "指南包含 Git 仓库推送步骤",
-        "指南包含 Vercel 项目导入步骤",
-        "验证 npm run build 能成功生成 out/ 目录",
-        "指南包含部署后的验证检查清单"
-      ],
-      "priority": 23,
-      "passes": true,
-      "notes": "创建 DEPLOY.md 部署指南，包含 Vercel Dashboard 和 CLI 两种部署方法，无需额外配置文件"
-    },
-    {
-      "id": "US-024",
-      "title": "添加 sitemap.xml 用于 SEO",
-      "description": "作为开发者，需要网站地图供搜索引擎使用。",
-      "acceptanceCriteria": [
-        "使用 Next.js 生成 sitemap.xml",
-        "包含主页 URL",
-        "包含所有教程详情页 URL",
-        "设置适当的 changefreq 和 priority",
-        "网站地图可在 /sitemap.xml 访问",
-        "验证 sitemap 格式"
-      ],
-      "priority": 24,
-      "passes": true,
-      "notes": "创建 sitemap.ts，支持静态导出，包含所有页面 URL"
-    },
-    {
-      "id": "US-025",
-      "title": "创建项目 README.md",
-      "description": "作为开发者，需要项目文档。",
-      "acceptanceCriteria": [
-        "创建 README.md 在项目根目录",
-        "包含项目描述：'OpenClaw 实战指南 - 教程为主，技能索引为辅'",
-        "包含快速开始命令",
-        "包含项目结构说明",
-        "包含数据来源说明（手动精选，全部验证）",
-        "包含贡献指南链接"
-      ],
-      "priority": 25,
-      "passes": true,
-      "notes": "创建完整 README.md，包含项目介绍、快速开始、结构、数据来源、技术栈、贡献指南"
-    },
-    {
-      "id": "US-026",
-      "title": "使用浏览器 MCP 验证页面完整性",
-      "description": "作为开发者，需要使用浏览器 MCP 工具验证前端页面的完整性和功能。",
-      "acceptanceCriteria": [
-        "启动本地开发服务器 npm run dev",
-        "使用浏览器 MCP 访问 http://localhost:3000 验证首页加载",
-        "验证页面标题正确显示 'OpenClaw 实战指南'",
-        "验证 Header 组件渲染：标题、标语、搜索框",
-        "验证 Hero 区域渲染：标题、副标题、搜索框",
-        "验证教程卡片列表正确渲染（标题、描述、难度标签、阅读时间）",
-        "验证技能索引区域正确渲染",
-        "验证搜索功能：输入关键词能过滤教程和技能",
-        "验证分类筛选功能：点击分类能筛选对应教程",
-        "验证教程详情页：访问 /tutorial/[slug] 能正确渲染 Markdown 内容",
-        "验证技能页面：访问 /skills 能正确渲染所有技能",
-        "验证响应式设计：模拟 375px 宽度移动端布局正常",
-        "验证响应式设计：模拟 1440px 宽度桌面端布局正常",
-        "验证控制台无 JavaScript 错误",
-        "验证所有链接可点击且跳转正确",
-        "生成验证报告，记录通过的检查项和发现的问题"
-      ],
-      "priority": 26,
-      "passes": true,
-      "notes": "通过代码审查和构建输出验证所有功能，浏览器 MCP 不支持 localhost，建议部署后进行最终验证"
-    },
-    {
-      "id": "US-027",
-      "title": "修复所有技能的404仓库URL",
-      "description": "作为开发者，需要确保所有技能的GitHub仓库URL可访问。",
-      "acceptanceCriteria": [
-        "检查所有20个技能的仓库URL",
-        "替换404 URL为有效的替代仓库",
-        "验证新URL包含相关内容",
-        "更新 src/data/skills.json 文件",
-        "npm run build 构建并验证无错误"
-      ],
-      "priority": 27,
-      "passes": true,
-      "notes": "已将404的openclaw/skills仓库URL替换为官方或社区维护的替代仓库"
-    },
-    {
-      "id": "US-028",
-      "title": "扩展技能数量至40个（新增20个技能）",
-      "description": "作为用户，需要更多技能选择来满足不同需求。当前20个技能，目标40个技能。",
-      "acceptanceCriteria": [
-        "从社区资源筛选优质技能",
-        "验证每个技能的GitHub仓库或替代仓库可访问",
-        "确保技能覆盖5大分类：development(8), productivity(15), devops(9), ai-llms(5), utilities(3)",
-        "添加准确的中文描述",
-        "包含正确的安装命令：npx clawhub@latest install {slug}",
-        "更新 src/data/skills.json 文件，包含40个技能",
-        "npm run build 构建并验证",
-        "验证技能页面正确显示所有40个技能"
-      ],
-      "priority": 28,
-      "passes": true,
-      "notes": "✅ 已完成 - 新增20个技能：git, nodejs, python, rust, go, jira, trello, asana, todoist, notion-api, evernote, dropbox, gdrive, terraform, ansible, jenkins, gitlab-ci, claude, huggingface, imagemagick"
-    },
-    {
-      "id": "US-029",
-      "title": "扩展教程数量至10个（新增7个教程）",
-      "description": "作为内容创作者，需要添加更多教程来覆盖更多使用场景。当前3个教程，目标10个教程。",
-      "acceptanceCriteria": [
-        "新增3个基础教程（beginner）：OpenClaw CLI 完全指南、使用 Slack 技能实现团队协作、Notion 集成实战",
-        "新增3个进阶教程（intermediate）：AWS 基础设施管理、Kubernetes 集群管理、Docker 容器化部署",
-        "新增1个高级教程（advanced）：FFmpeg 多媒体处理",
-        "每个教程包含完整的 Markdown 内容（存储在 content 字段）",
-        "每个教程包含至少5个代码示例",
-        "每个教程包含至少2个实战案例",
-        "每个教程包含相关技能链接（relatedSkills）",
-        "每个教程包含常见问题解答",
-        "更新 src/data/tutorials.json 文件，包含10个教程",
-        "npm run build 构建并验证",
-        "验证教程详情页正确渲染所有10个教程"
-      ],
-      "priority": 29,
-      "passes": true,
-      "notes": "✅ 已完成 - 新增7个教程：tutorial-004 CLI指南、tutorial-005 Slack协作、tutorial-006 Notion集成、tutorial-007 AWS管理、tutorial-008 K8s集群、tutorial-009 Docker部署、tutorial-010 FFmpeg处理。难度分布：beginner(5), intermediate(4), advanced(1)"
-    },
-    {
-      "id": "US-030",
-      "title": "为技能数据添加 slug 和扩展字段",
-      "description": "作为开发者，需要为技能添加 slug 字段用于详情页 URL，并添加其他扩展字段以支持详情页展示。",
-      "acceptanceCriteria": [
-        "更新 src/data/skills.json，为所有40个技能添加 slug 字段（使用 kebab-case 格式）",
-        "添加 longDescription 字段（详细描述，可选）",
-        "添加 installCount 字段（安装计数）",
-        "添加 relatedSkills 字段（相关技能 ID 数组）",
-        "确保所有 slug 值唯一且 URL 友好",
-        "JSON 格式有效",
-        "npm run build 构建验证无错误"
-      ],
-      "priority": 30,
-      "passes": true,
-      "notes": "Sprint 1 - 步骤 1.1"
-    },
-    {
-      "id": "US-031",
-      "title": "更新 Skill 类型定义",
-      "description": "作为开发者，需要更新 TypeScript 类型定义以支持技能的新增字段。",
-      "acceptanceCriteria": [
-        "更新 src/types/index.ts 中的 Skill 接口",
-        "添加 slug: string 字段",
-        "添加 longDescription?: string 字段（可选）",
-        "添加 installCount?: number 字段（可选）",
-        "添加 relatedSkills?: string[] 字段（可选）",
-        "类型检查通过，无错误"
-      ],
-      "priority": 31,
-      "passes": true,
-      "notes": "Sprint 1 - 步骤 1.2"
-    },
-    {
-      "id": "US-032",
-      "title": "添加 getSkillBySlug 函数",
-      "description": "作为开发者，需要添加获取单个技能的函数以支持详情页。",
-      "acceptanceCriteria": [
-        "在 src/lib/skills.ts 中添加 getSkillBySlug(slug: string) 函数",
-        "函数返回 Skill | undefined 类型",
-        "函数根据 slug 查找技能",
-        "处理不存在的情况",
-        "类型检查通过",
-        "参考 getTutorialBySlug 实现"
-      ],
-      "priority": 32,
-      "passes": true,
-      "notes": "Sprint 1 - 步骤 1.3"
-    },
-    {
-      "id": "US-033",
-      "title": "创建技能详情页",
-      "description": "作为用户，需要查看技能的详细信息页面。",
-      "acceptanceCriteria": [
-        "创建 src/app/skills/[slug]/page.tsx 动态路由",
-        "使用 getSkillBySlug 获取技能数据",
-        "实现 generateStaticParams 函数生成所有技能的静态路由",
-        "配置 dynamicParams = false 确保构建时生成所有路由",
-        "添加 SEO metadata（title, description）",
-        "处理技能不存在的情况（404）",
-        "类型检查通过",
-        "参考 src/app/tutorial/[slug]/page.tsx 实现"
-      ],
-      "priority": 33,
-      "passes": true,
-      "notes": "Sprint 1 - 步骤 1.4"
-    },
-    {
-      "id": "US-034",
-      "title": "实现 SkillDetail 组件",
-      "description": "作为用户，需要在技能详情页看到完整的技能信息和操作。",
-      "acceptanceCriteria": [
-        "创建 src/components/SkillDetail.tsx 组件",
-        "显示技能完整信息（名称、描述、分类、标签、作者）",
-        "一键复制安装命令，显示复制成功提示",
-        "显示相关教程（基于技能标签或反向查找）",
-        "显示相关技能（同分类的其他技能）",
-        "GitHub 链接可点击跳转",
-        "响应式设计，移动端正常显示",
-        "类型检查通过"
-      ],
-      "priority": 34,
-      "passes": true,
-      "notes": "Sprint 1 - 步骤 1.5"
-    },
-    {
-      "id": "US-035",
-      "title": "更新 sitemap.ts 包含技能详情页",
-      "description": "作为开发者，需要将技能详情页添加到 sitemap 以优化 SEO。",
-      "acceptanceCriteria": [
-        "更新 src/app/sitemap.ts",
-        "添加所有技能详情页 URL (/skills/[slug])",
-        "设置适当的 changefreq 和 priority",
-        "sitemap 可在 /sitemap.xml 访问",
-        "验证 sitemap 格式正确"
-      ],
-      "priority": 35,
-      "passes": true,
-      "notes": "Sprint 1 - 步骤 1.6"
-    },
-    {
-      "id": "US-036",
-      "title": "创建 AgentConfig 类型定义",
-      "description": "作为开发者，需要定义 Agent 配置的 TypeScript 类型。",
-      "acceptanceCriteria": [
-        "在 src/types/index.ts 中创建 AgentConfig 接口",
-        "包含必需字段：id, name, slug, description, author, config, category, tags",
-        "包含可选字段：longDescription, authorUrl, relatedConfigs",
-        "包含统计字段：likesCount, forksCount",
-        "包含状态字段：isOfficial",
-        "包含时间字段：createdAt, updatedAt",
-        "config 字段类型为 Record<string, unknown>",
-        "类型检查通过"
-      ],
-      "priority": 36,
-      "passes": true,
-      "notes": "Sprint 2 - 步骤 2.1"
-    },
-    {
-      "id": "US-037",
-      "title": "创建初始配置数据",
-      "description": "作为内容创作者，需要创建初始的 Agent 配置数据。",
-      "acceptanceCriteria": [
-        "创建 src/data/configs.json 文件",
-        "至少包含 5 个配置：通用助手、代码审查、文档写作、调试助手、学习助手",
-        "每个配置包含所有必需字段",
-        "config 字段包含有效的 Agent 配置 JSON",
-        "涵盖不同类别（development, productivity, learning）",
-        "JSON 格式有效",
-        "npm run build 构建验证"
-      ],
-      "priority": 37,
-      "passes": true,
-      "notes": "Sprint 2 - 步骤 2.2"
-    },
-    {
-      "id": "US-038",
-      "title": "创建 configs 工具模块",
-      "description": "作为开发者，需要创建配置数据操作函数。",
-      "acceptanceCriteria": [
-        "创建 src/lib/configs.ts 文件",
-        "实现 getAllConfigs() 函数",
-        "实现 getConfigBySlug(slug: string) 函数",
-        "实现 getConfigsByCategory(category: string) 函数",
-        "实现 getFeaturedConfigs() 函数",
-        "函数返回正确的 TypeScript 类型",
-        "类型检查通过",
-        "参考 src/lib/skills.ts 实现"
-      ],
-      "priority": 38,
-      "passes": true,
-      "notes": "Sprint 2 - 步骤 2.3"
-    },
-    {
-      "id": "US-039",
-      "title": "创建配置列表页",
-      "description": "作为用户，需要浏览所有可用的 Agent 配置。",
-      "acceptanceCriteria": [
-        "创建 src/app/configs/page.tsx",
-        "显示所有配置列表",
-        "使用 ConfigCard 组件展示每个配置",
-        "支持按分类筛选",
-        "响应式设计",
-        "添加搜索功能",
-        "类型检查通过",
-        "参考 src/app/skills/page.tsx 实现"
-      ],
-      "priority": 39,
-      "passes": true,
-      "notes": "Sprint 2 - 步骤 2.4"
-    },
-    {
-      "id": "US-040",
-      "title": "创建 ConfigCard 组件",
-      "description": "作为用户，需要以卡片形式查看配置信息。",
-      "acceptanceCriteria": [
-        "创建 src/components/ConfigCard.tsx 组件",
-        "显示配置名称、描述、作者",
-        "显示点赞数和分支数",
-        "显示分类和标签",
-        "显示是否官方认证",
-        "添加'查看配置'按钮",
-        "卡片有悬停效果",
-        "类型检查通过"
-      ],
-      "priority": 40,
-      "passes": true,
-      "notes": "Sprint 2 - 步骤 2.5"
-    },
-    {
-      "id": "US-041",
-      "title": "创建配置详情页",
-      "description": "作为用户，需要查看配置的完整详情和 JSON。",
-      "acceptanceCriteria": [
-        "创建 src/app/configs/[slug]/page.tsx 动态路由",
-        "显示配置完整信息",
-        "以代码块格式展示 config JSON",
-        "添加一键复制配置 JSON 功能",
-        "显示相关配置",
-        "显示使用配置的教程（如有）",
-        "实现 generateStaticParams 函数",
-        "添加 SEO metadata",
-        "类型检查通过"
-      ],
-      "priority": 41,
-      "passes": true,
-      "notes": "Sprint 2 - 步骤 2.6"
-    },
-    {
-      "id": "US-042",
-      "title": "添加配置到导航和搜索",
-      "description": "作为用户，需要能通过导航和搜索找到配置。",
-      "acceptanceCriteria": [
-        "更新 Header 组件添加'配置'导航链接",
-        "更新 SearchBar 组件支持搜索配置",
-        "更新 src/lib/search.ts 的 searchAll 函数包含配置",
-        "搜索结果区分配置类型",
-        "验证导航和搜索功能正常",
-        "类型检查通过"
-      ],
-      "priority": 42,
-      "passes": true,
-      "notes": "Sprint 2 - 步骤 2.7"
-    },
-    {
-      "id": "US-043",
-      "title": "更新 sitemap.ts 包含配置页面",
-      "description": "作为开发者，需要将配置页面添加到 sitemap。",
-      "acceptanceCriteria": [
-        "更新 src/app/sitemap.ts",
-        "添加配置列表页 URL (/configs)",
-        "添加所有配置详情页 URL (/configs/[slug])",
-        "设置适当的 changefreq 和 priority",
-        "验证 sitemap 格式正确"
-      ],
-      "priority": 43,
-      "passes": true,
-      "notes": "Sprint 2 - 步骤 2.8"
-    },
-    {
-      "id": "US-044",
-      "title": "配置分享站完整测试",
-      "description": "作为开发者，需要完整测试配置分享站的所有功能。",
-      "acceptanceCriteria": [
-        "验证 /configs 页面显示所有配置",
-        "验证配置详情页正确渲染 JSON",
-        "验证复制配置 JSON 功能正常",
-        "验证搜索功能包含配置",
-        "验证导航链接正确跳转",
-        "验证响应式设计",
-        "修复发现的问题",
-        "npm run build 构建成功"
-      ],
-      "priority": 44,
-      "passes": true,
-      "notes": "Sprint 2 - 步骤 2.9"
-    },
-    {
-      "id": "US-045",
-      "title": "Phase 2 完整测试和验收",
-      "description": "作为开发者，需要完整测试 Phase 2 所有功能并进行验收。",
-      "acceptanceCriteria": [
-        "测试技能详情页（Sprint 1 所有功能）",
-        "测试配置分享站（Sprint 2 所有功能）",
-        "验证所有页面路由正常",
-        "验证 SEO 和 sitemap",
-        "验证响应式设计",
-        "运行 npm run build 构建成功",
-        "修复所有发现的问题",
-        "更新文档"
-      ],
-      "priority": 45,
-      "passes": true,
-      "notes": "Phase 2 最终验收"
-    },
-    {
-      "id": "US-046",
-      "title": "确定新增教程主题列表",
-      "description": "作为内容规划者，需要确定 20 个新教程的主题，确保覆盖不同难度和场景。",
-      "acceptanceCriteria": [
-        "确定 7 个 Beginner 教程主题",
-        "确定 8 个 Intermediate 教程主题",
-        "确定 5 个 Advanced 教程主题",
-        "确保主题覆盖不同使用场景（开发、运维、AI、工具）",
-        "避免与现有教程重复",
-        "创建教程主题列表文档",
-        "确认每个主题的相关技能"
       ],
       "priority": 46,
       "passes": true,
-      "notes": "✅ 已完成 - 创建 docs/tutorial-topics-phase3.md，包含 20 个新教程主题（7 Beginner + 8 Intermediate + 5 Advanced），涵盖开发、DevOps、AI/LLM、生产力等多个场景，每个主题都关联了相关技能"
+      "notes": "✅ Phase 4 - 已完成 - 实现完整的高级搜索系统，包含多字段搜索、类型/分类/难度/评分筛选、7种排序选项"
     },
     {
-      "id": "US-047",
-      "title": "创建教程大纲和结构模板",
-      "description": "作为内容创作者，需要标准化的教程模板以提高写作效率。",
+      "id": "US-079",
+      "title": "实现书签和阅读列表功能",
+      "description": "作为用户，我希望可以收藏喜欢的教程和技能，方便后续查看。",
       "acceptanceCriteria": [
-        "创建教程大纲模板（包含学习目标、前置条件、章节结构）",
-        "创建教程 Markdown 模板",
-        "定义代码示例格式规范",
-        "定义 FAQ 模板",
-        "创建教程质量检查清单",
-        "文档化教程创作流程"
+        "实现 BookmarkButton 组件",
+        "实现 BookmarkList 组件展示书签",
+        "实现 BookmarkManager 组件管理书签",
+        "支持添加/删除书签",
+        "支持书签到文件夹",
+        "实现导出/导入 JSON 功能",
+        "创建专用书签页面",
+        "localStorage 持久化存储",
+        "类型检查通过"
       ],
       "priority": 47,
       "passes": true,
-      "notes": "✅ 已完成 - 创建完整的教程模板套件：tutorial-outline.md（大纲模板）、code-example-standards.md（代码规范）、faq-template.md（FAQ模板）、tutorial-quality-checklist.md（质量清单）、tutorial-creation-workflow.md（创作流程），更新 tutorial.md 作为模板索引"
+      "notes": "✅ Phase 4 - 已完成 - 完整的书签系统，支持文件夹管理、导入导出"
     },
     {
-      "id": "US-048",
-      "title": "编写 7 篇 Beginner 教程",
-      "description": "作为内容创作者，需要编写 7 篇初学者友好的教程。",
+      "id": "US-080",
+      "title": "实现教程进度跟踪功能",
+      "description": "作为用户，我希望跟踪我的阅读进度，方便继续学习。",
       "acceptanceCriteria": [
-        "编写 7 篇 Beginner 难度教程",
-        "每篇教程 2000+ 字",
-        "包含至少 5 个代码示例",
-        "包含至少 2 个实战案例",
-        "包含 FAQ 部分",
-        "语言简洁易懂，适合初学者",
-        "添加相关技能链接",
-        "正确设置难度标签和阅读时间"
+        "实现 ProgressTracker 组件自动跟踪滚动",
+        "实现 ProgressBar 组件显示进度百分比",
+        "实现 ContinueReading 组件展示阅读建议",
+        "自动保存滚动位置",
+        "跟踪完成的章节",
+        "保存阅读统计",
+        "localStorage 持久化",
+        "类型检查通过"
       ],
       "priority": 48,
       "passes": true,
-      "notes": "Sprint 5 - 步骤 5.3. ✅ 已完成 - 新增 7 篇 Beginner 教程：Tutorial-011 Python自动化、Tutorial-012 Node.js开发、Tutorial-013 Git版本控制、Tutorial-014 数据分析、Tutorial-015 邮件自动化、Tutorial-016 任务管理、Tutorial-017 笔记管理。每篇 2000+ 字，5+ 代码示例，2+ 实战案例，包含 FAQ"
+      "notes": "✅ Phase 4 - 已完成 - 滚动跟踪、进度百分比、继续阅读功能"
     },
     {
-      "id": "US-049",
-      "title": "编写 8 篇 Intermediate 教程",
-      "description": "作为内容创作者，需要编写 8 篇进阶教程。",
+      "id": "US-081",
+      "title": "实现 RSS/内容订阅源",
+      "description": "作为用户，我希望可以通过 RSS 订阅新内容。",
       "acceptanceCriteria": [
-        "编写 8 篇 Intermediate 难度教程",
-        "每篇教程 2500+ 字",
-        "包含至少 6 个代码示例",
-        "包含至少 3 个实战案例",
-        "包含高级技巧和最佳实践",
-        "包含故障排查部分",
-        "添加相关技能链接",
-        "正确设置难度标签和阅读时间"
+        "实现 RSS feed 生成器",
+        "创建主 RSS feed (/rss.xml)",
+        "创建分类 feeds (tutorials, skills, configs)",
+        "在 layout 中添加 RSS 自动发现链接",
+        "RSS 格式符合标准",
+        "类型检查通过"
       ],
       "priority": 49,
       "passes": true,
-      "notes": "Sprint 5 - 步骤 5.4. ✅ 已完成 - 新增 8 篇 Intermediate 教程：Tutorial-018 Rust系统编程、Tutorial-019 Go微服务、Tutorial-020 云原生开发、Tutorial-021 CI/CD实践、Tutorial-022 IaC、Tutorial-023 监控告警、Tutorial-024 AI代码审查、Tutorial-025 LLM应用开发。每篇 2500+ 字，6+ 代码示例，3+ 实战案例"
+      "notes": "✅ Phase 4 - 已完成 - RSS feeds生成，静态导出模式限制（需调整）"
     },
     {
-      "id": "US-050",
-      "title": "编写 5 篇 Advanced 教程",
-      "description": "作为内容创作者，需要编写 5 篇高级教程。",
+      "id": "US-082",
+      "title": "实现技能安装跟踪功能",
+      "description": "作为用户，我希望跟踪我已安装的技能，便于管理。",
       "acceptanceCriteria": [
-        "编写 5 篇 Advanced 难度教程",
-        "每篇教程 3000+ 字",
-        "包含至少 8 个代码示例",
-        "包含至少 4 个复杂实战案例",
-        "深入讲解技术原理",
-        "包含性能优化建议",
-        "添加相关技能链接",
-        "正确设置难度标签和阅读时间"
+        "实现安装状态跟踪",
+        "实现安装历史记录",
+        "支持导出为 shell 脚本",
+        "支持导出/导入 JSON",
+        "记录安装笔记",
+        "localStorage 持久化",
+        "类型检查通过"
       ],
       "priority": 50,
       "passes": true,
-      "notes": "Sprint 5 - 步骤 5.5. ✅ 已完成 - 新增 5 篇 Advanced 教程：Tutorial-026 分布式系统设计、Tutorial-027 高性能数据库优化、Tutorial-028 边缘计算和Serverless、Tutorial-029 多模态AI应用、Tutorial-030 企业级安全实践。每篇 3000+ 字，8+ 代码示例，4+ 实战案例"
+      "notes": "✅ Phase 4 - 已完成 - 安装跟踪、shell 脚本导出、导入导出 JSON"
     },
     {
-      "id": "US-051",
-      "title": "教程代码审查和质量检查",
-      "description": "作为内容审核者，需要确保所有新教程符合质量标准。",
+      "id": "US-083",
+      "title": "实现内容评分系统",
+      "description": "作为用户，我希望对教程和技能进行评分，帮助发现优质内容。",
       "acceptanceCriteria": [
-        "审查所有 20 篇新教程",
-        "检查代码示例可运行",
-        "检查 Markdown 格式正确",
-        "检查链接有效性",
-        "检查语法和拼写",
-        "验证难度级别设置合理",
-        "验证阅读时间估算准确",
-        "确保所有教程通过质量检查清单",
-        "修复发现的问题"
+        "实现 1-5 星评分",
+        "显示平均评分",
+        "支持按评分筛选",
+        "支持按评分排序",
+        "localStorage 持久化评分",
+        "类型检查通过"
       ],
       "priority": 51,
       "passes": true,
-      "notes": "Sprint 5 - 步骤 5.6. ✅ 已完成 - 所有 20 篇教程通过质量审查，无问题发现。代码示例语法正确、Markdown 格式规范、链接有效、语言专业、难度级别匹配、阅读时间准确。构建成功生成 84 个页面。"
+      "notes": "✅ Phase 4 - 已完成 - 1-5 星评分、平均分显示、筛选排序"
     },
     {
-      "id": "US-052",
-      "title": "更新 tutorials.json 文件",
-      "description": "作为开发者，需要将 20 篇新教程添加到数据文件中。",
+      "id": "US-084",
+      "title": "实现深色模式增强",
+      "description": "作为用户，我希望有更好的深色模式体验。",
       "acceptanceCriteria": [
-        "更新 src/data/tutorials.json",
-        "添加 20 篇新教程数据",
-        "确保所有必需字段完整",
-        "确保 slug 值唯一",
-        "确保分类和标签正确",
-        "JSON 格式有效",
-        "npm run build 构建成功"
+        "实现 ThemeProvider 上下文",
+        "实现 ThemeToggle 切换组件",
+        "支持系统偏好自动切换",
+        "支持高对比度模式",
+        "支持减少动画模式",
+        "平滑主题切换动画",
+        "localStorage 持久化主题",
+        "类型检查通过"
       ],
       "priority": 52,
       "passes": true,
-      "notes": "✅ 已完成 - 教程已在 US-048/049/050 中添加到 tutorials.json，包含所有 30 个教程（tutorial-001 至 tutorial-030），构建成功生成 84 个页面"
+      "notes": "✅ Phase 4 - 已完成 - 系统偏好、高对比度、减少动画"
     },
     {
-      "id": "US-053",
-      "title": "测试所有新教程渲染",
-      "description": "作为测试人员，需要验证所有新教程在网站上正确显示。",
+      "id": "US-085",
+      "title": "实现目录导航功能",
+      "description": "作为用户，阅读教程时希望有目录可以快速跳转。",
       "acceptanceCriteria": [
-        "测试 20 篇新教程详情页",
-        "验证 Markdown 内容正确渲染",
-        "验证代码高亮正常",
-        "验证相关技能链接有效",
-        "验证教程在列表页正确显示",
-        "验证搜索功能能找到新教程",
-        "验证分类筛选正常",
-        "修复发现的问题"
+        "实现自动从内容提取目录",
+        "实现粘性侧边栏目录",
+        "高亮当前阅读章节",
+        "支持目录跳转",
+        "响应式设计（移动端隐藏）",
+        "类型检查通过"
       ],
       "priority": 53,
       "passes": true,
-      "notes": "✅ 已完成 - 所有 20 篇新教程测试通过：详情页渲染正确、Markdown 内容正确、代码高亮正常、相关技能链接有效、搜索功能包含新教程、分类筛选正常工作"
+      "notes": "✅ Phase 4 - 已完成 - 自动提取目录、粘性侧边栏、章节高亮"
     },
     {
-      "id": "US-054",
-      "title": "研究和筛选 160 个候选技能（含仓库验证）",
-      "description": "作为内容研究员，需要从社区和 GitHub 筛选优质技能，并验证仓库可访问性。",
+      "id": "US-086",
+      "title": "实现打印/PDF 导出功能",
+      "description": "作为用户，我希望可以将教程导出为 PDF 或打印。",
       "acceptanceCriteria": [
-        "研究 GitHub trending 和 npm 优质包",
-        "筛选 160 个候选技能",
-        "✅ 验证每个技能的 GitHub 仓库存在且可访问（HTTP 200）",
-        "✅ 排除仓库不存在（404）或无法访问的技能",
-        "确保技能仓库活跃维护（最近 6 个月有更新）",
-        "确保技能有完整文档",
-        "优先选择 Star 数 >100 的项目",
-        "记录技能来源和验证信息（包括仓库状态）",
-        "创建候选技能列表（仅包含仓库验证通过的技能）"
-      ],
-      "priority": 55,
-      "passes": true,
-      "notes": "✅ 已完成 - 研究并筛选 172 个候选技能，验证 160 个仓库可访问（93% 成功率），12 个 404 仓库已排除。分类：development(39), productivity(30), devops(32), ai-llms(16), utilities(43)"
-    },
-    {
-      "id": "US-062",
-      "title": "创建技能仓库验证脚本",
-      "description": "作为开发者，需要创建自动化脚本来验证技能仓库的有效性。",
-      "acceptanceCriteria": [
-        "创建 scripts/verify-skill-repos.js 脚本",
-        "脚本读取 skills.json 或技能列表",
-        "对每个技能的 URL 执行 HTTP HEAD 请求",
-        "输出验证结果：成功/失败/重定向",
-        "生成验证报告（CSV 或 JSON 格式）",
-        "支持批量验证和单个验证",
-        "处理网络超时和重试逻辑",
-        "仓库不存在时返回明确的错误信息"
+        "添加打印优化的 CSS",
+        "隐藏导航和页脚",
+        "添加打印按钮",
+        "保持内容可读性",
+        "代码块正常显示",
+        "类型检查通过"
       ],
       "priority": 54,
       "passes": true,
-      "notes": "✅ 已完成 - 创建 scripts/verify-skill-repos.js 脚本，支持批量验证、超时处理、重定向跟随，生成 JSON/CSV 报告"
+      "notes": "✅ Phase 4 - 已完成 - 打印样式、打印按钮、内容可读性"
     },
     {
-      "id": "US-055-A",
-      "title": "验证技能仓库可访问性",
-      "description": "作为测试人员，需要验证所有候选技能的仓库存在且可访问。",
+      "id": "US-087",
+      "title": "实现代码复制改进",
+      "description": "作为用户，复制代码应该更简单直观。",
       "acceptanceCriteria": [
-        "对所有候选技能执行仓库存在性检查",
-        "使用 curl 或类似工具验证 HTTP 状态码",
-        "记录每个仓库的状态：200（可访问）、404（不存在）、其他",
-        "排除 404 和无法访问的仓库",
-        "为重定向的仓库记录最终 URL",
-        "生成仓库验证报告"
+        "代码块添加复制按钮",
+        "一键复制功能",
+        "复制成功提示",
+        "视觉反馈",
+        "类型检查通过"
       ],
       "priority": 55,
       "passes": true,
-      "notes": "✅ 已完成 - 使用 verify-skill-repos.js 验证 172 个候选技能，160 个通过（93%），12 个失败（404）。报告保存在 docs/repo-verification-report.json"
+      "notes": "✅ Phase 4 - 已完成 - 一键复制、成功提示、视觉反馈"
     },
     {
-      "id": "US-055-B",
-      "title": "验证技能功能可用性",
-      "description": "作为测试人员，需要对通过仓库验证的技能进行功能测试。",
+      "id": "US-088",
+      "title": "实现外部链接验证",
+      "description": "作为开发者，我希望验证外部链接的有效性。",
       "acceptanceCriteria": [
-        "对通过仓库验证的技能进行功能测试",
-        "验证技能有基本文档",
-        "验证技能功能正常",
-        "标记不可用的技能",
-        "寻找替代技能（仅针对验证失败的）",
-        "确保最终技能列表全部 verified: true"
-      ],
-      "priority": 55,
-      "passes": true,
-      "notes": "✅ 已完成 - 200 个技能全部 verified: true，仓库可访问，有基本文档（README），安装命令正确"
-    },
-    {
-      "id": "US-056",
-      "title": "编写技能中文描述",
-      "description": "作为内容创作者，需要为 160 个技能编写准确的中文描述。",
-      "acceptanceCriteria": [
-        "为每个技能编写中文名称",
-        "为每个技能编写简短描述（50-100字）",
-        "为每个技能编写详细描述（150-300字）",
-        "确保描述准确反映技能功能",
-        "确保语言简洁易懂",
-        "翻译技术术语时保持准确性",
-        "添加使用场景说明（可选）"
+        "实现链接验证函数",
+        "检查 HTTP 状态",
+        "生成验证报告",
+        "检测失效链接",
+        "支持批量验证",
+        "类型检查通过"
       ],
       "priority": 56,
       "passes": true,
-      "notes": "✅ 已完成 - 160 个新技能的中文描述已完善：中文名称、简短描述(50-100字)、技术术语保持准确性、标签包含中文翻译"
+      "notes": "✅ Phase 4 - 已完成 - 链接状态检查、验证报告、批量验证"
     },
     {
-      "id": "US-057",
-      "title": "创建技能 slug 和分类",
-      "description": "作为开发者，需要为 160 个技能创建唯一标识和分类。",
+      "id": "US-089",
+      "title": "确定 60 个新教程主题列表",
+      "description": "作为内容规划者，需要确定 60 个新教程的主题，确保覆盖不同难度和场景。",
       "acceptanceCriteria": [
-        "为每个技能创建唯一的 slug（kebab-case）",
-        "确保 slug 值 URL 友好",
-        "为每个技能分配正确的分类",
-        "确保分类分布符合目标",
-        "为每个技能添加 3-5 个相关标签",
-        "验证 slug 无重复"
-      ],
-      "priority": 57,
-      "passes": true,
-      "notes": "✅ 已完成 - 160 个验证通过的候选技能已有唯一 slug（kebab-case）和分类，docs/skill-candidates-phase3.json 中定义完整"
-    },
-    {
-      "id": "US-058",
-      "title": "更新 skills.json 文件",
-      "description": "作为开发者，需要将 160 个新技能添加到数据文件中。",
-      "acceptanceCriteria": [
-        "更新 src/data/skills.json",
-        "添加 160 个新技能数据",
-        "确保所有必需字段完整",
-        "确保 slug 值唯一",
-        "确保 verified 字段为 true",
-        "确保安装命令正确",
-        "JSON 格式有效",
-        "npm run build 构建成功"
-      ],
-      "priority": 58,
-      "passes": true,
-      "notes": "✅ 已完成 - src/data/skills.json 已更新，包含 200 个技能（40 保留 + 160 新增）。分类：development(47), productivity(45), devops(41), ai-llms(21), utilities(46)。所有 slug 唯一，verified: true，构建成功生成 244 个页面"
-    },
-    {
-      "id": "US-059",
-      "title": "测试所有技能链接",
-      "description": "作为测试人员，需要验证所有技能链接可访问。",
-      "acceptanceCriteria": [
-        "测试 200 个技能的 GitHub 链接",
-        "验证链接可访问",
-        "验证仓库内容相关",
-        "修复或替换失效链接",
-        "确保所有技能链接有效"
-      ],
-      "priority": 60,
-      "passes": true,
-      "notes": "✅ 已完成 - 200 个技能链接来自已验证的候选列表（160 个验证通过 + 40 个原有），所有链接有效"
-    },
-    {
-      "id": "US-060",
-      "title": "验证技能安装命令",
-      "description": "作为测试人员，需要验证所有技能的安装命令正确。",
-      "acceptanceCriteria": [
-        "验证 200 个技能的安装命令格式",
-        "确保命令使用 npx clawhub@latest install {slug}",
-        "确保 slug 与命令中的一致",
-        "测试抽样技能安装",
-        "修复错误的安装命令"
-      ],
-      "priority": 59,
-      "passes": true,
-      "notes": "✅ 已完成 - 验证 200 个技能的安装命令格式，全部使用 npx clawhub@latest install {slug}，slug 与命令一致"
-    },
-    {
-      "id": "US-061",
-      "title": "Phase 3 完整测试和验收",
-      "description": "作为开发者，需要完整测试 Phase 3 所有功能并进行验收。",
-      "acceptanceCriteria": [
-        "验证教程总数达到 30 个",
-        "验证技能总数达到 200 个",
-        "测试所有新教程详情页",
-        "测试所有新技能展示",
-        "验证搜索功能正常",
-        "验证分类筛选正常",
-        "验证页面性能（大量数据加载）",
-        "运行 npm run build 构建成功",
-        "修复所有发现的问题",
-        "更新文档"
-      ],
-      "priority": 61,
-      "passes": true,
-      "notes": "✅ 已完成 - Phase 3 验收通过：教程 30 个、技能 200 个、构建成功生成 244 个页面。所有验收标准已满足"
-    },
-    {
-      "id": "US-062",
-      "title": "确定新增 10 个教程主题列表",
-      "description": "作为内容规划者，需要确定剩余 10 个教程的主题，确保覆盖不同难度和场景。",
-      "acceptanceCriteria": [
-        "确定 4 个 Beginner 教程主题",
-        "确定 3 个 Intermediate 教程主题",
-        "确定 3 个 Advanced 教程主题",
-        "确保主题覆盖不同使用场景（开发、DevOps、AI/LLM、生产力）",
-        "避免与现有 30 个教程重复",
+        "确定 24 个 Beginner 教程主题",
+        "确定 25 个 Intermediate 教程主题",
+        "确定 11 个 Advanced 教程主题",
+        "确保主题覆盖不同使用场景",
+        "避免与现有 40 个教程重复",
         "创建教程主题列表文档",
         "确认每个主题的相关技能"
       ],
-      "priority": 62,
+      "priority": 57,
       "passes": true,
-      "notes": "✅ 已完成 - 创建 docs/tutorial-topics-phase3-continuation.md，包含 10 个新教程主题（4 Beginner + 3 Intermediate + 3 Advanced）。新增主题：RESTful API 设计、前端测试、数据可视化、Web 安全（Beginner）；GraphQL、消息队列、实时同步（Intermediate）；微前端、性能优化、AI Agent 工作流（Advanced）"
+      "notes": "✅ Phase 5 - Sprint 7.0 - 教程主题规划完成 - 创建 docs/tutorial-topics-phase5.md，包含 60 个教程主题详细规划"
     },
     {
-      "id": "US-063",
-      "title": "编写 4 篇 Beginner 教程",
-      "description": "作为内容创作者，需要编写 4 篇初学者友好的教程。",
+      "id": "US-090",
+      "title": "编写 Beginner 教程批次 1 (4篇)",
+      "description": "作为内容创作者，编写 Linux、SQL、HTML/CSS、JavaScript 基础教程。",
       "acceptanceCriteria": [
-        "编写 4 篇 Beginner 难度教程",
-        "每篇教程 2000+ 字",
+        "编写 4 篇 Beginner 教程",
+        "每篇 2000+ 字",
         "包含至少 5 个代码示例",
         "包含至少 2 个实战案例",
-        "包含 FAQ 部分",
-        "语言简洁易懂，适合初学者",
-        "添加相关技能链接",
-        "正确设置难度标签和阅读时间"
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 58,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.1 - Beginner教程 (4/24)"
+    },
+    {
+      "id": "US-091",
+      "title": "编写 Beginner 教程批次 2 (4篇)",
+      "description": "作为内容创作者，编写 TypeScript、Docker、Kubernetes、Redis 入门教程。",
+      "acceptanceCriteria": [
+        "编写 4 篇 Beginner 教程",
+        "每篇 2000+ 字",
+        "包含至少 5 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 59,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.2 - Beginner教程 (8/24)"
+    },
+    {
+      "id": "US-092",
+      "title": "编写 Beginner 教程批次 3 (4篇)",
+      "description": "作为内容创作者，编写 Nginx、Git进阶、SSH、正则表达式教程。",
+      "acceptanceCriteria": [
+        "编写 4 篇 Beginner 教程",
+        "每篇 2000+ 字",
+        "包含至少 5 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 60,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.3 - Beginner教程 (12/24)"
+    },
+    {
+      "id": "US-093",
+      "title": "编写 Beginner 教程批次 4 (4篇)",
+      "description": "作为内容创作者，编写 Markdown、YAML、JSON、API 设计教程。",
+      "acceptanceCriteria": [
+        "编写 4 篇 Beginner 教程",
+        "每篇 2000+ 字",
+        "包含至少 5 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 61,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.4 - Beginner教程 (16/24)"
+    },
+    {
+      "id": "US-094",
+      "title": "编写 Beginner 教程批次 5 (4篇)",
+      "description": "作为内容创作者，编写 微服务、容器化、CI/CD、监控日志教程。",
+      "acceptanceCriteria": [
+        "编写 4 篇 Beginner 教程",
+        "每篇 2000+ 字",
+        "包含至少 5 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 62,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.5 - Beginner教程 (20/24)"
+    },
+    {
+      "id": "US-095",
+      "title": "编写 Beginner 教程批次 6 (4篇)",
+      "description": "作为内容创作者，编写 Web安全、单元测试、集成测试、调试教程。",
+      "acceptanceCriteria": [
+        "编写 4 篇 Beginner 教程",
+        "每篇 2000+ 字",
+        "包含至少 5 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
       ],
       "priority": 63,
-      "passes": true,
-      "notes": "✅ 已完成 - 新增 4 篇 Beginner 教程：Tutorial-031 RESTful API 设计、Tutorial-032 前端测试、Tutorial-033 数据可视化、Tutorial-034 Web 安全。每篇 2000+ 字，5+ 代码示例，2+ 实战案例，包含 FAQ"
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.6 - Beginner教程完成 (24/24)"
     },
     {
-      "id": "US-064",
-      "title": "编写 3 篇 Intermediate 教程",
-      "description": "作为内容创作者，需要编写 3 篇进阶教程。",
+      "id": "US-096",
+      "title": "编写 Intermediate 教程批次 1 (4篇)",
+      "description": "作为内容创作者，编写 NestJS、Next.js、React性能、Vue.js 教程。",
       "acceptanceCriteria": [
-        "编写 3 篇 Intermediate 难度教程",
-        "每篇教程 2500+ 字",
+        "编写 4 篇 Intermediate 教程",
+        "每篇 2500+ 字",
         "包含至少 6 个代码示例",
-        "包含至少 3 个实战案例",
-        "包含高级技巧和最佳实践",
-        "包含故障排查部分",
-        "添加相关技能链接",
-        "正确设置难度标签和阅读时间"
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
       ],
       "priority": 64,
-      "passes": true,
-      "notes": "✅ 已完成 - 新增 3 篇 Intermediate 教程：Tutorial-035 GraphQL API 开发、Tutorial-036 消息队列和事件驱动架构、Tutorial-037 实时数据库和同步。每篇 2500+ 字，6+ 代码示例，3+ 实战案例"
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.7 - Intermediate教程 (4/25)"
     },
     {
-      "id": "US-065",
-      "title": "编写 3 篇 Advanced 教程",
-      "description": "作为内容创作者，需要编写 3 篇高级教程。",
+      "id": "US-097",
+      "title": "编写 Intermediate 教程批次 2 (4篇)",
+      "description": "作为内容创作者，编写 Spring Boot、Django、Flask、PostgreSQL 教程。",
       "acceptanceCriteria": [
-        "编写 3 篇 Advanced 难度教程",
-        "每篇教程 3000+ 字",
-        "包含至少 8 个代码示例",
-        "包含至少 4 个复杂实战案例",
-        "深入讲解技术原理",
-        "包含性能优化建议",
-        "添加相关技能链接",
-        "正确设置难度标签和阅读时间"
+        "编写 4 篇 Intermediate 教程",
+        "每篇 2500+ 字",
+        "包含至少 6 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
       ],
       "priority": 65,
-      "passes": true,
-      "notes": "✅ 已完成 - 新增 3 篇 Advanced 教程：Tutorial-038 微前端架构实践、Tutorial-039 大规模系统性能优化、Tutorial-040 AI Agent 工作流自动化。每篇 3000+ 字，8+ 代码示例，4+ 实战案例"
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.8 - Intermediate教程 (8/25)"
     },
     {
-      "id": "US-066",
-      "title": "新增 10 篇教程代码审查和质量检查",
-      "description": "作为内容审核者，需要确保所有 10 篇新教程符合质量标准。",
+      "id": "US-098",
+      "title": "编写 Intermediate 教程批次 3 (4篇)",
+      "description": "作为内容创作者，编写 MongoDB、Redis、Elasticsearch、RabbitMQ 教程。",
       "acceptanceCriteria": [
-        "审查所有 10 篇新教程",
+        "编写 4 篇 Intermediate 教程",
+        "每篇 2500+ 字",
+        "包含至少 6 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 66,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.9 - Intermediate教程 (12/25)"
+    },
+    {
+      "id": "US-099",
+      "title": "编写 Intermediate 教程批次 4 (4篇)",
+      "description": "作为内容创作者，编写 Kafka、AWS Lambda、GCP、Azure 教程。",
+      "acceptanceCriteria": [
+        "编写 4 篇 Intermediate 教程",
+        "每篇 2500+ 字",
+        "包含至少 6 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 67,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.10 - Intermediate教程 (16/25)"
+    },
+    {
+      "id": "US-100",
+      "title": "编写 Intermediate 教程批次 5 (5篇)",
+      "description": "作为内容创作者，编写 Terraform、Ansible、Jenkins、GitOps、可观测性教程。",
+      "acceptanceCriteria": [
+        "编写 5 篇 Intermediate 教程",
+        "每篇 2500+ 字",
+        "包含至少 6 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 68,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.11 - Intermediate教程 (21/25)"
+    },
+    {
+      "id": "US-101",
+      "title": "编写 Intermediate 教程批次 6 (4篇)",
+      "description": "作为内容创作者，编写 分布式追踪、限流熔断、API网关、GraphQL 教程。",
+      "acceptanceCriteria": [
+        "编写 4 篇 Intermediate 教程",
+        "每篇 2500+ 字",
+        "包含至少 6 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 69,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.12 - Intermediate教程完成 (25/25)"
+    },
+    {
+      "id": "US-102",
+      "title": "编写 Advanced 教程批次 1 (3篇)",
+      "description": "作为内容创作者，编写 大规模架构、高可用、灾难恢复教程。",
+      "acceptanceCriteria": [
+        "编写 3 篇 Advanced 教程",
+        "每篇 3000+ 字",
+        "包含至少 8 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 70,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.13 - Advanced教程 (3/11)"
+    },
+    {
+      "id": "US-103",
+      "title": "编写 Advanced 教程批次 2 (3篇)",
+      "description": "作为内容创作者，编写 安全架构、性能调优、微服务治理教程。",
+      "acceptanceCriteria": [
+        "编写 3 篇 Advanced 教程",
+        "每篇 3000+ 字",
+        "包含至少 8 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 71,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.14 - Advanced教程 (6/11)"
+    },
+    {
+      "id": "US-104",
+      "title": "编写 Advanced 教程批次 3 (5篇)",
+      "description": "作为内容创作者，编写 服务网格、云原生、实时数据、流处理、ML工程、DevOps教程。",
+      "acceptanceCriteria": [
+        "编写 5 篇 Advanced 教程",
+        "每篇 3000+ 字",
+        "包含至少 8 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 72,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.15 - Advanced教程完成 (11/11)"
+    },
+    {
+      "id": "US-105",
+      "title": "教程代码审查和质量检查",
+      "description": "作为内容审核者，确保所有 60 篇新教程符合质量标准。",
+      "acceptanceCriteria": [
+        "审查所有 60 篇新教程",
         "检查代码示例可运行",
         "检查 Markdown 格式正确",
         "检查链接有效性",
         "检查语法和拼写",
         "验证难度级别设置合理",
-        "验证阅读时间估算准确",
-        "确保所有教程通过质量检查清单",
         "修复发现的问题"
       ],
-      "priority": 66,
-      "passes": true,
-      "notes": "✅ 已完成 - 所有 10 篇教程通过质量审查（100% 通过率）。代码示例语法正确、Markdown 格式规范、链接有效、语言专业、难度级别匹配、阅读时间准确。构建成功生成 254 个页面。"
+      "priority": 73,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.16 - 教程质量检查"
     },
     {
-      "id": "US-067",
-      "title": "更新 tutorials.json 至 40 篇教程",
-      "description": "作为开发者，需要将 10 篇新教程添加到数据文件中。",
+      "id": "US-106",
+      "title": "教程最终构建测试和浏览器验证",
+      "description": "作为测试人员，验证所有 60 篇新教程在网站上正确显示。",
       "acceptanceCriteria": [
-        "更新 src/data/tutorials.json",
-        "添加 10 篇新教程数据",
-        "确保所有必需字段完整",
-        "确保 slug 值唯一",
-        "确保分类和标签正确",
-        "JSON 格式有效",
-        "npm run build 构建成功"
-      ],
-      "priority": 67,
-      "passes": true,
-      "notes": "✅ 已完成 - 教程已在 US-063/064/065 中添加到 tutorials.json，包含所有 40 个教程（tutorial-001 至 tutorial-040），构建成功生成 254 个页面"
-    },
-    {
-      "id": "US-068",
-      "title": "测试 10 篇新教程渲染",
-      "description": "作为测试人员，需要验证所有 10 篇新教程在网站上正确显示。",
-      "acceptanceCriteria": [
-        "测试 10 篇新教程详情页",
+        "测试 60 篇新教程详情页",
         "验证 Markdown 内容正确渲染",
         "验证代码高亮正常",
         "验证相关技能链接有效",
-        "验证教程在列表页正确显示",
         "验证搜索功能能找到新教程",
         "验证分类筛选正常",
-        "修复发现的问题"
-      ],
-      "priority": 68,
-      "passes": true,
-      "notes": "✅ 已完成 - 所有 10 篇新教程测试通过：详情页路由正确、Markdown 内容正确渲染、代码高亮正常（322 个代码块）、相关技能链接有效、搜索功能包含新教程、分类筛选正常工作"
-    },
-    {
-      "id": "US-069",
-      "title": "研究和筛选 100 个候选技能",
-      "description": "作为内容研究员，需要从社区和 GitHub 筛选优质技能，并验证仓库可访问性。",
-      "acceptanceCriteria": [
-        "研究 GitHub trending 和 npm 优质包",
-        "筛选 100 个候选技能",
-        "验证每个技能的 GitHub 仓库存在且可访问（HTTP 200）",
-        "排除仓库不存在（404）或无法访问的技能",
-        "确保技能仓库活跃维护（最近 6 个月有更新）",
-        "确保技能有完整文档",
-        "优先选择 Star 数 >100 的项目",
-        "记录技能来源和验证信息（包括仓库状态）",
-        "创建候选技能列表（仅包含仓库验证通过的技能）"
-      ],
-      "priority": 69,
-      "passes": true,
-      "notes": "✅ 已完成 - 研究并筛选 148 个候选技能，验证 148 个仓库可访问（100% 成功率），0 个 404 仓库已排除。最终选择 100 个技能。分类：development(41), productivity(20), devops(19), ai-llms(20)"
-    },
-    {
-      "id": "US-070",
-      "title": "验证 100 个技能仓库可访问性",
-      "description": "作为测试人员，需要验证所有候选技能的仓库存在且可访问。",
-      "acceptanceCriteria": [
-        "对所有候选技能执行仓库存在性检查",
-        "使用 curl 或类似工具验证 HTTP 状态码",
-        "记录每个仓库的状态：200（可访问）、404（不存在）、其他",
-        "排除 404 和无法访问的仓库",
-        "为重定向的仓库记录最终 URL",
-        "生成仓库验证报告"
-      ],
-      "priority": 70,
-      "passes": true,
-      "notes": "✅ 已完成 - 验证 148 个候选技能，148 个通过（100%），0 个失败。报告保存在 docs/repo-verification-report-100.json"
-    },
-    {
-      "id": "US-071",
-      "title": "验证 100 个技能功能可用性",
-      "description": "作为测试人员，需要对通过仓库验证的技能进行功能测试。",
-      "acceptanceCriteria": [
-        "对通过仓库验证的技能进行功能测试",
-        "验证技能有基本文档",
-        "验证技能功能正常",
-        "标记不可用的技能",
-        "确保最终技能列表全部 verified: true"
-      ],
-      "priority": 71,
-      "passes": true,
-      "notes": "✅ 已完成 - 100 个技能全部 verified: true，仓库可访问，有基本文档（README），安装命令正确"
-    },
-    {
-      "id": "US-072",
-      "title": "编写 100 个技能中文描述",
-      "description": "作为内容创作者，需要为 100 个技能编写准确的中文描述。",
-      "acceptanceCriteria": [
-        "为每个技能编写中文名称",
-        "为每个技能编写简短描述（50-100字）",
-        "为每个技能编写详细描述（150-300字）",
-        "确保描述准确反映技能功能",
-        "确保语言简洁易懂",
-        "翻译技术术语时保持准确性",
-        "添加使用场景说明（可选）"
-      ],
-      "priority": 72,
-      "passes": true,
-      "notes": "✅ 已完成 - 100 个新技能的中文描述已完善：中文名称、简短描述(50-100字)、技术术语保持准确性、标签包含中文翻译"
-    },
-    {
-      "id": "US-073",
-      "title": "创建 100 个技能 slug 和分类",
-      "description": "作为开发者，需要为 100 个技能创建唯一标识和分类。",
-      "acceptanceCriteria": [
-        "为每个技能创建唯一的 slug（kebab-case）",
-        "确保 slug 值 URL 友好",
-        "为每个技能分配正确的分类",
-        "确保分类分布符合目标：development(90), productivity(75), devops(60), ai-llms(45), utilities(30)",
-        "为每个技能添加 3-5 个相关标签",
-        "验证 slug 无重复"
-      ],
-      "priority": 73,
-      "passes": true,
-      "notes": "✅ 已完成 - 100 个验证通过的候选技能已有唯一 slug（kebab-case）和分类，docs/skill-candidates-final-100.json 中定义完整"
-    },
-    {
-      "id": "US-074",
-      "title": "更新 skills.json 至 300 个技能",
-      "description": "作为开发者，需要将 100 个新技能添加到数据文件中。",
-      "acceptanceCriteria": [
-        "更新 src/data/skills.json",
-        "添加 100 个新技能数据",
-        "确保所有必需字段完整",
-        "确保 slug 值唯一",
-        "确保 verified 字段为 true",
-        "确保安装命令正确",
-        "JSON 格式有效",
-        "npm run build 构建成功"
+        "npm run build 成功",
+        "浏览器 MCP 测试所有新教程"
       ],
       "priority": 74,
-      "passes": true,
-      "notes": "✅ 已完成 - src/data/skills.json 已更新，包含 300 个技能（200 保留 + 100 新增）。分类：development(88), productivity(65), devops(60), ai-llms(41), utilities(46)。所有 slug 唯一，verified: true，构建成功生成 350 个页面"
+      "passes": false,
+      "notes": "Phase 5 - Sprint 7.17 - 教程验收 (100篇目标)"
     },
     {
-      "id": "US-075",
-      "title": "测试 100 个新技能链接",
-      "description": "作为测试人员，需要验证所有 100 个新技能链接可访问。",
+      "id": "US-107",
+      "title": "创建仓库验证脚本",
+      "description": "作为开发者，创建仓库验证脚本用于批量验证技能仓库。",
       "acceptanceCriteria": [
-        "测试 100 个新技能的 GitHub 链接",
-        "验证链接可访问",
-        "验证仓库内容相关",
-        "修复或替换失效链接",
-        "确保所有技能链接有效"
+        "创建 scripts/verify-skill-repos.js",
+        "支持 HTTP HEAD 请求验证",
+        "记录仓库状态（200/404/其他）",
+        "生成验证报告（JSON 格式）",
+        "统计成功率和失败原因"
       ],
       "priority": 75,
-      "passes": true,
-      "notes": "✅ 已完成 - 100 个新技能链接来自已验证的候选列表（148 个验证通过），所有链接有效"
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.0 - 工具准备"
     },
     {
-      "id": "US-076",
-      "title": "验证 100 个技能安装命令",
-      "description": "作为测试人员，需要验证所有 100 个新技能的安装命令正确。",
+      "id": "US-108",
+      "title": "研究 Development 类技能批次 1 (40个)",
+      "description": "作为内容研究员，筛选编程语言基础类技能 (JavaScript/TypeScript/Python/Go)。",
       "acceptanceCriteria": [
-        "验证 100 个新技能的安装命令格式",
-        "确保命令使用 npx clawhub@latest install {slug}",
-        "确保 slug 与命令中的一致",
-        "测试抽样技能安装",
-        "修复错误的安装命令"
+        "筛选 40 个候选技能",
+        "优先 Star 数 >500",
+        "验证 GitHub 仓库可访问",
+        "确保仓库有完整文档",
+        "确保最近 6 个月有更新"
       ],
       "priority": 76,
-      "passes": true,
-      "notes": "✅ 已完成 - 验证 100 个新技能的安装命令格式，全部使用 npx clawhub@latest install {slug}，slug 与命令一致"
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.1 - Development技能 (40/212)"
     },
     {
-      "id": "US-077",
-      "title": "Phase 3 最终验收（40 篇教程 + 300 个技能）",
-      "description": "作为开发者，需要完整验收 Phase 3 的所有功能。",
+      "id": "US-109",
+      "title": "研究 Development 类技能批次 2 (40个)",
+      "description": "作为内容研究员，筛选前端框架类技能 (React/Vue/Next.js/Nuxt)。",
       "acceptanceCriteria": [
-        "验证教程总数达到 40 个",
-        "验证技能总数达到 300 个",
+        "筛选 40 个候选技能",
+        "优先 Star 数 >500",
+        "验证 GitHub 仓库可访问",
+        "确保仓库有完整文档"
+      ],
+      "priority": 77,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.2 - Development技能 (80/212)"
+    },
+    {
+      "id": "US-110",
+      "title": "研究 Development 类技能批次 3 (40个)",
+      "description": "作为内容研究员，筛选后端框架类技能 (NestJS/Spring/Django/Flask)。",
+      "acceptanceCriteria": [
+        "筛选 40 个候选技能",
+        "优先 Star 数 >500",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 78,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.3 - Development技能 (120/212)"
+    },
+    {
+      "id": "US-111",
+      "title": "研究 Development 类技能批次 4-7 (92个)",
+      "description": "作为内容研究员，筛选数据库、测试、构建工具类技能。",
+      "acceptanceCriteria": [
+        "筛选 92 个候选技能",
+        "涵盖数据库、测试、构建工具",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 79,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.4-8.7 - Development技能完成 (212/212)"
+    },
+    {
+      "id": "US-112",
+      "title": "研究 Productivity 类技能批次 1-3 (115个)",
+      "description": "作为内容研究员，筛选编辑器、笔记、终端工具类技能。",
+      "acceptanceCriteria": [
+        "筛选 115 个候选技能",
+        "涵盖编辑器、笔记、终端工具",
+        "优先 Star 数 >200",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 80,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.8-8.11 - Productivity技能 (115/185)"
+    },
+    {
+      "id": "US-113",
+      "title": "研究 Productivity 类技能批次 4-5 (70个)",
+      "description": "作为内容研究员，筛选效率工具、设计和协作类技能。",
+      "acceptanceCriteria": [
+        "筛选 70 个候选技能",
+        "涵盖效率工具、设计协作",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 81,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.12-8.13 - Productivity技能完成 (185/185)"
+    },
+    {
+      "id": "US-114",
+      "title": "研究 DevOps 类技能批次 1-4 (140个)",
+      "description": "作为内容研究员，筛选容器、CI/CD、云平台、监控类技能。",
+      "acceptanceCriteria": [
+        "筛选 140 个候选技能",
+        "涵盖容器、CI/CD、云平台、监控",
+        "优先 Star 数 >200",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 82,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.13-8.16 - DevOps技能完成 (140/140)"
+    },
+    {
+      "id": "US-115",
+      "title": "研究 AI/LLMs 和 Utilities 类技能 (163个)",
+      "description": "作为内容研究员，筛选 AI 工具、LLM、系统工具类技能。",
+      "acceptanceCriteria": [
+        "筛选 163 个候选技能",
+        "涵盖 AI/LLMs 和 Utilities",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 83,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.17-8.20 - AI/LLMs+Utilities (109+54=163)"
+    },
+    {
+      "id": "US-116",
+      "title": "批量验证所有候选技能仓库",
+      "description": "作为测试人员，使用验证脚本批量检查所有候选技能的仓库。",
+      "acceptanceCriteria": [
+        "执行批量仓库验证脚本",
+        "记录每个仓库的 HTTP 状态码",
+        "排除 404 和无法访问的仓库",
+        "生成验证报告",
+        "记录仓库元数据（Star、更新时间）"
+      ],
+      "priority": 84,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.21 - 仓库验证"
+    },
+    {
+      "id": "US-117",
+      "title": "检查仓库内容质量和活跃度",
+      "description": "作为测试人员，检查通过仓库验证的技能内容质量。",
+      "acceptanceCriteria": [
+        "检查仓库有实际内容（README、代码）",
+        "检查仓库最近 6 个月有更新",
+        "优先 Star 数 >100 的仓库",
+        "标记内容不足的仓库",
+        "排除低质量仓库（宁缺毋滥）"
+      ],
+      "priority": 85,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.22-8.23 - 仓库质量检查"
+    },
+    {
+      "id": "US-118",
+      "title": "为验证通过的技能编写中文描述",
+      "description": "作为内容创作者，为所有验证通过的技能编写中文描述。",
+      "acceptanceCriteria": [
+        "为每个技能编写中文名称",
+        "编写简短描述（50-100字）",
+        "编写详细描述（150-300字）",
+        "确保描述准确反映技能功能",
+        "语言简洁易懂"
+      ],
+      "priority": 86,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.24 - 中文描述"
+    },
+    {
+      "id": "US-119",
+      "title": "创建技能 slug 和分类标签",
+      "description": "作为开发者，为所有验证通过的技能创建唯一标识和分类。",
+      "acceptanceCriteria": [
+        "为每个技能创建唯一 slug（kebab-case）",
+        "确保 slug URL 友好且无重复",
+        "分配正确的分类",
+        "添加 3-5 个相关标签",
+        "确保分类分布合理"
+      ],
+      "priority": 87,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.25 - Slug和分类"
+    },
+    {
+      "id": "US-120",
+      "title": "分批更新 skills.json",
+      "description": "作为开发者，将所有新技能分批添加到 skills.json。",
+      "acceptanceCriteria": [
+        "更新 src/data/skills.json",
+        "分批添加新技能（每批 50 个）",
+        "确保所有必需字段完整",
+        "确保 slug 唯一",
+        "确保 verified: true",
+        "JSON 格式有效",
+        "npm run build 成功"
+      ],
+      "priority": 88,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.26 - 更新数据文件"
+    },
+    {
+      "id": "US-121",
+      "title": "测试所有技能链接和功能",
+      "description": "作为测试人员，验证所有技能链接可访问且功能正常。",
+      "acceptanceCriteria": [
+        "测试所有技能 GitHub 链接",
+        "验证链接可访问（HTTP 200）",
+        "验证仓库内容相关",
+        "测试技能页面性能",
+        "验证搜索功能正常"
+      ],
+      "priority": 89,
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.27-8.28 - 链接和功能测试"
+    },
+    {
+      "id": "US-122",
+      "title": "Phase 5 最终验收",
+      "description": "作为开发者，完整验收 Phase 5 的所有功能。",
+      "acceptanceCriteria": [
+        "验证教程总数达到或接近 100 个",
+        "验证技能总数尽可能多（宁缺毋滥）",
         "测试所有新教程详情页",
         "测试所有新技能展示",
         "验证搜索功能正常",
         "验证分类筛选正常",
-        "验证页面性能（大量数据加载）",
-        "运行 npm run build 构建成功",
-        "修复所有发现的问题",
-        "更新文档"
+        "验证页面性能",
+        "验证 Phase 4 高级功能正常",
+        "npm run build 成功",
+        "浏览器 MCP 测试核心功能"
       ],
-      "priority": 77,
-      "passes": true,
-      "notes": "✅ 已完成 - Phase 3 验收通过：教程 40 个（beginner 16, intermediate 15, advanced 9）、技能 300 个（development 88, productivity 65, devops 60, ai-llms 41, utilities 46）、构建成功生成 350 个页面。所有验收标准已满足"
+      "priority": 90,
+      "passes": false,
+      "notes": "Phase 5 最终验收 - 宁缺毋滥原则"
     }
   ]
 }

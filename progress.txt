@@ -1577,5 +1577,33 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - Tutorials: 30 → 40 (+10)
 - Skills: 200 → 300 (+100)
 - Total pages: 254 → 350 (+96)
+
+---
+
+## 2026-02-06 - US-089
+- 确定 Phase 5 新增教程主题列表（60 个教程）
+- 创建 docs/tutorial-topics-phase5.md 文档
+- 分析现有 40 个教程覆盖领域，识别知识空白
+- 规划 24 个 Beginner 教程（编程基础6个、开发工具6个、实用技能6个、DevOps基础6个）
+- 规划 25 个 Intermediate 教程（前端开发5个、后端开发5个、数据工程5个、云平台5个、DevOps进阶5个）
+- 规划 11 个 Advanced 教程（系统架构3个、安全与性能3个、云原生与AI3个、前沿技术2个）
+- 确保新增主题与现有教程互补，避免重复
+- 确认所有主题都有对应的现有技能支持
+- npm run build 构建成功（350 个页面）
+
+**Files changed:**
+- docs/tutorial-topics-phase5.md (新建)
+- prd.json (标记 US-089 完成)
+
+**Learnings for future iterations:**
+- 教程主题规划需要系统性分析现有内容，识别空白领域
+- 主题分布应该平衡不同难度级别：Beginner 40%, Intermediate 42%, Advanced 18%
+- 分类分布确保覆盖：Development 40%, DevOps 30%, Productivity 10%, AI/LLMs 10%, Utilities 10%
+- 所有教程主题必须关联到现有技能，确保内容有实际工具支撑
+- 避免重复需要仔细检查现有教程列表，特别是相似的技能和主题
+- Beginner 教程关联 3-5 个基础技能，Intermediate 关联 5-7 个，Advanced 关联 7-10 个
+- 新教程将使教程总数从 40 篇扩展到 100 篇，提供更全面的知识覆盖
+
+---
 - All user stories US-066 through US-077 completed
 
