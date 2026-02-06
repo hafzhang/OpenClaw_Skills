@@ -1183,8 +1183,8 @@
         "npm run build 构建成功"
       ],
       "priority": 67,
-      "passes": false,
-      "notes": "Sprint 5 - 步骤 5.7"
+      "passes": true,
+      "notes": "✅ 已完成 - 教程已在 US-063/064/065 中添加到 tutorials.json，包含所有 40 个教程（tutorial-001 至 tutorial-040），构建成功生成 254 个页面"
     },
     {
       "id": "US-068",
