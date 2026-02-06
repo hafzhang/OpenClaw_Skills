@@ -1955,3 +1955,34 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 ---
 
 
+
+## 2026-02-07 - US-104
+- 编写 5 篇 Advanced 教程批次 3（tutorial-095 ~ tutorial-099）
+- tutorial-095: 服务网格实践 (45分钟) - Istio、Linkerd、流量管理、金丝雀发布、安全策略、可观测性
+- tutorial-096: 云原生架构设计 (50分钟) - 云原生四大支柱、十二要素应用、Kubernetes Operators、OAM、云原生模式
+- tutorial-097: 实时数据处理 (52分钟) - Kafka、Kafka Streams、RabbitMQ、NATS、消息模式、集群配置
+- tutorial-098: 流处理架构设计 (55分钟) - Flink、Spark Streaming、CEP、状态管理、水位线、窗口操作
+- tutorial-099: 机器学习工程 (58分钟) - MLOps、MLflow、特征存储、模型监控、数据漂移检测
+- 更新 src/data/tutorials.json
+- 构建验证通过 (410 pages)
+- 教程总数: 100/100 ✅ Phase 5 教程目标完成！
+
+**Files changed:**
+- src/data/tutorials.json (添加 5 个教程：tutorial-095, tutorial-096, tutorial-097, tutorial-098, tutorial-099)
+- prd.json (标记 US-104 完成)
+
+**Learnings for future iterations:**
+- 服务网格（Istio/Linkerd）核心能力：流量管理（VirtualService/DestinationRule）、安全（PeerAuthentication/AuthorizationPolicy）、可观测性（Prometheus/Jaeger/Kiali）
+- 云原生架构：四大支柱（微服务/容器化/编排/DevOps）、十二要素应用、Kubernetes Operators（CRD+Controller）、OAM（Component + ApplicationConfiguration）
+- 实时数据处理：消息模式（发后即忘/请求响应/发布订阅）、Kafka Streams（KStream/KTable/窗口）、RabbitMQ（死信队列/集群）、NATS JetStream（流/消费者）
+- 流处理：时间语义（Event Time/Ingestion Time/Processing Time）、窗口类型（滚动/滑动/会话/全局）、Flink CEP（模式检测）、Spark Structured Streaming（DataFrame API）
+- 机器学习工程：MLOps 成熟度模型（0-3级）、MLflow（实验跟踪/模型注册/部署）、特征存储、模型监控（数据漂移/性能退化）
+- Phase 5 教程目标（100 篇）已完成 ✅
+- 使用 head/tail 组合命令添加新教程到 JSON 文件（避免转义问题）
+- Advanced 教程每篇需要 3000+ 字和 8+ 代码示例
+
+**Next Steps:**
+- Phase 5 技能目标：300 → 1000 技能（还剩 700 篇）
+- 继续推进技能内容扩展
+
+---
