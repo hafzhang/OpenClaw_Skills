@@ -2004,3 +2004,20 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 使用 Node.js 脚本批量处理 JSON 数据文件很高效
 - 当文件很大时（1.2MB），需要使用 grep 或脚本分析，不能直接读取
 ---
+
+## 2026-02-06 - US-106
+- 修复了重复的 tutorial ID (073-076)
+- 第二组 073-076 (Kafka, AWS Lambda, GCP, Azure) 重新编号为 086-089
+- 教程 089-099 重新编号为 090-100
+- 验证了 100 篇教程的正确显示
+  - 无控制台错误（之前有 8 个重复 key 错误）
+  - 构建成功，生成 410 个静态页面
+  - Markdown 渲染和代码高亮正常
+  - 搜索功能正常工作
+- 更新 PRD：tutorials 计数从 76 更新为 100
+
+**Learnings for future iterations:**
+- 教程 ID 必须唯一，重复 ID 会导致 React key 冲突错误
+- 修复重复 ID 后需要重新运行 build 和浏览器测试
+- 使用浏览器 MCP 可以有效验证页面功能
+---
