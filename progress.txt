@@ -1484,3 +1484,39 @@ calendly, gmail, toggl, harvest, clickup, ifttt, trello-powerups, zoom, teams, b
 - 相关技能引用验证：确保 relatedSkills 数组中的所有 ID 都在 skills.json 中存在
 - 分类映射：tutorial-031 至 tutorial-040 分布在 development, productivity, devops 等分类
 - 总教程数达到 40 个，总页面数 254 个（包含所有教程、技能、配置详情页）
+## 2026-02-06 - US-068
+- 测试 10 篇新教程渲染 - 完整验证 Tutorial-031 至 Tutorial-040 的渲染和功能
+
+**测试结果总结：**
+✅ 10 个新教程详情页路由正确（slug 值有效）
+✅ Markdown 内容正确渲染（所有教程包含标题和代码块）
+✅ 代码语法高亮正常（322 个代码块，带语言标识符）
+✅ 相关技能链接有效（0 个无效引用）
+✅ 教程在列表页正确显示（所有必需字段完整）
+✅ 搜索功能包含新教程（searchTutorials 使用 getAllTutorials）
+✅ 分类筛选正常（development, ai-llms）
+
+**教程详情：**
+1. tutorial-031: restful-api-design-basics (6 代码块)
+2. tutorial-032: frontend-testing-basics (32 代码块)
+3. tutorial-033: data-visualization-basics (44 代码块)
+4. tutorial-034: web-security-basics (38 代码块)
+5. tutorial-035: graphql-api-development (42 代码块)
+6. tutorial-036: message-queues-event-driven (44 代码块)
+7. tutorial-037: realtime-database-sync (26 代码块)
+8. tutorial-038: micro-frontend-architecture (28 代码块)
+9. tutorial-039: large-scale-performance-optimization (40 代码块)
+10. tutorial-040: ai-agent-workflow-automation (22 代码块)
+
+**Files changed:**
+- prd.json (标记 US-068 完成)
+
+**Learnings for future iterations:**
+- 教程内容已在 US-063/064/065 中创建并添加到 tutorials.json
+- US-066 验证了数据完整性：40 个教程，所有必需字段完整，slug 值唯一
+- 代码高亮使用 rehype-highlight + highlight.js，生成 hljs 类
+- 相关技能引用验证使用脚本检查：确保所有 relatedSkills ID 在 skills.json 中存在
+- 新教程分类分布：development(9), ai-llms(1)
+- 搜索功能自动包含新教程，因为 searchTutorials 使用 getAllTutorials()
+- 分类筛选通过 CategoryFilter 组件 + selectedCategory 状态实现
+- 构建输出显示所有路由正确生成
