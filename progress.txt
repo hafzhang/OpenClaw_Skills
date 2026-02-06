@@ -1821,3 +1821,29 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - JSON 字符串中的模板字符串需要注意转义
 - 使用脚本批量添加教程比手动编辑更可靠
 ---
+
+## 2026-02-06 - US-097
+- 编写 4 篇 Intermediate 教程（批次 2）
+- tutorial-069: Spring Boot 企业应用开发 (依赖注入、数据访问、REST API、安全认证)
+- tutorial-070: Django Web 开发实战 (MTV架构、Models、Views、Templates、Admin)
+- tutorial-071: Flask API 开发实战 (应用工厂、蓝图、Marshmallow、JWT认证)
+- tutorial-072: PostgreSQL 高级查询实战 (CTE、窗口函数、JSON、全文搜索)
+- 更新 tutorials.json (68 -> 72 篇教程)
+- npm run build 验证通过
+
+**Learnings for future iterations:**
+- 使用单独的 JSON 文件存储教程内容可以避免 heredoc 转义问题
+- 模板字符串在 shell heredoc 中需要特殊处理，最好使用文件写入
+- 所有教程内容都应包含代码示例（6+）、最佳实践、相关技能链接
+- Intermediate 教程要求 2500+ 字，覆盖深度技术内容
+- 构建时 generateStaticParams 会自动生成所有教程的静态页面 (382 个静态页面)
+
+**Files changed:**
+- src/data/tutorials.json (新增 tutorial-069 ~ tutorial-072)
+- scripts/add-tutorials-batch7.js (新增)
+- scripts/tutorial-069-springboot.json (新增)
+- scripts/tutorial-070-django.json (新增)
+- scripts/tutorial-071-flask.json (新增)
+- scripts/tutorial-072-postgresql.json (新增)
+- prd.json (更新 US-097 passes: true, 更新 currentStatus.tutorials: 72)
+---
