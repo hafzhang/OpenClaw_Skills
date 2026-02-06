@@ -1742,3 +1742,82 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 构建输出显示的静态页面数量是验证教程添加成功的有效方式（60教程 → 370页面）
 
 ---
+
+## [2026-02-06] - US-095
+- 编写 Beginner 教程批次 6 (4篇) - Web安全、单元测试、集成测试、调试
+- 每篇教程 2000+ 字，包含 5+ 代码示例，2+ 实战案例
+- 相关技能仓库验证通过（eslint, prettier, jest, vitest, playwright, cypress）
+- npm run build 构建成功（374 个页面，新增 4 个教程详情页）
+
+**新增教程：**
+1. Tutorial-061: Web 安全基础实践 (18分钟阅读时间)
+   - 7 个代码示例：SQL注入、NoSQL注入、命令注入、密码存储、会话管理、HTTPS、CSP
+   - 3 个实战案例：安全登录系统、CSRF防护、文件上传安全
+   - 覆盖：OWASP Top 10、注入攻击、身份验证、XSS、CSRF、安全配置
+
+2. Tutorial-062: 单元测试入门教程 (16分钟阅读时间)
+   - 8 个代码示例：Jest断言、异步测试、Mock、Spy、DOM测试、Vitest
+   - 3 个实战案例：表单验证测试、异步API测试、测试最佳实践
+   - 覆盖：Jest基础、测试语法、异步测试、Mock、Vitest、测试模式
+
+3. Tutorial-063: 集成测试实践指南 (17分钟阅读时间)
+   - 8 个代码示例：Supertest、Playwright、Cypress、数据库测试、API测试
+   - 3 个实战案例：购物车E2E测试、用户注册流程、API集成测试套件
+   - 覆盖：API测试、数据库测试、Playwright、Cypress、测试最佳实践
+
+4. Tutorial-064: 调试技巧详解 (15分钟阅读时间)
+   - 8 个代码示例：Chrome DevTools、断点、Console API、VS Code调试、性能分析
+   - 3 个实战案例：调试慢API、内存泄漏、React渲染问题
+   - 覆盖：浏览器调试、Node.js调试、日志、性能分析、常见问题
+
+**质量标准验证：**
+- ✅ 每篇教程 2000+ 字
+- ✅ 每篇包含 5+ 代码示例
+- ✅ 每篇包含 2+ 实战案例
+- ✅ 所有相关技能仓库可访问（HTTP 200）
+- ✅ 更新 tutorials.json
+- ✅ npm run build 构建成功（374 个页面）
+
+**Files changed:**
+- src/data/tutorials.json (添加 4 个教程：tutorial-061 至 tutorial-064)
+- scripts/add-tutorials-batch6.js (新建)
+- prd.json (标记 US-095 完成，更新教程数量：60 → 64)
+
+**Learnings for future iterations:**
+- 教程内容存储在 tutorials.json 的 content 字段中（JSON 格式）
+- Markdown 内容需要正确转义特殊字符（引号、反斜杠、换行符等）
+- 相关技能引用使用现有的验证通过的技能 ID（eslint=skill-042, prettier=skill-043, jest=skill-046, vitest=skill-047, playwright=skill-004, cypress=skill-048）
+- 构建输出显示总页面数：374 = 64 个教程 + 300 个技能 + 5 个配置 + 5 个其他页面
+- Web 安全教程涵盖 OWASP Top 10 核心威胁，包括注入、认证、XSS、CSRF 等
+- 单元测试教程对比 Jest 和 Vitest，展示两种主流测试框架的使用
+- 集成测试教程覆盖 API、数据库、E2E 三个层次的测试方法
+- 调试教程系统化讲解浏览器和 Node.js 的调试技巧
+- 实战案例应该包含完整可运行的代码示例和真实场景
+- 总教程数：60 → 64 (+4)，总页面数：370 → 374 (+4)
+
+**Next Steps:**
+- US-096: 编写 Intermediate 教程批次 1 (NestJS、Next.js、React性能、Vue.js)
+- 继续推进 Phase 5 的 100 篇教程目标（还剩 36 篇）
+
+---
+
+## [2026-02-06] - US-096
+- 编写 4 篇 Intermediate 教程（批次 1）
+- 文件变更:
+  - src/data/tutorials.json: 添加 tutorial-065 ~ tutorial-068
+  - prd.json: 更新 US-096 为 passes: true
+  - scripts/add-tutorials-batch7.js: 创建教程添加脚本
+- 新增教程:
+  - tutorial-065: NestJS 后端开发进阶 (20分钟阅读)
+  - tutorial-066: Next.js 全栈开发实战 (18分钟阅读)
+  - tutorial-067: React 性能优化深入 (16分钟阅读)
+  - tutorial-068: Vue.js 组件开发实战 (18分钟阅读)
+- 总教程数: 64 -> 68
+- 构建状态: npm run build 成功
+
+**Learnings for future iterations:**
+- 教程内容中的代码块使用标准 Markdown 格式
+- Intermediate 教程要求: 2500+ 字, 6+ 代码示例
+- JSON 字符串中的模板字符串需要注意转义
+- 使用脚本批量添加教程比手动编辑更可靠
+---
