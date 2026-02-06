@@ -403,8 +403,8 @@
         "npm run build 成功"
       ],
       "priority": 69,
-      "passes": false,
-      "notes": "Phase 5 - Sprint 7.12 - Intermediate教程完成 (25/25)"
+      "passes": true,
+      "notes": "✅ Phase 5 - Sprint 7.12 - Intermediate教程 (25/25) - 完成 分布式追踪、限流熔断、API网关、GraphQL Federation 四篇教程"
     },
     {
       "id": "US-102",
