@@ -1378,3 +1378,47 @@ calendly, gmail, toggl, harvest, clickup, ifttt, trello-powerups, zoom, teams, b
 - 新教程将使教程总数达到 40 篇，提供更全面的知识覆盖
 
 ---
+
+## 2026-02-06 - US-065
+- 编写 3 篇 Advanced 教程（tutorial-038 至 tutorial-040）
+
+**新增教程：**
+1. Tutorial-038: 微前端架构实践（25 分钟阅读时间）
+   - 8 个代码示例：Module Federation 配置、Shell 应用架构、应用间状态共享、CSS Module 隔离、Shadow DOM 封装、版本管理和回滚、性能监控
+   - 4 个实战案例：构建微前端电商平台、遗留系统渐进式迁移、企业级仪表板系统、多团队协作开发
+   - 技术深度：Webpack Module Federation、样式隔离方案、共享状态管理
+
+2. Tutorial-039: 大规模系统性能优化（30 分钟阅读时间）
+   - 8 个代码示例：Redis 缓存模式、CDN 缓存策略、SQL 查询优化、索引设计、懒加载和代码分割、Service Worker 缓存、预加载和预连接、性能监控工具
+   - 4 个实战案例：优化电商首页加载、高并发 API 优化、视频平台性能调优、实时数据推送优化
+   - 性能优化：多层缓存架构、数据库调优、前端优化
+
+3. Tutorial-040: AI Agent 工作流自动化（28 分钟阅读时间）
+   - 8 个代码示例：ReAct Agent 实现、多 Agent 协作框架、任务规划器、工具注册和调用、记忆和上下文管理、错误恢复策略、Agent 监控、性能优化
+   - 4 个实战案例：自动化研究助手、代码审查 Agent 系统、客户支持机器人、数据分析工作流
+   - 技术栈：Claude、GPT-4、LangChain
+
+**质量标准验证：**
+- ✅ 每篇教程 3000+ 字
+- ✅ 每篇包含 8+ 代码示例
+- ✅ 每篇包含 4+ 实战案例
+- ✅ 深入讲解技术原理
+- ✅ 包含性能优化建议
+- ✅ 添加相关技能链接
+- ✅ 正确设置难度标签和阅读时间
+- ✅ npm run build 构建成功（254 个页面）
+
+**Files changed:**
+- src/data/tutorials.json (添加 3 个教程)
+- prd.json (标记 US-065 完成)
+
+**Learnings for future iterations:**
+- Advanced 教程需要深入讲解技术原理和底层机制
+- 代码示例应该展示生产级别的实现和最佳实践
+- 实战案例需要涵盖完整的工作流程和错误处理
+- 性能优化建议应该具体且可操作
+- 微前端教程需要涵盖 Module Federation、样式隔离、状态管理等多个方面
+- 性能优化需要建立从数据库到前端的完整优化体系
+- AI Agent 教程需要结合 ReAct 模式、多 Agent 协作、记忆管理等高级概念
+- 总教程数：37 → 40，总页面数：244 → 254
+---
