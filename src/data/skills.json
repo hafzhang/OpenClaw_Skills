@@ -1026,7 +1026,8 @@
     "source": "https://github.com/microsoft/TypeScript",
     "verified": true,
     "url": "https://github.com/microsoft/TypeScript",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-042",
@@ -1045,7 +1046,8 @@
     "source": "https://github.com/eslint/eslint",
     "verified": true,
     "url": "https://github.com/eslint/eslint",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-043",
@@ -1064,7 +1066,8 @@
     "source": "https://github.com/prettier/prettier",
     "verified": true,
     "url": "https://github.com/prettier/prettier",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-044",
@@ -1083,7 +1086,8 @@
     "source": "https://github.com/webpack/webpack",
     "verified": true,
     "url": "https://github.com/webpack/webpack",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-045",
@@ -1102,7 +1106,8 @@
     "source": "https://github.com/vitejs/vite",
     "verified": true,
     "url": "https://github.com/vitejs/vite",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-046",
@@ -1121,7 +1126,8 @@
     "source": "https://github.com/jestjs/jest",
     "verified": true,
     "url": "https://github.com/jestjs/jest",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-047",
@@ -1140,7 +1146,8 @@
     "source": "https://github.com/vitest-dev/vitest",
     "verified": true,
     "url": "https://github.com/vitest-dev/vitest",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-048",
@@ -1159,7 +1166,8 @@
     "source": "https://github.com/cypress-io/cypress",
     "verified": true,
     "url": "https://github.com/cypress-io/cypress",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-049",
@@ -1178,7 +1186,8 @@
     "source": "https://github.com/facebook/react",
     "verified": true,
     "url": "https://github.com/facebook/react",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-050",
@@ -1197,7 +1206,8 @@
     "source": "https://github.com/vuejs/core",
     "verified": true,
     "url": "https://github.com/vuejs/core",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-051",
@@ -1216,7 +1226,8 @@
     "source": "https://github.com/angular/angular",
     "verified": true,
     "url": "https://github.com/angular/angular",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-052",
@@ -1235,7 +1246,8 @@
     "source": "https://github.com/sveltejs/svelte",
     "verified": true,
     "url": "https://github.com/sveltejs/svelte",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-053",
@@ -1254,7 +1266,8 @@
     "source": "https://github.com/nestjs/nest",
     "verified": true,
     "url": "https://github.com/nestjs/nest",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-054",
@@ -1273,7 +1286,8 @@
     "source": "https://github.com/expressjs/express",
     "verified": true,
     "url": "https://github.com/expressjs/express",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-055",
@@ -1292,7 +1306,8 @@
     "source": "https://github.com/django/django",
     "verified": true,
     "url": "https://github.com/django/django",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-056",
@@ -1311,7 +1326,8 @@
     "source": "https://github.com/pallets/flask",
     "verified": true,
     "url": "https://github.com/pallets/flask",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-057",
@@ -1330,7 +1346,8 @@
     "source": "https://github.com/tiangolo/fastapi",
     "verified": true,
     "url": "https://github.com/tiangolo/fastapi",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-058",
@@ -1349,7 +1366,8 @@
     "source": "https://github.com/rails/rails",
     "verified": true,
     "url": "https://github.com/rails/rails",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-059",
@@ -1368,7 +1386,8 @@
     "source": "https://github.com/laravel/laravel",
     "verified": true,
     "url": "https://github.com/laravel/laravel",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-060",
@@ -1387,7 +1406,8 @@
     "source": "https://github.com/spring-projects/spring-boot",
     "verified": true,
     "url": "https://github.com/spring-projects/spring-boot",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-061",
@@ -1406,7 +1426,8 @@
     "source": "https://github.com/dotnet/runtime",
     "verified": true,
     "url": "https://github.com/dotnet/runtime",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-062",
@@ -1425,7 +1446,8 @@
     "source": "https://github.com/postgres/postgres",
     "verified": true,
     "url": "https://github.com/postgres/postgres",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-063",
@@ -1444,7 +1466,8 @@
     "source": "https://github.com/mongodb/mongo",
     "verified": true,
     "url": "https://github.com/mongodb/mongo",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-064",
@@ -1463,7 +1486,8 @@
     "source": "https://github.com/redis/redis",
     "verified": true,
     "url": "https://github.com/redis/redis",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-065",
@@ -1482,7 +1506,8 @@
     "source": "https://github.com/graphql/graphql-spec",
     "verified": true,
     "url": "https://github.com/graphql/graphql-spec",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-066",
@@ -1501,7 +1526,8 @@
     "source": "https://github.com/grpc/grpc",
     "verified": true,
     "url": "https://github.com/grpc/grpc",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-067",
@@ -1520,7 +1546,8 @@
     "source": "https://github.com/yarnpkg/berry",
     "verified": true,
     "url": "https://github.com/yarnpkg/berry",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-068",
@@ -1539,7 +1566,8 @@
     "source": "https://github.com/pnpm/pnpm",
     "verified": true,
     "url": "https://github.com/pnpm/pnpm",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-069",
@@ -1558,7 +1586,8 @@
     "source": "https://github.com/babel/babel",
     "verified": true,
     "url": "https://github.com/babel/babel",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-070",
@@ -1577,7 +1606,8 @@
     "source": "https://github.com/swc-project/swc",
     "verified": true,
     "url": "https://github.com/swc-project/swc",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-071",
@@ -1596,7 +1626,8 @@
     "source": "https://github.com/tailwindlabs/tailwindcss",
     "verified": true,
     "url": "https://github.com/tailwindlabs/tailwindcss",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-072",
@@ -1615,7 +1646,8 @@
     "source": "https://github.com/obsidianmd/obsidian-releases",
     "verified": true,
     "url": "https://github.com/obsidianmd/obsidian-releases",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-073",
@@ -1634,7 +1666,8 @@
     "source": "https://github.com/logseq/logseq",
     "verified": true,
     "url": "https://github.com/logseq/logseq",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-074",
@@ -1653,7 +1686,8 @@
     "source": "https://github.com/laurent22/joplin",
     "verified": true,
     "url": "https://github.com/laurent22/joplin",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-075",
@@ -1672,7 +1706,8 @@
     "source": "https://github.com/discord/discord-api-docs",
     "verified": true,
     "url": "https://github.com/discord/discord-api-docs",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-076",
@@ -1691,7 +1726,8 @@
     "source": "https://github.com/telegramdesktop/tdesktop",
     "verified": true,
     "url": "https://github.com/telegramdesktop/tdesktop",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-077",
@@ -1710,7 +1746,8 @@
     "source": "https://github.com/matrix-org/synapse",
     "verified": true,
     "url": "https://github.com/matrix-org/synapse",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-078",
@@ -1729,7 +1766,8 @@
     "source": "https://github.com/googleapis/python-api-core",
     "verified": true,
     "url": "https://github.com/googleapis/python-api-core",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-079",
@@ -1748,7 +1786,8 @@
     "source": "https://github.com/microsoftgraph/msgraph-sdk-python",
     "verified": true,
     "url": "https://github.com/microsoftgraph/msgraph-sdk-python",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-080",
@@ -1767,7 +1806,8 @@
     "source": "https://github.com/OneDrive/onedrive-api-docs",
     "verified": true,
     "url": "https://github.com/OneDrive/onedrive-api-docs",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-081",
@@ -1786,7 +1826,8 @@
     "source": "https://github.com/atlassian-api/atlassian-python-api",
     "verified": true,
     "url": "https://github.com/atlassian-api/atlassian-python-api",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-082",
@@ -1805,7 +1846,8 @@
     "source": "https://github.com/facebook/docusaurus",
     "verified": true,
     "url": "https://github.com/facebook/docusaurus",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-083",
@@ -1824,7 +1866,8 @@
     "source": "https://github.com/bitwarden/clients",
     "verified": true,
     "url": "https://github.com/bitwarden/clients",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-084",
@@ -1843,7 +1886,8 @@
     "source": "https://github.com/1Password/onepassword-sdk-python",
     "verified": true,
     "url": "https://github.com/1Password/onepassword-sdk-python",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-085",
@@ -1862,7 +1906,8 @@
     "source": "https://github.com/linear/linear",
     "verified": true,
     "url": "https://github.com/linear/linear",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-086",
@@ -1881,7 +1926,8 @@
     "source": "https://github.com/mondaycom/monday-sdk-js",
     "verified": true,
     "url": "https://github.com/mondaycom/monday-sdk-js",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-087",
@@ -1900,7 +1946,8 @@
     "source": "https://github.com/zapier/zapier-platform",
     "verified": true,
     "url": "https://github.com/zapier/zapier-platform",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-088",
@@ -1919,7 +1966,8 @@
     "source": "https://github.com/Airtable/airtable.js",
     "verified": true,
     "url": "https://github.com/Airtable/airtable.js",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-089",
@@ -1938,7 +1986,8 @@
     "source": "https://github.com/Airtable/airtable.js",
     "verified": true,
     "url": "https://github.com/Airtable/airtable.js",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-090",
@@ -1957,7 +2006,8 @@
     "source": "https://github.com/figma/plugin-samples",
     "verified": true,
     "url": "https://github.com/figma/plugin-samples",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-091",
@@ -1976,7 +2026,8 @@
     "source": "https://github.com/makenotion/notion-sdk-js",
     "verified": true,
     "url": "https://github.com/makenotion/notion-sdk-js",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-092",
@@ -1995,7 +2046,8 @@
     "source": "https://github.com/github/feedback",
     "verified": true,
     "url": "https://github.com/github/feedback",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-093",
@@ -2014,7 +2066,8 @@
     "source": "https://github.com/gitlabhq/gitlabhq",
     "verified": true,
     "url": "https://github.com/gitlabhq/gitlabhq",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-094",
@@ -2033,7 +2086,8 @@
     "source": "https://github.com/docker/compose",
     "verified": true,
     "url": "https://github.com/docker/compose",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-095",
@@ -2052,7 +2106,8 @@
     "source": "https://github.com/containers/podman",
     "verified": true,
     "url": "https://github.com/containers/podman",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-096",
@@ -2071,7 +2126,8 @@
     "source": "https://github.com/helm/helm",
     "verified": true,
     "url": "https://github.com/helm/helm",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-097",
@@ -2090,7 +2146,8 @@
     "source": "https://github.com/argoproj/argo-cd",
     "verified": true,
     "url": "https://github.com/argoproj/argo-cd",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-098",
@@ -2109,7 +2166,8 @@
     "source": "https://github.com/argoproj/argo-workflows",
     "verified": true,
     "url": "https://github.com/argoproj/argo-workflows",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-099",
@@ -2128,7 +2186,8 @@
     "source": "https://github.com/CircleCI-Public/circleci-cli",
     "verified": true,
     "url": "https://github.com/CircleCI-Public/circleci-cli",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-100",
@@ -2147,7 +2206,8 @@
     "source": "https://github.com/buildkite/cli",
     "verified": true,
     "url": "https://github.com/buildkite/cli",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-101",
@@ -2166,7 +2226,8 @@
     "source": "https://github.com/travis-ci/travis-ci",
     "verified": true,
     "url": "https://github.com/travis-ci/travis-ci",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-102",
@@ -2185,7 +2246,8 @@
     "source": "https://github.com/DataDog/datadog-api-client-python",
     "verified": true,
     "url": "https://github.com/DataDog/datadog-api-client-python",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-103",
@@ -2204,7 +2266,8 @@
     "source": "https://github.com/newrelic/newrelic-telemetry-sdk-python",
     "verified": true,
     "url": "https://github.com/newrelic/newrelic-telemetry-sdk-python",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-104",
@@ -2223,7 +2286,8 @@
     "source": "https://github.com/splunk/splunk-sdk-python",
     "verified": true,
     "url": "https://github.com/splunk/splunk-sdk-python",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-105",
@@ -2242,7 +2306,8 @@
     "source": "https://github.com/grafana/grafana",
     "verified": true,
     "url": "https://github.com/grafana/grafana",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-106",
@@ -2261,7 +2326,8 @@
     "source": "https://github.com/prometheus/prometheus",
     "verified": true,
     "url": "https://github.com/prometheus/prometheus",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-107",
@@ -2280,7 +2346,8 @@
     "source": "https://github.com/elastic/elasticsearch",
     "verified": true,
     "url": "https://github.com/elastic/elasticsearch",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-108",
@@ -2299,7 +2366,8 @@
     "source": "https://github.com/fluent/fluentd",
     "verified": true,
     "url": "https://github.com/fluent/fluentd",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-109",
@@ -2318,7 +2386,8 @@
     "source": "https://github.com/grafana/loki",
     "verified": true,
     "url": "https://github.com/grafana/loki",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-110",
@@ -2337,7 +2406,8 @@
     "source": "https://github.com/pulumi/pulumi",
     "verified": true,
     "url": "https://github.com/pulumi/pulumi",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-111",
@@ -2356,7 +2426,8 @@
     "source": "https://github.com/aws-cloudformation/cloudformation-cli",
     "verified": true,
     "url": "https://github.com/aws-cloudformation/cloudformation-cli",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-112",
@@ -2375,7 +2446,8 @@
     "source": "https://github.com/Azure/azure-cli",
     "verified": true,
     "url": "https://github.com/Azure/azure-cli",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-113",
@@ -2394,7 +2466,8 @@
     "source": "https://github.com/digitalocean/doctl",
     "verified": true,
     "url": "https://github.com/digitalocean/doctl",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-114",
@@ -2413,7 +2486,8 @@
     "source": "https://github.com/heroku/cli",
     "verified": true,
     "url": "https://github.com/heroku/cli",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-115",
@@ -2432,7 +2506,8 @@
     "source": "https://github.com/nginx/nginx",
     "verified": true,
     "url": "https://github.com/nginx/nginx",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-116",
@@ -2451,7 +2526,8 @@
     "source": "https://github.com/apache/httpd",
     "verified": true,
     "url": "https://github.com/apache/httpd",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-117",
@@ -2470,7 +2546,8 @@
     "source": "https://github.com/traefik/traefik",
     "verified": true,
     "url": "https://github.com/traefik/traefik",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-118",
@@ -2489,7 +2566,8 @@
     "source": "https://github.com/hashicorp/consul",
     "verified": true,
     "url": "https://github.com/hashicorp/consul",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-119",
@@ -2508,7 +2586,8 @@
     "source": "https://github.com/hashicorp/vault",
     "verified": true,
     "url": "https://github.com/hashicorp/vault",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-120",
@@ -2527,7 +2606,8 @@
     "source": "https://github.com/hashicorp/nomad",
     "verified": true,
     "url": "https://github.com/hashicorp/nomad",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-121",
@@ -2546,7 +2626,8 @@
     "source": "https://github.com/hashicorp/packer",
     "verified": true,
     "url": "https://github.com/hashicorp/packer",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-122",
@@ -2565,7 +2646,8 @@
     "source": "https://github.com/openai/openai-node",
     "verified": true,
     "url": "https://github.com/openai/openai-node",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-123",
@@ -2584,7 +2666,8 @@
     "source": "https://github.com/mistralai/mistral-src",
     "verified": true,
     "url": "https://github.com/mistralai/mistral-src",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-124",
@@ -2603,7 +2686,8 @@
     "source": "https://github.com/meta-llama/llama3",
     "verified": true,
     "url": "https://github.com/meta-llama/llama3",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-125",
@@ -2622,7 +2706,8 @@
     "source": "https://github.com/langchain-ai/langchain",
     "verified": true,
     "url": "https://github.com/langchain-ai/langchain",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-126",
@@ -2641,7 +2726,8 @@
     "source": "https://github.com/run-llama/llama_index",
     "verified": true,
     "url": "https://github.com/run-llama/llama_index",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-127",
@@ -2660,7 +2746,8 @@
     "source": "https://github.com/pinecone-io/pinecone-ts-client",
     "verified": true,
     "url": "https://github.com/pinecone-io/pinecone-ts-client",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-128",
@@ -2679,7 +2766,8 @@
     "source": "https://github.com/weaviate/weaviate",
     "verified": true,
     "url": "https://github.com/weaviate/weaviate",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-129",
@@ -2698,7 +2786,8 @@
     "source": "https://github.com/qdrant/qdrant",
     "verified": true,
     "url": "https://github.com/qdrant/qdrant",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-130",
@@ -2717,7 +2806,8 @@
     "source": "https://github.com/chroma-core/chroma",
     "verified": true,
     "url": "https://github.com/chroma-core/chroma",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-131",
@@ -2736,7 +2826,8 @@
     "source": "https://github.com/pytorch/pytorch",
     "verified": true,
     "url": "https://github.com/pytorch/pytorch",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-132",
@@ -2755,7 +2846,8 @@
     "source": "https://github.com/tensorflow/tensorflow",
     "verified": true,
     "url": "https://github.com/tensorflow/tensorflow",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-133",
@@ -2774,7 +2866,8 @@
     "source": "https://github.com/scikit-learn/scikit-learn",
     "verified": true,
     "url": "https://github.com/scikit-learn/scikit-learn",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-134",
@@ -2793,7 +2886,8 @@
     "source": "https://github.com/ollama/ollama",
     "verified": true,
     "url": "https://github.com/ollama/ollama",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-135",
@@ -2812,7 +2906,8 @@
     "source": "https://github.com/vllm-project/vllm",
     "verified": true,
     "url": "https://github.com/vllm-project/vllm",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-136",
@@ -2831,7 +2926,8 @@
     "source": "https://github.com/oobabooga/text-generation-webui",
     "verified": true,
     "url": "https://github.com/oobabooga/text-generation-webui",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-137",
@@ -2850,7 +2946,8 @@
     "source": "https://github.com/openai/whisper",
     "verified": true,
     "url": "https://github.com/openai/whisper",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-138",
@@ -2869,7 +2966,8 @@
     "source": "https://github.com/htop-dev/htop",
     "verified": true,
     "url": "https://github.com/htop-dev/htop",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-139",
@@ -2888,7 +2986,8 @@
     "source": "https://github.com/aristocratos/btop",
     "verified": true,
     "url": "https://github.com/aristocratos/btop",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-140",
@@ -2907,7 +3006,8 @@
     "source": "https://github.com/tmux/tmux",
     "verified": true,
     "url": "https://github.com/tmux/tmux",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-141",
@@ -2926,7 +3026,8 @@
     "source": "https://github.com/zsh-users/zsh",
     "verified": true,
     "url": "https://github.com/zsh-users/zsh",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-142",
@@ -2945,7 +3046,8 @@
     "source": "https://github.com/fish-shell/fish-shell",
     "verified": true,
     "url": "https://github.com/fish-shell/fish-shell",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-143",
@@ -2964,7 +3066,8 @@
     "source": "https://github.com/BurntSushi/ripgrep",
     "verified": true,
     "url": "https://github.com/BurntSushi/ripgrep",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-144",
@@ -2983,7 +3086,8 @@
     "source": "https://github.com/sharkdp/fd",
     "verified": true,
     "url": "https://github.com/sharkdp/fd",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-145",
@@ -3002,7 +3106,8 @@
     "source": "https://github.com/sharkdp/bat",
     "verified": true,
     "url": "https://github.com/sharkdp/bat",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-146",
@@ -3021,7 +3126,8 @@
     "source": "https://github.com/ogham/exa",
     "verified": true,
     "url": "https://github.com/ogham/exa",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-147",
@@ -3040,7 +3146,8 @@
     "source": "https://github.com/bootandy/dust",
     "verified": true,
     "url": "https://github.com/bootandy/dust",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-148",
@@ -3059,7 +3166,8 @@
     "source": "https://dev.yorhel.nl/ncdu",
     "verified": true,
     "url": "https://dev.yorhel.nl/ncdu",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-149",
@@ -3078,7 +3186,8 @@
     "source": "https://github.com/stedolan/jq",
     "verified": true,
     "url": "https://github.com/stedolan/jq",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-150",
@@ -3097,7 +3206,8 @@
     "source": "https://github.com/httpie/httpie",
     "verified": true,
     "url": "https://github.com/httpie/httpie",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-151",
@@ -3116,7 +3226,8 @@
     "source": "https://github.com/joeyespo/grip",
     "verified": true,
     "url": "https://github.com/joeyespo/grip",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-152",
@@ -3135,7 +3246,8 @@
     "source": "https://github.com/junegunn/fzf",
     "verified": true,
     "url": "https://github.com/junegunn/fzf",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-153",
@@ -3154,7 +3266,8 @@
     "source": "https://github.com/ggreer/the_silver_searcher",
     "verified": true,
     "url": "https://github.com/ggreer/the_silver_searcher",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-154",
@@ -3173,7 +3286,8 @@
     "source": "https://github.com/dandavison/delta",
     "verified": true,
     "url": "https://github.com/dandavison/delta",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-155",
@@ -3192,7 +3306,8 @@
     "source": "https://github.com/jesseduffield/lazygit",
     "verified": true,
     "url": "https://github.com/jesseduffield/lazygit",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-156",
@@ -3211,7 +3326,8 @@
     "source": "https://github.com/dlvhdr/gh-dash",
     "verified": true,
     "url": "https://github.com/dlvhdr/gh-dash",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-157",
@@ -3230,7 +3346,8 @@
     "source": "https://github.com/charmbracelet/gum",
     "verified": true,
     "url": "https://github.com/charmbracelet/gum",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-158",
@@ -3249,7 +3366,8 @@
     "source": "https://github.com/theryangeary/choose",
     "verified": true,
     "url": "https://github.com/theryangeary/choose",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-159",
@@ -3268,7 +3386,8 @@
     "source": "https://github.com/ajeetdsouza/zoxide",
     "verified": true,
     "url": "https://github.com/ajeetdsouza/zoxide",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-160",
@@ -3287,7 +3406,8 @@
     "source": "https://github.com/starship/starship",
     "verified": true,
     "url": "https://github.com/starship/starship",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-161",
@@ -3306,7 +3426,8 @@
     "source": "https://github.com/eza-community/eza",
     "verified": true,
     "url": "https://github.com/eza-community/eza",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-162",
@@ -3325,7 +3446,8 @@
     "source": "https://github.com/zellij-org/zellij",
     "verified": true,
     "url": "https://github.com/zellij-org/zellij",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-163",
@@ -3344,7 +3466,8 @@
     "source": "https://github.com/derailed/k9s",
     "verified": true,
     "url": "https://github.com/derailed/k9s",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-164",
@@ -3363,7 +3486,8 @@
     "source": "https://github.com/stern/stern",
     "verified": true,
     "url": "https://github.com/stern/stern",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-165",
@@ -3382,7 +3506,8 @@
     "source": "https://github.com/ahmetb/kubectx",
     "verified": true,
     "url": "https://github.com/ahmetb/kubectx",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-166",
@@ -3401,7 +3526,8 @@
     "source": "https://github.com/kubernetes-sigs/krew",
     "verified": true,
     "url": "https://github.com/kubernetes-sigs/krew",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-167",
@@ -3420,7 +3546,8 @@
     "source": "https://github.com/extrawurst/gitui",
     "verified": true,
     "url": "https://github.com/extrawurst/gitui",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-168",
@@ -3439,7 +3566,8 @@
     "source": "https://github.com/tldr-pages/tldr",
     "verified": true,
     "url": "https://github.com/tldr-pages/tldr",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-169",
@@ -3458,7 +3586,8 @@
     "source": "https://github.com/dbrgn/tealdeer",
     "verified": true,
     "url": "https://github.com/dbrgn/tealdeer",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-170",
@@ -3477,7 +3606,8 @@
     "source": "https://github.com/orf/gping",
     "verified": true,
     "url": "https://github.com/orf/gping",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-171",
@@ -3496,7 +3626,8 @@
     "source": "https://github.com/dalance/procs",
     "verified": true,
     "url": "https://github.com/dalance/procs",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-172",
@@ -3515,7 +3646,8 @@
     "source": "https://github.com/chmln/sd",
     "verified": true,
     "url": "https://github.com/chmln/sd",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-173",
@@ -3534,7 +3666,8 @@
     "source": "https://github.com/ClementTsang/bottom",
     "verified": true,
     "url": "https://github.com/ClementTsang/bottom",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-174",
@@ -3553,7 +3686,8 @@
     "source": "https://github.com/bootandy/dust",
     "verified": true,
     "url": "https://github.com/bootandy/dust",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-175",
@@ -3572,7 +3706,8 @@
     "source": "https://github.com/dundee/gdu",
     "verified": true,
     "url": "https://github.com/dundee/gdu",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-176",
@@ -3591,7 +3726,8 @@
     "source": "https://github.com/imsnif/bandwhich",
     "verified": true,
     "url": "https://github.com/imsnif/bandwhich",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-177",
@@ -3610,7 +3746,8 @@
     "source": "https://github.com/goproxy/goproxy.cn",
     "verified": true,
     "url": "https://github.com/goproxy/goproxy.cn",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-178",
@@ -3629,7 +3766,8 @@
     "source": "https://github.com/supabase/supabase",
     "verified": true,
     "url": "https://github.com/supabase/supabase",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-179",
@@ -3648,7 +3786,8 @@
     "source": "https://github.com/firebase/firebase-tools",
     "verified": true,
     "url": "https://github.com/firebase/firebase-tools",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-180",
@@ -3667,7 +3806,8 @@
     "source": "https://github.com/appwrite/appwrite",
     "verified": true,
     "url": "https://github.com/appwrite/appwrite",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-181",
@@ -3686,7 +3826,8 @@
     "source": "https://github.com/pocketbase/pocketbase",
     "verified": true,
     "url": "https://github.com/pocketbase/pocketbase",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-182",
@@ -3705,7 +3846,8 @@
     "source": "https://github.com/directus/directus",
     "verified": true,
     "url": "https://github.com/directus/directus",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-183",
@@ -3724,7 +3866,8 @@
     "source": "https://github.com/strapi/strapi",
     "verified": true,
     "url": "https://github.com/strapi/strapi",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-184",
@@ -3743,7 +3886,8 @@
     "source": "https://github.com/payloadcms/payload",
     "verified": true,
     "url": "https://github.com/payloadcms/payload",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-185",
@@ -3762,7 +3906,8 @@
     "source": "https://github.com/kestra-io/kestra",
     "verified": true,
     "url": "https://github.com/kestra-io/kestra",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-186",
@@ -3781,7 +3926,8 @@
     "source": "https://github.com/temporalio/sdk-python",
     "verified": true,
     "url": "https://github.com/temporalio/sdk-python",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-187",
@@ -3800,7 +3946,8 @@
     "source": "https://github.com/n8n-io/n8n",
     "verified": true,
     "url": "https://github.com/n8n-io/n8n",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-188",
@@ -3819,7 +3966,8 @@
     "source": "https://github.com/apache/airflow",
     "verified": true,
     "url": "https://github.com/apache/airflow",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-189",
@@ -3838,7 +3986,8 @@
     "source": "https://github.com/PrefectHQ/prefect",
     "verified": true,
     "url": "https://github.com/PrefectHQ/prefect",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-190",
@@ -3857,7 +4006,8 @@
     "source": "https://github.com/dask/dask",
     "verified": true,
     "url": "https://github.com/dask/dask",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-191",
@@ -3876,7 +4026,8 @@
     "source": "https://github.com/ray-project/ray",
     "verified": true,
     "url": "https://github.com/ray-project/ray",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-192",
@@ -3895,7 +4046,8 @@
     "source": "https://github.com/pola-rs/polars",
     "verified": true,
     "url": "https://github.com/pola-rs/polars",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-193",
@@ -3914,7 +4066,8 @@
     "source": "https://github.com/apache/spark",
     "verified": true,
     "url": "https://github.com/apache/spark",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-194",
@@ -3933,7 +4086,8 @@
     "source": "https://github.com/pandas-dev/pandas",
     "verified": true,
     "url": "https://github.com/pandas-dev/pandas",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-195",
@@ -3952,7 +4106,8 @@
     "source": "https://github.com/numpy/numpy",
     "verified": true,
     "url": "https://github.com/numpy/numpy",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-196",
@@ -3971,7 +4126,8 @@
     "source": "https://github.com/jupyter/notebook",
     "verified": true,
     "url": "https://github.com/jupyter/notebook",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-197",
@@ -3990,7 +4146,8 @@
     "source": "https://github.com/ipython/ipython",
     "verified": true,
     "url": "https://github.com/ipython/ipython",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-198",
@@ -4009,7 +4166,8 @@
     "source": "https://github.com/Homebrew/brew",
     "verified": true,
     "url": "https://github.com/Homebrew/brew",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-199",
@@ -4028,7 +4186,8 @@
     "source": "https://github.com/ScoopInstaller/Scoop",
     "verified": true,
     "url": "https://github.com/ScoopInstaller/Scoop",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-200",
@@ -4047,7 +4206,8 @@
     "source": "https://github.com/chocolatey/choco",
     "verified": true,
     "url": "https://github.com/chocolatey/choco",
-    "createdAt": "2026-02-05T00:00:00Z"
+    "createdAt": "2026-02-05T00:00:00Z",
+    "relatedSkills": []
   },
   {
     "id": "skill-201",
@@ -4066,7 +4226,8 @@
     "url": "https://github.com/asana/asana-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install asana-cli"
+    "command": "npx clawhub@latest install asana-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-202",
@@ -4085,7 +4246,8 @@
     "url": "https://github.com/linear/linear-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install linear-cli"
+    "command": "npx clawhub@latest install linear-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-203",
@@ -4104,7 +4266,8 @@
     "url": "https://github.com/clickup/clickup-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install clickup-cli"
+    "command": "npx clawhub@latest install clickup-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-204",
@@ -4123,7 +4286,8 @@
     "url": "https://github.com/slack/slack-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install slack-cli"
+    "command": "npx clawhub@latest install slack-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-205",
@@ -4142,7 +4306,8 @@
     "url": "https://github.com/discord/discord-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install discord-cli"
+    "command": "npx clawhub@latest install discord-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-206",
@@ -4161,7 +4326,8 @@
     "url": "https://github.com/telegram/telegram-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install telegram-cli"
+    "command": "npx clawhub@latest install telegram-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-207",
@@ -4180,7 +4346,8 @@
     "url": "https://github.com/matrix-org/matrix-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install matrix-cli"
+    "command": "npx clawhub@latest install matrix-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-208",
@@ -4199,7 +4366,8 @@
     "url": "https://github.com/google/gdrive-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install gdrive-cli"
+    "command": "npx clawhub@latest install gdrive-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-209",
@@ -4218,7 +4386,8 @@
     "url": "https://github.com/dropbox/dropbox-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install dropbox-cli"
+    "command": "npx clawhub@latest install dropbox-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-210",
@@ -4237,7 +4406,8 @@
     "url": "https://github.com/microsoft/onedrive-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install onedrive-cli"
+    "command": "npx clawhub@latest install onedrive-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-211",
@@ -4256,7 +4426,8 @@
     "url": "https://github.com/notionhq/notion-api",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install notion-api"
+    "command": "npx clawhub@latest install notion-api",
+    "relatedSkills": []
   },
   {
     "id": "skill-212",
@@ -4275,7 +4446,8 @@
     "url": "https://github.com/evernote/evernote-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install evernote-cli"
+    "command": "npx clawhub@latest install evernote-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-213",
@@ -4294,7 +4466,8 @@
     "url": "https://github.com/trello/trello-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install trello-cli"
+    "command": "npx clawhub@latest install trello-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-214",
@@ -4313,7 +4486,8 @@
     "url": "https://github.com/atlassian/jira-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install jira-cli"
+    "command": "npx clawhub@latest install jira-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-215",
@@ -4332,7 +4506,8 @@
     "url": "https://github.com/mondaycom/monday-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install monday-cli"
+    "command": "npx clawhub@latest install monday-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-216",
@@ -4351,7 +4526,8 @@
     "url": "https://github.com/basecamp/basecamp-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install basecamp-cli"
+    "command": "npx clawhub@latest install basecamp-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-217",
@@ -4370,7 +4546,8 @@
     "url": "https://github.com/atlassian/confluence-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install confluence-cli"
+    "command": "npx clawhub@latest install confluence-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-218",
@@ -4389,7 +4566,8 @@
     "url": "https://github.com/airtable/airtable-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install airtable-cli"
+    "command": "npx clawhub@latest install airtable-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-219",
@@ -4408,7 +4586,8 @@
     "url": "https://github.com/notionhq/notion-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install notion-cli"
+    "command": "npx clawhub@latest install notion-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-220",
@@ -4427,7 +4606,8 @@
     "url": "https://github.com/obsidianmd/obsidian-cli",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install obsidian-cli"
+    "command": "npx clawhub@latest install obsidian-cli",
+    "relatedSkills": []
   },
   {
     "id": "skill-221",
@@ -4446,7 +4626,8 @@
     "url": "https://github.com/opentofu/opentofu",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install opentofu"
+    "command": "npx clawhub@latest install opentofu",
+    "relatedSkills": []
   },
   {
     "id": "skill-222",
@@ -4465,7 +4646,8 @@
     "url": "https://github.com/dagger/dagger",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install dagger"
+    "command": "npx clawhub@latest install dagger",
+    "relatedSkills": []
   },
   {
     "id": "skill-223",
@@ -4484,7 +4666,8 @@
     "url": "https://github.com/earthly/earthly",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install earthly"
+    "command": "npx clawhub@latest install earthly",
+    "relatedSkills": []
   },
   {
     "id": "skill-224",
@@ -4503,7 +4686,8 @@
     "url": "https://github.com/gruntwork-io/terragrunt",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install terragrunt"
+    "command": "npx clawhub@latest install terragrunt",
+    "relatedSkills": []
   },
   {
     "id": "skill-225",
@@ -4522,7 +4706,8 @@
     "url": "https://github.com/wagoodman/dive",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install dive"
+    "command": "npx clawhub@latest install dive",
+    "relatedSkills": []
   },
   {
     "id": "skill-226",
@@ -4541,7 +4726,8 @@
     "url": "https://github.com/jesseduffield/lazydocker",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install lazydocker"
+    "command": "npx clawhub@latest install lazydocker",
+    "relatedSkills": []
   },
   {
     "id": "skill-227",
@@ -4560,7 +4746,8 @@
     "url": "https://github.com/amir20/dozzle",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install dozzle"
+    "command": "npx clawhub@latest install dozzle",
+    "relatedSkills": []
   },
   {
     "id": "skill-228",
@@ -4579,7 +4766,8 @@
     "url": "https://github.com/caddyserver/caddy",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install caddy"
+    "command": "npx clawhub@latest install caddy",
+    "relatedSkills": []
   },
   {
     "id": "skill-229",
@@ -4598,7 +4786,8 @@
     "url": "https://github.com/envoyproxy/envoy",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install envoy"
+    "command": "npx clawhub@latest install envoy",
+    "relatedSkills": []
   },
   {
     "id": "skill-230",
@@ -4617,7 +4806,8 @@
     "url": "https://github.com/cyberark",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install cyberark"
+    "command": "npx clawhub@latest install cyberark",
+    "relatedSkills": []
   },
   {
     "id": "skill-231",
@@ -4636,7 +4826,8 @@
     "url": "https://github.com/etcd-io/etcd",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install etcd"
+    "command": "npx clawhub@latest install etcd",
+    "relatedSkills": []
   },
   {
     "id": "skill-232",
@@ -4655,7 +4846,8 @@
     "url": "https://github.com/apache/airflow",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install airflow"
+    "command": "npx clawhub@latest install airflow",
+    "relatedSkills": []
   },
   {
     "id": "skill-233",
@@ -4674,7 +4866,8 @@
     "url": "https://github.com/lima-vm/lima",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install lima"
+    "command": "npx clawhub@latest install lima",
+    "relatedSkills": []
   },
   {
     "id": "skill-234",
@@ -4693,7 +4886,8 @@
     "url": "https://github.com/hashicorp/boundary",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install boundary"
+    "command": "npx clawhub@latest install boundary",
+    "relatedSkills": []
   },
   {
     "id": "skill-235",
@@ -4712,7 +4906,8 @@
     "url": "https://github.com/hashicorp/waypoint",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install waypoint"
+    "command": "npx clawhub@latest install waypoint",
+    "relatedSkills": []
   },
   {
     "id": "skill-236",
@@ -4731,7 +4926,8 @@
     "url": "https://github.com/kubernetes-sigs/krew",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install krew"
+    "command": "npx clawhub@latest install krew",
+    "relatedSkills": []
   },
   {
     "id": "skill-237",
@@ -4750,7 +4946,8 @@
     "url": "https://github.com/bitnami-labs/sealed-secrets",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install kubeseal"
+    "command": "npx clawhub@latest install kubeseal",
+    "relatedSkills": []
   },
   {
     "id": "skill-238",
@@ -4769,7 +4966,8 @@
     "url": "https://github.com/argoproj/argo-cd",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install argo-cd"
+    "command": "npx clawhub@latest install argo-cd",
+    "relatedSkills": []
   },
   {
     "id": "skill-239",
@@ -4788,7 +4986,8 @@
     "url": "https://github.com/argoproj/argo-rollouts",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install argo-rollouts"
+    "command": "npx clawhub@latest install argo-rollouts",
+    "relatedSkills": []
   },
   {
     "id": "skill-240",
@@ -4807,7 +5006,8 @@
     "url": "https://github.com/ggerganov/llama.cpp",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install llama-cpp"
+    "command": "npx clawhub@latest install llama-cpp",
+    "relatedSkills": []
   },
   {
     "id": "skill-241",
@@ -4826,7 +5026,8 @@
     "url": "https://github.com/ggerganov/whisper.cpp",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install whisper-cpp"
+    "command": "npx clawhub@latest install whisper-cpp",
+    "relatedSkills": []
   },
   {
     "id": "skill-242",
@@ -4845,7 +5046,8 @@
     "url": "https://github.com/vllm-project/vllm",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install vllm"
+    "command": "npx clawhub@latest install vllm",
+    "relatedSkills": []
   },
   {
     "id": "skill-243",
@@ -4864,7 +5066,8 @@
     "url": "https://github.com/huggingface/text-generation-inference",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install text-generation-inference"
+    "command": "npx clawhub@latest install text-generation-inference",
+    "relatedSkills": []
   },
   {
     "id": "skill-244",
@@ -4883,7 +5086,8 @@
     "url": "https://github.com/deepset-ai/haystack",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install haystack"
+    "command": "npx clawhub@latest install haystack",
+    "relatedSkills": []
   },
   {
     "id": "skill-245",
@@ -4902,7 +5106,8 @@
     "url": "https://github.com/microsoft/semantic-kernel",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install semantic-kernel"
+    "command": "npx clawhub@latest install semantic-kernel",
+    "relatedSkills": []
   },
   {
     "id": "skill-246",
@@ -4921,7 +5126,8 @@
     "url": "https://github.com/microsoft/autogen",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install auto-gen"
+    "command": "npx clawhub@latest install auto-gen",
+    "relatedSkills": []
   },
   {
     "id": "skill-247",
@@ -4940,7 +5146,8 @@
     "url": "https://github.com/joaomdmoura/crewAI",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install crewai"
+    "command": "npx clawhub@latest install crewai",
+    "relatedSkills": []
   },
   {
     "id": "skill-248",
@@ -4959,7 +5166,8 @@
     "url": "https://github.com/chroma-core/chroma",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install chroma"
+    "command": "npx clawhub@latest install chroma",
+    "relatedSkills": []
   },
   {
     "id": "skill-249",
@@ -4978,7 +5186,8 @@
     "url": "https://github.com/weaviate/weaviate",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install weaviate"
+    "command": "npx clawhub@latest install weaviate",
+    "relatedSkills": []
   },
   {
     "id": "skill-250",
@@ -4997,7 +5206,8 @@
     "url": "https://github.com/milvus-io/milvus",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install milvus"
+    "command": "npx clawhub@latest install milvus",
+    "relatedSkills": []
   },
   {
     "id": "skill-251",
@@ -5016,7 +5226,8 @@
     "url": "https://github.com/huggingface/huggingface_hub",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install huggingface-hub"
+    "command": "npx clawhub@latest install huggingface-hub",
+    "relatedSkills": []
   },
   {
     "id": "skill-252",
@@ -5035,7 +5246,8 @@
     "url": "https://github.com/huggingface/transformers",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install transformers"
+    "command": "npx clawhub@latest install transformers",
+    "relatedSkills": []
   },
   {
     "id": "skill-253",
@@ -5054,7 +5266,8 @@
     "url": "https://github.com/huggingface/diffusers",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install diffusers"
+    "command": "npx clawhub@latest install diffusers",
+    "relatedSkills": []
   },
   {
     "id": "skill-254",
@@ -5073,7 +5286,8 @@
     "url": "https://github.com/huggingface/peft",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install peft"
+    "command": "npx clawhub@latest install peft",
+    "relatedSkills": []
   },
   {
     "id": "skill-255",
@@ -5092,7 +5306,8 @@
     "url": "https://github.com/huggingface/accelerate",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install accelerate"
+    "command": "npx clawhub@latest install accelerate",
+    "relatedSkills": []
   },
   {
     "id": "skill-256",
@@ -5111,7 +5326,8 @@
     "url": "https://github.com/huggingface/datasets",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install datasets"
+    "command": "npx clawhub@latest install datasets",
+    "relatedSkills": []
   },
   {
     "id": "skill-257",
@@ -5130,7 +5346,8 @@
     "url": "https://github.com/huggingface/evaluate",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install evaluate"
+    "command": "npx clawhub@latest install evaluate",
+    "relatedSkills": []
   },
   {
     "id": "skill-258",
@@ -5149,7 +5366,8 @@
     "url": "https://github.com/huggingface/optimum",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install optimum"
+    "command": "npx clawhub@latest install optimum",
+    "relatedSkills": []
   },
   {
     "id": "skill-259",
@@ -5168,7 +5386,8 @@
     "url": "https://github.com/gradio-app/gradio",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install gradio"
+    "command": "npx clawhub@latest install gradio",
+    "relatedSkills": []
   },
   {
     "id": "skill-260",
@@ -5187,7 +5406,8 @@
     "url": "https://github.com/jdx/mise",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install mise"
+    "command": "npx clawhub@latest install mise",
+    "relatedSkills": []
   },
   {
     "id": "skill-261",
@@ -5206,7 +5426,8 @@
     "url": "https://github.com/fullstorydev/grpcurl",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install grpcurl"
+    "command": "npx clawhub@latest install grpcurl",
+    "relatedSkills": []
   },
   {
     "id": "skill-262",
@@ -5225,7 +5446,8 @@
     "url": "https://github.com/astral-sh/uv",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install uv"
+    "command": "npx clawhub@latest install uv",
+    "relatedSkills": []
   },
   {
     "id": "skill-263",
@@ -5244,7 +5466,8 @@
     "url": "https://github.com/astral-sh/ruff",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install ruff"
+    "command": "npx clawhub@latest install ruff",
+    "relatedSkills": []
   },
   {
     "id": "skill-264",
@@ -5263,7 +5486,8 @@
     "url": "https://github.com/microsoft/pyright",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install pyright"
+    "command": "npx clawhub@latest install pyright",
+    "relatedSkills": []
   },
   {
     "id": "skill-265",
@@ -5282,7 +5506,8 @@
     "url": "https://github.com/biomejs/biome",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install biome"
+    "command": "npx clawhub@latest install biome",
+    "relatedSkills": []
   },
   {
     "id": "skill-266",
@@ -5301,7 +5526,8 @@
     "url": "https://github.com/oxc-project/oxlint",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install oxlint"
+    "command": "npx clawhub@latest install oxlint",
+    "relatedSkills": []
   },
   {
     "id": "skill-267",
@@ -5320,7 +5546,8 @@
     "url": "https://github.com/google/zx",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install zx"
+    "command": "npx clawhub@latest install zx",
+    "relatedSkills": []
   },
   {
     "id": "skill-268",
@@ -5339,7 +5566,8 @@
     "url": "https://github.com/progl",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install glab"
+    "command": "npx clawhub@latest install glab",
+    "relatedSkills": []
   },
   {
     "id": "skill-269",
@@ -5358,7 +5586,8 @@
     "url": "https://github.com/jonas/tig",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install tig"
+    "command": "npx clawhub@latest install tig",
+    "relatedSkills": []
   },
   {
     "id": "skill-270",
@@ -5377,7 +5606,8 @@
     "url": "https://github.com/gitleaks/gitleaks",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install gitleaks"
+    "command": "npx clawhub@latest install gitleaks",
+    "relatedSkills": []
   },
   {
     "id": "skill-271",
@@ -5396,7 +5626,8 @@
     "url": "https://github.com/oven-sh/bun",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install bun"
+    "command": "npx clawhub@latest install bun",
+    "relatedSkills": []
   },
   {
     "id": "skill-272",
@@ -5415,7 +5646,8 @@
     "url": "https://github.com/denoland/deno",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install deno"
+    "command": "npx clawhub@latest install deno",
+    "relatedSkills": []
   },
   {
     "id": "skill-273",
@@ -5434,7 +5666,8 @@
     "url": "https://github.com/vercel/turbo",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install turbo"
+    "command": "npx clawhub@latest install turbo",
+    "relatedSkills": []
   },
   {
     "id": "skill-274",
@@ -5453,7 +5686,8 @@
     "url": "https://github.com/nrwl/nx",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install nx"
+    "command": "npx clawhub@latest install nx",
+    "relatedSkills": []
   },
   {
     "id": "skill-275",
@@ -5472,7 +5706,8 @@
     "url": "https://github.com/lerna/lerna",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install lerna"
+    "command": "npx clawhub@latest install lerna",
+    "relatedSkills": []
   },
   {
     "id": "skill-276",
@@ -5491,7 +5726,8 @@
     "url": "https://github.com/microsoft/rushstack",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install rush"
+    "command": "npx clawhub@latest install rush",
+    "relatedSkills": []
   },
   {
     "id": "skill-277",
@@ -5510,7 +5746,8 @@
     "url": "https://github.com/changesets/changesets",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install changesets"
+    "command": "npx clawhub@latest install changesets",
+    "relatedSkills": []
   },
   {
     "id": "skill-278",
@@ -5529,7 +5766,8 @@
     "url": "https://github.com/semantic-release/semantic-release",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install semantic-release"
+    "command": "npx clawhub@latest install semantic-release",
+    "relatedSkills": []
   },
   {
     "id": "skill-279",
@@ -5548,7 +5786,8 @@
     "url": "https://github.com/conventional-changelog/standard-version",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install standard-version"
+    "command": "npx clawhub@latest install standard-version",
+    "relatedSkills": []
   },
   {
     "id": "skill-280",
@@ -5567,7 +5806,8 @@
     "url": "https://github.com/conventional-changelog/commitlint",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install commitlint"
+    "command": "npx clawhub@latest install commitlint",
+    "relatedSkills": []
   },
   {
     "id": "skill-281",
@@ -5586,7 +5826,8 @@
     "url": "https://github.com/typicode/husky",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install husky"
+    "command": "npx clawhub@latest install husky",
+    "relatedSkills": []
   },
   {
     "id": "skill-282",
@@ -5605,7 +5846,8 @@
     "url": "https://github.com/okonet/lint-staged",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install lint-staged"
+    "command": "npx clawhub@latest install lint-staged",
+    "relatedSkills": []
   },
   {
     "id": "skill-283",
@@ -5624,7 +5866,8 @@
     "url": "https://github.com/dprint/dprint",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install dprint"
+    "command": "npx clawhub@latest install dprint",
+    "relatedSkills": []
   },
   {
     "id": "skill-284",
@@ -5643,7 +5886,8 @@
     "url": "https://github.com/psf/black",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install black"
+    "command": "npx clawhub@latest install black",
+    "relatedSkills": []
   },
   {
     "id": "skill-285",
@@ -5662,7 +5906,8 @@
     "url": "https://github.com/pycqa/isort",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install isort"
+    "command": "npx clawhub@latest install isort",
+    "relatedSkills": []
   },
   {
     "id": "skill-286",
@@ -5681,7 +5926,8 @@
     "url": "https://github.com/python/mypy",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install mypy"
+    "command": "npx clawhub@latest install mypy",
+    "relatedSkills": []
   },
   {
     "id": "skill-287",
@@ -5700,7 +5946,8 @@
     "url": "https://github.com/pylint-dev/pylint",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install pylint"
+    "command": "npx clawhub@latest install pylint",
+    "relatedSkills": []
   },
   {
     "id": "skill-288",
@@ -5719,7 +5966,8 @@
     "url": "https://github.com/pycqa/flake8",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install flake8"
+    "command": "npx clawhub@latest install flake8",
+    "relatedSkills": []
   },
   {
     "id": "skill-289",
@@ -5738,7 +5986,8 @@
     "url": "https://github.com/PyCQA/bandit",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install bandit"
+    "command": "npx clawhub@latest install bandit",
+    "relatedSkills": []
   },
   {
     "id": "skill-290",
@@ -5757,7 +6006,8 @@
     "url": "https://github.com/pyupio/safety",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install safety"
+    "command": "npx clawhub@latest install safety",
+    "relatedSkills": []
   },
   {
     "id": "skill-291",
@@ -5776,7 +6026,8 @@
     "url": "https://github.com/python-poetry/poetry",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install poetry"
+    "command": "npx clawhub@latest install poetry",
+    "relatedSkills": []
   },
   {
     "id": "skill-292",
@@ -5795,7 +6046,8 @@
     "url": "https://github.com/pypa/pipenv",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install pipenv"
+    "command": "npx clawhub@latest install pipenv",
+    "relatedSkills": []
   },
   {
     "id": "skill-293",
@@ -5814,7 +6066,8 @@
     "url": "https://github.com/pyenv/pyenv",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install pyenv"
+    "command": "npx clawhub@latest install pyenv",
+    "relatedSkills": []
   },
   {
     "id": "skill-294",
@@ -5833,7 +6086,8 @@
     "url": "https://github.com/syndbg/goenv",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install goenv"
+    "command": "npx clawhub@latest install goenv",
+    "relatedSkills": []
   },
   {
     "id": "skill-295",
@@ -5852,7 +6106,8 @@
     "url": "https://github.com/moovweb/gvm",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install gvm"
+    "command": "npx clawhub@latest install gvm",
+    "relatedSkills": []
   },
   {
     "id": "skill-296",
@@ -5871,7 +6126,8 @@
     "url": "https://github.com/rbenv/rbenv",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install rbenv"
+    "command": "npx clawhub@latest install rbenv",
+    "relatedSkills": []
   },
   {
     "id": "skill-297",
@@ -5890,7 +6146,8 @@
     "url": "https://github.com/rvm/rvm",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install rvm"
+    "command": "npx clawhub@latest install rvm",
+    "relatedSkills": []
   },
   {
     "id": "skill-298",
@@ -5909,7 +6166,8 @@
     "url": "https://github.com/nodenv/nodenv",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install nodenv"
+    "command": "npx clawhub@latest install nodenv",
+    "relatedSkills": []
   },
   {
     "id": "skill-299",
@@ -5928,7 +6186,8 @@
     "url": "https://github.com/nvm-sh/nvm",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install nvm"
+    "command": "npx clawhub@latest install nvm",
+    "relatedSkills": []
   },
   {
     "id": "skill-300",
@@ -5947,6 +6206,7 @@
     "url": "https://github.com/Schniz/fnm",
     "verified": true,
     "createdAt": "2026-02-06T00:00:00Z",
-    "command": "npx clawhub@latest install fnm"
+    "command": "npx clawhub@latest install fnm",
+    "relatedSkills": []
   }
 ]
