@@ -72,3 +72,23 @@ Started: Wed, Feb  4, 2026  6:48:53 PM
 - skills.json 中的 relatedSkills 字段也需要初始化为空数组，否则会导致构建失败
 
 ---
+
+## [2026-02-06] - US-098
+- 完成了 4 篇 Intermediate 教程的编写（Tutorial-073 到 Tutorial-076）
+- 教程主题：MongoDB 文档数据库、Redis 内存数据库、Elasticsearch 搜索引擎、RabbitMQ 消息队列
+- 每篇教程包含 2500+ 字内容、6+ 代码示例、3+ 实战案例
+- Tutorial-073: MongoDB 文档模型、聚合管道、索引优化、副本集、事务处理、Mongoose ODM
+- Tutorial-074: Redis 数据结构、持久化、发布订阅、分布式锁、缓存策略、主从复制
+- Tutorial-075: Elasticsearch 全文搜索、聚合分析、文本分析、索引优化、ELK Stack
+- Tutorial-076: RabbitMQ AMQP、Exchange 路由、消息确认、死信队列、RPC 模式、集群配置
+- 更新了 src/data/tutorials.json（现在包含 76 个教程）
+- 构建成功，生成 386 个静态页面
+
+**Learnings for future iterations:**
+- 教程内容在 Node.js 字符串中使用 `\\$` 来转义 MongoDB 操作符（如 `\$gt`, `\$set`）
+- 使用 `\${}` 转义模板字符串中的变量占位符
+- RabbitMQ 技能在 skills.json 中不存在，使用空 relatedSkills 数组
+- 使用 `scripts/add-tutorials-batch8.js` 脚本模式处理批量教程添加
+- 构建输出显示 "Generating static pages using 15 workers (386/386)" 确认添加成功
+
+---
