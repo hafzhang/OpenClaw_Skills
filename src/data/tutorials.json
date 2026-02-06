@@ -2038,7 +2038,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-073",
+    "id": "tutorial-086",
     "title": "Kafka 流处理实战",
     "slug": "kafka-stream-processing",
     "description": "深入学习 Apache Kafka 的流处理能力，包括 Producer、Consumer、Topic、Partition 以及 Kafka Streams 的实际应用。",
@@ -2066,7 +2066,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-074",
+    "id": "tutorial-087",
     "title": "AWS Lambda 无服务器开发",
     "slug": "aws-lambda-serverless",
     "description": "掌握 AWS Lambda 函数式编程，学习事件驱动架构、触发器配置、层管理和最佳实践。",
@@ -2094,7 +2094,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-075",
+    "id": "tutorial-088",
     "title": "Google Cloud Platform 开发实战",
     "slug": "gcp-development",
     "description": "学习 Google Cloud Platform 的核心服务，包括 Compute Engine、Cloud Functions、Cloud Run 和 Firestore。",
@@ -2122,7 +2122,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-076",
+    "id": "tutorial-089",
     "title": "Azure 云服务开发实战",
     "slug": "azure-cloud-services",
     "description": "掌握 Microsoft Azure 的核心服务，包括 App Service、Functions、Cosmos DB 和 Blob Storage。",
@@ -2391,7 +2391,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-089",
+    "id": "tutorial-090",
     "title": "大规模架构设计实战指南",
     "slug": "large-scale-architecture",
     "description": "深入学习大规模系统架构设计，包括分层架构、CQRS、事件溯源、数据分片、读写分离和缓存策略等核心模式。",
@@ -2420,7 +2420,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-090",
+    "id": "tutorial-091",
     "title": "高可用系统设计实战指南",
     "slug": "high-availability-design",
     "description": "掌握高可用系统设计的核心原则，包括冗余设计、故障检测、负载均衡、限流降级和监控告警等关键实践。",
@@ -2448,7 +2448,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-091",
+    "id": "tutorial-092",
     "title": "灾难恢复与备份策略实战指南",
     "slug": "disaster-recovery-planning",
     "description": "全面了解灾难恢复和备份策略，包括完整备份、增量备份、时间点恢复、灾难恢复演练和备份自动化等实践。",
@@ -2476,7 +2476,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-092",
+    "id": "tutorial-093",
     "title": "安全架构设计",
     "slug": "security-architecture",
     "description": "掌握零信任架构、加密技术、安全审计和威胁建模，构建全面的企业级安全防护体系。",
@@ -2506,7 +2506,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-093",
+    "id": "tutorial-094",
     "title": "性能调优实战",
     "slug": "performance-tuning-practice",
     "description": "深入学习 CPU、内存、I/O 和网络优化技术，掌握性能分析和瓶颈识别方法。",
@@ -2536,7 +2536,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-094",
+    "id": "tutorial-095",
     "title": "微服务治理",
     "slug": "microservices-governance",
     "description": "掌握服务网格、流量管理、策略执行和可观测性，实现高效的微服务治理体系。",
@@ -2565,7 +2565,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-095",
+    "id": "tutorial-096",
     "title": "服务网格实践",
     "slug": "service-mesh-practice",
     "description": "深入学习 Istio、Linkerd 等服务网格技术，掌握流量管理、安全策略和可观测性配置。",
@@ -2592,7 +2592,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-096",
+    "id": "tutorial-097",
     "title": "云原生架构设计",
     "slug": "cloud-native-architecture",
     "description": "掌握云原生应用设计原则，学习 Kubernetes Operators、OAM 和云原生模式。",
@@ -2619,7 +2619,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-097",
+    "id": "tutorial-098",
     "title": "实时数据处理",
     "slug": "realtime-data-processing",
     "description": "学习构建实时数据处理系统，掌握 Kafka、RabbitMQ 和 NATS 等消息队列技术。",
@@ -2647,7 +2647,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-098",
+    "id": "tutorial-099",
     "title": "流处理架构设计",
     "slug": "stream-processing-architecture",
     "description": "掌握 Apache Flink 和 Spark Streaming 构建大规模流处理系统，学习 CEP 和状态管理。",
@@ -2674,7 +2674,7 @@
     "featured": false
   },
   {
-    "id": "tutorial-099",
+    "id": "tutorial-100",
     "title": "机器学习工程",
     "slug": "machine-learning-engineering",
     "description": "掌握 MLOps 最佳实践，学习模型训练、部署、监控和版本管理的完整流程。",
