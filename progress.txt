@@ -1607,3 +1607,60 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 ---
 - All user stories US-066 through US-077 completed
 
+
+## 2026-02-06 - US-090
+
+## 2026-02-06 - US-090
+- 编写 Beginner 教程批次 1 (4篇) - Linux命令行、SQL数据库、HTML/CSS、JavaScript核心概念
+- 每篇教程 2000+ 字，包含 5+ 代码示例，2+ 实战案例
+- 相关技能仓库验证通过（git, nodejs, postgresql, tailwindcss, typescript）
+- npm run build 构建成功（354 个页面，新增 4 个教程详情页）
+
+**新增教程：**
+1. Tutorial-041: Linux 命令行入门 (12分钟阅读时间)
+   - 6 个代码示例：ls, cd, mkdir, rm, cp, mv, chmod, grep, find
+   - 3 个实战案例：清理日志文件、监控进程、批量图片处理
+   - 覆盖：文件操作、权限管理、系统信息查看、网络命令、Shell 脚本
+
+2. Tutorial-042: SQL 数据库基础 (14分钟阅读时间)
+   - 7 个代码示例：CREATE, INSERT, SELECT, UPDATE, DELETE, JOIN, 聚合函数
+   - 3 个实战案例：用户注册系统、产品库存管理、销售报表
+   - 覆盖：PostgreSQL 基础、多表关联、索引优化、事务处理
+
+3. Tutorial-043: HTML/CSS 快速入门 (15分钟阅读时间)
+   - 8 个代码示例：HTML 标签、CSS 选择器、盒模型、Flexbox、媒体查询
+   - 2 个实战案例：个人博客首页、产品卡片网格
+   - 覆盖：HTML 结构、CSS 样式、响应式设计、常用布局
+
+4. Tutorial-044: JavaScript 核心概念 (16分钟阅读时间)
+   - 9 个代码示例：变量、函数、DOM 操作、事件处理、Promise、async/await
+   - 2 个实战案例：待办事项列表、表单验证
+   - 覆盖：基础语法、数组对象、DOM 操作、事件处理、异步编程
+
+**质量标准验证：**
+- ✅ 每篇教程 2000+ 字
+- ✅ 每篇包含 5+ 代码示例
+- ✅ 每篇包含 2+ 实战案例
+- ✅ 所有相关技能仓库可访问（HTTP 200）
+- ✅ 更新 tutorials.json
+- ✅ npm run build 构建成功（354 个页面）
+
+**Files changed:**
+- src/data/tutorials.json (添加 4 个教程：tutorial-041 至 tutorial-044)
+- prd.json (标记 US-090 完成)
+
+**Learnings for future iterations:**
+- 教程内容存储在 tutorials.json 的 content 字段中（JSON 格式）
+- Markdown 内容需要正确转义特殊字符（引号、反斜杠等）
+- 相关技能引用使用现有的技能 ID（git=skill-021, nodejs=skill-024, postgresql=skill-062, tailwindcss=skill-071, typescript=skill-041）
+- 构建输出显示总页面数：354 = 44 个教程 + 300 个技能 + 5 个配置 + 5 个其他页面
+- 阅读时间估算基于：200-300 字/分钟 + 代码理解时间
+- 实战案例应该包含完整可运行的代码示例
+- 技能仓库验证使用 curl -s -o /dev/null -w "%{http_code}" 命令
+- 总教程数：40 → 44 (+4)，总页面数：350 → 354 (+4)
+
+**Next Steps:**
+- US-091: 编写 Beginner 教程批次 2 (TypeScript、Docker、Kubernetes、Redis)
+- 继续推进 Phase 5 的 60 篇新教程目标
+
+---
