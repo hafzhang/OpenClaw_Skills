@@ -15,3 +15,21 @@ Started: Wed, Feb  4, 2026  6:48:53 PM
 - 使用 `git checkout` 恢复文件比手动编辑更快
 
 ---
+
+## [2026-02-06] - US-064
+- 完成了 3 篇 Intermediate 教程的编写（Tutorial-035 到 Tutorial-037）
+- 教程主题：GraphQL API 开发、消息队列和事件驱动架构、实时数据库和同步
+- 每篇教程包含 2500+ 字内容、6+ 代码示例、3+ 实战案例
+- Tutorial-035: GraphQL Schema 设计、Resolver 实现、DataLoader、分页、认证、订阅
+- Tutorial-036: RabbitMQ、Redis Pub/Sub、Kafka、消息幂等性、订单处理事件流
+- Tutorial-037: WebSocket、SSE、CRDT、操作转换、离线优先架构、协作编辑器
+- 更新了 src/data/tutorials.json（现在包含 37 个教程）
+- 构建成功，生成 251 个静态页面
+
+**Learnings for future iterations:**
+- GraphQL 教程需要覆盖 Schema、Resolver、DataLoader、订阅等完整内容
+- 消息队列教程应包含多种技术（RabbitMQ、Redis、Kafka）以供对比
+- 实时同步教程需要涵盖 WebSocket、SSE 和 CRDT 等核心技术
+- 构建输出显示的静态页面数量是验证教程添加成功的有效方式
+
+---

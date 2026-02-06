@@ -1129,8 +1129,8 @@
         "正确设置难度标签和阅读时间"
       ],
       "priority": 64,
-      "passes": false,
-      "notes": "Sprint 5 - 步骤 5.4"
+      "passes": true,
+      "notes": "✅ 已完成 - 新增 3 篇 Intermediate 教程：Tutorial-035 GraphQL API 开发、Tutorial-036 消息队列和事件驱动架构、Tutorial-037 实时数据库和同步。每篇 2500+ 字，6+ 代码示例，3+ 实战案例"
     },
     {
       "id": "US-065",
