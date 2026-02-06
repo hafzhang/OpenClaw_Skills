@@ -1923,3 +1923,35 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 每篇教程应包含相关技能链接和下一步学习建议
 - JSON 中的 content 字段需要正确转义换行符和引号
 ---
+## 2026-02-07 - US-103
+- 编写 3 篇 Advanced 教程（批次 2）：安全架构、性能调优、微服务治理
+- tutorial-092: 安全架构设计 (45分钟) - 零信任架构、加密技术、安全审计、威胁建模
+- tutorial-093: 性能调优实战 (42分钟) - CPU、内存、I/O、网络优化
+- tutorial-094: 微服务治理 (48分钟) - 服务网格、流量管理、策略执行、可观测性
+- 更新 src/data/tutorials.json
+- 构建验证通过 (405 pages)
+- 教程总数: 95/100
+
+**Files changed:**
+- src/data/tutorials.json (添加 3 个教程：tutorial-092, tutorial-093, tutorial-094)
+- tutorial-079-security-architecture.md (临时文件，内容已合并到 JSON)
+- tutorial-080-performance-tuning.md (临时文件，内容已合并到 JSON)
+- tutorial-081-microservices-governance.md (临时文件，内容已合并到 JSON)
+- prd.json (标记 US-103 完成)
+
+**Learnings for future iterations:**
+- Advanced 教程需要深入讲解复杂主题，包含 8+ 代码示例
+- 安全架构涵盖：CIA 三要素、零信任、微分段、加密（TLS/AES-256）、密钥管理（Vault）
+- 性能调优涵盖：CPU 优化（缓存、SIMD）、内存优化（对象池、布局）、I/O 优化（批量、异步）、网络优化（连接池、限流）
+- 微服务治理涵盖：服务网格、流量管理（负载均衡、熔断、限流）、策略执行（RBAC、JWT）、可观测性
+- 使用临时 Markdown 文件编写内容，然后用 Python 脚本合并到 JSON（避免 JSON 转义问题）
+- 每篇 Advanced 教程应包含实战案例和最佳实践检查清单
+- readTime 值基于内容字数计算（约 3000+ 字 ≈ 40-50 分钟）
+
+**Next Steps:**
+- US-104: 编写 Advanced 教程批次 3 (5篇) - 服务网格、云原生、实时数据、流处理、ML工程
+- 继续推进 Phase 5 的 100 篇教程目标（还剩 5 篇）
+
+---
+
+
