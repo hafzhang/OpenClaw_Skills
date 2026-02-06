@@ -1,7 +1,7 @@
 {
   "project": "OpenClaw Hub - 实战指南",
   "branchName": "feature/openclaw-hub-phase-3",
-  "description": "OpenClaw Hub 实战指南 - Phase 3 内容扩展。MVP 完成 ✅ (US-001 ~ US-029)。Phase 2 规划中 (US-030 ~ US-045)。Phase 3 目标：教程 10→30 (+20)，技能 40→200 (+160)。",
+  "description": "OpenClaw Hub 实战指南 - Phase 3 内容扩展。MVP 完成 ✅ (US-001 ~ US-029)。Phase 2 完成 ✅ (US-030 ~ US-045)。Phase 3 进行中：教程 30→40 (+10)，技能 200→300 (+100)。",
   "userStories": [
     {
       "id": "US-001",
@@ -1078,6 +1078,282 @@
       "priority": 61,
       "passes": true,
       "notes": "✅ 已完成 - Phase 3 验收通过：教程 30 个、技能 200 个、构建成功生成 244 个页面。所有验收标准已满足"
+    },
+    {
+      "id": "US-062",
+      "title": "确定新增 10 个教程主题列表",
+      "description": "作为内容规划者，需要确定剩余 10 个教程的主题，确保覆盖不同难度和场景。",
+      "acceptanceCriteria": [
+        "确定 4 个 Beginner 教程主题",
+        "确定 3 个 Intermediate 教程主题",
+        "确定 3 个 Advanced 教程主题",
+        "确保主题覆盖不同使用场景（开发、DevOps、AI/LLM、生产力）",
+        "避免与现有 30 个教程重复",
+        "创建教程主题列表文档",
+        "确认每个主题的相关技能"
+      ],
+      "priority": 62,
+      "passes": true,
+      "notes": "✅ 已完成 - 创建 docs/tutorial-topics-phase3-continuation.md，包含 10 个新教程主题（4 Beginner + 3 Intermediate + 3 Advanced）。新增主题：RESTful API 设计、前端测试、数据可视化、Web 安全（Beginner）；GraphQL、消息队列、实时同步（Intermediate）；微前端、性能优化、AI Agent 工作流（Advanced）"
+    },
+    {
+      "id": "US-063",
+      "title": "编写 4 篇 Beginner 教程",
+      "description": "作为内容创作者，需要编写 4 篇初学者友好的教程。",
+      "acceptanceCriteria": [
+        "编写 4 篇 Beginner 难度教程",
+        "每篇教程 2000+ 字",
+        "包含至少 5 个代码示例",
+        "包含至少 2 个实战案例",
+        "包含 FAQ 部分",
+        "语言简洁易懂，适合初学者",
+        "添加相关技能链接",
+        "正确设置难度标签和阅读时间"
+      ],
+      "priority": 63,
+      "passes": false,
+      "notes": "Sprint 5 - 步骤 5.3"
+    },
+    {
+      "id": "US-064",
+      "title": "编写 3 篇 Intermediate 教程",
+      "description": "作为内容创作者，需要编写 3 篇进阶教程。",
+      "acceptanceCriteria": [
+        "编写 3 篇 Intermediate 难度教程",
+        "每篇教程 2500+ 字",
+        "包含至少 6 个代码示例",
+        "包含至少 3 个实战案例",
+        "包含高级技巧和最佳实践",
+        "包含故障排查部分",
+        "添加相关技能链接",
+        "正确设置难度标签和阅读时间"
+      ],
+      "priority": 64,
+      "passes": false,
+      "notes": "Sprint 5 - 步骤 5.4"
+    },
+    {
+      "id": "US-065",
+      "title": "编写 3 篇 Advanced 教程",
+      "description": "作为内容创作者，需要编写 3 篇高级教程。",
+      "acceptanceCriteria": [
+        "编写 3 篇 Advanced 难度教程",
+        "每篇教程 3000+ 字",
+        "包含至少 8 个代码示例",
+        "包含至少 4 个复杂实战案例",
+        "深入讲解技术原理",
+        "包含性能优化建议",
+        "添加相关技能链接",
+        "正确设置难度标签和阅读时间"
+      ],
+      "priority": 65,
+      "passes": false,
+      "notes": "Sprint 5 - 步骤 5.5"
+    },
+    {
+      "id": "US-066",
+      "title": "新增 10 篇教程代码审查和质量检查",
+      "description": "作为内容审核者，需要确保所有 10 篇新教程符合质量标准。",
+      "acceptanceCriteria": [
+        "审查所有 10 篇新教程",
+        "检查代码示例可运行",
+        "检查 Markdown 格式正确",
+        "检查链接有效性",
+        "检查语法和拼写",
+        "验证难度级别设置合理",
+        "验证阅读时间估算准确",
+        "确保所有教程通过质量检查清单",
+        "修复发现的问题"
+      ],
+      "priority": 66,
+      "passes": false,
+      "notes": "Sprint 5 - 步骤 5.6"
+    },
+    {
+      "id": "US-067",
+      "title": "更新 tutorials.json 至 40 篇教程",
+      "description": "作为开发者，需要将 10 篇新教程添加到数据文件中。",
+      "acceptanceCriteria": [
+        "更新 src/data/tutorials.json",
+        "添加 10 篇新教程数据",
+        "确保所有必需字段完整",
+        "确保 slug 值唯一",
+        "确保分类和标签正确",
+        "JSON 格式有效",
+        "npm run build 构建成功"
+      ],
+      "priority": 67,
+      "passes": false,
+      "notes": "Sprint 5 - 步骤 5.7"
+    },
+    {
+      "id": "US-068",
+      "title": "测试 10 篇新教程渲染",
+      "description": "作为测试人员，需要验证所有 10 篇新教程在网站上正确显示。",
+      "acceptanceCriteria": [
+        "测试 10 篇新教程详情页",
+        "验证 Markdown 内容正确渲染",
+        "验证代码高亮正常",
+        "验证相关技能链接有效",
+        "验证教程在列表页正确显示",
+        "验证搜索功能能找到新教程",
+        "验证分类筛选正常",
+        "修复发现的问题"
+      ],
+      "priority": 68,
+      "passes": false,
+      "notes": "Sprint 5 - 步骤 5.8"
+    },
+    {
+      "id": "US-069",
+      "title": "研究和筛选 100 个候选技能",
+      "description": "作为内容研究员，需要从社区和 GitHub 筛选优质技能，并验证仓库可访问性。",
+      "acceptanceCriteria": [
+        "研究 GitHub trending 和 npm 优质包",
+        "筛选 100 个候选技能",
+        "验证每个技能的 GitHub 仓库存在且可访问（HTTP 200）",
+        "排除仓库不存在（404）或无法访问的技能",
+        "确保技能仓库活跃维护（最近 6 个月有更新）",
+        "确保技能有完整文档",
+        "优先选择 Star 数 >100 的项目",
+        "记录技能来源和验证信息（包括仓库状态）",
+        "创建候选技能列表（仅包含仓库验证通过的技能）"
+      ],
+      "priority": 69,
+      "passes": false,
+      "notes": "Sprint 6 - 步骤 6.1, 6.2"
+    },
+    {
+      "id": "US-070",
+      "title": "验证 100 个技能仓库可访问性",
+      "description": "作为测试人员，需要验证所有候选技能的仓库存在且可访问。",
+      "acceptanceCriteria": [
+        "对所有候选技能执行仓库存在性检查",
+        "使用 curl 或类似工具验证 HTTP 状态码",
+        "记录每个仓库的状态：200（可访问）、404（不存在）、其他",
+        "排除 404 和无法访问的仓库",
+        "为重定向的仓库记录最终 URL",
+        "生成仓库验证报告"
+      ],
+      "priority": 70,
+      "passes": false,
+      "notes": "Sprint 6 - 步骤 6.3a"
+    },
+    {
+      "id": "US-071",
+      "title": "验证 100 个技能功能可用性",
+      "description": "作为测试人员，需要对通过仓库验证的技能进行功能测试。",
+      "acceptanceCriteria": [
+        "对通过仓库验证的技能进行功能测试",
+        "验证技能有基本文档",
+        "验证技能功能正常",
+        "标记不可用的技能",
+        "确保最终技能列表全部 verified: true"
+      ],
+      "priority": 71,
+      "passes": false,
+      "notes": "Sprint 6 - 步骤 6.3b"
+    },
+    {
+      "id": "US-072",
+      "title": "编写 100 个技能中文描述",
+      "description": "作为内容创作者，需要为 100 个技能编写准确的中文描述。",
+      "acceptanceCriteria": [
+        "为每个技能编写中文名称",
+        "为每个技能编写简短描述（50-100字）",
+        "为每个技能编写详细描述（150-300字）",
+        "确保描述准确反映技能功能",
+        "确保语言简洁易懂",
+        "翻译技术术语时保持准确性",
+        "添加使用场景说明（可选）"
+      ],
+      "priority": 72,
+      "passes": false,
+      "notes": "Sprint 6 - 步骤 6.4"
+    },
+    {
+      "id": "US-073",
+      "title": "创建 100 个技能 slug 和分类",
+      "description": "作为开发者，需要为 100 个技能创建唯一标识和分类。",
+      "acceptanceCriteria": [
+        "为每个技能创建唯一的 slug（kebab-case）",
+        "确保 slug 值 URL 友好",
+        "为每个技能分配正确的分类",
+        "确保分类分布符合目标：development(90), productivity(75), devops(60), ai-llms(45), utilities(30)",
+        "为每个技能添加 3-5 个相关标签",
+        "验证 slug 无重复"
+      ],
+      "priority": 73,
+      "passes": false,
+      "notes": "Sprint 6 - 步骤 6.5"
+    },
+    {
+      "id": "US-074",
+      "title": "更新 skills.json 至 300 个技能",
+      "description": "作为开发者，需要将 100 个新技能添加到数据文件中。",
+      "acceptanceCriteria": [
+        "更新 src/data/skills.json",
+        "添加 100 个新技能数据",
+        "确保所有必需字段完整",
+        "确保 slug 值唯一",
+        "确保 verified 字段为 true",
+        "确保安装命令正确",
+        "JSON 格式有效",
+        "npm run build 构建成功"
+      ],
+      "priority": 74,
+      "passes": false,
+      "notes": "Sprint 6 - 步骤 6.6"
+    },
+    {
+      "id": "US-075",
+      "title": "测试 100 个新技能链接",
+      "description": "作为测试人员，需要验证所有 100 个新技能链接可访问。",
+      "acceptanceCriteria": [
+        "测试 100 个新技能的 GitHub 链接",
+        "验证链接可访问",
+        "验证仓库内容相关",
+        "修复或替换失效链接",
+        "确保所有技能链接有效"
+      ],
+      "priority": 75,
+      "passes": false,
+      "notes": "Sprint 6 - 步骤 6.7"
+    },
+    {
+      "id": "US-076",
+      "title": "验证 100 个技能安装命令",
+      "description": "作为测试人员，需要验证所有 100 个新技能的安装命令正确。",
+      "acceptanceCriteria": [
+        "验证 100 个新技能的安装命令格式",
+        "确保命令使用 npx clawhub@latest install {slug}",
+        "确保 slug 与命令中的一致",
+        "测试抽样技能安装",
+        "修复错误的安装命令"
+      ],
+      "priority": 76,
+      "passes": false,
+      "notes": "Sprint 6 - 步骤 6.8"
+    },
+    {
+      "id": "US-077",
+      "title": "Phase 3 最终验收（40 篇教程 + 300 个技能）",
+      "description": "作为开发者，需要完整验收 Phase 3 的所有功能。",
+      "acceptanceCriteria": [
+        "验证教程总数达到 40 个",
+        "验证技能总数达到 300 个",
+        "测试所有新教程详情页",
+        "测试所有新技能展示",
+        "验证搜索功能正常",
+        "验证分类筛选正常",
+        "验证页面性能（大量数据加载）",
+        "运行 npm run build 构建成功",
+        "修复所有发现的问题",
+        "更新文档"
+      ],
+      "priority": 77,
+      "passes": false,
+      "notes": "Phase 3 最终验收：教程 40 篇、技能 300 个"
     }
   ]
 }
