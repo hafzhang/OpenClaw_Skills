@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -67,10 +68,39 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
+      <head>
+        {/* RSS Feed Auto-discovery */}
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="OpenClaw Hub - 全部内容"
+          href="/rss.xml"
+        />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="OpenClaw Hub - 教程"
+          href="/rss/tutorials.xml"
+        />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="OpenClaw Hub - 技能"
+          href="/rss/skills.xml"
+        />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="OpenClaw Hub - 配置"
+          href="/rss/configs.xml"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

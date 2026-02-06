@@ -11,9 +11,10 @@ import { Card } from '@/components/ui/card';
 const tutorialCategories = [
   { id: 'quick-start', name: '快速入门', description: '5分钟上手，快速了解 OpenClaw' },
   { id: 'development', name: '开发实战', description: 'GitHub、CLI、代码审查等实战教程' },
-  { id: 'integration', name: '集成指南', description: 'Slack、Notion、Jira 等工具集成' },
   { id: 'devops', name: 'DevOps', description: 'Docker、Kubernetes、AWS 部署' },
-  { id: 'advanced', name: '高级主题', description: 'FFmpeg、自动化工作流' },
+  { id: 'productivity', name: '工作效率', description: '时间管理、团队协作、自动化工具' },
+  { id: 'ai-llms', name: 'AI与大模型', description: 'AI 工具集成、大模型应用' },
+  { id: 'utilities', name: '实用工具', description: '系统工具、命令行技巧' },
 ] as const;
 
 type CategorySlug = 'all' | typeof tutorialCategories[number]['id'];
@@ -115,9 +116,10 @@ export default function TutorialsPage() {
               <h3 className="text-lg font-semibold mb-2">学习建议</h3>
               <ul className="space-y-2 text-muted-foreground">
                 <li>• 新手建议从<strong>快速入门</strong>开始，了解 OpenClaw 基础</li>
-                <li>• 有一定基础后，可以学习<strong>开发实战</strong>和<strong>集成指南</strong></li>
-                <li>• 需要部署相关内容时，参考<strong>DevOps</strong>教程</li>
-                <li>• 高级用户可以探索<strong>高级主题</strong>中的复杂场景</li>
+                <li>• 有一定基础后，可以学习<strong>开发实战</strong>和<strong>DevOps</strong></li>
+                <li>• 提升工作效率可参考<strong>工作效率</strong>分类教程</li>
+                <li>• 对 AI 感兴趣的用户可以探索<strong>AI与大模型</strong></li>
+                <li>• 高级用户可以学习<strong>实用工具</strong>中的技巧</li>
               </ul>
             </div>
           </Card>
