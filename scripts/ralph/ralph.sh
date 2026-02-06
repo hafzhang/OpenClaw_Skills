@@ -6,7 +6,7 @@ set -e
 # Parse arguments
 TOOL="amp"  # Default to amp for backwards compatibility
 MAX_ITERATIONS=10
-DELAY=900  # 默认延时 50 秒
+DELAY=90  # 默认延时 50 秒
 
 while [[ $# -gt 0 ]]; do
   case $1 in
