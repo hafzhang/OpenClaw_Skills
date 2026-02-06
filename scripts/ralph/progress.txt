@@ -92,3 +92,23 @@ Started: Wed, Feb  4, 2026  6:48:53 PM
 - 构建输出显示 "Generating static pages using 15 workers (386/386)" 确认添加成功
 
 ---
+
+## [2026-02-07] - US-101
+- 完成了 4 篇 Intermediate 教程的编写（Tutorial-082 到 Tutorial-085）
+- 教程主题：分布式追踪、限流熔断、API网关、GraphQL Federation
+- 每篇教程包含 2500+ 字内容、6+ 代码示例、实战案例
+- Tutorial-082: OpenTelemetry、Jaeger、Trace/Span、传播、实战案例
+- Tutorial-083: 限流算法（固定窗口、滑动窗口、令牌桶、Redis）、熔断器、超时、降级
+- Tutorial-084: API Gateway 核心功能（路由、认证、限流、熔断、缓存、日志）、Kong、Nginx
+- Tutorial-085: GraphQL Federation、Subgraph、@key/@external/@requires、Apollo Router
+- 更新了 src/data/tutorials.json（现在包含 89 个教程）
+- 构建成功，生成 399 个静态页面
+
+**Learnings for future iterations:**
+- Intermediate 教程需要 2500+ 字内容、6+ 代码示例
+- Federation 教程重点在于跨服务的 GraphQL 联合查询，区别于 tutorial-035 的基础 GraphQL
+- 使用 scripts/add-tutorials-us101.js 脚本模式处理批量教程添加
+- 相关技能如果不存在可以使用空数组或只填写存在的技能 ID
+- 注意 GraphQL 教程的区分：tutorial-035 是 GraphQL API 开发基础，tutorial-085 是 GraphQL Federation 进阶
+
+---
