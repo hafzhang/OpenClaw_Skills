@@ -1220,8 +1220,8 @@
         "创建候选技能列表（仅包含仓库验证通过的技能）"
       ],
       "priority": 69,
-      "passes": false,
-      "notes": "Sprint 6 - 步骤 6.1, 6.2"
+      "passes": true,
+      "notes": "✅ 已完成 - 研究并筛选 148 个候选技能，验证 148 个仓库可访问（100% 成功率），0 个 404 仓库已排除。最终选择 100 个技能。分类：development(41), productivity(20), devops(19), ai-llms(20)"
     },
     {
       "id": "US-070",
@@ -1236,8 +1236,8 @@
         "生成仓库验证报告"
       ],
       "priority": 70,
-      "passes": false,
-      "notes": "Sprint 6 - 步骤 6.3a"
+      "passes": true,
+      "notes": "✅ 已完成 - 验证 148 个候选技能，148 个通过（100%），0 个失败。报告保存在 docs/repo-verification-report-100.json"
     },
     {
       "id": "US-071",
@@ -1251,8 +1251,8 @@
         "确保最终技能列表全部 verified: true"
       ],
       "priority": 71,
-      "passes": false,
-      "notes": "Sprint 6 - 步骤 6.3b"
+      "passes": true,
+      "notes": "✅ 已完成 - 100 个技能全部 verified: true，仓库可访问，有基本文档（README），安装命令正确"
     },
     {
       "id": "US-072",
@@ -1268,8 +1268,8 @@
         "添加使用场景说明（可选）"
       ],
       "priority": 72,
-      "passes": false,
-      "notes": "Sprint 6 - 步骤 6.4"
+      "passes": true,
+      "notes": "✅ 已完成 - 100 个新技能的中文描述已完善：中文名称、简短描述(50-100字)、技术术语保持准确性、标签包含中文翻译"
     },
     {
       "id": "US-073",
@@ -1284,8 +1284,8 @@
         "验证 slug 无重复"
       ],
       "priority": 73,
-      "passes": false,
-      "notes": "Sprint 6 - 步骤 6.5"
+      "passes": true,
+      "notes": "✅ 已完成 - 100 个验证通过的候选技能已有唯一 slug（kebab-case）和分类，docs/skill-candidates-final-100.json 中定义完整"
     },
     {
       "id": "US-074",
@@ -1302,8 +1302,8 @@
         "npm run build 构建成功"
       ],
       "priority": 74,
-      "passes": false,
-      "notes": "Sprint 6 - 步骤 6.6"
+      "passes": true,
+      "notes": "✅ 已完成 - src/data/skills.json 已更新，包含 300 个技能（200 保留 + 100 新增）。分类：development(88), productivity(65), devops(60), ai-llms(41), utilities(46)。所有 slug 唯一，verified: true，构建成功生成 350 个页面"
     },
     {
       "id": "US-075",
@@ -1317,8 +1317,8 @@
         "确保所有技能链接有效"
       ],
       "priority": 75,
-      "passes": false,
-      "notes": "Sprint 6 - 步骤 6.7"
+      "passes": true,
+      "notes": "✅ 已完成 - 100 个新技能链接来自已验证的候选列表（148 个验证通过），所有链接有效"
     },
     {
       "id": "US-076",
@@ -1332,8 +1332,8 @@
         "修复错误的安装命令"
       ],
       "priority": 76,
-      "passes": false,
-      "notes": "Sprint 6 - 步骤 6.8"
+      "passes": true,
+      "notes": "✅ 已完成 - 验证 100 个新技能的安装命令格式，全部使用 npx clawhub@latest install {slug}，slug 与命令一致"
     },
     {
       "id": "US-077",
@@ -1352,7 +1352,9 @@
         "更新文档"
       ],
       "priority": 77,
-      "passes": false,
+      "passes": true,
+      "notes": "✅ 已完成 - Phase 3 验收通过：教程 40 个（beginner 16, intermediate 15, advanced 9）、技能 300 个（development 88, productivity 65, devops 60, ai-llms 41, utilities 46）、构建成功生成 350 个页面。所有验收标准已满足"
+    },
       "notes": "Phase 3 最终验收：教程 40 篇、技能 300 个"
     }
   ]

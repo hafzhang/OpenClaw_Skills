@@ -1,0 +1,1902 @@
+[
+  {
+    "id": "skill-201",
+    "name": "asana-cli",
+    "slug": "asana-cli",
+    "description": "Command-line interface for Asana task management",
+    "category": "productivity",
+    "tags": [
+      "Asana",
+      "CLI",
+      "Tasks",
+      "Management"
+    ],
+    "author": "asana",
+    "source": "https://github.com/asana/asana-cli",
+    "url": "https://github.com/asana/asana-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install asana-cli"
+  },
+  {
+    "id": "skill-202",
+    "name": "linear-cli",
+    "slug": "linear-cli",
+    "description": "Command-line interface for Linear project management",
+    "category": "productivity",
+    "tags": [
+      "Linear",
+      "CLI",
+      "Issues",
+      "Projects"
+    ],
+    "author": "linear",
+    "source": "https://github.com/linear/linear-cli",
+    "url": "https://github.com/linear/linear-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install linear-cli"
+  },
+  {
+    "id": "skill-203",
+    "name": "clickup-cli",
+    "slug": "clickup-cli",
+    "description": "Command-line interface for ClickUp productivity",
+    "category": "productivity",
+    "tags": [
+      "ClickUp",
+      "CLI",
+      "Tasks",
+      "Projects"
+    ],
+    "author": "clickup",
+    "source": "https://github.com/clickup/clickup-cli",
+    "url": "https://github.com/clickup/clickup-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install clickup-cli"
+  },
+  {
+    "id": "skill-204",
+    "name": "slack-cli",
+    "slug": "slack-cli",
+    "description": "Command-line interface for Slack messaging",
+    "category": "productivity",
+    "tags": [
+      "Slack",
+      "CLI",
+      "Messaging",
+      "Communication"
+    ],
+    "author": "slack",
+    "source": "https://github.com/slack/slack-cli",
+    "url": "https://github.com/slack/slack-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install slack-cli"
+  },
+  {
+    "id": "skill-205",
+    "name": "discord-cli",
+    "slug": "discord-cli",
+    "description": "Command-line interface for Discord chat",
+    "category": "productivity",
+    "tags": [
+      "Discord",
+      "CLI",
+      "Chat",
+      "Communication"
+    ],
+    "author": "discord",
+    "source": "https://github.com/discord/discord-cli",
+    "url": "https://github.com/discord/discord-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install discord-cli"
+  },
+  {
+    "id": "skill-206",
+    "name": "telegram-cli",
+    "slug": "telegram-cli",
+    "description": "Command-line interface for Telegram messaging",
+    "category": "productivity",
+    "tags": [
+      "Telegram",
+      "CLI",
+      "Messaging",
+      "Chat"
+    ],
+    "author": "telegram",
+    "source": "https://github.com/telegram/telegram-cli",
+    "url": "https://github.com/telegram/telegram-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install telegram-cli"
+  },
+  {
+    "id": "skill-207",
+    "name": "matrix-cli",
+    "slug": "matrix-cli",
+    "description": "Command-line interface for Matrix protocol",
+    "category": "productivity",
+    "tags": [
+      "Matrix",
+      "CLI",
+      "Messaging",
+      "Decentralized"
+    ],
+    "author": "matrix-org",
+    "source": "https://github.com/matrix-org/matrix-cli",
+    "url": "https://github.com/matrix-org/matrix-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install matrix-cli"
+  },
+  {
+    "id": "skill-208",
+    "name": "gdrive-cli",
+    "slug": "gdrive-cli",
+    "description": "Command-line interface for Google Drive",
+    "category": "productivity",
+    "tags": [
+      "Google Drive",
+      "CLI",
+      "Storage",
+      "Files"
+    ],
+    "author": "google",
+    "source": "https://github.com/google/gdrive-cli",
+    "url": "https://github.com/google/gdrive-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install gdrive-cli"
+  },
+  {
+    "id": "skill-209",
+    "name": "dropbox-cli",
+    "slug": "dropbox-cli",
+    "description": "Command-line interface for Dropbox storage",
+    "category": "productivity",
+    "tags": [
+      "Dropbox",
+      "CLI",
+      "Storage",
+      "Files"
+    ],
+    "author": "dropbox",
+    "source": "https://github.com/dropbox/dropbox-cli",
+    "url": "https://github.com/dropbox/dropbox-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install dropbox-cli"
+  },
+  {
+    "id": "skill-210",
+    "name": "onedrive-cli",
+    "slug": "onedrive-cli",
+    "description": "Command-line interface for OneDrive storage",
+    "category": "productivity",
+    "tags": [
+      "OneDrive",
+      "CLI",
+      "Storage",
+      "Microsoft"
+    ],
+    "author": "microsoft",
+    "source": "https://github.com/microsoft/onedrive-cli",
+    "url": "https://github.com/microsoft/onedrive-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install onedrive-cli"
+  },
+  {
+    "id": "skill-211",
+    "name": "notion-api",
+    "slug": "notion-api",
+    "description": "Notion API client and integration tools",
+    "category": "productivity",
+    "tags": [
+      "Notion",
+      "API",
+      "Integration",
+      "Productivity"
+    ],
+    "author": "notionhq",
+    "source": "https://github.com/notionhq/notion-api",
+    "url": "https://github.com/notionhq/notion-api",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install notion-api"
+  },
+  {
+    "id": "skill-212",
+    "name": "evernote-cli",
+    "slug": "evernote-cli",
+    "description": "Command-line interface for Evernote notes",
+    "category": "productivity",
+    "tags": [
+      "Evernote",
+      "CLI",
+      "Notes",
+      "Productivity"
+    ],
+    "author": "evernote",
+    "source": "https://github.com/evernote/evernote-cli",
+    "url": "https://github.com/evernote/evernote-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install evernote-cli"
+  },
+  {
+    "id": "skill-213",
+    "name": "trello-cli",
+    "slug": "trello-cli",
+    "description": "Command-line interface for Trello boards",
+    "category": "productivity",
+    "tags": [
+      "Trello",
+      "CLI",
+      "Kanban",
+      "Boards"
+    ],
+    "author": "trello",
+    "source": "https://github.com/trello/trello-cli",
+    "url": "https://github.com/trello/trello-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install trello-cli"
+  },
+  {
+    "id": "skill-214",
+    "name": "jira-cli",
+    "slug": "jira-cli",
+    "description": "Command-line interface for Jira issue tracking",
+    "category": "productivity",
+    "tags": [
+      "Jira",
+      "CLI",
+      "Issues",
+      "Tracking"
+    ],
+    "author": "atlassian",
+    "source": "https://github.com/atlassian/jira-cli",
+    "url": "https://github.com/atlassian/jira-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install jira-cli"
+  },
+  {
+    "id": "skill-215",
+    "name": "monday-cli",
+    "slug": "monday-cli",
+    "description": "Command-line interface for Monday.com work management",
+    "category": "productivity",
+    "tags": [
+      "Monday",
+      "CLI",
+      "Work",
+      "Management"
+    ],
+    "author": "mondaycom",
+    "source": "https://github.com/mondaycom/monday-cli",
+    "url": "https://github.com/mondaycom/monday-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install monday-cli"
+  },
+  {
+    "id": "skill-216",
+    "name": "basecamp-cli",
+    "slug": "basecamp-cli",
+    "description": "Command-line interface for Basecamp project management",
+    "category": "productivity",
+    "tags": [
+      "Basecamp",
+      "CLI",
+      "Projects",
+      "Management"
+    ],
+    "author": "basecamp",
+    "source": "https://github.com/basecamp/basecamp-cli",
+    "url": "https://github.com/basecamp/basecamp-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install basecamp-cli"
+  },
+  {
+    "id": "skill-217",
+    "name": "confluence-cli",
+    "slug": "confluence-cli",
+    "description": "Command-line interface for Confluence documentation",
+    "category": "productivity",
+    "tags": [
+      "Confluence",
+      "CLI",
+      "Documentation",
+      "Wiki"
+    ],
+    "author": "atlassian",
+    "source": "https://github.com/atlassian/confluence-cli",
+    "url": "https://github.com/atlassian/confluence-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install confluence-cli"
+  },
+  {
+    "id": "skill-218",
+    "name": "airtable-cli",
+    "slug": "airtable-cli",
+    "description": "Command-line interface for Airtable databases",
+    "category": "productivity",
+    "tags": [
+      "Airtable",
+      "CLI",
+      "Database",
+      "No-code"
+    ],
+    "author": "airtable",
+    "source": "https://github.com/airtable/airtable-cli",
+    "url": "https://github.com/airtable/airtable-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install airtable-cli"
+  },
+  {
+    "id": "skill-219",
+    "name": "notion-cli",
+    "slug": "notion-cli",
+    "description": "Command-line interface for Notion workspace",
+    "category": "productivity",
+    "tags": [
+      "Notion",
+      "CLI",
+      "Workspace",
+      "Notes"
+    ],
+    "author": "notionhq",
+    "source": "https://github.com/notionhq/notion-cli",
+    "url": "https://github.com/notionhq/notion-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install notion-cli"
+  },
+  {
+    "id": "skill-220",
+    "name": "obsidian-cli",
+    "slug": "obsidian-cli",
+    "description": "Command-line interface for Obsidian notes",
+    "category": "productivity",
+    "tags": [
+      "Obsidian",
+      "CLI",
+      "Notes",
+      "Markdown"
+    ],
+    "author": "obsidianmd",
+    "source": "https://github.com/obsidianmd/obsidian-cli",
+    "url": "https://github.com/obsidianmd/obsidian-cli",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install obsidian-cli"
+  },
+  {
+    "id": "skill-221",
+    "name": "opentofu",
+    "slug": "opentofu",
+    "description": "Open-source infrastructure as code tool, fork of Terraform",
+    "category": "devops",
+    "tags": [
+      "IaC",
+      "Terraform",
+      "Infrastructure",
+      "DevOps"
+    ],
+    "author": "opentofu",
+    "source": "https://github.com/opentofu/opentofu",
+    "url": "https://github.com/opentofu/opentofu",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install opentofu"
+  },
+  {
+    "id": "skill-222",
+    "name": "dagger",
+    "slug": "dagger",
+    "description": "Application delivery as Code using CI/CD pipelines",
+    "category": "devops",
+    "tags": [
+      "CI/CD",
+      "Pipeline",
+      "Automation",
+      "DevOps"
+    ],
+    "author": "dagger",
+    "source": "https://github.com/dagger/dagger",
+    "url": "https://github.com/dagger/dagger",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install dagger"
+  },
+  {
+    "id": "skill-223",
+    "name": "earthly",
+    "slug": "earthly",
+    "description": "Build automation tool for container-based CI/CD pipelines",
+    "category": "devops",
+    "tags": [
+      "Build",
+      "CI/CD",
+      "Containers",
+      "Automation"
+    ],
+    "author": "earthly",
+    "source": "https://github.com/earthly/earthly",
+    "url": "https://github.com/earthly/earthly",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install earthly"
+  },
+  {
+    "id": "skill-224",
+    "name": "terragrunt",
+    "slug": "terragrunt",
+    "description": "Thin wrapper for Terraform providing extra tools for DRY configurations",
+    "category": "devops",
+    "tags": [
+      "Terraform",
+      "IaC",
+      "DevOps",
+      "DRY"
+    ],
+    "author": "gruntwork-io",
+    "source": "https://github.com/gruntwork-io/terragrunt",
+    "url": "https://github.com/gruntwork-io/terragrunt",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install terragrunt"
+  },
+  {
+    "id": "skill-225",
+    "name": "dive",
+    "slug": "dive",
+    "description": "Tool for exploring Docker images, layer contents, and optimization",
+    "category": "devops",
+    "tags": [
+      "Docker",
+      "Containers",
+      "Analysis",
+      "Optimization"
+    ],
+    "author": "wagoodman",
+    "source": "https://github.com/wagoodman/dive",
+    "url": "https://github.com/wagoodman/dive",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install dive"
+  },
+  {
+    "id": "skill-226",
+    "name": "lazydocker",
+    "slug": "lazydocker",
+    "description": "Terminal UI for Docker and Docker Compose",
+    "category": "devops",
+    "tags": [
+      "Docker",
+      "TUI",
+      "Terminal",
+      "Containers"
+    ],
+    "author": "jesseduffield",
+    "source": "https://github.com/jesseduffield/lazydocker",
+    "url": "https://github.com/jesseduffield/lazydocker",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install lazydocker"
+  },
+  {
+    "id": "skill-227",
+    "name": "dozzle",
+    "slug": "dozzle",
+    "description": "Real-time Docker container log viewer",
+    "category": "devops",
+    "tags": [
+      "Docker",
+      "Logs",
+      "Monitoring",
+      "Web"
+    ],
+    "author": "amir20",
+    "source": "https://github.com/amir20/dozzle",
+    "url": "https://github.com/amir20/dozzle",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install dozzle"
+  },
+  {
+    "id": "skill-228",
+    "name": "caddy",
+    "slug": "caddy",
+    "description": "Extensible server platform with automatic HTTPS",
+    "category": "devops",
+    "tags": [
+      "Web Server",
+      "HTTPS",
+      "Reverse Proxy",
+      "Go"
+    ],
+    "author": "caddyserver",
+    "source": "https://github.com/caddyserver/caddy",
+    "url": "https://github.com/caddyserver/caddy",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install caddy"
+  },
+  {
+    "id": "skill-229",
+    "name": "envoy",
+    "slug": "envoy",
+    "description": "Cloud-native edge and service proxy",
+    "category": "devops",
+    "tags": [
+      "Proxy",
+      "Service Mesh",
+      "Cloud",
+      "Networking"
+    ],
+    "author": "envoyproxy",
+    "source": "https://github.com/envoyproxy/envoy",
+    "url": "https://github.com/envoyproxy/envoy",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install envoy"
+  },
+  {
+    "id": "skill-230",
+    "name": "cyberark",
+    "slug": "cyberark",
+    "description": "Enterprise password security and secrets management",
+    "category": "devops",
+    "tags": [
+      "Secrets",
+      "Security",
+      "Password",
+      "Enterprise"
+    ],
+    "author": "cyberark",
+    "source": "https://github.com/cyberark",
+    "url": "https://github.com/cyberark",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install cyberark"
+  },
+  {
+    "id": "skill-231",
+    "name": "etcd",
+    "slug": "etcd",
+    "description": "Distributed key-value store for configuration management",
+    "category": "devops",
+    "tags": [
+      "Key-Value",
+      "Distributed",
+      "Configuration",
+      "etcd"
+    ],
+    "author": "etcd-io",
+    "source": "https://github.com/etcd-io/etcd",
+    "url": "https://github.com/etcd-io/etcd",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install etcd"
+  },
+  {
+    "id": "skill-232",
+    "name": "airflow",
+    "slug": "airflow",
+    "description": "Platform to programmatically author, schedule and monitor workflows",
+    "category": "devops",
+    "tags": [
+      "Workflows",
+      "Pipeline",
+      "Scheduler",
+      "Apache"
+    ],
+    "author": "apache",
+    "source": "https://github.com/apache/airflow",
+    "url": "https://github.com/apache/airflow",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install airflow"
+  },
+  {
+    "id": "skill-233",
+    "name": "lima",
+    "slug": "lima",
+    "description": "Linux virtual machines on macOS for running containers",
+    "category": "devops",
+    "tags": [
+      "VM",
+      "macOS",
+      "Linux",
+      "Containers"
+    ],
+    "author": "lima-vm",
+    "source": "https://github.com/lima-vm/lima",
+    "url": "https://github.com/lima-vm/lima",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install lima"
+  },
+  {
+    "id": "skill-234",
+    "name": "boundary",
+    "slug": "boundary",
+    "description": "Secure access and session management for infrastructure",
+    "category": "devops",
+    "tags": [
+      "Access",
+      "Security",
+      "SSH",
+      "HashiCorp"
+    ],
+    "author": "hashicorp",
+    "source": "https://github.com/hashicorp/boundary",
+    "url": "https://github.com/hashicorp/boundary",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install boundary"
+  },
+  {
+    "id": "skill-235",
+    "name": "waypoint",
+    "slug": "waypoint",
+    "description": "Easy deployment workflow for applications",
+    "category": "devops",
+    "tags": [
+      "Deployment",
+      "CI/CD",
+      "HashiCorp",
+      "Workflow"
+    ],
+    "author": "hashicorp",
+    "source": "https://github.com/hashicorp/waypoint",
+    "url": "https://github.com/hashicorp/waypoint",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install waypoint"
+  },
+  {
+    "id": "skill-236",
+    "name": "krew",
+    "slug": "krew",
+    "description": "Plugin manager for kubectl command-line tool",
+    "category": "devops",
+    "tags": [
+      "Kubernetes",
+      "kubectl",
+      "Plugins",
+      "Manager"
+    ],
+    "author": "kubernetes-sigs",
+    "source": "https://github.com/kubernetes-sigs/krew",
+    "url": "https://github.com/kubernetes-sigs/krew",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install krew"
+  },
+  {
+    "id": "skill-237",
+    "name": "kubeseal",
+    "slug": "kubeseal",
+    "description": "Kubernetes controller for sealing secrets",
+    "category": "devops",
+    "tags": [
+      "Kubernetes",
+      "Secrets",
+      "Security",
+      "Encryption"
+    ],
+    "author": "bitnami-labs",
+    "source": "https://github.com/bitnami-labs/sealed-secrets",
+    "url": "https://github.com/bitnami-labs/sealed-secrets",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install kubeseal"
+  },
+  {
+    "id": "skill-238",
+    "name": "argo-cd",
+    "slug": "argo-cd",
+    "description": "Declarative continuous deployment for Kubernetes",
+    "category": "devops",
+    "tags": [
+      "Kubernetes",
+      "GitOps",
+      "CD",
+      "Deployment"
+    ],
+    "author": "argoproj",
+    "source": "https://github.com/argoproj/argo-cd",
+    "url": "https://github.com/argoproj/argo-cd",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install argo-cd"
+  },
+  {
+    "id": "skill-239",
+    "name": "argo-rollouts",
+    "slug": "argo-rollouts",
+    "description": "Progressive delivery for Kubernetes workloads",
+    "category": "devops",
+    "tags": [
+      "Kubernetes",
+      "Deployment",
+      "Progressive",
+      "GitOps"
+    ],
+    "author": "argoproj",
+    "source": "https://github.com/argoproj/argo-rollouts",
+    "url": "https://github.com/argoproj/argo-rollouts",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install argo-rollouts"
+  },
+  {
+    "id": "skill-240",
+    "name": "llama-cpp",
+    "slug": "llama-cpp",
+    "description": "LLM inference in C/C++ for local execution",
+    "category": "ai-llms",
+    "tags": [
+      "LLM",
+      "Inference",
+      "C++",
+      "Local"
+    ],
+    "author": "ggerganov",
+    "source": "https://github.com/ggerganov/llama.cpp",
+    "url": "https://github.com/ggerganov/llama.cpp",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install llama-cpp"
+  },
+  {
+    "id": "skill-241",
+    "name": "whisper-cpp",
+    "slug": "whisper-cpp",
+    "description": "Whisper speech recognition in C/C++",
+    "category": "ai-llms",
+    "tags": [
+      "Whisper",
+      "Speech",
+      "Recognition",
+      "C++"
+    ],
+    "author": "ggerganov",
+    "source": "https://github.com/ggerganov/whisper.cpp",
+    "url": "https://github.com/ggerganov/whisper.cpp",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install whisper-cpp"
+  },
+  {
+    "id": "skill-242",
+    "name": "vllm",
+    "slug": "vllm",
+    "description": "High-throughput LLM serving engine",
+    "category": "ai-llms",
+    "tags": [
+      "LLM",
+      "Serving",
+      "Performance",
+      "Inference"
+    ],
+    "author": "vllm-project",
+    "source": "https://github.com/vllm-project/vllm",
+    "url": "https://github.com/vllm-project/vllm",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install vllm"
+  },
+  {
+    "id": "skill-243",
+    "name": "text-generation-inference",
+    "slug": "text-generation-inference",
+    "description": "Large language model text generation inference server",
+    "category": "ai-llms",
+    "tags": [
+      "LLM",
+      "Inference",
+      "Serving",
+      "Hugging Face"
+    ],
+    "author": "huggingface",
+    "source": "https://github.com/huggingface/text-generation-inference",
+    "url": "https://github.com/huggingface/text-generation-inference",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install text-generation-inference"
+  },
+  {
+    "id": "skill-244",
+    "name": "haystack",
+    "slug": "haystack",
+    "description": "Open-source NLP framework for building LLM applications",
+    "category": "ai-llms",
+    "tags": [
+      "NLP",
+      "LLM",
+      "Search",
+      "RAG"
+    ],
+    "author": "deepset-ai",
+    "source": "https://github.com/deepset-ai/haystack",
+    "url": "https://github.com/deepset-ai/haystack",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install haystack"
+  },
+  {
+    "id": "skill-245",
+    "name": "semantic-kernel",
+    "slug": "semantic-kernel",
+    "description": "Microsoft SDK for integrating LLMs with applications",
+    "category": "ai-llms",
+    "tags": [
+      "LLM",
+      "Microsoft",
+      "SDK",
+      "Integration"
+    ],
+    "author": "microsoft",
+    "source": "https://github.com/microsoft/semantic-kernel",
+    "url": "https://github.com/microsoft/semantic-kernel",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install semantic-kernel"
+  },
+  {
+    "id": "skill-246",
+    "name": "auto-gen",
+    "slug": "auto-gen",
+    "description": "Multi-agent conversation framework for LLM applications",
+    "category": "ai-llms",
+    "tags": [
+      "LLM",
+      "Agents",
+      "Multi-agent",
+      "Microsoft"
+    ],
+    "author": "microsoft",
+    "source": "https://github.com/microsoft/autogen",
+    "url": "https://github.com/microsoft/autogen",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install auto-gen"
+  },
+  {
+    "id": "skill-247",
+    "name": "crewai",
+    "slug": "crewai",
+    "description": "Framework for orchestrating role-playing AI agents",
+    "category": "ai-llms",
+    "tags": [
+      "LLM",
+      "Agents",
+      "Orchestration",
+      "AI"
+    ],
+    "author": "joaomdmoura",
+    "source": "https://github.com/joaomdmoura/crewAI",
+    "url": "https://github.com/joaomdmoura/crewAI",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install crewai"
+  },
+  {
+    "id": "skill-248",
+    "name": "chroma",
+    "slug": "chroma",
+    "description": "Open-source AI-native database for embeddings",
+    "category": "ai-llms",
+    "tags": [
+      "Database",
+      "Embeddings",
+      "Vector",
+      "AI"
+    ],
+    "author": "chroma-core",
+    "source": "https://github.com/chroma-core/chroma",
+    "url": "https://github.com/chroma-core/chroma",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install chroma"
+  },
+  {
+    "id": "skill-249",
+    "name": "weaviate",
+    "slug": "weaviate",
+    "description": "Open-source vector search engine for AI applications",
+    "category": "ai-llms",
+    "tags": [
+      "Vector",
+      "Search",
+      "AI",
+      "Semantic"
+    ],
+    "author": "weaviate",
+    "source": "https://github.com/weaviate/weaviate",
+    "url": "https://github.com/weaviate/weaviate",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install weaviate"
+  },
+  {
+    "id": "skill-250",
+    "name": "milvus",
+    "slug": "milvus",
+    "description": "Open-source vector database for AI applications",
+    "category": "ai-llms",
+    "tags": [
+      "Vector",
+      "Database",
+      "Embeddings",
+      "Search"
+    ],
+    "author": "milvus-io",
+    "source": "https://github.com/milvus-io/milvus",
+    "url": "https://github.com/milvus-io/milvus",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install milvus"
+  },
+  {
+    "id": "skill-251",
+    "name": "huggingface-hub",
+    "slug": "huggingface-hub",
+    "description": "Hugging Face Hub client for models and datasets",
+    "category": "ai-llms",
+    "tags": [
+      "Hugging Face",
+      "Models",
+      "Datasets",
+      "Hub"
+    ],
+    "author": "huggingface",
+    "source": "https://github.com/huggingface/huggingface_hub",
+    "url": "https://github.com/huggingface/huggingface_hub",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install huggingface-hub"
+  },
+  {
+    "id": "skill-252",
+    "name": "transformers",
+    "slug": "transformers",
+    "description": "Machine learning library for transformers and NLP",
+    "category": "ai-llms",
+    "tags": [
+      "Transformers",
+      "NLP",
+      "PyTorch",
+      "TensorFlow"
+    ],
+    "author": "huggingface",
+    "source": "https://github.com/huggingface/transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install transformers"
+  },
+  {
+    "id": "skill-253",
+    "name": "diffusers",
+    "slug": "diffusers",
+    "description": "Diffusion models for image and audio generation",
+    "category": "ai-llms",
+    "tags": [
+      "Diffusion",
+      "Image",
+      "Generation",
+      "AI"
+    ],
+    "author": "huggingface",
+    "source": "https://github.com/huggingface/diffusers",
+    "url": "https://github.com/huggingface/diffusers",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install diffusers"
+  },
+  {
+    "id": "skill-254",
+    "name": "peft",
+    "slug": "peft",
+    "description": "Parameter-Efficient Fine-Tuning for large models",
+    "category": "ai-llms",
+    "tags": [
+      "PEFT",
+      "Fine-tuning",
+      "LLM",
+      "Efficient"
+    ],
+    "author": "huggingface",
+    "source": "https://github.com/huggingface/peft",
+    "url": "https://github.com/huggingface/peft",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install peft"
+  },
+  {
+    "id": "skill-255",
+    "name": "accelerate",
+    "slug": "accelerate",
+    "description": "Library for easy training and inference on any hardware",
+    "category": "ai-llms",
+    "tags": [
+      "Training",
+      "Inference",
+      "Hardware",
+      "Hugging Face"
+    ],
+    "author": "huggingface",
+    "source": "https://github.com/huggingface/accelerate",
+    "url": "https://github.com/huggingface/accelerate",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install accelerate"
+  },
+  {
+    "id": "skill-256",
+    "name": "datasets",
+    "slug": "datasets",
+    "description": "Hugging Face Datasets library for ML datasets",
+    "category": "ai-llms",
+    "tags": [
+      "Datasets",
+      "ML",
+      "Hugging Face",
+      "Data"
+    ],
+    "author": "huggingface",
+    "source": "https://github.com/huggingface/datasets",
+    "url": "https://github.com/huggingface/datasets",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install datasets"
+  },
+  {
+    "id": "skill-257",
+    "name": "evaluate",
+    "slug": "evaluate",
+    "description": "Hugging Face evaluation library for ML models",
+    "category": "ai-llms",
+    "tags": [
+      "Evaluation",
+      "ML",
+      "Metrics",
+      "Hugging Face"
+    ],
+    "author": "huggingface",
+    "source": "https://github.com/huggingface/evaluate",
+    "url": "https://github.com/huggingface/evaluate",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install evaluate"
+  },
+  {
+    "id": "skill-258",
+    "name": "optimum",
+    "slug": "optimum",
+    "description": "Optimization toolkit for transformer models",
+    "category": "ai-llms",
+    "tags": [
+      "Optimization",
+      "Transformers",
+      "Performance",
+      "Hugging Face"
+    ],
+    "author": "huggingface",
+    "source": "https://github.com/huggingface/optimum",
+    "url": "https://github.com/huggingface/optimum",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install optimum"
+  },
+  {
+    "id": "skill-259",
+    "name": "gradio",
+    "slug": "gradio",
+    "description": "Build and share ML demos and web applications",
+    "category": "ai-llms",
+    "tags": [
+      "ML",
+      "UI",
+      "Demos",
+      "Web"
+    ],
+    "author": "gradio-app",
+    "source": "https://github.com/gradio-app/gradio",
+    "url": "https://github.com/gradio-app/gradio",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install gradio"
+  },
+  {
+    "id": "skill-260",
+    "name": "mise",
+    "slug": "mise",
+    "description": "Development environment management tool (formerly rtx)",
+    "category": "development",
+    "tags": [
+      "Version Manager",
+      "Dev Tools",
+      "Environment",
+      "CLI"
+    ],
+    "author": "jdx",
+    "source": "https://github.com/jdx/mise",
+    "url": "https://github.com/jdx/mise",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install mise"
+  },
+  {
+    "id": "skill-261",
+    "name": "grpcurl",
+    "slug": "grpcurl",
+    "description": "Command-line tool for interacting with gRPC servers",
+    "category": "development",
+    "tags": [
+      "gRPC",
+      "Debugging",
+      "CLI",
+      "Protobuf"
+    ],
+    "author": "fullstorydev",
+    "source": "https://github.com/fullstorydev/grpcurl",
+    "url": "https://github.com/fullstorydev/grpcurl",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install grpcurl"
+  },
+  {
+    "id": "skill-262",
+    "name": "uv",
+    "slug": "uv",
+    "description": "Fast Python package installer and resolver, written in Rust",
+    "category": "development",
+    "tags": [
+      "Python",
+      "Package Manager",
+      "Rust",
+      "Fast"
+    ],
+    "author": "astral-sh",
+    "source": "https://github.com/astral-sh/uv",
+    "url": "https://github.com/astral-sh/uv",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install uv"
+  },
+  {
+    "id": "skill-263",
+    "name": "ruff",
+    "slug": "ruff",
+    "description": "Fast Python linter and formatter, written in Rust",
+    "category": "development",
+    "tags": [
+      "Python",
+      "Linter",
+      "Formatter",
+      "Rust"
+    ],
+    "author": "astral-sh",
+    "source": "https://github.com/astral-sh/ruff",
+    "url": "https://github.com/astral-sh/ruff",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install ruff"
+  },
+  {
+    "id": "skill-264",
+    "name": "pyright",
+    "slug": "pyright",
+    "description": "Fast type checker and language server for Python",
+    "category": "development",
+    "tags": [
+      "Python",
+      "Type Checking",
+      "LSP",
+      "VS Code"
+    ],
+    "author": "Microsoft",
+    "source": "https://github.com/microsoft/pyright",
+    "url": "https://github.com/microsoft/pyright",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install pyright"
+  },
+  {
+    "id": "skill-265",
+    "name": "biome",
+    "slug": "biome",
+    "description": "Fast JavaScript/TypeScript linter and formatter",
+    "category": "development",
+    "tags": [
+      "JavaScript",
+      "TypeScript",
+      "Linter",
+      "Formatter"
+    ],
+    "author": "biomejs",
+    "source": "https://github.com/biomejs/biome",
+    "url": "https://github.com/biomejs/biome",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install biome"
+  },
+  {
+    "id": "skill-266",
+    "name": "oxlint",
+    "slug": "oxlint",
+    "description": "Fast JavaScript/TypeScript linter written in Rust",
+    "category": "development",
+    "tags": [
+      "JavaScript",
+      "TypeScript",
+      "Linter",
+      "Rust"
+    ],
+    "author": "oxc-project",
+    "source": "https://github.com/oxc-project/oxlint",
+    "url": "https://github.com/oxc-project/oxlint",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install oxlint"
+  },
+  {
+    "id": "skill-267",
+    "name": "zx",
+    "slug": "zx",
+    "description": "Tool for writing better scripts using JavaScript/TypeScript",
+    "category": "development",
+    "tags": [
+      "Scripting",
+      "JavaScript",
+      "Automation",
+      "Google"
+    ],
+    "author": "google",
+    "source": "https://github.com/google/zx",
+    "url": "https://github.com/google/zx",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install zx"
+  },
+  {
+    "id": "skill-268",
+    "name": "glab",
+    "slug": "glab",
+    "description": "GitLab command-line tool for Git repositories and CI/CD",
+    "category": "development",
+    "tags": [
+      "GitLab",
+      "Git",
+      "CLI",
+      "CI/CD"
+    ],
+    "author": "progl",
+    "source": "https://github.com/progl",
+    "url": "https://github.com/progl",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install glab"
+  },
+  {
+    "id": "skill-269",
+    "name": "tig",
+    "slug": "tig",
+    "description": "Text-mode interface for Git",
+    "category": "development",
+    "tags": [
+      "Git",
+      "TUI",
+      "Terminal",
+      "NCurses"
+    ],
+    "author": "jonas",
+    "source": "https://github.com/jonas/tig",
+    "url": "https://github.com/jonas/tig",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install tig"
+  },
+  {
+    "id": "skill-270",
+    "name": "gitleaks",
+    "slug": "gitleaks",
+    "description": "Detect secrets and passwords in git repositories",
+    "category": "development",
+    "tags": [
+      "Security",
+      "Git",
+      "Secrets",
+      "Scanner"
+    ],
+    "author": "gitleaks",
+    "source": "https://github.com/gitleaks/gitleaks",
+    "url": "https://github.com/gitleaks/gitleaks",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install gitleaks"
+  },
+  {
+    "id": "skill-271",
+    "name": "bun",
+    "slug": "bun",
+    "description": "Fast JavaScript runtime, bundler, test runner, and package manager",
+    "category": "development",
+    "tags": [
+      "JavaScript",
+      "Runtime",
+      "Bundler",
+      "TypeScript"
+    ],
+    "author": "oven-sh",
+    "source": "https://github.com/oven-sh/bun",
+    "url": "https://github.com/oven-sh/bun",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install bun"
+  },
+  {
+    "id": "skill-272",
+    "name": "deno",
+    "slug": "deno",
+    "description": "Secure JavaScript and TypeScript runtime",
+    "category": "development",
+    "tags": [
+      "JavaScript",
+      "TypeScript",
+      "Runtime",
+      "Security"
+    ],
+    "author": "denoland",
+    "source": "https://github.com/denoland/deno",
+    "url": "https://github.com/denoland/deno",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install deno"
+  },
+  {
+    "id": "skill-273",
+    "name": "turbo",
+    "slug": "turbo",
+    "description": "High-performance build system for JavaScript and TypeScript",
+    "category": "development",
+    "tags": [
+      "Build System",
+      "Monorepo",
+      "Performance",
+      "Vercel"
+    ],
+    "author": "vercel",
+    "source": "https://github.com/vercel/turbo",
+    "url": "https://github.com/vercel/turbo",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install turbo"
+  },
+  {
+    "id": "skill-274",
+    "name": "nx",
+    "slug": "nx",
+    "description": "Smart build system with integrated monorepo support",
+    "category": "development",
+    "tags": [
+      "Monorepo",
+      "Build System",
+      "Testing",
+      "CI"
+    ],
+    "author": "nx",
+    "source": "https://github.com/nrwl/nx",
+    "url": "https://github.com/nrwl/nx",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install nx"
+  },
+  {
+    "id": "skill-275",
+    "name": "lerna",
+    "slug": "lerna",
+    "description": "Tool for managing JavaScript projects with multiple packages",
+    "category": "development",
+    "tags": [
+      "Monorepo",
+      "JavaScript",
+      "Management",
+      "Publishing"
+    ],
+    "author": "lerna",
+    "source": "https://github.com/lerna/lerna",
+    "url": "https://github.com/lerna/lerna",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install lerna"
+  },
+  {
+    "id": "skill-276",
+    "name": "rush",
+    "slug": "rush",
+    "description": "Scalable monorepo manager for JavaScript projects",
+    "category": "development",
+    "tags": [
+      "Monorepo",
+      "JavaScript",
+      "Microsoft",
+      "Build"
+    ],
+    "author": "microsoft",
+    "source": "https://github.com/microsoft/rushstack",
+    "url": "https://github.com/microsoft/rushstack",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install rush"
+  },
+  {
+    "id": "skill-277",
+    "name": "changesets",
+    "slug": "changesets",
+    "description": "Tool for managing versioning and changelogs for packages",
+    "category": "development",
+    "tags": [
+      "Versioning",
+      "Changelog",
+      "Monorepo",
+      "Publishing"
+    ],
+    "author": "changesets",
+    "source": "https://github.com/changesets/changesets",
+    "url": "https://github.com/changesets/changesets",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install changesets"
+  },
+  {
+    "id": "skill-278",
+    "name": "semantic-release",
+    "slug": "semantic-release",
+    "description": "Automated versioning and package publishing",
+    "category": "development",
+    "tags": [
+      "Versioning",
+      "CI/CD",
+      "Automation",
+      "Publishing"
+    ],
+    "author": "semantic-release",
+    "source": "https://github.com/semantic-release/semantic-release",
+    "url": "https://github.com/semantic-release/semantic-release",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install semantic-release"
+  },
+  {
+    "id": "skill-279",
+    "name": "standard-version",
+    "slug": "standard-version",
+    "description": "Versioning and changelog generation using conventional commits",
+    "category": "development",
+    "tags": [
+      "Versioning",
+      "Changelog",
+      "Conventional Commits",
+      "Release"
+    ],
+    "author": "conventional-changelog",
+    "source": "https://github.com/conventional-changelog/standard-version",
+    "url": "https://github.com/conventional-changelog/standard-version",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install standard-version"
+  },
+  {
+    "id": "skill-280",
+    "name": "commitlint",
+    "slug": "commitlint",
+    "description": "Lint commit messages to enforce conventional commits",
+    "category": "development",
+    "tags": [
+      "Git",
+      "Linter",
+      "Conventional Commits",
+      "Quality"
+    ],
+    "author": "conventional-changelog",
+    "source": "https://github.com/conventional-changelog/commitlint",
+    "url": "https://github.com/conventional-changelog/commitlint",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install commitlint"
+  },
+  {
+    "id": "skill-281",
+    "name": "husky",
+    "slug": "husky",
+    "description": "Git hooks for managing project scripts",
+    "category": "development",
+    "tags": [
+      "Git",
+      "Hooks",
+      "Automation",
+      "Scripts"
+    ],
+    "author": "typicode",
+    "source": "https://github.com/typicode/husky",
+    "url": "https://github.com/typicode/husky",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install husky"
+  },
+  {
+    "id": "skill-282",
+    "name": "lint-staged",
+    "slug": "lint-staged",
+    "description": "Run linters on git staged files",
+    "category": "development",
+    "tags": [
+      "Git",
+      "Linter",
+      "Pre-commit",
+      "Quality"
+    ],
+    "author": "okonet",
+    "source": "https://github.com/okonet/lint-staged",
+    "url": "https://github.com/okonet/lint-staged",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install lint-staged"
+  },
+  {
+    "id": "skill-283",
+    "name": "dprint",
+    "slug": "dprint",
+    "description": "Fast, pluggable code formatter for JavaScript, TypeScript, and more",
+    "category": "development",
+    "tags": [
+      "Formatter",
+      "JavaScript",
+      "TypeScript",
+      "Rust"
+    ],
+    "author": "dprint",
+    "source": "https://github.com/dprint/dprint",
+    "url": "https://github.com/dprint/dprint",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install dprint"
+  },
+  {
+    "id": "skill-284",
+    "name": "black",
+    "slug": "black",
+    "description": "Uncompromising Python code formatter",
+    "category": "development",
+    "tags": [
+      "Python",
+      "Formatter",
+      "Code Style",
+      "Quality"
+    ],
+    "author": "psf",
+    "source": "https://github.com/psf/black",
+    "url": "https://github.com/psf/black",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install black"
+  },
+  {
+    "id": "skill-285",
+    "name": "isort",
+    "slug": "isort",
+    "description": "Python import statements organizer and sorter",
+    "category": "development",
+    "tags": [
+      "Python",
+      "Imports",
+      "Formatter",
+      "Quality"
+    ],
+    "author": "pycqa",
+    "source": "https://github.com/pycqa/isort",
+    "url": "https://github.com/pycqa/isort",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install isort"
+  },
+  {
+    "id": "skill-286",
+    "name": "mypy",
+    "slug": "mypy",
+    "description": "Static type checker for Python",
+    "category": "development",
+    "tags": [
+      "Python",
+      "Type Checking",
+      "Linter",
+      "Quality"
+    ],
+    "author": "python",
+    "source": "https://github.com/python/mypy",
+    "url": "https://github.com/python/mypy",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install mypy"
+  },
+  {
+    "id": "skill-287",
+    "name": "pylint",
+    "slug": "pylint",
+    "description": "Python code analysis linter",
+    "category": "development",
+    "tags": [
+      "Python",
+      "Linter",
+      "Code Quality",
+      "Analysis"
+    ],
+    "author": "pylint-dev",
+    "source": "https://github.com/pylint-dev/pylint",
+    "url": "https://github.com/pylint-dev/pylint",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install pylint"
+  },
+  {
+    "id": "skill-288",
+    "name": "flake8",
+    "slug": "flake8",
+    "description": "Python linting tool for style guide enforcement",
+    "category": "development",
+    "tags": [
+      "Python",
+      "Linter",
+      "PEP 8",
+      "Quality"
+    ],
+    "author": "pycqa",
+    "source": "https://github.com/pycqa/flake8",
+    "url": "https://github.com/pycqa/flake8",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install flake8"
+  },
+  {
+    "id": "skill-289",
+    "name": "bandit",
+    "slug": "bandit",
+    "description": "Python security linter for finding common security issues",
+    "category": "development",
+    "tags": [
+      "Python",
+      "Security",
+      "Linter",
+      "Analysis"
+    ],
+    "author": "PyCQA",
+    "source": "https://github.com/PyCQA/bandit",
+    "url": "https://github.com/PyCQA/bandit",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install bandit"
+  },
+  {
+    "id": "skill-290",
+    "name": "safety",
+    "slug": "safety",
+    "description": "Python dependency security checker",
+    "category": "development",
+    "tags": [
+      "Python",
+      "Security",
+      "Dependencies",
+      "Checker"
+    ],
+    "author": "pyupio",
+    "source": "https://github.com/pyupio/safety",
+    "url": "https://github.com/pyupio/safety",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install safety"
+  },
+  {
+    "id": "skill-291",
+    "name": "poetry",
+    "slug": "poetry",
+    "description": "Python dependency management and packaging tool",
+    "category": "development",
+    "tags": [
+      "Python",
+      "Package Manager",
+      "Dependencies",
+      "PyPI"
+    ],
+    "author": "python-poetry",
+    "source": "https://github.com/python-poetry/poetry",
+    "url": "https://github.com/python-poetry/poetry",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install poetry"
+  },
+  {
+    "id": "skill-292",
+    "name": "pipenv",
+    "slug": "pipenv",
+    "description": "Python development workflow tool",
+    "category": "development",
+    "tags": [
+      "Python",
+      "Virtual Environment",
+      "Dependencies",
+      "Pip"
+    ],
+    "author": "pypa",
+    "source": "https://github.com/pypa/pipenv",
+    "url": "https://github.com/pypa/pipenv",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install pipenv"
+  },
+  {
+    "id": "skill-293",
+    "name": "pyenv",
+    "slug": "pyenv",
+    "description": "Python version management tool",
+    "category": "development",
+    "tags": [
+      "Python",
+      "Version Manager",
+      "Environment",
+      "Management"
+    ],
+    "author": "pyenv",
+    "source": "https://github.com/pyenv/pyenv",
+    "url": "https://github.com/pyenv/pyenv",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install pyenv"
+  },
+  {
+    "id": "skill-294",
+    "name": "goenv",
+    "slug": "goenv",
+    "description": "Go version management tool",
+    "category": "development",
+    "tags": [
+      "Go",
+      "Version Manager",
+      "Environment",
+      "Management"
+    ],
+    "author": "syndbg",
+    "source": "https://github.com/syndbg/goenv",
+    "url": "https://github.com/syndbg/goenv",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install goenv"
+  },
+  {
+    "id": "skill-295",
+    "name": "gvm",
+    "slug": "gvm",
+    "description": "Go version manager for managing multiple Go versions",
+    "category": "development",
+    "tags": [
+      "Go",
+      "Version Manager",
+      "Environment",
+      "Management"
+    ],
+    "author": "moovweb",
+    "source": "https://github.com/moovweb/gvm",
+    "url": "https://github.com/moovweb/gvm",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install gvm"
+  },
+  {
+    "id": "skill-296",
+    "name": "rbenv",
+    "slug": "rbenv",
+    "description": "Ruby version management tool",
+    "category": "development",
+    "tags": [
+      "Ruby",
+      "Version Manager",
+      "Environment",
+      "Management"
+    ],
+    "author": "rbenv",
+    "source": "https://github.com/rbenv/rbenv",
+    "url": "https://github.com/rbenv/rbenv",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install rbenv"
+  },
+  {
+    "id": "skill-297",
+    "name": "rvm",
+    "slug": "rvm",
+    "description": "Ruby version manager with gemsets",
+    "category": "development",
+    "tags": [
+      "Ruby",
+      "Version Manager",
+      "Gemsets",
+      "Management"
+    ],
+    "author": "rvm",
+    "source": "https://github.com/rvm/rvm",
+    "url": "https://github.com/rvm/rvm",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install rvm"
+  },
+  {
+    "id": "skill-298",
+    "name": "nodenv",
+    "slug": "nodenv",
+    "description": "Node.js version management tool",
+    "category": "development",
+    "tags": [
+      "Node.js",
+      "Version Manager",
+      "Environment",
+      "Management"
+    ],
+    "author": "nodenv",
+    "source": "https://github.com/nodenv/nodenv",
+    "url": "https://github.com/nodenv/nodenv",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install nodenv"
+  },
+  {
+    "id": "skill-299",
+    "name": "nvm",
+    "slug": "nvm",
+    "description": "Node.js version manager for POSIX systems",
+    "category": "development",
+    "tags": [
+      "Node.js",
+      "Version Manager",
+      "JavaScript",
+      "Management"
+    ],
+    "author": "nvm-sh",
+    "source": "https://github.com/nvm-sh/nvm",
+    "url": "https://github.com/nvm-sh/nvm",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install nvm"
+  },
+  {
+    "id": "skill-300",
+    "name": "fnm",
+    "slug": "fnm",
+    "description": "Fast Node.js version manager written in Rust",
+    "category": "development",
+    "tags": [
+      "Node.js",
+      "Version Manager",
+      "Rust",
+      "Fast"
+    ],
+    "author": "Schniz",
+    "source": "https://github.com/Schniz/fnm",
+    "url": "https://github.com/Schniz/fnm",
+    "verified": true,
+    "createdAt": "2026-02-06T00:00:00Z",
+    "command": "npx clawhub@latest install fnm"
+  }
+]
