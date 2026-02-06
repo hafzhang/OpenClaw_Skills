@@ -16,6 +16,24 @@ Started: Wed, Feb  4, 2026  6:48:53 PM
 
 ---
 
+## [2026-02-06] - US-092
+- 完成了 4 篇 Beginner 教程的编写（Tutorial-049 到 Tutorial-052）
+- 教程主题：Nginx Web 服务器、Git 进阶技巧、SSH 远程管理、正则表达式实战
+- 每篇教程包含 2000+ 字内容、5+ 代码示例、实战案例
+- Tutorial-049: Nginx 安装配置、反向代理、负载均衡、SSL/TLS、安全配置
+- Tutorial-050: 交互式暂存、rebase、cherry-pick、bisect、reflog、stash、子模块
+- Tutorial-051: SSH 密钥认证、端口转发、SCP/SFTP、服务器配置、故障排查
+- Tutorial-052: 正则表达式语法、字符类、量词、分组、常用模式、编程语言应用
+- 更新了 src/data/tutorials.json（现在包含 52 个教程）
+- 构建成功，生成 362 个静态页面
+
+**Learnings for future iterations:**
+- JavaScript 模板字符串中的 `${}` 会被解析为变量，需要转义为 `\${}` 或使用模板字符串的转义
+- Bash 变量在 JavaScript 模板字符串中需要特殊处理
+- Nginx 配置中的 `$` 变量在模板字符串中也需要转义
+- 使用独立的模板字符串变量（如 `tutorial049Content`）可以避免复杂转义问题
+
+---
 ## [2026-02-06] - US-064
 - 完成了 3 篇 Intermediate 教程的编写（Tutorial-035 到 Tutorial-037）
 - 教程主题：GraphQL API 开发、消息队列和事件驱动架构、实时数据库和同步
