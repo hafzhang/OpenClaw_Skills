@@ -112,3 +112,23 @@ Started: Wed, Feb  4, 2026  6:48:53 PM
 - 注意 GraphQL 教程的区分：tutorial-035 是 GraphQL API 开发基础，tutorial-085 是 GraphQL Federation 进阶
 
 ---
+
+## [2026-02-07] - US-102
+- 完成了 3 篇 Advanced 教程的编写（Tutorial-089 到 Tutorial-091）
+- 教程主题：大规模架构设计、高可用系统设计、灾难恢复与备份策略
+- 每篇教程包含 3000+ 字内容、8+ 代码示例、实战案例
+- Tutorial-089: 分层架构、CQRS、事件溯源、数据分片、读写分离、缓存策略、消息驱动架构、Saga 模式
+- Tutorial-090: 冗余设计、故障检测与转移、负载均衡、健康检查、限流降级、监控告警
+- Tutorial-091: 完整备份、增量备份、数据库备份、时间点恢复 (PITR)、灾难恢复演练、备份自动化
+- 更新了 src/data/tutorials.json（现在包含 92 个教程）
+- 构建成功，生成 402 个静态页面
+
+**Learnings for future iterations:**
+- Advanced 教程需要 3000+ 字内容、8+ 代码示例
+- 大规模架构教程需要涵盖分层架构、CQRS、事件溯源、分片、读写分离等多个高级模式
+- 高可用教程重点在于冗余设计、故障转移、负载均衡和限流降级
+- 灾难恢复教程需要包含备份策略（完整/增量/PITR）和演练流程
+- 使用 scripts/add-tutorials-us102.js 脚本模式处理批量教程添加
+- 模板字符串中的 `\\${}` 语法在脚本末尾的 console.log 中也需要正确转义
+
+---
