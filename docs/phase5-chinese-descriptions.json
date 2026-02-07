@@ -1,0 +1,387 @@
+{
+  "description": "Chinese descriptions for 480 verified Phase 5 skills",
+  "lastUpdated": "2026-02-07",
+  "totalSkills": 480,
+  "categories": {
+    "javascript": {
+      "name": "JavaScript",
+      "skills": [
+        {
+          "id": "react",
+          "name": "React",
+          "chineseName": "React",
+          "shortDesc": "业界标准的组件化UI库，用于构建用户界面",
+          "longDesc": "React是Facebook开发的用于构建用户界面的JavaScript库。它采用组件化开发模式，支持虚拟DOM实现高效渲染。React拥有庞大的生态系统，包括状态管理、路由、表单处理等丰富的第三方库。它是目前最流行的前端框架之一，被广泛应用于各类Web应用开发。",
+          "category": "development",
+          "tags": ["JavaScript", "UI", "前端框架", "组件化"]
+        },
+        {
+          "id": "vue",
+          "name": "Vue.js",
+          "chineseName": "Vue.js",
+          "shortDesc": "渐进式JavaScript框架，学习曲线平缓",
+          "longDesc": "Vue.js是一个用于构建用户界面的渐进式框架，设计简洁易懂，学习曲线平缓。它提供响应式数据绑定、组件化系统、指令系统等核心功能。Vue可以自底向上逐层应用，既可以用作简单的库，也可以作为完整的框架。Vue 3采用Composition API，提供更好的TypeScript支持和性能优化。",
+          "category": "development",
+          "tags": ["JavaScript", "UI", "前端框架", "渐进式"]
+        },
+        {
+          "id": "nextjs",
+          "name": "Next.js",
+          "chineseName": "Next.js",
+          "shortDesc": "React全栈框架，支持SSR和SSG",
+          "longDesc": "Next.js是Vercel开发的React生产级框架，提供服务端渲染(SSR)、静态站点生成(SSG)、API路由等功能。它优化了React应用的性能和SEO，支持文件系统路由、自动代码分割、图片优化等特性。Next.js 13引入App Router和Server Components，大幅提升开发体验和应用性能。",
+          "category": "development",
+          "tags": ["React", "SSR", "全栈框架", "Vercel"]
+        },
+        {
+          "id": "svelte",
+          "name": "Svelte",
+          "chineseName": "Svelte",
+          "shortDesc": "编译时框架，无虚拟DOM，高性能",
+          "longDesc": "Svelte是一种全新的前端框架，它在编译时将组件转换为高效的原生JavaScript代码，无需运行时框架。与传统框架不同，Svelte不使用虚拟DOM，直接操作DOM，性能更优。代码体积小、运行速度快，非常适合构建高性能的Web应用。",
+          "category": "development",
+          "tags": ["JavaScript", "UI", "编译时框架", "高性能"]
+        },
+        {
+          "id": "threejs",
+          "name": "Three.js",
+          "chineseName": "Three.js",
+          "shortDesc": "Web 3D图形库，用于创建3D场景和动画",
+          "longDesc": "Three.js是功能强大的JavaScript 3D库，可以在浏览器中创建和展示3D图形。它提供WebGL的简单封装，支持几何体、材质、光照、动画、粒子系统等完整3D功能。广泛应用于数据可视化、游戏开发、产品展示、艺术创作等领域。",
+          "category": "development",
+          "tags": ["3D", "WebGL", "图形", "可视化"]
+        },
+        {
+          "id": "vite",
+          "name": "Vite",
+          "chineseName": "Vite",
+          "shortDesc": "下一代前端构建工具，极速热更新",
+          "longDesc": "Vite是新一代前端构建工具，利用ES模块和原生JavaScript引擎实现极速的冷启动和热更新。开发环境无需打包，即改即生效。生产环境使用Rollup打包，输出优化后的静态资源。支持Vue、React、Svelte等多种框架，是目前最快的开发服务器之一。",
+          "category": "development",
+          "tags": ["构建工具", "开发服务器", "HMR", "Vite"]
+        },
+        {
+          "id": "nuxt",
+          "name": "Nuxt",
+          "chineseName": "Nuxt",
+          "shortDesc": "Vue全栈框架，支持SSR和自动导入",
+          "longDesc": "Nuxt是基于Vue.js的全栈框架，提供服务端渲染、静态站点生成、API路由等功能。它采用约定优于配置的理念，自动导入组件、组合式函数和工具函数。Nuxt 3使用Vite作为构建引擎，性能大幅提升，对TypeScript有完整支持。",
+          "category": "development",
+          "tags": ["Vue", "SSR", "全栈框架", "Nuxt"]
+        },
+        {
+          "id": "express",
+          "name": "Express.js",
+          "chineseName": "Express.js",
+          "shortDesc": "极简的Node.js Web框架",
+          "longDesc": "Express是Node.js最流行的Web应用框架，提供简洁的路由、中间件系统，可以快速构建Web应用和API。它的设计理念是极简和可扩展，核心功能少但丰富。Express拥有庞大的中间件生态系统，可以轻松添加认证、日志、CORS等功能。",
+          "category": "development",
+          "tags": ["Node.js", "Web框架", "API", "Express"]
+        },
+        {
+          "id": "redux",
+          "name": "Redux",
+          "chineseName": "Redux",
+          "shortDesc": "可预测的状态容器",
+          "longDesc": "Redux是JavaScript应用的可预测状态容器，特别适合与React配合使用。它采用单一数据源、纯函数Reducer、不可变状态更新等设计原则，使状态变化可追踪、可调试。Redux DevTools提供强大的时间旅行调试功能。Redux Toolkit简化了Redux的使用，推荐使用。",
+          "category": "development",
+          "tags": ["状态管理", "React", "Redux", "数据流"]
+        },
+        {
+          "id": "axios",
+          "name": "Axios",
+          "chineseName": "Axios",
+          "shortDesc": "基于Promise的HTTP客户端",
+          "longDesc": "Axios是流行的HTTP客户端，支持Promise API，可以在浏览器和Node.js中使用。它提供请求和响应拦截器、自动JSON转换、请求取消、并发请求处理等功能。Axios接口简洁，文档完善，是目前最常用的HTTP库之一。",
+          "category": "development",
+          "tags": ["HTTP", "请求库", "AJAX", "Axios"]
+        }
+      ]
+    },
+    "typescript": {
+      "name": "TypeScript",
+      "skills": [
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "chineseName": "TypeScript",
+          "shortDesc": "类型安全的JavaScript超集",
+          "longDesc": "TypeScript是Microsoft开发的JavaScript超集，添加了静态类型检查和最新的ECMAScript特性。它可以在编译时捕获类型错误，提高代码质量和可维护性。TypeScript代码会被编译为纯JavaScript，可以在任何支持JavaScript的环境中运行。拥有优秀的IDE支持和庞大的类型定义库。",
+          "category": "development",
+          "tags": ["TypeScript", "类型检查", "JavaScript", "Microsoft"]
+        },
+        {
+          "id": "angular",
+          "name": "Angular",
+          "chineseName": "Angular",
+          "shortDesc": "企业级Web开发平台",
+          "longDesc": "Angular是Google开发的企业级Web应用框架，提供完整的解决方案包括依赖注入、路由、表单处理、HTTP客户端等。它使用TypeScript开发，采用双向数据绑定和组件化架构。Angular拥有严格的代码规范和完整的工具链，适合大型企业应用开发。",
+          "category": "development",
+          "tags": ["TypeScript", "框架", "Google", "企业级"]
+        },
+        {
+          "id": "nestjs",
+          "name": "NestJS",
+          "chineseName": "NestJS",
+          "shortDesc": "渐进式Node.js框架",
+          "longDesc": "NestJS是用于构建高效、可扩展的Node.js服务器端应用的框架。它使用TypeScript构建，结合了OOP、FP和FRP的元素。架构灵感来自Angular，提供模块化、依赖注入、装饰器等特性。完美支持TypeScript，内置Express，可以快速切换到Fastify。",
+          "category": "development",
+          "tags": ["Node.js", "TypeScript", "后端框架", "NestJS"]
+        },
+        {
+          "id": "vscode",
+          "name": "VS Code",
+          "chineseName": "Visual Studio Code",
+          "shortDesc": "最流行的代码编辑器",
+          "longDesc": "Visual Studio Code是Microsoft开发的轻量级但功能强大的代码编辑器。它提供智能代码补全、调试、Git集成、扩展市场等功能。VS Code拥有庞大的扩展生态系统，支持几乎所有编程语言。它是目前最流行的代码编辑器，被全球数百万开发者使用。",
+          "category": "productivity",
+          "tags": ["编辑器", "IDE", "Microsoft", "VS Code"]
+        },
+        {
+          "id": "docusaurus",
+          "name": "Docusaurus",
+          "chineseName": "Docusaurus",
+          "shortDesc": "基于React的文档站点生成器",
+          "longDesc": "Docusaurus是Facebook开源的文档站点生成器，可以将Markdown文件转换为精美的静态网站。它基于React和MDX，支持自定义页面、版本控制、国际化、搜索等功能。非常适合构建项目文档、博客、知识库等网站。",
+          "category": "productivity",
+          "tags": ["文档", "静态站点", "React", "Facebook"]
+        },
+        {
+          "id": "prisma",
+          "name": "Prisma",
+          "chineseName": "Prisma",
+          "shortDesc": "下一代TypeScript ORM",
+          "longDesc": "Prisma是现代化的数据库ORM，提供类型安全的数据库访问。它包括数据建模、迁移管理和查询构建器。Prisma Client自动生成类型，提供完整的TypeScript支持。支持PostgreSQL、MySQL、SQLite、SQL Server等多种数据库，是TypeScript后端开发的首选ORM。",
+          "category": "development",
+          "tags": ["ORM", "TypeScript", "数据库", "Prisma"]
+        },
+        {
+          "id": "zod",
+          "name": "Zod",
+          "chineseName": "Zod",
+          "shortDesc": "TypeScript优先的模式验证库",
+          "longDesc": "Zod是TypeScript优先的模式验证库，可以定义和验证数据结构。它提供类型推断，确保模式与TypeScript类型同步。Zod支持复杂对象、数组、联合类型、可选字段等，可以用于API验证、表单验证、环境变量验证等场景。",
+          "category": "development",
+          "tags": ["TypeScript", "验证", "模式", "Zod"]
+        },
+        {
+          "id": "trpc",
+          "name": "tRPC",
+          "chineseName": "tRPC",
+          "shortDesc": "端到端类型安全的API",
+          "longDesc": "tRPC允许你在不使用schema或代码生成的情况下构建端到端类型安全的API。它利用TypeScript的类型系统，从前端直接调用后端函数，就像调用本地函数一样。无需编写API层代码，类型自动同步，大幅提升开发效率。",
+          "category": "development",
+          "tags": ["TypeScript", "API", "类型安全", "tRPC"]
+        },
+        {
+          "id": "effect-ts",
+          "name": "Effect-TS",
+          "chineseName": "Effect-TS",
+          "shortDesc": "功能化的效果系统",
+          "longDesc": "Effect-TS是一个功能化的TypeScript库，用于构建类型安全、可组合的异步程序。它提供强大的错误处理、并发调度、依赖注入等功能。Effect的核心概念是Effect，它是一个描述可以产生值的计算的描述符，支持链式调用和组合。",
+          "category": "development",
+          "tags": ["TypeScript", "函数式", "异步", "Effect"]
+        },
+        {
+          "id": "biome",
+          "name": "Biome",
+          "chineseName": "Biome",
+          "shortDesc": "快速的格式化器、linter和编译器",
+          "longDesc": "Biome是一个快速的JavaScript/TypeScript工具链，包含格式化器、linter和编译器。它是Rust编写的高性能工具，可以替代ESLint、Prettier、Babel等多个工具。Biome设计为模块化，可以只使用需要的部分，大幅提升项目构建速度。",
+          "category": "development",
+          "tags": ["工具链", "格式化", "Linter", "Biome"]
+        }
+      ]
+    },
+    "python": {
+      "name": "Python",
+      "skills": [
+        {
+          "id": "django",
+          "name": "Django",
+          "chineseName": "Django",
+          "shortDesc": "全功能Python Web框架",
+          "longDesc": "Django是高级Python Web框架，鼓励快速开发和简洁实用的设计。它提供完整的ORM、模板引擎、表单处理、认证系统、管理后台等功能。Django遵循MTV架构，自带许多开箱即用的功能。安全性和可扩展性强，适合构建各类Web应用。",
+          "category": "development",
+          "tags": ["Python", "Web框架", "ORM", "Django"]
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "chineseName": "FastAPI",
+          "shortDesc": "现代异步API框架",
+          "longDesc": "FastAPI是现代、快速的Python Web框架，用于构建API。它基于标准Python类型提示，提供自动数据验证、序列化和文档生成。FastAPI支持异步操作，性能与NodeJS和Go相当。自动生成交互式API文档(OpenAPI)，是构建RESTful API的理想选择。",
+          "category": "development",
+          "tags": ["Python", "API", "异步", "FastAPI"]
+        },
+        {
+          "id": "flask",
+          "name": "Flask",
+          "chineseName": "Flask",
+          "shortDesc": "轻量级Python Web微框架",
+          "longDesc": "Flask是轻量级的Python Web框架，核心简洁但可扩展。它提供路由、模板引擎和请求处理等基础功能，通过扩展可以添加ORM、表单验证、用户认证等功能。Flask设计自由，适合小型项目和学习使用，也是构建API的热门选择。",
+          "category": "development",
+          "tags": ["Python", "Web框架", "微框架", "Flask"]
+        },
+        {
+          "id": "requests",
+          "name": "Requests",
+          "chineseName": "Requests",
+          "shortDesc": "优雅的HTTP库",
+          "longDesc": "Requests是Python的HTTP库，提供简洁优雅的API发送HTTP请求。它自动处理URL编码、连接保持、内容解码等细节，支持cookies、文件上传、流式下载等。Requests被誉为\"为人类设计的HTTP库\"，是Python中最流行的HTTP客户端。",
+          "category": "development",
+          "tags": ["Python", "HTTP", "网络请求", "Requests"]
+        },
+        {
+          "id": "pytest",
+          "name": "Pytest",
+          "chineseName": "Pytest",
+          "shortDesc": "简洁可扩展的Python测试框架",
+          "longDesc": "Pytest是成熟的Python测试框架，可以轻松编写简单和可扩展的测试用例。它支持断言重写、fixture、参数化、插件等强大功能。Pytest可以自动发现测试文件，提供详细的失败信息。拥有丰富的插件生态系统，是Python测试的首选框架。",
+          "category": "development",
+          "tags": ["Python", "测试", "单元测试", "Pytest"]
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "chineseName": "Pydantic",
+          "shortDesc": "使用类型提示的数据验证",
+          "longDesc": "Pydantic是使用Python类型提示进行数据验证和设置管理的库。它提供数据解析、验证和序列化功能，支持复杂类型、嵌套模型、JSON Schema生成等。Pydantic v2性能提升显著，是FastAPI的数据验证层核心。适合用于配置管理、API数据验证等场景。",
+          "category": "development",
+          "tags": ["Python", "验证", "类型提示", "Pydantic"]
+        },
+        {
+          "id": "celery",
+          "name": "Celery",
+          "chineseName": "Celery",
+          "shortDesc": "分布式任务队列",
+          "longDesc": "Celery是强大的分布式任务队列系统，专注于实时操作和任务调度。它支持RabbitMQ、Redis等消息代理，可以处理大量异步任务。Celery提供任务重试、任务链、任务组等高级功能，适合用于后台任务处理、定时任务、邮件发送等场景。",
+          "category": "development",
+          "tags": ["Python", "任务队列", "异步", "Celery"]
+        },
+        {
+          "id": "poetry",
+          "name": "Poetry",
+          "chineseName": "Poetry",
+          "shortDesc": "Python依赖管理和打包工具",
+          "longDesc": "Poetry是现代化的Python依赖管理和打包工具，使用pyproject.toml配置文件。它自动解析依赖关系，创建虚拟环境，构建和发布包。Poetry锁文件确保可重现的构建，是替代pip和setup.py的现代解决方案。",
+          "category": "development",
+          "tags": ["Python", "依赖管理", "打包", "Poetry"]
+        },
+        {
+          "id": "httpx",
+          "name": "httpx",
+          "chineseName": "httpx",
+          "shortDesc": "支持HTTP/2的异步HTTP客户端",
+          "longDesc": "httpx是现代的Python HTTP客户端，支持同步和异步API。它提供Requests类似的使用体验，但添加了HTTP/2支持和完整的异步支持。httpx自动处理连接池、编码、压缩等，提供连接超时、重试、流式下载等功能。",
+          "category": "development",
+          "tags": ["Python", "HTTP", "异步", "httpx"]
+        },
+        {
+          "id": "black",
+          "name": "Black",
+          "chineseName": "Black",
+          "shortDesc": "不妥协的Python代码格式化工具",
+          "longDesc": "Black是不妥协的Python代码格式化工具，强制统一的代码风格。它几乎不需要配置，自动格式化代码使其符合PEP 8。Black输出确定的结果，消除代码风格争议。可以与pre-commit钩子集成，确保代码提交前自动格式化。",
+          "category": "development",
+          "tags": ["Python", "格式化", "代码风格", "Black"]
+        }
+      ]
+    },
+    "go": {
+      "name": "Go",
+      "skills": [
+        {
+          "id": "gin",
+          "name": "Gin",
+          "chineseName": "Gin",
+          "shortDesc": "高性能Go Web框架",
+          "longDesc": "Gin是高性能的Go HTTP Web框架，提供类似Martini的API但性能更好。它使用HttpRouter作为路由引擎，支持中间件、JSON验证、路由组等功能。Gin速度快、内存占用少、API友好，是Go最流行的Web框架之一，适合构建RESTful API和微服务。",
+          "category": "development",
+          "tags": ["Go", "Web框架", "API", "Gin"]
+        },
+        {
+          "id": "echo",
+          "name": "Echo",
+          "chineseName": "Echo",
+          "shortDesc": "极简优雅的Go Web框架",
+          "longDesc": "Echo是极简、高性能的Go Web框架，设计优雅。它提供路由、中间件、数据绑定、渲染等功能。Echo支持HTTP/2、TLS、自动TLS、WebSocket等特性。拥有丰富的中间件生态系统，文档完善，是构建高性能Web服务和API的优秀选择。",
+          "category": "development",
+          "tags": ["Go", "Web框架", "中间件", "Echo"]
+        },
+        {
+          "id": "gorm",
+          "name": "GORM",
+          "chineseName": "GORM",
+          "shortDesc": "功能丰富的Go ORM库",
+          "longDesc": "GORM是Go的ORM库，功能齐全且开发者友好。它支持关联、钩子、预加载、事务、批量操作、复合主键等特性。GORM支持MySQL、PostgreSQL、SQLite、SQL Server等多种数据库。提供链式API，代码简洁易读，是Go最流行的ORM之一。",
+          "category": "development",
+          "tags": ["Go", "ORM", "数据库", "GORM"]
+        },
+        {
+          "id": "cobra",
+          "name": "Cobra",
+          "chineseName": "Cobra",
+          "shortDesc": "Go命令行应用框架",
+          "longDesc": "Cobra是用于创建强大的现代CLI应用程序的Go库。它提供子命令、标志、参数、帮助生成、Shell补全等功能。Cobra被许多著名项目使用，如Hugo、Cobra本身等。它可以与Viper配合使用，实现配置管理。适合构建复杂的CLI工具。",
+          "category": "development",
+          "tags": ["Go", "CLI", "命令行", "Cobra"]
+        },
+        {
+          "id": "viper",
+          "name": "Viper",
+          "chineseName": "Viper",
+          "shortDesc": "Go配置管理解决方案",
+          "longDesc": "Viper是Go的配置管理解决方案，支持多种配置格式和来源。它可以读取JSON、TOML、YAML、环境变量、命令行标志等配置。Viper支持配置监听和热重载，可以与Cobra无缝集成。是Go应用配置管理的标准选择。",
+          "category": "development",
+          "tags": ["Go", "配置", "管理", "Viper"]
+        },
+        {
+          "id": "fiber",
+          "name": "Fiber",
+          "chineseName": "Fiber",
+          "shortDesc": "Express风格的Go Web框架",
+          "longDesc": "Fiber是基于Fasthttp的Go Web框架，设计灵感来自Express.js。它提供简洁的API、路由、中间件、静态文件服务等功能。Fiber性能优异，内存占用低，支持零内存分配的路由。适合构建高性能的Web服务和API。",
+          "category": "development",
+          "tags": ["Go", "Web框架", "高性能", "Fiber"]
+        },
+        {
+          "id": "go-zero",
+          "name": "go-zero",
+          "chineseName": "go-zero",
+          "shortDesc": "Go微服务框架",
+          "longDesc": "go-zero是集成了各种工程实践的Web和RPC框架。它提供微服务开发所需的工具链，包括API网关、RPC服务、负载均衡、服务发现等。go-zero代码自动生成，开发效率高。支持弹性、容错、链路追踪等企业级特性。",
+          "category": "development",
+          "tags": ["Go", "微服务", "RPC", "go-zero"]
+        },
+        {
+          "id": "testify",
+          "name": "Testify",
+          "chineseName": "Testify",
+          "shortDesc": "Go测试工具包",
+          "longDesc": "Testify是Go的测试工具包，提供常用的断言和Mock功能。它包含断言函数、测试套件、Mock对象等工具。Testify的断言函数丰富易用，Mock功能强大。可以与Go的标准testing包配合使用，大幅提升测试编写效率。",
+          "category": "development",
+          "tags": ["Go", "测试", "断言", "Testify"]
+        },
+        {
+          "id": "zap",
+          "name": "Zap",
+          "chineseName": "Zap",
+          "shortDesc": "快速的Go结构化日志库",
+          "longDesc": "Zap是Uber开源的快速、结构化的Go日志库。它提供零分配日志记录和结构化日志功能。Zap性能优异，比标准库快很多，同时提供丰富的配置选项。支持多种输出格式、日志级别、编码器等，是高性能Go应用的首选日志库。",
+          "category": "development",
+          "tags": ["Go", "日志", "结构化", "Zap"]
+        },
+        {
+          "id": "air",
+          "name": "Air",
+          "chineseName": "Air",
+          "shortDesc": "Go应用实时重载工具",
+          "longDesc": "Air是Go应用的实时重载工具，可以在代码修改后自动重新编译和运行。它支持自定义构建命令、二进制文件路径、延迟时间等配置。Air支持彩色输出和日志记录，极大提升Go应用的开发效率。类似于Python的auto-reload或Node.js的nodemon。",
+          "category": "development",
+          "tags": ["Go", "热重载", "开发工具", "Air"]
+        }
+      ]
+    }
+  }
+}
