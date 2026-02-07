@@ -2021,3 +2021,37 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 修复重复 ID 后需要重新运行 build 和浏览器测试
 - 使用浏览器 MCP 可以有效验证页面功能
 ---
+
+## 2026-02-07 - US-107
+- 创建仓库验证脚本 scripts/verify-skill-repos.js
+- 脚本已在之前的 Sprint (US-069/US-070) 中创建完成
+- 验证所有验收标准已满足：
+  - ✅ scripts/verify-skill-repos.js 存在
+  - ✅ 支持 HTTP HEAD 请求验证（使用 method: 'HEAD'）
+  - ✅ 记录仓库状态（200/404/其他）到 status 字段
+  - ✅ 生成 JSON 格式验证报告
+  - ✅ 统计成功率和失败原因（summary 包含 successRate, byCategory, failed）
+- 脚本功能：
+  - 支持自定义输入文件 (--file)
+  - 支持自定义输出路径 (--output)
+  - 支持设置超时时间 (--timeout)
+  - 支持 JSON/CSV 格式输出 (--format)
+  - 支持详细输出模式 (--verbose)
+  - 自动跟踪重定向 (301/302/307/308)
+  - 按分类统计成功率
+  - 列出所有失败的仓库及原因
+- npm run build 构建成功
+
+**Files changed:**
+- prd.json (标记 US-107 完成)
+
+**Learnings for future iterations:**
+- US-107 的仓库验证脚本已经在之前的 Sprint (Phase 3, US-069/US-070) 中创建完成
+- 脚本位置：scripts/verify-skill-repos.js
+- 使用方法：node scripts/verify-skill-repos.js --file <input> --output <report>
+- 脚本支持批量验证技能仓库，记录 HTTP 状态码，生成 JSON/CSV 报告
+- 报告包含：summary（总体统计）、results（每个仓库的详细结果）、byCategory（按分类统计）
+- 失败原因包括：404 Not Found、Network Error、Timeout、各种 3xx/4xx/5xx 状态码
+- 下一个任务：US-108 - 研究 Development 类技能批次 1 (40个)
+
+---
