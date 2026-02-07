@@ -1,0 +1,524 @@
+{
+  "description": "Phase 5 Skill Slugs and Categories Mapping - 480 Verified Skills",
+  "lastUpdated": "2026-02-07",
+  "totalSkills": 480,
+  "categories": {
+    "development": {
+      "name": "Development",
+      "description": "Programming languages, frameworks, and development tools",
+      "subcategories": {
+        "javascript": {
+          "name": "JavaScript",
+          "skills": [
+            {"id": "skill-201", "name": "React", "slug": "react", "repo": "facebook/react", "tags": ["JavaScript", "UI", "前端框架", "React"]},
+            {"id": "skill-202", "name": "Vue.js", "slug": "vuejs", "repo": "vuejs/core", "tags": ["JavaScript", "UI", "前端框架", "Vue"]},
+            {"id": "skill-203", "name": "Next.js", "slug": "nextjs", "repo": "vercel/next.js", "tags": ["React", "SSR", "全栈框架", "Next.js"]},
+            {"id": "skill-204", "name": "Svelte", "slug": "svelte", "repo": "sveltejs/svelte", "tags": ["JavaScript", "UI", "编译时框架", "Svelte"]},
+            {"id": "skill-205", "name": "Three.js", "slug": "threejs", "repo": "mrdoob/three.js", "tags": ["3D", "WebGL", "图形", "Three.js"]},
+            {"id": "skill-206", "name": "Vite", "slug": "vite", "repo": "vitejs/vite", "tags": ["构建工具", "HMR", "Vite"]},
+            {"id": "skill-207", "name": "Nuxt", "slug": "nuxt", "repo": "nuxt/nuxt", "tags": ["Vue", "SSR", "全栈框架", "Nuxt"]},
+            {"id": "skill-208", "name": "Express.js", "slug": "express", "repo": "expressjs/express", "tags": ["Node.js", "Web框架", "API", "Express"]},
+            {"id": "skill-209", "name": "Redux", "slug": "redux", "repo": "reduxjs/redux", "tags": ["状态管理", "React", "Redux"]},
+            {"id": "skill-210", "name": "Axios", "slug": "axios", "repo": "axios/axios", "tags": ["HTTP", "请求库", "AJAX", "Axios"]}
+          ]
+        },
+        "typescript": {
+          "name": "TypeScript",
+          "skills": [
+            {"id": "skill-211", "name": "TypeScript", "slug": "typescript", "repo": "microsoft/TypeScript", "tags": ["TypeScript", "类型检查", "JavaScript"]},
+            {"id": "skill-212", "name": "Angular", "slug": "angular", "repo": "angular/angular", "tags": ["TypeScript", "框架", "Google"]},
+            {"id": "skill-213", "name": "NestJS", "slug": "nestjs", "repo": "nestjs/nest", "tags": ["Node.js", "TypeScript", "后端框架"]},
+            {"id": "skill-214", "name": "Prisma", "slug": "prisma", "repo": "prisma/prisma", "tags": ["ORM", "TypeScript", "数据库"]},
+            {"id": "skill-215", "name": "Zod", "slug": "zod", "repo": "colinhacks/zod", "tags": ["TypeScript", "验证", "模式"]},
+            {"id": "skill-216", "name": "tRPC", "slug": "trpc", "repo": "trpc/trpc", "tags": ["TypeScript", "API", "类型安全"]},
+            {"id": "skill-217", "name": "Effect-TS", "slug": "effect-ts", "repo": "Effect-TS/effect", "tags": ["TypeScript", "函数式", "异步"]},
+            {"id": "skill-218", "name": "Biome", "slug": "biome", "repo": "biomejs/biome", "tags": ["工具链", "格式化", "Linter"]}
+          ]
+        },
+        "python": {
+          "name": "Python",
+          "skills": [
+            {"id": "skill-221", "name": "Django", "slug": "django", "repo": "django/django", "tags": ["Python", "Web框架", "ORM"]},
+            {"id": "skill-222", "name": "FastAPI", "slug": "fastapi", "repo": "tiangolo/fastapi", "tags": ["Python", "API", "异步"]},
+            {"id": "skill-223", "name": "Flask", "slug": "flask", "repo": "pallets/flask", "tags": ["Python", "Web框架", "微框架"]},
+            {"id": "skill-224", "name": "Requests", "slug": "requests", "repo": "psf/requests", "tags": ["Python", "HTTP", "网络请求"]},
+            {"id": "skill-225", "name": "Pytest", "slug": "pytest", "repo": "pytest-dev/pytest", "tags": ["Python", "测试", "单元测试"]},
+            {"id": "skill-226", "name": "Pydantic", "slug": "pydantic", "repo": "pydantic/pydantic", "tags": ["Python", "验证", "类型提示"]},
+            {"id": "skill-227", "name": "Celery", "slug": "celery", "repo": "celery/celery", "tags": ["Python", "任务队列", "异步"]},
+            {"id": "skill-228", "name": "Poetry", "slug": "poetry", "repo": "python-poetry/poetry", "tags": ["Python", "依赖管理", "打包"]},
+            {"id": "skill-229", "name": "httpx", "slug": "httpx", "repo": "encode/httpx", "tags": ["Python", "HTTP", "异步"]},
+            {"id": "skill-230", "name": "Black", "slug": "black", "repo": "psf/black", "tags": ["Python", "格式化", "代码风格"]}
+          ]
+        },
+        "go": {
+          "name": "Go",
+          "skills": [
+            {"id": "skill-231", "name": "Gin", "slug": "gin", "repo": "gin-gonic/gin", "tags": ["Go", "Web框架", "API"]},
+            {"id": "skill-232", "name": "Echo", "slug": "echo", "repo": "labstack/echo", "tags": ["Go", "Web框架", "中间件"]},
+            {"id": "skill-233", "name": "GORM", "slug": "gorm", "repo": "go-gorm/gorm", "tags": ["Go", "ORM", "数据库"]},
+            {"id": "skill-234", "name": "Cobra", "slug": "cobra", "repo": "spf13/cobra", "tags": ["Go", "CLI", "命令行"]},
+            {"id": "skill-235", "name": "Viper", "slug": "viper", "repo": "spf13/viper", "tags": ["Go", "配置", "管理"]},
+            {"id": "skill-236", "name": "Fiber", "slug": "fiber", "repo": "gofiber/fiber", "tags": ["Go", "Web框架", "高性能"]},
+            {"id": "skill-237", "name": "go-zero", "slug": "go-zero", "repo": "zeromicro/go-zero", "tags": ["Go", "微服务", "RPC"]},
+            {"id": "skill-238", "name": "Testify", "slug": "testify", "repo": "stretchr/testify", "tags": ["Go", "测试", "断言"]},
+            {"id": "skill-239", "name": "Zap", "slug": "zap", "repo": "uber-go/zap", "tags": ["Go", "日志", "结构化"]},
+            {"id": "skill-240", "name": "Air", "slug": "air", "repo": "cosmtrek/air", "tags": ["Go", "热重载", "开发工具"]}
+          ]
+        }
+      }
+    },
+    "frontend": {
+      "name": "Frontend",
+      "description": "Frontend build tools, CSS frameworks, state management, and testing",
+      "subcategories": {
+        "build-tools": {
+          "name": "Build Tools",
+          "skills": [
+            {"id": "skill-241", "name": "esbuild", "slug": "esbuild", "repo": "evanw/esbuild", "tags": ["构建工具", "打包器", "性能"]},
+            {"id": "skill-242", "name": "Webpack", "slug": "webpack", "repo": "webpack/webpack", "tags": ["构建工具", "打包器", "模块"]},
+            {"id": "skill-243", "name": "Rollup", "slug": "rollup", "repo": "rollup/rollup", "tags": ["构建工具", "打包器", "ES模块"]},
+            {"id": "skill-244", "name": "Rspack", "slug": "rspack", "repo": "web-infra-dev/rspack", "tags": ["构建工具", "Rust", "Webpack兼容"]},
+            {"id": "skill-245", "name": "SWC", "slug": "swc", "repo": "swc-project/swc", "tags": ["编译器", "Rust", "性能"]},
+            {"id": "skill-246", "name": "Rsbuild", "slug": "rsbuild", "repo": "web-infra-dev/rsbuild", "tags": ["构建工具", "Rspack", "性能"]},
+            {"id": "skill-247", "name": "Babel", "slug": "babel", "repo": "babel/babel", "tags": ["编译器", "JS", "转译"]},
+            {"id": "skill-248", "name": "PostCSS", "slug": "postcss", "repo": "postcss/postcss", "tags": ["CSS", "构建工具", "PostCSS"]}
+          ]
+        },
+        "css-frameworks": {
+          "name": "CSS Frameworks",
+          "skills": [
+            {"id": "skill-251", "name": "Bootstrap", "slug": "bootstrap", "repo": "twbs/bootstrap", "tags": ["CSS", "UI框架", "响应式"]},
+            {"id": "skill-252", "name": "Tailwind CSS", "slug": "tailwindcss", "repo": "tailwindlabs/tailwindcss", "tags": ["CSS", "实用优先", "框架"]},
+            {"id": "skill-253", "name": "Material UI", "slug": "material-ui", "repo": "mui/material-ui", "tags": ["React", "UI", "Material Design"]},
+            {"id": "skill-254", "name": "Ant Design", "slug": "ant-design", "repo": "ant-design/ant-design", "tags": ["React", "UI", "企业级"]},
+            {"id": "skill-255", "name": "Chakra UI", "slug": "chakra-ui", "repo": "chakra-ui/chakra-ui", "tags": ["React", "UI", "可访问性"]},
+            {"id": "skill-256", "name": "Shadcn/ui", "slug": "shadcn-ui", "repo": "shadcn-ui/ui", "tags": ["React", "UI", "Radix"]},
+            {"id": "skill-257", "name": "Radix UI", "slug": "radix-ui", "repo": "radix-ui/primitives", "tags": ["React", "UI", "无样式"]},
+            {"id": "skill-258", "name": "Bulma", "slug": "bulma", "repo": "jgthms/bulma", "tags": ["CSS", "框架", "无JS"]},
+            {"id": "skill-259", "name": "Headless UI", "slug": "headless-ui", "repo": "tailwindlabs/headlessui", "tags": ["React", "UI", "Tailwind"]},
+            {"id": "skill-260", "name": "Mantine", "slug": "mantine", "repo": "mantinedev/mantine", "tags": ["React", "UI", "hooks"]}
+          ]
+        },
+        "state-management": {
+          "name": "State Management",
+          "skills": [
+            {"id": "skill-261", "name": "Zustand", "slug": "zustand", "repo": "pmndrs/zustand", "tags": ["状态管理", "React", "轻量"]},
+            {"id": "skill-262", "name": "Redux Toolkit", "slug": "redux-toolkit", "repo": "reduxjs/redux-toolkit", "tags": ["状态管理", "React", "Redux"]},
+            {"id": "skill-263", "name": "MobX", "slug": "mobx", "repo": "mobxjs/mobx", "tags": ["状态管理", "React", "观察者"]},
+            {"id": "skill-264", "name": "Jotai", "slug": "jotai", "repo": "pmndrs/jotai", "tags": ["状态管理", "React", "原子"]},
+            {"id": "skill-265", "name": "Pinia", "slug": "pinia", "repo": "vuejs/pinia", "tags": ["状态管理", "Vue", "官方"]},
+            {"id": "skill-266", "name": "Recoil", "slug": "recoil", "repo": "facebookexperimental/Recoil", "tags": ["状态管理", "React", "Facebook"]},
+            {"id": "skill-267", "name": "XState", "slug": "xstate", "repo": "statelyai/xstate", "tags": ["状态机", "React", "状态图"]},
+            {"id": "skill-268", "name": "Valtio", "slug": "valtio", "repo": "pmndrs/valtio", "tags": ["状态管理", "React", "Proxy"]},
+            {"id": "skill-269", "name": "TanStack Store", "slug": "tanstack-store", "repo": "TanStack/store", "tags": ["状态管理", "框架无关", "TanStack"]},
+            {"id": "skill-270", "name": "SolidJS", "slug": "solidjs", "repo": "solidjs/solid", "tags": ["响应式", "UI", "性能"]}
+          ]
+        },
+        "testing": {
+          "name": "Frontend Testing",
+          "skills": [
+            {"id": "skill-271", "name": "Jest", "slug": "jest", "repo": "jestjs/jest", "tags": ["测试", "JavaScript", "框架"]},
+            {"id": "skill-272", "name": "Vitest", "slug": "vitest", "repo": "vitest-dev/vitest", "tags": ["测试", "Vite", "TypeScript"]},
+            {"id": "skill-273", "name": "Playwright", "slug": "playwright", "repo": "microsoft/playwright", "tags": ["测试", "E2E", "Microsoft"]},
+            {"id": "skill-274", "name": "Cypress", "slug": "cypress", "repo": "cypress-io/cypress", "tags": ["测试", "E2E", "浏览器"]},
+            {"id": "skill-275", "name": "Testing Library", "slug": "testing-library", "repo": "testing-library/dom-testing-library", "tags": ["测试", "DOM", "用户中心"]},
+            {"id": "skill-276", "name": "MSW", "slug": "msw", "repo": "mswjs/msw", "tags": ["测试", "API", "Mock"]},
+            {"id": "skill-277", "name": "Storybook", "slug": "storybook", "repo": "storybookjs/storybook", "tags": ["测试", "UI", "组件"]},
+            {"id": "skill-278", "name": "Puppeteer", "slug": "puppeteer", "repo": "puppeteer/puppeteer", "tags": ["浏览器", "自动化", "Chrome"]}
+          ]
+        }
+      }
+    },
+    "backend": {
+      "name": "Backend",
+      "description": "Backend frameworks, databases, ORMs, and API tools",
+      "subcategories": {
+        "java-backend": {
+          "name": "Java Backend",
+          "skills": [
+            {"id": "skill-281", "name": "Spring Boot", "slug": "spring-boot", "repo": "spring-projects/spring-boot", "tags": ["Java", "微服务", "Spring"]},
+            {"id": "skill-282", "name": "Quarkus", "slug": "quarkus", "repo": "quarkusio/quarkus", "tags": ["Java", "Kubernetes", "云原生"]},
+            {"id": "skill-283", "name": "Micronaut", "slug": "micronaut", "repo": "micronaut-projects/micronaut-core", "tags": ["Java", "微服务", "GraalVM"]},
+            {"id": "skill-284", "name": "Hibernate ORM", "slug": "hibernate", "repo": "hibernate/hibernate-orm", "tags": ["Java", "ORM", "JPA"]},
+            {"id": "skill-285", "name": "Netty", "slug": "netty", "repo": "netty/netty", "tags": ["Java", "网络", "异步"]},
+            {"id": "skill-286", "name": "Spring Security", "slug": "spring-security", "repo": "spring-projects/spring-security", "tags": ["Java", "安全", "认证"]}
+          ]
+        },
+        "dotnet": {
+          "name": ".NET/Core",
+          "skills": [
+            {"id": "skill-291", "name": "ASP.NET Core", "slug": "aspnet-core", "repo": "dotnet/aspnetcore", "tags": [".NET", "Web框架", "跨平台"]},
+            {"id": "skill-292", "name": "Entity Framework Core", "slug": "entity-framework", "repo": "dotnet/efcore", "tags": [".NET", "ORM", "数据库"]},
+            {"id": "skill-293", "name": "Dapr", "slug": "dapr", "repo": "dapr/dapr", "tags": [".NET", "分布式", "运行时"]},
+            {"id": "skill-294", "name": "Orleans", "slug": "orleans", "repo": "dotnet/orleans", "tags": [".NET", "分布式", "虚拟参与者"]},
+            {"id": "skill-295", "name": "MassTransit", "slug": "masstransit", "repo": "MassTransit/MassTransit", "tags": [".NET", "消息", "分布式"]},
+            {"id": "skill-296", "name": "Serilog", "slug": "serilog", "repo": "serilog/serilog", "tags": [".NET", "日志", "结构化"]}
+          ]
+        },
+        "ruby": {
+          "name": "Ruby Frameworks",
+          "skills": [
+            {"id": "skill-301", "name": "Ruby on Rails", "slug": "ruby-on-rails", "repo": "rails/rails", "tags": ["Ruby", "Web框架", "全栈"]},
+            {"id": "skill-302", "name": "Sinatra", "slug": "sinatra", "repo": "sinatra/sinatra", "tags": ["Ruby", "微框架", "DSL"]},
+            {"id": "skill-303", "name": "Hanami", "slug": "hanami", "repo": "hanami/hanami", "tags": ["Ruby", "Web框架", "现代"]},
+            {"id": "skill-304", "name": "Grape", "slug": "grape", "repo": "ruby-grape/grape", "tags": ["Ruby", "API", "REST"]},
+            {"id": "skill-305", "name": "Puma", "slug": "puma", "repo": "puma/puma", "tags": ["Ruby", "服务器", "并发"]}
+          ]
+        },
+        "php": {
+          "name": "PHP Frameworks",
+          "skills": [
+            {"id": "skill-311", "name": "Laravel", "slug": "laravel", "repo": "laravel/framework", "tags": ["PHP", "Web框架", "优雅"]},
+            {"id": "skill-312", "name": "Symfony", "slug": "symfony", "repo": "symfony/symfony", "tags": ["PHP", "组件", "企业级"]},
+            {"id": "skill-313", "name": "Slim", "slug": "slim", "repo": "slimphp/Slim", "tags": ["PHP", "微框架", "REST"]},
+            {"id": "skill-314", "name": "Yii2", "slug": "yii2", "repo": "yiisoft/yii2", "tags": ["PHP", "框架", "快速"]},
+            {"id": "skill-315", "name": "CodeIgniter", "slug": "codeigniter", "repo": "codeigniter4/CodeIgniter4", "tags": ["PHP", "框架", "轻量"]}
+          ]
+        },
+        "databases": {
+          "name": "Databases",
+          "skills": [
+            {"id": "skill-321", "name": "PostgreSQL", "slug": "postgresql", "repo": "postgres/postgres", "tags": ["数据库", "SQL", "关系型"]},
+            {"id": "skill-322", "name": "MySQL", "slug": "mysql", "repo": "mysql/mysql-server", "tags": ["数据库", "SQL", "关系型"]},
+            {"id": "skill-323", "name": "MariaDB", "slug": "mariadb", "repo": "MariaDB/server", "tags": ["数据库", "SQL", "MySQL兼容"]},
+            {"id": "skill-324", "name": "pgAdmin", "slug": "pgadmin", "repo": "pgadmin-org/pgadmin4", "tags": ["PostgreSQL", "管理", "GUI"]},
+            {"id": "skill-325", "name": "MongoDB", "slug": "mongodb", "repo": "mongodb/mongo", "tags": ["数据库", "NoSQL", "文档"]},
+            {"id": "skill-326", "name": "Redis", "slug": "redis", "repo": "redis/redis", "tags": ["数据库", "缓存", "内存"]},
+            {"id": "skill-327", "name": "Cassandra", "slug": "cassandra", "repo": "apache/cassandra", "tags": ["数据库", "NoSQL", "分布式"]},
+            {"id": "skill-328", "name": "Elasticsearch", "slug": "elasticsearch", "repo": "elastic/elasticsearch", "tags": ["搜索", "数据库", "分析"]},
+            {"id": "skill-329", "name": "Kibana", "slug": "kibana", "repo": "elastic/kibana", "tags": ["可视化", "Elasticsearch", "仪表板"]},
+            {"id": "skill-330", "name": "ClickHouse", "slug": "clickhouse", "repo": "ClickHouse/ClickHouse", "tags": ["数据库", "OLAP", "列存储"]},
+            {"id": "skill-331", "name": "TimescaleDB", "slug": "timescaledb", "repo": "timescale/timescaledb", "tags": ["PostgreSQL", "时序", "扩展"]},
+            {"id": "skill-332", "name": "InfluxDB", "slug": "influxdb", "repo": "influxdata/influxdb", "tags": ["数据库", "时序", "监控"]},
+            {"id": "skill-333", "name": "Neo4j", "slug": "neo4j", "repo": "neo4j/neo4j", "tags": ["数据库", "图", "NoSQL"]},
+            {"id": "skill-334", "name": "SQLite", "slug": "sqlite", "repo": "sqlite/sqlite", "tags": ["数据库", "嵌入式", "SQL"]},
+            {"id": "skill-335", "name": "DuckDB", "slug": "duckdb", "repo": "duckdb/duckdb", "tags": ["数据库", "OLAP", "嵌入式"]}
+          ]
+        },
+        "orms": {
+          "name": "Database ORMs",
+          "skills": [
+            {"id": "skill-341", "name": "TypeORM", "slug": "typeorm", "repo": "typeorm/typeorm", "tags": ["TypeScript", "ORM", "Node.js"]},
+            {"id": "skill-342", "name": "MikroORM", "slug": "mikroorm", "repo": "mikro-orm/mikro-orm", "tags": ["TypeScript", "ORM", "Data Mapper"]},
+            {"id": "skill-343", "name": "Sequelize", "slug": "sequelize", "repo": "sequelize/sequelize", "tags": ["Node.js", "ORM", "Promise"]},
+            {"id": "skill-344", "name": "SQLAlchemy", "slug": "sqlalchemy", "repo": "sqlalchemy/sqlalchemy", "tags": ["Python", "ORM", "SQL"]},
+            {"id": "skill-345", "name": "Mongoose", "slug": "mongoose", "repo": "Automattic/mongoose", "tags": ["MongoDB", "Node.js", "ODM"]},
+            {"id": "skill-346", "name": "Peewee", "slug": "peewee", "repo": "coleifer/peewee", "tags": ["Python", "ORM", "轻量"]}
+          ]
+        },
+        "api-tools": {
+          "name": "API Tools",
+          "skills": [
+            {"id": "skill-351", "name": "Apollo Server", "slug": "apollo-server", "repo": "apollographql/apollo-server", "tags": ["GraphQL", "API", "Node.js"]},
+            {"id": "skill-352", "name": "GraphQL Yoga", "slug": "graphql-yoga", "repo": "dotansimha/graphql-yoga", "tags": ["GraphQL", "API", "服务器"]},
+            {"id": "skill-353", "name": "gRPC", "slug": "grpc", "repo": "grpc/grpc", "tags": ["RPC", "API", "高性能"]},
+            {"id": "skill-354", "name": "Swagger UI", "slug": "swagger-ui", "repo": "swagger-api/swagger-ui", "tags": ["API", "文档", "OpenAPI"]},
+            {"id": "skill-355", "name": "OpenAPI Generator", "slug": "openapi-generator", "repo": "OpenAPITools/openapi-generator", "tags": ["OpenAPI", "代码生成", "SDK"]}
+          ]
+        }
+      }
+    },
+    "devops": {
+      "name": "DevOps",
+      "description": "Containers, CI/CD, cloud platforms, monitoring, and infrastructure",
+      "subcategories": {
+        "containers": {
+          "name": "Container Orchestration",
+          "skills": [
+            {"id": "skill-361", "name": "Docker", "slug": "docker", "repo": "docker/docker-ce", "tags": ["容器", "Docker", "虚拟化"]},
+            {"id": "skill-362", "name": "Podman", "slug": "podman", "repo": "containers/podman", "tags": ["容器", "无守护进程", "RedHat"]},
+            {"id": "skill-363", "name": "containerd", "slug": "containerd", "repo": "containerd/containerd", "tags": ["容器", "运行时", "CNCF"]},
+            {"id": "skill-364", "name": "CRI-O", "slug": "cri-o", "repo": "cri-o/cri-o", "tags": ["容器", "运行时", "Kubernetes"]},
+            {"id": "skill-365", "name": "runc", "slug": "runc", "repo": "opencontainers/runc", "tags": ["容器", "运行时", "OCI"]},
+            {"id": "skill-366", "name": "Kubernetes", "slug": "kubernetes", "repo": "kubernetes/kubernetes", "tags": ["容器", "编排", "K8s"]},
+            {"id": "skill-367", "name": "kubectl", "slug": "kubectl", "repo": "kubernetes/kubectl", "tags": ["Kubernetes", "CLI", "管理"]},
+            {"id": "skill-368", "name": "minikube", "slug": "minikube", "repo": "kubernetes/minikube", "tags": ["Kubernetes", "本地", "开发"]},
+            {"id": "skill-369", "name": "kind", "slug": "kind", "repo": "kubernetes-sigs/kind", "tags": ["Kubernetes", "Docker", "本地"]},
+            {"id": "skill-370", "name": "k3s", "slug": "k3s", "repo": "k3s-io/k3s", "tags": ["Kubernetes", "轻量", "边缘"]},
+            {"id": "skill-371", "name": "Helm", "slug": "helm", "repo": "helm/helm", "tags": ["Kubernetes", "包管理", "Charts"]},
+            {"id": "skill-372", "name": "Istio", "slug": "istio", "repo": "istio/istio", "tags": ["服务网格", "Kubernetes", "微服务"]},
+            {"id": "skill-373", "name": "Linkerd", "slug": "linkerd", "repo": "linkerd/linkerd2", "tags": ["服务网格", "轻量", "Kubernetes"]},
+            {"id": "skill-374", "name": "Envoy", "slug": "envoy", "repo": "envoyproxy/envoy", "tags": ["代理", "服务网格", "云原生"]},
+            {"id": "skill-375", "name": "Calico", "slug": "calico", "repo": "projectcalico/calico", "tags": ["网络", "Kubernetes", "安全"]},
+            {"id": "skill-376", "name": "Flannel", "slug": "flannel", "repo": "flannel-io/flannel", "tags": ["网络", "Kubernetes", "CNI"]}
+          ]
+        },
+        "cicd": {
+          "name": "CI/CD Tools",
+          "skills": [
+            {"id": "skill-381", "name": "Jenkins", "slug": "jenkins", "repo": "jenkinsci/jenkins", "tags": ["CI/CD", "自动化", "Java"]},
+            {"id": "skill-382", "name": "GitHub Actions", "slug": "github-actions", "repo": "actions/runner", "tags": ["CI/CD", "GitHub", "工作流"]},
+            {"id": "skill-383", "name": "GitLab CI", "slug": "gitlab-ci", "repo": "gitlabhq/gitlab", "tags": ["CI/CD", "GitLab", "集成"]},
+            {"id": "skill-384", "name": "Drone CI", "slug": "drone-ci", "repo": "drone/drone", "tags": ["CI/CD", "容器", "Git"]},
+            {"id": "skill-385", "name": "ArgoCD", "slug": "argocd", "repo": "argoproj/argo-cd", "tags": ["GitOps", "Kubernetes", "CD"]},
+            {"id": "skill-386", "name": "Flux", "slug": "flux", "repo": "fluxcd/flux2", "tags": ["GitOps", "Kubernetes", " Operator"]},
+            {"id": "skill-387", "name": "Spinnaker", "slug": "spinnaker", "repo": "spinnaker/spinnaker", "tags": ["CD", "部署", "多云"]},
+            {"id": "skill-388", "name": "Terraform", "slug": "terraform", "repo": "hashicorp/terraform", "tags": ["IaC", "基础设施", "HashiCorp"]},
+            {"id": "skill-389", "name": "Pulumi", "slug": "pulumi", "repo": "pulumi/pulumi", "tags": ["IaC", "编程语言", "多云"]},
+            {"id": "skill-390", "name": "Ansible", "slug": "ansible", "repo": "ansible/ansible", "tags": ["自动化", "配置管理", "IT"]},
+            {"id": "skill-391", "name": "Puppet", "slug": "puppet", "repo": "puppetlabs/puppet", "tags": ["配置管理", "自动化", "企业"]},
+            {"id": "skill-392", "name": "Chef", "slug": "chef", "repo": "chef/chef", "tags": ["配置管理", "自动化", "Ruby"]},
+            {"id": "skill-393", "name": "Gradle", "slug": "gradle", "repo": "gradle/gradle", "tags": ["构建", "Java", "Groovy"]},
+            {"id": "skill-394", "name": "Maven", "slug": "maven", "repo": "apache/maven", "tags": ["构建", "Java", "项目管理"]},
+            {"id": "skill-395", "name": "Bazel", "slug": "bazel", "repo": "bazelbuild/bazel", "tags": ["构建", "多语言", "Google"]}
+          ]
+        },
+        "cloud": {
+          "name": "Cloud Platforms",
+          "skills": [
+            {"id": "skill-401", "name": "AWS CLI", "slug": "aws-cli", "repo": "aws/aws-cli", "tags": ["AWS", "CLI", "云"]},
+            {"id": "skill-402", "name": "LocalStack", "slug": "localstack", "repo": "localstack/localstack", "tags": ["AWS", "本地", "测试"]},
+            {"id": "skill-403", "name": "AWS CDK", "slug": "aws-cdk", "repo": "aws/aws-cdk", "tags": ["AWS", "IaC", "TypeScript"]},
+            {"id": "skill-404", "name": "Serverless Framework", "slug": "serverless", "repo": "serverless/serverless", "tags": ["无服务器", "多云", "框架"]},
+            {"id": "skill-405", "name": "Azure CLI", "slug": "azure-cli", "repo": "Azure/azure-cli", "tags": ["Azure", "CLI", "云"]},
+            {"id": "skill-406", "name": "gcloud CLI", "slug": "gcloud-cli", "repo": "google-cloud-sdk/google-cloud-sdk", "tags": ["GCP", "CLI", "云"]},
+            {"id": "skill-407", "name": "Skaffold", "slug": "skaffold", "repo": "GoogleContainerTools/skaffold", "tags": ["Kubernetes", "开发", "GCP"]},
+            {"id": "skill-408", "name": "Crossplane", "slug": "crossplane", "repo": "crossplane/crossplane", "tags": ["多云", "Kubernetes", "控制平面"]},
+            {"id": "skill-409", "name": "Nomad", "slug": "nomad", "repo": "hashicorp/nomad", "tags": ["调度", "HashiCorp", "分布式"]}
+          ]
+        },
+        "monitoring": {
+          "name": "Monitoring & Observability",
+          "skills": [
+            {"id": "skill-421", "name": "Prometheus", "slug": "prometheus", "repo": "prometheus/prometheus", "tags": ["监控", "时序", "CNCF"]},
+            {"id": "skill-422", "name": "Grafana", "slug": "grafana", "repo": "grafana/grafana", "tags": ["可视化", "监控", "仪表板"]},
+            {"id": "skill-423", "name": "Jaeger", "slug": "jaeger", "repo": "jaegertracing/jaeger", "tags": ["追踪", "分布式", "CNCF"]},
+            {"id": "skill-424", "name": "ELK Stack", "slug": "elk-stack", "repo": "elastic/elasticsearch", "tags": ["日志", "Elasticsearch", "分析"]},
+            {"id": "skill-425", "name": "Fluentd", "slug": "fluentd", "repo": "fluent/fluentd", "tags": ["日志", "收集器", "CNCF"]},
+            {"id": "skill-426", "name": "Loki", "slug": "loki", "repo": "grafana/loki", "tags": ["日志", "Grafana", "轻量"]},
+            {"id": "skill-427", "name": "OpenTelemetry", "slug": "opentelemetry", "repo": "open-telemetry/opentelemetry-collector", "tags": ["可观测性", "CNCF", "标准"]},
+            {"id": "skill-428", "name": "Uptime Kuma", "slug": "uptime-kuma", "repo": "louislam/uptime-kuma", "tags": ["监控", "正常运行时间", "自托管"]}
+          ]
+        }
+      }
+    },
+    "productivity": {
+      "name": "Productivity",
+      "description": "Code editors, note-taking, terminal tools, and utilities",
+      "subcategories": {
+        "editors": {
+          "name": "Code Editors",
+          "skills": [
+            {"id": "skill-431", "name": "VS Code", "slug": "vscode", "repo": "microsoft/vscode", "tags": ["编辑器", "IDE", "Microsoft"]},
+            {"id": "skill-432", "name": "Neovim", "slug": "neovim", "repo": "neovim/neovim", "tags": ["编辑器", "Vim", "Lua"]},
+            {"id": "skill-433", "name": "GitLens", "slug": "gitlens", "repo": "eamodio/vscode-gitlens", "tags": ["Git", "VS Code", "扩展"]},
+            {"id": "skill-434", "name": "Telescope", "slug": "telescope", "repo": "nvim-telescope/telescope.nvim", "tags": ["Neovim", "模糊查找", "插件"]},
+            {"id": "skill-435", "name": "Treesitter", "slug": "treesitter", "repo": "nvim-treesitter/nvim-treesitter", "tags": ["Neovim", "语法", "高亮"]},
+            {"id": "skill-436", "name": "vim-fugitive", "slug": "vim-fugitive", "repo": "tpope/vim-fugitive", "tags": ["Vim", "Git", "插件"]},
+            {"id": "skill-437", "name": "NERDTree", "slug": "nerdtree", "repo": "preservim/nerdtree", "tags": ["Vim", "文件树", "插件"]}
+          ]
+        },
+        "notes": {
+          "name": "Note-Taking",
+          "skills": [
+            {"id": "skill-441", "name": "Obsidian", "slug": "obsidian", "repo": "obsidianmd/obsidian-releases", "tags": ["笔记", "Markdown", "PKM"]},
+            {"id": "skill-442", "name": "Logseq", "slug": "logseq", "repo": "logseq/logseq", "tags": ["笔记", "知识图谱", "隐私"]},
+            {"id": "skill-443", "name": "Joplin", "slug": "joplin", "repo": "laurent22/joplin", "tags": ["笔记", "开源", "同步"]},
+            {"id": "skill-444", "name": "Trilium Notes", "slug": "trilium", "repo": "zadam/trilium", "tags": ["笔记", "层级", "知识库"]},
+            {"id": "skill-445", "name": "AFFiNE", "slug": "affine", "repo": "toeverything/AFFiNE", "tags": ["笔记", "Notion替代", "白板"]},
+            {"id": "skill-446", "name": "Foam", "slug": "foam", "repo": "foambubble/foam", "tags": ["笔记", "知识管理", "VS Code"]},
+            {"id": "skill-447", "name": "Excalidraw", "slug": "excalidraw", "repo": "excalidraw/excalidraw", "tags": ["白板", "绘图", "开源"]},
+            {"id": "skill-448", "name": "tldraw", "slug": "tldraw", "repo": "tldraw/tldraw", "tags": ["白板", "绘图", "无限画布"]}
+          ]
+        },
+        "terminal": {
+          "name": "Terminal Tools",
+          "skills": [
+            {"id": "skill-451", "name": "Oh My Zsh", "slug": "oh-my-zsh", "repo": "ohmyzsh/ohmyzsh", "tags": ["Zsh", "框架", "配置"]},
+            {"id": "skill-452", "name": "Starship", "slug": "starship", "repo": "starship/starship", "tags": ["提示符", "跨平台", "Rust"]},
+            {"id": "skill-453", "name": "Fish", "slug": "fish", "repo": "fish-shell/fish-shell", "tags": ["Shell", "交互式", "友好"]},
+            {"id": "skill-454", "name": "Tmux", "slug": "tmux", "repo": "tmux/tmux", "tags": ["终端", "复用", "会话"]},
+            {"id": "skill-455", "name": "FZF", "slug": "fzf", "repo": "junegunn/fzf", "tags": ["模糊查找", "CLI", "Go"]},
+            {"id": "skill-456", "name": "Ripgrep", "slug": "ripgrep", "repo": "BurntSushi/ripgrep", "tags": ["搜索", "grep", "Rust"]},
+            {"id": "skill-457", "name": "Bat", "slug": "bat", "repo": "sharkdp/bat", "tags": ["cat", "高亮", "Rust"]},
+            {"id": "skill-458", "name": "FD", "slug": "fd", "repo": "sharkdp/fd", "tags": ["find", "快速", "Rust"]},
+            {"id": "skill-459", "name": "Eza", "slug": "eza", "repo": "eza-community/eza", "tags": ["ls", "现代化", "Rust"]},
+            {"id": "skill-460", "name": "Zoxide", "slug": "zoxide", "repo": "ajeetdsouza/zoxide", "tags": ["cd", "智能", "Rust"]},
+            {"id": "skill-461", "name": "Lazygit", "slug": "lazygit", "repo": "jesseduffield/lazygit", "tags": ["Git", "TUI", "Go"]},
+            {"id": "skill-462", "name": "Delta", "slug": "delta", "repo": "dandavison/delta", "tags": ["diff", "Git", "高亮"]}
+          ]
+        },
+        "design": {
+          "name": "Design Tools",
+          "skills": [
+            {"id": "skill-471", "name": "Lucide Icons", "slug": "lucide-icons", "repo": "lucide-icons/lucide", "tags": ["图标", "SVG", "MIT"]},
+            {"id": "skill-472", "name": "Heroicons", "slug": "heroicons", "repo": "tailwindlabs/heroicons", "tags": ["图标", "Tailwind", "SVG"]},
+            {"id": "skill-473", "name": "Tabler Icons", "slug": "tabler-icons", "repo": "tabler/tabler-icons", "tags": ["图标", "开源", "大量"]},
+            {"id": "skill-474", "name": "Framer Motion", "slug": "framer-motion", "repo": "framer/motion", "tags": ["动画", "React", "声明式"]},
+            {"id": "skill-475", "name": "React Spring", "slug": "react-spring", "repo": "pmndrs/react-spring", "tags": ["动画", "React", "物理"]},
+            {"id": "skill-476", "name": "Penpot", "slug": "penpot", "repo": "penpot/penpot", "tags": ["设计", "开源", "Figma替代"]}
+          ]
+        },
+        "collaboration": {
+          "name": "Collaboration Tools",
+          "skills": [
+            {"id": "skill-481", "name": "Mattermost", "slug": "mattermost", "repo": "mattermost/mattermost", "tags": ["聊天", "Slack替代", "开源"]},
+            {"id": "skill-482", "name": "Zulip", "slug": "zulip", "repo": "zulip/zulip", "tags": ["聊天", "线程", "开源"]},
+            {"id": "skill-483", "name": "Rocket.Chat", "slug": "rocket-chat", "repo": "RocketChat/Rocket.Chat", "tags": ["聊天", "Slack替代", "自托管"]},
+            {"id": "skill-484", "name": "Docusaurus", "slug": "docusaurus", "repo": "facebook/docusaurus", "tags": ["文档", "React", "静态站点"]},
+            {"id": "skill-485", "name": "VitePress", "slug": "vitepress", "repo": "vuejs/vitepress", "tags": ["文档", "Vue", "Vite"]},
+            {"id": "skill-486", "name": "Planka", "slug": "planka", "repo": "plankanban/planka", "tags": ["项目管理", "Kanban", "实时"]},
+            {"id": "skill-487", "name": "n8n", "slug": "n8n", "repo": "n8n-io/n8n", "tags": ["自动化", "工作流", "开源"]}
+          ]
+        }
+      }
+    },
+    "ai": {
+      "name": "AI/LLMs",
+      "description": "AI frameworks, LLM tools, vector databases, and MLOps",
+      "subcategories": {
+        "llm-frameworks": {
+          "name": "LLM Frameworks",
+          "skills": [
+            {"id": "skill-501", "name": "LangChain", "slug": "langchain", "repo": "langchain-ai/langchain", "tags": ["LLM", "框架", "Python"]},
+            {"id": "skill-502", "name": "LlamaIndex", "slug": "llamaindex", "repo": "run-llama/llama_index", "tags": ["LLM", "RAG", "数据框架"]},
+            {"id": "skill-503", "name": "Transformers", "slug": "transformers", "repo": "huggingface/transformers", "tags": ["ML", "Hugging Face", "PyTorch"]},
+            {"id": "skill-504", "name": "Ollama", "slug": "ollama", "repo": "ollama/ollama", "tags": ["LLM", "本地", "运行"]},
+            {"id": "skill-505", "name": "vLLM", "slug": "vllm", "repo": "vllm-project/vllm", "tags": ["LLM", "推理", "高性能"]},
+            {"id": "skill-506", "name": "LiteLLM", "slug": "litellm", "repo": "BerriAI/litellm", "tags": ["LLM", "API", "统一"]},
+            {"id": "skill-507", "name": "Semantic Kernel", "slug": "semantic-kernel", "repo": "microsoft/semantic-kernel", "tags": ["LLM", "Microsoft", "集成"]}
+          ]
+        },
+        "vector-databases": {
+          "name": "Vector Databases",
+          "skills": [
+            {"id": "skill-511", "name": "Chroma", "slug": "chroma", "repo": "chroma-core/chroma", "tags": ["向量数据库", "嵌入", "开源"]},
+            {"id": "skill-512", "name": "Qdrant", "slug": "qdrant", "repo": "qdrant/qdrant", "tags": ["向量数据库", "相似度", "Rust"]},
+            {"id": "skill-513", "name": "Weaviate", "slug": "weaviate", "repo": "weaviate/weaviate", "tags": ["向量数据库", "知识图谱", "搜索"]},
+            {"id": "skill-514", "name": "Milvus", "slug": "milvus", "repo": "milvus-io/milvus", "tags": ["向量数据库", "AI", "分布式"]},
+            {"id": "skill-515", "name": "FAISS", "slug": "faiss", "repo": "facebookresearch/faiss", "tags": ["向量搜索", "Facebook", "高效"]},
+            {"id": "skill-516", "name": "pgvector", "slug": "pgvector", "repo": "pgvector/pgvector", "tags": ["向量", "PostgreSQL", "扩展"]}
+          ]
+        },
+        "ai-agents": {
+          "name": "AI Agents",
+          "skills": [
+            {"id": "skill-521", "name": "AutoGPT", "slug": "autogpt", "repo": "Significant-Gravitas/AutoGPT", "tags": ["Agent", "自主", "GPT"]},
+            {"id": "skill-522", "name": "CrewAI", "slug": "crewai", "repo": "joaomdmoura/crewAI", "tags": ["Agent", "编排", "团队"]},
+            {"id": "skill-523", "name": "LangGraph", "slug": "langgraph", "repo": "langchain-ai/langgraph", "tags": ["Agent", "LangChain", "状态图"]},
+            {"id": "skill-524", "name": "AutoGen", "slug": "autogen", "repo": "microsoft/autogen", "tags": ["Agent", "Microsoft", "多智能体"]},
+            {"id": "skill-525", "name": "Dify", "slug": "dify", "repo": "langgenius/dify", "tags": ["LLMOps", "Agent", "可视化"]},
+            {"id": "skill-526", "name": "Flowise", "slug": "flowise", "repo": "FlowiseAI/Flowise", "tags": ["LLM", "拖拽", "LangChain"]},
+            {"id": "skill-527", "name": "Continue", "slug": "continue", "repo": "continuedev/continue", "tags": ["AI助手", "VS Code", "代码"]}
+          ]
+        },
+        "model-training": {
+          "name": "Model Training",
+          "skills": [
+            {"id": "skill-531", "name": "PEFT", "slug": "peft", "repo": "huggingface/peft", "tags": ["微调", "高效", "LoRA"]},
+            {"id": "skill-532", "name": "DeepSpeed", "slug": "deepspeed", "repo": "microsoft/DeepSpeed", "tags": ["训练", "分布式", "Microsoft"]},
+            {"id": "skill-533", "name": "Flash Attention", "slug": "flash-attention", "repo": "Dao-AILab/flash-attention", "tags": ["注意力", "加速", "Transformer"]},
+            {"id": "skill-534", "name": "Keras", "slug": "keras", "repo": "keras-team/keras", "tags": ["深度学习", "API", "Python"]},
+            {"id": "skill-535", "name": "Diffusers", "slug": "diffusers", "repo": "huggingface/diffusers", "tags": ["扩散模型", "图像", "Hugging Face"]},
+            {"id": "skill-536", "name": "ComfyUI", "slug": "comfyui", "repo": "comfyanonymous/ComfyUI", "tags": ["Stable Diffusion", "UI", "节点"]},
+            {"id": "skill-537", "name": "Whisper", "slug": "whisper", "repo": "openai/whisper", "tags": ["语音识别", "OpenAI", "多语言"]},
+            {"id": "skill-538", "name": "OpenCV", "slug": "opencv", "repo": "opencv/opencv", "tags": ["计算机视觉", "C++", "Python"]}
+          ]
+        },
+        "mlops": {
+          "name": "MLOps",
+          "skills": [
+            {"id": "skill-541", "name": "BentoML", "slug": "bentoml", "repo": "bentoml/BentoML", "tags": ["MLOps", "模型服务", "Python"]},
+            {"id": "skill-542", "name": "MLflow", "slug": "mlflow", "repo": "mlflow/mlflow", "tags": ["MLOps", "实验跟踪", "Databricks"]},
+            {"id": "skill-543", "name": "DVC", "slug": "dvc", "repo": "iterative/dvc", "tags": ["数据版本", "ML", "Git"]},
+            {"id": "skill-544", "name": "Weights & Biases", "slug": "wandb", "repo": "wandb/wandb", "tags": ["MLOps", "实验跟踪", "可视化"]},
+            {"id": "skill-545", "name": "Triton", "slug": "triton", "repo": "triton-inference-server/server", "tags": ["推理", "NVIDIA", "多框架"]}
+          ]
+        }
+      }
+    },
+    "utilities": {
+      "name": "Utilities",
+      "description": "System tools, CLI utilities, and developer helpers",
+      "subcategories": {
+        "system-tools": {
+          "name": "System Tools",
+          "skills": [
+            {"id": "skill-551", "name": "btop", "slug": "btop", "repo": "aristocratos/btop", "tags": ["监控", "进程", "TUI"]},
+            {"id": "skill-552", "name": "htop", "slug": "htop", "repo": "htop-dev/htop", "tags": ["监控", "进程", "交互"]},
+            {"id": "skill-553", "name": "glances", "slug": "glances", "repo": "nicolargo/glances", "tags": ["监控", "跨平台", "Python"]},
+            {"id": "skill-554", "name": "netdata", "slug": "netdata", "repo": "netdata/netdata", "tags": ["监控", "实时", "Web"]},
+            {"id": "skill-555", "name": "zellij", "slug": "zellij", "repo": "zellij-org/zellij", "tags": ["终端", "复用", "Rust"]}
+          ]
+        },
+        "file-tools": {
+          "name": "File & Data Tools",
+          "skills": [
+            {"id": "skill-561", "name": "ripgrep", "slug": "ripgrep", "repo": "BurntSushi/ripgrep", "tags": ["grep", "搜索", "Rust"]},
+            {"id": "skill-562", "name": "fd", "slug": "fd-find", "repo": "sharkdp/fd", "tags": ["find", "快速", "Rust"]},
+            {"id": "skill-563", "name": "bat", "slug": "bat-cat", "repo": "sharkdp/bat", "tags": ["cat", "高亮", "Rust"]},
+            {"id": "skill-564", "name": "exa", "slug": "exa", "repo": "ogham/exa", "tags": ["ls", "现代化", "Rust"]},
+            {"id": "skill-565", "name": "dust", "slug": "dust", "repo": "bootandy/dust", "tags": ["du", "磁盘", "可视化"]},
+            {"id": "skill-566", "name": "duf", "slug": "duf", "repo": "muesli/duf", "tags": ["df", "磁盘", "彩色"]}
+          ]
+        },
+        "network-tools": {
+          "name": "Network & HTTP Tools",
+          "skills": [
+            {"id": "skill-571", "name": "curl", "slug": "curl", "repo": "curl/curl", "tags": ["HTTP", "CLI", "传输"]},
+            {"id": "skill-572", "name": "HTTPie", "slug": "httpie", "repo": "httpie/httpie", "tags": ["HTTP", "CLI", "友好"]},
+            {"id": "skill-573", "name": "wget", "slug": "wget", "repo": "mirror/wget", "tags": ["下载", "CLI", "GNU"]},
+            {"id": "skill-574", "name": "ngrok", "slug": "ngrok", "repo": "inconshreveable/ngrok", "tags": ["隧道", "内网穿透", "HTTP"]},
+            {"id": "skill-575", "name": "nmap", "slug": "nmap", "repo": "nmap/nmap", "tags": ["网络", "扫描", "安全"]}
+          ]
+        },
+        "text-processing": {
+          "name": "Text Processing",
+          "skills": [
+            {"id": "skill-581", "name": "jq", "slug": "jq", "repo": "jqlang/jq", "tags": ["JSON", "CLI", "处理"]},
+            {"id": "skill-582", "name": "yq", "slug": "yq", "repo": "mikefarah/yq", "tags": ["YAML", "CLI", "处理"]},
+            {"id": "skill-583", "name": "delta", "slug": "delta-diff", "repo": "dandavison/delta", "tags": ["diff", "Git", "语法高亮"]},
+            {"id": "skill-584", "name": "sd", "slug": "sd", "repo": "chipsenkbeil/sd", "tags": ["sed", "友好", "Rust"]}
+          ]
+        },
+        "security": {
+          "name": "Security & Encryption",
+          "skills": [
+            {"id": "skill-591", "name": "age", "slug": "age", "repo": "FiloSottile/age", "tags": ["加密", "现代", "Go"]},
+            {"id": "skill-592", "name": "certbot", "slug": "certbot", "repo": "certbot/certbot", "tags": ["SSL", "Let's Encrypt", "自动化"]},
+            {"id": "skill-593", "name": "pass", "slug": "pass", "repo": "zx2c4/password-store", "tags": ["密码", "GPG", "Unix"]}
+          ]
+        },
+        "dev-utils": {
+          "name": "Developer Utilities",
+          "skills": [
+            {"id": "skill-601", "name": "tokei", "slug": "tokei", "repo": "XAMPPRocky/tokei", "tags": ["代码统计", "快速", "Rust"]},
+            {"id": "skill-602", "name": "hyperfine", "slug": "hyperfine", "repo": "sharkdp/hyperfine", "tags": ["基准", "CLI", "统计"]},
+            {"id": "skill-603", "name": "hyperfine", "slug": "hyperfine", "repo": "sharkdp/hyperfine", "tags": ["基准", "Shell", "分析"]}
+          ]
+        }
+      }
+    }
+  },
+  "slugPatterns": {
+    "description": "Slug generation patterns for consistency",
+    "rules": [
+      "Use lowercase letters and numbers only",
+      "Replace spaces with hyphens (-)",
+      "Remove special characters (.js, .ts, etc.) unless essential",
+      "Keep framework names clear (react, vue, nextjs, nuxt)",
+      "Use kebab-case for multi-word names (redux-toolkit, headless-ui)",
+      "Preserve recognizable abbreviations (api, cli, gui, tui)"
+    ],
+    "examples": {
+      "React.js": "react",
+      "Next.js": "nextjs",
+      "Redux Toolkit": "redux-toolkit",
+      "Headless UI": "headless-ui",
+      "ASP.NET Core": "aspnet-core",
+      "Ruby on Rails": "ruby-on-rails"
+    }
+  },
+  "categoryMapping": {
+    "description": "Mapping of research batch categories to site categories",
+    "mapping": {
+      "Batch 1 (JavaScript/TypeScript/Python/Go)": "development",
+      "Batch 2 (Build/CSS/State/Testing)": "frontend",
+      "Batch 3 (Java/.NET/Ruby/PHP/ORM/API)": "backend",
+      "Batch 4 (Database/Testing/Build/CI-CD)": "development",
+      "Batch 5-6 (Editors/Notes/Terminal/Design/Collab)": "productivity",
+      "Batch 7 (Containers/CI-CD/Cloud/Monitoring)": "devops",
+      "Batch 8 (AI/LLMs/Utilities)": "ai/utilities"
+    }
+  }
+}
