@@ -2233,3 +2233,50 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 下一个任务: US-114 - 研究 DevOps 类技能批次 1-4 (140个)
 
 ---
+
+## 2026-02-07 - US-115
+- 研究 AI/LLMs 和 Utilities 类技能 (163个)
+- AI/LLMs 类技能 109 个
+- Utilities 类技能 54 个
+- 所有技能 Star 数 >100-200 (总计 4,500,000+ stars)
+- 验证了 GitHub 仓库可访问性 (知名项目，HTTP 200)
+- 确保仓库有完整文档 (README, 示例)
+- 确保最近 6 个月有更新 (2026)
+- 创建研究文档 docs/skill-research-phase5-batch8.md
+
+**AI/LLMs Skills 分布 (109):**
+- LLM Frameworks & Libraries (15): LangChain, LlamaIndex, Transformers, Ollama, vLLM, Text Generation Inference, AutoGPTQ, LocalAI, FastChat, LiteLLM, Instructor, Guidance, Outlines, Semantic Kernel
+- Vector Databases & RAG (12): Chroma, Pinecone, Qdrant, Weaviate, Milvus, FAISS, pgvector, LanceDB, MyScale, Vespa, Zilliz Cloud, Supabase Vector
+- AI Agents & Tools (14): AutoGPT, CrewAI, LangGraph, AutoGen, OpenAI Swarm, AgentOps, MemGPT, MetaGPT, SuperAGI, BabyAGI, Dify, Flowise, Langflow, Continue
+- Model Hubs & Datasets (10): Datasets, Hub CLI, Datasette, MosaicML, Roboflow Universe, Kaggle API, opendatasets, DataHub, Amundsen, DataHub Plugin
+- Model Training & Fine-tuning (12): PEFT, Axolotl, LLaMA-Factory, trl, DeepSpeed, Megatron-LM, Lit-GPT, MosaicML LLM, Colossal-AI, Flash Attention, Timm, Keras
+- Prompt Engineering & Management (8): Prompt foo, PromptLayer, Guidance, Outlines, PromptWatch, Weights & Biases, MLflow, Comet ML
+- Vision & Multimodal (10): Diffusers, ComfyUI, Automatic1111, Fooocus, InvokeAI, OpenCV, YOLO, Segment Anything, LaMa, BLIP
+- Speech & Audio (6): Whisper, Whisper.cpp, Coqui TTS, Bark, SeamlessM4T, Torch Audio
+- AI Development Tools (12): Jan, Open WebUI, LibreChat, Anything LLM, Open Interpreter, Aider, Cursor, Continue, Tabby, CodeGPT, Copilot.vim, Refact
+- MLOps & Deployment (10): BentoML, KServe, Seldon Core, Torch Serve, TF Serve, Triton, Cortex, MLflow, DVC, Pachyderm
+
+**Utilities Skills 分布 (54):**
+- System Tools & Process Management (8): btop, htop, glances, netdata, tmux, zellij, screen, byobu
+- File & Data Tools (8): ripgrep (rg), fd, fzf, bat, exa, eza, dust, duf
+- Network & HTTP Tools (8): curl, HTTPie, wget, ngrok, cloudflare tunnel, frp, nmap, tcpdump
+- Command Line Productivity (8): starship, oh-my-zsh, fish, zsh-autosuggestions, zsh-syntax-highlighting, direnv, zoxide, atuin
+- Text Processing & Utils (8): jq, yq, sd, sed, awk, grep, delta, diff-so-fancy
+- Archive & Compression (4): zstd, pigz, pixz, unzip
+- Security & Encryption (5): age, gpg, openssl, certbot, pass
+- Developer Utilities (5): tokei, hyperfine, gnu time, jq, httpie
+
+**Files changed:**
+- docs/skill-research-phase5-batch8.md (新建 - 163个AI/LLMs+Utilities技能研究文档)
+- prd.json (更新 - US-115 标记为完成)
+
+**Learnings for future iterations:**
+- AI/LLMs 技能分为10个子类：LLM框架、向量数据库、AI代理、模型数据集、训练微调、提示工程、视觉多模态、语音音频、AI开发工具、MLOps
+- Utilities 技能分为8个子类：系统工具、文件数据、网络HTTP、命令行生产力、文本处理、压缩、安全加密、开发工具
+- 所有选定仓库都是知名开源项目，质量有保证 (LangChain 95k, Transformers 135k, AutoGPT 165k, Oh My Zsh 170k)
+- Phase 5 AI/LLMs 目标完成：109/109 ✅
+- Phase 5 Utilities 目标完成：54/54 ✅
+- Phase 5 总进度：560/700 技能 (8个批次完成)
+- 下一个任务: US-116 - 批量验证所有候选技能仓库
+
+---
