@@ -1,0 +1,1985 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e6] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e7]:
+      - img [ref=e8]
+    - generic [ref=e11]:
+      - button "Open issues overlay" [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]: "7"
+          - generic [ref=e15]: "8"
+        - generic [ref=e16]:
+          - text: Issue
+          - generic [ref=e17]: s
+      - button "Collapse issues badge" [ref=e18]:
+        - img [ref=e19]
+  - alert [ref=e21]
+  - generic [ref=e22]:
+    - banner [ref=e23]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - heading "OpenClaw 实战指南" [level=1] [ref=e27]
+          - paragraph [ref=e28]: 让 AI 助手真正帮你工作
+        - searchbox "搜索教程、技能和配置" [ref=e31]
+    - main [ref=e32]:
+      - generic [ref=e33]:
+        - heading "全部教程" [level=1] [ref=e34]
+        - paragraph [ref=e35]: 探索完整的 OpenClaw 教程库，从入门到精通
+        - paragraph [ref=e36]: 共 100 个教程
+      - generic [ref=e38]:
+        - button "全部 (100)" [ref=e39] [cursor=pointer]
+        - button "快速入门 (3)" [ref=e40] [cursor=pointer]
+        - button "开发实战 (67)" [ref=e41] [cursor=pointer]
+        - button "DevOps (16)" [ref=e42] [cursor=pointer]
+        - button "工作效率 (6)" [ref=e43] [cursor=pointer]
+        - button "AI与大模型 (3)" [ref=e44] [cursor=pointer]
+        - button "实用工具 (1)" [ref=e45] [cursor=pointer]
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - link "5 分钟上手 OpenClaw" [ref=e51] [cursor=pointer]:
+              - /url: /tutorial/getting-started-with-openclaw
+            - generic [ref=e52]: 快速了解 OpenClaw 的基本概念和安装方法，帮助你快速入门这个强大的 AI 助手框架。
+          - generic [ref=e53]:
+            - generic [ref=e54]:
+              - generic [ref=e55]: 入门
+              - generic [ref=e56]: 5 分钟阅读
+              - generic [ref=e57]: •
+              - generic [ref=e58]: 1250 次浏览
+            - generic [ref=e59]:
+              - generic [ref=e60]: skill-001
+              - generic [ref=e61]: skill-002
+              - generic [ref=e62]: skill-004
+          - generic [ref=e63]:
+            - link "开始阅读" [ref=e64] [cursor=pointer]:
+              - /url: /tutorial/getting-started-with-openclaw
+            - button "取消收藏" [ref=e65] [cursor=pointer]:
+              - img
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - link "配置你的第一个 Agent" [ref=e70] [cursor=pointer]:
+              - /url: /tutorial/configuring-your-first-agent
+            - generic [ref=e71]: 学习如何配置和自定义你的第一个 OpenClaw Agent，包括系统提示词、技能绑定和参数设置。
+          - generic [ref=e72]:
+            - generic [ref=e73]:
+              - generic [ref=e74]: 入门
+              - generic [ref=e75]: 10 分钟阅读
+              - generic [ref=e76]: •
+              - generic [ref=e77]: 890 次浏览
+            - generic [ref=e78]:
+              - generic [ref=e79]: skill-001
+              - generic [ref=e80]: skill-008
+              - generic [ref=e81]: skill-011
+          - generic [ref=e82]:
+            - link "开始阅读" [ref=e83] [cursor=pointer]:
+              - /url: /tutorial/configuring-your-first-agent
+            - button "取消收藏" [ref=e84] [cursor=pointer]:
+              - img
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - link "GitHub 集成实战" [ref=e89] [cursor=pointer]:
+              - /url: /tutorial/github-integration-practice
+            - generic [ref=e90]: 学习如何使用 OpenClaw 的 GitHub 技能进行仓库管理、PR 自动化和 Issue 跟踪，提高开发效率。
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - generic [ref=e93]: 进阶
+              - generic [ref=e94]: 15 分钟阅读
+              - generic [ref=e95]: •
+              - generic [ref=e96]: 650 次浏览
+            - generic [ref=e97]:
+              - generic [ref=e98]: skill-001
+              - generic [ref=e99]: skill-005
+              - generic [ref=e100]: skill-012
+          - generic [ref=e101]:
+            - link "开始阅读" [ref=e102] [cursor=pointer]:
+              - /url: /tutorial/github-integration-practice
+            - button "收藏教程" [ref=e103] [cursor=pointer]:
+              - img
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - link "OpenClaw CLI 完全指南" [ref=e108] [cursor=pointer]:
+              - /url: /tutorial/openclaw-cli-complete-guide
+            - generic [ref=e109]: 全面掌握 OpenClaw CLI 命令行工具，包括所有核心命令、配置选项和高级用法。
+          - generic [ref=e110]:
+            - generic [ref=e111]:
+              - generic [ref=e112]: 入门
+              - generic [ref=e113]: 8 分钟阅读
+              - generic [ref=e114]: •
+              - generic [ref=e115]: 420 次浏览
+            - generic [ref=e116]:
+              - generic [ref=e117]: skill-001
+              - generic [ref=e118]: skill-021
+              - generic [ref=e119]: skill-008
+          - generic [ref=e120]:
+            - link "开始阅读" [ref=e121] [cursor=pointer]:
+              - /url: /tutorial/openclaw-cli-complete-guide
+            - button "收藏教程" [ref=e122] [cursor=pointer]:
+              - img
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - link "使用 Slack 技能实现团队协作" [ref=e127] [cursor=pointer]:
+              - /url: /tutorial/slack-team-collaboration
+            - generic [ref=e128]: 学习如何使用 OpenClaw 的 Slack 技能进行消息自动化、团队沟通和工作流集成。
+          - generic [ref=e129]:
+            - generic [ref=e130]:
+              - generic [ref=e131]: 入门
+              - generic [ref=e132]: 10 分钟阅读
+              - generic [ref=e133]: •
+              - generic [ref=e134]: 380 次浏览
+            - generic [ref=e135]:
+              - generic [ref=e136]: skill-017
+              - generic [ref=e137]: skill-001
+              - generic [ref=e138]: skill-018
+          - generic [ref=e139]:
+            - link "开始阅读" [ref=e140] [cursor=pointer]:
+              - /url: /tutorial/slack-team-collaboration
+            - button "收藏教程" [ref=e141] [cursor=pointer]:
+              - img
+        - generic [ref=e142]:
+          - generic [ref=e143]:
+            - link "Notion 集成实战" [ref=e146] [cursor=pointer]:
+              - /url: /tutorial/notion-integration-practice
+            - generic [ref=e147]: 深入学习 Notion API 集成，掌握数据库操作、页面管理和自动化工作流。
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - generic [ref=e150]: 入门
+              - generic [ref=e151]: 12 分钟阅读
+              - generic [ref=e152]: •
+              - generic [ref=e153]: 340 次浏览
+            - generic [ref=e154]:
+              - generic [ref=e155]: skill-018
+              - generic [ref=e156]: skill-030
+              - generic [ref=e157]: skill-017
+          - generic [ref=e158]:
+            - link "开始阅读" [ref=e159] [cursor=pointer]:
+              - /url: /tutorial/notion-integration-practice
+            - button "收藏教程" [ref=e160] [cursor=pointer]:
+              - img
+        - generic [ref=e161]:
+          - generic [ref=e162]:
+            - link "AWS 基础设施管理" [ref=e165] [cursor=pointer]:
+              - /url: /tutorial/aws-infrastructure-management
+            - generic [ref=e166]: 学习使用 OpenClaw 管理 AWS 基础设施，包括 EC2、S3、Lambda 等核心服务。
+          - generic [ref=e167]:
+            - generic [ref=e168]:
+              - generic [ref=e169]: 进阶
+              - generic [ref=e170]: 15 分钟阅读
+              - generic [ref=e171]: •
+              - generic [ref=e172]: 290 次浏览
+            - generic [ref=e173]:
+              - generic [ref=e174]: skill-019
+              - generic [ref=e175]: skill-034
+              - generic [ref=e176]: skill-012
+          - generic [ref=e177]:
+            - link "开始阅读" [ref=e178] [cursor=pointer]:
+              - /url: /tutorial/aws-infrastructure-management
+            - button "收藏教程" [ref=e179] [cursor=pointer]:
+              - img
+        - generic [ref=e180]:
+          - generic [ref=e181]:
+            - link "Kubernetes 集群管理" [ref=e184] [cursor=pointer]:
+              - /url: /tutorial/kubernetes-cluster-management
+            - generic [ref=e185]: 深入学习 Kubernetes 集群管理，包括部署、服务发现、监控和故障排查。
+          - generic [ref=e186]:
+            - generic [ref=e187]:
+              - generic [ref=e188]: 进阶
+              - generic [ref=e189]: 18 分钟阅读
+              - generic [ref=e190]: •
+              - generic [ref=e191]: 260 次浏览
+            - generic [ref=e192]:
+              - generic [ref=e193]: skill-020
+              - generic [ref=e194]: skill-012
+              - generic [ref=e195]: skill-034
+          - generic [ref=e196]:
+            - link "开始阅读" [ref=e197] [cursor=pointer]:
+              - /url: /tutorial/kubernetes-cluster-management
+            - button "收藏教程" [ref=e198] [cursor=pointer]:
+              - img
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - link "Docker 容器化部署" [ref=e203] [cursor=pointer]:
+              - /url: /tutorial/docker-container-deployment
+            - generic [ref=e204]: 全面学习 Docker 容器化技术，包括镜像构建、容器编排和部署最佳实践。
+          - generic [ref=e205]:
+            - generic [ref=e206]:
+              - generic [ref=e207]: 进阶
+              - generic [ref=e208]: 12 分钟阅读
+              - generic [ref=e209]: •
+              - generic [ref=e210]: 310 次浏览
+            - generic [ref=e211]:
+              - generic [ref=e212]: skill-012
+              - generic [ref=e213]: skill-020
+              - generic [ref=e214]: skill-005
+          - generic [ref=e215]:
+            - link "开始阅读" [ref=e216] [cursor=pointer]:
+              - /url: /tutorial/docker-container-deployment
+            - button "收藏教程" [ref=e217] [cursor=pointer]:
+              - img
+        - generic [ref=e218]:
+          - generic [ref=e219]:
+            - link "FFmpeg 多媒体处理" [ref=e222] [cursor=pointer]:
+              - /url: /tutorial/ffmpeg-multimedia-processing
+            - generic [ref=e223]: 深入掌握 FFmpeg 多媒体处理，包括视频转码、音频处理和批量操作。
+          - generic [ref=e224]:
+            - generic [ref=e225]:
+              - generic [ref=e226]: 高级
+              - generic [ref=e227]: 20 分钟阅读
+              - generic [ref=e228]: •
+              - generic [ref=e229]: 180 次浏览
+            - generic [ref=e230]:
+              - generic [ref=e231]: skill-010
+              - generic [ref=e232]: skill-040
+              - generic [ref=e233]: skill-009
+          - generic [ref=e234]:
+            - link "开始阅读" [ref=e235] [cursor=pointer]:
+              - /url: /tutorial/ffmpeg-multimedia-processing
+            - button "收藏教程" [ref=e236] [cursor=pointer]:
+              - img
+        - generic [ref=e237]:
+          - generic [ref=e238]:
+            - link "Python 自动化入门" [ref=e241] [cursor=pointer]:
+              - /url: /tutorial/python-automation-basics
+            - generic [ref=e242]: 学习如何使用 OpenClaw 进行 Python 自动化脚本编写，包括文件操作、数据处理和日常任务自动化。
+          - generic [ref=e243]:
+            - generic [ref=e244]:
+              - generic [ref=e245]: 入门
+              - generic [ref=e246]: 10 分钟阅读
+              - generic [ref=e247]: •
+              - generic [ref=e248]: 250 次浏览
+            - generic [ref=e249]:
+              - generic [ref=e250]: skill-023
+              - generic [ref=e251]: skill-002
+          - generic [ref=e252]:
+            - link "开始阅读" [ref=e253] [cursor=pointer]:
+              - /url: /tutorial/python-automation-basics
+            - button "收藏教程" [ref=e254] [cursor=pointer]:
+              - img
+        - generic [ref=e255]:
+          - generic [ref=e256]:
+            - link "Node.js 开发实战" [ref=e259] [cursor=pointer]:
+              - /url: /tutorial/nodejs-development-practice
+            - generic [ref=e260]: 掌握使用 OpenClaw 进行 Node.js 后端开发，包括 API 设计、数据库连接和部署。
+          - generic [ref=e261]:
+            - generic [ref=e262]:
+              - generic [ref=e263]: 入门
+              - generic [ref=e264]: 12 分钟阅读
+              - generic [ref=e265]: •
+              - generic [ref=e266]: 230 次浏览
+            - generic [ref=e267]:
+              - generic [ref=e268]: skill-022
+              - generic [ref=e269]: skill-011
+              - generic [ref=e270]: skill-005
+          - generic [ref=e271]:
+            - link "开始阅读" [ref=e272] [cursor=pointer]:
+              - /url: /tutorial/nodejs-development-practice
+            - button "收藏教程" [ref=e273] [cursor=pointer]:
+              - img
+        - generic [ref=e274]:
+          - generic [ref=e275]:
+            - link "Git 版本控制精通" [ref=e278] [cursor=pointer]:
+              - /url: /tutorial/git-version-control-mastery
+            - generic [ref=e279]: 深入学习 Git 版本控制，包括分支管理、合并策略和团队协作工作流。
+          - generic [ref=e280]:
+            - generic [ref=e281]:
+              - generic [ref=e282]: 入门
+              - generic [ref=e283]: 8 分钟阅读
+              - generic [ref=e284]: •
+              - generic [ref=e285]: 280 次浏览
+            - generic [ref=e286]:
+              - generic [ref=e287]: skill-021
+              - generic [ref=e288]: skill-001
+              - generic [ref=e289]: skill-037
+          - generic [ref=e290]:
+            - link "开始阅读" [ref=e291] [cursor=pointer]:
+              - /url: /tutorial/git-version-control-mastery
+            - button "收藏教程" [ref=e292] [cursor=pointer]:
+              - img
+        - generic [ref=e293]:
+          - generic [ref=e294]:
+            - link "数据分析自动化" [ref=e297] [cursor=pointer]:
+              - /url: /tutorial/data-analysis-automation
+            - generic [ref=e298]: 使用 OpenClaw 进行数据分析自动化，包括数据清洗、可视化和报告生成。
+          - generic [ref=e299]:
+            - generic [ref=e300]:
+              - generic [ref=e301]: 入门
+              - generic [ref=e302]: 15 分钟阅读
+              - generic [ref=e303]: •
+              - generic [ref=e304]: 210 次浏览
+            - generic [ref=e305]:
+              - generic [ref=e306]: skill-023
+              - generic [ref=e307]: skill-002
+          - generic [ref=e308]:
+            - link "开始阅读" [ref=e309] [cursor=pointer]:
+              - /url: /tutorial/data-analysis-automation
+            - button "收藏教程" [ref=e310] [cursor=pointer]:
+              - img
+        - generic [ref=e311]:
+          - generic [ref=e312]:
+            - link "邮件自动化处理" [ref=e315] [cursor=pointer]:
+              - /url: /tutorial/email-automation
+            - generic [ref=e316]: 学习使用 OpenClaw 进行邮件自动化，包括批量发送、邮件过滤和自动回复。
+          - generic [ref=e317]:
+            - generic [ref=e318]:
+              - generic [ref=e319]: 入门
+              - generic [ref=e320]: 12 分钟阅读
+              - generic [ref=e321]: •
+              - generic [ref=e322]: 195 次浏览
+            - generic [ref=e323]:
+              - generic [ref=e324]: skill-023
+              - generic [ref=e325]: skill-017
+          - generic [ref=e326]:
+            - link "开始阅读" [ref=e327] [cursor=pointer]:
+              - /url: /tutorial/email-automation
+            - button "收藏教程" [ref=e328] [cursor=pointer]:
+              - img
+        - generic [ref=e329]:
+          - generic [ref=e330]:
+            - link "任务管理系统集成" [ref=e333] [cursor=pointer]:
+              - /url: /tutorial/task-management-integration
+            - generic [ref=e334]: 学习如何集成各种任务管理工具，包括 Jira、Trello 和 Asana 的自动化操作。
+          - generic [ref=e335]:
+            - generic [ref=e336]:
+              - generic [ref=e337]: 入门
+              - generic [ref=e338]: 14 分钟阅读
+              - generic [ref=e339]: •
+              - generic [ref=e340]: 175 次浏览
+            - generic [ref=e341]:
+              - generic [ref=e342]: skill-026
+              - generic [ref=e343]: skill-027
+              - generic [ref=e344]: skill-028
+          - generic [ref=e345]:
+            - link "开始阅读" [ref=e346] [cursor=pointer]:
+              - /url: /tutorial/task-management-integration
+            - button "收藏教程" [ref=e347] [cursor=pointer]:
+              - img
+        - generic [ref=e348]:
+          - generic [ref=e349]:
+            - link "笔记和知识管理" [ref=e352] [cursor=pointer]:
+              - /url: /tutorial/note-taking-knowledge-management
+            - generic [ref=e353]: 掌握使用 OpenClaw 进行笔记整理和知识管理，包括 Notion 自动化和智能归档。
+          - generic [ref=e354]:
+            - generic [ref=e355]:
+              - generic [ref=e356]: 入门
+              - generic [ref=e357]: 13 分钟阅读
+              - generic [ref=e358]: •
+              - generic [ref=e359]: 160 次浏览
+            - generic [ref=e360]:
+              - generic [ref=e361]: skill-018
+              - generic [ref=e362]: skill-023
+          - generic [ref=e363]:
+            - link "开始阅读" [ref=e364] [cursor=pointer]:
+              - /url: /tutorial/note-taking-knowledge-management
+            - button "收藏教程" [ref=e365] [cursor=pointer]:
+              - img
+        - generic [ref=e366]:
+          - generic [ref=e367]:
+            - link "Rust 系统编程入门" [ref=e370] [cursor=pointer]:
+              - /url: /tutorial/rust-system-programming
+            - generic [ref=e371]: 深入学习 Rust 系统编程，包括内存安全、并发编程和性能优化技巧。
+          - generic [ref=e372]:
+            - generic [ref=e373]:
+              - generic [ref=e374]: 进阶
+              - generic [ref=e375]: 18 分钟阅读
+              - generic [ref=e376]: •
+              - generic [ref=e377]: 280 次浏览
+            - generic [ref=e379]: skill-024
+          - generic [ref=e380]:
+            - link "开始阅读" [ref=e381] [cursor=pointer]:
+              - /url: /tutorial/rust-system-programming
+            - button "收藏教程" [ref=e382] [cursor=pointer]:
+              - img
+        - generic [ref=e383]:
+          - generic [ref=e384]:
+            - link "Go 微服务开发" [ref=e387] [cursor=pointer]:
+              - /url: /tutorial/go-microservices-development
+            - generic [ref=e388]: 使用 Go 构建高性能微服务，包括 gRPC、服务发现和负载均衡。
+          - generic [ref=e389]:
+            - generic [ref=e390]:
+              - generic [ref=e391]: 进阶
+              - generic [ref=e392]: 20 分钟阅读
+              - generic [ref=e393]: •
+              - generic [ref=e394]: 320 次浏览
+            - generic [ref=e396]: skill-025
+          - generic [ref=e397]:
+            - link "开始阅读" [ref=e398] [cursor=pointer]:
+              - /url: /tutorial/go-microservices-development
+            - button "收藏教程" [ref=e399] [cursor=pointer]:
+              - img
+        - generic [ref=e400]:
+          - generic [ref=e401]:
+            - link "云原生应用开发" [ref=e404] [cursor=pointer]:
+              - /url: /tutorial/cloud-native-development
+            - generic [ref=e405]: 深入云原生应用开发，包括容器化、服务网格和可观测性。
+          - generic [ref=e406]:
+            - generic [ref=e407]:
+              - generic [ref=e408]: 进阶
+              - generic [ref=e409]: 25 分钟阅读
+              - generic [ref=e410]: •
+              - generic [ref=e411]: 350 次浏览
+            - generic [ref=e412]:
+              - generic [ref=e413]: skill-012
+              - generic [ref=e414]: skill-020
+          - generic [ref=e415]:
+            - link "开始阅读" [ref=e416] [cursor=pointer]:
+              - /url: /tutorial/cloud-native-development
+            - button "收藏教程" [ref=e417] [cursor=pointer]:
+              - img
+        - generic [ref=e418]:
+          - generic [ref=e419]:
+            - link "CI/CD 完整实践" [ref=e422] [cursor=pointer]:
+              - /url: /tutorial/ci-cd-complete-practice
+            - generic [ref=e423]: 构建完整的 CI/CD 流水线，包括测试、构建、部署和监控。
+          - generic [ref=e424]:
+            - generic [ref=e425]:
+              - generic [ref=e426]: 进阶
+              - generic [ref=e427]: 22 分钟阅读
+              - generic [ref=e428]: •
+              - generic [ref=e429]: 380 次浏览
+            - generic [ref=e430]:
+              - generic [ref=e431]: skill-036
+              - generic [ref=e432]: skill-037
+          - generic [ref=e433]:
+            - link "开始阅读" [ref=e434] [cursor=pointer]:
+              - /url: /tutorial/ci-cd-complete-practice
+            - button "收藏教程" [ref=e435] [cursor=pointer]:
+              - img
+        - generic [ref=e436]:
+          - generic [ref=e437]:
+            - link "基础设施即代码" [ref=e440] [cursor=pointer]:
+              - /url: /tutorial/infrastructure-as-code
+            - generic [ref=e441]: 使用 Terraform 和 Ansible 实现基础设施即代码，实现可重复的部署。
+          - generic [ref=e442]:
+            - generic [ref=e443]:
+              - generic [ref=e444]: 进阶
+              - generic [ref=e445]: 20 分钟阅读
+              - generic [ref=e446]: •
+              - generic [ref=e447]: 340 次浏览
+            - generic [ref=e448]:
+              - generic [ref=e449]: skill-034
+              - generic [ref=e450]: skill-035
+          - generic [ref=e451]:
+            - link "开始阅读" [ref=e452] [cursor=pointer]:
+              - /url: /tutorial/infrastructure-as-code
+            - button "收藏教程" [ref=e453] [cursor=pointer]:
+              - img
+        - generic [ref=e454]:
+          - generic [ref=e455]:
+            - link "监控和告警系统" [ref=e458] [cursor=pointer]:
+              - /url: /tutorial/monitoring-alerting-systems
+            - generic [ref=e459]: 构建完整的监控告警系统，包括指标收集、可视化和智能告警。
+          - generic [ref=e460]:
+            - generic [ref=e461]:
+              - generic [ref=e462]: 进阶
+              - generic [ref=e463]: 18 分钟阅读
+              - generic [ref=e464]: •
+              - generic [ref=e465]: 310 次浏览
+            - generic [ref=e467]: skill-036
+          - generic [ref=e468]:
+            - link "开始阅读" [ref=e469] [cursor=pointer]:
+              - /url: /tutorial/monitoring-alerting-systems
+            - button "收藏教程" [ref=e470] [cursor=pointer]:
+              - img
+        - generic [ref=e471]:
+          - generic [ref=e472]:
+            - link "AI 驱动的代码审查" [ref=e475] [cursor=pointer]:
+              - /url: /tutorial/ai-powered-code-review
+            - generic [ref=e476]: 使用 AI 技术进行自动化代码审查，提高代码质量和团队效率。
+          - generic [ref=e477]:
+            - generic [ref=e478]:
+              - generic [ref=e479]: 进阶
+              - generic [ref=e480]: 15 分钟阅读
+              - generic [ref=e481]: •
+              - generic [ref=e482]: 290 次浏览
+            - generic [ref=e483]:
+              - generic [ref=e484]: skill-038
+              - generic [ref=e485]: skill-008
+          - generic [ref=e486]:
+            - link "开始阅读" [ref=e487] [cursor=pointer]:
+              - /url: /tutorial/ai-powered-code-review
+            - button "收藏教程" [ref=e488] [cursor=pointer]:
+              - img
+        - generic [ref=e489]:
+          - generic [ref=e490]:
+            - link "大语言模型应用开发" [ref=e493] [cursor=pointer]:
+              - /url: /tutorial/llm-application-development
+            - generic [ref=e494]: 学习构建基于大语言模型的应用，包括 RAG、Agent 和 Function Calling。
+          - generic [ref=e495]:
+            - generic [ref=e496]:
+              - generic [ref=e497]: 进阶
+              - generic [ref=e498]: 25 分钟阅读
+              - generic [ref=e499]: •
+              - generic [ref=e500]: 360 次浏览
+            - generic [ref=e501]:
+              - generic [ref=e502]: skill-038
+              - generic [ref=e503]: skill-007
+              - generic [ref=e504]: skill-002
+          - generic [ref=e505]:
+            - link "开始阅读" [ref=e506] [cursor=pointer]:
+              - /url: /tutorial/llm-application-development
+            - button "收藏教程" [ref=e507] [cursor=pointer]:
+              - img
+        - generic [ref=e508]:
+          - generic [ref=e509]:
+            - link "分布式系统设计" [ref=e512] [cursor=pointer]:
+              - /url: /tutorial/distributed-systems-design
+            - generic [ref=e513]: 深入分布式系统设计原理，包括一致性模型、CAP 定理、分布式事务和容错机制。
+          - generic [ref=e514]:
+            - generic [ref=e515]:
+              - generic [ref=e516]: 高级
+              - generic [ref=e517]: 30 分钟阅读
+              - generic [ref=e518]: •
+              - generic [ref=e519]: 180 次浏览
+            - generic [ref=e520]:
+              - generic [ref=e521]: skill-020
+              - generic [ref=e522]: skill-025
+              - generic [ref=e523]: skill-012
+          - generic [ref=e524]:
+            - link "开始阅读" [ref=e525] [cursor=pointer]:
+              - /url: /tutorial/distributed-systems-design
+            - button "收藏教程" [ref=e526] [cursor=pointer]:
+              - img
+        - generic [ref=e527]:
+          - generic [ref=e528]:
+            - link "高性能数据库优化" [ref=e531] [cursor=pointer]:
+              - /url: /tutorial/high-performance-database-optimization
+            - generic [ref=e532]: 深入数据库性能优化，包括索引策略、查询调优、分库分表和缓存优化。
+          - generic [ref=e533]:
+            - generic [ref=e534]:
+              - generic [ref=e535]: 高级
+              - generic [ref=e536]: 35 分钟阅读
+              - generic [ref=e537]: •
+              - generic [ref=e538]: 165 次浏览
+            - generic [ref=e539]:
+              - generic [ref=e540]: skill-023
+              - generic [ref=e541]: skill-022
+          - generic [ref=e542]:
+            - link "开始阅读" [ref=e543] [cursor=pointer]:
+              - /url: /tutorial/high-performance-database-optimization
+            - button "收藏教程" [ref=e544] [cursor=pointer]:
+              - img
+        - generic [ref=e545]:
+          - generic [ref=e546]:
+            - link "边缘计算和 Serverless" [ref=e549] [cursor=pointer]:
+              - /url: /tutorial/edge-computing-serverless
+            - generic [ref=e550]: 构建全球分布的边缘应用，使用 Cloudflare Workers 和 Vercel Edge Functions 实现 Serverless 架构。
+          - generic [ref=e551]:
+            - generic [ref=e552]:
+              - generic [ref=e553]: 高级
+              - generic [ref=e554]: 28 分钟阅读
+              - generic [ref=e555]: •
+              - generic [ref=e556]: 142 次浏览
+            - generic [ref=e557]:
+              - generic [ref=e558]: skill-006
+              - generic [ref=e559]: skill-005
+          - generic [ref=e560]:
+            - link "开始阅读" [ref=e561] [cursor=pointer]:
+              - /url: /tutorial/edge-computing-serverless
+            - button "收藏教程" [ref=e562] [cursor=pointer]:
+              - img
+        - generic [ref=e563]:
+          - generic [ref=e564]:
+            - link "多模态 AI 应用" [ref=e567] [cursor=pointer]:
+              - /url: /tutorial/multimodal-ai-applications
+            - generic [ref=e568]: 构建处理文本、图像、音频的多模态 AI 应用，使用 Claude、GPT-4 Vision 和 Whisper 等模型。
+          - generic [ref=e569]:
+            - generic [ref=e570]:
+              - generic [ref=e571]: 高级
+              - generic [ref=e572]: 32 分钟阅读
+              - generic [ref=e573]: •
+              - generic [ref=e574]: 198 次浏览
+            - generic [ref=e575]:
+              - generic [ref=e576]: skill-038
+              - generic [ref=e577]: skill-039
+              - generic [ref=e578]: skill-007
+          - generic [ref=e579]:
+            - link "开始阅读" [ref=e580] [cursor=pointer]:
+              - /url: /tutorial/multimodal-ai-applications
+            - button "收藏教程" [ref=e581] [cursor=pointer]:
+              - img
+        - generic [ref=e582]:
+          - generic [ref=e583]:
+            - link "企业级安全实践" [ref=e586] [cursor=pointer]:
+              - /url: /tutorial/enterprise-security-practices
+            - generic [ref=e587]: 构建安全的企业级应用，包括身份认证、数据加密、合规性管理和安全审计。
+          - generic [ref=e588]:
+            - generic [ref=e589]:
+              - generic [ref=e590]: 高级
+              - generic [ref=e591]: 38 分钟阅读
+              - generic [ref=e592]: •
+              - generic [ref=e593]: 175 次浏览
+            - generic [ref=e594]:
+              - generic [ref=e595]: skill-023
+              - generic [ref=e596]: skill-022
+          - generic [ref=e597]:
+            - link "开始阅读" [ref=e598] [cursor=pointer]:
+              - /url: /tutorial/enterprise-security-practices
+            - button "收藏教程" [ref=e599] [cursor=pointer]:
+              - img
+        - generic [ref=e600]:
+          - generic [ref=e601]:
+            - link "RESTful API 设计入门" [ref=e604] [cursor=pointer]:
+              - /url: /tutorial/restful-api-design-basics
+            - generic [ref=e605]: 学习 RESTful API 设计的基本原则和最佳实践，掌握资源建模、HTTP 方法使用、状态码设计和 API 文档编写。
+          - generic [ref=e606]:
+            - generic [ref=e607]:
+              - generic [ref=e608]: 入门
+              - generic [ref=e609]: 12 分钟阅读
+              - generic [ref=e610]: •
+              - generic [ref=e611]: 120 次浏览
+            - generic [ref=e612]:
+              - generic [ref=e613]: skill-002
+              - generic [ref=e614]: skill-023
+              - generic [ref=e615]: skill-034
+          - generic [ref=e616]:
+            - link "开始阅读" [ref=e617] [cursor=pointer]:
+              - /url: /tutorial/restful-api-design-basics
+            - button "收藏教程" [ref=e618] [cursor=pointer]:
+              - img
+        - generic [ref=e619]:
+          - generic [ref=e620]:
+            - link "前端自动化测试入门" [ref=e623] [cursor=pointer]:
+              - /url: /tutorial/frontend-testing-basics
+            - generic [ref=e624]: 学习前端自动化测试的基础知识，包括单元测试、组件测试和端到端测试，使用 Playwright 和 Jest 构建测试体系。
+          - generic [ref=e625]:
+            - generic [ref=e626]:
+              - generic [ref=e627]: 入门
+              - generic [ref=e628]: 10 分钟阅读
+              - generic [ref=e629]: •
+              - generic [ref=e630]: 95 次浏览
+            - generic [ref=e631]:
+              - generic [ref=e632]: skill-003
+              - generic [ref=e633]: skill-008
+          - generic [ref=e634]:
+            - link "开始阅读" [ref=e635] [cursor=pointer]:
+              - /url: /tutorial/frontend-testing-basics
+            - button "收藏教程" [ref=e636] [cursor=pointer]:
+              - img
+        - generic [ref=e637]:
+          - generic [ref=e638]:
+            - link "数据可视化入门" [ref=e641] [cursor=pointer]:
+              - /url: /tutorial/data-visualization-basics
+            - generic [ref=e642]: 学习使用 D3.js 和 Chart.js 创建交互式数据可视化，将复杂数据转化为清晰的图表和图形。
+          - generic [ref=e643]:
+            - generic [ref=e644]:
+              - generic [ref=e645]: 入门
+              - generic [ref=e646]: 14 分钟阅读
+              - generic [ref=e647]: •
+              - generic [ref=e648]: 88 次浏览
+            - generic [ref=e649]:
+              - generic [ref=e650]: skill-023
+              - generic [ref=e651]: skill-004
+          - generic [ref=e652]:
+            - link "开始阅读" [ref=e653] [cursor=pointer]:
+              - /url: /tutorial/data-visualization-basics
+            - button "收藏教程" [ref=e654] [cursor=pointer]:
+              - img
+        - generic [ref=e655]:
+          - generic [ref=e656]:
+            - link "Web 安全基础" [ref=e659] [cursor=pointer]:
+              - /url: /tutorial/web-security-basics
+            - generic [ref=e660]: 了解常见的 Web 安全漏洞和防护措施，学习如何防止 XSS、CSRF、SQL 注入等攻击。
+          - generic [ref=e661]:
+            - generic [ref=e662]:
+              - generic [ref=e663]: 入门
+              - generic [ref=e664]: 11 分钟阅读
+              - generic [ref=e665]: •
+              - generic [ref=e666]: 112 次浏览
+            - generic [ref=e667]:
+              - generic [ref=e668]: skill-008
+              - generic [ref=e669]: skill-002
+          - generic [ref=e670]:
+            - link "开始阅读" [ref=e671] [cursor=pointer]:
+              - /url: /tutorial/web-security-basics
+            - button "收藏教程" [ref=e672] [cursor=pointer]:
+              - img
+        - generic [ref=e673]:
+          - generic [ref=e674]:
+            - link "GraphQL API 开发" [ref=e677] [cursor=pointer]:
+              - /url: /tutorial/graphql-api-development
+            - generic [ref=e678]: 深入学习 GraphQL API 开发，掌握 Schema 设计、Query/Mutation 编写、DataLoader 和订阅功能。
+          - generic [ref=e679]:
+            - generic [ref=e680]:
+              - generic [ref=e681]: 进阶
+              - generic [ref=e682]: 18 分钟阅读
+              - generic [ref=e683]: •
+              - generic [ref=e684]: 78 次浏览
+            - generic [ref=e685]:
+              - generic [ref=e686]: skill-002
+              - generic [ref=e687]: skill-023
+              - generic [ref=e688]: skill-008
+          - generic [ref=e689]:
+            - link "开始阅读" [ref=e690] [cursor=pointer]:
+              - /url: /tutorial/graphql-api-development
+            - button "收藏教程" [ref=e691] [cursor=pointer]:
+              - img
+        - generic [ref=e692]:
+          - generic [ref=e693]:
+            - link "消息队列和事件驱动架构" [ref=e696] [cursor=pointer]:
+              - /url: /tutorial/message-queues-event-driven
+            - generic [ref=e697]: 学习使用 RabbitMQ、Redis 和 Kafka 构建事件驱动架构，实现异步处理和解耦系统。
+          - generic [ref=e698]:
+            - generic [ref=e699]:
+              - generic [ref=e700]: 进阶
+              - generic [ref=e701]: 20 分钟阅读
+              - generic [ref=e702]: •
+              - generic [ref=e703]: 65 次浏览
+            - generic [ref=e704]:
+              - generic [ref=e705]: skill-045
+              - generic [ref=e706]: skill-002
+          - generic [ref=e707]:
+            - link "开始阅读" [ref=e708] [cursor=pointer]:
+              - /url: /tutorial/message-queues-event-driven
+            - button "收藏教程" [ref=e709] [cursor=pointer]:
+              - img
+        - generic [ref=e710]:
+          - generic [ref=e711]:
+            - link "实时数据库和同步" [ref=e714] [cursor=pointer]:
+              - /url: /tutorial/realtime-database-sync
+            - generic [ref=e715]: 学习实现实时数据同步，使用 WebSocket、Server-Sent Events 和 CRDTs 构建协作应用。
+          - generic [ref=e716]:
+            - generic [ref=e717]:
+              - generic [ref=e718]: 进阶
+              - generic [ref=e719]: 16 分钟阅读
+              - generic [ref=e720]: •
+              - generic [ref=e721]: 62 次浏览
+            - generic [ref=e722]:
+              - generic [ref=e723]: skill-002
+              - generic [ref=e724]: skill-008
+              - generic [ref=e725]: skill-045
+          - generic [ref=e726]:
+            - link "开始阅读" [ref=e727] [cursor=pointer]:
+              - /url: /tutorial/realtime-database-sync
+            - button "收藏教程" [ref=e728] [cursor=pointer]:
+              - img
+        - generic [ref=e729]:
+          - generic [ref=e730]:
+            - link "微前端架构实践" [ref=e733] [cursor=pointer]:
+              - /url: /tutorial/micro-frontend-architecture
+            - generic [ref=e734]: 深入学习微前端架构，掌握模块联邦、独立部署、样式隔离和共享状态管理。
+          - generic [ref=e735]:
+            - generic [ref=e736]:
+              - generic [ref=e737]: 高级
+              - generic [ref=e738]: 25 分钟阅读
+              - generic [ref=e739]: •
+              - generic [ref=e740]: 42 次浏览
+            - generic [ref=e741]:
+              - generic [ref=e742]: skill-008
+              - generic [ref=e743]: skill-012
+              - generic [ref=e744]: skill-020
+          - generic [ref=e745]:
+            - link "开始阅读" [ref=e746] [cursor=pointer]:
+              - /url: /tutorial/micro-frontend-architecture
+            - button "收藏教程" [ref=e747] [cursor=pointer]:
+              - img
+        - generic [ref=e748]:
+          - generic [ref=e749]:
+            - link "大规模系统性能优化" [ref=e752] [cursor=pointer]:
+              - /url: /tutorial/large-scale-performance-optimization
+            - generic [ref=e753]: 学习大规模系统的性能优化技术，包括缓存策略、CDN 优化、数据库调优和前端性能优化。
+          - generic [ref=e754]:
+            - generic [ref=e755]:
+              - generic [ref=e756]: 高级
+              - generic [ref=e757]: 30 分钟阅读
+              - generic [ref=e758]: •
+              - generic [ref=e759]: 38 次浏览
+            - generic [ref=e760]:
+              - generic [ref=e761]: skill-045
+              - generic [ref=e762]: skill-048
+              - generic [ref=e763]: skill-014
+              - generic [ref=e764]: skill-020
+          - generic [ref=e765]:
+            - link "开始阅读" [ref=e766] [cursor=pointer]:
+              - /url: /tutorial/large-scale-performance-optimization
+            - button "收藏教程" [ref=e767] [cursor=pointer]:
+              - img
+        - generic [ref=e768]:
+          - generic [ref=e769]:
+            - link "AI Agent 工作流自动化" [ref=e772] [cursor=pointer]:
+              - /url: /tutorial/ai-agent-workflow-automation
+            - generic [ref=e773]: 深入学习 AI Agent 工作流设计和实现，包括多 Agent 协作、任务编排、工具调用和错误恢复。
+          - generic [ref=e774]:
+            - generic [ref=e775]:
+              - generic [ref=e776]: 高级
+              - generic [ref=e777]: 28 分钟阅读
+              - generic [ref=e778]: •
+              - generic [ref=e779]: 35 次浏览
+            - generic [ref=e780]:
+              - generic [ref=e781]: skill-038
+              - generic [ref=e782]: skill-122
+              - generic [ref=e783]: skill-125
+          - generic [ref=e784]:
+            - link "开始阅读" [ref=e785] [cursor=pointer]:
+              - /url: /tutorial/ai-agent-workflow-automation
+            - button "收藏教程" [ref=e786] [cursor=pointer]:
+              - img
+        - generic [ref=e787]:
+          - generic [ref=e788]:
+            - link "Linux 命令行入门" [ref=e791] [cursor=pointer]:
+              - /url: /tutorial/linux-command-line-basics
+            - generic [ref=e792]: 学习 Linux 命令行基础，包括文件操作、权限管理、常用命令和 Shell 脚本入门。
+          - generic [ref=e793]:
+            - generic [ref=e794]:
+              - generic [ref=e795]: 入门
+              - generic [ref=e796]: 12 分钟阅读
+              - generic [ref=e797]: •
+              - generic [ref=e798]: 120 次浏览
+            - generic [ref=e799]:
+              - generic [ref=e800]: skill-021
+              - generic [ref=e801]: skill-024
+          - generic [ref=e802]:
+            - link "开始阅读" [ref=e803] [cursor=pointer]:
+              - /url: /tutorial/linux-command-line-basics
+            - button "收藏教程" [ref=e804] [cursor=pointer]:
+              - img
+        - generic [ref=e805]:
+          - generic [ref=e806]:
+            - link "SQL 数据库基础" [ref=e809] [cursor=pointer]:
+              - /url: /tutorial/sql-database-basics
+            - generic [ref=e810]: 学习 SQL 数据库基础，包括 SELECT、INSERT、UPDATE、DELETE、JOIN 和索引的使用。
+          - generic [ref=e811]:
+            - generic [ref=e812]:
+              - generic [ref=e813]: 入门
+              - generic [ref=e814]: 14 分钟阅读
+              - generic [ref=e815]: •
+              - generic [ref=e816]: 95 次浏览
+            - generic [ref=e817]:
+              - generic [ref=e818]: skill-062
+              - generic [ref=e819]: skill-063
+          - generic [ref=e820]:
+            - link "开始阅读" [ref=e821] [cursor=pointer]:
+              - /url: /tutorial/sql-database-basics
+            - button "收藏教程" [ref=e822] [cursor=pointer]:
+              - img
+        - generic [ref=e823]:
+          - generic [ref=e824]:
+            - link "HTML/CSS 快速入门" [ref=e827] [cursor=pointer]:
+              - /url: /tutorial/html-css-quick-start
+            - generic [ref=e828]: 学习 HTML 和 CSS 基础，包括 HTML 结构、CSS 样式、盒模型、Flexbox 和响应式设计。
+          - generic [ref=e829]:
+            - generic [ref=e830]:
+              - generic [ref=e831]: 入门
+              - generic [ref=e832]: 15 分钟阅读
+              - generic [ref=e833]: •
+              - generic [ref=e834]: 85 次浏览
+            - generic [ref=e836]: skill-071
+          - generic [ref=e837]:
+            - link "开始阅读" [ref=e838] [cursor=pointer]:
+              - /url: /tutorial/html-css-quick-start
+            - button "收藏教程" [ref=e839] [cursor=pointer]:
+              - img
+        - generic [ref=e840]:
+          - generic [ref=e841]:
+            - link "JavaScript 核心概念" [ref=e844] [cursor=pointer]:
+              - /url: /tutorial/javascript-core-concepts
+            - generic [ref=e845]: 学习 JavaScript 核心概念，包括变量、函数、DOM 操作、事件处理和异步编程。
+          - generic [ref=e846]:
+            - generic [ref=e847]:
+              - generic [ref=e848]: 入门
+              - generic [ref=e849]: 16 分钟阅读
+              - generic [ref=e850]: •
+              - generic [ref=e851]: 110 次浏览
+            - generic [ref=e852]:
+              - generic [ref=e853]: skill-041
+              - generic [ref=e854]: skill-042
+          - generic [ref=e855]:
+            - link "开始阅读" [ref=e856] [cursor=pointer]:
+              - /url: /tutorial/javascript-core-concepts
+            - button "收藏教程" [ref=e857] [cursor=pointer]:
+              - img
+        - generic [ref=e858]:
+          - generic [ref=e859]:
+            - link "TypeScript 入门教程" [ref=e862] [cursor=pointer]:
+              - /url: /tutorial/typescript-basics
+            - generic [ref=e863]: 学习 TypeScript 基础知识，包括类型系统、接口、泛型和高级类型，提升代码质量和开发效率。
+          - generic [ref=e864]:
+            - generic [ref=e865]:
+              - generic [ref=e866]: 入门
+              - generic [ref=e867]: 18 分钟阅读
+              - generic [ref=e868]: •
+              - generic [ref=e869]: 95 次浏览
+            - generic [ref=e871]: skill-041
+          - generic [ref=e872]:
+            - link "开始阅读" [ref=e873] [cursor=pointer]:
+              - /url: /tutorial/typescript-basics
+            - button "收藏教程" [ref=e874] [cursor=pointer]:
+              - img
+        - generic [ref=e875]:
+          - generic [ref=e876]:
+            - link "Docker 容器化入门" [ref=e879] [cursor=pointer]:
+              - /url: /tutorial/docker-basics
+            - generic [ref=e880]: 学习 Docker 容器化技术，包括镜像构建、容器管理、网络配置和数据卷使用。
+          - generic [ref=e881]:
+            - generic [ref=e882]:
+              - generic [ref=e883]: 入门
+              - generic [ref=e884]: 20 分钟阅读
+              - generic [ref=e885]: •
+              - generic [ref=e886]: 88 次浏览
+            - generic [ref=e888]: skill-012
+          - generic [ref=e889]:
+            - link "开始阅读" [ref=e890] [cursor=pointer]:
+              - /url: /tutorial/docker-basics
+            - button "收藏教程" [ref=e891] [cursor=pointer]:
+              - img
+        - generic [ref=e892]:
+          - generic [ref=e893]:
+            - link "Kubernetes 入门教程" [ref=e896] [cursor=pointer]:
+              - /url: /tutorial/kubernetes-basics
+            - generic [ref=e897]: 学习 Kubernetes 容器编排基础，包括 Pod、Deployment、Service 和 ConfigMap 的使用。
+          - generic [ref=e898]:
+            - generic [ref=e899]:
+              - generic [ref=e900]: 入门
+              - generic [ref=e901]: 22 分钟阅读
+              - generic [ref=e902]: •
+              - generic [ref=e903]: 92 次浏览
+            - generic [ref=e904]:
+              - generic [ref=e905]: skill-020
+              - generic [ref=e906]: skill-012
+          - generic [ref=e907]:
+            - link "开始阅读" [ref=e908] [cursor=pointer]:
+              - /url: /tutorial/kubernetes-basics
+            - button "收藏教程" [ref=e909] [cursor=pointer]:
+              - img
+        - generic [ref=e910]:
+          - generic [ref=e911]:
+            - link "Redis 缓存入门" [ref=e914] [cursor=pointer]:
+              - /url: /tutorial/redis-basics
+            - generic [ref=e915]: 学习 Redis 内存数据库基础，包括数据类型、持久化、缓存策略和集群配置。
+          - generic [ref=e916]:
+            - generic [ref=e917]:
+              - generic [ref=e918]: 入门
+              - generic [ref=e919]: 19 分钟阅读
+              - generic [ref=e920]: •
+              - generic [ref=e921]: 78 次浏览
+            - generic [ref=e923]: skill-064
+          - generic [ref=e924]:
+            - link "开始阅读" [ref=e925] [cursor=pointer]:
+              - /url: /tutorial/redis-basics
+            - button "收藏教程" [ref=e926] [cursor=pointer]:
+              - img
+        - generic [ref=e927]:
+          - generic [ref=e928]:
+            - link "Nginx Web 服务器入门" [ref=e931] [cursor=pointer]:
+              - /url: /tutorial/nginx-web-server
+            - generic [ref=e932]: 学习 Nginx Web 服务器配置，包括反向代理、负载均衡、静态文件服务和 SSL/TLS 配置。
+          - generic [ref=e933]:
+            - generic [ref=e934]:
+              - generic [ref=e935]: 入门
+              - generic [ref=e936]: 18 分钟阅读
+              - generic [ref=e937]: •
+              - generic [ref=e938]: 0 次浏览
+            - generic [ref=e940]: skill-037
+          - generic [ref=e941]:
+            - link "开始阅读" [ref=e942] [cursor=pointer]:
+              - /url: /tutorial/nginx-web-server
+            - button "收藏教程" [ref=e943] [cursor=pointer]:
+              - img
+        - generic [ref=e944]:
+          - generic [ref=e945]:
+            - link "Git 进阶技巧" [ref=e948] [cursor=pointer]:
+              - /url: /tutorial/git-advanced-tips
+            - generic [ref=e949]: 掌握 Git 高级用法，包括 rebase、cherry-pick、bisect、子模块和交互式暂存。
+          - generic [ref=e950]:
+            - generic [ref=e951]:
+              - generic [ref=e952]: 入门
+              - generic [ref=e953]: 20 分钟阅读
+              - generic [ref=e954]: •
+              - generic [ref=e955]: 0 次浏览
+            - generic [ref=e957]: skill-004
+          - generic [ref=e958]:
+            - link "开始阅读" [ref=e959] [cursor=pointer]:
+              - /url: /tutorial/git-advanced-tips
+            - button "收藏教程" [ref=e960] [cursor=pointer]:
+              - img
+        - generic [ref=e961]:
+          - generic [ref=e962]:
+            - link "SSH 远程管理入门" [ref=e965] [cursor=pointer]:
+              - /url: /tutorial/ssh-remote-management
+            - generic [ref=e966]: 学习 SSH 远程登录、密钥认证、端口转发、隧道和自动化运维技巧。
+          - generic [ref=e967]:
+            - generic [ref=e968]:
+              - generic [ref=e969]: 入门
+              - generic [ref=e970]: 16 分钟阅读
+              - generic [ref=e971]: •
+              - generic [ref=e972]: 0 次浏览
+            - generic [ref=e973]:
+              - generic [ref=e974]: skill-004
+              - generic [ref=e975]: skill-036
+          - generic [ref=e976]:
+            - link "开始阅读" [ref=e977] [cursor=pointer]:
+              - /url: /tutorial/ssh-remote-management
+            - button "收藏教程" [ref=e978] [cursor=pointer]:
+              - img
+        - generic [ref=e979]:
+          - generic [ref=e980]:
+            - link "正则表达式实战指南" [ref=e983] [cursor=pointer]:
+              - /url: /tutorial/regex-practical-guide
+            - generic [ref=e984]: 掌握正则表达式模式匹配、替换和提取技巧，处理文本和数据验证。
+          - generic [ref=e985]:
+            - generic [ref=e986]:
+              - generic [ref=e987]: 入门
+              - generic [ref=e988]: 17 分钟阅读
+              - generic [ref=e989]: •
+              - generic [ref=e990]: 0 次浏览
+            - generic [ref=e992]: skill-004
+          - generic [ref=e993]:
+            - link "开始阅读" [ref=e994] [cursor=pointer]:
+              - /url: /tutorial/regex-practical-guide
+            - button "收藏教程" [ref=e995] [cursor=pointer]:
+              - img
+        - generic [ref=e996]:
+          - generic [ref=e997]:
+            - link "Markdown 写作规范完全指南" [ref=e1000] [cursor=pointer]:
+              - /url: /tutorial/markdown-writing-guide
+            - generic [ref=e1001]: 学习 Markdown 语法规范，掌握文档写作的最佳实践，创建清晰易读的技术文档。
+          - generic [ref=e1002]:
+            - generic [ref=e1003]:
+              - generic [ref=e1004]: 入门
+              - generic [ref=e1005]: 15 分钟阅读
+              - generic [ref=e1006]: •
+              - generic [ref=e1007]: 0 次浏览
+            - generic [ref=e1008]:
+              - generic [ref=e1009]: skill-138
+              - generic [ref=e1010]: skill-143
+              - generic [ref=e1011]: skill-072
+          - generic [ref=e1012]:
+            - link "开始阅读" [ref=e1013] [cursor=pointer]:
+              - /url: /tutorial/markdown-writing-guide
+            - button "收藏教程" [ref=e1014] [cursor=pointer]:
+              - img
+        - generic [ref=e1015]:
+          - generic [ref=e1016]:
+            - link "YAML 配置文件完全指南" [ref=e1019] [cursor=pointer]:
+              - /url: /tutorial/yaml-configuration-guide
+            - generic [ref=e1020]: 学习 YAML 语法、数据结构、配置文件编写，掌握现代应用的配置管理。
+          - generic [ref=e1021]:
+            - generic [ref=e1022]:
+              - generic [ref=e1023]: 入门
+              - generic [ref=e1024]: 18 分钟阅读
+              - generic [ref=e1025]: •
+              - generic [ref=e1026]: 0 次浏览
+            - generic [ref=e1027]:
+              - generic [ref=e1028]: skill-012
+              - generic [ref=e1029]: skill-020
+              - generic [ref=e1030]: skill-094
+          - generic [ref=e1031]:
+            - link "开始阅读" [ref=e1032] [cursor=pointer]:
+              - /url: /tutorial/yaml-configuration-guide
+            - button "收藏教程" [ref=e1033] [cursor=pointer]:
+              - img
+        - generic [ref=e1034]:
+          - generic [ref=e1035]:
+            - link "JSON 数据格式完全指南" [ref=e1038] [cursor=pointer]:
+              - /url: /tutorial/json-data-format-guide
+            - generic [ref=e1039]: 全面掌握 JSON 数据格式、语法规则、数据操作和最佳实践。
+          - generic [ref=e1040]:
+            - generic [ref=e1041]:
+              - generic [ref=e1042]: 入门
+              - generic [ref=e1043]: 16 分钟阅读
+              - generic [ref=e1044]: •
+              - generic [ref=e1045]: 0 次浏览
+            - generic [ref=e1046]:
+              - generic [ref=e1047]: skill-062
+              - generic [ref=e1048]: skill-063
+              - generic [ref=e1049]: skill-064
+          - generic [ref=e1050]:
+            - link "开始阅读" [ref=e1051] [cursor=pointer]:
+              - /url: /tutorial/json-data-format-guide
+            - button "收藏教程" [ref=e1052] [cursor=pointer]:
+              - img
+        - generic [ref=e1053]:
+          - generic [ref=e1054]:
+            - link "API 设计基础完全指南" [ref=e1057] [cursor=pointer]:
+              - /url: /tutorial/api-design-basics
+            - generic [ref=e1058]: 学习 RESTful API 设计原则、最佳实践、安全性和文档编写，构建高质量 API。
+          - generic [ref=e1059]:
+            - generic [ref=e1060]:
+              - generic [ref=e1061]: 入门
+              - generic [ref=e1062]: 20 分钟阅读
+              - generic [ref=e1063]: •
+              - generic [ref=e1064]: 0 次浏览
+            - generic [ref=e1065]:
+              - generic [ref=e1066]: skill-065
+              - generic [ref=e1067]: skill-054
+              - generic [ref=e1068]: skill-055
+          - generic [ref=e1069]:
+            - link "开始阅读" [ref=e1070] [cursor=pointer]:
+              - /url: /tutorial/api-design-basics
+            - button "收藏教程" [ref=e1071] [cursor=pointer]:
+              - img
+        - generic [ref=e1072]:
+          - generic [ref=e1073]:
+            - link "微服务架构入门" [ref=e1076] [cursor=pointer]:
+              - /url: /tutorial/microservices-basics
+            - generic [ref=e1077]: 学习微服务架构的核心概念、服务拆分原则、通信模式和最佳实践，构建可扩展的分布式系统。
+          - generic [ref=e1078]:
+            - generic [ref=e1079]:
+              - generic [ref=e1080]: 入门
+              - generic [ref=e1081]: 20 分钟阅读
+              - generic [ref=e1082]: •
+              - generic [ref=e1083]: 0 次浏览
+            - generic [ref=e1084]:
+              - generic [ref=e1085]: skill-012
+              - generic [ref=e1086]: skill-094
+              - generic [ref=e1087]: skill-095
+          - generic [ref=e1088]:
+            - link "开始阅读" [ref=e1089] [cursor=pointer]:
+              - /url: /tutorial/microservices-basics
+            - button "收藏教程" [ref=e1090] [cursor=pointer]:
+              - img
+        - generic [ref=e1091]:
+          - generic [ref=e1092]:
+            - link "Docker容器化实践" [ref=e1095] [cursor=pointer]:
+              - /url: /tutorial/docker-containerization-practice
+            - generic [ref=e1096]: 全面掌握 Docker 容器技术，包括镜像构建、容器管理、Docker Compose 和生产最佳实践。
+          - generic [ref=e1097]:
+            - generic [ref=e1098]:
+              - generic [ref=e1099]: 入门
+              - generic [ref=e1100]: 20 分钟阅读
+              - generic [ref=e1101]: •
+              - generic [ref=e1102]: 0 次浏览
+            - generic [ref=e1103]:
+              - generic [ref=e1104]: skill-012
+              - generic [ref=e1105]: skill-094
+              - generic [ref=e1106]: skill-020
+          - generic [ref=e1107]:
+            - link "开始阅读" [ref=e1108] [cursor=pointer]:
+              - /url: /tutorial/docker-containerization-practice
+            - button "收藏教程" [ref=e1109] [cursor=pointer]:
+              - img
+        - generic [ref=e1110]:
+          - generic [ref=e1111]:
+            - link "CI/CD持续集成部署" [ref=e1114] [cursor=pointer]:
+              - /url: /tutorial/cicd-continuous-integration-deployment
+            - generic [ref=e1115]: 学习构建完整的 CI/CD 流水线，使用 GitHub Actions、GitLab CI 实现自动化测试和部署。
+          - generic [ref=e1116]:
+            - generic [ref=e1117]:
+              - generic [ref=e1118]: 入门
+              - generic [ref=e1119]: 22 分钟阅读
+              - generic [ref=e1120]: •
+              - generic [ref=e1121]: 0 次浏览
+            - generic [ref=e1122]:
+              - generic [ref=e1123]: skill-036
+              - generic [ref=e1124]: skill-099
+              - generic [ref=e1125]: skill-037
+          - generic [ref=e1126]:
+            - link "开始阅读" [ref=e1127] [cursor=pointer]:
+              - /url: /tutorial/cicd-continuous-integration-deployment
+            - button "收藏教程" [ref=e1128] [cursor=pointer]:
+              - img
+        - generic [ref=e1129]:
+          - generic [ref=e1130]:
+            - link "监控和日志系统" [ref=e1133] [cursor=pointer]:
+              - /url: /tutorial/monitoring-logging-systems
+            - generic [ref=e1134]: 构建完整的可观测性系统，使用 Prometheus、Grafana、ELK 实现应用监控、日志聚合和告警。
+          - generic [ref=e1135]:
+            - generic [ref=e1136]:
+              - generic [ref=e1137]: 入门
+              - generic [ref=e1138]: 22 分钟阅读
+              - generic [ref=e1139]: •
+              - generic [ref=e1140]: 0 次浏览
+            - generic [ref=e1141]:
+              - generic [ref=e1142]: skill-105
+              - generic [ref=e1143]: skill-106
+              - generic [ref=e1144]: skill-102
+          - generic [ref=e1145]:
+            - link "开始阅读" [ref=e1146] [cursor=pointer]:
+              - /url: /tutorial/monitoring-logging-systems
+            - button "收藏教程" [ref=e1147] [cursor=pointer]:
+              - img
+        - generic [ref=e1148]:
+          - generic [ref=e1149]:
+            - link "Web 安全基础实践" [ref=e1152] [cursor=pointer]:
+              - /url: /tutorial/web-security-basics-practice
+            - generic [ref=e1153]: 掌握 Web 应用安全的核心知识，了解常见安全威胁和防护措施，保护你的应用免受攻击。
+          - generic [ref=e1154]:
+            - generic [ref=e1155]:
+              - generic [ref=e1156]: 入门
+              - generic [ref=e1157]: 18 分钟阅读
+              - generic [ref=e1158]: •
+              - generic [ref=e1159]: 0 次浏览
+            - generic [ref=e1160]:
+              - generic [ref=e1161]: skill-042
+              - generic [ref=e1162]: skill-043
+              - generic [ref=e1163]: skill-046
+              - generic [ref=e1164]: skill-047
+          - generic [ref=e1165]:
+            - link "开始阅读" [ref=e1166] [cursor=pointer]:
+              - /url: /tutorial/web-security-basics-practice
+            - button "收藏教程" [ref=e1167] [cursor=pointer]:
+              - img
+        - generic [ref=e1168]:
+          - generic [ref=e1169]:
+            - link "单元测试入门教程" [ref=e1172] [cursor=pointer]:
+              - /url: /tutorial/unit-testing-basics
+            - generic [ref=e1173]: 学习单元测试的核心概念和最佳实践，掌握 Jest 和 Vitest 的使用方法，编写可靠的测试代码。
+          - generic [ref=e1174]:
+            - generic [ref=e1175]:
+              - generic [ref=e1176]: 入门
+              - generic [ref=e1177]: 16 分钟阅读
+              - generic [ref=e1178]: •
+              - generic [ref=e1179]: 0 次浏览
+            - generic [ref=e1180]:
+              - generic [ref=e1181]: skill-046
+              - generic [ref=e1182]: skill-047
+              - generic [ref=e1183]: skill-042
+              - generic [ref=e1184]: skill-043
+          - generic [ref=e1185]:
+            - link "开始阅读" [ref=e1186] [cursor=pointer]:
+              - /url: /tutorial/unit-testing-basics
+            - button "收藏教程" [ref=e1187] [cursor=pointer]:
+              - img
+        - generic [ref=e1188]:
+          - generic [ref=e1189]:
+            - link "集成测试实践指南" [ref=e1192] [cursor=pointer]:
+              - /url: /tutorial/integration-testing-guide
+            - generic [ref=e1193]: 深入学习集成测试的概念和技巧，掌握端到端测试、API 测试和数据库测试的实践方法。
+          - generic [ref=e1194]:
+            - generic [ref=e1195]:
+              - generic [ref=e1196]: 入门
+              - generic [ref=e1197]: 17 分钟阅读
+              - generic [ref=e1198]: •
+              - generic [ref=e1199]: 0 次浏览
+            - generic [ref=e1200]:
+              - generic [ref=e1201]: skill-004
+              - generic [ref=e1202]: skill-048
+              - generic [ref=e1203]: skill-046
+              - generic [ref=e1204]: skill-012
+          - generic [ref=e1205]:
+            - link "开始阅读" [ref=e1206] [cursor=pointer]:
+              - /url: /tutorial/integration-testing-guide
+            - button "收藏教程" [ref=e1207] [cursor=pointer]:
+              - img
+        - generic [ref=e1208]:
+          - generic [ref=e1209]:
+            - link "调试技巧详解" [ref=e1212] [cursor=pointer]:
+              - /url: /tutorial/debugging-techniques-guide
+            - generic [ref=e1213]: 掌握高效的调试方法和工具，学习断点调试、日志记录、性能分析等实用技巧，快速定位和解决问题。
+          - generic [ref=e1214]:
+            - generic [ref=e1215]:
+              - generic [ref=e1216]: 入门
+              - generic [ref=e1217]: 15 分钟阅读
+              - generic [ref=e1218]: •
+              - generic [ref=e1219]: 0 次浏览
+            - generic [ref=e1220]:
+              - generic [ref=e1221]: skill-042
+              - generic [ref=e1222]: skill-043
+              - generic [ref=e1223]: skill-046
+              - generic [ref=e1224]: skill-004
+          - generic [ref=e1225]:
+            - link "开始阅读" [ref=e1226] [cursor=pointer]:
+              - /url: /tutorial/debugging-techniques-guide
+            - button "收藏教程" [ref=e1227] [cursor=pointer]:
+              - img
+        - generic [ref=e1228]:
+          - generic [ref=e1229]:
+            - link "NestJS 后端开发进阶" [ref=e1232] [cursor=pointer]:
+              - /url: /tutorial/nestjs-backend-development
+            - generic [ref=e1233]: 深入学习 NestJS 框架，掌握模块化架构、依赖注入、装饰器、中间件、守卫、拦截器等企业级后端开发核心概念，构建可维护、可测试的 Node.js 应用。
+          - generic [ref=e1234]:
+            - generic [ref=e1235]:
+              - generic [ref=e1236]: 进阶
+              - generic [ref=e1237]: 20 分钟阅读
+              - generic [ref=e1238]: •
+              - generic [ref=e1239]: 0 次浏览
+            - generic [ref=e1240]:
+              - generic [ref=e1241]: skill-020
+              - generic [ref=e1242]: skill-021
+              - generic [ref=e1243]: skill-047
+          - generic [ref=e1244]:
+            - link "开始阅读" [ref=e1245] [cursor=pointer]:
+              - /url: /tutorial/nestjs-backend-development
+            - button "收藏教程" [ref=e1246] [cursor=pointer]:
+              - img
+        - generic [ref=e1247]:
+          - generic [ref=e1248]:
+            - link "Next.js 全栈开发实战" [ref=e1251] [cursor=pointer]:
+              - /url: /tutorial/nextjs-fullstack-development
+            - generic [ref=e1252]: 掌握 Next.js 14+ 的 App Router、服务端组件、服务端操作、路由处理、数据获取策略等全栈开发技术，构建高性能的 Web 应用。
+          - generic [ref=e1253]:
+            - generic [ref=e1254]:
+              - generic [ref=e1255]: 进阶
+              - generic [ref=e1256]: 18 分钟阅读
+              - generic [ref=e1257]: •
+              - generic [ref=e1258]: 0 次浏览
+            - generic [ref=e1259]:
+              - generic [ref=e1260]: skill-022
+              - generic [ref=e1261]: skill-047
+              - generic [ref=e1262]: skill-048
+          - generic [ref=e1263]:
+            - link "开始阅读" [ref=e1264] [cursor=pointer]:
+              - /url: /tutorial/nextjs-fullstack-development
+            - button "收藏教程" [ref=e1265] [cursor=pointer]:
+              - img
+        - generic [ref=e1266]:
+          - generic [ref=e1267]:
+            - link "React 性能优化深入" [ref=e1270] [cursor=pointer]:
+              - /url: /tutorial/react-performance-optimization
+            - generic [ref=e1271]: 深入学习 React 性能优化技术，掌握组件重渲染优化、memo、useMemo、useCallback、代码分割、虚拟列表等核心技术。
+          - generic [ref=e1272]:
+            - generic [ref=e1273]:
+              - generic [ref=e1274]: 进阶
+              - generic [ref=e1275]: 16 分钟阅读
+              - generic [ref=e1276]: •
+              - generic [ref=e1277]: 0 次浏览
+            - generic [ref=e1278]:
+              - generic [ref=e1279]: skill-022
+              - generic [ref=e1280]: skill-047
+              - generic [ref=e1281]: skill-048
+          - generic [ref=e1282]:
+            - link "开始阅读" [ref=e1283] [cursor=pointer]:
+              - /url: /tutorial/react-performance-optimization
+            - button "收藏教程" [ref=e1284] [cursor=pointer]:
+              - img
+        - generic [ref=e1285]:
+          - generic [ref=e1286]:
+            - link "Vue.js 组件开发实战" [ref=e1289] [cursor=pointer]:
+              - /url: /tutorial/vuejs-component-development
+            - generic [ref=e1290]: 深入学习 Vue.js 3 的 Composition API、响应式系统、组件通信、状态管理、生命周期等核心技术，构建可维护的 Vue 应用。
+          - generic [ref=e1291]:
+            - generic [ref=e1292]:
+              - generic [ref=e1293]: 进阶
+              - generic [ref=e1294]: 18 分钟阅读
+              - generic [ref=e1295]: •
+              - generic [ref=e1296]: 0 次浏览
+            - generic [ref=e1297]:
+              - generic [ref=e1298]: skill-023
+              - generic [ref=e1299]: skill-047
+              - generic [ref=e1300]: skill-048
+          - generic [ref=e1301]:
+            - link "开始阅读" [ref=e1302] [cursor=pointer]:
+              - /url: /tutorial/vuejs-component-development
+            - button "收藏教程" [ref=e1303] [cursor=pointer]:
+              - img
+        - generic [ref=e1304]:
+          - generic [ref=e1305]:
+            - link "Spring Boot 企业应用开发" [ref=e1308] [cursor=pointer]:
+              - /url: /tutorial/springboot-enterprise-apps
+            - generic [ref=e1309]: 深入学习 Spring Boot 框架，掌握依赖注入、数据访问、安全认证等企业级开发核心技能，构建高质量的后端应用。
+          - generic [ref=e1310]:
+            - generic [ref=e1311]:
+              - generic [ref=e1312]: 进阶
+              - generic [ref=e1313]: 25 分钟阅读
+              - generic [ref=e1314]: •
+              - generic [ref=e1315]: 0 次浏览
+            - generic [ref=e1316]:
+              - generic [ref=e1317]: skill-041
+              - generic [ref=e1318]: skill-042
+              - generic [ref=e1319]: skill-058
+          - generic [ref=e1320]:
+            - link "开始阅读" [ref=e1321] [cursor=pointer]:
+              - /url: /tutorial/springboot-enterprise-apps
+            - button "收藏教程" [ref=e1322] [cursor=pointer]:
+              - img
+        - generic [ref=e1323]:
+          - generic [ref=e1324]:
+            - link "Django Web 开发实战" [ref=e1327] [cursor=pointer]:
+              - /url: /tutorial/django-web-development
+            - generic [ref=e1328]: 掌握 Django 全栈 Web 开发，学习 Models、Views、Templates、Admin 等核心概念，快速构建功能完善的 Web 应用。
+          - generic [ref=e1329]:
+            - generic [ref=e1330]:
+              - generic [ref=e1331]: 进阶
+              - generic [ref=e1332]: 30 分钟阅读
+              - generic [ref=e1333]: •
+              - generic [ref=e1334]: 0 次浏览
+            - generic [ref=e1335]:
+              - generic [ref=e1336]: skill-044
+              - generic [ref=e1337]: skill-058
+              - generic [ref=e1338]: skill-014
+          - generic [ref=e1339]:
+            - link "开始阅读" [ref=e1340] [cursor=pointer]:
+              - /url: /tutorial/django-web-development
+            - button "收藏教程" [ref=e1341] [cursor=pointer]:
+              - img
+        - generic [ref=e1342]:
+          - generic [ref=e1343]:
+            - link "Flask API 开发实战" [ref=e1346] [cursor=pointer]:
+              - /url: /tutorial/flask-api-development
+            - generic [ref=e1347]: 学习使用 Flask 构建轻量级 RESTful API，掌握路由、蓝图、请求验证、错误处理等核心技能。
+          - generic [ref=e1348]:
+            - generic [ref=e1349]:
+              - generic [ref=e1350]: 进阶
+              - generic [ref=e1351]: 25 分钟阅读
+              - generic [ref=e1352]: •
+              - generic [ref=e1353]: 0 次浏览
+            - generic [ref=e1354]:
+              - generic [ref=e1355]: skill-044
+              - generic [ref=e1356]: skill-058
+              - generic [ref=e1357]: skill-045
+          - generic [ref=e1358]:
+            - link "开始阅读" [ref=e1359] [cursor=pointer]:
+              - /url: /tutorial/flask-api-development
+            - button "收藏教程" [ref=e1360] [cursor=pointer]:
+              - img
+        - generic [ref=e1361]:
+          - generic [ref=e1362]:
+            - link "PostgreSQL 高级查询实战" [ref=e1365] [cursor=pointer]:
+              - /url: /tutorial/postgresql-advanced-queries
+            - generic [ref=e1366]: 深入学习 PostgreSQL 高级查询技术，掌握 CTE、窗口函数、全文搜索、JSON 操作等强大功能。
+          - generic [ref=e1367]:
+            - generic [ref=e1368]:
+              - generic [ref=e1369]: 进阶
+              - generic [ref=e1370]: 30 分钟阅读
+              - generic [ref=e1371]: •
+              - generic [ref=e1372]: 0 次浏览
+            - generic [ref=e1373]:
+              - generic [ref=e1374]: skill-058
+              - generic [ref=e1375]: skill-057
+              - generic [ref=e1376]: skill-041
+          - generic [ref=e1377]:
+            - link "开始阅读" [ref=e1378] [cursor=pointer]:
+              - /url: /tutorial/postgresql-advanced-queries
+            - button "收藏教程" [ref=e1379] [cursor=pointer]:
+              - img
+        - generic [ref=e1380]:
+          - generic [ref=e1381]:
+            - link "MongoDB 文档数据库进阶" [ref=e1384] [cursor=pointer]:
+              - /url: /tutorial/mongodb-document-database
+            - generic [ref=e1385]: 深入学习 MongoDB 文档数据库，掌握灵活的数据模型、强大的聚合管道、索引优化、副本集配置和事务处理等核心功能。
+          - generic [ref=e1386]:
+            - generic [ref=e1387]:
+              - generic [ref=e1388]: 进阶
+              - generic [ref=e1389]: 25 分钟阅读
+              - generic [ref=e1390]: •
+              - generic [ref=e1391]: 0 次浏览
+            - generic [ref=e1393]: skill-063
+          - generic [ref=e1394]:
+            - link "开始阅读" [ref=e1395] [cursor=pointer]:
+              - /url: /tutorial/mongodb-document-database
+            - button "收藏教程" [ref=e1396] [cursor=pointer]:
+              - img
+        - generic [ref=e1397]:
+          - generic [ref=e1398]:
+            - link "Redis 内存数据库进阶" [ref=e1401] [cursor=pointer]:
+              - /url: /tutorial/redis-in-memory-database
+            - generic [ref=e1402]: 深入学习 Redis 内存数据库，掌握丰富的数据结构、持久化机制、发布订阅、分布式锁、缓存策略和集群配置。
+          - generic [ref=e1403]:
+            - generic [ref=e1404]:
+              - generic [ref=e1405]: 进阶
+              - generic [ref=e1406]: 25 分钟阅读
+              - generic [ref=e1407]: •
+              - generic [ref=e1408]: 0 次浏览
+            - generic [ref=e1410]: skill-064
+          - generic [ref=e1411]:
+            - link "开始阅读" [ref=e1412] [cursor=pointer]:
+              - /url: /tutorial/redis-in-memory-database
+            - button "收藏教程" [ref=e1413] [cursor=pointer]:
+              - img
+        - generic [ref=e1414]:
+          - generic [ref=e1415]:
+            - link "Elasticsearch 搜索引擎进阶" [ref=e1418] [cursor=pointer]:
+              - /url: /tutorial/elasticsearch-search-engine
+            - generic [ref=e1419]: 深入学习 Elasticsearch 搜索引擎，掌握全文搜索、聚合分析、索引优化、文本分析和 ELK Stack 集成。
+          - generic [ref=e1420]:
+            - generic [ref=e1421]:
+              - generic [ref=e1422]: 进阶
+              - generic [ref=e1423]: 25 分钟阅读
+              - generic [ref=e1424]: •
+              - generic [ref=e1425]: 0 次浏览
+            - generic [ref=e1427]: skill-107
+          - generic [ref=e1428]:
+            - link "开始阅读" [ref=e1429] [cursor=pointer]:
+              - /url: /tutorial/elasticsearch-search-engine
+            - button "收藏教程" [ref=e1430] [cursor=pointer]:
+              - img
+        - generic [ref=e1431]:
+          - generic [ref=e1432]:
+            - link "RabbitMQ 消息队列进阶" [ref=e1435] [cursor=pointer]:
+              - /url: /tutorial/rabbitmq-message-queue
+            - generic [ref=e1436]: 深入学习 RabbitMQ 消息队列，掌握 AMQP 协议、Exchange 路由、消息确认、死信队列、RPC 模式和集群配置。
+          - generic [ref=e1437]:
+            - generic [ref=e1438]:
+              - generic [ref=e1439]: 进阶
+              - generic [ref=e1440]: 25 分钟阅读
+              - generic [ref=e1441]: •
+              - generic [ref=e1442]: 0 次浏览
+            - generic [ref=e1443]:
+              - generic [ref=e1444]: skill-107
+              - generic [ref=e1445]: skill-108
+              - generic [ref=e1446]: skill-106
+          - generic [ref=e1447]:
+            - link "开始阅读" [ref=e1448] [cursor=pointer]:
+              - /url: /tutorial/rabbitmq-message-queue
+            - button "收藏教程" [ref=e1449] [cursor=pointer]:
+              - img
+        - generic [ref=e1450]:
+          - generic [ref=e1451]:
+            - link "Kafka 流处理实战" [ref=e1454] [cursor=pointer]:
+              - /url: /tutorial/kafka-stream-processing
+            - generic [ref=e1455]: 深入学习 Apache Kafka 的流处理能力，包括 Producer、Consumer、Topic、Partition 以及 Kafka Streams 的实际应用。
+          - generic [ref=e1456]:
+            - generic [ref=e1457]:
+              - generic [ref=e1458]: 进阶
+              - generic [ref=e1459]: 22 分钟阅读
+              - generic [ref=e1460]: •
+              - generic [ref=e1461]: 125 次浏览
+            - generic [ref=e1462]:
+              - generic [ref=e1463]: skill-001
+              - generic [ref=e1464]: skill-064
+              - generic [ref=e1465]: skill-065
+          - generic [ref=e1466]:
+            - link "开始阅读" [ref=e1467] [cursor=pointer]:
+              - /url: /tutorial/kafka-stream-processing
+            - button "收藏教程" [ref=e1468] [cursor=pointer]:
+              - img
+        - generic [ref=e1469]:
+          - generic [ref=e1470]:
+            - link "AWS Lambda 无服务器开发" [ref=e1473] [cursor=pointer]:
+              - /url: /tutorial/aws-lambda-serverless
+            - generic [ref=e1474]: 掌握 AWS Lambda 函数式编程，学习事件驱动架构、触发器配置、层管理和最佳实践。
+          - generic [ref=e1475]:
+            - generic [ref=e1476]:
+              - generic [ref=e1477]: 进阶
+              - generic [ref=e1478]: 24 分钟阅读
+              - generic [ref=e1479]: •
+              - generic [ref=e1480]: 98 次浏览
+            - generic [ref=e1481]:
+              - generic [ref=e1482]: skill-007
+              - generic [ref=e1483]: skill-269
+              - generic [ref=e1484]: skill-244
+          - generic [ref=e1485]:
+            - link "开始阅读" [ref=e1486] [cursor=pointer]:
+              - /url: /tutorial/aws-lambda-serverless
+            - button "收藏教程" [ref=e1487] [cursor=pointer]:
+              - img
+        - generic [ref=e1488]:
+          - generic [ref=e1489]:
+            - link "Google Cloud Platform 开发实战" [ref=e1492] [cursor=pointer]:
+              - /url: /tutorial/gcp-development
+            - generic [ref=e1493]: 学习 Google Cloud Platform 的核心服务，包括 Compute Engine、Cloud Functions、Cloud Run 和 Firestore。
+          - generic [ref=e1494]:
+            - generic [ref=e1495]:
+              - generic [ref=e1496]: 进阶
+              - generic [ref=e1497]: 26 分钟阅读
+              - generic [ref=e1498]: •
+              - generic [ref=e1499]: 85 次浏览
+            - generic [ref=e1500]:
+              - generic [ref=e1501]: skill-127
+              - generic [ref=e1502]: skill-129
+              - generic [ref=e1503]: skill-269
+          - generic [ref=e1504]:
+            - link "开始阅读" [ref=e1505] [cursor=pointer]:
+              - /url: /tutorial/gcp-development
+            - button "收藏教程" [ref=e1506] [cursor=pointer]:
+              - img
+        - generic [ref=e1507]:
+          - generic [ref=e1508]:
+            - link "Azure 云服务开发实战" [ref=e1511] [cursor=pointer]:
+              - /url: /tutorial/azure-cloud-services
+            - generic [ref=e1512]: 掌握 Microsoft Azure 的核心服务，包括 App Service、Functions、Cosmos DB 和 Blob Storage。
+          - generic [ref=e1513]:
+            - generic [ref=e1514]:
+              - generic [ref=e1515]: 进阶
+              - generic [ref=e1516]: 25 分钟阅读
+              - generic [ref=e1517]: •
+              - generic [ref=e1518]: 92 次浏览
+            - generic [ref=e1519]:
+              - generic [ref=e1520]: skill-107
+              - generic [ref=e1521]: skill-108
+              - generic [ref=e1522]: skill-106
+          - generic [ref=e1523]:
+            - link "开始阅读" [ref=e1524] [cursor=pointer]:
+              - /url: /tutorial/azure-cloud-services
+            - button "收藏教程" [ref=e1525] [cursor=pointer]:
+              - img
+        - generic [ref=e1526]:
+          - generic [ref=e1527]:
+            - link "Terraform 基础设施即代码" [ref=e1530] [cursor=pointer]:
+              - /url: /tutorial/terraform-infrastructure
+            - generic [ref=e1531]: 掌握 Terraform 的核心概念，学习使用 HCL 语言定义和管理云基础设施，实现基础设施即代码的最佳实践。
+          - generic [ref=e1532]:
+            - generic [ref=e1533]:
+              - generic [ref=e1534]: 进阶
+              - generic [ref=e1535]: 28 分钟阅读
+              - generic [ref=e1536]: •
+              - generic [ref=e1537]: 85 次浏览
+            - generic [ref=e1538]:
+              - generic [ref=e1539]: skill-035
+              - generic [ref=e1540]: skill-007
+              - generic [ref=e1541]: skill-012
+          - generic [ref=e1542]:
+            - link "开始阅读" [ref=e1543] [cursor=pointer]:
+              - /url: /tutorial/terraform-infrastructure
+            - button "收藏教程" [ref=e1544] [cursor=pointer]:
+              - img
+        - generic [ref=e1545]:
+          - generic [ref=e1546]:
+            - link "Ansible 配置管理自动化" [ref=e1549] [cursor=pointer]:
+              - /url: /tutorial/ansible-configuration
+            - generic [ref=e1550]: 掌握 Ansible 的 Playbook、Role 和 Inventory，学习如何自动化配置管理和应用部署。
+          - generic [ref=e1551]:
+            - generic [ref=e1552]:
+              - generic [ref=e1553]: 进阶
+              - generic [ref=e1554]: 27 分钟阅读
+              - generic [ref=e1555]: •
+              - generic [ref=e1556]: 78 次浏览
+            - generic [ref=e1557]:
+              - generic [ref=e1558]: skill-036
+              - generic [ref=e1559]: skill-035
+              - generic [ref=e1560]: skill-009
+          - generic [ref=e1561]:
+            - link "开始阅读" [ref=e1562] [cursor=pointer]:
+              - /url: /tutorial/ansible-configuration
+            - button "收藏教程" [ref=e1563] [cursor=pointer]:
+              - img
+        - generic [ref=e1564]:
+          - generic [ref=e1565]:
+            - link "Jenkins CI/CD 完整实践" [ref=e1568] [cursor=pointer]:
+              - /url: /tutorial/jenkins-cicd
+            - generic [ref=e1569]: 深入学习 Jenkins Pipeline、Agent 配置和插件管理，构建企业级持续集成和持续部署系统。
+          - generic [ref=e1570]:
+            - generic [ref=e1571]:
+              - generic [ref=e1572]: 进阶
+              - generic [ref=e1573]: 30 分钟阅读
+              - generic [ref=e1574]: •
+              - generic [ref=e1575]: 95 次浏览
+            - generic [ref=e1576]:
+              - generic [ref=e1577]: skill-037
+              - generic [ref=e1578]: skill-009
+              - generic [ref=e1579]: skill-008
+          - generic [ref=e1580]:
+            - link "开始阅读" [ref=e1581] [cursor=pointer]:
+              - /url: /tutorial/jenkins-cicd
+            - button "收藏教程" [ref=e1582] [cursor=pointer]:
+              - img
+        - generic [ref=e1583]:
+          - generic [ref=e1584]:
+            - link "GitOps 现代运维实践" [ref=e1587] [cursor=pointer]:
+              - /url: /tutorial/gitops-practices
+            - generic [ref=e1588]: 掌握 GitOps 理念和实践，使用 ArgoCD 和 Flux 实现声明式、自动化的 Kubernetes 应用交付。
+          - generic [ref=e1589]:
+            - generic [ref=e1590]:
+              - generic [ref=e1591]: 进阶
+              - generic [ref=e1592]: 29 分钟阅读
+              - generic [ref=e1593]: •
+              - generic [ref=e1594]: 88 次浏览
+            - generic [ref=e1595]:
+              - generic [ref=e1596]: skill-098
+              - generic [ref=e1597]: skill-008
+              - generic [ref=e1598]: skill-009
+          - generic [ref=e1599]:
+            - link "开始阅读" [ref=e1600] [cursor=pointer]:
+              - /url: /tutorial/gitops-practices
+            - button "收藏教程" [ref=e1601] [cursor=pointer]:
+              - img
+        - generic [ref=e1602]:
+          - generic [ref=e1603]:
+            - link "可观测性实现最佳实践" [ref=e1606] [cursor=pointer]:
+              - /url: /tutorial/observability-implementation
+            - generic [ref=e1607]: 构建完整的可观测性系统，包括指标收集、链路追踪和日志关联，使用 Prometheus、Grafana、Jaeger 等工具。
+          - generic [ref=e1608]:
+            - generic [ref=e1609]:
+              - generic [ref=e1610]: 进阶
+              - generic [ref=e1611]: 32 分钟阅读
+              - generic [ref=e1612]: •
+              - generic [ref=e1613]: 92 次浏览
+            - generic [ref=e1614]:
+              - generic [ref=e1615]: skill-106
+              - generic [ref=e1616]: skill-105
+              - generic [ref=e1617]: skill-008
+          - generic [ref=e1618]:
+            - link "开始阅读" [ref=e1619] [cursor=pointer]:
+              - /url: /tutorial/observability-implementation
+            - button "收藏教程" [ref=e1620] [cursor=pointer]:
+              - img
+        - generic [ref=e1621]:
+          - generic [ref=e1622]:
+            - link "分布式追踪实战指南" [ref=e1625] [cursor=pointer]:
+              - /url: /tutorial/distributed-tracing
+            - generic [ref=e1626]: 掌握分布式追踪技术，使用 OpenTelemetry 和 Jaeger 追踪微服务请求链路，定位性能瓶颈和故障。
+          - generic [ref=e1628]:
+            - generic [ref=e1629]: 进阶
+            - generic [ref=e1630]: 28 分钟阅读
+            - generic [ref=e1631]: •
+            - generic [ref=e1632]: 75 次浏览
+          - generic [ref=e1633]:
+            - link "开始阅读" [ref=e1634] [cursor=pointer]:
+              - /url: /tutorial/distributed-tracing
+            - button "收藏教程" [ref=e1635] [cursor=pointer]:
+              - img
+        - generic [ref=e1636]:
+          - generic [ref=e1637]:
+            - link "限流和熔断实战指南" [ref=e1640] [cursor=pointer]:
+              - /url: /tutorial/rate-limiting-circuit-breaker
+            - generic [ref=e1641]: 深入学习限流和熔断技术，保护微服务免受过载影响，实现高可用系统架构。
+          - generic [ref=e1643]:
+            - generic [ref=e1644]: 进阶
+            - generic [ref=e1645]: 30 分钟阅读
+            - generic [ref=e1646]: •
+            - generic [ref=e1647]: 88 次浏览
+          - generic [ref=e1648]:
+            - link "开始阅读" [ref=e1649] [cursor=pointer]:
+              - /url: /tutorial/rate-limiting-circuit-breaker
+            - button "收藏教程" [ref=e1650] [cursor=pointer]:
+              - img
+        - generic [ref=e1651]:
+          - generic [ref=e1652]:
+            - link "API 网关实战指南" [ref=e1655] [cursor=pointer]:
+              - /url: /tutorial/api-gateway-patterns
+            - generic [ref=e1656]: 掌握 API 网关的核心功能，包括路由、认证、限流、熔断、缓存等，构建微服务统一入口。
+          - generic [ref=e1657]:
+            - generic [ref=e1658]:
+              - generic [ref=e1659]: 进阶
+              - generic [ref=e1660]: 32 分钟阅读
+              - generic [ref=e1661]: •
+              - generic [ref=e1662]: 95 次浏览
+            - generic [ref=e1664]: skill-106
+          - generic [ref=e1665]:
+            - link "开始阅读" [ref=e1666] [cursor=pointer]:
+              - /url: /tutorial/api-gateway-patterns
+            - button "收藏教程" [ref=e1667] [cursor=pointer]:
+              - img
+        - generic [ref=e1668]:
+          - generic [ref=e1669]:
+            - link "GraphQL Federation 实战指南" [ref=e1672] [cursor=pointer]:
+              - /url: /tutorial/graphql-federation
+            - generic [ref=e1673]: 深入学习 GraphQL Federation 架构，实现跨服务的 GraphQL 联合查询和微服务协同。
+          - generic [ref=e1674]:
+            - generic [ref=e1675]:
+              - generic [ref=e1676]: 进阶
+              - generic [ref=e1677]: 26 分钟阅读
+              - generic [ref=e1678]: •
+              - generic [ref=e1679]: 82 次浏览
+            - generic [ref=e1681]: skill-065
+          - generic [ref=e1682]:
+            - link "开始阅读" [ref=e1683] [cursor=pointer]:
+              - /url: /tutorial/graphql-federation
+            - button "收藏教程" [ref=e1684] [cursor=pointer]:
+              - img
+        - generic [ref=e1685]:
+          - generic [ref=e1686]:
+            - link "大规模架构设计实战指南" [ref=e1689] [cursor=pointer]:
+              - /url: /tutorial/large-scale-architecture
+            - generic [ref=e1690]: 深入学习大规模系统架构设计，包括分层架构、CQRS、事件溯源、数据分片、读写分离和缓存策略等核心模式。
+          - generic [ref=e1691]:
+            - generic [ref=e1692]:
+              - generic [ref=e1693]: 高级
+              - generic [ref=e1694]: 45 分钟阅读
+              - generic [ref=e1695]: •
+              - generic [ref=e1696]: 120 次浏览
+            - generic [ref=e1697]:
+              - generic [ref=e1698]: skill-020
+              - generic [ref=e1699]: skill-021
+              - generic [ref=e1700]: skill-022
+          - generic [ref=e1701]:
+            - link "开始阅读" [ref=e1702] [cursor=pointer]:
+              - /url: /tutorial/large-scale-architecture
+            - button "收藏教程" [ref=e1703] [cursor=pointer]:
+              - img
+        - generic [ref=e1704]:
+          - generic [ref=e1705]:
+            - link "高可用系统设计实战指南" [ref=e1708] [cursor=pointer]:
+              - /url: /tutorial/high-availability-design
+            - generic [ref=e1709]: 掌握高可用系统设计的核心原则，包括冗余设计、故障检测、负载均衡、限流降级和监控告警等关键实践。
+          - generic [ref=e1710]:
+            - generic [ref=e1711]:
+              - generic [ref=e1712]: 高级
+              - generic [ref=e1713]: 42 分钟阅读
+              - generic [ref=e1714]: •
+              - generic [ref=e1715]: 115 次浏览
+            - generic [ref=e1716]:
+              - generic [ref=e1717]: skill-008
+              - generic [ref=e1718]: skill-023
+              - generic [ref=e1719]: skill-030
+          - generic [ref=e1720]:
+            - link "开始阅读" [ref=e1721] [cursor=pointer]:
+              - /url: /tutorial/high-availability-design
+            - button "收藏教程" [ref=e1722] [cursor=pointer]:
+              - img
+        - generic [ref=e1723]:
+          - generic [ref=e1724]:
+            - link "灾难恢复与备份策略实战指南" [ref=e1727] [cursor=pointer]:
+              - /url: /tutorial/disaster-recovery-planning
+            - generic [ref=e1728]: 全面了解灾难恢复和备份策略，包括完整备份、增量备份、时间点恢复、灾难恢复演练和备份自动化等实践。
+          - generic [ref=e1729]:
+            - generic [ref=e1730]:
+              - generic [ref=e1731]: 高级
+              - generic [ref=e1732]: 38 分钟阅读
+              - generic [ref=e1733]: •
+              - generic [ref=e1734]: 108 次浏览
+            - generic [ref=e1735]:
+              - generic [ref=e1736]: skill-027
+              - generic [ref=e1737]: skill-030
+              - generic [ref=e1738]: skill-039
+          - generic [ref=e1739]:
+            - link "开始阅读" [ref=e1740] [cursor=pointer]:
+              - /url: /tutorial/disaster-recovery-planning
+            - button "收藏教程" [ref=e1741] [cursor=pointer]:
+              - img
+        - generic [ref=e1742]:
+          - generic [ref=e1743]:
+            - link "安全架构设计" [ref=e1746] [cursor=pointer]:
+              - /url: /tutorial/security-architecture
+            - generic [ref=e1747]: 掌握零信任架构、加密技术、安全审计和威胁建模，构建全面的企业级安全防护体系。
+          - generic [ref=e1748]:
+            - generic [ref=e1749]:
+              - generic [ref=e1750]: 高级
+              - generic [ref=e1751]: 45 分钟阅读
+              - generic [ref=e1752]: •
+              - generic [ref=e1753]: 50 次浏览
+            - generic [ref=e1754]:
+              - generic [ref=e1755]: skill-047
+              - generic [ref=e1756]: skill-048
+              - generic [ref=e1757]: skill-049
+          - generic [ref=e1758]:
+            - link "开始阅读" [ref=e1759] [cursor=pointer]:
+              - /url: /tutorial/security-architecture
+            - button "收藏教程" [ref=e1760] [cursor=pointer]:
+              - img
+        - generic [ref=e1761]:
+          - generic [ref=e1762]:
+            - link "性能调优实战" [ref=e1765] [cursor=pointer]:
+              - /url: /tutorial/performance-tuning-practice
+            - generic [ref=e1766]: 深入学习 CPU、内存、I/O 和网络优化技术，掌握性能分析和瓶颈识别方法。
+          - generic [ref=e1767]:
+            - generic [ref=e1768]:
+              - generic [ref=e1769]: 高级
+              - generic [ref=e1770]: 42 分钟阅读
+              - generic [ref=e1771]: •
+              - generic [ref=e1772]: 45 次浏览
+            - generic [ref=e1773]:
+              - generic [ref=e1774]: skill-050
+              - generic [ref=e1775]: skill-051
+              - generic [ref=e1776]: skill-052
+          - generic [ref=e1777]:
+            - link "开始阅读" [ref=e1778] [cursor=pointer]:
+              - /url: /tutorial/performance-tuning-practice
+            - button "收藏教程" [ref=e1779] [cursor=pointer]:
+              - img
+        - generic [ref=e1780]:
+          - generic [ref=e1781]:
+            - link "微服务治理" [ref=e1784] [cursor=pointer]:
+              - /url: /tutorial/microservices-governance
+            - generic [ref=e1785]: 掌握服务网格、流量管理、策略执行和可观测性，实现高效的微服务治理体系。
+          - generic [ref=e1786]:
+            - generic [ref=e1787]:
+              - generic [ref=e1788]: 高级
+              - generic [ref=e1789]: 48 分钟阅读
+              - generic [ref=e1790]: •
+              - generic [ref=e1791]: 42 次浏览
+            - generic [ref=e1792]:
+              - generic [ref=e1793]: skill-044
+              - generic [ref=e1794]: skill-045
+              - generic [ref=e1795]: skill-046
+          - generic [ref=e1796]:
+            - link "开始阅读" [ref=e1797] [cursor=pointer]:
+              - /url: /tutorial/microservices-governance
+            - button "收藏教程" [ref=e1798] [cursor=pointer]:
+              - img
+        - generic [ref=e1799]:
+          - generic [ref=e1800]:
+            - link "服务网格实践" [ref=e1803] [cursor=pointer]:
+              - /url: /tutorial/service-mesh-practice
+            - generic [ref=e1804]: 深入学习 Istio、Linkerd 等服务网格技术，掌握流量管理、安全策略和可观测性配置。
+          - generic [ref=e1805]:
+            - generic [ref=e1806]:
+              - generic [ref=e1807]: 高级
+              - generic [ref=e1808]: 45 分钟阅读
+              - generic [ref=e1809]: •
+              - generic [ref=e1810]: 0 次浏览
+            - generic [ref=e1811]:
+              - generic [ref=e1812]: skill-044
+              - generic [ref=e1813]: skill-045
+          - generic [ref=e1814]:
+            - link "开始阅读" [ref=e1815] [cursor=pointer]:
+              - /url: /tutorial/service-mesh-practice
+            - button "收藏教程" [ref=e1816] [cursor=pointer]:
+              - img
+        - generic [ref=e1817]:
+          - generic [ref=e1818]:
+            - link "云原生架构设计" [ref=e1821] [cursor=pointer]:
+              - /url: /tutorial/cloud-native-architecture
+            - generic [ref=e1822]: 掌握云原生应用设计原则，学习 Kubernetes Operators、OAM 和云原生模式。
+          - generic [ref=e1823]:
+            - generic [ref=e1824]:
+              - generic [ref=e1825]: 高级
+              - generic [ref=e1826]: 50 分钟阅读
+              - generic [ref=e1827]: •
+              - generic [ref=e1828]: 0 次浏览
+            - generic [ref=e1829]:
+              - generic [ref=e1830]: skill-046
+              - generic [ref=e1831]: skill-047
+          - generic [ref=e1832]:
+            - link "开始阅读" [ref=e1833] [cursor=pointer]:
+              - /url: /tutorial/cloud-native-architecture
+            - button "收藏教程" [ref=e1834] [cursor=pointer]:
+              - img
+        - generic [ref=e1835]:
+          - generic [ref=e1836]:
+            - link "实时数据处理" [ref=e1839] [cursor=pointer]:
+              - /url: /tutorial/realtime-data-processing
+            - generic [ref=e1840]: 学习构建实时数据处理系统，掌握 Kafka、RabbitMQ 和 NATS 等消息队列技术。
+          - generic [ref=e1841]:
+            - generic [ref=e1842]:
+              - generic [ref=e1843]: 高级
+              - generic [ref=e1844]: 52 分钟阅读
+              - generic [ref=e1845]: •
+              - generic [ref=e1846]: 0 次浏览
+            - generic [ref=e1847]:
+              - generic [ref=e1848]: skill-048
+              - generic [ref=e1849]: skill-049
+              - generic [ref=e1850]: skill-050
+          - generic [ref=e1851]:
+            - link "开始阅读" [ref=e1852] [cursor=pointer]:
+              - /url: /tutorial/realtime-data-processing
+            - button "收藏教程" [ref=e1853] [cursor=pointer]:
+              - img
+        - generic [ref=e1854]:
+          - generic [ref=e1855]:
+            - link "流处理架构设计" [ref=e1858] [cursor=pointer]:
+              - /url: /tutorial/stream-processing-architecture
+            - generic [ref=e1859]: 掌握 Apache Flink 和 Spark Streaming 构建大规模流处理系统，学习 CEP 和状态管理。
+          - generic [ref=e1860]:
+            - generic [ref=e1861]:
+              - generic [ref=e1862]: 高级
+              - generic [ref=e1863]: 55 分钟阅读
+              - generic [ref=e1864]: •
+              - generic [ref=e1865]: 0 次浏览
+            - generic [ref=e1866]:
+              - generic [ref=e1867]: skill-051
+              - generic [ref=e1868]: skill-052
+          - generic [ref=e1869]:
+            - link "开始阅读" [ref=e1870] [cursor=pointer]:
+              - /url: /tutorial/stream-processing-architecture
+            - button "收藏教程" [ref=e1871] [cursor=pointer]:
+              - img
+        - generic [ref=e1872]:
+          - generic [ref=e1873]:
+            - link "机器学习工程" [ref=e1876] [cursor=pointer]:
+              - /url: /tutorial/machine-learning-engineering
+            - generic [ref=e1877]: 掌握 MLOps 最佳实践，学习模型训练、部署、监控和版本管理的完整流程。
+          - generic [ref=e1878]:
+            - generic [ref=e1879]:
+              - generic [ref=e1880]: 高级
+              - generic [ref=e1881]: 58 分钟阅读
+              - generic [ref=e1882]: •
+              - generic [ref=e1883]: 0 次浏览
+            - generic [ref=e1884]:
+              - generic [ref=e1885]: skill-053
+              - generic [ref=e1886]: skill-054
+          - generic [ref=e1887]:
+            - link "开始阅读" [ref=e1888] [cursor=pointer]:
+              - /url: /tutorial/machine-learning-engineering
+            - button "收藏教程" [ref=e1889] [cursor=pointer]:
+              - img
+      - generic [ref=e1891]:
+        - heading "学习建议" [level=3] [ref=e1892]
+        - list [ref=e1893]:
+          - listitem [ref=e1894]:
+            - text: • 新手建议从
+            - strong [ref=e1895]: 快速入门
+            - text: 开始，了解 OpenClaw 基础
+          - listitem [ref=e1896]:
+            - text: • 有一定基础后，可以学习
+            - strong [ref=e1897]: 开发实战
+            - text: 和
+            - strong [ref=e1898]: DevOps
+          - listitem [ref=e1899]:
+            - text: • 提升工作效率可参考
+            - strong [ref=e1900]: 工作效率
+            - text: 分类教程
+          - listitem [ref=e1901]:
+            - text: • 对 AI 感兴趣的用户可以探索
+            - strong [ref=e1902]: AI与大模型
+          - listitem [ref=e1903]:
+            - text: • 高级用户可以学习
+            - strong [ref=e1904]: 实用工具
+            - text: 中的技巧
