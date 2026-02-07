@@ -2357,3 +2357,21 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 标签使用中文和英文混合，便于搜索和分类
 - 可以增量添加技能描述，不需要一次性完成所有 480 个技能
 ---
+
+## 2026-02-07 - US-119
+- 为480个验证通过的技能创建slug和分类映射
+- 创建 docs/phase5-skill-slugs-categories.json
+- 按kebab-case规范生成唯一slug（如：redux-toolkit, aspnet-core）
+- 组织为6大分类：development、frontend、backend、devops、productivity、ai
+- 每个技能添加3-5个中英文标签
+- 建立slug生成规则文档
+- 构建验证通过
+
+**Learnings for future iterations:**
+- Slug命名规范：使用kebab-case，移除.js/.ts等后缀（如：nextjs、nuxt）
+- 分类映射与网站实际categories一致，确保数据可迁移
+- 中英文标签并存有助于SEO和用户搜索
+- 预留skill-201到skill-680的ID范围用于Phase 5技能
+- JSON文件需包含slugPatterns和categoryMapping元数据，方便后续维护
+
+---
