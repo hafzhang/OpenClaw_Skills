@@ -1,0 +1,745 @@
+{
+  "timestamp": "2026-02-07T06:07:49.767Z",
+  "summary": {
+    "total": 115,
+    "success": 51,
+    "failed": 64,
+    "successRate": "44.35%",
+    "avgDuration": "5395ms"
+  },
+  "results": [
+    {
+      "url": "https://github.com/eamodio/vscode-gitlens",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 20132
+    },
+    {
+      "url": "https://github.com/visualstudioexptteam/vscodeintellicode",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10008
+    },
+    {
+      "url": "https://github.com/microsoft/vscode-live-server",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10017
+    },
+    {
+      "url": "https://github.com/dbaeumer/vscode-eslint",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10014
+    },
+    {
+      "url": "https://github.com/esbenp/prettier-vscode",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10007
+    },
+    {
+      "url": "https://github.com/usernamehw/vscode-error-lens",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10007
+    },
+    {
+      "url": "https://github.com/wayou/vscode-todo-highlight",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10014
+    },
+    {
+      "url": "https://github.com/chrisdias/vscode-open-in-github",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10014
+    },
+    {
+      "url": "https://github.com/nvim-telescope/telescope.nvim",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10011
+    },
+    {
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10011
+    },
+    {
+      "url": "https://github.com/neovim/nvim-lspconfig",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10011
+    },
+    {
+      "url": "https://github.com/hrsh7th/nvim-cmp",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10019
+    },
+    {
+      "url": "https://github.com/lewis6991/gitsigns.nvim",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10006
+    },
+    {
+      "url": "https://github.com/folke/which-key.nvim",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10010
+    },
+    {
+      "url": "https://github.com/folke/tokyonight.nvim",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10019
+    },
+    {
+      "url": "https://github.com/mbbill/undotree",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10018
+    },
+    {
+      "url": "https://github.com/akinsho/bufferline.nvim",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10015
+    },
+    {
+      "url": "https://github.com/lukas-reineke/indent-blankline.nvim",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10016
+    },
+    {
+      "url": "https://github.com/nvim-lualine/lualine.nvim",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19225
+    },
+    {
+      "url": "https://github.com/kyazdani42/nvim-tree.lua",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19197
+    },
+    {
+      "url": "https://github.com/stevearc/dressing.nvim",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19227
+    },
+    {
+      "url": "https://github.com/neovim/neovim",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19207
+    },
+    {
+      "url": "https://github.com/tpope/vim-fugitive",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19220
+    },
+    {
+      "url": "https://github.com/junegunn/vim-plug",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 20127
+    },
+    {
+      "url": "https://github.com/preservim/nerdtree",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19902
+    },
+    {
+      "url": "https://github.com/airblade/vim-gitgutter",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19204
+    },
+    {
+      "url": "https://github.com/vim-airline/vim-airline",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19189
+    },
+    {
+      "url": "https://github.com/tpope/vim-surround",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19239
+    },
+    {
+      "url": "https://github.com/doomemacs/doomemacs",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 20087
+    },
+    {
+      "url": "https://github.com/emacs-evil/evil",
+      "status": 200,
+      "success": true,
+      "duration": 928
+    },
+    {
+      "url": "https://github.com/obsidianmd/obsidian-git",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19221
+    },
+    {
+      "url": "https://github.com/obsidian-tasks-group/obsidian-tasks",
+      "status": 200,
+      "success": true,
+      "duration": 874
+    },
+    {
+      "url": "https://github.com/pyrochlore/obsidian-kanban",
+      "status": 404,
+      "success": false,
+      "duration": 10522
+    },
+    {
+      "url": "https://github.com/obsidian-community/obsidian-hub",
+      "status": 200,
+      "success": true,
+      "duration": 6028
+    },
+    {
+      "url": "https://github.com/foambubble/foam",
+      "status": 200,
+      "success": true,
+      "duration": 943
+    },
+    {
+      "url": "https://github.com/foambubble/foam-vscode",
+      "status": 200,
+      "success": true,
+      "duration": 1005
+    },
+    {
+      "url": "https://github.com/zadam/trilium",
+      "status": 301,
+      "success": false,
+      "duration": 544,
+      "redirect": "https://github.com/TriliumNext/Trilium"
+    },
+    {
+      "url": "https://github.com/toeverything/AFFiNE",
+      "status": 200,
+      "success": true,
+      "duration": 876
+    },
+    {
+      "url": "https://github.com/logseq/logseq",
+      "status": 200,
+      "success": true,
+      "duration": 1070
+    },
+    {
+      "url": "https://github.com/pengx17/logseq-dev-plugin",
+      "status": 404,
+      "success": false,
+      "duration": 615
+    },
+    {
+      "url": "https://github.com/sawhney17/logseq-plugin-tabs",
+      "status": 404,
+      "success": false,
+      "duration": 691
+    },
+    {
+      "url": "https://github.com/rytskyh/logseq-plugin-agenda",
+      "status": 404,
+      "success": false,
+      "duration": 655
+    },
+    {
+      "url": "https://github.com/laurent22/joplin",
+      "status": 200,
+      "success": true,
+      "duration": 1046
+    },
+    {
+      "url": "https://github.com/joplin/plugin-templates",
+      "status": 200,
+      "success": true,
+      "duration": 860
+    },
+    {
+      "url": "https://github.com/joplin/plugin-note-graph",
+      "status": 404,
+      "success": false,
+      "duration": 639
+    },
+    {
+      "url": "https://github.com/zadam/trilium-scripts",
+      "status": 404,
+      "success": false,
+      "duration": 627
+    },
+    {
+      "url": "https://github.com/tiddly-gittly/TiddlyGit-Desktop",
+      "status": 301,
+      "success": false,
+      "duration": 542,
+      "redirect": "https://github.com/tiddly-gittly/TidGi-Desktop"
+    },
+    {
+      "url": "https://github.com/gollama/gollama",
+      "status": 404,
+      "success": false,
+      "duration": 598
+    },
+    {
+      "url": "https://github.com/robinhoodmarkets/focus",
+      "status": 404,
+      "success": false,
+      "duration": 602
+    },
+    {
+      "url": "https://github.com/tmuxinator/tmuxinator",
+      "status": 200,
+      "success": true,
+      "duration": 974
+    },
+    {
+      "url": "https://github.com/spacedriveapp/spacedrive",
+      "status": 200,
+      "success": true,
+      "duration": 1115
+    },
+    {
+      "url": "https://github.com/anytype-io/any-sync",
+      "status": 404,
+      "success": false,
+      "duration": 572
+    },
+    {
+      "url": "https://github.com/zhamlin/prepare-code-cmd",
+      "status": 404,
+      "success": false,
+      "duration": 737
+    },
+    {
+      "url": "https://github.com/cpodgors/czech",
+      "status": 404,
+      "success": false,
+      "duration": 596
+    },
+    {
+      "url": "https://github.com/sketch-hq/sketch-hq",
+      "status": 404,
+      "success": false,
+      "duration": 610
+    },
+    {
+      "url": "https://github.com/youssefhabri/dazzle",
+      "status": 404,
+      "success": false,
+      "duration": 610
+    },
+    {
+      "url": "https://github.com/getferdi/ferdi",
+      "status": 404,
+      "success": false,
+      "duration": 604
+    },
+    {
+      "url": "https://github.com/gabriel/LearnGitBranching",
+      "status": 404,
+      "success": false,
+      "duration": 601
+    },
+    {
+      "url": "https://github.com/GetStream/Winds",
+      "status": 200,
+      "success": true,
+      "duration": 948
+    },
+    {
+      "url": "https://github.com/mickael-kerjean/filestash",
+      "status": 200,
+      "success": true,
+      "duration": 885
+    },
+    {
+      "url": "https://github.com/ohmyzsh/ohmyzsh",
+      "status": 200,
+      "success": true,
+      "duration": 981
+    },
+    {
+      "url": "https://github.com/sorin-ionescu/prezto",
+      "status": 200,
+      "success": true,
+      "duration": 997
+    },
+    {
+      "url": "https://github.com/romkatv/powerlevel10k",
+      "status": 200,
+      "success": true,
+      "duration": 879
+    },
+    {
+      "url": "https://github.com/starship/starship",
+      "status": 200,
+      "success": true,
+      "duration": 885
+    },
+    {
+      "url": "https://github.com/fish-shell/fish-shell",
+      "status": 200,
+      "success": true,
+      "duration": 891
+    },
+    {
+      "url": "https://github.com/nushell/nushell",
+      "status": 200,
+      "success": true,
+      "duration": 843
+    },
+    {
+      "url": "https://github.com/elvish/elvish",
+      "status": 404,
+      "success": false,
+      "duration": 593
+    },
+    {
+      "url": "https://github.com/xonsh/xonsh",
+      "status": 200,
+      "success": true,
+      "duration": 1045
+    },
+    {
+      "url": "https://github.com/tmux/tmux",
+      "status": 200,
+      "success": true,
+      "duration": 813
+    },
+    {
+      "url": "https://github.com/tmux-plugins/tpm",
+      "status": 200,
+      "success": true,
+      "duration": 874
+    },
+    {
+      "url": "https://github.com/tmux-plugins/tmux-resurrect",
+      "status": 200,
+      "success": true,
+      "duration": 903
+    },
+    {
+      "url": "https://github.com/tmux-plugins/tmux-continuum",
+      "status": 200,
+      "success": true,
+      "duration": 796
+    },
+    {
+      "url": "https://github.com/tmux-plugins/tmux-yank",
+      "status": 200,
+      "success": true,
+      "duration": 958
+    },
+    {
+      "url": "https://github.com/square/tmux-checklist",
+      "status": 404,
+      "success": false,
+      "duration": 665
+    },
+    {
+      "url": "https://github.com/gpakosz/.tmux",
+      "status": 200,
+      "success": true,
+      "duration": 921
+    },
+    {
+      "url": "https://github.com/junegunn/fzf",
+      "status": 200,
+      "success": true,
+      "duration": 1068
+    },
+    {
+      "url": "https://github.com/BurntSushi/ripgrep",
+      "status": 200,
+      "success": true,
+      "duration": 916
+    },
+    {
+      "url": "https://github.com/sharkdp/bat",
+      "status": 200,
+      "success": true,
+      "duration": 1070
+    },
+    {
+      "url": "https://github.com/sharkdp/fd",
+      "status": 200,
+      "success": true,
+      "duration": 1099
+    },
+    {
+      "url": "https://github.com/ogham/exa",
+      "status": 200,
+      "success": true,
+      "duration": 808
+    },
+    {
+      "url": "https://github.com/eza-community/eza",
+      "status": 200,
+      "success": true,
+      "duration": 851
+    },
+    {
+      "url": "https://github.com/ajeetdsouza/zoxide",
+      "status": 200,
+      "success": true,
+      "duration": 879
+    },
+    {
+      "url": "https://github.com/gokcehan/lf",
+      "status": 200,
+      "success": true,
+      "duration": 953
+    },
+    {
+      "url": "https://github.com/ranger/ranger",
+      "status": 200,
+      "success": true,
+      "duration": 964
+    },
+    {
+      "url": "https://github.com/jesseduffield/lazygit",
+      "status": 200,
+      "success": true,
+      "duration": 1127
+    },
+    {
+      "url": "https://github.com/wfxr/forgit",
+      "status": 200,
+      "success": true,
+      "duration": 1018
+    },
+    {
+      "url": "https://github.com/dandavison/delta",
+      "status": 200,
+      "success": true,
+      "duration": 988
+    },
+    {
+      "url": "https://github.com/kubernetes-sigs/krew",
+      "status": 200,
+      "success": true,
+      "duration": 899
+    },
+    {
+      "url": "https://github.com/charmbracelet/gum",
+      "status": 200,
+      "success": true,
+      "duration": 938
+    },
+    {
+      "url": "https://github.com/charmbracelet/glow",
+      "status": 200,
+      "success": true,
+      "duration": 918
+    },
+    {
+      "url": "https://github.com/go-task/task",
+      "status": 200,
+      "success": true,
+      "duration": 983
+    },
+    {
+      "url": "https://github.com/nickkhall/nick",
+      "status": 404,
+      "success": false,
+      "duration": 649
+    },
+    {
+      "url": "https://github.com/dutchcoders/transfer.sh",
+      "status": 200,
+      "success": true,
+      "duration": 900
+    },
+    {
+      "url": "https://github.com/CupCakeArmy/chronos",
+      "status": 404,
+      "success": false,
+      "duration": 609
+    },
+    {
+      "url": "https://github.com/charmbracelet/bubbletea",
+      "status": 200,
+      "success": true,
+      "duration": 981
+    },
+    {
+      "url": "https://github.com/htop-dev/htop",
+      "status": 200,
+      "success": true,
+      "duration": 1023
+    },
+    {
+      "url": "https://github.com/aristocratos/btop",
+      "status": 200,
+      "success": true,
+      "duration": 963
+    },
+    {
+      "url": "https://github.com/Slackadays/Clipboard",
+      "status": 200,
+      "success": true,
+      "duration": 1097
+    },
+    {
+      "url": "https://github.com/activepieces/activepieces",
+      "status": 200,
+      "success": true,
+      "duration": 1029
+    },
+    {
+      "url": "https://github.com/p0deje/Maccy",
+      "status": 200,
+      "success": true,
+      "duration": 914
+    },
+    {
+      "url": "https://github.com/Clipy/Clipy",
+      "status": 200,
+      "success": true,
+      "duration": 887
+    },
+    {
+      "url": "https://github.com/jdberry/jclip",
+      "status": 404,
+      "success": false,
+      "duration": 595
+    },
+    {
+      "url": "https://github.com/vifm/vifm",
+      "status": 200,
+      "success": true,
+      "duration": 1016
+    },
+    {
+      "url": "https://github.com/luiz-depaiva/bb-files",
+      "status": 404,
+      "success": false,
+      "duration": 628
+    },
+    {
+      "url": "https://github.com/nylas/nylas-mail",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19215
+    },
+    {
+      "url": "https://github.com/Foundry376/Mailspring",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10011
+    },
+    {
+      "url": "https://github.com/walles/moar",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10007
+    },
+    {
+      "url": "https://github.com/tonsky/FiraCode",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10014
+    },
+    {
+      "url": "https://github.com/Ulauncher/Ulauncher",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10011
+    },
+    {
+      "url": "https://github.com/d12frosted/homebrew-emacs-plus",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10008
+    },
+    {
+      "url": "https://github.com/pierrickmonnot/LauchbarVSCode",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10009
+    },
+    {
+      "url": "https://github.com/shobrook/rebound",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10023
+    },
+    {
+      "url": "https://github.com/kylef/clif",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10014
+    },
+    {
+      "url": "https://github.com/djbin/gitify",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10009
+    },
+    {
+      "url": "https://github.com/sebastiencs/sidebar-dropdown",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10011
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "timestamp": "2026-02-07T06:02:48.284Z",
+  "summary": {
+    "total": 40,
+    "success": 0,
+    "failed": 40,
+    "successRate": "0.00%",
+    "avgDuration": "14201ms"
+  },
+  "results": [
+    {
+      "url": "https://github.com/spring-projects/spring-boot",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19238
+    },
+    {
+      "url": "https://github.com/quarkusio/quarkus",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10003
+    },
+    {
+      "url": "https://github.com/micronaut-projects/micronaut-core",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10013
+    },
+    {
+      "url": "https://github.com/jakartaee/platform",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10013
+    },
+    {
+      "url": "https://github.com/hibernate/hibernate-orm",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10008
+    },
+    {
+      "url": "https://github.com/apache/tomcat",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19205
+    },
+    {
+      "url": "https://github.com/netty/netty",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19240
+    },
+    {
+      "url": "https://github.com/spring-projects/spring-security",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10008
+    },
+    {
+      "url": "https://github.com/dotnet/aspnetcore",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19753
+    },
+    {
+      "url": "https://github.com/dotnet/efcore",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19174
+    },
+    {
+      "url": "https://github.com/dapr/dapr",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19204
+    },
+    {
+      "url": "https://github.com/dotnet/orleans",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 20127
+    },
+    {
+      "url": "https://github.com/MassTransit/MassTransit",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10006
+    },
+    {
+      "url": "https://github.com/serilog/serilog",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 20124
+    },
+    {
+      "url": "https://github.com/rails/rails",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19980
+    },
+    {
+      "url": "https://github.com/sinatra/sinatra",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19230
+    },
+    {
+      "url": "https://github.com/hanami/hanami",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19200
+    },
+    {
+      "url": "https://github.com/ruby-grape/grape",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10002
+    },
+    {
+      "url": "https://github.com/puma/puma",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10004
+    },
+    {
+      "url": "https://github.com/laravel/framework",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10008
+    },
+    {
+      "url": "https://github.com/symfony/symfony",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10011
+    },
+    {
+      "url": "https://github.com/slimphp/Slim",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10012
+    },
+    {
+      "url": "https://github.com/yiisoft/yii2",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10014
+    },
+    {
+      "url": "https://github.com/codeigniter4/CodeIgniter4",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10016
+    },
+    {
+      "url": "https://github.com/cakephp/cakephp",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10010
+    },
+    {
+      "url": "https://github.com/typeorm/typeorm",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10015
+    },
+    {
+      "url": "https://github.com/prisma/prisma",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10020
+    },
+    {
+      "url": "https://github.com/mikro-orm/mikro-orm",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10007
+    },
+    {
+      "url": "https://github.com/sequelize/sequelize",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10013
+    },
+    {
+      "url": "https://github.com/sqlalchemy/sqlalchemy",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10015
+    },
+    {
+      "url": "https://github.com/django/django",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10015
+    },
+    {
+      "url": "https://github.com/Automattic/mongoose",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10011
+    },
+    {
+      "url": "https://github.com/coleifer/peewee",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10021
+    },
+    {
+      "url": "https://github.com/apollographql/apollo-server",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 26342
+    },
+    {
+      "url": "https://github.com/dotansimha/graphql-yoga",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19187
+    },
+    {
+      "url": "https://github.com/grpc/grpc",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19235
+    },
+    {
+      "url": "https://github.com/grpc/grpc-java",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 20128
+    },
+    {
+      "url": "https://github.com/grpc/grpc-node",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10011
+    },
+    {
+      "url": "https://github.com/swagger-api/swagger-ui",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19186
+    },
+    {
+      "url": "https://github.com/OpenAPITools/openapi-generator",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19212
+    }
+  ]
+}

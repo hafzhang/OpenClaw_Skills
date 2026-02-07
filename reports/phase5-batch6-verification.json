@@ -1,0 +1,454 @@
+{
+  "timestamp": "2026-02-07T06:05:26.224Z",
+  "summary": {
+    "total": 70,
+    "success": 41,
+    "failed": 29,
+    "successRate": "58.57%",
+    "avgDuration": "5079ms"
+  },
+  "results": [
+    {
+      "url": "https://github.com/figma/react-export",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10031
+    },
+    {
+      "url": "https://github.com/tokens-studio/tokens-studio",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10011
+    },
+    {
+      "url": "https://github.com/figma/figma-api",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10014
+    },
+    {
+      "url": "https://github.com/relume-io/relume-library",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10016
+    },
+    {
+      "url": "https://github.com/figma/auto-layout",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10003
+    },
+    {
+      "url": "https://github.com/lucide-icons/lucide",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10012
+    },
+    {
+      "url": "https://github.com/tailwindlabs/heroicons",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10003
+    },
+    {
+      "url": "https://github.com/tabler/tabler-icons",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19900
+    },
+    {
+      "url": "https://github.com/phosphor-icons/phosphor-icons",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 20044
+    },
+    {
+      "url": "https://github.com/lucaburgio/iconoir",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10006
+    },
+    {
+      "url": "https://github.com/shadcn-ui/ui",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19227
+    },
+    {
+      "url": "https://github.com/chakra-ui/chakra-ui",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10002
+    },
+    {
+      "url": "https://github.com/mantinedev/mantine",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10010
+    },
+    {
+      "url": "https://github.com/saadeghi/daisyui",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19455
+    },
+    {
+      "url": "https://github.com/themesberg/flowbite",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19226
+    },
+    {
+      "url": "https://github.com/penpot/penpot",
+      "status": 200,
+      "success": true,
+      "duration": 1913
+    },
+    {
+      "url": "https://github.com/excalidraw/excalidraw",
+      "status": 200,
+      "success": true,
+      "duration": 928
+    },
+    {
+      "url": "https://github.com/tldraw/tldraw",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19963
+    },
+    {
+      "url": "https://github.com/framer/motion",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19198
+    },
+    {
+      "url": "https://github.com/pmndrs/react-spring",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19210
+    },
+    {
+      "url": "https://github.com/adamwathan/tailwind-css-color-generator",
+      "status": 404,
+      "success": false,
+      "duration": 645
+    },
+    {
+      "url": "https://github.com/Coolors/coolors-plugin",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19217
+    },
+    {
+      "url": "https://github.com/foliojs/fontkit",
+      "status": 200,
+      "success": true,
+      "duration": 967
+    },
+    {
+      "url": "https://github.com/google/fonts",
+      "status": 200,
+      "success": true,
+      "duration": 858
+    },
+    {
+      "url": "https://github.com/LeaVerou/color.js",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19198
+    },
+    {
+      "url": "https://github.com/mattermost/mattermost",
+      "status": 200,
+      "success": true,
+      "duration": 961
+    },
+    {
+      "url": "https://github.com/zulip/zulip",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19195
+    },
+    {
+      "url": "https://github.com/RocketChat/Rocket.Chat",
+      "status": 200,
+      "success": true,
+      "duration": 926
+    },
+    {
+      "url": "https://github.com/vector-im/element-web",
+      "status": 301,
+      "success": false,
+      "duration": 600,
+      "redirect": "https://github.com/element-hq/element-web"
+    },
+    {
+      "url": "https://github.com/wireapp/wire-server",
+      "status": 200,
+      "success": true,
+      "duration": 1009
+    },
+    {
+      "url": "https://github.com/plankanban/planka",
+      "status": 200,
+      "success": true,
+      "duration": 997
+    },
+    {
+      "url": "https://github.com/go-vikunja/vikunja",
+      "status": 200,
+      "success": true,
+      "duration": 945
+    },
+    {
+      "url": "https://github.com/taigaio/taiga-back",
+      "status": 200,
+      "success": true,
+      "duration": 933
+    },
+    {
+      "url": "https://github.com/redmine/redmine",
+      "status": 200,
+      "success": true,
+      "duration": 948
+    },
+    {
+      "url": "https://github.com/opf/openproject",
+      "status": 200,
+      "success": true,
+      "duration": 945
+    },
+    {
+      "url": "https://github.com/facebook/docusaurus",
+      "status": 200,
+      "success": true,
+      "duration": 1072
+    },
+    {
+      "url": "https://github.com/GitbookIO/gitbook",
+      "status": 200,
+      "success": true,
+      "duration": 961
+    },
+    {
+      "url": "https://github.com/mintlify/writer",
+      "status": 200,
+      "success": true,
+      "duration": 984
+    },
+    {
+      "url": "https://github.com/vuejs/vitepress",
+      "status": 200,
+      "success": true,
+      "duration": 798
+    },
+    {
+      "url": "https://github.com/sphinx-doc/sphinx",
+      "status": 200,
+      "success": true,
+      "duration": 836
+    },
+    {
+      "url": "https://github.com/GerritCodeReview/gerrit",
+      "status": 200,
+      "success": true,
+      "duration": 921
+    },
+    {
+      "url": "https://github.com/phacility/phabricator",
+      "status": 200,
+      "success": true,
+      "duration": 865
+    },
+    {
+      "url": "https://github.com/Reviewable/Reviewable",
+      "status": 200,
+      "success": true,
+      "duration": 846
+    },
+    {
+      "url": "https://github.com/SonarSource/sonarqube",
+      "status": 200,
+      "success": true,
+      "duration": 1143
+    },
+    {
+      "url": "https://github.com/github/lgtm",
+      "status": 404,
+      "success": false,
+      "duration": 630
+    },
+    {
+      "url": "https://github.com/obsidianmd/obsidian-releases",
+      "status": 200,
+      "success": true,
+      "duration": 1173
+    },
+    {
+      "url": "https://github.com/logseq/logseq",
+      "status": 200,
+      "success": true,
+      "duration": 325
+    },
+    {
+      "url": "https://github.com/laurent22/joplin",
+      "status": 200,
+      "success": true,
+      "duration": 330
+    },
+    {
+      "url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "status": 200,
+      "success": true,
+      "duration": 943
+    },
+    {
+      "url": "https://github.com/n8n-io/n8n",
+      "status": 200,
+      "success": true,
+      "duration": 890
+    },
+    {
+      "url": "https://github.com/massCodeIO/massCode",
+      "status": 200,
+      "success": true,
+      "duration": 958
+    },
+    {
+      "url": "https://github.com/cunkt/Clean-Snippets",
+      "status": 404,
+      "success": false,
+      "duration": 590
+    },
+    {
+      "url": "https://github.com/vedantmgoyal9/gistpad",
+      "status": 404,
+      "success": false,
+      "duration": 685
+    },
+    {
+      "url": "https://github.com/hackjutsu/Lepton",
+      "status": 200,
+      "success": true,
+      "duration": 966
+    },
+    {
+      "url": "https://github.com/cthackers/codebox",
+      "status": 404,
+      "success": false,
+      "duration": 585
+    },
+    {
+      "url": "https://github.com/linkwarden/linkwarden",
+      "status": 200,
+      "success": true,
+      "duration": 872
+    },
+    {
+      "url": "https://github.com/go-shiori/shiori",
+      "status": 200,
+      "success": true,
+      "duration": 962
+    },
+    {
+      "url": "https://github.com/jarun/buku",
+      "status": 200,
+      "success": true,
+      "duration": 1031
+    },
+    {
+      "url": "https://github.com/HoarderApp/hoarder",
+      "status": 404,
+      "success": false,
+      "duration": 636
+    },
+    {
+      "url": "https://github.com/WorldBrain/Memex",
+      "status": 200,
+      "success": true,
+      "duration": 900
+    },
+    {
+      "url": "https://github.com/node-red/node-red",
+      "status": 200,
+      "success": true,
+      "duration": 805
+    },
+    {
+      "url": "https://github.com/automatisch/automatisch",
+      "status": 200,
+      "success": true,
+      "duration": 1000
+    },
+    {
+      "url": "https://github.com/huginn/huginn",
+      "status": 200,
+      "success": true,
+      "duration": 941
+    },
+    {
+      "url": "https://github.com/windmill-labs/windmill",
+      "status": 200,
+      "success": true,
+      "duration": 1066
+    },
+    {
+      "url": "https://github.com/toeverything/AFFiNE",
+      "status": 200,
+      "success": true,
+      "duration": 977
+    },
+    {
+      "url": "https://github.com/tmux/tmux",
+      "status": 200,
+      "success": true,
+      "duration": 266
+    },
+    {
+      "url": "https://github.com/tmux-plugins/tpm",
+      "status": 200,
+      "success": true,
+      "duration": 273
+    },
+    {
+      "url": "https://github.com/zap-zsh/zap",
+      "status": 200,
+      "success": true,
+      "duration": 875
+    },
+    {
+      "url": "https://github.com/mhassan8/devops-shell-snippets",
+      "status": 404,
+      "success": false,
+      "duration": 613
+    },
+    {
+      "url": "https://github.com/junegunn/fzf",
+      "status": 200,
+      "success": true,
+      "duration": 268
+    }
+  ]
+}

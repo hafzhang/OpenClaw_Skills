@@ -628,8 +628,8 @@
         "记录仓库元数据（Star、更新时间）"
       ],
       "priority": 84,
-      "passes": true,
-      "notes": "✅ Phase 5 - Sprint 8.21 - 已完成 - 验证了690个候选技能仓库，315个HTTP 200成功 (45.65%)，375个失败 (54.35%，主要是TIMEOUT/ERROR网络问题)"
+      "passes": false,
+      "notes": "Phase 5 - Sprint 8.21 - 仓库验证"
     },
     {
       "id": "US-117",
