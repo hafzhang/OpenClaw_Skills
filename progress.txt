@@ -2397,3 +2397,23 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - Next.js构建时generateStaticParams会为所有技能生成静态页面
 
 ---
+
+## 2026-02-07 - US-121
+- 测试所有技能链接和功能
+- 发现并修复86个重复技能ID（skill-201至skill-296重复）
+- 创建 scripts/check-duplicates.js 检测重复ID
+- 创建 scripts/fix-duplicates.js 修复重复问题
+- 技能总数从569减少到483（唯一技能）
+- npm run build 验证通过（483个技能，532个静态页面）
+- 所有技能包含完整必需字段
+- 创建 scripts/test-skill-links.js 用于链接验证（可选运行）
+
+**Learnings for future iterations:**
+- 合并skills时必须检查重复ID，使用Set或Map去重
+- 保留首次出现的技能，删除后续重复项
+- 静态页面数量 = 技能数量 + 教程数量 + 配置数量 + 其他页面
+- 重复ID会导致Next.js generateStaticParams生成重复路由
+- 浏览器测试环境可能不稳定，优先使用构建验证
+- 链接验证脚本需要处理网络超时和限流
+
+---
