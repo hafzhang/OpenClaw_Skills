@@ -2375,3 +2375,25 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - JSON文件需包含slugPatterns和categoryMapping元数据，方便后续维护
 
 ---
+
+## 2026-02-07 - US-120
+- 将269个Phase 5新技能添加到skills.json（skill-201至skill-603）
+- 实际添加269个技能（phase5-skill-slugs-categories.json包含269个技能，不是480个）
+- 创建 scripts/generate-skills-phase5.js 生成技能数据
+- 创建 scripts/merge-skills-phase5.js 合并到现有skills.json
+- 技能总数从300增加到569
+- 所有新技能包含完整字段：id, name, slug, description, longDescription, category, tags, author, command, source, verified, url, createdAt, installCount
+- 80个核心技能使用完整中文描述（来自phase5-chinese-descriptions-complete.json）
+- 其余189个技能使用默认模板描述
+- npm run build 验证通过（569个技能，597个静态页面）
+- 分类分布：development (最多)、devops、productivity、ai、utilities
+
+**Learnings for future iterations:**
+- skills.json使用标准JSON数组格式，合并时需要处理逗号和闭合括号
+- 随机生成installCount（1000-50000）和createdAt（过去一年内）使数据更真实
+- 中文描述优先从phase5-chinese-descriptions-complete.json获取，缺失的使用模板
+- 模板格式：`${categoryNames[category]} - ${tagStr}` 和 `${name} 是一款优秀的 ${categoryNames[category]} 工具`
+- 使用`relatedSkills: []`空数组，后续可基于标签或分类建立关联
+- Next.js构建时generateStaticParams会为所有技能生成静态页面
+
+---
