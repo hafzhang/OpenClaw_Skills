@@ -109,4 +109,119 @@ test.describe('OpenClaw Hub Application', () => {
     await page.setViewportSize({ width: 1920, height: 1080 });
     await expect(page.locator('h1').filter({ hasText: 'OpenClaw 实战指南' }).first()).toBeVisible();
   });
+
+  // ============ Phase 6: 配置分享功能测试 ============
+  test('configs page displays share button', async ({ page }) => {
+    await page.goto('/configs');
+
+    // Check page loaded (h1 contains Agent 配置)
+    await expect(page.locator('h1').filter({ hasText: 'Agent 配置' })).toBeVisible();
+
+    // Check share config button exists
+    const shareButton = page.locator('button:has-text("分享配置")');
+    await expect(shareButton).toBeVisible();
+
+    // Check share section description
+    await expect(page.locator('text=创建了有用的 Agent 配置？')).toBeVisible();
+  });
+
+  test('config submission dialog opens and closes', async ({ page }) => {
+    await page.goto('/configs');
+
+    // Click share button
+    await page.click('button:has-text("分享配置")');
+
+    // Check dialog opens
+    const dialog = page.locator('[role="dialog"]');
+    await expect(dialog).toBeVisible();
+
+    // Check dialog title
+    await expect(page.locator('text=分享你的 Agent 配置')).toBeVisible();
+
+    // Check form fields exist
+    await expect(page.locator('input#name')).toBeVisible();
+    await expect(page.locator('textarea#description')).toBeVisible();
+    await expect(page.locator('input#author')).toBeVisible();
+    // shadcn Select uses data-slot="select-trigger"
+    await expect(page.locator('[data-slot="select-trigger"]')).toBeVisible();
+    await expect(page.locator('textarea#configJson')).toBeVisible();
+
+    // Close dialog by clicking cancel
+    await page.click('button:has-text("取消")');
+    await expect(dialog).not.toBeVisible();
+  });
+
+  test('config submission form validation works', async ({ page }) => {
+    await page.goto('/configs');
+
+    // Open dialog
+    await page.click('button:has-text("分享配置")');
+
+    // Check form exists
+    const nameInput = page.locator('input#name');
+    await expect(nameInput).toBeVisible();
+
+    // Fill in valid data
+    await nameInput.fill('测试配置');
+    await page.locator('textarea#description').fill('这是一个测试配置描述');
+    await page.locator('input#author').fill('测试作者');
+
+    // Fill JSON content
+    await page.locator('textarea#configJson').fill(JSON.stringify({
+      name: 'Test Config',
+      instructions: 'Test instructions'
+    }, null, 2));
+
+    // Verify form fields have values
+    await expect(nameInput).toHaveValue('测试配置');
+    await expect(page.locator('textarea#description')).toHaveValue('这是一个测试配置描述');
+  });
+
+  test('config cards display correctly', async ({ page }) => {
+    await page.goto('/configs');
+
+    // Check config categories are displayed (first occurrence)
+    await expect(page.locator('h2').filter({ hasText: '开发辅助' })).toBeVisible();
+    await expect(page.locator('h2').filter({ hasText: '工作效率' })).toBeVisible();
+    await expect(page.locator('h2').filter({ hasText: '学习教学' })).toBeVisible();
+
+    // Check config cards exist
+    const configCards = page.locator('[data-slot="card"]');
+    const count = await configCards.count();
+    expect(count).toBeGreaterThan(0);
+  });
+
+  test('config search functionality works', async ({ page }) => {
+    await page.goto('/configs');
+
+    // Check search input exists (use placeholder to find the specific one)
+    const searchInput = page.locator('input[placeholder*="搜索配置"]');
+    await expect(searchInput).toBeVisible();
+
+    // Type in search and verify
+    await searchInput.click();
+    await searchInput.pressSequentially('代码审查');
+
+    // Wait for filter to apply
+    await page.waitForTimeout(500);
+
+    // Verify input value
+    const value = await searchInput.inputValue();
+    expect(value).toBe('代码审查');
+  });
+
+  test('config category filter works', async ({ page }) => {
+    await page.goto('/configs');
+
+    // Find filter buttons by their text
+    const allButton = page.locator('button').filter({ hasText: /^全部$/ });
+    const devButton = page.locator('button').filter({ hasText: /^开发辅助$/ });
+
+    // Click on different category filters
+    await allButton.click();
+    await expect(allButton).toBeVisible();
+
+    await devButton.click();
+    await expect(devButton).toBeVisible();
+  });
 });
