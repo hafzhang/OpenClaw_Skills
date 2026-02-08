@@ -1,9 +1,9 @@
 # OpenClaw Hub 下一阶段计划
 
-> **版本**: v4.1 (Phase 5 进行中，分批执行：教程 40→100 分17批，技能 300→1000 分30批)
-> **更新时间**: 2026-02-06
+> **版本**: v5.0 (Phase 6 规划中：分享 Agent 配置功能)
+> **更新时间**: 2026-02-08
 > **当前分支**: feature/openclaw-hub-phase-3
-> **当前状态**: Phase 4 完成 ✅ (US-078 ~ US-088 高级功能) | Phase 5 分批执行中 🚧
+> **当前状态**: Phase 5 完成 ✅ (教程 100 篇，技能 1000 个) | Phase 6 规划中 🚧
 
 ---
 
@@ -49,16 +49,131 @@
 | 外部链接验证 | `src/lib/link-validator.ts` | ✅ 完成 |
 | 类型定义扩展 | `src/types/index.ts` | ✅ 完成 |
 
-### 🚀 Phase 5 规划中（大规模内容扩展）
+### ✅ Phase 5 已完成（大规模内容扩展）
 
-| 数据类型 | 基础数量 | 当前数量 | 新目标 | 新增 |
-|----------|----------|----------|--------|------|
-| 教程 (Tutorials) | 10 | 40 | 100 | +60 |
-| 技能 (Skills) | 40 | 300 | 1000 | +700 |
+| 数据类型 | 基础数量 | 实际完成 | 状态 |
+|----------|----------|----------|------|
+| 教程 (Tutorials) | 40 | 100 | ✅ 完成 |
+| 技能 (Skills) | 300 | 1000 | ✅ 完成 |
+| 用户故事 | - | US-089 ~ US-100 | ✅ 全部通过 |
+
+### 🚀 Phase 6 规划中（分享 Agent 配置功能）
+
+| 功能模块 | 文件 | 状态 |
+|----------|------|------|
+| 配置提交表单 | `src/components/configs/ConfigSubmissionForm.tsx` | 🚧 规划中 |
+| GitHub PR 生成器 | `src/lib/github-pr.ts` | 🚧 规划中 |
+| 配置验证工具 | `src/lib/config-validation.ts` | 🚧 规划中 |
+| PR 模板 | `.github/PULL_REQUEST_TEMPLATE/config_submission.md` | 🚧 规划中 |
 
 ---
 
-## 🚀 Phase 5: 大规模内容扩展 🚧 规划中
+## 🚀 Phase 6: 分享 Agent 配置功能 🚧 规划中
+
+> **启动条件**: Phase 5 全部完成 (教程 100 篇，技能 1000 个) ✅
+> **当前状态**: 规划中
+> **核心目标**: 实现用户友好的配置分享功能，让用户通过 GitHub PR 提交自己的 Agent 配置
+
+### 功能概述
+
+实现一个用户友好的配置分享功能，让用户能够通过 GitHub PR 提交自己的 Agent 配置到分享站。
+
+### 当前状态分析
+
+- 已有 `/configs` 页面展示现有配置 (`src/app/configs/page.tsx`)
+- 已有简单的文字提示引导用户通过 GitHub PR 提交
+- 数据存储在静态 `src/data/configs.json` 中
+- 站点为静态导出，无后端 API
+
+### 实现方案
+
+#### 1. 添加 shadcn/ui Dialog 组件
+```bash
+npx shadcn add dialog textarea label
+```
+
+#### 2. 创建配置提交表单组件
+**文件:** `src/components/configs/ConfigSubmissionForm.tsx`
+
+功能:
+- 配置名称 (input)
+- 描述 (textarea)
+- 作者名 (input)
+- GitHub 用户名 (input)
+- 配置分类 (select)
+- 标签 (input，逗号分隔)
+- 配置内容 JSON (textarea，带格式化验证)
+
+#### 3. 创建 GitHub PR 链接生成器
+**文件:** `src/lib/github-pr.ts`
+
+功能:
+- 接收表单数据，生成预填充的 GitHub PR 链接
+- 使用 GitHub 的 `compare` 功能创建 PR 模板
+- 或者使用 GitHub Issues 作为临时方案
+
+#### 4. 更新 configs 页面
+**文件:** `src/app/configs/page.tsx`
+
+修改:
+- 将静态提示卡片改为可点击的"分享配置"按钮
+- 点击后打开 Dialog 模态框
+- 模态框内嵌 ConfigSubmissionForm
+
+#### 5. 添加 PR 模板
+**文件:** `.github/PULL_REQUEST_TEMPLATE/config_submission.md`
+
+用于标准化配置提交格式
+
+#### 6. 可选：创建配置验证函数
+**文件:** `src/lib/config-validation.ts`
+
+验证:
+- JSON 格式有效性
+- 必填字段
+- 配置结构是否符合 AgentConfig 类型
+
+### 关键文件路径
+
+| 用途 | 路径 |
+|------|------|
+| 新增表单组件 | `src/components/configs/ConfigSubmissionForm.tsx` |
+| 新增 GitHub PR 工具 | `src/lib/github-pr.ts` |
+| 修改配置列表页 | `src/app/configs/page.tsx` |
+| 新增验证工具 | `src/lib/config-validation.ts` |
+| PR 模板 | `.github/PULL_REQUEST_TEMPLATE/config_submission.md` |
+| 类型定义(已有) | `src/types/index.ts` |
+
+### UI 流程
+
+1. 用户访问 `/configs` 页面
+2. 点击"分享你的配置"按钮
+3. 打开模态框 Dialog
+4. 填写表单（配置名、描述、作者、分类、标签、JSON 内容）
+5. 点击"生成 PR"
+6. 打开新标签页到 GitHub，预填充 PR 内容
+7. 用户完成 PR 提交流程
+
+### 验收标准
+
+- [ ] 配置提交表单组件创建完成
+- [ ] GitHub PR 链接生成器正常工作
+- [ ] configs 页面集成分享按钮和 Dialog
+- [ ] 表单验证功能正常（JSON 格式、必填字段）
+- [ ] PR 模板创建完成
+- [ ] 可选：配置验证工具创建
+- [ ] npm run build 构建成功
+- [ ] 浏览器测试表单提交流程
+
+### 注意事项
+
+- 由于是静态站点，无法直接保存用户数据，必须通过 GitHub PR 流程
+- 表单需要在前端做 JSON 格式验证，避免用户提交格式错误的配置
+- 考虑添加"复制到剪贴板"功能作为备选方案
+
+---
+
+## ✅ Phase 5: 大规模内容扩展（已完成）
 
 > **启动条件**: Phase 4 全部完成 (US-078 ~ US-088 ✅)
 > **当前状态**: 规划中
@@ -403,6 +518,7 @@
 
 | 版本 | 日期 | 变更内容 |
 |------|------|----------|
+| v5.0 | 2026-02-08 | Phase 5 完成 ✅ (教程 100 篇，技能 1000 个)，Phase 6 规划中：分享 Agent 配置功能 |
 | v4.1 | 2026-02-06 | Phase 5 任务细化：教程扩展分 17 批（每批 3-6 篇），技能扩展分 30 批（每批 20-55 个），确保每批可独立完成和验证 |
 | v4.0 | 2026-02-06 | Phase 4 完成 ✅ (US-078 ~ US-088)，Phase 5 规划中：教程 40→100 (+60)，技能 300→1000 (+700) |
 | v3.0 | 2026-02-06 | Phase 2 完成 ✅，Phase 3 完成 ✅ (US-046 ~ US-077)，教程 40 篇、技能 300 个 |
@@ -415,11 +531,20 @@
 
 ---
 
-**下一步**: 开始 Phase 5 - Sprint 7.0 确定教程主题，然后按批次执行（每批 4-6 篇教程）+ Sprint 8 技能扩展（每批 20-55 个技能）
+**下一步**: 开始 Phase 6 - 实现分享 Agent 配置功能
 
-**核心原则**: 宁缺毋滥 - 所有仓库必须验证通过且内容完整
+1. 添加 shadcn/ui Dialog 组件 (`npx shadcn add dialog textarea label`)
+2. 创建配置提交表单组件 (`ConfigSubmissionForm.tsx`)
+3. 创建 GitHub PR 链接生成器 (`github-pr.ts`)
+4. 更新 configs 页面，集成分享按钮和 Dialog
+5. 添加 PR 模板 (`config_submission.md`)
+6. 创建配置验证工具 (`config-validation.ts`)
+7. 构建测试和浏览器验证
+
+**核心原则**: 用户友好 - 通过 GitHub PR 流程实现配置分享
 
 **执行策略**:
-- 教程扩展：分 17 批，每批 3-6 篇，每批完成后立即测试验证
-- 技能扩展：分 30 批，每批 20-55 个，每批完成后验证仓库并更新数据
-- 每批独立可执行，确保任务成功后再进行下一批
+- 从表单组件开始，逐步添加功能
+- 每个组件完成后立即测试验证
+- 最后整合到 configs 页面
+- 确保静态站点特性不受影响

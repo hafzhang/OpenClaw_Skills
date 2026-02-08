@@ -1,13 +1,13 @@
 {
   "project": "OpenClaw Hub - 实战指南",
   "branchName": "feature/openclaw-hub-phase-3",
-  "description": "OpenClaw Hub 实战指南 - Phase 4 完成 ✅ (US-001 ~ US-088)。Phase 5 进行中：教程 40→100 (+60，分17批)，技能 300→1000 (+700，分30批)。",
+  "description": "OpenClaw Hub 实战指南 - Phase 5 完成 ✅ (教程 100 篇，技能 1000 个)。Phase 6 规划中：分享 Agent 配置功能 (US-123 ~ US-128)。",
   "currentStatus": {
-    "phase": 5,
-    "phaseName": "Phase 5 - 大规模内容扩展",
-    "status": "in_progress",
+    "phase": 6,
+    "phaseName": "Phase 6 - 分享 Agent 配置功能",
+    "status": "planning",
     "tutorials": 100,
-    "skills": 300,
+    "skills": 483,
     "configs": 5
   },
   "userStories": [
@@ -727,6 +727,115 @@
       "priority": 90,
       "passes": true,
       "notes": "✅ Phase 5 - 最终验收完成 - 100个教程、483个技能、532个静态页面、构建通过、宁缺毋滥"
+    },
+    {
+      "id": "US-123",
+      "title": "添加 shadcn/ui Dialog 组件",
+      "description": "作为开发者，我需要添加 Dialog、Textarea、Label 组件来构建配置提交表单。",
+      "acceptanceCriteria": [
+        "运行 `npx shadcn add dialog textarea label`",
+        "Dialog 组件正确安装到 `src/components/ui/dialog.tsx`",
+        "Textarea 组件正确安装到 `src/components/ui/textarea.tsx`",
+        "Label 组件正确安装到 `src/components/ui/label.tsx`",
+        "组件类型定义正确",
+        "npm run build 成功"
+      ],
+      "priority": 91,
+      "passes": true,
+      "notes": "✅ Phase 6 - Sprint 6.1 - 已完成 - shadcn/ui Dialog、Textarea、Label 组件已安装"
+    },
+    {
+      "id": "US-124",
+      "title": "创建配置提交表单组件",
+      "description": "作为用户，我希望能通过表单填写配置信息，便于提交我的 Agent 配置。",
+      "acceptanceCriteria": [
+        "创建 `src/components/configs/ConfigSubmissionForm.tsx`",
+        "配置名称输入框 (input, 必填)",
+        "描述文本框 (textarea, 必填)",
+        "作者名输入框 (input, 必填)",
+        "GitHub 用户名输入框 (input)",
+        "配置分类下拉选择 (select: productivity/development/devops/ai-llms/utilities)",
+        "标签输入框 (input, 逗号分隔)",
+        "配置内容 JSON 编辑器 (textarea, 带格式化验证)",
+        "表单验证功能（必填字段、JSON 格式）",
+        "类型检查通过"
+      ],
+      "priority": 92,
+      "passes": true,
+      "notes": "✅ Phase 6 - Sprint 6.2 - 已完成 - 创建 ConfigSubmissionForm 组件，包含所有表单字段、验证、JSON格式化功能"
+    },
+    {
+      "id": "US-125",
+      "title": "创建 GitHub PR 链接生成器",
+      "description": "作为用户，我希望能通过点击按钮生成 GitHub PR 链接，简化配置提交流程。",
+      "acceptanceCriteria": [
+        "创建 `src/lib/github-pr.ts`",
+        "接收表单数据作为参数",
+        "生成预填充的 GitHub PR URL",
+        "使用 URL 编码处理表单内容",
+        "包含配置名称、描述、作者、分类等信息",
+        "包含配置 JSON 内容",
+        "生成可直接打开的 GitHub 链接",
+        "类型检查通过"
+      ],
+      "priority": 93,
+      "passes": true,
+      "notes": "✅ Phase 6 - Sprint 6.3 - 已完成 - 创建 github-pr.ts，包含 PR URL 生成、issue URL 生成、新文件 URL 生成功能"
+    },
+    {
+      "id": "US-126",
+      "title": "更新 configs 页面集成分享功能",
+      "description": "作为用户，我希望能通过 configs 页面的按钮打开配置分享表单。",
+      "acceptanceCriteria": [
+        "修改 `src/app/configs/page.tsx`",
+        "将静态提示卡片改为可点击的'分享配置'按钮",
+        "点击按钮打开 Dialog 模态框",
+        "模态框内嵌 ConfigSubmissionForm 组件",
+        "Dialog 标题：'分享你的 Agent 配置'",
+        "Dialog 关闭功能正常",
+        "'生成 PR'按钮调用 github-pr.ts",
+        "在新标签页打开 GitHub PR 页面",
+        "npm run build 成功"
+      ],
+      "priority": 94,
+      "passes": true,
+      "notes": "✅ Phase 6 - Sprint 6.4 - 已完成 - configs 页面集成分享按钮和 Dialog，点击打开配置提交表单"
+    },
+    {
+      "id": "US-127",
+      "title": "添加 PR 模板",
+      "description": "作为维护者，我希望有标准化的 PR 模板来规范配置提交格式。",
+      "acceptanceCriteria": [
+        "创建 `.github/PULL_REQUEST_TEMPLATE/config_submission.md`",
+        "包含配置名称字段",
+        "包含描述字段",
+        "包含作者信息字段",
+        "包含分类和标签字段",
+        "包含配置 JSON 内容区块",
+        "包含检查清单（必填项验证）",
+        "模板格式为 Markdown"
+      ],
+      "priority": 95,
+      "passes": false,
+      "notes": "🚧 Phase 6 - 规划中 - Sprint 6.5 - 创建 GitHub PR 模板用于标准化配置提交"
+    },
+    {
+      "id": "US-128",
+      "title": "创建配置验证工具",
+      "description": "作为用户，我希望在提交前验证配置格式是否正确，避免提交错误的配置。",
+      "acceptanceCriteria": [
+        "创建 `src/lib/config-validation.ts`",
+        "验证 JSON 格式有效性",
+        "验证必填字段（name、description、author）",
+        "验证配置结构是否符合 AgentConfig 类型",
+        "验证分类是否在允许列表中",
+        "验证标签格式（数组或逗号分隔字符串）",
+        "返回详细的错误信息",
+        "类型检查通过"
+      ],
+      "priority": 96,
+      "passes": true,
+      "notes": "✅ Phase 6 - Sprint 6.6 - 已完成 - 创建 config-validation.ts，包含完整表单验证、JSON验证、标签解析功能"
     }
   ]
 }

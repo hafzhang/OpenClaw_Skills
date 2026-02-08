@@ -8,6 +8,15 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { AgentConfig } from '@/types';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from '@/components/ui/dialog';
+import { ConfigSubmissionForm } from '@/components/configs/ConfigSubmissionForm';
+import { Share2 } from 'lucide-react';
 
 // Config categories mapping
 const configCategories = [
@@ -28,6 +37,7 @@ const categories = [
 export default function ConfigsPage() {
   const [selectedCategory, setSelectedCategory] = React.useState<CategorySlug>('all');
   const [searchQuery, setSearchQuery] = React.useState('');
+  const [isDialogOpen, setIsDialogOpen] = React.useState(false);
   const allConfigs = getAllConfigs();
 
   // Filter configs by category
@@ -152,16 +162,43 @@ export default function ConfigsPage() {
           </>
         )}
 
-        {/* Footer note */}
+        {/* Share Config Button */}
         <Card className="mt-12 md:mt-16 bg-muted/50">
           <CardHeader>
-            <CardTitle className="text-lg">分享你的配置</CardTitle>
-            <CardDescription>
-              创建了有用的 Agent 配置？欢迎通过 GitHub PR 提交，经过审核后将添加到此分享站。
-            </CardDescription>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div>
+                <CardTitle className="text-lg">分享你的配置</CardTitle>
+                <CardDescription className="mt-1">
+                  创建了有用的 Agent 配置？欢迎通过 GitHub PR 提交，经过审核后将添加到此分享站。
+                </CardDescription>
+              </div>
+              <Button
+                onClick={() => setIsDialogOpen(true)}
+                className="w-full sm:w-auto shrink-0"
+              >
+                <Share2 className="w-4 h-4 mr-2" />
+                分享配置
+              </Button>
+            </div>
           </CardHeader>
         </Card>
       </div>
+
+      {/* Config Submission Dialog */}
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle>分享你的 Agent 配置</DialogTitle>
+            <DialogDescription>
+              填写配置信息，生成 GitHub PR 链接提交你的配置。
+            </DialogDescription>
+          </DialogHeader>
+          <ConfigSubmissionForm
+            onSuccess={() => setIsDialogOpen(false)}
+            onCancel={() => setIsDialogOpen(false)}
+          />
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
