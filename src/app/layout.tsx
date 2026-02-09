@@ -28,11 +28,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://openclaw-hub.vercel.app"),
+  metadataBase: new URL("https://www.clawtools.dev"),
   openGraph: {
     type: "website",
     locale: "zh_CN",
-    url: "https://openclaw-hub.vercel.app",
+    url: "https://www.clawtools.dev",
     title: "OpenClaw 实战指南 - 教程为主，技能索引为辅",
     description: "30 个真实案例，让 AI 助手真正帮你工作",
     siteName: "OpenClaw 实战指南",

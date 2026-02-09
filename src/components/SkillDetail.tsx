@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { SocialShare } from '@/components/SocialShare';
 import { Skill, Tutorial } from '@/types';
 
 interface SkillDetailProps {
@@ -47,6 +48,15 @@ export function SkillDetail({ skill, relatedSkills, relatedTutorials }: SkillDet
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
           {skill.name}
         </h1>
+
+        {/* Social Share */}
+        <div className="mb-4">
+          <SocialShare
+            title={skill.name}
+            description={skill.description}
+            url=""
+          />
+        </div>
 
         <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-4 sm:mb-6">
           {skill.description}

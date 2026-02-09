@@ -21,3 +21,24 @@ Started: Mon, Feb  9, 2026  6:51:44 PM
 - prd.json (updated US-132 passes status)
 - scripts/ralph/add-tutorials.js (helper script)
 - scripts/ralph/new-tutorials.json (helper file)
+
+---
+
+## [Feb 9, 2026] - US-133
+- Added 5 new Beginner tutorials (tutorial-106 through tutorial-110)
+- Tutorial topics: Markdown Writing Best Practices, Regular Expressions, Database Indexes, HTTP Protocol, CSS Grid Layout
+- All tutorials include 2000+ words, 5+ code examples
+- Updated src/data/tutorials.json
+- Build successful: 546 static pages (418 skills + 110 tutorials + 5 configs + main pages)
+- PRD updated: US-133 marked as passes: true
+
+**Learnings for future iterations:**
+- Tutorial IDs continue from previous max (tutorial-105 → tutorial-106)
+- Node.js script with JSON.stringify() properly handles markdown content with backticks and special characters
+- Each tutorial follows the established format: id, title, slug, description, content (markdown), category, tags, difficulty, readTime, author, relatedSkills, stats, createdAt
+- Build generates static pages for all tutorials automatically
+
+**Files changed:**
+- src/data/tutorials.json (added 5 new tutorials: 106-110)
+- prd.json (updated US-133 passes status)
+- scripts/ralph/phase6-batch2-tutorials.js (helper script)
