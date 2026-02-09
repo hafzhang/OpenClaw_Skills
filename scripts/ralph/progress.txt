@@ -61,3 +61,22 @@ Started: Mon, Feb  9, 2026  6:51:44 PM
 **Files changed:**
 - src/data/tutorials.json (added 5 new tutorials: 111-115)
 - prd.json (updated US-134 passes status)
+
+---
+
+## [Feb 9, 2026] - US-135
+- Added 5 new Beginner tutorials (tutorial-116 through tutorial-120)
+- Tutorial topics: Docker Compose, Nginx, PM2, Application Logging, Unit Testing
+- All tutorials include 2000+ words, 5+ code examples
+- Updated src/data/tutorials.json
+- Build successful: 556 static pages (418 skills + 120 tutorials + 5 configs + main pages)
+- PRD updated: US-135 marked as passes: true
+
+**Learnings for future iterations:**
+- Using the Task agent with general-purpose subagent is the most reliable way to add tutorials with complex markdown content
+- The agent properly handles all escaping issues with backticks and shell variable syntax
+- Build verification confirms all new pages are generated correctly
+
+**Files changed:**
+- src/data/tutorials.json (added 5 new tutorials: 116-120)
+- prd.json (updated US-135 passes status)
