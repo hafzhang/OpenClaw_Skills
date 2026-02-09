@@ -9,6 +9,32 @@
 - For static generation with dynamic routes, use generateStaticParams() + dynamicParams = false
 - ReactMarkdown components prop requires `as Components` type assertion
 - highlight.js for code syntax highlighting (import styles separately)
+- Tutorial IDs: format is `tutorial-XXX` where XXX is incrementing from 001
+- When adding new tutorials: read end of tutorials.json to find last ID, remove closing bracket `]`, add new tutorials, add back closing bracket
+- Build generates static pages: tutorials create /tutorial/[slug] routes, skills create /skills/[slug] routes
+- Number of static pages = number of tutorials + number of skills + other pages
+
+---
+
+## 2026-02-10 - US-139
+- 编写 Phase 6 - Intermediate 教程批次 4 (5篇)
+- tutorial-136: Jaeger分布式追踪 - 涵盖分布式追踪概念、Jaeger架构、OpenTelemetry集成、Span创建、采样策略、Elasticsearch存储
+- tutorial-137: Consul服务发现 - 涵盖服务注册、健康检查、KV存储、ACL访问控制、多数据中心、DNS/HTTP API查询
+- tutorial-138: Nginx负载均衡 - 涵盖负载均衡策略、健康检查、会话保持、HTTPS/WebSocket配置、高可用部署、性能优化
+- tutorial-139: Let's Encrypt SSL证书 - 涵盖HTTP-01/DNS-01挑战、Certbot使用、Nginx/Apache配置、自动续期、Docker部署、通配符证书
+- tutorial-140: Webpack构建工具 - 涵盖Loader配置、Plugin配置、代码分割、开发服务器、性能优化、Tree Shaking
+- 更新 src/data/tutorials.json
+- 更新 prd.json (US-139 passes: true)
+- 构建验证通过 - 574个静态页面 (140个教程 + 419个技能 + 其他)
+
+**Learnings for future iterations:**
+- 教程JSON格式: id, title, slug, description, content (Markdown), category, tags, difficulty, readTime, author, relatedSkills, stats, createdAt, featured
+- Intermediate教程标准: 2500+字, 6+代码示例, 包含实战案例和最佳实践
+- category字段: devops/development/productivity等
+- relatedSkills必须是已存在的skill ID (e.g., skill-105, skill-106)
+- 构建成功后可以看到生成的静态页面数量
+
+---
 
 ---
 
@@ -2494,3 +2520,24 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 每篇教程都包含完整的代码示例、配置文件说明和最佳实践
 - 相关技能通过relatedSkills字段关联到具体的skill ID
 - DevOps类教程涵盖容器化(Docker)、编排(K8s)、包管理(Helm)、监控(Prometheus/Grafana)完整技术栈
+
+## 2026-02-10 - US-140
+- 编写 Phase 6 - Advanced 教程批次 1 (5篇)
+- tutorial-141: 微服务拆分策略 - 涵盖DDD、限界上下文、拆分策略（按业务能力/数据子域/扩展性/团队）、数据一致性、服务间通信
+- tutorial-142: 事件驱动架构 - 涵盖EDA核心概念、事件类型、消息传递模式（点对点/发布订阅）、消息代理(RabbitMQ/Kafka/Redis)、设计模式(Event Sourcing/CQRS/Saga)
+- tutorial-143: CQRS模式 - 涵盖读写分离、Event Sourcing集成、快照机制、读模型优化、最终一致性保证、缓存策略
+- tutorial-144: Saga分布式事务 - 涵盖编排式/编舞式Saga、状态持久化、超时恢复、可观测性追踪、幂等处理
+- tutorial-145: API版本管理 - 涵盖URI路径/请求头版本策略、语义化版本、向后兼容策略、弃用策略、迁移支持
+- 更新 src/data/tutorials.json
+- 更新 prd.json (US-140 passes: true)
+- 构建验证通过 - 579个静态页面 (145个教程 + 419个技能 + 其他)
+
+**Learnings for future iterations:**
+- Advanced教程标准: 3000+字, 8+代码示例, 包含高级架构模式和最佳实践
+- 使用Node.js脚本添加新教程比手动编辑JSON更可靠
+- category字段: development/devops/productivity等
+- relatedSkills必须是已存在的skill ID
+- 构建成功后可以看到生成的静态页面数量
+
+---
+
