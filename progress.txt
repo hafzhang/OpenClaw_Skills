@@ -2461,3 +2461,19 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 每篇教程需要设置正确的relatedSkills引用现有技能ID
 - 构建后会生成静态页面数量 = pages + 动态路由页面数
 ---
+
+## 2026-02-09 - US-137
+- 编写5篇Intermediate教程 (tutorial-126~130): Kafka流处理架构、AWS S3对象存储、Cloudflare CDN和安全、Vercel部署平台、GitHub Actions CI/CD
+- 每篇教程2500+字，包含6+代码示例
+- 更新 src/data/tutorials.json，添加5篇新教程
+- 构建验证通过，总计130篇教程，567个静态页面
+
+**Learnings for future iterations:**
+- Intermediate教程涵盖流处理、云存储、CDN、部署、CI/CD等DevOps核心主题
+- Kafka教程包含生产者、消费者、分区策略、消息可靠性、Kafka Streams
+- AWS S3教程包含存储桶操作、对象操作、预签名URL、生命周期策略、访问控制
+- Cloudflare教程包含CDN、DNS、SSL/TLS、缓存、WAF、Workers、Pages
+- Vercel教程包含Git集成、环境变量、边缘函数、域名配置、Analytics
+- GitHub Actions教程包含工作流、作业、步骤、Docker构建、缓存、自定义Action
+- 所有教程相关技能引用有效技能ID (skill-108, skill-064, skill-109, skill-110, skill-045, skill-111, skill-087)
+---
