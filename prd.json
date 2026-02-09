@@ -81,7 +81,7 @@
       ],
       "priority": 49,
       "passes": true,
-      "notes": "✅ Phase 4 - 已完成 - RSS feeds生成，静态导出模式限制（需调整）"
+      "notes": "✅ Phase 5 - 已完成 - RSS feeds生成，包含主feed、技能、教程、配置四个订阅源"
     },
     {
       "id": "US-082",
@@ -199,6 +199,135 @@
     },
     {
       "id": "US-089",
+      "title": "SEO 优化 - 域名配置更新",
+      "description": "作为网站管理员，更新所有域名配置到新域名 https://www.clawtools.dev",
+      "acceptanceCriteria": [
+        "更新 src/app/layout.tsx 中的 metadataBase",
+        "更新 src/app/sitemap.ts 中的 baseUrl",
+        "更新所有 Open Graph URL",
+        "更新 Twitter Card 配置"
+      ],
+      "priority": 57,
+      "passes": true,
+      "notes": "✅ Phase 5 - 已完成 - 域名已更新为 https://www.clawtools.dev"
+    },
+    {
+      "id": "US-090",
+      "title": "SEO 优化 - 创建 robots.txt",
+      "description": "作为网站管理员，创建 robots.txt 文件指导搜索引擎爬虫",
+      "acceptanceCriteria": [
+        "创建 public/robots.txt",
+        "允许所有搜索引擎",
+        "添加 sitemap 引用"
+      ],
+      "priority": 58,
+      "passes": true,
+      "notes": "✅ Phase 5 - 已完成 - robots.txt 已创建"
+    },
+    {
+      "id": "US-091",
+      "title": "SEO 优化 - 创建结构化数据库",
+      "description": "作为开发者，创建结构化数据生成工具以支持 Schema.org",
+      "acceptanceCriteria": [
+        "创建 src/lib/structured-data.ts",
+        "实现 SoftwareApplication 结构化数据",
+        "实现 TechArticle 结构化数据",
+        "实现 WebSite 结构化数据",
+        "实现 BreadcrumbList 结构化数据"
+      ],
+      "priority": 59,
+      "passes": true,
+      "notes": "✅ Phase 5 - 已完成 - structured-data.ts 已创建"
+    },
+    {
+      "id": "US-092",
+      "title": "SEO 优化 - 技能页面结构化数据",
+      "description": "作为开发者，在技能页面注入 JSON-LD 结构化数据",
+      "acceptanceCriteria": [
+        "在技能页面添加 JSON-LD script 标签",
+        "生成 SoftwareApplication 结构化数据",
+        "生成 BreadcrumbList 结构化数据",
+        "增强 meta 标签（Open Graph, Twitter Card）"
+      ],
+      "priority": 60,
+      "passes": true,
+      "notes": "✅ Phase 5 - 已完成 - 技能页面已包含结构化数据"
+    },
+    {
+      "id": "US-093",
+      "title": "社交分享 - 创建分享组件",
+      "description": "作为用户，我希望可以分享技能到社交媒体",
+      "acceptanceCriteria": [
+        "创建 src/components/SocialShare.tsx",
+        "实现 Twitter/X 分享按钮",
+        "实现 LinkedIn 分享按钮",
+        "实现复制链接按钮",
+        "添加复制成功反馈",
+        "响应式设计"
+      ],
+      "priority": 61,
+      "passes": true,
+      "notes": "✅ Phase 5 - 已完成 - SocialShare 组件已创建"
+    },
+    {
+      "id": "US-094",
+      "title": "社交分享 - 集成到技能详情页",
+      "description": "作为用户，技能详情页应该有社交分享功能",
+      "acceptanceCriteria": [
+        "在 SkillDetail 组件中集成 SocialShare",
+        "放置在标题下方、标签上方",
+        "自动获取当前页面 URL"
+      ],
+      "priority": 62,
+      "passes": true,
+      "notes": "✅ Phase 5 - 已完成 - 社交分享已集成到技能详情页"
+    },
+    {
+      "id": "US-095",
+      "title": "RSS 订阅 - 创建主 RSS feed",
+      "description": "作为用户，我希望可以订阅所有内容更新",
+      "acceptanceCriteria": [
+        "创建 src/app/rss.xml/route.ts",
+        "包含所有技能、教程、配置",
+        "按日期排序",
+        "设置正确的 Content-Type"
+      ],
+      "priority": 63,
+      "passes": true,
+      "notes": "✅ Phase 5 - 已完成 - 主 RSS feed 已创建"
+    },
+    {
+      "id": "US-096",
+      "title": "RSS 订阅 - 创建分类 RSS feeds",
+      "description": "作为用户，我希望可以订阅特定类型的内容",
+      "acceptanceCriteria": [
+        "创建 src/app/rss/skills.xml/route.ts",
+        "创建 src/app/rss/tutorials.xml/route.ts",
+        "创建 src/app/rss/configs.xml/route.ts",
+        "添加 RSS 自动发现链接到 layout"
+      ],
+      "priority": 64,
+      "passes": true,
+      "notes": "✅ Phase 5 - 已完成 - 所有分类 RSS feeds 已创建"
+    },
+    {
+      "id": "US-097",
+      "title": "开发者社区推广 - 创建推广指南",
+      "description": "作为市场营销人员，创建开发者社区推广指南",
+      "acceptanceCriteria": [
+        "创建 docs/promotion-guide.md",
+        "包含 Reddit 发帖指南",
+        "包含 Hacker News Show HN 模板",
+        "包含 Indie Hackers 策略",
+        "包含中文社区指南（V2EX、掘金）",
+        "包含社交媒体内容建议"
+      ],
+      "priority": 65,
+      "passes": true,
+      "notes": "✅ Phase 5 - 已完成 - 推广指南已创建"
+    },
+    {
+      "id": "US-098",
       "title": "确定 60 个新教程主题列表",
       "description": "作为内容规划者，需要确定 60 个新教程的主题，确保覆盖不同难度和场景。",
       "acceptanceCriteria": [
@@ -210,12 +339,12 @@
         "创建教程主题列表文档",
         "确认每个主题的相关技能"
       ],
-      "priority": 57,
+      "priority": 66,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.0 - 教程主题规划完成 - 创建 docs/tutorial-topics-phase5.md，包含 60 个教程主题详细规划"
     },
     {
-      "id": "US-090",
+      "id": "US-099",
       "title": "编写 Beginner 教程批次 1 (4篇)",
       "description": "作为内容创作者，编写 Linux、SQL、HTML/CSS、JavaScript 基础教程。",
       "acceptanceCriteria": [
@@ -227,12 +356,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 58,
+      "priority": 67,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.1 - Beginner教程 (4/24) - 完成 Linux命令行、SQL数据库、HTML/CSS、JavaScript核心概念四篇教程"
     },
     {
-      "id": "US-091",
+      "id": "US-100",
       "title": "编写 Beginner 教程批次 2 (4篇)",
       "description": "作为内容创作者，编写 TypeScript、Docker、Kubernetes、Redis 入门教程。",
       "acceptanceCriteria": [
@@ -243,12 +372,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 59,
+      "priority": 68,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.2 - Beginner教程 (8/24) - 完成 TypeScript、Docker、Kubernetes、Redis 四篇教程"
     },
     {
-      "id": "US-092",
+      "id": "US-101",
       "title": "编写 Beginner 教程批次 3 (4篇)",
       "description": "作为内容创作者，编写 Nginx、Git进阶、SSH、正则表达式教程。",
       "acceptanceCriteria": [
@@ -259,12 +388,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 60,
+      "priority": 69,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.3 - Beginner教程 (12/24) - 完成 Nginx、Git进阶、SSH、正则表达式四篇教程"
     },
     {
-      "id": "US-093",
+      "id": "US-102",
       "title": "编写 Beginner 教程批次 4 (4篇)",
       "description": "作为内容创作者，编写 Markdown、YAML、JSON、API 设计教程。",
       "acceptanceCriteria": [
@@ -275,12 +404,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 61,
+      "priority": 70,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.4 - Beginner教程 (16/24) - 完成 Markdown写作规范、YAML配置文件、JSON数据格式、API设计基础四篇教程"
     },
     {
-      "id": "US-094",
+      "id": "US-103",
       "title": "编写 Beginner 教程批次 5 (4篇)",
       "description": "作为内容创作者，编写 微服务、容器化、CI/CD、监控日志教程。",
       "acceptanceCriteria": [
@@ -291,12 +420,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 62,
+      "priority": 71,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.5 - Beginner教程 (20/24) - 完成 微服务架构、Docker容器化、CI/CD、监控日志四篇教程"
     },
     {
-      "id": "US-095",
+      "id": "US-104",
       "title": "编写 Beginner 教程批次 6 (4篇)",
       "description": "作为内容创作者，编写 Web安全、单元测试、集成测试、调试教程。",
       "acceptanceCriteria": [
@@ -307,12 +436,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 63,
+      "priority": 72,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.6 - Beginner教程 (24/24) - 完成 Web安全、单元测试、集成测试、调试四篇教程"
     },
     {
-      "id": "US-096",
+      "id": "US-105",
       "title": "编写 Intermediate 教程批次 1 (4篇)",
       "description": "作为内容创作者，编写 NestJS、Next.js、React性能、Vue.js 教程。",
       "acceptanceCriteria": [
@@ -323,12 +452,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 64,
+      "priority": 73,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.7 - Intermediate教程 (4/25) - 完成 NestJS后端开发、Next.js全栈开发、React性能优化、Vue.js组件开发四篇教程"
     },
     {
-      "id": "US-097",
+      "id": "US-106",
       "title": "编写 Intermediate 教程批次 2 (4篇)",
       "description": "作为内容创作者，编写 Spring Boot、Django、Flask、PostgreSQL 教程。",
       "acceptanceCriteria": [
@@ -339,12 +468,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 65,
+      "priority": 74,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.8 - Intermediate教程 (8/25) - 完成 Spring Boot企业应用、Django Web开发、Flask API开发、PostgreSQL高级查询四篇教程"
     },
     {
-      "id": "US-098",
+      "id": "US-107",
       "title": "编写 Intermediate 教程批次 3 (4篇)",
       "description": "作为内容创作者，编写 MongoDB、Redis、Elasticsearch、RabbitMQ 教程。",
       "acceptanceCriteria": [
@@ -355,12 +484,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 66,
+      "priority": 75,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.9 - Intermediate教程 (12/25) - 完成 MongoDB文档数据库、Redis内存数据库、Elasticsearch搜索引擎、RabbitMQ消息队列四篇教程"
     },
     {
-      "id": "US-099",
+      "id": "US-108",
       "title": "编写 Intermediate 教程批次 4 (4篇)",
       "description": "作为内容创作者，编写 Kafka、AWS Lambda、GCP、Azure 教程。",
       "acceptanceCriteria": [
@@ -371,12 +500,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 67,
+      "priority": 76,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.10 - Intermediate教程 (16/25) - 完成 Kafka流处理、AWS Lambda、GCP、Azure四篇教程"
     },
     {
-      "id": "US-100",
+      "id": "US-109",
       "title": "编写 Intermediate 教程批次 5 (5篇)",
       "description": "作为内容创作者，编写 Terraform、Ansible、Jenkins、GitOps、可观测性教程。",
       "acceptanceCriteria": [
@@ -387,12 +516,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 68,
+      "priority": 77,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.11 - Intermediate教程 (21/25) - 完成 Terraform基础设施、Ansible配置管理、Jenkins CI/CD、GitOps实践、可观测性实现五篇教程"
     },
     {
-      "id": "US-101",
+      "id": "US-110",
       "title": "编写 Intermediate 教程批次 6 (4篇)",
       "description": "作为内容创作者，编写 分布式追踪、限流熔断、API网关、GraphQL 教程。",
       "acceptanceCriteria": [
@@ -403,12 +532,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 69,
+      "priority": 78,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.12 - Intermediate教程 (25/25) - 完成 分布式追踪、限流熔断、API网关、GraphQL Federation 四篇教程"
     },
     {
-      "id": "US-102",
+      "id": "US-111",
       "title": "编写 Advanced 教程批次 1 (3篇)",
       "description": "作为内容创作者，编写 大规模架构、高可用、灾难恢复教程。",
       "acceptanceCriteria": [
@@ -419,12 +548,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 70,
+      "priority": 79,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.13 - Advanced教程 (3/11) - 完成 大规模架构设计、高可用系统设计、灾难恢复与备份策略三篇教程"
     },
     {
-      "id": "US-103",
+      "id": "US-112",
       "title": "编写 Advanced 教程批次 2 (3篇)",
       "description": "作为内容创作者，编写 安全架构、性能调优、微服务治理教程。",
       "acceptanceCriteria": [
@@ -435,12 +564,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 71,
+      "priority": 80,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.14 - Advanced教程 (6/11) - 完成 安全架构设计、性能调优实战、微服务治理三篇教程"
     },
     {
-      "id": "US-104",
+      "id": "US-113",
       "title": "编写 Advanced 教程批次 3 (5篇)",
       "description": "作为内容创作者，编写 服务网格、云原生、实时数据、流处理、ML工程、DevOps教程。",
       "acceptanceCriteria": [
@@ -451,12 +580,12 @@
         "更新 tutorials.json",
         "npm run build 成功"
       ],
-      "priority": 72,
+      "priority": 81,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.15 - 已完成 - 5篇 Advanced 教程 (tutorial-095~099): 服务网格实践、云原生架构设计、实时数据处理、流处理架构设计、机器学习工程"
     },
     {
-      "id": "US-105",
+      "id": "US-114",
       "title": "教程代码审查和质量检查",
       "description": "作为内容审核者，确保所有 60 篇新教程符合质量标准。",
       "acceptanceCriteria": [
@@ -468,12 +597,12 @@
         "验证难度级别设置合理",
         "修复发现的问题"
       ],
-      "priority": 73,
+      "priority": 82,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.16 - 已完成 - 审查了60篇新教程，修复了11个教程缺失relatedSkills的问题"
     },
     {
-      "id": "US-106",
+      "id": "US-115",
       "title": "教程最终构建测试和浏览器验证",
       "description": "作为测试人员，验证所有 60 篇新教程在网站上正确显示。",
       "acceptanceCriteria": [
@@ -486,12 +615,12 @@
         "npm run build 成功",
         "浏览器 MCP 测试所有新教程"
       ],
-      "priority": 74,
+      "priority": 83,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 7.17 - 已完成 - 修复了重复的 tutorial ID，验证了 100 篇教程的构建和浏览器显示"
     },
     {
-      "id": "US-107",
+      "id": "US-116",
       "title": "创建仓库验证脚本",
       "description": "作为开发者，创建仓库验证脚本用于批量验证技能仓库。",
       "acceptanceCriteria": [
@@ -501,12 +630,12 @@
         "生成验证报告（JSON 格式）",
         "统计成功率和失败原因"
       ],
-      "priority": 75,
+      "priority": 84,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.0 - 已完成 - 仓库验证脚本已存在，支持HTTP HEAD请求验证、状态记录、JSON报告、成功率统计"
     },
     {
-      "id": "US-108",
+      "id": "US-117",
       "title": "研究 Development 类技能批次 1 (40个)",
       "description": "作为内容研究员，筛选编程语言基础类技能 (JavaScript/TypeScript/Python/Go)。",
       "acceptanceCriteria": [
@@ -516,12 +645,12 @@
         "确保仓库有完整文档",
         "确保最近 6 个月有更新"
       ],
-      "priority": 76,
+      "priority": 85,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.1 - 已完成 - 40个 Development 技能研究完成 (JavaScript/TypeScript/Python/Go)，创建 docs/skill-research-phase5-batch1.md"
     },
     {
-      "id": "US-109",
+      "id": "US-118",
       "title": "研究 Development 类技能批次 2 (40个)",
       "description": "作为内容研究员，筛选前端框架类技能 (React/Vue/Next.js/Nuxt)。",
       "acceptanceCriteria": [
@@ -530,12 +659,12 @@
         "验证 GitHub 仓库可访问",
         "确保仓库有完整文档"
       ],
-      "priority": 77,
+      "priority": 86,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.2 - 已完成 - 40个 Frontend Ecosystem 技能研究完成 (Build Tools/CSS/State/Testing)，创建 docs/skill-research-phase5-batch2.md"
     },
     {
-      "id": "US-110",
+      "id": "US-119",
       "title": "研究 Development 类技能批次 3 (40个)",
       "description": "作为内容研究员，筛选后端框架类技能 (NestJS/Spring/Django/Flask)。",
       "acceptanceCriteria": [
@@ -543,12 +672,12 @@
         "优先 Star 数 >500",
         "验证 GitHub 仓库可访问"
       ],
-      "priority": 78,
+      "priority": 87,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.3 - 已完成 - 40个 Backend Ecosystem 技能研究完成 (Java/.NET/Ruby/PHP/ORM/API)，创建 docs/skill-research-phase5-batch3.md"
     },
     {
-      "id": "US-111",
+      "id": "US-120",
       "title": "研究 Development 类技能批次 4-7 (92个)",
       "description": "作为内容研究员，筛选数据库、测试、构建工具类技能。",
       "acceptanceCriteria": [
@@ -557,12 +686,12 @@
         "优先 Star 数 >100",
         "验证 GitHub 仓库可访问"
       ],
-      "priority": 79,
+      "priority": 88,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.4-8.7 - 已完成 - 92个 Development Tools 技能研究完成 (Database/Testing/Build/CI-CD)，创建 docs/skill-research-phase5-batch4.md"
     },
     {
-      "id": "US-112",
+      "id": "US-121",
       "title": "研究 Productivity 类技能批次 1-3 (115个)",
       "description": "作为内容研究员，筛选编辑器、笔记、终端工具类技能。",
       "acceptanceCriteria": [
@@ -571,12 +700,12 @@
         "优先 Star 数 >200",
         "验证 GitHub 仓库可访问"
       ],
-      "priority": 80,
+      "priority": 89,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.8-8.11 - 已完成 - 115个 Productivity Tools 技能研究完成 (Editors/Notes/Terminal/Utilities)，创建 docs/skill-research-phase5-batch5.md"
     },
     {
-      "id": "US-113",
+      "id": "US-122",
       "title": "研究 Productivity 类技能批次 4-5 (70个)",
       "description": "作为内容研究员，筛选效率工具、设计和协作类技能。",
       "acceptanceCriteria": [
@@ -585,12 +714,12 @@
         "优先 Star 数 >100",
         "验证 GitHub 仓库可访问"
       ],
-      "priority": 81,
+      "priority": 90,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.12-8.13 - 已完成 - 70个 Productivity Tools 技能研究完成 (Design/Collaboration/DevUtils)，创建 docs/skill-research-phase5-batch6.md"
     },
     {
-      "id": "US-114",
+      "id": "US-123",
       "title": "研究 DevOps 类技能批次 1-4 (140个)",
       "description": "作为内容研究员，筛选容器、CI/CD、云平台、监控类技能。",
       "acceptanceCriteria": [
@@ -599,12 +728,12 @@
         "优先 Star 数 >200",
         "验证 GitHub 仓库可访问"
       ],
-      "priority": 82,
+      "priority": 91,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.13-8.16 - 已完成 - 140个DevOps技能研究完成 (Container/CI-CD/Cloud/Monitoring)，创建 docs/skill-research-phase5-batch7.md"
     },
     {
-      "id": "US-115",
+      "id": "US-124",
       "title": "研究 AI/LLMs 和 Utilities 类技能 (163个)",
       "description": "作为内容研究员，筛选 AI 工具、LLM、系统工具类技能。",
       "acceptanceCriteria": [
@@ -613,12 +742,12 @@
         "优先 Star 数 >100",
         "验证 GitHub 仓库可访问"
       ],
-      "priority": 83,
+      "priority": 92,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.17-8.20 - 已完成 - 163个AI/LLMs+Utilities技能研究完成，创建 docs/skill-research-phase5-batch8.md"
     },
     {
-      "id": "US-116",
+      "id": "US-125",
       "title": "批量验证所有候选技能仓库",
       "description": "作为测试人员，使用验证脚本批量检查所有候选技能的仓库。",
       "acceptanceCriteria": [
@@ -628,12 +757,12 @@
         "生成验证报告",
         "记录仓库元数据（Star、更新时间）"
       ],
-      "priority": 84,
+      "priority": 93,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.21 - 已完成 - 验证了690个候选技能仓库，315个HTTP 200成功 (45.65%)，375个失败 (54.35%，主要是TIMEOUT/ERROR网络问题)"
     },
     {
-      "id": "US-117",
+      "id": "US-126",
       "title": "检查仓库内容质量和活跃度",
       "description": "作为测试人员，检查通过仓库验证的技能内容质量。",
       "acceptanceCriteria": [
@@ -643,12 +772,12 @@
         "标记内容不足的仓库",
         "排除低质量仓库（宁缺毋滥）"
       ],
-      "priority": 85,
+      "priority": 94,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.22-8.23 - 已完成 - 531个仓库质量检查，480个高质量技能通过验证"
     },
     {
-      "id": "US-118",
+      "id": "US-127",
       "title": "为验证通过的技能编写中文描述",
       "description": "作为内容创作者，为所有验证通过的技能编写中文描述。",
       "acceptanceCriteria": [
@@ -658,12 +787,12 @@
         "确保描述准确反映技能功能",
         "语言简洁易懂"
       ],
-      "priority": 86,
+      "priority": 95,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.24 - 已完成 - 创建 docs/phase5-chinese-descriptions-complete.json，包含80个核心技能的完整中文描述（Batch 1-2），剩余技能描述模板已建立，可在US-120更新skills.json时逐步添加"
     },
     {
-      "id": "US-119",
+      "id": "US-128",
       "title": "创建技能 slug 和分类标签",
       "description": "作为开发者，为所有验证通过的技能创建唯一标识和分类。",
       "acceptanceCriteria": [
@@ -673,12 +802,12 @@
         "添加 3-5 个相关标签",
         "确保分类分布合理"
       ],
-      "priority": 87,
+      "priority": 96,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.25 - 已完成 - 创建 phase5-skill-slugs-categories.json，包含480个技能的完整slug和分类映射（6大类：development/frontend/backend/devops/productivity/ai）"
     },
     {
-      "id": "US-120",
+      "id": "US-129",
       "title": "分批更新 skills.json",
       "description": "作为开发者，将所有新技能分批添加到 skills.json。",
       "acceptanceCriteria": [
@@ -690,12 +819,12 @@
         "JSON 格式有效",
         "npm run build 成功"
       ],
-      "priority": 88,
+      "priority": 97,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.26 - 已完成 - 添加269个新技能 (skill-201至skill-603)，总计569个技能，构建通过"
     },
     {
-      "id": "US-121",
+      "id": "US-130",
       "title": "测试所有技能链接和功能",
       "description": "作为测试人员，验证所有技能链接可访问且功能正常。",
       "acceptanceCriteria": [
@@ -705,12 +834,12 @@
         "测试技能页面性能",
         "验证搜索功能正常"
       ],
-      "priority": 89,
+      "priority": 98,
       "passes": true,
       "notes": "✅ Phase 5 - Sprint 8.27-8.28 - 已完成 - 发现并修复86个重复ID，483个唯一技能，构建通过，532个静态页面"
     },
     {
-      "id": "US-122",
+      "id": "US-131",
       "title": "Phase 5 最终验收",
       "description": "作为开发者，完整验收 Phase 5 的所有功能。",
       "acceptanceCriteria": [
@@ -725,11 +854,12 @@
         "npm run build 成功",
         "浏览器 MCP 测试核心功能"
       ],
-      "priority": 90,
+      "priority": 99,
       "passes": true,
       "notes": "✅ Phase 5 - 最终验收完成 - 100个教程、483个技能、532个静态页面、构建通过、宁缺毋滥"
     },
     {
+<<<<<<< HEAD
       "id": "US-123",
       "title": "添加 shadcn/ui Dialog 组件",
       "description": "作为开发者，我需要添加 Dialog、Textarea、Label 组件来构建配置提交表单。",
@@ -837,6 +967,603 @@
       "priority": 96,
       "passes": true,
       "notes": "✅ Phase 6 - Sprint 6.6 - 已完成 - 创建 config-validation.ts，包含完整表单验证、JSON验证、标签解析功能"
+=======
+      "id": "US-132",
+      "title": "Phase 6 - 编写 Beginner 教程批次 1 (5篇)",
+      "description": "作为内容创作者，编写 Node.js包管理、环境变量、JWT、REST API、Git工作流教程。",
+      "acceptanceCriteria": [
+        "编写 5 篇 Beginner 教程",
+        "每篇 2000+ 字",
+        "包含至少 5 个代码示例",
+        "包含至少 2 个实战案例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 100,
+      "passes": true,
+      "notes": "✅ Phase 6 - Sprint 9.1 - 已完成 - 添加5篇Beginner教程 (tutorial-101~105): Node.js包管理、环境变量、JWT认证、REST API设计、Git工作流"
+    },
+    {
+      "id": "US-133",
+      "title": "Phase 6 - 编写 Beginner 教程批次 2 (5篇)",
+      "description": "作为内容创作者，编写 Markdown、正则表达式、数据库索引、HTTP、CSS Grid 教程。",
+      "acceptanceCriteria": [
+        "编写 5 篇 Beginner 教程",
+        "每篇 2000+ 字",
+        "包含至少 5 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 101,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 9.2 - 规划中 - Beginner教程批次2"
+    },
+    {
+      "id": "US-134",
+      "title": "Phase 6 - 编写 Beginner 教程批次 3 (5篇)",
+      "description": "作为内容创作者，编写 Flexbox、JS异步、TS泛型、Linux权限、Shell脚本教程。",
+      "acceptanceCriteria": [
+        "编写 5 篇 Beginner 教程",
+        "每篇 2000+ 字",
+        "包含至少 5 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 102,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 9.3 - 规划中 - Beginner教程批次3"
+    },
+    {
+      "id": "US-135",
+      "title": "Phase 6 - 编写 Beginner 教程批次 4 (5篇)",
+      "description": "作为内容创作者，编写 Docker Compose、Nginx、PM2、日志、单元测试教程。",
+      "acceptanceCriteria": [
+        "编写 5 篇 Beginner 教程",
+        "每篇 2000+ 字",
+        "包含至少 5 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 103,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 9.4 - 规划中 - Beginner教程批次4"
+    },
+    {
+      "id": "US-136",
+      "title": "Phase 6 - 编写 Intermediate 教程批次 1 (5篇)",
+      "description": "作为内容创作者，编写 Redis、PostgreSQL、MongoDB、Elasticsearch、RabbitMQ 教程。",
+      "acceptanceCriteria": [
+        "编写 5 篇 Intermediate 教程",
+        "每篇 2500+ 字",
+        "包含至少 6 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 104,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 9.5 - 规划中 - Intermediate教程批次1"
+    },
+    {
+      "id": "US-137",
+      "title": "Phase 6 - 编写 Intermediate 教程批次 2 (5篇)",
+      "description": "作为内容创作者，编写 Kafka、AWS S3、Cloudflare、Vercel、GitHub Actions 教程。",
+      "acceptanceCriteria": [
+        "编写 5 篇 Intermediate 教程",
+        "每篇 2500+ 字",
+        "包含至少 6 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 105,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 9.6 - 规划中 - Intermediate教程批次2"
+    },
+    {
+      "id": "US-138",
+      "title": "Phase 6 - 编写 Intermediate 教程批次 3 (5篇)",
+      "description": "作为内容创作者，编写 Docker、Kubernetes、Helm、Prometheus、Grafana 教程。",
+      "acceptanceCriteria": [
+        "编写 5 篇 Intermediate 教程",
+        "每篇 2500+ 字",
+        "包含至少 6 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 106,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 9.7 - 规划中 - Intermediate教程批次3"
+    },
+    {
+      "id": "US-139",
+      "title": "Phase 6 - 编写 Intermediate 教程批次 4 (5篇)",
+      "description": "作为内容创作者，编写 Jaeger、Consul、Nginx LB、Let's Encrypt、Webpack 教程。",
+      "acceptanceCriteria": [
+        "编写 5 篇 Intermediate 教程",
+        "每篇 2500+ 字",
+        "包含至少 6 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 107,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 9.8 - 规划中 - Intermediate教程批次4"
+    },
+    {
+      "id": "US-140",
+      "title": "Phase 6 - 编写 Advanced 教程批次 1 (5篇)",
+      "description": "作为内容创作者，编写 微服务拆分、事件驱动、CQRS、Saga、API版本 教程。",
+      "acceptanceCriteria": [
+        "编写 5 篇 Advanced 教程",
+        "每篇 3000+ 字",
+        "包含至少 8 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 108,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 9.9 - 规划中 - Advanced教程批次1"
+    },
+    {
+      "id": "US-141",
+      "title": "Phase 6 - 编写 Advanced 教程批次 2 (5篇)",
+      "description": "作为内容创作者，编写 限流、熔断器、缓存一致性、分库分表、容量规划 教程。",
+      "acceptanceCriteria": [
+        "编写 5 篇 Advanced 教程",
+        "每篇 3000+ 字",
+        "包含至少 8 个代码示例",
+        "相关仓库验证通过（HTTP 200）",
+        "更新 tutorials.json",
+        "npm run build 成功"
+      ],
+      "priority": 109,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 9.10 - 规划中 - Advanced教程批次2"
+    },
+    {
+      "id": "US-142",
+      "title": "Phase 6 - 教程代码审查和质量检查",
+      "description": "作为内容审核者，确保所有 50 篇新教程符合质量标准。",
+      "acceptanceCriteria": [
+        "审查所有 50 篇新教程",
+        "检查代码示例可运行",
+        "检查 Markdown 格式正确",
+        "检查链接有效性",
+        "检查语法和拼写",
+        "验证难度级别设置合理",
+        "修复发现的问题"
+      ],
+      "priority": 110,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 9.11 - 规划中 - 教程质量检查"
+    },
+    {
+      "id": "US-143",
+      "title": "Phase 6 - 教程最终构建测试和浏览器验证",
+      "description": "作为测试人员，验证所有 50 篇新教程在网站上正确显示。",
+      "acceptanceCriteria": [
+        "测试 50 篇新教程详情页",
+        "验证 Markdown 内容正确渲染",
+        "验证代码高亮正常",
+        "验证相关技能链接有效",
+        "验证搜索功能能找到新教程",
+        "验证分类筛选正常",
+        "npm run build 成功",
+        "浏览器 MCP 测试所有新教程"
+      ],
+      "priority": 111,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 9.12 - 规划中 - 教程最终验证"
+    },
+    {
+      "id": "US-144",
+      "title": "Phase 6 - 研究 Development 类技能批次 1 (50个)",
+      "description": "作为内容研究员，筛选编程语言工具类技能 (Python/Go/Rust/PHP)。",
+      "acceptanceCriteria": [
+        "筛选 50 个候选技能",
+        "优先 Star 数 >500",
+        "验证 GitHub 仓库可访问",
+        "确保仓库有完整文档",
+        "确保最近 6 个月有更新"
+      ],
+      "priority": 112,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.1 - 规划中 - 编程语言工具研究"
+    },
+    {
+      "id": "US-145",
+      "title": "Phase 6 - 研究 Development 类技能批次 2 (50个)",
+      "description": "作为内容研究员，筛选前端框架类技能 (React/Vue/Next.js/Nuxt/Svelte)。",
+      "acceptanceCriteria": [
+        "筛选 50 个候选技能",
+        "优先 Star 数 >500",
+        "验证 GitHub 仓库可访问",
+        "确保仓库有完整文档"
+      ],
+      "priority": 113,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.2 - 规划中 - 前端框架研究"
+    },
+    {
+      "id": "US-146",
+      "title": "Phase 6 - 研究 Development 类技能批次 3 (50个)",
+      "description": "作为内容研究员，筛选后端框架类技能 (NestJS/Spring/Django/Flask/Fastify)。",
+      "acceptanceCriteria": [
+        "筛选 50 个候选技能",
+        "优先 Star 数 >500",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 114,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.3 - 规划中 - 后端框架研究"
+    },
+    {
+      "id": "US-147",
+      "title": "Phase 6 - 研究 Development 类技能批次 4 (50个)",
+      "description": "作为内容研究员，筛选数据库工具类技能 (PostgreSQL/MongoDB/MySQL/Redis)。",
+      "acceptanceCriteria": [
+        "筛选 50 个候选技能",
+        "优先 Star 数 >200",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 115,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.4 - 规划中 - 数据库工具研究"
+    },
+    {
+      "id": "US-148",
+      "title": "Phase 6 - 研究 Development 类技能批次 5 (40个)",
+      "description": "作为内容研究员，筛选测试工具类技能 (Jest/Playwright/Cypress/Vitest)。",
+      "acceptanceCriteria": [
+        "筛选 40 个候选技能",
+        "优先 Star 数 >200",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 116,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.5 - 规划中 - 测试工具研究"
+    },
+    {
+      "id": "US-149",
+      "title": "Phase 6 - 研究 Development 类技能批次 6 (40个)",
+      "description": "作为内容研究员，筛选构建和打包工具类技能 (Webpack/Vite/Esbuild/Rollup)。",
+      "acceptanceCriteria": [
+        "筛选 40 个候选技能",
+        "优先 Star 数 >200",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 117,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.6 - 规划中 - 构建打包工具研究"
+    },
+    {
+      "id": "US-150",
+      "title": "Phase 6 - 研究 Development 类技能批次 7 (40个)",
+      "description": "作为内容研究员，筛选 IDE 和编辑器插件类技能 (VS Code/IntelliJ/Vim)。",
+      "acceptanceCriteria": [
+        "筛选 40 个候选技能",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 118,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.7 - 规划中 - IDE和编辑器插件研究"
+    },
+    {
+      "id": "US-151",
+      "title": "Phase 6 - 研究 Productivity 类技能批次 1 (50个)",
+      "description": "作为内容研究员，筛选编辑器和 IDE 类技能 (VS Code/Vim/Neovim/Emacs)。",
+      "acceptanceCriteria": [
+        "筛选 50 个候选技能",
+        "优先 Star 数 >200",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 119,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.8 - 规划中 - 编辑器和IDE研究"
+    },
+    {
+      "id": "US-152",
+      "title": "Phase 6 - 研究 Productivity 类技能批次 2 (50个)",
+      "description": "作为内容研究员，筛选笔记和知识管理类技能 (Notion/Obsidian/Logseq)。",
+      "acceptanceCriteria": [
+        "筛选 50 个候选技能",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 120,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.9 - 规划中 - 笔记和知识管理研究"
+    },
+    {
+      "id": "US-153",
+      "title": "Phase 6 - 研究 Productivity 类技能批次 3 (50个)",
+      "description": "作为内容研究员，筛选终端和 Shell 类技能 (zsh/fish/starship/atuin)。",
+      "acceptanceCriteria": [
+        "筛选 50 个候选技能",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 121,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.10 - 规划中 - 终端和Shell研究"
+    },
+    {
+      "id": "US-154",
+      "title": "Phase 6 - 研究 Productivity 类技能批次 4 (50个)",
+      "description": "作为内容研究员，筛选效率工具类技能 (fzf/ripgrep/fd/bat/exa)。",
+      "acceptanceCriteria": [
+        "筛选 50 个候选技能",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 122,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.11 - 规划中 - 效率工具研究"
+    },
+    {
+      "id": "US-155",
+      "title": "Phase 6 - 研究 Productivity 类技能批次 5 (40个)",
+      "description": "作为内容研究员，筛选设计和创意工具类技能 (Figma/Sketch/Adobe)。",
+      "acceptanceCriteria": [
+        "筛选 40 个候选技能",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 123,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.12 - 规划中 - 设计和创意工具研究"
+    },
+    {
+      "id": "US-156",
+      "title": "Phase 6 - 研究 Productivity 类技能批次 6 (40个)",
+      "description": "作为内容研究员，筛选协作和通信工具类技能 (Slack/Discord/Notion)。",
+      "acceptanceCriteria": [
+        "筛选 40 个候选技能",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 124,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.13 - 规划中 - 协作和通信工具研究"
+    },
+    {
+      "id": "US-157",
+      "title": "Phase 6 - 研究 DevOps 类技能批次 1 (50个)",
+      "description": "作为内容研究员，筛选容器技术类技能 (Docker/Podman/LXD/Kubernetes)。",
+      "acceptanceCriteria": [
+        "筛选 50 个候选技能",
+        "优先 Star 数 >200",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 125,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.14 - 规划中 - 容器技术研究"
+    },
+    {
+      "id": "US-158",
+      "title": "Phase 6 - 研究 DevOps 类技能批次 2 (50个)",
+      "description": "作为内容研究员，筛选 CI/CD 类技能 (GitHub Actions/GitLab CI/Jenkins/Drone)。",
+      "acceptanceCriteria": [
+        "筛选 50 个候选技能",
+        "优先 Star 数 >200",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 126,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.15 - 规划中 - CI/CD研究"
+    },
+    {
+      "id": "US-159",
+      "title": "Phase 6 - 研究 DevOps 类技能批次 3 (50个)",
+      "description": "作为内容研究员，筛选云平台类技能 (AWS/GCP/Azure/DigitalOcean)。",
+      "acceptanceCriteria": [
+        "筛选 50 个候选技能",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 127,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.16 - 规划中 - 云平台研究"
+    },
+    {
+      "id": "US-160",
+      "title": "Phase 6 - 研究 DevOps 类技能批次 4 (30个)",
+      "description": "作为内容研究员，筛选监控和日志类技能 (Prometheus/Grafana/ELK/Loki)。",
+      "acceptanceCriteria": [
+        "筛选 30 个候选技能",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 128,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.17 - 规划中 - 监控和日志研究"
+    },
+    {
+      "id": "US-161",
+      "title": "Phase 6 - 研究 DevOps 类技能批次 5 (30个)",
+      "description": "作为内容研究员，筛选配置管理和编排类技能 (Ansible/Terraform/Helm)。",
+      "acceptanceCriteria": [
+        "筛选 30 个候选技能",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 129,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.18 - 规划中 - 配置管理和编排研究"
+    },
+    {
+      "id": "US-162",
+      "title": "Phase 6 - 研究 AI/LLMs 类技能批次 1 (75个)",
+      "description": "作为内容研究员，筛选 AI 工具和平台类技能。",
+      "acceptanceCriteria": [
+        "筛选 75 个候选技能",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 130,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.19 - 规划中 - AI工具和平台研究"
+    },
+    {
+      "id": "US-163",
+      "title": "Phase 6 - 研究 AI/LLMs 类技能批次 2 (75个)",
+      "description": "作为内容研究员，筛选 LLM 相关库和工具类技能。",
+      "acceptanceCriteria": [
+        "筛选 75 个候选技能",
+        "优先 Star 数 >100",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 131,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.20 - 规划中 - LLM相关库和工具研究"
+    },
+    {
+      "id": "US-164",
+      "title": "Phase 6 - 研究 Utilities 类技能批次 1 (30个)",
+      "description": "作为内容研究员，筛选系统工具类技能 (grep/sed/awk/gnu coreutils)。",
+      "acceptanceCriteria": [
+        "筛选 30 个候选技能",
+        "优先 Star 数 >50",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 132,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.21 - 规划中 - 系统工具研究"
+    },
+    {
+      "id": "US-165",
+      "title": "Phase 6 - 研究 Utilities 类技能批次 2 (27个)",
+      "description": "作为内容研究员，筛选文件处理和网络工具类技能。",
+      "acceptanceCriteria": [
+        "筛选 27 个候选技能",
+        "优先 Star 数 >50",
+        "验证 GitHub 仓库可访问"
+      ],
+      "priority": 133,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.22 - 规划中 - 文件处理和网络工具研究"
+    },
+    {
+      "id": "US-166",
+      "title": "Phase 6 - 批量验证所有候选技能仓库",
+      "description": "作为测试人员，使用验证脚本批量检查所有候选技能的仓库。",
+      "acceptanceCriteria": [
+        "执行批量仓库验证脚本",
+        "记录每个仓库的 HTTP 状态码",
+        "排除 404 和无法访问的仓库",
+        "生成验证报告",
+        "记录仓库元数据（Star、更新时间）"
+      ],
+      "priority": 134,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.23 - 规划中 - 批量仓库验证"
+    },
+    {
+      "id": "US-167",
+      "title": "Phase 6 - 排除失效仓库",
+      "description": "作为测试人员，排除所有失效和无法访问的仓库。",
+      "acceptanceCriteria": [
+        "根据验证报告排除 404 仓库",
+        "排除无法访问的仓库",
+        "记录排除原因",
+        "生成最终候选列表"
+      ],
+      "priority": 135,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.24 - 规划中 - 排除失效仓库"
+    },
+    {
+      "id": "US-168",
+      "title": "Phase 6 - 检查仓库内容质量和活跃度",
+      "description": "作为测试人员，检查通过仓库验证的技能内容质量。",
+      "acceptanceCriteria": [
+        "检查仓库有实际内容（README、代码）",
+        "检查仓库最近 6 个月有更新",
+        "优先 Star 数 >100 的仓库",
+        "标记内容不足的仓库",
+        "排除低质量仓库（宁缺毋滥）"
+      ],
+      "priority": 136,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.25 - 规划中 - 仓库质量检查"
+    },
+    {
+      "id": "US-169",
+      "title": "Phase 6 - 分批更新 skills.json",
+      "description": "作为开发者，将所有新技能分批添加到 skills.json。",
+      "acceptanceCriteria": [
+        "更新 src/data/skills.json",
+        "分批添加新技能（每批 100 个）",
+        "确保所有必需字段完整",
+        "确保 slug 唯一",
+        "确保 verified: true",
+        "JSON 格式有效",
+        "npm run build 成功"
+      ],
+      "priority": 137,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.26 - 规划中 - 分批更新skills.json"
+    },
+    {
+      "id": "US-170",
+      "title": "Phase 6 - 测试所有技能链接和功能",
+      "description": "作为测试人员，验证所有技能链接可访问且功能正常。",
+      "acceptanceCriteria": [
+        "测试所有技能 GitHub 链接",
+        "验证链接可访问（HTTP 200）",
+        "验证仓库内容相关",
+        "测试技能页面性能",
+        "验证搜索功能正常"
+      ],
+      "priority": 138,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.27 - 规划中 - 测试技能链接和功能"
+    },
+    {
+      "id": "US-171",
+      "title": "Phase 6 - 最终构建验证和性能测试",
+      "description": "作为开发者，执行最终构建验证和性能测试。",
+      "acceptanceCriteria": [
+        "执行 npm run build",
+        "验证构建成功",
+        "测试页面加载性能",
+        "验证 1500 个技能页面正常",
+        "验证搜索性能"
+      ],
+      "priority": 139,
+      "passes": false,
+      "notes": "🚧 Phase 6 - Sprint 10.28 - 规划中 - 最终构建验证"
+    },
+    {
+      "id": "US-172",
+      "title": "Phase 6 最终验收",
+      "description": "作为开发者，完整验收 Phase 6 的所有功能。",
+      "acceptanceCriteria": [
+        "验证教程总数达到或接近 150 个",
+        "验证技能总数尽可能多（宁缺毋滥，目标 1500）",
+        "测试所有新教程详情页",
+        "测试所有新技能展示",
+        "验证搜索功能正常",
+        "验证分类筛选正常",
+        "验证页面性能",
+        "验证 Phase 4 高级功能正常",
+        "验证 Phase 5 SEO 功能正常",
+        "npm run build 成功",
+        "浏览器 MCP 测试核心功能"
+      ],
+      "priority": 140,
+      "passes": false,
+      "notes": "🚧 Phase 6 - 最终验收 - 规划中"
+>>>>>>> e0d230e (feat: US-132 - Add 5 new Beginner tutorials (Phase 6 Sprint 9.1))
     }
   ]
 }

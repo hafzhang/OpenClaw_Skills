@@ -2699,5 +2699,137 @@
     },
     "createdAt": "2026-02-07T15:00:00.000Z",
     "featured": false
+  },
+  {
+    "id": "tutorial-101",
+    "title": "Node.js 包管理完全指南",
+    "slug": "nodejs-package-management-complete-guide",
+    "description": "全面掌握 npm 和 yarn 包管理工具，学习依赖管理、版本控制、脚本运行和最佳实践。",
+    "content": "# Node.js 包管理完全指南\n\nNode.js 生态系统中最核心的工具就是包管理器。本教程将深入讲解 npm 和 yarn 的使用，帮助你高效管理项目依赖。\n\n## 包管理器概述\n\n### 什么是包管理器？\n\n包管理器是 Node.js 生态系统的核心工具，用于：\n\n- **依赖管理**: 安装、更新、卸载第三方包\n- **版本控制**: 管理包的版本和兼容性\n- **脚本运行**: 执行项目脚本和命令\n- **发布分享**: 将自己的包发布到 npm 仓库\n\n### 主流包管理器对比\n\n| 特性 | npm | yarn | pnpm |\n|------|-----|------|------|\n| 安装速度 | 中 | 快 | 最快 |\n| 磁盘空间 | 较大 | 中 | 最小 |\n| 兼容性 | 最高 | 高 | 中 |\n| 锁文件 | package-lock.json | yarn.lock | pnpm-lock.yaml |\n| 工作区 | 支持 | 原生支持 | 原生支持 |\n\n## npm 基础\n\n### 初始化项目\n\n\n\n## 实战案例\n\n### 案例 1：创建 Express API 项目\n\n\n\n### 案例 2：React 前端项目\n\n\n\n## 相关技能\n\n- [Node.js](https://nodejs.org/) - JavaScript 运行时\n- [Express](https://expressjs.com/) - Web 框架\n- [Vite](https://vitejs.dev/) - 构建工具\n\n## 参考资源\n\n- [npm 官方文档](https://docs.npmjs.com/)\n- [yarn 官方文档](https://yarnpkg.com/getting-started)\n- [语义化版本规范](https://semver.org/)",
+    "category": "development",
+    "tags": [
+      "Node.js",
+      "npm",
+      "yarn",
+      "包管理",
+      "依赖管理"
+    ],
+    "difficulty": "beginner",
+    "readTime": 12,
+    "author": "OpenClaw Team",
+    "relatedSkills": [
+      "skill-327",
+      "skill-432",
+      "skill-433"
+    ],
+    "stats": {
+      "viewCount": 0
+    },
+    "createdAt": "2026-02-09T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "id": "tutorial-102",
+    "title": "环境变量管理最佳实践",
+    "slug": "environment-variables-best-practices",
+    "description": "学习如何安全地管理环境变量，使用 dotenv、配置文件和 Secrets 管理敏感信息。",
+    "content": "# 环境变量管理最佳实践\n\n环境变量是配置应用程序的关键方式。本教程将深入讲解如何安全地管理环境变量。\n\n## 环境变量概述\n\n### 什么是环境变量？\n\n环境变量是进程运行时的动态值。\n\n## Node.js 环境变量\n\n### 基础用法\n\n\n\n## dotenv 使用\n\n\n\n## 实战案例\n\n### Express API 配置\n\n",
+    "category": "development",
+    "tags": [
+      "环境变量",
+      "dotenv",
+      "安全",
+      "配置管理"
+    ],
+    "difficulty": "beginner",
+    "readTime": 10,
+    "author": "OpenClaw Team",
+    "relatedSkills": [
+      "skill-327",
+      "skill-580"
+    ],
+    "stats": {
+      "viewCount": 0
+    },
+    "createdAt": "2026-02-09T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "id": "tutorial-103",
+    "title": "JWT 认证完全指南",
+    "slug": "jwt-authentication-complete-guide",
+    "description": "深入理解 JSON Web Token（JWT），学习如何实现安全的用户认证和授权。",
+    "content": "# JWT 认证完全指南\n\nJWT 是现代应用认证的标准方案。\n\n## JWT 概述\n\n### 什么是 JWT？\n\nJWT 是一种开放标准，用于安全传输信息。\n\n## Node.js JWT 实现\n\n\n\n### 生成 JWT\n\n\n\n### 认证中间件\n\n\n\n## 实战案例\n\n### 用户登录\n\n",
+    "category": "development",
+    "tags": [
+      "JWT",
+      "认证",
+      "授权",
+      "安全"
+    ],
+    "difficulty": "beginner",
+    "readTime": 15,
+    "author": "OpenClaw Team",
+    "relatedSkills": [
+      "skill-327",
+      "skill-581"
+    ],
+    "stats": {
+      "viewCount": 0
+    },
+    "createdAt": "2026-02-09T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "id": "tutorial-104",
+    "title": "REST API 设计最佳实践",
+    "slug": "rest-api-design-best-practices",
+    "description": "学习如何设计符合 REST 架构风格的 API，掌握资源命名、HTTP 方法和状态码的使用。",
+    "content": "# REST API 设计最佳实践\n\nREST 是现代 Web API 的标准架构风格。\n\n## REST 概述\n\n### 什么是 REST？\n\nREST 是一种软件架构风格。\n\n## 资源命名\n\n### URL 设计原则\n\n\n\n## HTTP 方法\n\n| 方法 | 操作 | 幂等 |\n|------|------|------|\n| GET | 读取 | ✅ |\n| POST | 创建 | ❌ |\n| PUT | 更新 | ✅ |\n| DELETE | 删除 | ✅ |\n\n## HTTP 状态码\n\n\n\n## 实战案例\n\n### 用户管理 API\n\n",
+    "category": "development",
+    "tags": [
+      "REST",
+      "API",
+      "Express",
+      "HTTP"
+    ],
+    "difficulty": "beginner",
+    "readTime": 16,
+    "author": "OpenClaw Team",
+    "relatedSkills": [
+      "skill-327",
+      "skill-336"
+    ],
+    "stats": {
+      "viewCount": 0
+    },
+    "createdAt": "2026-02-09T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "id": "tutorial-105",
+    "title": "Git 工作流和协作最佳实践",
+    "slug": "git-workflow-collaboration-best-practices",
+    "description": "掌握 Git 高级工作流，学习分支策略、代码审查和团队协作技巧。",
+    "content": "# Git 工作流和协作最佳实践\n\nGit 是现代软件开发的基石。\n\n## Git 工作流概述\n\n### Feature Branch 工作流\n\n\n\n### 工作流程\n\n\n\n## 提交规范\n\n### Conventional Commits\n\n\n\n## Pull Request 最佳实践\n\n### PR 模板\n\n\n\n## 实战案例\n\n### 团队协作\n\n",
+    "category": "development",
+    "tags": [
+      "Git",
+      "工作流",
+      "协作",
+      "PR"
+    ],
+    "difficulty": "beginner",
+    "readTime": 14,
+    "author": "OpenClaw Team",
+    "relatedSkills": [
+      "skill-001",
+      "skill-440"
+    ],
+    "stats": {
+      "viewCount": 0
+    },
+    "createdAt": "2026-02-09T00:00:00.000Z",
+    "featured": false
   }
 ]
