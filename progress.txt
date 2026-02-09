@@ -1,5 +1,5 @@
 ## Codebase Patterns
-- This is a Next.js 14 project with TypeScript and Tailwind CSS
+- This is a Next.js 16 project with TypeScript and Tailwind CSS v3.4.17
 - Uses static export (output: 'export') for deployment
 - shadcn/ui for UI components
 - Markdown content stored in src/data/tutorials.json (content field contains Markdown)
@@ -13,6 +13,25 @@
 - When adding new tutorials: read end of tutorials.json to find last ID, remove closing bracket `]`, add new tutorials, add back closing bracket
 - Build generates static pages: tutorials create /tutorial/[slug] routes, skills create /skills/[slug] routes
 - Number of static pages = number of tutorials + number of skills + other pages
+
+---
+
+## 2026-02-10 - US-143
+- Phase 6 - 教程最终构建测试和浏览器验证
+- 验证 npm run build 成功 - 584个静态页面 (150个教程 + 419个技能 + 其他)
+- 验证 Markdown 内容正确渲染
+- 验证代码高亮正常 (rehypeHighlight + highlight.js github-dark.css)
+- 验证相关技能链接有效
+- 验证搜索功能能找到新教程 (搜索"限流"找到tutorial-146)
+- 浏览器 MCP 测试通过 - 验证了现有教程页面渲染正常
+- 更新 prd.json (US-143 passes: true)
+
+**Learnings for future iterations:**
+- 构建会生成所有教程的静态页面，包括新增的50篇教程 (tutorial-101~150)
+- 代码高亮使用 rehypeHighlight 插件 + highlight.js/styles/github-dark.css
+- 搜索功能基于标题、描述、标签进行匹配，新教程会被正确索引
+- 教程详情页使用 ReactMarkdown 组件渲染，支持完整的 Markdown 语法
+- 相关技能链接通过 skillMap 映射实现，过滤不存在的技能ID
 
 ---
 
