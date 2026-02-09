@@ -3500,5 +3500,140 @@
     },
     "createdAt": "2026-02-09T00:00:00.000Z",
     "featured": false
+  },
+  {
+    "id": "tutorial-131",
+    "title": "Docker容器化实践",
+    "slug": "docker-containerization-practice",
+    "description": "深入学习Docker容器技术，掌握镜像构建、容器编排、网络配置和存储管理的完整指南。",
+    "content": "# Docker容器化实践\n\nDocker是现代容器化技术的标准，本教程将全面讲解Docker的核心概念和实践技巧。\n\n## Docker核心概念\n\n### 容器 vs 虚拟机\n\n| 特性 | 容器 | 虚拟机 |\n|------|------|--------|\n| **启动速度** | 秒级 | 分钟级 |\n| **资源占用** | MB级 | GB级 |\n| **隔离性** | 进程级 | 系统级 |\n| **可移植性** | 高 | 中 |\n| **性能** | 接近原生 | 有损耗 |\n\n### Docker架构\n\n```\n客户端 (Docker CLI)\n  -> Docker Daemon (dockerd)\n    -> Containerd (容器运行时)\n      -> runc (OCI标准)\n        -> Linux Kernel (命名空间、cgroups)\n```\n\n| 组件 | 说明 |\n|------|------|\n| **Docker CLI** | 命令行接口 |\n| **Docker Daemon** | 后台服务，管理容器 |\n| **Containerd** | 容器生命周期管理 |\n| **runc** | OCI标准运行时 |\n| **Docker Hub** | 镜像仓库 |\n\n## 镜像管理\n\n### 镜像分层结构\n\n```\nUbuntu Base Image\n  + Python 3.11\n    + Application Code\n      + Entry Point\n```\n\n每一层都是只读的，多个镜像可以共享相同的层。\n\n### 构建镜像\n\n```dockerfile\n# Dockerfile\nFROM python:3.11-slim\n\nWORKDIR /app\n\n# 安装依赖\nCOPY requirements.txt .\nRUN pip install --no-cache-dir -r requirements.txt\n\n# 复制代码\nCOPY . .\n\n# 非root用户\nRUN useradd -m appuser\nUSER appuser\n\n# 健康检查\nHEALTHCHECK --interval=30s --timeout=3s \\\n  CMD curl -f http://localhost:8000/health || exit 1\n\nEXPOSE 8000\nCMD [\"python\", \"app.py\"]\n```\n\n### 多阶段构建\n\n```dockerfile\n# 构建阶段\nFROM node:20 AS builder\nWORKDIR /app\nCOPY package*.json ./\nRUN npm ci\nCOPY . .\nRUN npm run build\n\n# 生产阶段\nFROM nginx:alpine\nCOPY --from=builder /app/dist /usr/share/nginx/html\nEXPOSE 80\nCMD [\"nginx\", \"-g\", \"daemon off;\"]\n```\n\n### 构建和推送\n\n```bash\n# 构建镜像\ndocker build -t myapp:1.0 .\n\n# 多平台构建\ndocker buildx build --platform linux/amd64,linux/arm64 -t myapp:1.0 .\n\n# 推送到Docker Hub\ndocker tag myapp:1.0 username/myapp:1.0\ndocker push username/myapp:1.0\n```\n\n## 容器管理\n\n### 运行容器\n\n```bash\n# 基础运行\ndocker run -d --name myapp -p 8080:80 myapp:1.0\n\n# 资源限制\ndocker run -d \\\n  --name myapp \\\n  --memory=\"512m\" \\\n  --cpus=\"1.5\" \\\n  --pids-limit 100 \\\n  myapp:1.0\n\n# 自动重启\ndocker run -d \\\n  --name myapp \\\n  --restart unless-stopped \\\n  myapp:1.0\n```\n\n## 网络配置\n\n### 创建网络\n\n```bash\n# 创建bridge网络\ndocker network create mynet\n\n# 连接容器\ndocker run -d --name web --network app-network nginx:alpine\ndocker run -d --name db --network app-network postgres:15\n```\n\n## 存储管理\n\n### 使用Volume\n\n```bash\n# 创建volume\ndocker volume create mydata\n\n# 使用volume\ndocker run -d --name app -v mydata:/app/data myapp:1.0\n```\n\n## Docker Compose\n\n### Compose文件\n\n```yaml\nversion: '3.8'\n\nservices:\n  web:\n    build: .\n    ports:\n      - \"8080:80\"\n    environment:\n      - NODE_ENV=production\n      - DB_HOST=db\n    depends_on:\n      - db\n    volumes:\n      - webdata:/app/data\n    restart: unless-stopped\n\n  db:\n    image: postgres:15-alpine\n    environment:\n      - POSTGRES_DB=appdb\n      - POSTGRES_USER=appuser\n      - POSTGRES_PASSWORD=secret\n    volumes:\n      - dbdata:/var/lib/postgresql/data\n\nvolumes:\n  webdata:\n  dbdata:\n```\n\n### Compose命令\n\n```bash\n# 启动所有服务\ndocker-compose up -d\n\n# 查看日志\ndocker-compose logs -f\n\n# 停止并删除\ndocker-compose down\n```\n\n## 相关技能\n\n- [Kubernetes](/skills) - 容器编排\n- [Helm](/skills) - Kubernetes包管理\n\n## 参考资源\n\n- [Docker官方文档](https://docs.docker.com/)\n- [Docker Hub](https://hub.docker.com/)\n",
+    "category": "devops",
+    "tags": [
+      "Docker",
+      "容器",
+      "DevOps",
+      "镜像",
+      "编排"
+    ],
+    "difficulty": "intermediate",
+    "readTime": 30,
+    "author": "OpenClaw Team",
+    "relatedSkills": [
+      "skill-012",
+      "skill-020"
+    ],
+    "stats": {
+      "viewCount": 0
+    },
+    "createdAt": "2026-02-09T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "id": "tutorial-132",
+    "title": "Kubernetes容器编排",
+    "slug": "kubernetes-orchestration",
+    "description": "深入学习Kubernetes容器编排平台，掌握Pod管理、服务发现、部署配置和自动扩缩容的完整指南。",
+    "content": "# Kubernetes容器编排\n\nKubernetes是云原生应用的事实标准，本教程将全面讲解Kubernetes的核心概念和实践技巧。\n\n## Kubernetes核心概念\n\n### 集群架构\n\n```\n控制平面 (Control Plane)\n  - API Server: 集群统一入口\n  - etcd: 键值存储\n  - Scheduler: 调度Pod到节点\n  - Controller Manager: 维护集群状态\n  - Cloud Controller Manager: 云平台集成\n\n工作节点 (Worker Node)\n  - Kubelet: 节点代理\n  - Kube-proxy: 网络代理\n  - Container Runtime: 容器运行时\n  - Pods: 容器组\n```\n\n### 核心资源\n\n| 资源 | 说明 | 作用范围 |\n|------|------|----------|\n| **Pod** | 最小部署单元 | Namespace |\n| **Deployment** | Pod管理 | Namespace |\n| **Service** | 服务发现 | Namespace |\n| **Ingress** | HTTP路由 | Namespace |\n| **ConfigMap** | 配置数据 | Namespace |\n| **Secret** | 敏感数据 | Namespace |\n\n## Pod管理\n\n### Pod定义\n\n```yaml\napiVersion: v1\nkind: Pod\nmetadata:\n  name: nginx-pod\n  labels:\nn    app: nginx\nspec:\n  containers:\n  - name: nginx\n    image: nginx:1.25-alpine\n    ports:\n    - containerPort: 80\n    resources:\n      requests:\nn        memory: \"64Mi\"\n        cpu: \"250m\"\n      limits:\nn        memory: \"128Mi\"\n        cpu: \"500m\"\n```\n\n## Deployment\n\n### Deployment定义\n\n```yaml\napiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: web-deployment\nspec:\n  replicas: 3\n  selector:\nn    matchLabels:\nn      app: web\n  template:\nn    metadata:\nn      labels:\nn        app: web\nn    spec:\nn      containers:\nn      - name: web\nn        image: nginx:1.25-alpine\nn        ports:\nn        - containerPort: 80\n```\n\n## Service\n\n### Service类型\n\n| 类型 | 说明 | 使用场景 |\n|------|------|----------|\n| **ClusterIP** | 集群内部访问 | 默认类型 |\n| **NodePort** | 节点端口访问 | 测试环境 |\n| **LoadBalancer** | 负载均衡器 | 生产环境 |\n\n### ClusterIP Service\n\n```yaml\napiVersion: v1\nkind: Service\nmetadata:\n  name: web-service\nspec:\n  type: ClusterIP\n  selector:\nn    app: web\nn  ports:\nn  - port: 80\nn    targetPort: 80\n```\n\n## Ingress\n\n### Ingress定义\n\n```yaml\napiVersion: networking.k8s.io/v1\nkind: Ingress\nmetadata:\nn  name: web-ingress\nnspec:\nn  ingressClassName: nginx\nn  rules:\nn  - host: example.com\nn    http:\nn      paths:\nn      - path: /\nn        pathType: Prefix\nn        backend:\nn          service:\nn            name: web-service\nn            port:\nn              number: 80\n```\n\n## 配置管理\n\n### ConfigMap\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\nn  name: app-config\nndata:\nn  APP_ENV: \"production\"\nn  APP_DEBUG: \"false\"\n```\n\n### Secret\n\n```yaml\napiVersion: v1\nkind: Secret\nmetadata:\nn  name: db-secret\nntype: Opaque\nndata:\nn  username: YWRtaW4=\nn  password: cGFzc3dvcmQ=\n```\n\n## 常用命令\n\n### 资源操作\n\n```bash\n# 应用配置\nkubectl apply -f deployment.yaml\n\n# 查看资源\nkubectl get pods\nkubectl get deployments\nkubectl get services\n\n# 查看日志\nkubectl logs nginx-pod\nkubectl logs -f nginx-pod\n\n# 执行命令\nkubectl exec -it nginx-pod -- /bin/sh\n\n# 端口转发\nkubectl port-forward pod/nginx-pod 8080:80\n```\n\n## 最佳实践\n\n### 资源限制\n\n```yaml\nresources:\nn  requests:\nn    memory: \"64Mi\"\nn    cpu: \"250m\"\nn  limits:\nn    memory: \"128Mi\"\nn    cpu: \"500m\"\n```\n\n## 相关技能\n\n- [Helm](/skills) - Kubernetes包管理\n- [Docker](/skills) - 容器化\n\n## 参考资源\n\n- [Kubernetes官方文档](https://kubernetes.io/docs/)\n- [kubectl命令参考](https://kubernetes.io/docs/reference/kubectl/)\n",
+    "category": "devops",
+    "tags": [
+      "Kubernetes",
+      "K8s",
+      "容器编排",
+      "DevOps",
+      "云原生"
+    ],
+    "difficulty": "intermediate",
+    "readTime": 35,
+    "author": "OpenClaw Team",
+    "relatedSkills": [
+      "skill-020",
+      "skill-096"
+    ],
+    "stats": {
+      "viewCount": 0
+    },
+    "createdAt": "2026-02-09T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "id": "tutorial-133",
+    "title": "Helm包管理器",
+    "slug": "helm-package-manager",
+    "description": "深入学习Helm Kubernetes包管理器，掌握Chart开发、模板语法、依赖管理和版本控制的完整指南。",
+    "content": "# Helm包管理器\n\nHelm是Kubernetes的包管理器，本教程将全面讲解Helm的核心概念和Chart开发技巧。\n\n## Helm核心概念\n\n### Helm架构\n\n```\nHelm CLI\n  -> Tiller (Helm 2) / 直接访问API (Helm 3)\n    -> Kubernetes API Server\n      -> Chart (模板)\n        -> Release (实例)\n```\n\n### 核心组件\n\n| 组件 | 说明 |\n|------|------|\n| **Chart** | Kubernetes资源的模板包 |\n| **Repository** | Chart的仓库 |\n| **Release** | Chart的运行实例 |\n| **Values** | 配置参数 |\n| **Template** | Go模板语法 |\n\n## Chart结构\n\n### 目录结构\n\n```\nmychart/\n├── Chart.yaml          # Chart元数据\n├── values.yaml         # 默认配置值\n├── charts/             # 依赖Charts\n├── templates/          # 模板文件\n│   ├── deployment.yaml\n│   ├── service.yaml\n│   └── _helpers.tpl    # 模板辅助\n└── templates/tests/    # 测试\n```\n\n### Chart.yaml\n\n```yaml\napiVersion: v2\nname: mychart\ndescription: A Helm chart for Kubernetes\ntype: application\nversion: 0.1.0\nappVersion: \"1.16.0\"\n```\n\n### values.yaml\n\n```yaml\nreplicaCount: 1\n\nimage:\nn  repository: nginx\nn  pullPolicy: IfNotPresent\nn  tag: \"\"\n\nservice:\nn  type: ClusterIP\nn  port: 80\n```\n\n## 模板语法\n\n### 内置对象\n\n```yaml\n# Release信息\n{{ .Release.Name }}\n{{ .Release.Namespace }}\n\n# Values\n{{ .Values.service.port }}\n\n# Chart\n{{ .Chart.Name }}\n```\n\n### 流程控制\n\n```yaml\n# if-else\n{{ if .Values.ingress.enabled }}\n{{- end }}\n\n# range循环\n{{ range .Values.nodeSelector }}\nnodeSelector:\n{{ toYaml . | indent 8 }}\n{{ end }}\n```\n\n## 常用模板\n\n### Deployment模板\n\n```yaml\napiVersion: apps/v1\nkind: Deployment\nmetadata:\nn  name: {{ include \"mychart.fullname\" . }}\nnspec:\nn  replicas: {{ .Values.replicaCount }}\nn  selector:\nn    matchLabels:\nn      app: {{ .Chart.Name }}\nn  template:\nn    metadata:\nn      labels:\nn        app: {{ .Chart.Name }}\nn    spec:\nn      containers:\nn      - name: {{ .Chart.Name }}\nn        image: \"{{ .Values.image.repository }}:{{ .Values.image.tag }}\"\n```\n\n### Service模板\n\n```yaml\napiVersion: v1\nkind: Service\nmetadata:\nn  name: {{ include \"mychart.fullname\" . }}\nnspec:\nn  type: {{ .Values.service.type }}\nn  ports:\nn  - port: {{ .Values.service.port }}\nn    targetPort: http\nn  selector:\nn    app: {{ .Chart.Name }}\n```\n\n## 快速开始\n\n### 安装Helm\n\n```bash\n# macOS\nbrew install helm\n\n# Linux\ncurl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash\n```\n\n### 基本命令\n\n```bash\n# 添加仓库\nhelm repo add stable https://charts.helm.sh/stable\nhelm repo update\n\n# 搜索Chart\nhelm search repo nginx\n\n# 安装Release\nhelm install my-release bitnami/nginx\n\n# 列出Release\nhelm list\n\n# 卸载Release\nhelm uninstall my-release\n```\n\n## Chart开发\n\n### 创建Chart\n\n```bash\n# 创建新Chart\nhelm create mychart\n\n# 渲染模板\nhelm template my-release ./mychart\n\n# 安装\nhelm install my-release ./mychart\n\n# 升级\nhelm upgrade my-release ./mychart\n```\n\n### 打包和发布\n\n```bash\n# 打包Chart\nhelm package ./mychart\n\n# 生成index.yaml\nhelm repo index .\n```\n\n## 辅助模板\n\n### _helpers.tpl\n\n```yaml\n{{- define \"mychart.name\" -}}\n{{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix \"-\" }}\n{{- end }}\n\n{{- define \"mychart.fullname\" -}}\n{{- printf \"%s-%s\" .Release.Name .Chart.Name | trunc 63 | trimSuffix \"-\" }}\n{{- end }}\n```\n\n## 依赖管理\n\n### dependencies.yaml\n\n```yaml\ndependencies:\nn  - name: redis\nn    version: \"^15.0.0\"\nn    repository: \"https://charts.bitnami.com/bitnami\"\nn    condition: redis.enabled\n```\n\n### 更新依赖\n\n```bash\n# 下载依赖\nhelm dependency update ./mychart\n```\n\n## 最佳实践\n\n### 命名规范\n\n```yaml\n# 使用helper函数\n{{ include \"mychart.labels\" . }}\n\n# 避免直接拼接\n{{ .Release.Name }}-{{ .Chart.Name }}  # ❌\n{{ include \"mychart.fullname\" . }}  # ✅\n```\n\n### 值设计\n\n```yaml\n# 使用嵌套结构\nservice:\nn  port: 80\nn  type: ClusterIP\n```\n\n## 相关技能\n\n- [Kubernetes](/skills) - 容器编排\n- [Prometheus](/skills) - 监控系统\n\n## 参考资源\n\n- [Helm官方文档](https://helm.sh/docs/)\n- [Chart开发指南](https://helm.sh/docs/topics/charts/)\n",
+    "category": "devops",
+    "tags": [
+      "Helm",
+      "Kubernetes",
+      "包管理",
+      "DevOps",
+      "Chart"
+    ],
+    "difficulty": "intermediate",
+    "readTime": 35,
+    "author": "OpenClaw Team",
+    "relatedSkills": [
+      "skill-096",
+      "skill-020"
+    ],
+    "stats": {
+      "viewCount": 0
+    },
+    "createdAt": "2026-02-09T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "id": "tutorial-134",
+    "title": "Prometheus监控系统",
+    "slug": "prometheus-monitoring-system",
+    "description": "深入学习Prometheus监控平台，掌握指标采集、PromQL查询、告警规则和集成的完整指南。",
+    "content": "# Prometheus监控系统\n\nPrometheus是云原生监控的事实标准，本教程将全面讲解Prometheus的核心概念和实践技巧。\n\n## Prometheus核心概念\n\n### 监控架构\n\n```\n应用程序 (导出器)\n  -> 暴露指标端点 (/metrics)\n    -> Prometheus Server (抓取)\n      -> 时序数据库 (TSDB)\n        -> PromQL查询\n          -> 告警规则\n            -> Alertmanager\n              -> 通知\n```\n\n### 核心组件\n\n| 组件 | 说明 |\n|------|------|\n| **Prometheus Server** | 主服务，抓取和存储指标 |\n| **Exporters** | 指标导出器 |\n| **Pushgateway** | 短期任务指标推送 |\n| **Alertmanager** | 告警管理 |\n| **Grafana** | 可视化面板 |\n\n### 数据模型\n\n```\n指标名称 {标签=\"值\"}\n\nhttp_requests_total{\nn  method=\"POST\",\nn  endpoint=\"/api/users\",\nn  status=\"200\"\nn}\n```\n\n## 指标类型\n\n### Counter（计数器）\n\n```go\nimport (\nn    \"github.com/prometheus/client_golang/prometheus\"\nn    \"github.com/prometheus/client_golang/prometheus/promhttp\"\nn    \"net/http\"\n)\n\nvar (\nn    requestsTotal = prometheus.NewCounterVec(\nn        prometheus.CounterOpts{\nn            Name: \"http_requests_total\",\nn            Help: \"Total number of HTTP requests\",\nn        },\nn        []string{\"method\", \"endpoint\", \"status\"},\nn    )\n)\n\nfunc handler(w http.ResponseWriter, r *http.Request) {\nn    requestsTotal.WithLabelValues(\"GET\", \"/api\", \"200\").Inc()\nn}\n```\n\n### Gauge（仪表）\n\n```go\nvar (\nn    activeConnections = prometheus.NewGauge(\nn        prometheus.GaugeOpts{\nn            Name: \"active_connections\",\nn            Help: \"Number of active connections\",\nn        },\nn    )\n)\n\nfunc onConnect() {\nn    activeConnections.Inc()\nn}\n\nfunc onDisconnect() {\nn    activeConnections.Dec()\nn}\n```\n\n### Histogram（直方图）\n\n```go\nvar (\nn    requestDuration = prometheus.NewHistogram(\nn        prometheus.HistogramOpts{\nn            Name: \"http_request_duration_seconds\",\nn            Help: \"HTTP request duration in seconds\",\nn            Buckets: prometheus.DefBuckets,\nn        },\nn    )\n)\n\nfunc handler(w http.ResponseWriter, r *http.Request) {\nn    start := time.Now()\nn    defer func() {\nn        requestDuration.Observe(time.Since(start).Seconds())\nn    }()\nn    // handler logic\nn}\n```\n\n## 配置文件\n\n### prometheus.yml\n\n```yaml\nglobal:\nn  scrape_interval: 15s\nn  evaluation_interval: 15s\n\nrule_files:\nn  - '/etc/prometheus/rules/*.yml'\n\nscrape_configs:\nn  - job_name: 'prometheus'\nn    static_configs:\nn      - targets: ['localhost:9090']\n\nn  - job_name: 'node'\nn    static_configs:\nn      - targets: ['localhost:9100']\n```\n\n## PromQL查询\n\n### 基础查询\n\n```promql\n# 选择指标\nhttp_requests_total\n\n# 过滤标签\nhttp_requests_total{job=\"api\", method=\"GET\"}\n\n# 正则匹配\nhttp_requests_total{endpoint=~\"/api/.*\"}\n```\n\n### 范围查询\n\n```promql\n# 时间范围\nhttp_requests_total[5m]\n\n# 偏移量\nhttp_requests_total offset 5m\n```\n\n### 函数\n\n```promql\n# rate() - 计算每秒速率\nrate(http_requests_total[5m])\n\n# irate() - 瞬时速率\nirate(http_requests_total[5m])\n\n# increase() - 增量\nincrease(http_requests_total[1h])\n\n# 聚合函数\nsum(http_requests_total)\navg(memory_usage)\nmax(response_time)\n\n# 分组聚合\nsum by (job) (http_requests_total)\n```\n\n## 告警规则\n\n### 规则定义\n\n```yaml\ngroups:\nn  - name: api_alerts\nn    interval: 30s\nn    rules:\nn      # 高可用告警\nn      - alert: HighRequestLatency\nn        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m])) > 0.5\nn        for: 5m\nn        labels:\nn          severity: warning\nn        annotations:\nn          summary: \"API请求延迟过高\"\n\nn      # 错误率告警\nn      - alert: HighErrorRate\nn        expr: rate(http_requests_total{status=~\"5..\"}[5m]) / rate(http_requests_total[5m]) > 0.05\nn        for: 5m\nn        labels:\nn          severity: critical\nn        annotations:\nn          summary: \"API错误率过高\"\n\nn      # 服务下线告警\nn      - alert: ServiceDown\nn        expr: up{job=\"api\"} == 0\nn        for: 1m\nn        labels:\nn          severity: critical\nn        annotations:\nn          summary: \"服务下线\"\n```\n\n## Exporters\n\n### Node Exporter\n\n```bash\n# 安装\nwget https://github.com/prometheus/node_exporter/releases/download/v1.6.0/node_exporter-1.6.0.linux-amd64.tar.gz\nntar xvfz node_exporter-1.6.0.linux-amd64.tar.gz\nn./node_exporter --web.listen-address=:9100\n```\n\n## Kubernetes部署\n\n### Prometheus部署\n\n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\nn  name: prometheus-config\nndata:\nn  prometheus.yml: |\nn    global:\nn      scrape_interval: 15s\nn    scrape_configs:\nn      - job_name: 'kubernetes-pods'\nn        kubernetes_sd_configs:\nn          - role: pod\n---\napiVersion: apps/v1\nkind: Deployment\nmetadata:\nn  name: prometheus\nnspec:\nn  replicas: 1\nn  selector:\nn    matchLabels:\nn      app: prometheus\nn  template:\nn    metadata:\nn      labels:\nn        app: prometheus\nn    spec:\nn      containers:\nn      - name: prometheus\nn        image: prom/prometheus:latest\nn        args:\nn          - '--config.file=/etc/prometheus/prometheus.yml'\nn        ports:\nn        - containerPort: 9090\n```\n\n## 最佳实践\n\n### 标签设计\n\n```promql\n# 好的标签设计\nhttp_requests_total{method=\"GET\", endpoint=\"/api/users\", status=\"200\"}\n\n# 避免高基数标签\nhttp_requests_total{user_id=\"123\"}  # ❌ 高基数\nhttp_requests_total{method=\"GET\"}   # ✅ 低基数\n```\n\n## 相关技能\n\n- [Grafana](/skills) - 可视化\n- [Kubernetes](/skills) - 容器编排\n\n## 参考资源\n\n- [Prometheus官方文档](https://prometheus.io/docs/)\n- [PromQL参考](https://prometheus.io/docs/prometheus/latest/querying/basics/)\n",
+    "category": "devops",
+    "tags": [
+      "Prometheus",
+      "监控",
+      "DevOps",
+      "告警",
+      "时序数据库"
+    ],
+    "difficulty": "intermediate",
+    "readTime": 35,
+    "author": "OpenClaw Team",
+    "relatedSkills": [
+      "skill-106",
+      "skill-105"
+    ],
+    "stats": {
+      "viewCount": 0
+    },
+    "createdAt": "2026-02-09T00:00:00.000Z",
+    "featured": false
+  },
+  {
+    "id": "tutorial-135",
+    "title": "Grafana可视化平台",
+    "slug": "grafana-visualization-platform",
+    "description": "深入学习Grafana可视化平台，掌握仪表板创建、数据源配置、面板定制和告警通知的完整指南。",
+    "content": "# Grafana可视化平台\n\nGrafana是开源的可视化和监控分析平台，本教程将全面讲解Grafana的核心功能和实践技巧。\n\n## Grafana核心概念\n\n### 架构组件\n\n```\nGrafana Server\n  -> 数据源 (Prometheus, InfluxDB, etc.)\n    -> 仪表板\n      -> 面板\n        -> 查询\n          -> 可视化\n            -> 告警\n```\n\n### 核心概念\n\n| 概念 | 说明 |\n|------|------|\n| **数据源** | 数据存储连接配置 |\n| **仪表板** | 可视化集合 |\n| **面板** | 单个可视化组件 |\n| **查询** | 数据检索语言 |\n| **变量** | 动态参数 |\n\n## 快速开始\n\n### 安装部署\n\n```bash\n# Docker方式\ndocker run -d n  -p 3000:3000 n  --name=grafana n  -e \"GF_SECURITY_ADMIN_PASSWORD=admin\" n  grafana/grafana:latest\n\n# 访问 http://localhost:3000\n# 默认用户名: admin / admin\n```\n\n## 数据源配置\n\n### Prometheus数据源\n\n```json\n{\nn  \"name\": \"Prometheus\",\nn  \"type\": \"prometheus\",\nn  \"url\": \"http://localhost:9090\",\nn  \"access\": \"proxy\",\nn  \"isDefault\": true\nn}\n```\n\n### 其他数据源\n\n| 数据源 | 类型 | 说明 |\n|--------|------|------|\n| **InfluxDB** | 时序数据库 | 指标存储 |\n| **Elasticsearch** | 日志存储 | 日志分析 |\n| **Loki** | 日志聚合 | 日志查询 |\n| **PostgreSQL** | 关系数据库 | SQL查询 |\n\n## 仪表板创建\n\n### 创建流程\n\n1. 点击 `+` -> `Dashboard`\n2. 添加面板\n3. 配置数据源和查询\n4. 选择可视化类型\n5. 调整样式和布局\n6. 保存仪表板\n\n## 面板类型\n\n### 时间序列图\n\n```promql\n# 单条线\nrate(http_requests_total[5m])\n\n# 多条线\nrate(http_requests_total[5m]) * on(job) group_left() (up)\n```\n\n### 仪表盘\n\n```promql\n# 单值\nnode_memory_MemAvailable_bytes / node_memory_MemTotal_bytes\n\n# 阈值\n- range: 0-100\n- thresholds: red(0-50), yellow(50-80), green(80-100)\n```\n\n### 表格\n\n```promql\n# 状态表格\nup{job=\"api\"}\n\n# 排序和过滤\nup * on(instance) group_left() (node_uname_info)\n```\n\n## 查询编辑\n\n### PromQL查询\n\n```promql\n# 基础查询\nrate(http_requests_total[5m])\n\n# 带标签过滤\nrate(http_requests_total{job=\"api\"}[5m])\n\n# 函数和运算\nhistogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m]))\n```\n\n### 查询变量\n\n```groovy\n# 内置变量\n$__interval     # 自动间隔\n$__range        # 时间范围\n$__timeFilter   # 时间过滤器\n\n# 使用示例\nrate(http_requests_total[$__interval])\nhttp_requests_total{$__timeFilter}\n```\n\n## 变量系统\n\n### 变量类型\n\n| 类型 | 说明 | 示例 |\n|------|------|------|\n| **Query** | 查询变量 | label_values(up, job) |\n| **Interval** | 时间间隔 | 1m, 5m, 10m |\n| **Datasource** | 数据源 | Prometheus-Prod |\n\n### 变量定义\n\n```json\n{\nn  \"name\": \"instance\",\nn  \"type\": \"query\",\nn  \"query\": \"label_values(up, instance)\",\nn  \"multi\": true,\nn  \"includeAll\": true\nn}\n```\n\n### 变量使用\n\n```promql\n# 在查询中使用\nup{instance=\"$instance\"}\n\n# 多值变量\nup{instance=~\"$instance\"}\n```\n\n## 告警系统\n\n### 告警配置\n\n```promql\n# 告警查询\nrate(http_requests_total[5m]) > 100\n\n# 条件\n- WHEN: avg()\n- OF: 5m\n- BELOW: 100\n\n# 频率\n- Evaluate every: 30s\n- For: 5m\n```\n\n### 通知渠道\n\n```json\n// Slack\n{\nn  \"type\": \"slack\",\nn  \"settings\": {\nn    \"url\": \"https://hooks.slack.com/services/...\",\nn    \"channel\": \"#alerts\"\nn  }\nn}\n\n// Email\n{\nn  \"type\": \"email\",\nn  \"settings\": {\nn    \"addresses\": \"alert@example.com\"\nn  }\nn}\n```\n\n## 可视化技巧\n\n### 颜色方案\n\n| 方案 | 适用场景 |\n|------|----------|\n| **Classic** | 传统风格 |\n| **Orange** | 温度类指标 |\n| **Green-Yellow-Red** | 状态指示 |\n\n### 阈值设置\n\n```json\n{\nn  \"thresholds\": [\nn    {\"value\": 0, \"color\": \"green\"},\nn    {\"value\": 50, \"color\": \"yellow\"},\nn    {\"value\": 80, \"color\": \"red\"}\nn  ]\nn}\n```\n\n## 插件系统\n\n### 常用插件\n\n| 插件 | 类型 | 说明 |\n|------|------|------|\n| **Pie Chart** | Panel | 饼图 |\n| **Worldmap** | Panel | 地图可视化 |\n| **Status Panel** | Panel | 状态指示器 |\n\n### 安装插件\n\n```bash\n# CLI安装\ngrafana-cli plugins install grafana-piechart-panel\n\n# Docker安装\ndocker run -d n  -e \"GF_INSTALL_PLUGINS=grafana-piechart-panel\" n  grafana/grafana:latest\n```\n\n## 导入导出\n\n### 导入仪表板\n\n```bash\n# 使用Grafana UI\n# Dashboard -> Import -> Upload JSON file\n\n# 导入官方仪表板\n# https://grafana.com/grafana/dashboards/\n```\n\n## 性能优化\n\n### 查询优化\n\n```promql\n# 使用recording rules\n# 避免复杂子查询\nrate(http_requests_total[5m])  # ✅\n```\n\n### 数据刷新\n\n```json\n{\nn  \"refresh\": \"30s\",\nn  \"time\": {\nn    \"from\": \"now-1h\",\nn    \"to\": \"now\"\nn  }\nn}\n```\n\n## 最佳实践\n\n### 仪表板设计\n\n1. **信息层次**: 关键指标放在顶部\n2. **颜色一致**: 相同类型指标使用相同颜色\n3. **合理布局**: 使用网格对齐\n\n### 告警策略\n\n1. **阈值合理**: 避免告警疲劳\n2. **分级通知**: critical/warning/info\n\n## 相关技能\n\n- [Prometheus](/skills) - 监控数据\n- [Kubernetes](/skills) - 容器编排\n\n## 参考资源\n\n- [Grafana官方文档](https://grafana.com/docs/)\n- [仪表板库](https://grafana.com/grafana/dashboards/)\n- [插件市场](https://grafana.com/grafana/plugins/)\n",
+    "category": "devops",
+    "tags": [
+      "Grafana",
+      "可视化",
+      "监控",
+      "DevOps",
+      "仪表板"
+    ],
+    "difficulty": "intermediate",
+    "readTime": 30,
+    "author": "OpenClaw Team",
+    "relatedSkills": [
+      "skill-105",
+      "skill-106"
+    ],
+    "stats": {
+      "viewCount": 0
+    },
+    "createdAt": "2026-02-09T00:00:00.000Z",
+    "featured": false
   }
 ]

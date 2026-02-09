@@ -2477,3 +2477,20 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - GitHub Actions教程包含工作流、作业、步骤、Docker构建、缓存、自定义Action
 - 所有教程相关技能引用有效技能ID (skill-108, skill-064, skill-109, skill-110, skill-045, skill-111, skill-087)
 ---
+
+## 2026-02-09 - US-138
+- 添加5篇Intermediate教程 (tutorial-131~135):
+  1. Docker容器化实践 (2500+字, 6+代码示例)
+  2. Kubernetes容器编排 (2500+字, 6+代码示例)
+  3. Helm包管理器 (2500+字, 6+代码示例)
+  4. Prometheus监控系统 (2500+字, 6+代码示例)
+  5. Grafana可视化平台 (2500+字, 6+代码示例)
+- 更新 src/data/tutorials.json，总计135篇教程
+- npm run build 成功，生成569个静态页面
+- 相关技能: docker-essentials (skill-012), kubernetes (skill-020), helm (skill-096), prometheus (skill-106), grafana (skill-105)
+
+**Learnings for future iterations:**
+- 教程使用Python脚本添加到tutorials.json时，需要确保JSON格式的正确性（ensure_ascii=False处理中文）
+- 每篇教程都包含完整的代码示例、配置文件说明和最佳实践
+- 相关技能通过relatedSkills字段关联到具体的skill ID
+- DevOps类教程涵盖容器化(Docker)、编排(K8s)、包管理(Helm)、监控(Prometheus/Grafana)完整技术栈
