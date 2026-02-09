@@ -16,27 +16,28 @@
 
 ---
 
-## 2026-02-10 - US-139
-- 编写 Phase 6 - Intermediate 教程批次 4 (5篇)
-- tutorial-136: Jaeger分布式追踪 - 涵盖分布式追踪概念、Jaeger架构、OpenTelemetry集成、Span创建、采样策略、Elasticsearch存储
-- tutorial-137: Consul服务发现 - 涵盖服务注册、健康检查、KV存储、ACL访问控制、多数据中心、DNS/HTTP API查询
-- tutorial-138: Nginx负载均衡 - 涵盖负载均衡策略、健康检查、会话保持、HTTPS/WebSocket配置、高可用部署、性能优化
-- tutorial-139: Let's Encrypt SSL证书 - 涵盖HTTP-01/DNS-01挑战、Certbot使用、Nginx/Apache配置、自动续期、Docker部署、通配符证书
-- tutorial-140: Webpack构建工具 - 涵盖Loader配置、Plugin配置、代码分割、开发服务器、性能优化、Tree Shaking
+## 2026-02-10 - US-141
+- 编写 Phase 6 - Advanced 教程批次 2 (5篇)
+- tutorial-146: 限流策略与实现 - 涵盖固定窗口、滑动窗口、令牌桶、漏桶算法、Redis+Lua分布式限流、限流响应、监控告警
+- tutorial-147: 熔断器模式 - 涵盖关闭/开启/半开状态、状态转换、熔断策略、降级策略、配置参数、监控指标
+- tutorial-148: 缓存一致性策略 - 涵盖Cache-Aside、Write-Through、Write-Behind、Refresh-Ahead、分布式缓存一致性、并发问题
+- tutorial-149: 分库分表策略 - 涵盖垂直拆分、水平拆分、Range/Hash/一致性哈希分片、ShardingSphere配置、跨分片查询、分布式事务、在线扩容
+- tutorial-150: 系统容量规划 - 涵盖性能基准测试、容量评估、资源需求预测、瓶颈分析、扩容决策、成本优化、监控告警
 - 更新 src/data/tutorials.json
-- 更新 prd.json (US-139 passes: true)
-- 构建验证通过 - 574个静态页面 (140个教程 + 419个技能 + 其他)
+- 更新 prd.json (US-141 passes: true)
+- 构建验证通过 - 584个静态页面 (150个教程 + 419个技能 + 其他)
 
 **Learnings for future iterations:**
-- 教程JSON格式: id, title, slug, description, content (Markdown), category, tags, difficulty, readTime, author, relatedSkills, stats, createdAt, featured
-- Intermediate教程标准: 2500+字, 6+代码示例, 包含实战案例和最佳实践
-- category字段: devops/development/productivity等
-- relatedSkills必须是已存在的skill ID (e.g., skill-105, skill-106)
-- 构建成功后可以看到生成的静态页面数量
+- Advanced教程标准: 3000+字, 8+代码示例, 涵盖高级架构设计和系统优化
+- 限流算法选择: 固定窗口(简单场景)、滑动窗口(平衡场景)、令牌桶(突发流量)、漏桶(恒定流出)
+- 熔断器状态: CLOSED(正常) -> OPEN(熔断) -> HALF_OPEN(探测) -> CLOSED(恢复)
+- 缓存一致性策略: Cache-Aside(读多写少)、Write-Through(强一致)、Write-Behind(高性能)、Refresh-Ahead(热点数据)
+- 分库分表: 垂直拆分(按业务)、水平拆分(按数据)、Range分片(时间序列)、Hash分片(均匀分布)、一致性哈希(扩容友好)
+- 容量规划: 性能基准测试 -> 容量评估 -> 资源预测 -> 瓶颈分析 -> 扩容决策 -> 成本优化
 
 ---
 
----
+## 2026-02-10 - US-139
 
 ## 2026-02-04 - US-001
 - 初始化 Next.js 14 项目，使用 TypeScript + Tailwind CSS

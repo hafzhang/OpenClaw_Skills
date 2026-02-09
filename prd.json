@@ -1125,8 +1125,8 @@
         "npm run build 成功"
       ],
       "priority": 109,
-      "passes": false,
-      "notes": "🚧 Phase 6 - Sprint 9.10 - 规划中 - Advanced教程批次2"
+      "passes": true,
+      "notes": "✅ Phase 6 - Sprint 9.10 - 已完成 - 添加5篇Advanced教程 (tutorial-146~150): 限流策略与实现、熔断器模式、缓存一致性策略、分库分表策略、系统容量规划"
     },
     {
       "id": "US-142",
