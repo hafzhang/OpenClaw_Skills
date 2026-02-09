@@ -2444,3 +2444,20 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 静态站点生成需要确保所有数据唯一性
 
 ---
+
+## 2026-02-09 - US-136
+- Phase 6 Sprint 9.5 - 添加5篇Intermediate教程 (tutorial-121~125)
+- Redis进阶应用：数据结构、持久化、集群、性能优化
+- PostgreSQL高级查询与优化：窗口函数、CTE、索引、查询重写
+- MongoDB高级特性：聚合管道、索引、事务、数据建模
+- Elasticsearch全文搜索：索引设计、查询DSL、聚合分析
+- RabbitMQ消息队列：消息模型、交换机、可靠性保证
+- 构建成功：565个静态页面
+- 浏览器验证：所有5篇教程正确渲染
+
+**Learnings for future iterations:**
+- Intermediate教程每篇需要2500+字，包含6+代码示例
+- 使用Node.js脚本添加大量JSON数据更可靠
+- 每篇教程需要设置正确的relatedSkills引用现有技能ID
+- 构建后会生成静态页面数量 = pages + 动态路由页面数
+---

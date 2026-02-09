@@ -1045,8 +1045,8 @@
         "npm run build 成功"
       ],
       "priority": 104,
-      "passes": false,
-      "notes": "🚧 Phase 6 - Sprint 9.5 - 规划中 - Intermediate教程批次1"
+      "passes": true,
+      "notes": "✅ Phase 6 - Sprint 9.5 - 已完成 - 添加5篇Intermediate教程 (tutorial-121~125): Redis进阶应用、PostgreSQL高级查询与优化、MongoDB高级特性、Elasticsearch全文搜索、RabbitMQ消息队列"
     },
     {
       "id": "US-137",
