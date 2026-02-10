@@ -1293,8 +1293,8 @@
         "验证 GitHub 仓库可访问"
       ],
       "priority": 121,
-      "passes": false,
-      "notes": "🚧 Phase 6 - Sprint 10.10 - 规划中 - 终端和Shell研究"
+      "passes": true,
+      "notes": "✅ Phase 6 - Sprint 10.10 - 已完成 - 50个终端和Shell技能研究完成 (Zsh 12个/Fish 10个/Prompts 8个/History 7个/Tmux 6个/TUI 7个)，创建 docs/skill-research-phase6-batch10.md，仓库验证报告显示66%成功率(33/50 HTTP 200，1个TIMEOUT为大型仓库zsh-syntax-highlighting，2个301重定向为有效仓库但已迁移组织，14个404为失效仓库)"
     },
     {
       "id": "US-154",
@@ -1306,8 +1306,8 @@
         "验证 GitHub 仓库可访问"
       ],
       "priority": 122,
-      "passes": false,
-      "notes": "🚧 Phase 6 - Sprint 10.11 - 规划中 - 效率工具研究"
+      "passes": true,
+      "notes": "✅ Phase 6 - Sprint 10.11 - 已完成 - 50个效率工具技能研究完成 (文件搜索10个/文本处理10个/目录导航8个/系统监控8个/网络工具7个/开发辅助7个)，创建 docs/skill-research-phase6-batch11.md，仓库验证报告显示92%成功率(46/50 HTTP 200，3个301重定向为有效仓库但已迁移组织，1个404为失效仓库)"
     },
     {
       "id": "US-155",

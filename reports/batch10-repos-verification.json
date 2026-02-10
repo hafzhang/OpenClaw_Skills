@@ -1,0 +1,264 @@
+{
+  "timestamp": "2026-02-10T06:58:11.371Z",
+  "batch": "Phase 6 - Batch 10 (Terminal & Shell - Productivity)",
+  "total": 50,
+  "summary": {
+    "success": 33,
+    "failed": 16,
+    "timeout": 1,
+    "error": 0
+  },
+  "results": [
+    {
+      "url": "https://github.com/ohmyzsh/ohmyzsh",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/zsh-users/zsh-autosuggestions",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/zsh-users/zsh-syntax-highlighting",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout (15s)"
+    },
+    {
+      "url": "https://github.com/romkatv/powerlevel10k",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/getantibody/antibody",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/zsh-users/zsh-completions",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/zdharma-continuum/fast-syntax-highlighting",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/unixorn/git-extra-commands",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/djui/alias-tips",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/zshzoo/mzo",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/junegunn/fzf",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/agkozak/zsh-z",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/fish-shell/fish-shell",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/jorgebucaran/fisher",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/oh-my-fish/oh-my-fish",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/franciscolourenco/done",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/jethrokuan/z",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/PatrickF1/fzf.fish",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/IlanCosman/tide",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/catppuccin/fish",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/gazorby/fish-abbreviation-tips",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/jorgebucaran/aw.fish",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/starship/starship",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/denysdovhan/spaceship-prompt",
+      "status": 301,
+      "success": false
+    },
+    {
+      "url": "https://github.com/sindresorhus/pure",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/janriemer/spaceship",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/romkatv/gitstatus",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/oredwarf/nish",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/raylee/tide",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/distanta/pure",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/ellie/atuin",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/di_an/dfw",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/wugong/ash",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/revision-co/revsh",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/nix-community/nix-your-shell",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/rsteube/carapace",
+      "status": 301,
+      "success": false
+    },
+    {
+      "url": "https://github.com/raine/shellquote",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/tmux/tmux",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/tmux-plugins/tpm",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/tmux-plugins/tmux-resurrect",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/tmux-plugins/tmux-continuum",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/tmux-plugins/tmux-sensible",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/tmux-plugins/tmux-copycat",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/charmbracelet/gum",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/charmbracelet/glow",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/charmbracelet/bubbletea",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/charmbracelet/lipgloss",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/daskol/nodes",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/kognise/charm.sh",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/aptos-dev/awesome-terminal-apps",
+      "status": 404,
+      "success": false
+    }
+  ]
+}

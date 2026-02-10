@@ -1,0 +1,263 @@
+{
+  "timestamp": "2026-02-10T07:17:34.952Z",
+  "batch": "Phase 6 - Batch 11 (Productivity Tools)",
+  "total": 50,
+  "summary": {
+    "success": 46,
+    "failed": 4,
+    "timeout": 0,
+    "error": 0
+  },
+  "results": [
+    {
+      "url": "https://github.com/junegunn/fzf",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/sharkdp/fd",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/BurntSushi/ripgrep",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ggreer/the_silver_searcher",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/peco/peco",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/lotabout/skim",
+      "status": 301,
+      "success": false
+    },
+    {
+      "url": "https://github.com/moncho/dry",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/jarun/nnn",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ranger/ranger",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/dylanaraps/fff",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/sharkdp/bat",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/sharkdp/hexyl",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/sharkdp/pastel",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/sharkdp/hyperfine",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/chmln/sd",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/BurntSushi/xsv",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/jqnatividad/qsv",
+      "status": 301,
+      "success": false
+    },
+    {
+      "url": "https://github.com/wader/fq",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/itchyny/mmv",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/dandavison/delta",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/eza-community/eza",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ogham/exa",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/lsd-rs/lsd",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/clvv/fasd",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/wting/autojump",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/rupa/z",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/skywind3000/z.lua",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ajeetdsouza/zoxide",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/aristocratos/btop",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/aristocratos/bashtop",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ClementTsang/bottom",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/dalance/procs",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/Xfennec/progress",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/imsnif/bandwhich",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/timgrossmann/InstaPy",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/s0md3v/roop",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/httpie/httpie",
+      "status": 301,
+      "success": false
+    },
+    {
+      "url": "https://github.com/curl/curl",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/rs/curlie",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/httpie/desktop",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/taviso/ctftool",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/projectdiscovery/httpx",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/projectdiscovery/subfinder",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/jesseduffield/lazygit",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/jesseduffield/lazydocker",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/charmbracelet/mods",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/charmbracelet/soft-serve",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/charmbracelet/vhs",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/charmbracelet/wish",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/charmbracelet/skate",
+      "status": 200,
+      "success": true
+    }
+  ]
+}
