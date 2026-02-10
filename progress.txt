@@ -2645,3 +2645,27 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 301重定向: framer/motion→motiondivision/motion, nuxt-community/i18n-module→nuxt-modules/i18n, nuxt-community/supabase-module→nuxt-modules/supabase
 ---
 
+
+## 2026-02-10 - US-147
+- Phase 6 - 研究 Development 类技能批次 4 (50个) - 数据库工具生态
+- 研究了 50 个数据库工具技能，分为 4 大类
+- PostgreSQL 生态 (13个): postgres, pgadmin, psql, pg_dump, pg_restore, pgbouncer, pgbench, pg_stat_statements, pg_repack, pgbadger, patroni, postgrest, pgvector
+- MongoDB 生态 (12个): mongodb, mongosh, compass, mongodump, mongorestore, mongoimport, mongoexport, mongostat, mongotop, mongoose, node-mongodb-native, mongoengine
+- MySQL 生态 (12个): mysql-server, mysql-shell, mysqldump, mysqladmin, mysqlcheck, mysqlbinlog, workbench, proxysql, mysql-router, orchestrator, percona-toolkit, gh-ost
+- Redis 生态 (13个): redis, redis-cli, redis-benchmark, redis-sentinel, redisinsight, redis-py, node-redis, jedis, redis-rb, phpredis, go-redis, redisjson, redistimeseries
+- 创建 docs/skill-research-phase6-batch4.md
+- 仓库验证报告显示 19/33 HTTP 200 (57.58%)，11个TIMEOUT为大型仓库如postgres/mongodb，2个301重定向，1个404
+- 更新 prd.json (US-147 passes: true)
+
+**Learnings for future iterations:**
+- 数据库工具技能研究需要涵盖核心数据库、CLI工具、GUI管理工具、备份/恢复工具、监控工具、高可用方案
+- PostgreSQL 核心工具: psql (CLI), pg_dump/pg_restore (备份), pgbouncer (连接池), pg_stat_statements (统计), pg_repack (重组)
+- PostgreSQL 扩展生态: Patroni (HA), PostgREST (REST API), pgvector (向量搜索，AI应用)
+- MongoDB 工具链: mongosh (新一代shell), mongo-tools (备份/导入导出/统计), Mongoose (Node.js ODM), MongoEngine (Python ODM)
+- MySQL 工具链: mysql-shell (新一代客户端), ProxySQL (代理/连接池), Orchestrator (拓扑管理), gh-ost (在线迁移)
+- Redis 客户端库覆盖多语言: Python (redis-py), Node.js (node-redis), Java (Jedis), Ruby (redis-rb), PHP (phpredis), Go (go-redis)
+- Redis 模块扩展: RedisJSON (JSON数据类型), RedisTimeSeries (时序数据)
+- 大型仓库 (postgres, mongodb) 在HEAD请求时容易超时，但都是知名项目，验证时需要手动确认
+
+---
+

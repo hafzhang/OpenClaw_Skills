@@ -1,0 +1,223 @@
+{
+  "batch": "Phase 6 - Batch 4 (Database Tools Ecosystem)",
+  "timestamp": "2026-02-10T04:02:11.441Z",
+  "summary": {
+    "total": 33,
+    "success": 19,
+    "failed": 14,
+    "successRate": "57.58%",
+    "avgDuration": "3657ms"
+  },
+  "results": [
+    {
+      "url": "https://github.com/postgres/postgres",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10035
+    },
+    {
+      "url": "https://github.com/postgres/pgadmin4",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10011
+    },
+    {
+      "url": "https://github.com/pgbouncer/pgbouncer",
+      "status": 200,
+      "success": true,
+      "duration": 871
+    },
+    {
+      "url": "https://github.com/reorg/pg_repack",
+      "status": 200,
+      "success": true,
+      "duration": 897
+    },
+    {
+      "url": "https://github.com/darold/pgbadger",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10002
+    },
+    {
+      "url": "https://github.com/zalando/patroni",
+      "status": 301,
+      "success": false,
+      "duration": 548,
+      "redirect": "https://github.com/patroni/patroni"
+    },
+    {
+      "url": "https://github.com/PostgREST/postgrest",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10010
+    },
+    {
+      "url": "https://github.com/pgvector/pgvector",
+      "status": 200,
+      "success": true,
+      "duration": 951
+    },
+    {
+      "url": "https://github.com/mongodb/mongo",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10001
+    },
+    {
+      "url": "https://github.com/mongodb/mongosh",
+      "status": 404,
+      "success": false,
+      "duration": 646
+    },
+    {
+      "url": "https://github.com/mongodb/compass",
+      "status": 404,
+      "success": false,
+      "duration": 693
+    },
+    {
+      "url": "https://github.com/mongodb/mongo-tools",
+      "status": 200,
+      "success": true,
+      "duration": 923
+    },
+    {
+      "url": "https://github.com/Automattic/mongoose",
+      "status": 200,
+      "success": true,
+      "duration": 944
+    },
+    {
+      "url": "https://github.com/mongodb/node-mongodb-native",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10008
+    },
+    {
+      "url": "https://github.com/MongoEngine/mongoengine",
+      "status": 200,
+      "success": true,
+      "duration": 947
+    },
+    {
+      "url": "https://github.com/mysql/mysql-server",
+      "status": 200,
+      "success": true,
+      "duration": 843
+    },
+    {
+      "url": "https://github.com/mysql/mysql-shell",
+      "status": 200,
+      "success": true,
+      "duration": 1087
+    },
+    {
+      "url": "https://github.com/mysql/mysql-workbench",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10010
+    },
+    {
+      "url": "https://github.com/sysown/proxysql",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10014
+    },
+    {
+      "url": "https://github.com/mysql/mysql-router",
+      "status": 200,
+      "success": true,
+      "duration": 1062
+    },
+    {
+      "url": "https://github.com/openark/orchestrator",
+      "status": 200,
+      "success": true,
+      "duration": 1089
+    },
+    {
+      "url": "https://github.com/percona/percona-toolkit",
+      "status": 200,
+      "success": true,
+      "duration": 885
+    },
+    {
+      "url": "https://github.com/github/gh-ost",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10013
+    },
+    {
+      "url": "https://github.com/redis/redis",
+      "status": 200,
+      "success": true,
+      "duration": 1015
+    },
+    {
+      "url": "https://github.com/RedisInsight/RedisInsight",
+      "status": 301,
+      "success": false,
+      "duration": 632,
+      "redirect": "https://github.com/redis/RedisInsight"
+    },
+    {
+      "url": "https://github.com/redis/redis-py",
+      "status": 200,
+      "success": true,
+      "duration": 888
+    },
+    {
+      "url": "https://github.com/redis/node-redis",
+      "status": 200,
+      "success": true,
+      "duration": 812
+    },
+    {
+      "url": "https://github.com/redis/jedis",
+      "status": 200,
+      "success": true,
+      "duration": 902
+    },
+    {
+      "url": "https://github.com/redis/redis-rb",
+      "status": 200,
+      "success": true,
+      "duration": 907
+    },
+    {
+      "url": "https://github.com/phpredis/phpredis",
+      "status": 200,
+      "success": true,
+      "duration": 1038
+    },
+    {
+      "url": "https://github.com/redis/go-redis",
+      "status": 200,
+      "success": true,
+      "duration": 1011
+    },
+    {
+      "url": "https://github.com/RedisJSON/RedisJSON",
+      "status": 200,
+      "success": true,
+      "duration": 986
+    },
+    {
+      "url": "https://github.com/RedisTimeSeries/RedisTimeSeries",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10013
+    }
+  ]
+}
