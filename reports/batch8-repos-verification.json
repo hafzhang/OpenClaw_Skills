@@ -1,0 +1,263 @@
+{
+  "timestamp": "2026-02-10T06:06:15.793Z",
+  "batch": "Phase 6 - Batch 8 (Editors & IDEs - Productivity)",
+  "total": 50,
+  "summary": {
+    "success": 30,
+    "failed": 20,
+    "timeout": 0,
+    "error": 0
+  },
+  "results": [
+    {
+      "url": "https://github.com/microsoft/vscode",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/VSCodium/vscodium",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/open-vsx/publish-extensions",
+      "status": 301,
+      "success": false
+    },
+    {
+      "url": "https://github.com/code-server/code-server",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/coder/coder",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/github/copilot-vscode",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/Continue/continue",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/eclipse-theia/theia",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/microsoft/vscode-jupyter",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/microsoft/vscode-live-server",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/formulahendry/auto-rename-tag",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/usernamehw/vscode-error-lens",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/neovim/neovim",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/vim/vim",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/SpaceVim/SpaceVim",
+      "status": 301,
+      "success": false
+    },
+    {
+      "url": "https://github.com/nvim-lualine/lualine.nvim",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/nvim-tree/nvim-tree.lua",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/nvim-telescope/telescope.nvim",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/folke/lazy.nvim",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/wbthomason/packer.nvim",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/folke/trouble.nvim",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/emacs-mirror/emacs",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/doomemacs/doomemacs",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/syl20bnr/spacemacs",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/hlissner/doom-emacs",
+      "status": 301,
+      "success": false
+    },
+    {
+      "url": "https://github.com/magit/magit",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/emacs-evil/evil",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/company-mode/company",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/emacs-vscode/module",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/JetBrains/intellij-community",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/JetBrains/ideavim",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/intellij-rust/intellij-rust",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/JetBrains/kotlin",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/smalltech/jetbrains-project-zoom",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/cmf/idea-gitignore",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/jjs-aged/filename-search-idea",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/SublimeText/Packages",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/SublimeText/UnitTesting",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/SublimeText/LSP",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/SublimeText/Origami",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/alepez/guinetwork",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/atom/atom",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/microsoft/monaco-editor",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/facebook/nuclide",
+      "status": 301,
+      "success": false
+    },
+    {
+      "url": "https://github.com/textareainput/focus",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/occlum/occlum",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://github.com/zyedidia/micro",
+      "status": 301,
+      "success": false
+    },
+    {
+      "url": "https://github.com/josephschmitt/Clown",
+      "status": 404,
+      "success": false
+    },
+    {
+      "url": "https://github.com/ryanoasis/nerd-fonts",
+      "status": 200,
+      "success": true
+    }
+  ]
+}
