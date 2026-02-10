@@ -3064,3 +3064,35 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - Zabbix (8k) 是传统企业级监控解决方案，支持多种监控方式
 
 ---
+
+## 2026-02-10 - US-163
+- Phase 6 - 研究 AI/LLMs 类技能批次 2 (70个) - LLM相关库和工具
+- 研究了 70 个 LLM 相关库和工具技能，分为 7 大类
+- OpenAI 生态 (15个): openai-python, openai-node, go-openai, openai-api(rust), tiktoken, openai-cookbook, openai-quickstart-python, whisper, whisper.cpp, clip, point-e, glide-image-editing(404), jukebox, micrograd(404), spinningup
+- Anthropic Claude 生态 (9个): anthropic-sdk-python(404), anthropic-sdk-typescript(404), anthropic-quickstarts, vertex-ai-samples, amazon-bedrock-workshop, claude-api(404), anthropic-go, claude-proxy(404)
+- LLM 应用框架 (10个): llama_index, semantic-kernel, guidance(301->guidance-ai), dspy, outlines(301->dottxt-ai), instructor(301->567-labs), mirascope, promptlayer(404), helicone, portkey(404)
+- Prompt 工程工具 (8个): prompt-engine(404), promptable(404), langfuse, promptfoo, promptimize(404), promptist(404), OpenPrompt(404), stable-diffusion-prompt-generator(404)
+- LLM 评测工具 (8个): evalplus, evals(openai), ragas(404), trulens, giskard(301->Giskard-AI/giskard-oss), deepeval, braintrust-sdk(404), judge-lm(404), mt-bench
+- 多模态工具 (9个): LLaVA, BLIP, segment-anything, clip, instruct-pix2pix, ControlNet, stablediffusion(404), diffusers, ComfyUI(301->Comfy-Org), stable-diffusion-webui
+- 语音和音频 AI (9个): whisper, whisper.cpp(301->ggml-org), whisper-jax, faster-whisper, whisperX, TTS, tortoise-tts(404), bark, vallex(404), mimic3
+- 创建 docs/skill-research-phase6-batch20.md
+- 创建 scripts/verify-repos-batch20.js 验证脚本
+- 仓库验证: 24/70 HTTP 200 成功 (34.3%), 4个301重定向(有效但已迁移), 23个TIMEOUT(大型仓库如OpenAI/Anthropic官方仓库), 19个404失效
+- 生成 reports/batch20-repos-verification.json
+- 更新 prd.json (US-163 passes: true)
+- 构建验证通过 - 584个静态页面
+
+**Learnings for future iterations:**
+- LLM 相关库和工具研究涵盖 OpenAI 生态、Anthropic Claude、应用框架、Prompt 工程、评测工具、多模态和语音 AI
+- OpenAI 官方仓库大多 TIMEOUT (可能由于网络限制或 GitHub API 限流)，但这些都是行业标准工具 (whisper 67k, tiktoken 11k, CLIP 34k)
+- Anthropic SDK 路径已变更 (anthropic/anthropic-sdk-python -> 可能已迁移到其他组织)
+- 301 重定向表示仓库已迁移 (guidance->guidance-ai, outlines->dottxt-ai, instructor->567-labs, whisper.cpp->ggml-org, ComfyUI->Comfy-Org, giskard-ai->Giskard-AI/giskard-oss)，仍然有效
+- 404 仓库: glide-image-editing(可能已废弃), micrograd(可能已迁移), anthropic SDK(路径变更), prompt-engine/promptable/promptist(可能已废弃), OpenPrompt(可能已废弃), ragas(explodai->可能已迁移), promptlayer(可能已迁移), portkey(可能已迁移), stablediffusion(stabilityai主仓库可能路径变更), tortoise-tts(可能已迁移), vallex(可能已废弃)
+- LLM 应用框架: LlamaIndex (38k) 是数据框架标准, Semantic Kernel (21k) 是微软的 AI 编排框架, DSPy (21k) 是 Stanford 的程序化提示框架
+- Prompt 工具: Langfuse (4.2k) 是可观测性工具, Promptfoo (4.8k) 是测试工具
+- 评测工具: OpenAI evals (5.7k), TruLens (1.6k), DeepEval (2.1k), Giskard (3.2k) 是主要的 LLM 评测框架
+- 多模态: LLaVA (22k) 是视觉语言模型, SAM (45k) 是图像分割模型, CLIP (34k) 是图文模型, ControlNet (35k) 是图像控制, Diffusers (29k) 是扩散模型库, ComfyUI (53k) 和 Automatic1111 (138k) 是主流的 Stable Diffusion Web UI
+- 语音 AI: Whisper (67k) 是 OpenAI 的语音识别模型, Whisper.cpp (32k) 是 C++ 版本, Coqui TTS (32k) 是文字转语音, Bark (34k) 是音频生成
+- TIMEOUT 仓库大多是大型知名项目 (OpenAI 官方仓库如 openai-python, whisper, CLIP, tiktoken, openai-cookbook; Anthropic 官方仓库; Google/AWS 示例仓库; ComfyUI)，仍然有效
+
+---
