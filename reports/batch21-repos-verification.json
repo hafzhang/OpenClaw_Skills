@@ -1,0 +1,195 @@
+{
+  "timestamp": "2026-02-10T10:59:36.738Z",
+  "batch": 21,
+  "category": "System Tools",
+  "total": 30,
+  "summary": {
+    "success": 15,
+    "timeout": 0,
+    "error": 0,
+    "fail": 15,
+    "redirect": 2
+  },
+  "results": [
+    {
+      "url": "https://github.com/coreutils/coreutils",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/DWesl/findutils",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/pinard/diffutils",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/gnulib-bootstrap/sed",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/gnu/gawk",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/gnulib-bootstrap/grep",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/tar-tarball/tar",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/gzip/gzip",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/bash/bash/bash",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/zsh-users/zsh",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/BurntSushi/ripgrep",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ggreer/the_silver_searcher",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/beyondgrep/ack",
+      "status": 301,
+      "redirectUrl": "https://github.com/beyondgrep/ack1",
+      "success": false
+    },
+    {
+      "url": "https://github.com/genivia/ugrep",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/chmln/sd",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/gmargari/sed",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/learnbyexample/Command-line-text-processing",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/stedolan/jq",
+      "status": 301,
+      "redirectUrl": "https://github.com/jqlang/jq",
+      "success": false
+    },
+    {
+      "url": "https://github.com/mikefarah/yq",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/pelletier/go-toml",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/dylanaraps/neofetch",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/fastfetch-cli/fastfetch",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/KatieFalcon/ScreenFetch",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/openSUSE/hwinfo",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/canonical/lshw",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/m-roc Bowen/dfc",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/muesli/duf",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/bootandy/dust",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/rofl0r/ncdu",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/duuduke/gdu",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    }
+  ]
+}
