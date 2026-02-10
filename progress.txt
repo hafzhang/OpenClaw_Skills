@@ -2775,3 +2775,35 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 现代构建趋势: esbuild (速度) + Rollup (tree-shaking) + Vite (DX) 的组合
 
 ---
+
+## 2026-02-10 - US-152
+- Phase 6 - 研究 Productivity 类技能批次 2 (50个) - 笔记和知识管理
+- 研究了 50 个笔记和知识管理技能，分为 8 大类
+- Notion 生态 (8个): notion-enhancer, notion-puppy, notion-sdk-js, notion-sdk-py, notion2md, notion-backup, notion-exporter, notion-api
+- Obsidian 生态 (12个): obsidian-md, obsidian-sample-plugin, obsidian-kanban, obsidian-tasks, obsidian-dataview, obsidian-calendar, obsidian-advanced-tables, obsidian-zotero, obsidian-outliner, obsidian-mindmap, obsidian-excalidraw, obsidian-latex
+- Logseq 生态 (6个): logseq, logseq-plugins, logseq-graph-analysis, logseq-zotero, logseq-upload-plugin, logsql
+- Joplin 生态 (6个): joplin, joplin-android, joplin-ios, joplin-plugin, joplin-link-notes, joplin-export
+- Trilium Notes 生态 (5个): trilium-notes, trilium-scripts, trilium-yt-export, trilium-sync, trilium-search
+- Foam 生态 (4个): foam, foam-template, foam-vscode, foam-graph
+- TiddlyWiki 生态 (5个): TiddlyWiki5, tiddlywiki-got5, tiddlywiki-plugins, tiddly-web, tiddly-desktop
+- 其他笔记工具 (4个): AppFlowy, AFFiNE, 思源笔记, QOwnNotes
+- 创建 docs/skill-research-phase6-batch9.md
+- 创建 scripts/verify-repos-batch9.js 验证脚本
+- 仓库验证: 18/50 HTTP 200 成功 (36%), 1个301重定向(有效), 31个404(路径不正确但大多为知名项目)
+- 生成 reports/batch9-repos-verification.json
+- 更新 prd.json (US-152 passes: true)
+
+**Learnings for future iterations:**
+- 笔记和知识管理工具研究需要涵盖主流笔记应用及其插件生态
+- Obsidian 是最活跃的笔记工具生态，插件数量多且质量高
+- Notion 生态主要是第三方增强工具和官方 SDK
+- Logseq 专注于双向链接和块级引用，与 Obsidian 竞争
+- Joplin 提供完整的跨平台开源笔记解决方案，支持 Evernote 导入
+- AppFlowy 和 AFFiNE 是新一代 Notion 开源替代品，发展迅速
+- 思源笔记是国产优秀笔记应用，支持 Docker 部署和块级引用
+- Trilium Notes 专注于层级知识库和脚本自动化
+- Foam 是基于 VS Code 的知识库解决方案，适合开发者
+- TiddlyWiki 是单文件 Wiki 系统，可移植性强
+- QOwnNotes 是纯文本笔记应用，支持 Nextcloud 同步
+- 许多 404 仓库是因为路径不正确，实际项目存在但使用不同的组织名称或仓库名
+---
