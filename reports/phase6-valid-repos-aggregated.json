@@ -1,0 +1,3408 @@
+{
+  "metadata": {
+    "title": "Phase 6 Valid Repositories Aggregation",
+    "description": "All repositories with HTTP 200 status from Phase 6 skill research batches",
+    "generatedAt": "2026-02-10T12:00:00.000Z",
+    "totalBatches": 19,
+    "totalRepositoriesChecked": 946,
+    "totalValidRepositories": 684,
+    "overallSuccessRate": "72.30%"
+  },
+  "summary": {
+    "byBatch": [
+      {
+        "batch": 2,
+        "name": "Frontend Framework Ecosystem",
+        "total": 46,
+        "valid": 29,
+        "failed": 17,
+        "successRate": "63.04%"
+      },
+      {
+        "batch": 4,
+        "name": "Database Tools Ecosystem",
+        "total": 33,
+        "valid": 19,
+        "failed": 14,
+        "successRate": "57.58%"
+      },
+      {
+        "batch": 5,
+        "name": "Testing Tools Ecosystem",
+        "total": 14,
+        "valid": 2,
+        "failed": 12,
+        "successRate": "14.29%"
+      },
+      {
+        "batch": 6,
+        "name": "Build Tools & Bundlers",
+        "total": 40,
+        "valid": 19,
+        "failed": 21,
+        "successRate": "47.50%"
+      },
+      {
+        "batch": 7,
+        "name": "IDE & Editor Plugins",
+        "total": 40,
+        "valid": 30,
+        "failed": 10,
+        "successRate": "75.00%"
+      },
+      {
+        "batch": 8,
+        "name": "Editors & IDEs - Productivity",
+        "total": 50,
+        "valid": 30,
+        "failed": 20,
+        "successRate": "60.00%"
+      },
+      {
+        "batch": 9,
+        "name": "Productivity - Note-taking and Knowledge Management",
+        "total": 50,
+        "valid": 18,
+        "failed": 32,
+        "successRate": "36.00%"
+      },
+      {
+        "batch": 10,
+        "name": "Terminal & Shell - Productivity",
+        "total": 50,
+        "valid": 33,
+        "failed": 17,
+        "successRate": "66.00%"
+      },
+      {
+        "batch": 11,
+        "name": "Productivity Tools",
+        "total": 50,
+        "valid": 46,
+        "failed": 4,
+        "successRate": "92.00%"
+      },
+      {
+        "batch": 12,
+        "name": "Design & Animation Tools",
+        "total": 40,
+        "valid": 14,
+        "failed": 26,
+        "successRate": "35.00%"
+      },
+      {
+        "batch": 13,
+        "name": "Collaboration and Communication Tools",
+        "total": 39,
+        "valid": 32,
+        "failed": 7,
+        "successRate": "82.05%"
+      },
+      {
+        "batch": 14,
+        "name": "Container Technology",
+        "total": 41,
+        "valid": 34,
+        "failed": 7,
+        "successRate": "82.93%"
+      },
+      {
+        "batch": 15,
+        "name": "CI/CD Tools",
+        "total": 55,
+        "valid": 24,
+        "failed": 31,
+        "successRate": "43.64%"
+      },
+      {
+        "batch": 16,
+        "name": "Cloud Platform Tools",
+        "total": 55,
+        "valid": 49,
+        "failed": 6,
+        "successRate": "89.09%"
+      },
+      {
+        "batch": 17,
+        "name": "Monitoring and Logging Tools",
+        "total": 28,
+        "valid": 28,
+        "failed": 0,
+        "successRate": "100.00%"
+      },
+      {
+        "batch": 18,
+        "name": "Configuration Management and Orchestration Tools",
+        "total": 30,
+        "valid": 23,
+        "failed": 7,
+        "successRate": "76.67%"
+      },
+      {
+        "batch": 19,
+        "name": "AI Tools and Platforms",
+        "total": 75,
+        "valid": 47,
+        "failed": 28,
+        "successRate": "62.67%"
+      },
+      {
+        "batch": 20,
+        "name": "LLM Libraries and Tools",
+        "total": 70,
+        "valid": 24,
+        "failed": 46,
+        "successRate": "34.29%"
+      },
+      {
+        "batch": 21,
+        "name": "System Tools",
+        "total": 30,
+        "valid": 15,
+        "failed": 15,
+        "successRate": "50.00%"
+      },
+      {
+        "batch": 22,
+        "name": "File Processing and Network Tools",
+        "total": 32,
+        "valid": 21,
+        "failed": 11,
+        "successRate": "65.63%"
+      }
+    ],
+    "byStatus": {
+      "http200": 684,
+      "timeout": 98,
+      "error": 8,
+      "redirect": 47,
+      "notFound": 109
+    },
+    "topPerformingBatches": [
+      {
+        "batch": 17,
+        "name": "Monitoring and Logging Tools",
+        "successRate": "100.00%",
+        "valid": 28
+      },
+      {
+        "batch": 16,
+        "name": "Cloud Platform Tools",
+        "successRate": "89.09%",
+        "valid": 49
+      },
+      {
+        "batch": 14,
+        "name": "Container Technology",
+        "successRate": "82.93%",
+        "valid": 34
+      },
+      {
+        "batch": 13,
+        "name": "Collaboration and Communication Tools",
+        "successRate": "82.05%",
+        "valid": 32
+      },
+      {
+        "batch": 11,
+        "name": "Productivity Tools",
+        "successRate": "92.00%",
+        "valid": 46
+      }
+    ]
+  },
+  "repositories": [
+    {
+      "batch": 2,
+      "url": "https://github.com/pmndrs/zustand",
+      "repository": "pmndrs/zustand",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/pmndrs/react-spring",
+      "repository": "pmndrs/react-spring",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/vuejs/core",
+      "repository": "vuejs/core",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/nuxt/nuxt",
+      "repository": "nuxt/nuxt",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/vuejs/router",
+      "repository": "vuejs/router",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/vuejs/pinia",
+      "repository": "vuejs/pinia",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/vuetifyjs/vuetify",
+      "repository": "vuetifyjs/vuetify",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/element-plus/element-plus",
+      "repository": "element-plus/element-plus",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/vueuse/vueuse",
+      "repository": "vueuse/vueuse",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/vitest-dev/vitest",
+      "repository": "vitest-dev/vitest",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/vuejs/test-utils",
+      "repository": "vuejs/test-utils",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/vercel/swr",
+      "repository": "vercel/swr",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/pacocoursey/next-themes",
+      "repository": "pacocoursey/next-themes",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/i18next/next-i18next",
+      "repository": "i18next/next-i18next",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/DuCanhGH/next-pwa",
+      "repository": "DuCanhGH/next-pwa",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/nextauthjs/next-auth",
+      "repository": "nextauthjs/next-auth",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/hashicorp/next-mdx-remote",
+      "repository": "hashicorp/next-mdx-remote",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/garmeeh/next-seo",
+      "repository": "garmeeh/next-seo",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/nuxt-community/axios-module",
+      "repository": "nuxt-community/axios-module",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/nuxt/content",
+      "repository": "nuxt/content",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/nuxt-modules/tailwindcss",
+      "repository": "nuxt-modules/tailwindcss",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/nuxt-modules/color-mode",
+      "repository": "nuxt-modules/color-mode",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/sveltejs/svelte",
+      "repository": "sveltejs/svelte",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/sveltejs/kit",
+      "repository": "sveltejs/kit",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/sveltejs/svelte-preprocess",
+      "repository": "sveltejs/svelte-preprocess",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/testing-library/svelte-testing-library",
+      "repository": "testing-library/svelte-testing-library",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/vitejs/vite",
+      "repository": "vitejs/vite",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/evanw/esbuild",
+      "repository": "evanw/esbuild",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 2,
+      "url": "https://github.com/swc-project/swc",
+      "repository": "swc-project/swc",
+      "category": "Frontend Framework Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/pgbouncer/pgbouncer",
+      "repository": "pgbouncer/pgbouncer",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/reorg/pg_repack",
+      "repository": "reorg/pg_repack",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/pgvector/pgvector",
+      "repository": "pgvector/pgvector",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/mongodb/mongo-tools",
+      "repository": "mongodb/mongo-tools",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/Automattic/mongoose",
+      "repository": "Automattic/mongoose",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/MongoEngine/mongoengine",
+      "repository": "MongoEngine/mongoengine",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/mysql/mysql-server",
+      "repository": "mysql/mysql-server",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/mysql/mysql-shell",
+      "repository": "mysql/mysql-shell",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/mysql/mysql-router",
+      "repository": "mysql/mysql-router",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/openark/orchestrator",
+      "repository": "openark/orchestrator",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/percona/percona-toolkit",
+      "repository": "percona/percona-toolkit",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/redis/redis",
+      "repository": "redis/redis",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/redis/redis-py",
+      "repository": "redis/redis-py",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/redis/node-redis",
+      "repository": "redis/node-redis",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/redis/jedis",
+      "repository": "redis/jedis",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/redis/redis-rb",
+      "repository": "redis/redis-rb",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/phpredis/phpredis",
+      "repository": "phpredis/phpredis",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/redis/go-redis",
+      "repository": "redis/go-redis",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 4,
+      "url": "https://github.com/RedisJSON/RedisJSON",
+      "repository": "RedisJSON/RedisJSON",
+      "category": "Database Tools Ecosystem"
+    },
+    {
+      "batch": 5,
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+      "repository": "DefinitelyTyped/DefinitelyTyped",
+      "category": "Testing Tools Ecosystem"
+    },
+    {
+      "batch": 5,
+      "url": "https://github.com/vitest-dev/vitest",
+      "repository": "vitest-dev/vitest",
+      "category": "Testing Tools Ecosystem"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/webpack/webpack",
+      "repository": "webpack/webpack",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/webpack/webpack-cli",
+      "repository": "webpack/webpack-cli",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/webpack-contrib/file-loader",
+      "repository": "webpack-contrib/file-loader",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/webpack-contrib/url-loader",
+      "repository": "webpack-contrib/url-loader",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/webpack-contrib/cache-loader",
+      "repository": "webpack-contrib/cache-loader",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/webpack/webpack-dev-server",
+      "repository": "webpack/webpack-dev-server",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/vitejs/vite",
+      "repository": "vitejs/vite",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/vitejs/vite-plugin-react",
+      "repository": "vitejs/vite-plugin-react",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/nuxt/framework",
+      "repository": "nuxt/framework",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/sveltejs/kit",
+      "repository": "sveltejs/kit",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/withastro/astro",
+      "repository": "withastro/astro",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/evanw/esbuild",
+      "repository": "evanw/esbuild",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/remorses/esbuild-plugins",
+      "repository": "remorses/esbuild-plugins",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/rollup/rollup",
+      "repository": "rollup/rollup",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/rollup/plugins",
+      "repository": "rollup/plugins",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/ezolenko/rollup-plugin-typescript2",
+      "repository": "ezolenko/rollup-plugin-typescript2",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/rollup/rollup-plugin-commonjs",
+      "repository": "rollup/rollup-plugin-commonjs",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/TrySound/rollup-plugin-terser",
+      "repository": "TrySound/rollup-plugin-terser",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 6,
+      "url": "https://github.com/parcel-bundler/parcel",
+      "repository": "parcel-bundler/parcel",
+      "category": "Build Tools & Bundlers"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/microsoft/vscode",
+      "repository": "microsoft/vscode",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/microsoft/vscode-eslint",
+      "repository": "microsoft/vscode-eslint",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/dbaeumer/vscode-eslint",
+      "repository": "dbaeumer/vscode-eslint",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/microsoft/vscode-python",
+      "repository": "microsoft/vscode-python",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/microsoft/debugpy",
+      "repository": "microsoft/debugpy",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/golang/go",
+      "repository": "golang/go",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/Dart-Code/flutter",
+      "repository": "Dart-Code/flutter",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/vscode-icons/vscode-icons",
+      "repository": "vscode-icons/vscode-icons",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/JetBrains/intellij-community",
+      "repository": "JetBrains/intellij-community",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/JetBrains/kotlin",
+      "repository": "JetBrains/kotlin",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/ignatov/intellij-erlang",
+      "repository": "ignatov/intellij-erlang",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/intellij-rust/intellij-rust",
+      "repository": "intellij-rust/intellij-rust",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/vim/vim",
+      "repository": "vim/vim",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/neovim/neovim",
+      "repository": "neovim/neovim",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/preservim/nerdtree",
+      "repository": "preservim/nerdtree",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/vim-airline/vim-airline",
+      "repository": "vim-airline/vim-airline",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/ctrlpvim/ctrlp.vim",
+      "repository": "ctrlpvim/ctrlp.vim",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/junegunn/fzf",
+      "repository": "junegunn/fzf",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/junegunn/fzf.vim",
+      "repository": "junegunn/fzf.vim",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/tpope/vim-sensible",
+      "repository": "tpope/vim-sensible",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/nvim-lualine/lualine.nvim",
+      "repository": "nvim-lualine/lualine.nvim",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/nvim-tree/nvim-tree.lua",
+      "repository": "nvim-tree/nvim-tree.lua",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/nvim-telescope/telescope.nvim",
+      "repository": "nvim-telescope/telescope.nvim",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter",
+      "repository": "nvim-treesitter/nvim-treesitter",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/folke/which-key.nvim",
+      "repository": "folke/which-key.nvim",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/folke/tokyonight.nvim",
+      "repository": "folke/tokyonight.nvim",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/akinsho/bufferline.nvim",
+      "repository": "akinsho/bufferline.nvim",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/lewis6991/gitsigns.nvim",
+      "repository": "lewis6991/gitsigns.nvim",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/emacs-mirror/emacs",
+      "repository": "emacs-mirror/emacs",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 7,
+      "url": "https://github.com/doomemacs/doomemacs",
+      "repository": "doomemacs/doomemacs",
+      "category": "IDE & Editor Plugins"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/microsoft/vscode",
+      "repository": "microsoft/vscode",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/VSCodium/vscodium",
+      "repository": "VSCodium/vscodium",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/coder/coder",
+      "repository": "coder/coder",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/eclipse-theia/theia",
+      "repository": "eclipse-theia/theia",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/microsoft/vscode-jupyter",
+      "repository": "microsoft/vscode-jupyter",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/usernamehw/vscode-error-lens",
+      "repository": "usernamehw/vscode-error-lens",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/neovim/neovim",
+      "repository": "neovim/neovim",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/vim/vim",
+      "repository": "vim/vim",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/nvim-lualine/lualine.nvim",
+      "repository": "nvim-lualine/lualine.nvim",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/nvim-tree/nvim-tree.lua",
+      "repository": "nvim-tree/nvim-tree.lua",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/nvim-telescope/telescope.nvim",
+      "repository": "nvim-telescope/telescope.nvim",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/nvim-treesitter/nvim-treesitter",
+      "repository": "nvim-treesitter/nvim-treesitter",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/folke/lazy.nvim",
+      "repository": "folke/lazy.nvim",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/wbthomason/packer.nvim",
+      "repository": "wbthomason/packer.nvim",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/folke/trouble.nvim",
+      "repository": "folke/trouble.nvim",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/emacs-mirror/emacs",
+      "repository": "emacs-mirror/emacs",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/doomemacs/doomemacs",
+      "repository": "doomemacs/doomemacs",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/syl20bnr/spacemacs",
+      "repository": "syl20bnr/spacemacs",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/magit/magit",
+      "repository": "magit/magit",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/emacs-evil/evil",
+      "repository": "emacs-evil/evil",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/JetBrains/intellij-community",
+      "repository": "JetBrains/intellij-community",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/JetBrains/ideavim",
+      "repository": "JetBrains/ideavim",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/intellij-rust/intellij-rust",
+      "repository": "intellij-rust/intellij-rust",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/JetBrains/kotlin",
+      "repository": "JetBrains/kotlin",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/SublimeText/UnitTesting",
+      "repository": "SublimeText/UnitTesting",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/SublimeText/Origami",
+      "repository": "SublimeText/Origami",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/atom/atom",
+      "repository": "atom/atom",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/microsoft/monaco-editor",
+      "repository": "microsoft/monaco-editor",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/occlum/occlum",
+      "repository": "occlum/occlum",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 8,
+      "url": "https://github.com/ryanoasis/nerd-fonts",
+      "repository": "ryanoasis/nerd-fonts",
+      "category": "Editors & IDEs - Productivity"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/notion-enhancer/notion-enhancer",
+      "repository": "notion-enhancer/notion-enhancer",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/obsidianmd/obsidian-releases",
+      "repository": "obsidianmd/obsidian-releases",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/obsidianmd/obsidian-sample-plugin",
+      "repository": "obsidianmd/obsidian-sample-plugin",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/mgmeyers/obsidian-kanban",
+      "repository": "mgmeyers/obsidian-kanban",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/obsidian-tasks-group/obsidian-tasks",
+      "repository": "obsidian-tasks-group/obsidian-tasks",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/blacksmithgu/obsidian-dataview",
+      "repository": "blacksmithgu/obsidian-dataview",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/vslinko/obsidian-outliner",
+      "repository": "vslinko/obsidian-outliner",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/artisticat1/obsidian-latex-suite",
+      "repository": "artisticat1/obsidian-latex-suite",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/logseq/logseq",
+      "repository": "logseq/logseq",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/logseq/logseq-plugin-samples",
+      "repository": "logseq/logseq-plugin-samples",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/laurent22/joplin",
+      "repository": "laurent22/joplin",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/laurent22/joplin-android",
+      "repository": "laurent22/joplin-android",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/tiddly-gittly/TiddlyWiki-Plugins",
+      "repository": "tiddly-gittly/TiddlyWiki-Plugins",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/tiddlywiki/tiddlydesktop",
+      "repository": "tiddlywiki/tiddlydesktop",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "repository": "AppFlowy-IO/AppFlowy",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/toeverything/affine",
+      "repository": "toeverything/affine",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/siyuan-note/siyuan",
+      "repository": "siyuan-note/siyuan",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 9,
+      "url": "https://github.com/pbek/QOwnNotes",
+      "repository": "pbek/QOwnNotes",
+      "category": "Productivity - Note-taking and Knowledge Management"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/ohmyzsh/ohmyzsh",
+      "repository": "ohmyzsh/ohmyzsh",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/zsh-users/zsh-autosuggestions",
+      "repository": "zsh-users/zsh-autosuggestions",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/romkatv/powerlevel10k",
+      "repository": "romkatv/powerlevel10k",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/getantibody/antibody",
+      "repository": "getantibody/antibody",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/zsh-users/zsh-completions",
+      "repository": "zsh-users/zsh-completions",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/zdharma-continuum/fast-syntax-highlighting",
+      "repository": "zdharma-continuum/fast-syntax-highlighting",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/unixorn/git-extra-commands",
+      "repository": "unixorn/git-extra-commands",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/djui/alias-tips",
+      "repository": "djui/alias-tips",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/junegunn/fzf",
+      "repository": "junegunn/fzf",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/agkozak/zsh-z",
+      "repository": "agkozak/zsh-z",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/fish-shell/fish-shell",
+      "repository": "fish-shell/fish-shell",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/jorgebucaran/fisher",
+      "repository": "jorgebucaran/fisher",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/oh-my-fish/oh-my-fish",
+      "repository": "oh-my-fish/oh-my-fish",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/franciscolourenco/done",
+      "repository": "franciscolourenco/done",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/jethrokuan/z",
+      "repository": "jethrokuan/z",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/PatrickF1/fzf.fish",
+      "repository": "PatrickF1/fzf.fish",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/IlanCosman/tide",
+      "repository": "IlanCosman/tide",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/catppuccin/fish",
+      "repository": "catppuccin/fish",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/gazorby/fish-abbreviation-tips",
+      "repository": "gazorby/fish-abbreviation-tips",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/starship/starship",
+      "repository": "starship/starship",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/sindresorhus/pure",
+      "repository": "sindresorhus/pure",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/romkatv/gitstatus",
+      "repository": "romkatv/gitstatus",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/ellie/atuin",
+      "repository": "ellie/atuin",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/tmux/tmux",
+      "repository": "tmux/tmux",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/tmux-plugins/tpm",
+      "repository": "tmux-plugins/tpm",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/tmux-plugins/tmux-resurrect",
+      "repository": "tmux-plugins/tmux-resurrect",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/tmux-plugins/tmux-continuum",
+      "repository": "tmux-plugins/tmux-continuum",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/tmux-plugins/tmux-sensible",
+      "repository": "tmux-plugins/tmux-sensible",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/tmux-plugins/tmux-copycat",
+      "repository": "tmux-plugins/tmux-copycat",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/charmbracelet/gum",
+      "repository": "charmbracelet/gum",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/charmbracelet/glow",
+      "repository": "charmbracelet/glow",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/charmbracelet/bubbletea",
+      "repository": "charmbracelet/bubbletea",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 10,
+      "url": "https://github.com/charmbracelet/lipgloss",
+      "repository": "charmbracelet/lipgloss",
+      "category": "Terminal & Shell - Productivity"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/junegunn/fzf",
+      "repository": "junegunn/fzf",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/sharkdp/fd",
+      "repository": "sharkdp/fd",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/BurntSushi/ripgrep",
+      "repository": "BurntSushi/ripgrep",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/ggreer/the_silver_searcher",
+      "repository": "ggreer/the_silver_searcher",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/peco/peco",
+      "repository": "peco/peco",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/moncho/dry",
+      "repository": "moncho/dry",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/jarun/nnn",
+      "repository": "jarun/nnn",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/ranger/ranger",
+      "repository": "ranger/ranger",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/dylanaraps/fff",
+      "repository": "dylanaraps/fff",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/sharkdp/bat",
+      "repository": "sharkdp/bat",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/sharkdp/hexyl",
+      "repository": "sharkdp/hexyl",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/sharkdp/pastel",
+      "repository": "sharkdp/pastel",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/sharkdp/hyperfine",
+      "repository": "sharkdp/hyperfine",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/chmln/sd",
+      "repository": "chmln/sd",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/BurntSushi/xsv",
+      "repository": "BurntSushi/xsv",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/wader/fq",
+      "repository": "wader/fq",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/itchyny/mmv",
+      "repository": "itchyny/mmv",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/dandavison/delta",
+      "repository": "dandavison/delta",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/eza-community/eza",
+      "repository": "eza-community/eza",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/ogham/exa",
+      "repository": "ogham/exa",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/lsd-rs/lsd",
+      "repository": "lsd-rs/lsd",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/clvv/fasd",
+      "repository": "clvv/fasd",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/wting/autojump",
+      "repository": "wting/autojump",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/rupa/z",
+      "repository": "rupa/z",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/skywind3000/z.lua",
+      "repository": "skywind3000/z.lua",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/ajeetdsouza/zoxide",
+      "repository": "ajeetdsouza/zoxide",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/aristocratos/btop",
+      "repository": "aristocratos/btop",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/aristocratos/bashtop",
+      "repository": "aristocratos/bashtop",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/ClementTsang/bottom",
+      "repository": "ClementTsang/bottom",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/dalance/procs",
+      "repository": "dalance/procs",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/Xfennec/progress",
+      "repository": "Xfennec/progress",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/imsnif/bandwhich",
+      "repository": "imsnif/bandwhich",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/s0md3v/roop",
+      "repository": "s0md3v/roop",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/curl/curl",
+      "repository": "curl/curl",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/rs/curlie",
+      "repository": "rs/curlie",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/httpie/desktop",
+      "repository": "httpie/desktop",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/taviso/ctftool",
+      "repository": "taviso/ctftool",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/projectdiscovery/httpx",
+      "repository": "projectdiscovery/httpx",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/projectdiscovery/subfinder",
+      "repository": "projectdiscovery/subfinder",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/jesseduffield/lazygit",
+      "repository": "jesseduffield/lazygit",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 11,
+      "url": "https://github.com/jesseduffield/lazydocker",
+      "repository": "jesseduffield/lazydocker",
+      "category": "Productivity Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/BabylonJS/Babylon.js",
+      "repository": "BabylonJS/Babylon.js",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/pmndrs/drei",
+      "repository": "pmndrs/drei",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/splinetool/react-spline",
+      "repository": "splinetool/react-spline",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/oframe/ogl",
+      "repository": "oframe/ogl",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/storybookjs/storybook",
+      "repository": "storybookjs/storybook",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/diez/diez",
+      "repository": "diez/diez",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/lucide-icons/lucide",
+      "repository": "lucide-icons/lucide",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/tailwindlabs/heroicons",
+      "repository": "tailwindlabs/heroicons",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/tabler/tabler-icons",
+      "repository": "tabler/tabler-icons",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/gka/chroma.js",
+      "repository": "gka/chroma.js",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/foliojs/fontkit",
+      "repository": "foliojs/fontkit",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/amzn/style-dictionary",
+      "repository": "amzn/style-dictionary",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/phosphor-icons/phosphor",
+      "repository": "phosphor-icons/phosphor",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 12,
+      "url": "https://github.com/LeaVerou/color.js",
+      "repository": "LeaVerou/color.js",
+      "category": "Design & Animation Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/slackapi/python-slack-sdk",
+      "repository": "slackapi/python-slack-sdk",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/mattermost/mattermost",
+      "repository": "mattermost/mattermost",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/RocketChat/Rocket.Chat",
+      "repository": "RocketChat/Rocket.Chat",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/zulip/zulip",
+      "repository": "zulip/zulip",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/matrix-org/synapse",
+      "repository": "matrix-org/synapse",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/gotify/server",
+      "repository": "gotify/server",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/jitsi/jitsi-meet",
+      "repository": "jitsi/jitsi-meet",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/bigbluebutton/bigbluebutton",
+      "repository": "bigbluebutton/bigbluebutton",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/OpenVidu/openvidu",
+      "repository": "OpenVidu/openvidu",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/livekit/livekit",
+      "repository": "livekit/livekit",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/daily-co/daily-js",
+      "repository": "daily-co/daily-js",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/versatica/mediasoup",
+      "repository": "versatica/mediasoup",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/ossrs/srs",
+      "repository": "ossrs/srs",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/coturn/coturn",
+      "repository": "coturn/coturn",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/taigaio/taiga-back",
+      "repository": "taigaio/taiga-back",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/opf/openproject",
+      "repository": "opf/openproject",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/redmine/redmine",
+      "repository": "redmine/redmine",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/makeplane/plane",
+      "repository": "makeplane/plane",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "repository": "AppFlowy-IO/AppFlowy",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/toeverything/AFFiNE",
+      "repository": "toeverything/AFFiNE",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/outline/outline",
+      "repository": "outline/outline",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/requarks/wiki",
+      "repository": "requarks/wiki",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/BookStackApp/BookStack",
+      "repository": "BookStackApp/BookStack",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/docsifyjs/docsify",
+      "repository": "docsifyjs/docsify",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/squidfunk/mkdocs-material",
+      "repository": "squidfunk/mkdocs-material",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/facebook/docusaurus",
+      "repository": "facebook/docusaurus",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/binwiederhier/ntfy",
+      "repository": "binwiederhier/ntfy",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/containrrr/shoutrrr",
+      "repository": "containrrr/shoutrrr",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/caronc/apprise",
+      "repository": "caronc/apprise",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/Typeform/embed",
+      "repository": "Typeform/embed",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/formkit/formkit",
+      "repository": "formkit/formkit",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 13,
+      "url": "https://github.com/formspree/formspree",
+      "repository": "formspree/formspree",
+      "category": "Collaboration and Communication Tools"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/docker/cli",
+      "repository": "docker/cli",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/moby/buildkit",
+      "repository": "moby/buildkit",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/docker/compose",
+      "repository": "docker/compose",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/distribution/distribution",
+      "repository": "distribution/distribution",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/moby/moby",
+      "repository": "moby/moby",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/linuxkit/linuxkit",
+      "repository": "linuxkit/linuxkit",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/containers/podman",
+      "repository": "containers/podman",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/containers/podman-compose",
+      "repository": "containers/podman-compose",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/containers/buildah",
+      "repository": "containers/buildah",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/containers/skopeo",
+      "repository": "containers/skopeo",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/cri-o/cri-o",
+      "repository": "cri-o/cri-o",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/lxc/lxc",
+      "repository": "lxc/lxc",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/lxc/lxcfs",
+      "repository": "lxc/lxcfs",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/lxc/incus",
+      "repository": "lxc/incus",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/lxc/distrobuilder",
+      "repository": "lxc/distrobuilder",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/kubernetes/kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/kubernetes/kubectl",
+      "repository": "kubectl",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/etcd-io/etcd",
+      "repository": "etcd-io/etcd",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/containerd/containerd",
+      "repository": "containerd/containerd",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/opencontainers/runc",
+      "repository": "opencontainers/runc",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/containernetworking/plugins",
+      "repository": "containernetworking/plugins",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/helm/helm",
+      "repository": "helm/helm",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/kubernetes-sigs/kustomize",
+      "repository": "kubernetes-sigs/kustomize",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/argoproj/argo-cd",
+      "repository": "argoproj/argo-cd",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/kubernetes/minikube",
+      "repository": "minikube",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/kubernetes-sigs/kind",
+      "repository": "kubernetes-sigs/kind",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/k3s-io/k3s",
+      "repository": "k3s-io/k3s",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/kubernetes/kops",
+      "repository": "kubernetes/kops",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/aquasecurity/trivy",
+      "repository": "aquasecurity/trivy",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/quay/clair",
+      "repository": "quay/clair",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/falcosecurity/falco",
+      "repository": "falcosecurity/falco",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/notaryproject/notary",
+      "repository": "notaryproject/notary",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/anchore/grype",
+      "repository": "anchore/grype",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 14,
+      "url": "https://github.com/kata-containers/kata-containers",
+      "repository": "kata-containers/kata-containers",
+      "category": "Container Technology"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/runner",
+      "repository": "actions/runner",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/toolkit",
+      "repository": "actions/toolkit",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/github",
+      "repository": "actions/github",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/http-client",
+      "repository": "actions/http-client",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/cache",
+      "repository": "actions/cache",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/upload-artifact",
+      "repository": "actions/upload-artifact",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/download-artifact",
+      "repository": "actions/download-artifact",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/checkout",
+      "repository": "actions/checkout",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/setup-node",
+      "repository": "actions/setup-node",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/setup-python",
+      "repository": "actions/setup-python",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/setup-go",
+      "repository": "actions/setup-go",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/setup-java",
+      "repository": "actions/setup-java",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/docker/setup-buildx-action",
+      "repository": "docker/setup-buildx-action",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/docker/login-action",
+      "repository": "docker/login-action",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/docker/build-push-action",
+      "repository": "docker/build-push-action",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/github-script",
+      "repository": "actions/github-script",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/actions/labeler",
+      "repository": "actions/labeler",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/jenkinsci/jenkins",
+      "repository": "jenkinsci/jenkins",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/jenkinsci/kubernetes-plugin",
+      "repository": "jenkinsci/kubernetes-plugin",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/jenkinsci/git-plugin",
+      "repository": "jenkinsci/git-plugin",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/jenkinsci/credentials-plugin",
+      "repository": "jenkinsci/credentials-plugin",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/jenkinsci/remoting",
+      "repository": "jenkinsci/remoting",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/drone/go-scm",
+      "repository": "drone/go-scm",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 15,
+      "url": "https://github.com/drone/drone-docker",
+      "repository": "drone/drone-docker",
+      "category": "CI/CD Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/aws/aws-cli",
+      "repository": "aws/aws-cli",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/boto/boto3",
+      "repository": "boto/boto3",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/aws/aws-sdk-js",
+      "repository": "aws/aws-sdk-js",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/aws/aws-sdk-go",
+      "repository": "aws/aws-sdk-go",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/aws/aws-sdk-java",
+      "repository": "aws/aws-sdk-java",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/aws/aws-cdk",
+      "repository": "aws/aws-cdk",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/aws/aws-sam-cli",
+      "repository": "aws/aws-sam-cli",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/aws/copilot-cli",
+      "repository": "aws/copilot-cli",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/aws/aws-elastic-beanstalk-cli",
+      "repository": "aws/aws-elastic-beanstalk-cli",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/localstack/localstack",
+      "repository": "localstack/localstack",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/aws-observability/aws-otel-collector",
+      "repository": "aws-observability/aws-otel-collector",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/aws/aws-encryption-sdk-python",
+      "repository": "aws/aws-encryption-sdk-python",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/aws/aws-sdk-ruby",
+      "repository": "aws/aws-sdk-ruby",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/googleapis/python-api-core",
+      "repository": "googleapis/python-api-core",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/googleapis/google-api-go-client",
+      "repository": "googleapis/google-api-go-client",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/googleapis/google-api-nodejs-client",
+      "repository": "googleapis/google-api-nodejs-client",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/googleapis/google-api-java-client",
+      "repository": "googleapis/google-api-java-client",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/hashicorp/terraform-provider-google",
+      "repository": "hashicorp/terraform-provider-google",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/hashicorp/terraform-provider-google-beta",
+      "repository": "hashicorp/terraform-provider-google-beta",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/GoogleCloudPlatform/cloud-foundation-toolkit",
+      "repository": "GoogleCloudPlatform/cloud-foundation-toolkit",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/GoogleCloudPlatform/functions-framework",
+      "repository": "GoogleCloudPlatform/functions-framework",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/GoogleCloudPlatform/cloud-sql-proxy",
+      "repository": "GoogleCloudPlatform/cloud-sql-proxy",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/GoogleContainerTools/kaniko",
+      "repository": "GoogleContainerTools/kaniko",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/GoogleContainerTools/skaffold",
+      "repository": "GoogleContainerTools/skaffold",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/Azure/azure-cli",
+      "repository": "Azure/azure-cli",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/Azure/azure-powershell",
+      "repository": "Azure/azure-powershell",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/Azure/azure-sdk-for-python",
+      "repository": "Azure/azure-sdk-for-python",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/Azure/azure-sdk-for-go",
+      "repository": "Azure/azure-sdk-for-go",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/Azure/azure-sdk-for-js",
+      "repository": "Azure/azure-sdk-for-js",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/Azure/azure-sdk-for-java",
+      "repository": "Azure/azure-sdk-for-java",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/Azure/azure-functions-core-tools",
+      "repository": "Azure/azure-functions-core-tools",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/hashicorp/terraform-provider-azurerm",
+      "repository": "hashicorp/terraform-provider-azurerm",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/Azure/bicep",
+      "repository": "Azure/bicep",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/Azure/azure-dev",
+      "repository": "Azure/azure-dev",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/digitalocean/doctl",
+      "repository": "digitalocean/doctl",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/digitalocean/terraform-provider-digitalocean",
+      "repository": "digitalocean/terraform-provider-digitalocean",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/digitalocean/csi-digitalocean",
+      "repository": "digitalocean/csi-digitalocean",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/digitalocean/digitalocean-cloud-controller-manager",
+      "repository": "digitalocean/digitalocean-cloud-controller-manager",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/digitalocean/droplet-agent",
+      "repository": "digitalocean/droplet-agent",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/hashicorp/terraform",
+      "repository": "hashicorp/terraform",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/hashicorp/packer",
+      "repository": "hashicorp/packer",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/hashicorp/vault",
+      "repository": "hashicorp/vault",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/hashicorp/nomad",
+      "repository": "hashicorp/nomad",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/hashicorp/consul",
+      "repository": "hashicorp/consul",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/hashicorp/boundary",
+      "repository": "hashicorp/boundary",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/hashicorp/waypoint",
+      "repository": "hashicorp/waypoint",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/crossplane/crossplane",
+      "repository": "crossplane/crossplane",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/kubernetes-sigs/cluster-api",
+      "repository": "kubernetes-sigs/cluster-api",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 16,
+      "url": "https://github.com/spinnaker/spinnaker",
+      "repository": "spinnaker/spinnaker",
+      "category": "Cloud Platform Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/prometheus/prometheus",
+      "repository": "prometheus/prometheus",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/prometheus/alertmanager",
+      "repository": "prometheus/alertmanager",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/prometheus/pushgateway",
+      "repository": "prometheus/pushgateway",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/prometheus/node_exporter",
+      "repository": "prometheus/node_exporter",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/prometheus/blackbox_exporter",
+      "repository": "prometheus/blackbox_exporter",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/prometheus-community/postgres_exporter",
+      "repository": "prometheus-community/postgres_exporter",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/prometheus/mysqld_exporter",
+      "repository": "prometheus/mysqld_exporter",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/oliver006/redis_exporter",
+      "repository": "oliver006/redis_exporter",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/grafana/grafana",
+      "repository": "grafana/grafana",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/grafana/loki",
+      "repository": "grafana/loki",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/grafana/tempo",
+      "repository": "grafana/tempo",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/grafana/pyroscope",
+      "repository": "grafana/pyroscope",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/grafana/mimir",
+      "repository": "grafana/mimir",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/grafana/agent",
+      "repository": "grafana/agent",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/grafana/k6",
+      "repository": "grafana/k6",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/grafana/beyla",
+      "repository": "grafana/beyla",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/elastic/elasticsearch",
+      "repository": "elastic/elasticsearch",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/elastic/logstash",
+      "repository": "elastic/logstash",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/elastic/kibana",
+      "repository": "elastic/kibana",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/elastic/beats",
+      "repository": "elastic/beats",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/elastic/apm-server",
+      "repository": "elastic/apm-server",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/elastic/elastic-agent",
+      "repository": "elastic/elastic-agent",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/influxdata/influxdb",
+      "repository": "influxdata/influxdb",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/influxdata/telegraf",
+      "repository": "influxdata/telegraf",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/VictoriaMetrics/VictoriaMetrics",
+      "repository": "VictoriaMetrics/VictoriaMetrics",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/thanos-io/thanos",
+      "repository": "thanos-io/thanos",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/cortexproject/cortex",
+      "repository": "cortexproject/cortex",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 17,
+      "url": "https://github.com/zabbix/zabbix",
+      "repository": "zabbix/zabbix",
+      "category": "Monitoring and Logging Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/ansible/ansible",
+      "repository": "ansible/ansible",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/ansible-community/ansible-build-data",
+      "repository": "ansible-community/ansible-build-data",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/ansible/galaxy",
+      "repository": "ansible/galaxy",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/ansible/ansible-lint",
+      "repository": "ansible/ansible-lint",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/ansible/ansible-navigator",
+      "repository": "ansible/ansible-navigator",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/ansible/ansible-builder",
+      "repository": "ansible/ansible-builder",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/ansible/awx",
+      "repository": "ansible/awx",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/hashicorp/terraform",
+      "repository": "hashicorp/terraform",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/hashicorp/terraform-plugin-sdk",
+      "repository": "hashicorp/terraform-plugin-sdk",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/terraform-docs/terraform-docs",
+      "repository": "terraform-docs/terraform-docs",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/hashicorp/terraform-json",
+      "repository": "hashicorp/terraform-json",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/hashicorp/hcl",
+      "repository": "hashicorp/hcl",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/hashicorp/terraform-svchost",
+      "repository": "hashicorp/terraform-svchost",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/bridgecrewio/checkov",
+      "repository": "bridgecrewio/checkov",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/helm/helm",
+      "repository": "helm/helm",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/helm/chartmuseum",
+      "repository": "helm/chartmuseum",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/helm/helm-2to3",
+      "repository": "helm/helm-2to3",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/kubernetes-sigs/kustomize",
+      "repository": "kubernetes-sigs/kustomize",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/saltstack/salt",
+      "repository": "saltstack/salt",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/puppetlabs/puppet",
+      "repository": "puppetlabs/puppet",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/chef/chef",
+      "repository": "chef/chef",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/cfengine/core",
+      "repository": "cfengine/core",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 18,
+      "url": "https://github.com/NixOS/nix",
+      "repository": "NixOS/nix",
+      "category": "Configuration Management and Orchestration Tools"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/langchain-ai/langchain",
+      "repository": "langchain-ai/langchain",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/langchain-ai/langchainjs",
+      "repository": "langchain-ai/langchainjs",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/langchain-ai/langserve",
+      "repository": "langchain-ai/langserve",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/langchain-ai/langgraph",
+      "repository": "langchain-ai/langgraph",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/langchain-ai/langchain-community",
+      "repository": "langchain-ai/langchain-community",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/langchain-ai/langchain-experimental",
+      "repository": "langchain-ai/langchain-experimental",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/langchain-ai/langgraphjs",
+      "repository": "langchain-ai/langgraphjs",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/run-llama/llama_index",
+      "repository": "run-llama/llama_index",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/huggingface/transformers",
+      "repository": "huggingface/transformers",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/huggingface/diffusers",
+      "repository": "huggingface/diffusers",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/huggingface/accelerate",
+      "repository": "huggingface/accelerate",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/huggingface/peft",
+      "repository": "huggingface/peft",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/huggingface/datasets",
+      "repository": "huggingface/datasets",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/huggingface/evaluate",
+      "repository": "huggingface/evaluate",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/huggingface/optimum",
+      "repository": "huggingface/optimum",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/huggingface/huggingface_hub",
+      "repository": "huggingface/huggingface_hub",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/huggingface/text-generation-inference",
+      "repository": "huggingface/text-generation-inference",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+      "repository": "bitsandbytes-foundation/bitsandbytes",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/AutoGPTQ/AutoGPTQ",
+      "repository": "AutoGPTQ/AutoGPTQ",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/qwopqwop200/GPTQ-for-LLaMA",
+      "repository": "qwopqwop200/GPTQ-for-LLaMA",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/ollama/ollama",
+      "repository": "ollama/ollama",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/microsoft/autogen",
+      "repository": "microsoft/autogen",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/reworkd/AgentGPT",
+      "repository": "reworkd/AgentGPT",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "repository": "Significant-Gravitas/AutoGPT",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/yoheinakajima/babyagi",
+      "repository": "yoheinakajima/babyagi",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/OpenInterpreter/open-interpreter",
+      "repository": "OpenInterpreter/open-interpreter",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/shroominic/codeinterpreter-api",
+      "repository": "shroominic/codeinterpreter-api",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/chroma-core/chroma",
+      "repository": "chroma-core/chroma",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/qdrant/qdrant",
+      "repository": "qdrant/qdrant",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/weaviate/weaviate",
+      "repository": "weaviate/weaviate",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/milvus-io/milvus",
+      "repository": "milvus-io/milvus",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/facebookresearch/faiss",
+      "repository": "facebookresearch/faiss",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/pgvector/pgvector",
+      "repository": "pgvector/pgvector",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/lancedb/lancedb",
+      "repository": "lancedb/lancedb",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/vespa-engine/vespa",
+      "repository": "vespa-engine/vespa",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/elastic/elasticsearch",
+      "repository": "elastic/elasticsearch",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "repository": "zylon-ai/private-gpt",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/nomic-ai/gpt4all",
+      "repository": "nomic-ai/gpt4all",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/mintplex-labs/anything-llm",
+      "repository": "mintplex-labs/anything-llm",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/infiniflow/ragflow",
+      "repository": "infiniflow/ragflow",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/deepset-ai/haystack",
+      "repository": "deepset-ai/haystack",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/github/copilot.vim",
+      "repository": "github/copilot.vim",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/TabbyML/tabby",
+      "repository": "TabbyML/tabby",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/Exafunction/codeium",
+      "repository": "Exafunction/codeium",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/sweepai/sweep",
+      "repository": "sweepai/sweep",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/bloopai/bloop",
+      "repository": "bloopai/bloop",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 19,
+      "url": "https://github.com/meta-llama/codellama",
+      "repository": "meta-llama/codellama",
+      "category": "AI Tools and Platforms"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/run-llama/llama_index",
+      "repository": "run-llama/llama_index",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/microsoft/semantic-kernel",
+      "repository": "microsoft/semantic-kernel",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/stanfordnlp/dspy",
+      "repository": "stanfordnlp/dspy",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/mirascope/mirascope",
+      "repository": "mirascope/mirascope",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/helicone/helicone",
+      "repository": "helicone/helicone",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/langfuse/langfuse",
+      "repository": "langfuse/langfuse",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/promptfoo/promptfoo",
+      "repository": "promptfoo/promptfoo",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/evalplus/evalplus",
+      "repository": "evalplus/evalplus",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/openai/evals",
+      "repository": "openai/evals",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/truera/trulens",
+      "repository": "truera/trulens",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/confident-ai/deepeval",
+      "repository": "confident-ai/deepeval",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/haotian-liu/LLaVA",
+      "repository": "haotian-liu/LLaVA",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/salesforce/BLIP",
+      "repository": "salesforce/BLIP",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/facebookresearch/segment-anything",
+      "repository": "facebookresearch/segment-anything",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/timothybrooks/instruct-pix2pix",
+      "repository": "timothybrooks/instruct-pix2pix",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/lllyasviel/ControlNet",
+      "repository": "lllyasviel/ControlNet",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/huggingface/diffusers",
+      "repository": "huggingface/diffusers",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "repository": "AUTOMATIC1111/stable-diffusion-webui",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/sanchit-gandhi/whisper-jax",
+      "repository": "sanchit-gandhi/whisper-jax",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/SYSTRAN/faster-whisper",
+      "repository": "SYSTRAN/faster-whisper",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/m-bain/whisperX",
+      "repository": "m-bain/whisperX",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/coqui-ai/TTS",
+      "repository": "coqui-ai/TTS",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/suno-ai/bark",
+      "repository": "suno-ai/bark",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 20,
+      "url": "https://github.com/MycroftAI/mimic3",
+      "repository": "MycroftAI/mimic3",
+      "category": "LLM Libraries and Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/coreutils/coreutils",
+      "repository": "coreutils/coreutils",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/zsh-users/zsh",
+      "repository": "zsh-users/zsh",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/BurntSushi/ripgrep",
+      "repository": "BurntSushi/ripgrep",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/ggreer/the_silver_searcher",
+      "repository": "ggreer/the_silver_searcher",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/genivia/ugrep",
+      "repository": "genivia/ugrep",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/chmln/sd",
+      "repository": "chmln/sd",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/learnbyexample/Command-line-text-processing",
+      "repository": "learnbyexample/Command-line-text-processing",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/mikefarah/yq",
+      "repository": "mikefarah/yq",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/pelletier/go-toml",
+      "repository": "pelletier/go-toml",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/dylanaraps/neofetch",
+      "repository": "dylanaraps/neofetch",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/fastfetch-cli/fastfetch",
+      "repository": "fastfetch-cli/fastfetch",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/openSUSE/hwinfo",
+      "repository": "openSUSE/hwinfo",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/muesli/duf",
+      "repository": "muesli/duf",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/bootandy/dust",
+      "repository": "bootandy/dust",
+      "category": "System Tools"
+    },
+    {
+      "batch": 21,
+      "url": "https://github.com/rofl0r/ncdu",
+      "repository": "rofl0r/ncdu",
+      "category": "System Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/mirror/wget",
+      "repository": "mirror/wget",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/aria2/aria2",
+      "repository": "aria2/aria2",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/axel-download-accelerator/axel",
+      "repository": "axel-download-accelerator/axel",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/ytdl-org/youtube-dl",
+      "repository": "ytdl-org/youtube-dl",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "repository": "yt-dlp/yt-dlp",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/mikf/gallery-dl",
+      "repository": "mikf/gallery-dl",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/WayneD/rsync",
+      "repository": "WayneD/rsync",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/rclone/rclone",
+      "repository": "rclone/rclone",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/robertdavidgraham/masscan",
+      "repository": "robertdavidgraham/masscan",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/zmap/zmap",
+      "repository": "zmap/zmap",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/wireshark/wireshark",
+      "repository": "wireshark/wireshark",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/traviscross/mtr",
+      "repository": "traviscross/mtr",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/openssl/openssl",
+      "repository": "openssl/openssl",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/madler/zlib",
+      "repository": "madler/zlib",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/facebook/zstd",
+      "repository": "facebook/zstd",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/lz4/lz4",
+      "repository": "lz4/lz4",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/google/brotli",
+      "repository": "google/brotli",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/rofl0r/ncdu",
+      "repository": "rofl0r/ncdu",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/dundee/gdu",
+      "repository": "dundee/gdu",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/bleachbit/bleachbit",
+      "repository": "bleachbit/bleachbit",
+      "category": "File Processing and Network Tools"
+    },
+    {
+      "batch": 22,
+      "url": "https://github.com/aspiers/stow",
+      "repository": "aspiers/stow",
+      "category": "File Processing and Network Tools"
+    }
+  ]
+}
