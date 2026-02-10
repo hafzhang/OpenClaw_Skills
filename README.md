@@ -44,6 +44,17 @@ npm run build
 npx serve out
 ```
 
+## ralph.sh使用方式
+
+  # 基本用法（40次迭代，10分钟超时）
+  ./scripts/ralph/ralph.sh --tool claude 40
+
+  # 自定义超时（5分钟）
+  ./scripts/ralph/ralph.sh --tool claude --timeout 300 40
+
+  # 自定义延迟和超时
+  ./scripts/ralph/ralph.sh --tool claude --timeout 600 --delay 60 40
+
 ## 项目结构
 
 ```

@@ -1,0 +1,303 @@
+{
+  "batch": "Phase 6 - Batch 2 (Frontend Framework Ecosystem)",
+  "timestamp": "2026-02-10T02:51:51.006Z",
+  "summary": {
+    "total": 46,
+    "success": 29,
+    "failed": 17,
+    "successRate": "63.04%",
+    "avgDuration": "4284ms"
+  },
+  "results": [
+    {
+      "url": "https://github.com/facebook/react",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19226
+    },
+    {
+      "url": "https://github.com/vercel/next.js",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10008
+    },
+    {
+      "url": "https://github.com/remix-run/react-router",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10022
+    },
+    {
+      "url": "https://github.com/reduxjs/redux",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10011
+    },
+    {
+      "url": "https://github.com/pmndrs/zustand",
+      "status": 200,
+      "success": true,
+      "duration": 929
+    },
+    {
+      "url": "https://github.com/TanStack/query",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19205
+    },
+    {
+      "url": "https://github.com/react-hook-form/react-hook-form",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10013
+    },
+    {
+      "url": "https://github.com/framer/motion",
+      "status": 301,
+      "success": false,
+      "duration": 561,
+      "redirect": "https://github.com/motiondivision/motion"
+    },
+    {
+      "url": "https://github.com/petyosi/react-virtuoso",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19177
+    },
+    {
+      "url": "https://github.com/pmndrs/react-spring",
+      "status": 200,
+      "success": true,
+      "duration": 1135
+    },
+    {
+      "url": "https://github.com/react-dnd/react-dnd",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19207
+    },
+    {
+      "url": "https://github.com/TanStack/table",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 20096
+    },
+    {
+      "url": "https://github.com/formatjs/formatjs",
+      "status": "ERROR",
+      "success": false,
+      "error": "read ECONNRESET",
+      "duration": 19197
+    },
+    {
+      "url": "https://github.com/testing-library/react-testing-library",
+      "status": "TIMEOUT",
+      "success": false,
+      "error": "Request timeout",
+      "duration": 10022
+    },
+    {
+      "url": "https://github.com/vuejs/core",
+      "status": 200,
+      "success": true,
+      "duration": 839
+    },
+    {
+      "url": "https://github.com/nuxt/nuxt",
+      "status": 200,
+      "success": true,
+      "duration": 992
+    },
+    {
+      "url": "https://github.com/vuejs/router",
+      "status": 200,
+      "success": true,
+      "duration": 961
+    },
+    {
+      "url": "https://github.com/vuejs/pinia",
+      "status": 200,
+      "success": true,
+      "duration": 823
+    },
+    {
+      "url": "https://github.com/vuetifyjs/vuetify",
+      "status": 200,
+      "success": true,
+      "duration": 944
+    },
+    {
+      "url": "https://github.com/element-plus/element-plus",
+      "status": 200,
+      "success": true,
+      "duration": 944
+    },
+    {
+      "url": "https://github.com/vueuse/vueuse",
+      "status": 200,
+      "success": true,
+      "duration": 904
+    },
+    {
+      "url": "https://github.com/vitest-dev/vitest",
+      "status": 200,
+      "success": true,
+      "duration": 934
+    },
+    {
+      "url": "https://github.com/vuejs/test-utils",
+      "status": 200,
+      "success": true,
+      "duration": 896
+    },
+    {
+      "url": "https://github.com/vuejs/i18n",
+      "status": 404,
+      "success": false,
+      "duration": 592
+    },
+    {
+      "url": "https://github.com/vercel/swr",
+      "status": 200,
+      "success": true,
+      "duration": 928
+    },
+    {
+      "url": "https://github.com/pacocoursey/next-themes",
+      "status": 200,
+      "success": true,
+      "duration": 939
+    },
+    {
+      "url": "https://github.com/i18next/next-i18next",
+      "status": 200,
+      "success": true,
+      "duration": 943
+    },
+    {
+      "url": "https://github.com/DuCanhGH/next-pwa",
+      "status": 200,
+      "success": true,
+      "duration": 995
+    },
+    {
+      "url": "https://github.com/nextauthjs/next-auth",
+      "status": 200,
+      "success": true,
+      "duration": 950
+    },
+    {
+      "url": "https://github.com/hashicorp/next-mdx-remote",
+      "status": 200,
+      "success": true,
+      "duration": 1034
+    },
+    {
+      "url": "https://github.com/garmeeh/next-seo",
+      "status": 200,
+      "success": true,
+      "duration": 1076
+    },
+    {
+      "url": "https://github.com/talvb/next-images",
+      "status": 404,
+      "success": false,
+      "duration": 597
+    },
+    {
+      "url": "https://github.com/nuxt-community/axios-module",
+      "status": 200,
+      "success": true,
+      "duration": 904
+    },
+    {
+      "url": "https://github.com/nuxt/content",
+      "status": 200,
+      "success": true,
+      "duration": 927
+    },
+    {
+      "url": "https://github.com/nuxt-community/i18n-module",
+      "status": 301,
+      "success": false,
+      "duration": 564,
+      "redirect": "https://github.com/nuxt-modules/i18n"
+    },
+    {
+      "url": "https://github.com/nuxt-modules/tailwindcss",
+      "status": 200,
+      "success": true,
+      "duration": 857
+    },
+    {
+      "url": "https://github.com/nuxt-modules/color-mode",
+      "status": 200,
+      "success": true,
+      "duration": 961
+    },
+    {
+      "url": "https://github.com/nuxt-community/supabase-module",
+      "status": 301,
+      "success": false,
+      "duration": 541,
+      "redirect": "https://github.com/nuxt-modules/supabase"
+    },
+    {
+      "url": "https://github.com/sveltejs/svelte",
+      "status": 200,
+      "success": true,
+      "duration": 1031
+    },
+    {
+      "url": "https://github.com/sveltejs/kit",
+      "status": 200,
+      "success": true,
+      "duration": 973
+    },
+    {
+      "url": "https://github.com/nkey/svelte-spa-router",
+      "status": 404,
+      "success": false,
+      "duration": 622
+    },
+    {
+      "url": "https://github.com/sveltejs/svelte-preprocess",
+      "status": 200,
+      "success": true,
+      "duration": 935
+    },
+    {
+      "url": "https://github.com/testing-library/svelte-testing-library",
+      "status": 200,
+      "success": true,
+      "duration": 1042
+    },
+    {
+      "url": "https://github.com/vitejs/vite",
+      "status": 200,
+      "success": true,
+      "duration": 976
+    },
+    {
+      "url": "https://github.com/evanw/esbuild",
+      "status": 200,
+      "success": true,
+      "duration": 800
+    },
+    {
+      "url": "https://github.com/swc-project/swc",
+      "status": 200,
+      "success": true,
+      "duration": 853
+    }
+  ]
+}

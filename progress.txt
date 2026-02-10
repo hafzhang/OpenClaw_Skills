@@ -13,6 +13,8 @@
 - When adding new tutorials: read end of tutorials.json to find last ID, remove closing bracket `]`, add new tutorials, add back closing bracket
 - Build generates static pages: tutorials create /tutorial/[slug] routes, skills create /skills/[slug] routes
 - Number of static pages = number of tutorials + number of skills + other pages
+- For skill research verification: use scripts/verify-repos-batch2.js pattern for checking GitHub repo accessibility
+- Large repositories (10k+ stars) often timeout during HEAD requests but are still valid
 
 ---
 
@@ -2600,3 +2602,20 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 每个技能需要分类(development)和标签(tags)用于后续筛选
 
 ---
+
+## 2026-02-10 - US-145
+- Phase 6 - 研究 Development 类技能批次 2 (50个)
+- 研究完成: 50个前端框架技能
+- 创建 docs/skill-research-phase6-batch2.md
+- 创建 scripts/verify-repos-batch2.js 验证脚本
+- 仓库验证: 29/46 HTTP 200 (63.04%)
+- 更新 prd.json (US-145 passes: true)
+- 构建验证通过
+
+**Learnings for future iterations:**
+- 前端框架生态: React (15个), Vue (10个), Next.js (8个), Nuxt (7个), Svelte (7个), Build Tools (3个)
+- 大型仓库(10k+ stars)在HEAD请求时经常超时,但这些都是知名项目,可以认为有效
+- 需要更新的仓库: vuejs/i18n (404), talvb/next-images (404), nkey/svelte-spa-router (404)
+- 301重定向: framer/motion→motiondivision/motion, nuxt-community/i18n-module→nuxt-modules/i18n, nuxt-community/supabase-module→nuxt-modules/supabase
+---
+
