@@ -1,0 +1,294 @@
+{
+  "batch": "batch22",
+  "name": "文件处理和网络工具",
+  "date": "2026-02-10T11:17:21.662Z",
+  "total": 32,
+  "summary": {
+    "success": 21,
+    "fail": 2,
+    "timeout": 9,
+    "error": 0,
+    "successRate": "65.63%"
+  },
+  "results": [
+    {
+      "name": "wget",
+      "url": "https://github.com/mirror/wget",
+      "category": "file-downloader",
+      "status": 200,
+      "finalUrl": "https://github.com/mirror/wget",
+      "duration": 1184,
+      "success": true
+    },
+    {
+      "name": "curl",
+      "url": "https://github.com/curl/curl",
+      "category": "network-tool",
+      "status": "TIMEOUT",
+      "duration": 15022,
+      "success": false
+    },
+    {
+      "name": "aria2",
+      "url": "https://github.com/aria2/aria2",
+      "category": "download-manager",
+      "status": 200,
+      "finalUrl": "https://github.com/aria2/aria2",
+      "duration": 1048,
+      "success": true
+    },
+    {
+      "name": "axel",
+      "url": "https://github.com/axel-download-accelerator/axel",
+      "category": "download-accelerator",
+      "status": 200,
+      "finalUrl": "https://github.com/axel-download-accelerator/axel",
+      "duration": 983,
+      "success": true
+    },
+    {
+      "name": "you-get",
+      "url": "https://github.com/soimort/you-get",
+      "category": "video-downloader",
+      "status": "TIMEOUT",
+      "duration": 15021,
+      "success": false
+    },
+    {
+      "name": "youtube-dl",
+      "url": "https://github.com/ytdl-org/youtube-dl",
+      "category": "video-downloader",
+      "status": 200,
+      "finalUrl": "https://github.com/ytdl-org/youtube-dl",
+      "duration": 1055,
+      "success": true
+    },
+    {
+      "name": "yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "category": "video-downloader",
+      "status": 200,
+      "finalUrl": "https://github.com/yt-dlp/yt-dlp",
+      "duration": 1417,
+      "success": true
+    },
+    {
+      "name": "gallery-dl",
+      "url": "https://github.com/mikf/gallery-dl",
+      "category": "image-downloader",
+      "status": 200,
+      "finalUrl": "https://github.com/mikf/gallery-dl",
+      "duration": 893,
+      "success": true
+    },
+    {
+      "name": "rsync",
+      "url": "https://github.com/WayneD/rsync",
+      "category": "file-synchronization",
+      "status": 301,
+      "finalUrl": "https://github.com/RsyncProject/rsync",
+      "duration": 557,
+      "success": true
+    },
+    {
+      "name": "lsyncd",
+      "url": "https://github.com/axkibe/lsyncd",
+      "category": "live-sync",
+      "status": "TIMEOUT",
+      "duration": 15005,
+      "success": false
+    },
+    {
+      "name": "syncthing",
+      "url": "https://github.com/syncthing/syncthing",
+      "category": "file-synchronization",
+      "status": "TIMEOUT",
+      "duration": 15011,
+      "success": false
+    },
+    {
+      "name": "rclone",
+      "url": "https://github.com/rclone/rclone",
+      "category": "cloud-storage",
+      "status": 200,
+      "finalUrl": "https://github.com/rclone/rclone",
+      "duration": 1007,
+      "success": true
+    },
+    {
+      "name": "nmap",
+      "url": "https://github.com/nmap/nmap",
+      "category": "network-scanner",
+      "status": "TIMEOUT",
+      "duration": 15009,
+      "success": false
+    },
+    {
+      "name": "masscan",
+      "url": "https://github.com/robertdavidgraham/masscan",
+      "category": "port-scanner",
+      "status": 200,
+      "finalUrl": "https://github.com/robertdavidgraham/masscan",
+      "duration": 909,
+      "success": true
+    },
+    {
+      "name": "rustscan",
+      "url": "https://github.com/RustScan/RustScan",
+      "category": "port-scanner",
+      "status": "TIMEOUT",
+      "duration": 15009,
+      "success": false
+    },
+    {
+      "name": "zmap",
+      "url": "https://github.com/zmap/zmap",
+      "category": "network-scanner",
+      "status": 200,
+      "finalUrl": "https://github.com/zmap/zmap",
+      "duration": 1074,
+      "success": true
+    },
+    {
+      "name": "wireshark",
+      "url": "https://github.com/wireshark/wireshark",
+      "category": "network-analyzer",
+      "status": 200,
+      "finalUrl": "https://github.com/wireshark/wireshark",
+      "duration": 974,
+      "success": true
+    },
+    {
+      "name": "tcpdump",
+      "url": "https://github.com/the-tcpdump-group/tcpdump",
+      "category": "packet-analyzer",
+      "status": "TIMEOUT",
+      "duration": 15014,
+      "success": false
+    },
+    {
+      "name": "mtr",
+      "url": "https://github.com/traviscross/mtr",
+      "category": "network-diagnostic",
+      "status": 200,
+      "finalUrl": "https://github.com/traviscross/mtr",
+      "duration": 1047,
+      "success": true
+    },
+    {
+      "name": "openssh",
+      "url": "https://github.com/openssh/openssh-portable",
+      "category": "remote-connect",
+      "status": "TIMEOUT",
+      "duration": 15013,
+      "success": false
+    },
+    {
+      "name": "openssl",
+      "url": "https://github.com/openssl/openssl",
+      "category": "cryptography",
+      "status": 200,
+      "finalUrl": "https://github.com/openssl/openssl",
+      "duration": 1080,
+      "success": true
+    },
+    {
+      "name": "p7zip",
+      "url": "https://github.com/jinfeihan/p7zip",
+      "category": "compression",
+      "status": 404,
+      "finalUrl": "https://github.com/jinfeihan/p7zip",
+      "duration": 592,
+      "success": false
+    },
+    {
+      "name": "zlib",
+      "url": "https://github.com/madler/zlib",
+      "category": "compression-library",
+      "status": 200,
+      "finalUrl": "https://github.com/madler/zlib",
+      "duration": 870,
+      "success": true
+    },
+    {
+      "name": "zstd",
+      "url": "https://github.com/facebook/zstd",
+      "category": "compression",
+      "status": 200,
+      "finalUrl": "https://github.com/facebook/zstd",
+      "duration": 1072,
+      "success": true
+    },
+    {
+      "name": "lz4",
+      "url": "https://github.com/lz4/lz4",
+      "category": "compression",
+      "status": 200,
+      "finalUrl": "https://github.com/lz4/lz4",
+      "duration": 936,
+      "success": true
+    },
+    {
+      "name": "brotli",
+      "url": "https://github.com/google/brotli",
+      "category": "compression",
+      "status": 200,
+      "finalUrl": "https://github.com/google/brotli",
+      "duration": 1026,
+      "success": true
+    },
+    {
+      "name": "pixz",
+      "url": "https://github.com/madler/pixz",
+      "category": "compression",
+      "status": "TIMEOUT",
+      "duration": 15017,
+      "success": false
+    },
+    {
+      "name": "ncdu",
+      "url": "https://github.com/rofl0r/ncdu",
+      "category": "disk-analyzer",
+      "status": 200,
+      "finalUrl": "https://github.com/rofl0r/ncdu",
+      "duration": 946,
+      "success": true
+    },
+    {
+      "name": "dua",
+      "url": "https://github.com/Byron/dua",
+      "category": "disk-analyzer",
+      "status": 404,
+      "finalUrl": "https://github.com/Byron/dua",
+      "duration": 608,
+      "success": false
+    },
+    {
+      "name": "gdu",
+      "url": "https://github.com/dundee/gdu",
+      "category": "disk-analyzer",
+      "status": 200,
+      "finalUrl": "https://github.com/dundee/gdu",
+      "duration": 983,
+      "success": true
+    },
+    {
+      "name": "bleachbit",
+      "url": "https://github.com/bleachbit/bleachbit",
+      "category": "disk-cleaner",
+      "status": 200,
+      "finalUrl": "https://github.com/bleachbit/bleachbit",
+      "duration": 1050,
+      "success": true
+    },
+    {
+      "name": "stow",
+      "url": "https://github.com/aspiers/stow",
+      "category": "symlink-manager",
+      "status": 200,
+      "finalUrl": "https://github.com/aspiers/stow",
+      "duration": 1036,
+      "success": true
+    }
+  ]
+}
