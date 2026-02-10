@@ -1,0 +1,258 @@
+{
+  "timestamp": "2026-02-10T08:07:00.657Z",
+  "summary": {
+    "total": 40,
+    "success": 14,
+    "redirect": 3,
+    "failed": 2,
+    "timeout": 20,
+    "error": 4,
+    "successRate": "35.00%"
+  },
+  "results": [
+    {
+      "url": "https://github.com/figma/plugin-samples",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15033
+    },
+    {
+      "url": "https://github.com/penpot/penpot",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15021
+    },
+    {
+      "url": "https://github.com/excalidraw/excalidraw",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15008
+    },
+    {
+      "url": "https://github.com/tldraw/tldraw",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15018
+    },
+    {
+      "url": "https://github.com/loomhq/loom-sdk",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15010
+    },
+    {
+      "url": "https://github.com/miroapp/app-framework",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15006
+    },
+    {
+      "url": "https://github.com/figma/diagrams",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15014
+    },
+    {
+      "url": "https://github.com/affinity-project/affinity-designer-resources",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15009
+    },
+    {
+      "url": "https://github.com/framer/motion",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15018
+    },
+    {
+      "url": "https://github.com/pmndrs/react-spring",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15009
+    },
+    {
+      "url": "https://github.com/greensock/GSAP",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15010
+    },
+    {
+      "url": "https://github.com/juliangarnier/anime",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15009
+    },
+    {
+      "url": "https://github.com/airbnb/lottie-web",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15017
+    },
+    {
+      "url": "https://github.com/LottieFiles/lottie-player",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15017
+    },
+    {
+      "url": "https://github.com/motiondivision/motionone",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15012
+    },
+    {
+      "url": "https://github.com/fabricjs/fabric.js",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15013
+    },
+    {
+      "url": "https://github.com/konvajs/konva",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15011
+    },
+    {
+      "url": "https://github.com/paperjs/paper.js",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15013
+    },
+    {
+      "url": "https://github.com/jonobr1/two.js",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15021
+    },
+    {
+      "url": "https://github.com/pixijs/pixi.js",
+      "status": "ERROR",
+      "error": "read ECONNRESET",
+      "success": false,
+      "responseTime": 19230
+    },
+    {
+      "url": "https://github.com/processing/p5.js",
+      "status": "ERROR",
+      "error": "read ECONNRESET",
+      "success": false,
+      "responseTime": 19235
+    },
+    {
+      "url": "https://github.com/google/skia",
+      "status": "TIMEOUT",
+      "success": false,
+      "responseTime": 15006
+    },
+    {
+      "url": "https://github.com/mrdoob/three.js",
+      "status": "ERROR",
+      "error": "read ECONNRESET",
+      "success": false,
+      "responseTime": 20552
+    },
+    {
+      "url": "https://github.com/BabylonJS/Babylon.js",
+      "status": 200,
+      "success": true,
+      "responseTime": 979
+    },
+    {
+      "url": "https://github.com/pmndrs/react-three-fiber",
+      "status": "ERROR",
+      "error": "read ECONNRESET",
+      "success": false,
+      "responseTime": 19184
+    },
+    {
+      "url": "https://github.com/pmndrs/drei",
+      "status": 200,
+      "success": true,
+      "responseTime": 10562
+    },
+    {
+      "url": "https://github.com/splinetool/react-spline",
+      "status": 200,
+      "success": true,
+      "responseTime": 929
+    },
+    {
+      "url": "https://github.com/oframe/ogl",
+      "status": 200,
+      "success": true,
+      "responseTime": 2048
+    },
+    {
+      "url": "https://github.com/storybookjs/storybook",
+      "status": 200,
+      "success": true,
+      "responseTime": 1156
+    },
+    {
+      "url": "https://github.com/chroma-ui/chromatic-cli",
+      "status": 404,
+      "success": false,
+      "responseTime": 669
+    },
+    {
+      "url": "https://github.com/figma/figma-api",
+      "status": 404,
+      "success": false,
+      "responseTime": 610
+    },
+    {
+      "url": "https://github.com/amzn/style-dictionary",
+      "status": "301 -> https://github.com/style-dictionary/style-dictionary",
+      "success": true,
+      "responseTime": 605
+    },
+    {
+      "url": "https://github.com/diez/diez",
+      "status": 200,
+      "success": true,
+      "responseTime": 1030
+    },
+    {
+      "url": "https://github.com/lucide-icons/lucide",
+      "status": 200,
+      "success": true,
+      "responseTime": 1094
+    },
+    {
+      "url": "https://github.com/tailwindlabs/heroicons",
+      "status": 200,
+      "success": true,
+      "responseTime": 876
+    },
+    {
+      "url": "https://github.com/tabler/tabler-icons",
+      "status": 200,
+      "success": true,
+      "responseTime": 1099
+    },
+    {
+      "url": "https://github.com/phosphor-icons/phosphor",
+      "status": "301 -> https://github.com/phosphor-icons/android",
+      "success": true,
+      "responseTime": 533
+    },
+    {
+      "url": "https://github.com/gka/chroma.js",
+      "status": 200,
+      "success": true,
+      "responseTime": 924
+    },
+    {
+      "url": "https://github.com/LeaVerou/color.js",
+      "status": "301 -> https://github.com/color-js/color.js",
+      "success": true,
+      "responseTime": 616
+    },
+    {
+      "url": "https://github.com/foliojs/fontkit",
+      "status": 200,
+      "success": true,
+      "responseTime": 881
+    }
+  ]
+}

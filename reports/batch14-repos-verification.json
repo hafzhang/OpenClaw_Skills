@@ -1,0 +1,261 @@
+{
+  "timestamp": "2026-02-10T09:17:13.406Z",
+  "batch": 14,
+  "category": "Container Technology",
+  "total": 41,
+  "summary": {
+    "success": 34,
+    "timeout": 0,
+    "error": 0,
+    "fail": 7,
+    "redirect": 5
+  },
+  "results": [
+    {
+      "url": "https://github.com/docker/engine-ce",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/docker/cli",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/moby/buildkit",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/docker/compose",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/docker/machine",
+      "status": 301,
+      "redirectUrl": "https://github.com/docker-archive-public/docker.machine",
+      "success": false
+    },
+    {
+      "url": "https://github.com/distribution/distribution",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/docker/swarmkit",
+      "status": 301,
+      "redirectUrl": "https://github.com/moby/swarmkit",
+      "success": false
+    },
+    {
+      "url": "https://github.com/docker/app",
+      "status": 301,
+      "redirectUrl": "https://github.com/docker-archive-public/docker.app",
+      "success": false
+    },
+    {
+      "url": "https://github.com/moby/moby",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/linuxkit/linuxkit",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/containers/podman",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/containers/podman-compose",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/containers/buildah",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/containers/skopeo",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/cri-o/cri-o",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/containers/podman-desktop",
+      "status": 301,
+      "redirectUrl": "https://github.com/podman-desktop/podman-desktop",
+      "success": false
+    },
+    {
+      "url": "https://github.com/lxc/lxd",
+      "status": 301,
+      "redirectUrl": "https://github.com/lxc/incus",
+      "success": false
+    },
+    {
+      "url": "https://github.com/lxc/lxc",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/lxc/lxcfs",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/lxc/incus",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/lxc/distrobuilder",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/lxc/lxd-ui",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/kubernetes/kubernetes",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/kubernetes/kubectl",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/etcd-io/etcd",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/containerd/containerd",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/opencontainers/runc",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/containernetworking/plugins",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/helm/helm",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/kubernetes-sigs/kustomize",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/argoproj/argo-cd",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/kubernetes/minikube",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/kubernetes-sigs/kind",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/k3s-io/k3s",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/kubernetes/kops",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/aquasecurity/trivy",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/quay/clair",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/falcosecurity/falco",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/notaryproject/notary",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/anchore/grype",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/kata-containers/kata-containers",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    }
+  ]
+}
