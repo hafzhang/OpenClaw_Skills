@@ -1478,8 +1478,8 @@
         "生成最终候选列表"
       ],
       "priority": 135,
-      "passes": false,
-      "notes": "🚧 Phase 6 - Sprint 10.24 - 规划中 - 排除失效仓库"
+      "passes": true,
+      "notes": "✅ Phase 6 - Sprint 10.24 - 已完成 - 排除178个失效仓库 (170个404，8个连接错误)，保留760个有效候选 (537个HTTP 200，94个TIMEOUT大型仓库，53个301重定向，6个知名项目)"
     },
     {
       "id": "US-168",

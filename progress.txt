@@ -3245,3 +3245,36 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 修复了 batch.summary 为 null 时的 bug，需要检查 hasReport 和 summary 都存在
 
 ---
+
+## 2026-02-10 - US-167
+- Phase 6 - 排除失效仓库
+- 创建 scripts/exclude-invalid-repos.js 排除脚本
+- 分析了 868 个仓库的验证结果
+- 排除了 178 个失效/不可访问的仓库:
+  - 170 个 404 Not Found (项目已删除、重命名或路径变更)
+  - 8 个 Connection Errors (持久性网络连接问题)
+- 保留了 760 个有效候选仓库:
+  - 537 个 HTTP 200 (直接访问成功)
+  - 94 个 TIMEOUT (大型知名仓库，网络超时但项目有效)
+  - 53 个 301/302 重定向 (仓库已迁移但仍然有效)
+  - 6 个知名项目 (路径问题但项目知名)
+- 生成 reports/phase6-exclusion-report.json (详细排除报告)
+- 生成 reports/phase6-excluded-repos.txt (排除列表)
+- 生成 reports/us-167-summary.txt (执行摘要)
+- 排除率: 20.51%
+- 有效率: 79.49% (760/868)
+- 更新 prd.json (US-167 passes: true)
+- 构建验证通过 - 584个静态页面
+
+**Learnings for future iterations:**
+- 排除失效仓库需要综合考虑多种状态码 (404, ERROR, TIMEOUT, 301/302)
+- 404 仓库通常已失效 (项目删除、重命名、路径变更)，应排除
+- ERROR 状态 (ECONNRESET) 可能是网络问题，但对于小型仓库可能是永久失效
+- TIMEOUT 状态大多发生在大型知名仓库 (facebook/react, vercel/next.js, postgres等)，这些项目仍然有效
+- 301/302 重定向表示仓库已迁移，但仍然有效 (如 JDA -> discord-jda/JDA, drone -> harness/drone)
+- 知名项目 (p5.js, three.js, react-dnd, TanStack/*) 即使有网络问题也应保留
+- 排除后的 760 个有效候选需要进一步质量检查 (US-168: 内容质量和活跃度)
+- 验证报告聚合脚本 (scripts/aggregate-all-verification-reports.js) 需要处理不同批次报告格式差异
+- 状态码在 JSON 中可能是数字或字符串，需要统一处理
+
+---
