@@ -1,0 +1,195 @@
+{
+  "timestamp": "2026-02-10T10:33:16.719Z",
+  "batch": 18,
+  "category": "Configuration Management and Orchestration Tools",
+  "total": 30,
+  "summary": {
+    "success": 23,
+    "timeout": 0,
+    "error": 0,
+    "fail": 7,
+    "redirect": 2
+  },
+  "results": [
+    {
+      "url": "https://github.com/ansible/ansible",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ansible-community/ansible-build-data",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ansible/galaxy",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ansible/ansible-lint",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ansible-community/molecule",
+      "status": 301,
+      "redirectUrl": "https://github.com/ansible/molecule",
+      "success": false
+    },
+    {
+      "url": "https://github.com/ansible/ansible-navigator",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ansible/ansible-builder",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ansible/ansible-test",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/ansible/awx",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ansible-semaphore/semaphore",
+      "status": 301,
+      "redirectUrl": "https://github.com/semaphoreui/semaphore",
+      "success": false
+    },
+    {
+      "url": "https://github.com/hashicorp/terraform",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/hashicorp/terraform-plugin-sdk",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/hashicorp/terraform-provider",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/terraform-docs/terraform-docs",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/hashicorp/terraform-json",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/hashicorp/hcl",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/hashicorp/terraform-svchost",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/bridgecrewio/checkov",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/helm/helm",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/helm/chartmuseum",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/helm/helm-file",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/helm/helm-diff",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/folkerts/helm-secrets",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/helm/helm-2to3",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/kubernetes-sigs/kustomize",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/saltstack/salt",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/puppetlabs/puppet",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/chef/chef",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/cfengine/core",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/NixOS/nix",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    }
+  ]
+}
