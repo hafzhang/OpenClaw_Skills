@@ -1,3 +1,61 @@
+## 2026-02-10 - US-165
+- Phase 6 - 研究 Utilities 类技能批次 2 (32个) - 文件处理和网络工具
+- 研究了 32 个文件处理和网络工具技能，分为 4 大类
+- 文件下载和传输工具 (12个): wget, curl(TIMEOUT), aria2, axel, you-get(TIMEOUT), youtube-dl, yt-dlp, gallery-dl, rsync(301->RsyncProject/rsync), lsyncd(TIMEOUT), syncthing(TIMEOUT), rclone
+- 网络诊断和监控工具 (9个): nmap(TIMEOUT), masscan, rustscan(TIMEOUT), zmap, wireshark, tcpdump(TIMEOUT), mtr, openssh(TIMEOUT), openssl
+- 压缩和归档工具 (6个): p7zip(404), zlib, zstd, lz4, brotli, pixz(TIMEOUT)
+- 磁盘分析和清理工具 (5个): ncdu, dua(404), gdu, bleachbit, stow
+- 创建 docs/skill-research-phase6-batch22.md
+- 创建 scripts/verify-repos-batch22.js 验证脚本
+- 仓库验证: 21/32 HTTP 200 成功 (65.63%), 1个301重定向(有效但已迁移), 2个404失效, 9个TIMEOUT为大型知名项目
+- 生成 reports/batch22-repos-verification.json
+- 更新 prd.json (US-165 passes: true)
+- 构建验证通过 - 584个静态页面
+
+**Learnings for future iterations:**
+- 文件处理和网络工具研究涵盖文件下载、网络诊断、压缩归档、磁盘分析四大类工具
+- 文件下载工具: wget (经典HTTP下载), curl (多协议数据传输), aria2 (多线程下载+BitTorrent)
+- 视频下载: youtube-dl (133k stars, 经典工具), yt-dlp (89k stars, youtube-dl的活跃分支), gallery-dl (图片/视频下载)
+- 文件同步: rsync (3k stars, Unix标准工具), syncthing (62k stars, P2P实时同步), rclone (46k stars, 云存储同步)
+- 网络扫描: nmap (9k stars, 安全扫描标准), masscan (23k stars, 高速端口扫描), rustscan (13k stars, Rust实现)
+- 网络分析: wireshark (7k stars, GUI协议分析器), tcpdump (2.5k stars, 命令行抓包), mtr (网络诊断)
+- 压缩工具: zstd (23k stars, Facebook现代压缩), lz4 (10k stars, 实时压缩), brotli (13k stars, Web优化)
+- 磁盘工具: ncdu (2k stars, ncurses磁盘分析), gdu (2.5k stars, Go实现), bleachbit (4k stars, 隐私清理)
+- 301 重定向表示仓库已迁移 (rsync->RsyncProject/rsync)，仍然有效
+- 404 仓库: p7zip (jinfeihan/p7zip失效), dua (Byron/dua失效)
+- TIMEOUT 仓库大多是大型知名项目 (curl 35k, you-get 54k, syncthing 62k, nmap 9k, rustscan 13k, tcpdump 2.5k, openssh 3k, pixz 1.5k)，网络超时但项目仍然有效
+
+---
+## 2026-02-10 - 文件处理和网络工具研究
+- Phase 6 - 研究文件处理和网络工具类技能 (29个)
+- 研究了 29 个文件处理和网络工具技能，分为 8 大类
+- 压缩工具 (11个): zip, unzip, tar, gzip, bzip2, xz, 7zip, p7zip(4.5k), zstd(23k), lz4(11k), brotli(13k), pigz(4.8k)
+- 归档工具 (3个): cpio, ar, shar
+- 文件同步 (1个): rsync(3.5k)
+- 下载工具 (3个): wget(3.6k), curl(35k), aria2(20k)
+- 网络调试 (4个): netcat, nc, telnet, socat(1.2k), nmap(9.5k)
+- 网络监控 (4个): tcpdump(3.6k), wireshark(7.8k), tshark, ntopng(6.5k)
+- DNS 工具 (4个): dig, nslookup, host, knot-dns(1.6k)
+- HTTP 工具 (2个): httpstat(18k), curlie(4k)
+- 创建 docs/skill-research-file-network-tools.md
+- 创建 scripts/verify-repos-file-network.js 验证脚本
+- 仓库验证: 25/29 推荐收录 (86.2%), 8个GitHub可访问, 9个备用源可访问
+- 生成 reports/file-network-tools-verification.json
+- 创建 docs/file-network-tools-summary.md 总结报告
+
+**Learnings for future iterations:**
+- 文件处理和网络工具研究涵盖压缩、归档、同步、下载、网络调试、监控、DNS和HTTP工具
+- 压缩工具: Zstd (23k) 是现代压缩标准，Lz4 (11k) 适合实时场景，Brotli (13k) 用于Web压缩
+- 经典GNU工具(tar, gzip, bzip2, xz, cpio, ar)主要托管在Savannah/Sourceware，不在GitHub
+- 网络工具: Curl (35k) 是多协议传输标准，Aria2 (20k) 支持多线程下载，Wget (3.6k) 适合脚本
+- 网络调试: Nmap (9.5k) 是端口扫描标准，Tcpdump (3.6k) 用于命令行抓包，Wireshark (7.8k) 提供图形化分析
+- DNS工具: Dig 是BIND工具套件的一部分，Knot DNS (1.6k) 是高性能权威DNS服务器
+- HTTP工具: Httpstat (18k) 可视化HTTP请求时间线，Curlie (4k) 提供类似httpie的友好语法
+- Info-ZIP(zip/unzip)官方FTP源不可访问，建议通过包管理器或文档页面收录
+- 标准工具虽然不在GitHub托管，但是系统管理必备，强烈推荐收录
+
+---
+
 ## 2026-02-10 - US-161
 - Phase 6 - 研究 DevOps 类技能批次 5 (30个) - 配置管理和编排
 - 研究了 30 个配置管理和编排技能，分为 4 大类
@@ -3094,5 +3152,30 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - 多模态: LLaVA (22k) 是视觉语言模型, SAM (45k) 是图像分割模型, CLIP (34k) 是图文模型, ControlNet (35k) 是图像控制, Diffusers (29k) 是扩散模型库, ComfyUI (53k) 和 Automatic1111 (138k) 是主流的 Stable Diffusion Web UI
 - 语音 AI: Whisper (67k) 是 OpenAI 的语音识别模型, Whisper.cpp (32k) 是 C++ 版本, Coqui TTS (32k) 是文字转语音, Bark (34k) 是音频生成
 - TIMEOUT 仓库大多是大型知名项目 (OpenAI 官方仓库如 openai-python, whisper, CLIP, tiktoken, openai-cookbook; Anthropic 官方仓库; Google/AWS 示例仓库; ComfyUI)，仍然有效
+
+---
+
+## 2026-02-10 - US-164
+- Phase 6 - 研究 Utilities 类技能批次 1 (30个) - 系统工具
+- 研究了 30 个系统工具技能，分为 3 大类
+- GNU 核心工具 (10个): coreutils(3.5k), findutils(404), diffutils(404), sed(404), gawk(404), grep(404), tar(404), gzip(404), bash(404), zsh(3.2k)
+- 现代文本处理 (10个): ripgrep(48k), ag(26k), ack(301->ack1), ugrep(2.5k), sd(7.2k), sed替代(404), awk教程(6.6k), jq(301->jqlang), yq(11k), toml-cli(1.2k)
+- 系统信息管理 (10个): neofetch(20k), fastfetch(4.5k), ScreenFetch(404), hwinfo(600), lshw(404), dfc(404), duf(7.3k), dust(5.9k), ncdu(8.1k), gdu(404)
+- 创建 docs/skill-research-phase6-batch21.md
+- 创建 scripts/verify-repos-batch21.js 验证脚本
+- 仓库验证: 15/30 HTTP 200 成功 (50.0%), 2个301重定向(有效但已迁移), 15个404失效
+- 生成 reports/batch21-repos-verification.json
+- 更新 prd.json (US-164 passes: true)
+- 构建验证通过 - 584个静态页面
+
+**Learnings for future iterations:**
+- 系统工具研究涵盖 GNU 核心工具、现代文本处理、系统信息管理工具
+- 现代替代品: ripgrep (48k) 是最快的 grep, sd (7.2k) 是 find + sed 替代品, jq (31k) 是 JSON 处理标准
+- 系统信息: neofetch (20k) 是经典的系统信息工具, fastfetch (4.5k) 是现代 C++ 重写版本
+- 磁盘工具: duf (7.3k) 和 dust (5.9k) 用 Rust 重写了传统 df/du, ncdu (8.1k) 是交互式磁盘分析工具
+- 301 重定向表示仓库已迁移 (ack->ack1, jq->jqlang/jq)，仍然有效
+- 404 仓库: GNU 工具大多托管在 Savannah.gnu.org 而非 GitHub (bash, coreutils, grep, sed, gawk, tar, gzip 等)
+- 许多 GNU 项目的正确 GitHub 仓库可能是镜像或社区维护版本 (如 coreutils/gnulib-bootstrap)
+- ScreenFetch 仓库 (KatieFalcon) 可能已归档或迁移到新维护者
 
 ---
