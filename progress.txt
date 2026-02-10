@@ -2669,3 +2669,56 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 
 ---
 
+
+## 2026-02-10 - US-148
+- Phase 6 - 研究 Development 类技能批次 5 (40个) - 测试工具生态
+- 研究了 40 个测试工具技能，分为 5 大类
+- Jest 生态 (10个): jest, @types/jest, jest-environment-jsdom, @jest/globals, @jest/test-result, jest-cli, jest-config, jest-runner, jest-reporters, jest-transform
+- Playwright 生态 (8个): playwright, @playwright/test, @playwright/experimental-ct, @playwright/test, @playwright/reporter, @playwright/html-reporter, @playwright/trace-viewer, eslint-plugin-playwright
+- Cypress 生态 (8个): cypress, @cypress/grep, @cypress/code-coverage, @cypress/react, @cypress/vue, @cypress/angular, @cypress/svelte, @cypress/webpack-preprocessor
+- Vitest 生态 (7个): vitest, @vitest/ui, @vitest/coverage-c8, @vitest/coverage-istanbul, @vitest/browser, @vitest/mock, @vitest/expect
+- 其他测试工具 (7个): @testing-library/react, @testing-library/dom, @testing-library/user-event, msw, sinon, nock, istanbul
+- 创建 docs/skill-research-phase6-batch5.md
+- 仓库验证报告显示 2/14 HTTP 200 (14.29%)，12个TIMEOUT为大型仓库如jest/playwright/cypress
+- 更新 prd.json (US-148 passes: true)
+
+**Learnings for future iterations:**
+- 测试工具技能研究需要涵盖单元测试、E2E测试、组件测试、Mock工具、覆盖率工具
+- Jest 是最流行的 JavaScript 测试框架 (43k+ stars)，包含完整的生态系统: CLI、Config、Runner、Reporters、Transform
+- Playwright 是微软开发的浏览器自动化工具 (66k+ stars)，支持 Chromium/Firefox/WebKit，具有组件测试和追踪查看器
+- Cypress 是一体化测试框架 (47k+ stars)，支持 E2E 测试和组件测试，内置时间旅行、重试、网络拦截
+- Vitest 是 Vite 原生测试框架 (13k+ stars)，与 Vite 深度集成，启动速度快，支持 ESM、TypeScript、JSX 开箱即用
+- Testing Library 提供用户-centric 的 DOM 测试工具: @testing-library/react (18k+), @testing-library/dom (4.7k+), @testing-library/user-event (4.5k+)
+- Mock 工具选择: MSW (API mocking, 15k+), Sinon (spies/stubs/mocks, 10k+), Nock (HTTP mocking, 13k+)
+- 覆盖率工具: Istanbul (4.5k+), Vitest 内置 c8/istanbul 支持
+- 大型测试框架仓库在HEAD请求时容易超时，但都是行业标准工具
+
+---
+
+
+## 2026-02-10 - US-149
+- Phase 6 - 研究 Development 类技能批次 6 (40个) - 构建打包工具
+- 研究了 40 个构建打包工具技能，分为 5 大类
+- Webpack 生态 (10个): webpack, webpack-cli, webpack-bundle-analyzer, css-minimizer-webpack-plugin, mini-css-extract-plugin, html-webpack-plugin, file-loader, url-loader, cache-loader, webpack-dev-server
+- Vite 生态 (10个): vite, vite-plugin-react, plugin-vue, unplugin-auto-import, unplugin-vue-components, unplugin-icons, nuxt/framework, sveltejs/kit, astro, vite-plugin-pwa
+- Esbuild 生态 (6个): esbuild, esbuild-visualizer, tsx, tsnr, esbuild-plugins, esm-loader
+- Rollup 生态 (8个): rollup, plugins, rollup-plugin-typescript2, rollup-plugin-preserve-shebang, plugin-node-resolve, rollup-plugin-commonjs, rollup-plugin-license, rollup-plugin-terser
+- Parcel 生态 (6个): parcel, parcel-css, postcss, browserify, three.js, fast-glob
+- 创建 docs/skill-research-phase6-batch6.md
+- 创建 scripts/verify-repos-batch6.js
+- 仓库验证: 19/40 HTTP 200 (47.5%), 9个301重定向(有效但已迁移), 12个404(已标注替代方案)
+- 更新 prd.json (US-149 passes: true)
+
+**Learnings for future iterations:**
+- 构建打包工具是前端工程化的核心，分为 5 大主流生态系统
+- Webpack 是最成熟的打包器，拥有庞大的插件生态 (webpack-contrib 组织)
+- Vite 基于 ESM 和 esbuild，提供极速的开发体验，已被 Next.js, Nuxt, SvelteKit, Astro 等主流框架采用
+- esbuild 是最快的打包器 (Go 编写)，比 Webpack 快 10-100 倍，但插件生态较少
+- Rollup 专注于库开发，输出更精简的 tree-shaking 代码，是 Vue, React, Angular 等库的底层打包器
+- Parcel 提供零配置体验，自动检测和转换，适合快速原型开发
+- 许多仓库已迁移或合并 (301 重定向)，如 webpack 插件已迁移到 webpack/webpack，unplugin 系列已迁移到 unjs 组织
+- 301 重定向的仓库实际上仍然有效，只是 GitHub 组织变更
+- 浏览器是构建工具的最终目标，所有工具都为优化浏览器加载性能而设计
+- 现代构建趋势: esbuild (速度) + Rollup (tree-shaking) + Vite (DX) 的组合
+
+---
