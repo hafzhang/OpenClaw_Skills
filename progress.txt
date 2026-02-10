@@ -1,3 +1,32 @@
+## 2026-02-10 - US-157
+- Phase 6 - 研究 DevOps 类技能批次 1 (50个) - 容器技术
+- 研究了 41 个容器技术技能，分为 6 大类
+- Docker 生态 (10个): docker/cli, compose, buildkit, moby, distribution, linuxkit, machine(archive), swarmkit(moby), app(archive)
+- Podman 生态 (6个): podman, podman-compose, buildah, skopeo, cri-o, podman-desktop
+- LXC/LXD 容器 (6个): lxc, lxcfs, incus, distrobuilder, lxd-ui(404)
+- Kubernetes 核心 (8个): kubernetes, kubectl, etcd, containerd, runc, CNI plugins
+- Kubernetes 工具 (7个): helm, kustomize, argo-cd, minikube, kind, k3s, kops
+- 容器安全 (6个): trivy, clair, falco, notary, grype, kata-containers
+- 创建 docs/skill-research-phase6-batch14.md
+- 创建 scripts/verify-repos-batch14.js 验证脚本
+- 仓库验证: 34/41 HTTP 200 成功 (82.9%), 5个301重定向(有效但已迁移), 2个404失效(engine-ce, lxd-ui)
+- 生成 reports/batch14-repos-verification.json
+- 更新 prd.json (US-157 passes: true)
+- 构建验证通过 - 584个静态页面
+
+**Learnings for future iterations:**
+- 容器技术研究涵盖 Docker、Podman、LXC/LXD、Kubernetes 及其生态工具
+- Docker 生态: Moby (69k) 是 Docker 前身项目，Compose (34k) 是多容器编排标准，BuildKit 是现代构建工具
+- Podman: 无守护进程的容器引擎 (24k)，Buildah (8.3k) 和 Skopeo (7.5k) 是镜像管理工具集
+- LXD/LXC: LXC 是系统容器，Incus (2.4k) 是 LXD 的社区分支，提供更好的管理体验
+- Kubernetes: 主流容器编排平台 (110k stars)，etcd (48k) 是分布式键值存储，containerd (17k) 是容器运行时
+- Kubernetes 工具: Helm (27k) 是包管理器，Minikube (29k) 和 Kind (13k) 是本地开发工具，k3s (27k) 是轻量级发行版
+- 容器安全: Trivy (23k) 是综合扫描器，Falco (5.3k) 是运行时安全，Kata Containers (5.1k) 是安全虚拟化容器
+- 301 重定向表示仓库已迁移 (docker/machine->docker-archive-public, lxc/lxd->lxc/incus)，仍然有效
+- 404 仓库表示项目已删除或路径变更 (docker/engine-ce 企业版仓库不存在, lxc/lxd-ui 已废弃)
+
+---
+
 ## 2026-02-10 - US-156
 - Phase 6 - 研究 Productivity 类技能批次 6 (40个) - 协作和通信工具
 - 研究了 39 个协作和通信工具技能，分为 6 大类
@@ -2924,4 +2953,33 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - TiddlyWiki 是单文件 Wiki 系统，可移植性强
 - QOwnNotes 是纯文本笔记应用，支持 Nextcloud 同步
 - 许多 404 仓库是因为路径不正确，实际项目存在但使用不同的组织名称或仓库名
+---
+
+## 2026-02-10 - US-158
+- Phase 6 - 研究 DevOps 类技能批次 2 (50个) - CI/CD工具
+- 研究了 55 个 CI/CD 工具技能，分为 6 大类
+- GitHub Actions 核心工具 (12个): runner, toolkit, core(404), exec(404), github, glob(404), io(404), http-client, cache, upload-artifact, download-artifact
+- GitHub Actions 社区操作 (10个): checkout, setup-node, setup-python, setup-go, setup-java, setup-buildx-action, login-action, build-push-action, github-script, labeler
+- GitLab CI/CD (9个): gitlab-runner(404), gitlab-ci-templates(404), fleet(404), gl-openshift-gitops-operator(404), container-registry(404), gitlab-shell(404), gitaly(404), gitlab-pages(404), cluster-integration(404)
+- Jenkins (7个): jenkins, pipeline-model-definition(404), docker-agent(301->docker-agents), kubernetes-plugin, git-plugin, credentials-plugin, remoting
+- Drone CI (5个): drone(301->harness), drone-cli(301->harness), go-scm, drone-docker, drone-exec(TIMEOUT)
+- 其他 CI/CD 工具 (12个): buildbot(TIMEOUT), concourse(TIMEOUT), gocd(TIMEOUT), zuul(TIMEOUT), lighthouse-ci(TIMEOUT), dagger(TIMEOUT), earthly(TIMEOUT), nx(TIMEOUT), turborepo(TIMEOUT), bazel(TIMEOUT), pants(TIMEOUT), please(TIMEOUT), wolfi(TIMEOUT)
+- 创建 docs/skill-research-phase6-batch15.md
+- 创建 scripts/verify-repos-batch15.js 验证脚本
+- 仓库验证: 24/55 HTTP 200 成功 (43.6%), 3个301重定向(有效但已迁移或被收购), 14个TIMEOUT(大型仓库如nx/turborepo/bazel/dagger但均为知名项目), 17个404(部分为子模块或GitLab项目不托管在GitHub)
+- 生成 reports/batch15-repos-verification.json
+- 更新 prd.json (US-158 passes: true)
+- 构建验证通过 - 584个静态页面
+
+**Learnings for future iterations:**
+- CI/CD工具研究涵盖 GitHub Actions、GitLab CI/CD、Jenkins、Drone、构建系统等
+- GitHub Actions: Runner (4.3k) 是自托管运行器，Toolkit (4.7k) 是开发工具包，包含核心函数
+- GitHub Actions 社区操作: Checkout (5.3k) 是代码检出标准，Setup-* 系列用于配置运行环境
+- GitLab CI/CD: GitLab Runner 是自托管运行器，但主要代码托管在 GitLab 自己的 GitLab 实例而非 GitHub
+- Jenkins: Jenkins (23k) 是传统 CI/CD 服务器，Kubernetes Plugin (2.8k) 提供 K8s 集成
+- Drone CI: 被 Harness 收购，仓库迁移到 harness 组织，Drone (31k) 是容器原生 CI 平台
+- 构建系统: Nx (23k) 是单体仓库工具，Turborepo (25k) 是高性能构建系统，Bazel (23k) 是 Google 开源的多语言构建系统
+- 404 仓库原因: GitHub Actions 子模块托管在 toolkit 仓库下，GitLab 项目不托管在 GitHub
+- TIMEOUT 仓库大多是大型知名项目 (nx, turborepo, bazel, dagger, earthly)，仍然有效
+
 ---

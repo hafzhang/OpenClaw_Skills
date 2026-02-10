@@ -1,0 +1,345 @@
+{
+  "timestamp": "2026-02-10T09:42:36.173Z",
+  "batch": 15,
+  "category": "CI/CD Tools",
+  "total": 55,
+  "summary": {
+    "success": 24,
+    "timeout": 14,
+    "error": 0,
+    "fail": 17,
+    "redirect": 3
+  },
+  "results": [
+    {
+      "url": "https://github.com/actions/runner",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/actions/toolkit",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/actions/core",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/actions/exec",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/actions/github",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/actions/glob",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/actions/io",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/actions/http-client",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/actions/cache",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/actions/upload-artifact",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/actions/download-artifact",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/actions/checkout",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/actions/setup-node",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/actions/setup-python",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/actions/setup-go",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/actions/setup-java",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/docker/setup-buildx-action",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/docker/login-action",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/docker/build-push-action",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/actions/github-script",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/actions/labeler",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/gitlab-org/gitlab-runner",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/gitlab-org/gitlab-ci-templates",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/gitlab-org/fleet",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/gitlab-org/gl-openshift-gitops-operator",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/gitlab-org/container-registry",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/gitlab-org/gitlab-shell",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/gitlab-org/gitaly",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/gitlab-org/gitlab-pages",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/gitlab-org/cluster-integration",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/jenkinsci/jenkins",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/jenkinsci/pipeline-model-definition",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/jenkinsci/docker-agent",
+      "status": 301,
+      "redirectUrl": "https://github.com/jenkinsci/docker-agents",
+      "success": false
+    },
+    {
+      "url": "https://github.com/jenkinsci/kubernetes-plugin",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/jenkinsci/git-plugin",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/jenkinsci/credentials-plugin",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/jenkinsci/remoting",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/drone/drone",
+      "status": 301,
+      "redirectUrl": "https://github.com/harness/harness",
+      "success": false
+    },
+    {
+      "url": "https://github.com/drone/drone-cli",
+      "status": 301,
+      "redirectUrl": "https://github.com/harness/drone-cli",
+      "success": false
+    },
+    {
+      "url": "https://github.com/drone/go-scm",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/drone/drone-docker",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/drone/drone-exec",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/buildbot/buildbot",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/concourse/concourse",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/gocd/gocd",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/zuul/zuul",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/GoogleChrome/lighthouse-ci",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/dagger/dagger",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/earthly/earthly",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/nrwl/nx",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/vercel/turborepo",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/bazelbuild/bazel",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/pantsbuild/pants",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/thought-machine/please",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/wolfi-dev/wolfi",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "success": false
+    }
+  ]
+}
