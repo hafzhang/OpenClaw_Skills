@@ -1,0 +1,465 @@
+{
+  "timestamp": "2026-02-10T10:38:18.574Z",
+  "batch": 19,
+  "category": "AI Tools and Platforms",
+  "total": 75,
+  "summary": {
+    "success": 47,
+    "timeout": 0,
+    "error": 0,
+    "fail": 28,
+    "redirect": 6
+  },
+  "results": [
+    {
+      "url": "https://github.com/langchain-ai/langchain",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchainjs",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/langchain-ai/langsmith",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/langchain-ai/langserve",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/langchain-ai/langgraph",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchain-templates",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchain-cli",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchain-community",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchain-experimental",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/langchain-ai/langservejs",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/langchain-ai/langgraphjs",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchainjs-templates",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchaingo",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/langchain-ai/langgraph-rs",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchain-hub",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/run-llama/llama_index",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/huggingface/transformers",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/huggingface/diffusers",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/huggingface/accelerate",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/huggingface/peft",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/huggingface/datasets",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/huggingface/evaluate",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/huggingface/optimum",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/huggingface/huggingface_hub",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/huggingface/text-generation-inference",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/AutoGPTQ/AutoGPTQ",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/qwopqwop200/GPTQ-for-LLaMA",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ggerganov/llama.cpp",
+      "status": 301,
+      "redirectUrl": "https://github.com/ggml-org/llama.cpp",
+      "success": false
+    },
+    {
+      "url": "https://github.com/ollama/ollama",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/microsoft/autogen",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/joaomdmoura/crewAI",
+      "status": 301,
+      "redirectUrl": "https://github.com/crewAIInc/crewAI",
+      "success": false
+    },
+    {
+      "url": "https://github.com/geekan/MetaGPT",
+      "status": 301,
+      "redirectUrl": "https://github.com/FoundationAgents/MetaGPT",
+      "success": false
+    },
+    {
+      "url": "https://github.com/reworkd/AgentGPT",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/yoheinakajima/babyagi",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/cognitivetech/devin",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/OpenInterpreter/open-interpreter",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/Phind-ai/Phind",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/shroominic/codeinterpreter-api",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/chroma-core/chroma",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/qdrant/qdrant",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/weaviate/weaviate",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/milvus-io/milvus",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/pinecone-io/pinecone-ts",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/facebookresearch/faiss",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/pgvector/pgvector",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/lancedb/lancedb",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/vespa-engine/vespa",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/elastic/elasticsearch",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/nomic-ai/gpt4all",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/Mozilla-Ocho/llamafile",
+      "status": 301,
+      "redirectUrl": "https://github.com/mozilla-ai/llamafile",
+      "success": false
+    },
+    {
+      "url": "https://github.com/mintplex-labs/anything-llm",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web",
+      "status": 301,
+      "redirectUrl": "https://github.com/ChatGPTNextWeb/NextChat",
+      "success": false
+    },
+    {
+      "url": "https://github.com/chatpdf/chatpdf-api",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/infiniflow/ragflow",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/deepset-ai/FastRAG",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/deepset-ai/haystack",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/quiver-ai/quiver",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/continue-development/continue",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/paul-gauthier/aider",
+      "status": 301,
+      "redirectUrl": "https://github.com/Aider-AI/aider",
+      "success": false
+    },
+    {
+      "url": "https://github.com/cursor-editor/cursor",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/github/copilot.vim",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/TabbyML/tabby",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/Exafunction/codeium",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/sweepai/sweep",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/codebrush-brush/codebrush",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/bloopai/bloop",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/greptile/greptile",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/smallcloud/refact",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/mistralai/codestral",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/bigcode/starcoder2",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/meta-llama/codellama",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/stabilityai/stable-code",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    }
+  ]
+}

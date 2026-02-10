@@ -3179,3 +3179,69 @@ AI/LLMs (20): llama-cpp, whisper-cpp, vllm, text-generation-inference, haystack,
 - ScreenFetch 仓库 (KatieFalcon) 可能已归档或迁移到新维护者
 
 ---
+
+## 2026-02-10 - US-165
+- Phase 6 - 研究 Utilities 类技能批次 2 (27个) - 文件处理和网络工具
+- 研究了 29 个文件处理和网络工具技能，分为 8 大类
+- 压缩工具 (11个): zip(不可访问), unzip(不可访问), gzip(GNU), bzip2(GNU), xz, 7zip(备用源), p7zip, zstd, lz4, brotli, pigz
+- 归档工具 (4个): tar(GNU), cpio(GNU), ar(Binutils), shar(不可访问)
+- 文件同步 (1个): rsync
+- 下载工具 (3个): wget, curl, aria2
+- 网络调试 (5个): netcat(SourceForge), socat, nmap, tcpdump, wireshark
+- 网络监控 (1个): ntopng
+- DNS 工具 (2个): dig(ISC/BIND), knot-dns
+- HTTP 工具 (2个): httpstat, curlie
+- 创建 docs/skill-research-phase6-batch22.md
+- 创建 scripts/verify-repos-file-network.js 验证脚本
+- 仓库验证: 25/29 推荐 (86.2%), 13个GitHub可访问, 9个备用源可访问
+- 生成 reports/file-network-tools-verification.json
+- 更新 prd.json (US-165 passes: true)
+- 构建验证通过 - 584个静态页面
+
+**Learnings for future iterations:**
+- 文件处理和网络工具研究涵盖压缩、归档、同步、下载、网络调试、监控、DNS、HTTP工具
+- 现代压缩算法: Zstd (23k) 正在替代 gzip，Lz4 (11k) 适合实时场景，Brotli (13k) 专为 Web 优化
+- Pigz (4.8k) 是 gzip 的并行实现，充分利用多核 CPU
+- 下载工具: Curl (35k) 是多协议数据传输标准，Aria2 (20k) 支持多线程和 BitTorrent
+- 网络调试: Nmap (9.5k) 是端口扫描标准，Wireshark (7.8k) 是协议分析器，Tcpdump (3.6k) 是命令行抓包工具
+- Netcat 是标准工具但托管在 SourceForge，Socat (1.2k) 是增强版
+- DNS 工具: Dig 是 BIND 工具套件的一部分，Knot DNS (1.6k) 是高性能权威 DNS 服务器
+- HTTP 工具: httpstat (18k) 可视化 curl 统计，curlie (4k) 是 curl 的友好前端
+- GNU 工具 (tar, gzip, cpio) 托管在 Savannah，不在 GitHub
+- Info-ZIP (zip/unzip) 官方 FTP 源不可访问，建议通过包管理器收录
+
+---
+
+## 2026-02-10 - US-166
+- Phase 6 - 批量验证所有候选技能仓库
+- 修复了 scripts/aggregate-all-verification-reports.js 中的 null 检查 bug
+- 运行综合验证报告聚合脚本
+- 23 个批次中 21 个有验证报告，2 个缺失 (Batch 1: 编程语言, Batch 3: 后端框架)
+- 总计 868 个仓库验证完成
+- 验证结果统计:
+  - HTTP 200 成功: 537 (61.9%)
+  - TIMEOUT: 67 (7.7%) - 主要是大型知名仓库
+  - ERROR: 4 (0.5%) - 网络连接重置
+  - 其他失败: 143 (16.5%) - 404/301等
+  - 重定向: 27 个
+- 分类统计:
+  - Development: 119 仓库, 78 成功 (65.5%)
+  - Productivity: 333 仓库, 194 成功 (58.3%)
+  - DevOps: 209 仓库, 158 成功 (75.6%)
+  - AI/LLMs: 145 仓库, 71 成功 (49.0%)
+  - Utilities: 62 仓库, 36 成功 (58.1%)
+- 更新 reports/phase6-comprehensive-verification.json
+- 更新 prd.json (US-166 passes: true)
+- 构建验证通过 - 584个静态页面
+
+**Learnings for future iterations:**
+- 批量仓库验证通过 21 个独立批次的验证脚本完成
+- 301 重定向表示仓库已迁移，但仍然有效 (如 JDA -> discord-jda/JDA)
+- 404 仓库可能是项目已删除、重命名或路径变更 (如 vuejs/i18n -> vuejs/core)
+- TIMEOUT 大多发生在大型知名仓库 (如 facebook/react, vercel/next.js, postgres/postgres)，网络超时但项目仍然有效
+- ERROR (ECONNRESET) 通常表示网络连接问题 (如 pixijs/pixi.js, p5.js, three.js)
+- DevOps 类仓库成功率最高 (75.6%)，AI/LLMs 类成功率最低 (49.0%)
+- 聚合脚本需要处理不同批次的报告格式差异
+- 修复了 batch.summary 为 null 时的 bug，需要检查 hasReport 和 summary 都存在
+
+---

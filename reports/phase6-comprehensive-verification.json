@@ -1,0 +1,3310 @@
+{
+  "timestamp": "2026-02-10T12:03:47.081Z",
+  "phase": 6,
+  "batches": [
+    {
+      "batchNumber": 1,
+      "name": "Development - Programming Languages",
+      "expectedCount": 50,
+      "hasReport": false,
+      "summary": null
+    },
+    {
+      "batchNumber": 2,
+      "name": "Development - Frontend Ecosystem",
+      "expectedCount": 50,
+      "hasReport": true,
+      "summary": {
+        "total": 46,
+        "success": 29,
+        "timeout": 0,
+        "error": 0,
+        "fail": 0,
+        "redirect": 0
+      }
+    },
+    {
+      "batchNumber": 3,
+      "name": "Development - Backend Ecosystem",
+      "expectedCount": 50,
+      "hasReport": false,
+      "summary": null
+    },
+    {
+      "batchNumber": 4,
+      "name": "Development - Database & Tools",
+      "expectedCount": 92,
+      "hasReport": true,
+      "summary": {
+        "total": 33,
+        "success": 19,
+        "timeout": 0,
+        "error": 0,
+        "fail": 0,
+        "redirect": 0
+      }
+    },
+    {
+      "batchNumber": 5,
+      "name": "Productivity - Editors & Notes",
+      "expectedCount": 115,
+      "hasReport": true,
+      "summary": {
+        "total": 14,
+        "success": 2,
+        "timeout": 0,
+        "error": 0,
+        "fail": 0,
+        "redirect": 0
+      }
+    },
+    {
+      "batchNumber": 6,
+      "name": "Productivity - Terminals & Utilities",
+      "expectedCount": 70,
+      "hasReport": true,
+      "summary": {
+        "total": 40,
+        "success": 19,
+        "timeout": 0,
+        "error": 0,
+        "fail": 0,
+        "redirect": 0
+      }
+    },
+    {
+      "batchNumber": 7,
+      "name": "Development - IDE Plugins",
+      "expectedCount": 40,
+      "hasReport": true,
+      "summary": {
+        "total": 40,
+        "success": 30,
+        "timeout": 0,
+        "error": 0,
+        "fail": 0,
+        "redirect": 0
+      }
+    },
+    {
+      "batchNumber": 8,
+      "name": "Productivity - Editors & IDEs",
+      "expectedCount": 50,
+      "hasReport": true,
+      "summary": {
+        "total": 50,
+        "success": 30,
+        "timeout": 0,
+        "error": 0,
+        "fail": 0,
+        "redirect": 0
+      }
+    },
+    {
+      "batchNumber": 9,
+      "name": "Productivity - Notes & Knowledge",
+      "expectedCount": 50,
+      "hasReport": true,
+      "summary": {
+        "total": 50,
+        "success": 18,
+        "timeout": 0,
+        "error": 0,
+        "fail": 31,
+        "redirect": 1
+      }
+    },
+    {
+      "batchNumber": 10,
+      "name": "Productivity - Terminals & Shells",
+      "expectedCount": 50,
+      "hasReport": true,
+      "summary": {
+        "total": 50,
+        "success": 33,
+        "timeout": 1,
+        "error": 0,
+        "fail": 0,
+        "redirect": 0
+      }
+    },
+    {
+      "batchNumber": 11,
+      "name": "Productivity - Efficiency Tools",
+      "expectedCount": 50,
+      "hasReport": true,
+      "summary": {
+        "total": 50,
+        "success": 46,
+        "timeout": 0,
+        "error": 0,
+        "fail": 0,
+        "redirect": 0
+      }
+    },
+    {
+      "batchNumber": 12,
+      "name": "Productivity - Design & Creative",
+      "expectedCount": 40,
+      "hasReport": true,
+      "summary": {
+        "total": 40,
+        "success": 14,
+        "timeout": 20,
+        "error": 4,
+        "fail": 0,
+        "redirect": 3
+      }
+    },
+    {
+      "batchNumber": 13,
+      "name": "Productivity - Collaboration",
+      "expectedCount": 39,
+      "hasReport": true,
+      "summary": {
+        "total": 39,
+        "success": 32,
+        "timeout": 0,
+        "error": 0,
+        "fail": 7,
+        "redirect": 0
+      }
+    },
+    {
+      "batchNumber": 14,
+      "name": "DevOps - Container Tech",
+      "expectedCount": 41,
+      "hasReport": true,
+      "summary": {
+        "total": 41,
+        "success": 34,
+        "timeout": 0,
+        "error": 0,
+        "fail": 7,
+        "redirect": 5
+      }
+    },
+    {
+      "batchNumber": 15,
+      "name": "DevOps - CI/CD",
+      "expectedCount": 55,
+      "hasReport": true,
+      "summary": {
+        "total": 55,
+        "success": 24,
+        "timeout": 14,
+        "error": 0,
+        "fail": 17,
+        "redirect": 3
+      }
+    },
+    {
+      "batchNumber": 16,
+      "name": "DevOps - Cloud Platforms",
+      "expectedCount": 55,
+      "hasReport": true,
+      "summary": {
+        "total": 55,
+        "success": 49,
+        "timeout": 0,
+        "error": 0,
+        "fail": 6,
+        "redirect": 1
+      }
+    },
+    {
+      "batchNumber": 17,
+      "name": "DevOps - Monitoring & Logging",
+      "expectedCount": 28,
+      "hasReport": true,
+      "summary": {
+        "total": 28,
+        "success": 28,
+        "timeout": 0,
+        "error": 0,
+        "fail": 0,
+        "redirect": 0
+      }
+    },
+    {
+      "batchNumber": 18,
+      "name": "DevOps - Config Management",
+      "expectedCount": 30,
+      "hasReport": true,
+      "summary": {
+        "total": 30,
+        "success": 23,
+        "timeout": 0,
+        "error": 0,
+        "fail": 7,
+        "redirect": 2
+      }
+    },
+    {
+      "batchNumber": 19,
+      "name": "AI/LLMs - AI Tools & Platforms",
+      "expectedCount": 75,
+      "hasReport": true,
+      "summary": {
+        "total": 75,
+        "success": 47,
+        "timeout": 0,
+        "error": 0,
+        "fail": 28,
+        "redirect": 6
+      }
+    },
+    {
+      "batchNumber": 20,
+      "name": "AI/LLMs - LLM Libraries",
+      "expectedCount": 70,
+      "hasReport": true,
+      "summary": {
+        "total": 70,
+        "success": 24,
+        "timeout": 23,
+        "error": 0,
+        "fail": 23,
+        "redirect": 4
+      }
+    },
+    {
+      "batchNumber": 21,
+      "name": "Utilities - System Tools",
+      "expectedCount": 30,
+      "hasReport": true,
+      "summary": {
+        "total": 30,
+        "success": 15,
+        "timeout": 0,
+        "error": 0,
+        "fail": 15,
+        "redirect": 2
+      }
+    },
+    {
+      "batchNumber": 22,
+      "name": "Utilities - File & Network",
+      "expectedCount": 32,
+      "hasReport": true,
+      "summary": {
+        "total": 32,
+        "success": 21,
+        "timeout": 9,
+        "error": 0,
+        "fail": 2,
+        "redirect": 0
+      }
+    },
+    {
+      "batchNumber": 23,
+      "name": "Utilities - File Network Tools",
+      "expectedCount": 29,
+      "hasReport": true,
+      "summary": null
+    }
+  ],
+  "summary": {
+    "totalBatches": 23,
+    "totalRepos": 868,
+    "totalSuccess": 537,
+    "totalTimeout": 67,
+    "totalError": 4,
+    "totalFail": 143,
+    "totalRedirect": 27,
+    "batchesWithReports": 21,
+    "batchesWithoutReports": [
+      {
+        "batch": 1,
+        "name": "Development - Programming Languages",
+        "expectedCount": 50
+      },
+      {
+        "batch": 3,
+        "name": "Development - Backend Ecosystem",
+        "expectedCount": 50
+      }
+    ]
+  },
+  "failedRepos": [
+    {
+      "url": "https://github.com/facebook/react",
+      "status": "ERROR",
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/vercel/next.js",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/remix-run/react-router",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/reduxjs/redux",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/TanStack/query",
+      "status": "ERROR",
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/react-hook-form/react-hook-form",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/framer/motion",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/petyosi/react-virtuoso",
+      "status": "ERROR",
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/react-dnd/react-dnd",
+      "status": "ERROR",
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/TanStack/table",
+      "status": "ERROR",
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/formatjs/formatjs",
+      "status": "ERROR",
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/testing-library/react-testing-library",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/vuejs/i18n",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/talvb/next-images",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/nuxt-community/i18n-module",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/nuxt-community/supabase-module",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/nkey/svelte-spa-router",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/postgres/postgres",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/postgres/pgadmin4",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/darold/pgbadger",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/zalando/patroni",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/PostgREST/postgrest",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/mongodb/mongo",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/mongodb/mongosh",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/mongodb/compass",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/mongodb/node-mongodb-native",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/mysql/mysql-workbench",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/sysown/proxysql",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/github/gh-ost",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/RedisInsight/RedisInsight",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/RedisTimeSeries/RedisTimeSeries",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/jestjs/jest",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/microsoft/playwright",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/playwright-community/eslint-plugin-playwright",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/cypress-io/cypress",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/cypress-io/code-coverage",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/testing-library/react-testing-library",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/testing-library/dom-testing-library",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/testing-library/user-event",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/mswjs/msw",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/sinonjs/sinon",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/nock/nock",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/istanbuljs/istanbuljs",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/webpack-contrib/webpack-bundle-analyzer",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/webpack-contrib/css-minimizer-webpack-plugin",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/webpack-contrib/mini-css-extract-plugin",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/webpack-contrib/html-webpack-plugin",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/vitejs/plugin-vue",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/antfu/unplugin-auto-import",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/antfu/unplugin-vue-components",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/antfu/unplugin-icons",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/vitejs/vite-plugin-pwa",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/evanw/esbuild-visualizer",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/andrew_codes/esbuild-runner",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/elg/tsnr",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/yankeeinlondon/esbuild-runner",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/trivago/rollup-plugin-preserve-shebang",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/TrySound/rollup-plugin-node-resolve",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/vitejs/rollup-plugin-license",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/parcel-bundler/parcel-css",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/parcel-bundler/parcel-packager-node",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/parcel-bundler/utils",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/parcel-bundler/parcel-reporter-bundle-buddy",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/mischnic/parcel-reporter-multiple-file",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 6,
+      "batchName": "Productivity - Terminals & Utilities"
+    },
+    {
+      "url": "https://github.com/esbenp/prettier-vscode",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 7,
+      "batchName": "Development - IDE Plugins"
+    },
+    {
+      "url": "https://github.com/vue-language-server/volar",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 7,
+      "batchName": "Development - IDE Plugins"
+    },
+    {
+      "url": "https://github.com/astro-build/astro-vscode",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 7,
+      "batchName": "Development - IDE Plugins"
+    },
+    {
+      "url": "https://github.com/PKief/material-icon-theme",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 7,
+      "batchName": "Development - IDE Plugins"
+    },
+    {
+      "url": "https://github.com/JetBrains/gradle-intellij-plugin",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 7,
+      "batchName": "Development - IDE Plugins"
+    },
+    {
+      "url": "https://github.com/MichaelGrigoryan95/intellij-plugins",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 7,
+      "batchName": "Development - IDE Plugins"
+    },
+    {
+      "url": "https://github.com/zskimmer/intellij-haskell",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 7,
+      "batchName": "Development - IDE Plugins"
+    },
+    {
+      "url": "https://github.com/rinrab/intellij-idea-community-fork",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 7,
+      "batchName": "Development - IDE Plugins"
+    },
+    {
+      "url": "https://github.com/hlissner/doom-emacs",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 7,
+      "batchName": "Development - IDE Plugins"
+    },
+    {
+      "url": "https://github.com/jimeh/git-gutter-fringe",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 7,
+      "batchName": "Development - IDE Plugins"
+    },
+    {
+      "url": "https://github.com/open-vsx/publish-extensions",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/code-server/code-server",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/github/copilot-vscode",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/Continue/continue",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/microsoft/vscode-live-server",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/formulahendry/auto-rename-tag",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/SpaceVim/SpaceVim",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/hlissner/doom-emacs",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/company-mode/company",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/emacs-vscode/module",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/smalltech/jetbrains-project-zoom",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/cmf/idea-gitignore",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/jjs-aged/filename-search-idea",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/SublimeText/Packages",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/SublimeText/LSP",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/alepez/guinetwork",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/facebook/nuclide",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/textareainput/focus",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/zyedidia/micro",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/josephschmitt/Clown",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 8,
+      "batchName": "Productivity - Editors & IDEs"
+    },
+    {
+      "url": "https://github.com/dragonwool/notion-puppy",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/notionhq/notion-sdk-js",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/notionhq-client/notion-sdk-py",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/tem-py/notion2md",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/notion-backup/notion-backup",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/notion-exporter/notion-exporter",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/notionhq/notion-api-example",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/obsidian-calendar/obsidian-calendar-plugin",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/tnichols217/obsidian-advanced-tables",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/mProjectsCode/obsidian-zotero",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/jameschao/obsidian-mindmap",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/zram-pathshala/obsidian-excalidraw-plugin",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/logseq/logseq-graph-analysis",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/sballin/logseq-zotero",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/sawhney17/logseq-upload-plugin",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/pengx17/logsql",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/laurent22/joplin-ios",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/laurent22/joplin-plugins",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/calebj0rg/joplin-link-notes",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/richard-fine/joplin-export",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/zadam/trilium-notes",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/zadam/trilium-scripts",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/Nartrove/trilium-yt-export",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/trilium-sync/trilium-sync",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/trilium-search/trilium-search",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/foamhq/foam",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/foamhq/foam-template",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/foamhq/foam-vscode",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/foam-graph/foam-graph",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/Jermolene/TiddlyWiki5",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/fphony/tiddlywiki-got5",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/tiddlywiki/tiddlyweb",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 9,
+      "batchName": "Productivity - Notes & Knowledge"
+    },
+    {
+      "url": "https://github.com/zsh-users/zsh-syntax-highlighting",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/zshzoo/mzo",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/jorgebucaran/aw.fish",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/denysdovhan/spaceship-prompt",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/janriemer/spaceship",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/oredwarf/nish",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/raylee/tide",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/distanta/pure",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/di_an/dfw",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/wugong/ash",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/revision-co/revsh",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/nix-community/nix-your-shell",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/rsteube/carapace",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/raine/shellquote",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/daskol/nodes",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/kognise/charm.sh",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/aptos-dev/awesome-terminal-apps",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/lotabout/skim",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 11,
+      "batchName": "Productivity - Efficiency Tools"
+    },
+    {
+      "url": "https://github.com/jqnatividad/qsv",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 11,
+      "batchName": "Productivity - Efficiency Tools"
+    },
+    {
+      "url": "https://github.com/timgrossmann/InstaPy",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 11,
+      "batchName": "Productivity - Efficiency Tools"
+    },
+    {
+      "url": "https://github.com/httpie/httpie",
+      "status": 301,
+      "redirectUrl": null,
+      "batch": 11,
+      "batchName": "Productivity - Efficiency Tools"
+    },
+    {
+      "url": "https://github.com/figma/plugin-samples",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/penpot/penpot",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/excalidraw/excalidraw",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/tldraw/tldraw",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/loomhq/loom-sdk",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/miroapp/app-framework",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/figma/diagrams",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/affinity-project/affinity-designer-resources",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/framer/motion",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/pmndrs/react-spring",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/greensock/GSAP",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/juliangarnier/anime",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/airbnb/lottie-web",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/LottieFiles/lottie-player",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/motiondivision/motionone",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/fabricjs/fabric.js",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/konvajs/konva",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/paperjs/paper.js",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/jonobr1/two.js",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/pixijs/pixi.js",
+      "status": "ERROR",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/processing/p5.js",
+      "status": "ERROR",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/google/skia",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/mrdoob/three.js",
+      "status": "ERROR",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/pmndrs/react-three-fiber",
+      "status": "ERROR",
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/chroma-ui/chromatic-cli",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/figma/figma-api",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/discordpy/discord.py",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 13,
+      "batchName": "Productivity - Collaboration"
+    },
+    {
+      "url": "https://github.com/DV8FromTheWorld/JDA",
+      "status": 301,
+      "redirectUrl": "https://github.com/discord-jda/JDA",
+      "batch": 13,
+      "batchName": "Productivity - Collaboration"
+    },
+    {
+      "url": "https://github.com/revoltchat/self-hosted",
+      "status": 301,
+      "redirectUrl": "https://github.com/stoatchat/self-hosted",
+      "batch": 13,
+      "batchName": "Productivity - Collaboration"
+    },
+    {
+      "url": "https://github.com/vector-im/element-web",
+      "status": 301,
+      "redirectUrl": "https://github.com/element-hq/element-web",
+      "batch": 13,
+      "batchName": "Productivity - Collaboration"
+    },
+    {
+      "url": "https://github.com/vikunja/vikunja",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 13,
+      "batchName": "Productivity - Collaboration"
+    },
+    {
+      "url": "https://github.com/triagetriage/triage",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 13,
+      "batchName": "Productivity - Collaboration"
+    },
+    {
+      "url": "https://github.com/tallyhq/tally",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 13,
+      "batchName": "Productivity - Collaboration"
+    },
+    {
+      "url": "https://github.com/docker/engine-ce",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 14,
+      "batchName": "DevOps - Container Tech"
+    },
+    {
+      "url": "https://github.com/docker/machine",
+      "status": 301,
+      "redirectUrl": "https://github.com/docker-archive-public/docker.machine",
+      "batch": 14,
+      "batchName": "DevOps - Container Tech"
+    },
+    {
+      "url": "https://github.com/docker/swarmkit",
+      "status": 301,
+      "redirectUrl": "https://github.com/moby/swarmkit",
+      "batch": 14,
+      "batchName": "DevOps - Container Tech"
+    },
+    {
+      "url": "https://github.com/docker/app",
+      "status": 301,
+      "redirectUrl": "https://github.com/docker-archive-public/docker.app",
+      "batch": 14,
+      "batchName": "DevOps - Container Tech"
+    },
+    {
+      "url": "https://github.com/containers/podman-desktop",
+      "status": 301,
+      "redirectUrl": "https://github.com/podman-desktop/podman-desktop",
+      "batch": 14,
+      "batchName": "DevOps - Container Tech"
+    },
+    {
+      "url": "https://github.com/lxc/lxd",
+      "status": 301,
+      "redirectUrl": "https://github.com/lxc/incus",
+      "batch": 14,
+      "batchName": "DevOps - Container Tech"
+    },
+    {
+      "url": "https://github.com/lxc/lxd-ui",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 14,
+      "batchName": "DevOps - Container Tech"
+    },
+    {
+      "url": "https://github.com/actions/core",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/actions/exec",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/actions/glob",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/actions/io",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/gitlab-org/gitlab-runner",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/gitlab-org/gitlab-ci-templates",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/gitlab-org/fleet",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/gitlab-org/gl-openshift-gitops-operator",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/gitlab-org/container-registry",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/gitlab-org/gitlab-shell",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/gitlab-org/gitaly",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/gitlab-org/gitlab-pages",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/gitlab-org/cluster-integration",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/jenkinsci/pipeline-model-definition",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/jenkinsci/docker-agent",
+      "status": 301,
+      "redirectUrl": "https://github.com/jenkinsci/docker-agents",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/drone/drone",
+      "status": 301,
+      "redirectUrl": "https://github.com/harness/harness",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/drone/drone-cli",
+      "status": 301,
+      "redirectUrl": "https://github.com/harness/drone-cli",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/drone/drone-exec",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/buildbot/buildbot",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/concourse/concourse",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/gocd/gocd",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/zuul/zuul",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/GoogleChrome/lighthouse-ci",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/dagger/dagger",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/earthly/earthly",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/nrwl/nx",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/vercel/turborepo",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/bazelbuild/bazel",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/pantsbuild/pants",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/thought-machine/please",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/wolfi-dev/wolfi",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/awslabs/aws-lambda-adapter",
+      "status": 301,
+      "redirectUrl": "https://github.com/awslabs/aws-lambda-web-adapter",
+      "batch": 16,
+      "batchName": "DevOps - Cloud Platforms"
+    },
+    {
+      "url": "https://github.com/googleapis/google-cloud-sdk",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 16,
+      "batchName": "DevOps - Cloud Platforms"
+    },
+    {
+      "url": "https://github.com/Azure/AzureStorageExplorer",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 16,
+      "batchName": "DevOps - Cloud Platforms"
+    },
+    {
+      "url": "https://github.com/Azure/azure-container-apps",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 16,
+      "batchName": "DevOps - Cloud Platforms"
+    },
+    {
+      "url": "https://github.com/digitalocean/api-go",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 16,
+      "batchName": "DevOps - Cloud Platforms"
+    },
+    {
+      "url": "https://github.com/digitalocean/community-tools",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 16,
+      "batchName": "DevOps - Cloud Platforms"
+    },
+    {
+      "url": "https://github.com/ansible-community/molecule",
+      "status": 301,
+      "redirectUrl": "https://github.com/ansible/molecule",
+      "batch": 18,
+      "batchName": "DevOps - Config Management"
+    },
+    {
+      "url": "https://github.com/ansible/ansible-test",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 18,
+      "batchName": "DevOps - Config Management"
+    },
+    {
+      "url": "https://github.com/ansible-semaphore/semaphore",
+      "status": 301,
+      "redirectUrl": "https://github.com/semaphoreui/semaphore",
+      "batch": 18,
+      "batchName": "DevOps - Config Management"
+    },
+    {
+      "url": "https://github.com/hashicorp/terraform-provider",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 18,
+      "batchName": "DevOps - Config Management"
+    },
+    {
+      "url": "https://github.com/helm/helm-file",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 18,
+      "batchName": "DevOps - Config Management"
+    },
+    {
+      "url": "https://github.com/helm/helm-diff",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 18,
+      "batchName": "DevOps - Config Management"
+    },
+    {
+      "url": "https://github.com/folkerts/helm-secrets",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 18,
+      "batchName": "DevOps - Config Management"
+    },
+    {
+      "url": "https://github.com/langchain-ai/langsmith",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchain-templates",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchain-cli",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/langchain-ai/langservejs",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchainjs-templates",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchaingo",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/langchain-ai/langgraph-rs",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchain-hub",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/ggerganov/llama.cpp",
+      "status": 301,
+      "redirectUrl": "https://github.com/ggml-org/llama.cpp",
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/joaomdmoura/crewAI",
+      "status": 301,
+      "redirectUrl": "https://github.com/crewAIInc/crewAI",
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/geekan/MetaGPT",
+      "status": 301,
+      "redirectUrl": "https://github.com/FoundationAgents/MetaGPT",
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/cognitivetech/devin",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/Phind-ai/Phind",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/pinecone-io/pinecone-ts",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/Mozilla-Ocho/llamafile",
+      "status": 301,
+      "redirectUrl": "https://github.com/mozilla-ai/llamafile",
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web",
+      "status": 301,
+      "redirectUrl": "https://github.com/ChatGPTNextWeb/NextChat",
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/chatpdf/chatpdf-api",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/deepset-ai/FastRAG",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/quiver-ai/quiver",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/continue-development/continue",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/paul-gauthier/aider",
+      "status": 301,
+      "redirectUrl": "https://github.com/Aider-AI/aider",
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/cursor-editor/cursor",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/codebrush-brush/codebrush",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/greptile/greptile",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/smallcloud/refact",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/mistralai/codestral",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/bigcode/starcoder2",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/stabilityai/stable-code",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/openai/openai-python",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/openai-node",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/sashabaranov/go-openai",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/detroz/openai-api",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/tiktoken",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/openai-cookbook",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/openai-quickstart-python",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/whisper",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/ggerganov/whisper.cpp",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/clip",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/point-e",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/glide-image-editing",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/jukebox",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/micrograd",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/spinningup",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/anthropic/anthropic-sdk-python",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/anthropic/anthropic-sdk-typescript",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/anthropic/anthropic-quickstarts",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/GoogleCloudPlatform/vertex-ai-samples",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/aws-samples/amazon-bedrock-workshop",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/AlexAti/claude-api",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/ycwait/anthropic-go",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/noe/claude-proxy",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/microsoft/guidance",
+      "status": 301,
+      "redirectUrl": "https://github.com/guidance-ai/guidance",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/outlines-dev/outlines",
+      "status": 301,
+      "redirectUrl": "https://github.com/dottxt-ai/outlines",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/jxnl/instructor",
+      "status": 301,
+      "redirectUrl": "https://github.com/567-labs/instructor",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/promptlayer/promptlayer",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/portkey-ai/portkey",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/signatrix/prompt-engine",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/signatrix/promptable",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/graylan/promptimize",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/microsoft/promptist",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/OpenPrompt-Camp/OpenPrompt",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/mzGerald/stable-diffusion-prompt-generator",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/explodeai/ragas",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/giskard-ai/giskard",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/braintrustdev/braintrust-sdk",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/kaist-ai/judge-lm",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/lmsys/mt-bench",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/clip",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/stabilityai/stablediffusion",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/comfyanonymous/ComfyUI",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/whisper",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/ggerganov/whisper.cpp",
+      "status": 301,
+      "redirectUrl": "https://github.com/ggml-org/whisper.cpp",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/neoncbb/tortoise-tts",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/plz61/vallex",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/DWesl/findutils",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/pinard/diffutils",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/gnulib-bootstrap/sed",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/gnu/gawk",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/gnulib-bootstrap/grep",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/tar-tarball/tar",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/gzip/gzip",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/bash/bash/bash",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/beyondgrep/ack",
+      "status": 301,
+      "redirectUrl": "https://github.com/beyondgrep/ack1",
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/gmargari/sed",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/stedolan/jq",
+      "status": 301,
+      "redirectUrl": "https://github.com/jqlang/jq",
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/KatieFalcon/ScreenFetch",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/canonical/lshw",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/m-roc Bowen/dfc",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/duuduke/gdu",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/curl/curl",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/soimort/you-get",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/axkibe/lsyncd",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/syncthing/syncthing",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/nmap/nmap",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/RustScan/RustScan",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/the-tcpdump-group/tcpdump",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/openssh/openssh-portable",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/jinfeihan/p7zip",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/madler/pixz",
+      "status": "TIMEOUT",
+      "redirectUrl": null,
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/Byron/dua",
+      "status": 404,
+      "redirectUrl": null,
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    }
+  ],
+  "redirectedRepos": [
+    {
+      "url": "https://github.com/DV8FromTheWorld/JDA",
+      "redirectUrl": "https://github.com/discord-jda/JDA",
+      "batch": 13,
+      "batchName": "Productivity - Collaboration"
+    },
+    {
+      "url": "https://github.com/revoltchat/self-hosted",
+      "redirectUrl": "https://github.com/stoatchat/self-hosted",
+      "batch": 13,
+      "batchName": "Productivity - Collaboration"
+    },
+    {
+      "url": "https://github.com/vector-im/element-web",
+      "redirectUrl": "https://github.com/element-hq/element-web",
+      "batch": 13,
+      "batchName": "Productivity - Collaboration"
+    },
+    {
+      "url": "https://github.com/docker/machine",
+      "redirectUrl": "https://github.com/docker-archive-public/docker.machine",
+      "batch": 14,
+      "batchName": "DevOps - Container Tech"
+    },
+    {
+      "url": "https://github.com/docker/swarmkit",
+      "redirectUrl": "https://github.com/moby/swarmkit",
+      "batch": 14,
+      "batchName": "DevOps - Container Tech"
+    },
+    {
+      "url": "https://github.com/docker/app",
+      "redirectUrl": "https://github.com/docker-archive-public/docker.app",
+      "batch": 14,
+      "batchName": "DevOps - Container Tech"
+    },
+    {
+      "url": "https://github.com/containers/podman-desktop",
+      "redirectUrl": "https://github.com/podman-desktop/podman-desktop",
+      "batch": 14,
+      "batchName": "DevOps - Container Tech"
+    },
+    {
+      "url": "https://github.com/lxc/lxd",
+      "redirectUrl": "https://github.com/lxc/incus",
+      "batch": 14,
+      "batchName": "DevOps - Container Tech"
+    },
+    {
+      "url": "https://github.com/jenkinsci/docker-agent",
+      "redirectUrl": "https://github.com/jenkinsci/docker-agents",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/drone/drone",
+      "redirectUrl": "https://github.com/harness/harness",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/drone/drone-cli",
+      "redirectUrl": "https://github.com/harness/drone-cli",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/awslabs/aws-lambda-adapter",
+      "redirectUrl": "https://github.com/awslabs/aws-lambda-web-adapter",
+      "batch": 16,
+      "batchName": "DevOps - Cloud Platforms"
+    },
+    {
+      "url": "https://github.com/ansible-community/molecule",
+      "redirectUrl": "https://github.com/ansible/molecule",
+      "batch": 18,
+      "batchName": "DevOps - Config Management"
+    },
+    {
+      "url": "https://github.com/ansible-semaphore/semaphore",
+      "redirectUrl": "https://github.com/semaphoreui/semaphore",
+      "batch": 18,
+      "batchName": "DevOps - Config Management"
+    },
+    {
+      "url": "https://github.com/ggerganov/llama.cpp",
+      "redirectUrl": "https://github.com/ggml-org/llama.cpp",
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/joaomdmoura/crewAI",
+      "redirectUrl": "https://github.com/crewAIInc/crewAI",
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/geekan/MetaGPT",
+      "redirectUrl": "https://github.com/FoundationAgents/MetaGPT",
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/Mozilla-Ocho/llamafile",
+      "redirectUrl": "https://github.com/mozilla-ai/llamafile",
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web",
+      "redirectUrl": "https://github.com/ChatGPTNextWeb/NextChat",
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/paul-gauthier/aider",
+      "redirectUrl": "https://github.com/Aider-AI/aider",
+      "batch": 19,
+      "batchName": "AI/LLMs - AI Tools & Platforms"
+    },
+    {
+      "url": "https://github.com/microsoft/guidance",
+      "redirectUrl": "https://github.com/guidance-ai/guidance",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/outlines-dev/outlines",
+      "redirectUrl": "https://github.com/dottxt-ai/outlines",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/jxnl/instructor",
+      "redirectUrl": "https://github.com/567-labs/instructor",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/ggerganov/whisper.cpp",
+      "redirectUrl": "https://github.com/ggml-org/whisper.cpp",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/beyondgrep/ack",
+      "redirectUrl": "https://github.com/beyondgrep/ack1",
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    },
+    {
+      "url": "https://github.com/stedolan/jq",
+      "redirectUrl": "https://github.com/jqlang/jq",
+      "batch": 21,
+      "batchName": "Utilities - System Tools"
+    }
+  ],
+  "timeoutRepos": [
+    {
+      "url": "https://github.com/vercel/next.js",
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/remix-run/react-router",
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/reduxjs/redux",
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/react-hook-form/react-hook-form",
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/testing-library/react-testing-library",
+      "batch": 2,
+      "batchName": "Development - Frontend Ecosystem"
+    },
+    {
+      "url": "https://github.com/postgres/postgres",
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/postgres/pgadmin4",
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/darold/pgbadger",
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/PostgREST/postgrest",
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/mongodb/mongo",
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/mongodb/node-mongodb-native",
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/mysql/mysql-workbench",
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/sysown/proxysql",
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/github/gh-ost",
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/RedisTimeSeries/RedisTimeSeries",
+      "batch": 4,
+      "batchName": "Development - Database & Tools"
+    },
+    {
+      "url": "https://github.com/jestjs/jest",
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/microsoft/playwright",
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/playwright-community/eslint-plugin-playwright",
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/cypress-io/cypress",
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/cypress-io/code-coverage",
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/testing-library/react-testing-library",
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/testing-library/dom-testing-library",
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/testing-library/user-event",
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/mswjs/msw",
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/sinonjs/sinon",
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/nock/nock",
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/istanbuljs/istanbuljs",
+      "batch": 5,
+      "batchName": "Productivity - Editors & Notes"
+    },
+    {
+      "url": "https://github.com/zsh-users/zsh-syntax-highlighting",
+      "batch": 10,
+      "batchName": "Productivity - Terminals & Shells"
+    },
+    {
+      "url": "https://github.com/figma/plugin-samples",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/penpot/penpot",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/excalidraw/excalidraw",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/tldraw/tldraw",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/loomhq/loom-sdk",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/miroapp/app-framework",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/figma/diagrams",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/affinity-project/affinity-designer-resources",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/framer/motion",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/pmndrs/react-spring",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/greensock/GSAP",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/juliangarnier/anime",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/airbnb/lottie-web",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/LottieFiles/lottie-player",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/motiondivision/motionone",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/fabricjs/fabric.js",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/konvajs/konva",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/paperjs/paper.js",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/jonobr1/two.js",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/google/skia",
+      "batch": 12,
+      "batchName": "Productivity - Design & Creative"
+    },
+    {
+      "url": "https://github.com/drone/drone-exec",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/buildbot/buildbot",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/concourse/concourse",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/gocd/gocd",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/zuul/zuul",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/GoogleChrome/lighthouse-ci",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/dagger/dagger",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/earthly/earthly",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/nrwl/nx",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/vercel/turborepo",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/bazelbuild/bazel",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/pantsbuild/pants",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/thought-machine/please",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/wolfi-dev/wolfi",
+      "batch": 15,
+      "batchName": "DevOps - CI/CD"
+    },
+    {
+      "url": "https://github.com/openai/openai-python",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/openai-node",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/sashabaranov/go-openai",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/detroz/openai-api",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/tiktoken",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/openai-cookbook",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/openai-quickstart-python",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/whisper",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/ggerganov/whisper.cpp",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/clip",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/point-e",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/glide-image-editing",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/jukebox",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/spinningup",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/anthropic/anthropic-quickstarts",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/GoogleCloudPlatform/vertex-ai-samples",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/aws-samples/amazon-bedrock-workshop",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/ycwait/anthropic-go",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/giskard-ai/giskard",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/lmsys/mt-bench",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/clip",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/comfyanonymous/ComfyUI",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/openai/whisper",
+      "batch": 20,
+      "batchName": "AI/LLMs - LLM Libraries"
+    },
+    {
+      "url": "https://github.com/curl/curl",
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/soimort/you-get",
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/axkibe/lsyncd",
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/syncthing/syncthing",
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/nmap/nmap",
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/RustScan/RustScan",
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/the-tcpdump-group/tcpdump",
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/openssh/openssh-portable",
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    },
+    {
+      "url": "https://github.com/madler/pixz",
+      "batch": 22,
+      "batchName": "Utilities - File & Network"
+    }
+  ],
+  "categoryBreakdown": {
+    "Development": {
+      "batches": 3,
+      "total": 119,
+      "success": 78,
+      "fail": 41
+    },
+    "Productivity": {
+      "batches": 8,
+      "total": 333,
+      "success": 194,
+      "fail": 139
+    },
+    "DevOps": {
+      "batches": 5,
+      "total": 209,
+      "success": 158,
+      "fail": 51
+    },
+    "AI/LLMs": {
+      "batches": 2,
+      "total": 145,
+      "success": 71,
+      "fail": 74
+    },
+    "Utilities": {
+      "batches": 2,
+      "total": 62,
+      "success": 36,
+      "fail": 26
+    }
+  }
+}
