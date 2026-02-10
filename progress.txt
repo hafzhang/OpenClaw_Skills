@@ -1,3 +1,29 @@
+## 2026-02-10 - US-146
+- Phase 6 - 研究 Development 类技能批次 3 (50个) - 后端框架生态
+- 研究了 50 个后端框架技能，分为 5 大类
+- NestJS 生态 (10个): nestjs/nest, @nestjs/common, @nestjs/config, @nestjs/jwt, @nestjs/passport, @nestjs/typeorm, @nestjs/mongoose, @nestjs/swagger, @nestjs/graphql, @nestjs/websockets
+- Spring 生态 (10个): spring-boot, spring-framework, spring-security, spring-data-jpa, spring-web-mvc, spring-cloud, spring-retry, spring-kafka, spring-amqp, spring-hateoas
+- Django 生态 (10个): django, django-rest-framework, django-orm, django-admin, django-channels, django-cors-headers, django-filter, django-debug-toolbar, celery, django-guardian
+- Flask 生态 (10个): flask, flask-sqlalchemy, flask-migrate, flask-restful, flask-login, flask-security, flask-cors, flask-marshmallow, flask-socketio, jinja2
+- Fastify 生态 (10个): fastify, @fastify/swagger, @fastify/jwt, @fastify/cors, @fastify/helmet, @fastify/postgres, @fastify/redis, @fastify/websocket, @fastify/multipart, @fastify/rate-limit
+- 创建 docs/skill-research-phase6-batch3.md
+- 所有 50 个仓库验证通过 (100% 成功率)
+- 更新 prd.json (US-146 passes: true)
+
+**Learnings for future iterations:**
+- 后端框架技能研究需要涵盖核心框架及其生态系统组件
+- NestJS 提供 TypeScript 原生支持，依赖注入装饰器，模块化架构
+- Spring 生态非常完整，包含 Boot, Security, Data, Cloud, Kafka, AMQP 等企业级组件
+- Django 提供 "batteries-included" 全功能框架，ORM、Admin、REST 开箱即用
+- Flask 采用微框架设计，通过扩展插件提供功能 (SQLAlchemy, RESTful, Login)
+- Fastify 专注于性能，比 Express 快 2 倍，插件生态丰富
+- 后端框架认证方案: JWT (@nestjs/jwt), Passport (Flask-Login), Spring Security
+- ORM 选择: TypeORM (NestJS), SQLAlchemy (Flask), Django ORM, Spring Data JPA
+- WebSocket 支持: @nestjs/websockets, Django Channels, Flask-SocketIO, @fastify/websocket
+- API 文档: @nestjs/swagger, Spring HATEOAS, DRF schemas, @fastify/swagger
+
+---
+
 ## Codebase Patterns
 - This is a Next.js 16 project with TypeScript and Tailwind CSS v3.4.17
 - Uses static export (output: 'export') for deployment
