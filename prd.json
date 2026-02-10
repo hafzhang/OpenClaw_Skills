@@ -1254,8 +1254,8 @@
         "验证 GitHub 仓库可访问"
       ],
       "priority": 118,
-      "passes": false,
-      "notes": "🚧 Phase 6 - Sprint 10.7 - 规划中 - IDE和编辑器插件研究"
+      "passes": true,
+      "notes": "✅ Phase 6 - Sprint 10.7 - 已完成 - 40个IDE和编辑器插件技能研究完成 (VS Code 12个/IntelliJ 8个/Vim 8个/Neovim 8个/Emacs 4个)，创建 docs/skill-research-phase6-batch7.md，仓库验证报告显示75%成功率(30/40 HTTP 200，4个301重定向为有效仓库但已迁移组织，6个404为失效仓库)"
     },
     {
       "id": "US-151",
