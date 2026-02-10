@@ -1,0 +1,248 @@
+{
+  "timestamp": "2026-02-10T08:53:42.877Z",
+  "batch": 13,
+  "category": "Collaboration and Communication Tools",
+  "total": 39,
+  "summary": {
+    "success": 32,
+    "timeout": 0,
+    "error": 0,
+    "fail": 7
+  },
+  "results": [
+    {
+      "url": "https://github.com/slackapi/python-slack-sdk",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/mattermost/mattermost",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/RocketChat/Rocket.Chat",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/zulip/zulip",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/discordpy/discord.py",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/DV8FromTheWorld/JDA",
+      "status": 301,
+      "redirectUrl": "https://github.com/discord-jda/JDA",
+      "success": false
+    },
+    {
+      "url": "https://github.com/revoltchat/self-hosted",
+      "status": 301,
+      "redirectUrl": "https://github.com/stoatchat/self-hosted",
+      "success": false
+    },
+    {
+      "url": "https://github.com/matrix-org/synapse",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/vector-im/element-web",
+      "status": 301,
+      "redirectUrl": "https://github.com/element-hq/element-web",
+      "success": false
+    },
+    {
+      "url": "https://github.com/gotify/server",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/jitsi/jitsi-meet",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/bigbluebutton/bigbluebutton",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/OpenVidu/openvidu",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/livekit/livekit",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/daily-co/daily-js",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/versatica/mediasoup",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/ossrs/srs",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/coturn/coturn",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/taigaio/taiga-back",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/opf/openproject",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/redmine/redmine",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/vikunja/vikunja",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/makeplane/plane",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/toeverything/AFFiNE",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/triagetriage/triage",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    },
+    {
+      "url": "https://github.com/outline/outline",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/requarks/wiki",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/BookStackApp/BookStack",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/squidfunk/mkdocs-material",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/facebook/docusaurus",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/binwiederhier/ntfy",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/containrrr/shoutrrr",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/caronc/apprise",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/Typeform/embed",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/formkit/formkit",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/formspree/formspree",
+      "status": 200,
+      "redirectUrl": null,
+      "success": true
+    },
+    {
+      "url": "https://github.com/tallyhq/tally",
+      "status": 404,
+      "redirectUrl": null,
+      "success": false
+    }
+  ]
+}
