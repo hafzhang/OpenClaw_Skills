@@ -1,16 +1,18 @@
 import { SkillCard } from '@/components/SkillCard';
 import { getVerifiedSkills, getSkillsByCategory } from '@/lib/skills';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import Link from 'next/link';
 
 // Skill categories mapping
 const skillCategories = [
-  { id: 'development', name: '开发辅助', description: '代码开发、审查、数据库操作' },
-  { id: 'productivity', name: '工作效率', description: '搜索、通讯、文档自动化' },
-  { id: 'devops', name: 'DevOps', description: '部署、容器、云平台管理' },
-  { id: 'ai-llms', name: 'AI & LLMs', description: 'AI 模型、提示工程、语音合成' },
-  { id: 'utilities', name: '实用工具', description: 'PDF、视频/音频处理、文件工具' },
-  { id: 'system', name: '系统工具', description: '文件系统、系统操作' },
-  { id: 'creative', name: '创意工具', description: '图像处理、AI 生成' },
+  { id: 'development', name: '开发辅助', description: '代码开发、审查、数据库操作', icon: '💻' },
+  { id: 'productivity', name: '工作效率', description: '搜索、通讯、文档自动化', icon: '📊' },
+  { id: 'devops', name: 'DevOps', description: '部署、容器、云平台管理', icon: '🚀' },
+  { id: 'ai-llms', name: 'AI & LLMs', description: 'AI 模型、提示工程、语音合成', icon: '🤖' },
+  { id: 'utilities', name: '实用工具', description: 'PDF、视频/音频处理、文件工具', icon: '🔧' },
+  { id: 'ai', name: 'AI 工具', description: 'AI 驱动的实用工具', icon: '🧠' },
+  { id: 'system', name: '系统工具', description: '文件系统、系统操作', icon: '⚙️' },
+  { id: 'creative', name: '创意工具', description: '图像处理、AI 生成', icon: '🎨' },
 ] as const;
 
 export default function SkillsPage() {
@@ -29,7 +31,7 @@ export default function SkillsPage() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8 md:py-12 max-w-7xl">
         {/* Header */}
-        <div className="mb-8 md:mb-12">
+        <div className="mb-6 md:mb-8">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">技能索引</h1>
           <p className="text-muted-foreground text-lg">
             浏览所有验证过的 OpenClaw 技能，扩展 AI 助手能力
@@ -39,17 +41,36 @@ export default function SkillsPage() {
           </p>
         </div>
 
+        {/* Horizontal Category Navigation */}
+        <div className="mb-8 md:mb-12 sticky top-0 z-10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 py-4 -mx-4 px-4 border-b">
+          <div className="flex flex-wrap gap-2 md:gap-3">
+            {categoriesWithSkills.map((category) => (
+              <Link
+                key={category.id}
+                href={`#category-${category.id}`}
+                className="inline-flex items-center gap-1.5 px-3 py-2 md:px-4 md:py-2.5 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-200 text-sm md:text-base font-medium"
+              >
+                <span>{category.icon}</span>
+                <span>{category.name}</span>
+                <span className="text-xs bg-background/50 px-1.5 py-0.5 rounded-full">
+                  {category.skills.length}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Skills by category */}
         <div className="space-y-8 md:space-y-12">
           {categoriesWithSkills.map((category) => (
-            <div key={category.id}>
+            <div key={category.id} id={`category-${category.id}`} className="scroll-mt-24">
               {/* Category header */}
-              <div className="mb-4 md:mb-6">
-                <h2 className="text-2xl md:text-3xl font-semibold mb-2">{category.name}</h2>
-                <p className="text-muted-foreground">{category.description}</p>
-                <p className="text-sm text-muted-foreground mt-1">
-                  {category.skills.length} 个技能
-                </p>
+              <div className="mb-4 md:mb-6 flex items-center gap-3">
+                <span className="text-3xl">{category.icon}</span>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-semibold">{category.name}</h2>
+                  <p className="text-muted-foreground text-sm">{category.description} · {category.skills.length} 个技能</p>
+                </div>
               </div>
 
               {/* Skills grid */}

@@ -859,7 +859,6 @@
       "notes": "✅ Phase 5 - 最终验收完成 - 100个教程、483个技能、532个静态页面、构建通过、宁缺毋滥"
     },
     {
-<<<<<<< HEAD
       "id": "US-123",
       "title": "添加 shadcn/ui Dialog 组件",
       "description": "作为开发者，我需要添加 Dialog、Textarea、Label 组件来构建配置提交表单。",
@@ -967,7 +966,8 @@
       "priority": 96,
       "passes": true,
       "notes": "✅ Phase 6 - Sprint 6.6 - 已完成 - 创建 config-validation.ts，包含完整表单验证、JSON验证、标签解析功能"
-=======
+},
+    {
       "id": "US-132",
       "title": "Phase 6 - 编写 Beginner 教程批次 1 (5篇)",
       "description": "作为内容创作者，编写 Node.js包管理、环境变量、JWT、REST API、Git工作流教程。",
@@ -1563,7 +1563,6 @@
       "priority": 140,
       "passes": false,
       "notes": "🚧 Phase 6 - 最终验收 - 规划中"
->>>>>>> e0d230e (feat: US-132 - Add 5 new Beginner tutorials (Phase 6 Sprint 9.1))
     }
   ]
 }
