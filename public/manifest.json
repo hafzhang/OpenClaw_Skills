@@ -1,0 +1,29 @@
+{
+  "name": "OpenClaw 实战指南",
+  "short_name": "OpenClaw Hub",
+  "description": "30+ 个真实案例，让 AI 助手真正帮你工作。涵盖 1500+ MCP 技能索引。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["education", "technology", "developer"],
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "scope": "/",
+  "id": "openclaw-hub"
+}
