@@ -151,6 +151,22 @@ export default function Home() {
             </a>
           </div>
         </section>
+
+        {/* Tools Section */}
+        <section className="py-8 md:py-12 bg-muted/30 -mx-4 px-4">
+          <div className="text-center mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold">🛠️ Google 工具集成</h2>
+            <p className="text-muted-foreground mt-2">地图、搜索和路线规划</p>
+          </div>
+          <div className="text-center">
+            <a
+              href="/tools"
+              className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors min-h-[44px] flex items-center justify-center"
+            >
+              探索工具 →
+            </a>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
